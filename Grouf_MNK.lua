@@ -1,3 +1,10 @@
+--[[
+		=================
+		|    M O N K    | 
+		=================
+
+]]
+
 function get_sets()				
 	sets.precast = {}
 	sets.precast.Chakra = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",

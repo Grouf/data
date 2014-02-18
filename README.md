@@ -3,7 +3,7 @@ Gearswap data folder
 
 Job       Gear        Rules       Tested
 ===       ====        =====       ======
-MNK       Done        Done         No
+MNK       Done        Done         Yes
 WHM
 BLM
 RDM
