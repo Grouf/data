@@ -39,6 +39,7 @@ function get_sets()
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
+	send_command('@input /echo sets=TPDD')
 	sets.aftercast.Idle = sets.TP.DD
 	send_command('input /macro book 2;wait .1;input /macro set 10')
 end
@@ -80,17 +81,17 @@ end
 function self_command(command)
 	if command == 'DD' then
 		sets.aftercast.TP = sets.TP.DD
-		sets.aftercast.IDLE = sets.TP.DD
+		sets.aftercast.Idle = sets.TP.DD
 		equip(sets.aftercast.TP)
 		send_command('@input /echo DD SET')
 	elseif command == 'SOLO' then
 		sets.aftercast.TP = sets.TP.Solo
-		sets.aftercast.IDLE = sets.TP.Solo
+		sets.aftercast.Idle = sets.TP.Solo
 		equip(sets.aftercast.TP)
 		send_command('@input /echo SOLO SET')
 	elseif command == 'DT' then
 		sets.aftercast.TP = sets.DT
-		sets.aftercast.IDLE = sets.DT
+		sets.aftercast.Idle = sets.DT
 		equip(sets.aftercast.TP)
 		send_command('@input /echo DT SET')
 	end
