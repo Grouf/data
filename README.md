@@ -1,14 +1,14 @@
 Gearswap data folder
 ====================
 
-Job       Gear        Rules       Tested
-===       ====        =====       ======
-MNK       Done        Done         Yes
+Job		Gear		Rules		Tested		Notes
+===		====		=====		======		=====
+MNK		Done		Done		 Yes
 WHM
 BLM
 RDM
 THF
-RNG
+RNG		1st draft	Some		 So far		Need utsusemi fast cast, specify melee WS
 SAM
 NIN
 SMN
