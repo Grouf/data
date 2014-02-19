@@ -8,7 +8,7 @@ WHM
 BLM
 RDM
 THF
-RNG		1st draft	Some		 So far		Need utsusemi fast cast, specify melee WS
+RNG		1st draft	Some		 So far		specify melee WS
 SAM
 NIN
 SMN
