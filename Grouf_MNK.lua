@@ -2,7 +2,6 @@
 		=================
 		|    M O N K    | 
 		=================
-
 ]]
 
 function get_sets()				
@@ -46,7 +45,6 @@ function get_sets()
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
-	send_command('@input /echo sets=TPDD')
 	sets.aftercast.Idle = sets.TP.DD
 	send_command('input /macro book 2;wait .1;input /macro set 10')
 end
