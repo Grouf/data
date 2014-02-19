@@ -8,7 +8,7 @@ function get_sets()
 	sets.precast = {}
 	sets.precast.Chakra = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",
 		left_ear="Steelflash Earring",right_ear="Kemas Earring",body="Anchorite's Cyclas",hands="Mel. Gloves +2",
-		left_ring="Terrasoul Ring",right_ring="Spiral Ring",back="Iximulew Cape",waist="Warwolf Belt",legs="Kaabnax Trousers",
+		left_ring="Terrasoul Ring",right_ring="Terrasoul Ring",back="Iximulew Cape",waist="Warwolf Belt",legs="Kaabnax Trousers",
 		feet="Thur. Boots +1"}
 	sets.precast.Counterstance = {feet="Melee Gaiters +2"}
 	sets.precast.Dodge = {feet="Anchorite's Gaiters"}
