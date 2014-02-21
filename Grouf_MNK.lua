@@ -8,8 +8,8 @@ function get_sets()
 	sets.precast = {}
 	sets.precast.Chakra = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",
 		left_ear="Steelflash Earring",right_ear="Kemas Earring",body="Anchorite's Cyclas",hands="Mel. Gloves +2",
-		left_ring="Terrasoul Ring",right_ring="Terrasoul Ring",back="Iximulew Cape",waist="Warwolf Belt",legs="Kaabnax Trousers",
-		feet="Thur. Boots +1"}
+		left_ring="Terrasoul Ring",right_ring="Terrasoul Ring",back="Iximulew Cape",waist="Warwolf Belt",
+		legs="Kaabnax Trousers",feet="Thur. Boots +1"}
 	sets.precast.Counterstance = {feet="Melee Gaiters +2"}
 	sets.precast.Dodge = {feet="Anchorite's Gaiters"}
 	sets.precast.Focus = {head="Anchorite's Crown"}
@@ -21,8 +21,8 @@ function get_sets()
 
 	sets.precast.WS = {main="Oatixur",ammo="Thew Bomblet",head="Uk'uxkaj Cap",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Mel. Gloves +2",
-		left_ring="Spiral Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Prosilio Belt",legs="Manibozho Brais",
-		feet="Otronif Boots"}
+		left_ring="Spiral Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Prosilio Belt",
+		legs="Manibozho Brais",feet="Otronif Boots"}
 		
 	sets.precast['Victory Smite'] = set_combine(sets.precast.WS,{neck="Light Gorget"})
 	
@@ -31,13 +31,18 @@ function get_sets()
 	sets.TP = {}
 	sets.TP.DD = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Otronif Gloves",
-		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",legs="Quiahuiz Leggings",
-		feet="Otronif Boots"}
+		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
+		legs="Quiahuiz Leggings",feet="Otronif Boots"}
+		
+	sets.TP.Delve = {main="Oatixur",ammo="Honed Tathlum",head="Uk'uxkaj Cap",neck="Asperity Necklace",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Otronif Gloves",
+		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
+		legs="Manibozho Brais",feet="Otronif Boots"}
 
 	sets.TP.Solo = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",
-		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",legs="Quiahuiz Leggings",
-		feet="Otronif Boots"}
+		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
+		legs="Quiahuiz Leggings",feet="Otronif Boots"}
 	
 	sets.DT = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",left_ring="Dark Ring",
@@ -89,6 +94,11 @@ function self_command(command)
 		sets.aftercast.Idle = sets.TP.DD
 		equip(sets.aftercast.TP)
 		send_command('@input /echo DD SET')
+	elseif command == 'Delve' then
+		sets.aftercast.TP = sets.TP.Delve
+		sets.aftercast.Idle = sets.TP.Delve
+		equip(sets.aftercast.TP)
+		send_command('@input /echo Delve SET')
 	elseif command == 'SOLO' then
 		sets.aftercast.TP = sets.TP.Solo
 		sets.aftercast.Idle = sets.TP.Solo
