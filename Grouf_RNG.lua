@@ -20,7 +20,8 @@ function get_sets()
 		body="Orion Jerkin", hands="Buremte Gloves", left_ring="Jalzahn's Ring", right_ring="Paqichikaji Ring", 
 		back="Lutian Cape", waist="Scout's Belt", legs="Thur. Tights +1", feet="Orion Socks"}
 	
-	sets.precast.Jishnu = set_combine(sets.precast.WS,{waist="Light Belt"})
+	--sets.precast.Jishnu = set_combine(sets.precast.WS,{waist="Light Belt"})
+	sets.precast['Jishnu\'s Radiance'] = set_combine(sets.precast.WS,{waist="Light Belt"})
 	
 	sets.precast.WSMelee = {head="Uk'uxkaj Cap", neck="Light Gorget", left_ear="Steelflash Earring", right_ear="Bladeborn Earring", 
 		body="Manibozho Jerkin", hands="Iuitl Wristbands", left_ring="Spiral Ring", right_ring="Rajas Ring", 
@@ -48,10 +49,13 @@ function precast(spell)
 	elseif string.find(spell.english,'Utsusemi') then
 		equip(sets.precast.Utsusemi)
 	elseif spell.type=="WeaponSkill" then
+	--[[
 		if string.find(spell.english,'Jishnu') then
-		equip(sets.precast.Jishnu)
-	else
+			equip(sets.precast.Jishnu)
+		else
+	]]
 		equip(sets.precast.WS)
+		--end
 	end
 end
 
