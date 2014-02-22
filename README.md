@@ -3,13 +3,15 @@ Gearswap data folder
 
 Job		Gear		Rules		Tested		Notes
 ===		====		=====		======		=====
-MNK		Done		Done		 Yes
+MNK		Done		Done		Yes
 WHM
-BLM
+BLM		1st draft	Some		No			Needs FastCast/Enhancing sets fixed
 RDM
 THF
-RNG		1st draft	Some		 So far		specify melee WS
+RNG		Done		Most		Yes			specify melee WS
 SAM
 NIN
 SMN
 BLU
+GEO		1st draft	Some		No			needs rules for status & relic equip
+											needs FastCast/Enhancing sets fixed
