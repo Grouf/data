@@ -15,7 +15,7 @@ function get_sets()
 	sets.precast.Focus = {head="Anchorite's Crown"}
 	--sets.precast.Mantra = {feet="Melee Gaiters +2"}
 	
-	sets.precast.Step = {ammo="Honed Tathlum",head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
+	sets.precast.Step = {main="Oatixur",ammo="Honed Tathlum",head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Mel. Gloves +2",left_ring="Epona's Ring",
 		right_ring="Rajas Ring",back="Anchoret's Mantle",waist="Warwolf Belt",legs="Manibozho Brais",feet="Thur. Boots +1"}
 
@@ -34,8 +34,8 @@ function get_sets()
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Leggings",feet="Otronif Boots"}
 		
-	sets.TP.Delve = {main="Oatixur",ammo="Honed Tathlum",head="Uk'uxkaj Cap",neck="Asperity Necklace",
-		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Otronif Gloves",
+	sets.TP.Accuracy = {main="Oatixur",ammo="Honed Tathlum",head="Ejekamal Mask",neck="Asperity Necklace",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Mel. Gloves +2",
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Manibozho Brais",feet="Otronif Boots"}
 
@@ -94,11 +94,11 @@ function self_command(command)
 		sets.aftercast.Idle = sets.TP.DD
 		equip(sets.aftercast.TP)
 		send_command('@input /echo DD SET')
-	elseif command == 'Delve' then
-		sets.aftercast.TP = sets.TP.Delve
-		sets.aftercast.Idle = sets.TP.Delve
+	elseif command == 'Accuracy' then
+		sets.aftercast.TP = sets.TP.Accuracy
+		sets.aftercast.Idle = sets.TP.Accuracy
 		equip(sets.aftercast.TP)
-		send_command('@input /echo Delve SET')
+		send_command('@input /echo Accuracy SET')
 	elseif command == 'SOLO' then
 		sets.aftercast.TP = sets.TP.Solo
 		sets.aftercast.Idle = sets.TP.Solo
