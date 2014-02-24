@@ -7,6 +7,12 @@
 function get_sets()				
 	sets.precast = {}
 	
+	sets.precast['Collimated Fervor'] = {head="Bagua Galero"}
+	sets.precast.Bolster = {body="Bagua Tunic"}
+	sets.precast['Full Circle'] = {hands="Bagua Mitaines"}
+	sets.precast['Mending Halation'] = {legs="Bagua Pants"}
+	sets.precast['Radial Arcana'] = {feet="Bagua Sandals"}
+	
 	sets.precast.Idle = {main="Dowser's Wand",sub="Genbu's Shield",range="Filiae Bell",head="Geomancy Galero",
 		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Bagua Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
@@ -94,8 +100,9 @@ function precast(spell)
 		equip(sets.precast.Cure)
 	elseif spell.type=='WeaponSkill' then
 		equip(sets.TP.WS)
-	elseif spell.type=='JobAbility' then
+	--elseif spell.type=='JobAbility' then
 		--[[ R E L I C ]]--
+		--[[
 		if spell.english=="Collimated Fervor" then
 			equip({head="Bagua Galero"})
 			disable('head')
@@ -117,6 +124,7 @@ function precast(spell)
 			disable('feet')
 			send_command('@input /echo Relic feet on, feet disable')
 		end
+		]]
 	end
 end
 
@@ -150,21 +158,41 @@ function status_change(new,old)
 end
 
 function buff_change(status,gain_or_loss) --gain_or_loss = True if gained, False if lost
-	if status=='Collimated Fervor' and not gain_or_loss then
-		enable('head')
-		send_command('@input /echo Collimated Fervor off, head enabled')
-	elseif status=='Bolster' and not gain_or_loss then --if buff 'Bolster' and not false (not false = true) bolster lost
-		enable('body')
-		send_command('@input /echo Bolster off, body enabled')
-	elseif status=='Full Circle' and not gain_or_loss then
-		enable('hands')
-		send_command('@input /echo Full Circle off, hands enabled')
-	elseif status=='Mending Halation' and not gain_or_loss then
-		enable('legs')
-		send_command('@input /echo Full Circle off, hands enabled')
-	elseif status=='Radial Arcana' and not gain_or_loss then
-		enable('feet')
-		send_command('@input /echo Full Circle off, hands enabled')
+	if gain_or_loss then -- something was gained
+		if status=='Collimated Fervor' then
+			disable('head')
+			send_command('@input /echo Collimated Fervor ON, head disabled')
+		elseif status=='Bolster' then 
+			disable('body')
+			send_command('@input /echo Bolster ON, body disabled')
+		elseif status=='Full Circle' then
+			disable('hands')
+			send_command('@input /echo Full Circle ON, hands disabled')
+		elseif status=='Mending Halation' then
+			disable('legs')
+			send_command('@input /echo Full Circle ON, hands disabled')
+		elseif status=='Radial Arcana' then
+			disable('feet')
+			send_command('@input /echo Full Circle ON, hands disabled')
+		end
+	
+	elseif not gain_or_loss then -- something lost
+		if status=='Collimated Fervor' then
+			enable('head')
+			send_command('@input /echo Collimated Fervor off, head enabled')
+		elseif status=='Bolster' then 
+			enable('body')
+			send_command('@input /echo Bolster off, body enabled')
+		elseif status=='Full Circle' then
+			enable('hands')
+			send_command('@input /echo Full Circle off, hands enabled')
+		elseif status=='Mending Halation' then
+			enable('legs')
+			send_command('@input /echo Full Circle off, hands enabled')
+		elseif status=='Radial Arcana' then
+			enable('feet')
+			send_command('@input /echo Full Circle off, hands enabled')
+		end
 	end
 		
 end
