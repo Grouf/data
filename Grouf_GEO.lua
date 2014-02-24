@@ -157,39 +157,39 @@ function status_change(new,old)
 	end
 end
 
-function buff_change(status,gain_or_loss) --gain_or_loss = True if gained, False if lost
-	if gain_or_loss then -- something was gained
-		if status=='Collimated Fervor' then
+function buff_change(buff_name,gain) --gain = True if gained, False if lost
+	if gain then -- something was gained
+		if buff_name=='Collimated Fervor' then
 			disable('head')
 			send_command('@input /echo Collimated Fervor ON, head disabled')
-		elseif status=='Bolster' then 
+		elseif buff_name=='Bolster' then 
 			disable('body')
 			send_command('@input /echo Bolster ON, body disabled')
-		elseif status=='Full Circle' then
+		elseif buff_name=='Full Circle' then
 			disable('hands')
 			send_command('@input /echo Full Circle ON, hands disabled')
-		elseif status=='Mending Halation' then
+		elseif buff_name=='Mending Halation' then
 			disable('legs')
 			send_command('@input /echo Full Circle ON, hands disabled')
-		elseif status=='Radial Arcana' then
+		elseif buff_name=='Radial Arcana' then
 			disable('feet')
 			send_command('@input /echo Full Circle ON, hands disabled')
 		end
 	
-	elseif not gain_or_loss then -- something lost
-		if status=='Collimated Fervor' then
+	elseif not gain then -- something lost
+		if buff_name=='Collimated Fervor' then
 			enable('head')
 			send_command('@input /echo Collimated Fervor off, head enabled')
-		elseif status=='Bolster' then 
+		elseif buff_name=='Bolster' then 
 			enable('body')
 			send_command('@input /echo Bolster off, body enabled')
-		elseif status=='Full Circle' then
+		elseif buff_name=='Full Circle' then
 			enable('hands')
 			send_command('@input /echo Full Circle off, hands enabled')
-		elseif status=='Mending Halation' then
+		elseif buff_name=='Mending Halation' then
 			enable('legs')
 			send_command('@input /echo Full Circle off, hands enabled')
-		elseif status=='Radial Arcana' then
+		elseif buff_name=='Radial Arcana' then
 			enable('feet')
 			send_command('@input /echo Full Circle off, hands enabled')
 		end

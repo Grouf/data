@@ -81,5 +81,5 @@ function status_change(new,old)
 	end
 end
 
-function buff_change(status,gain_or_loss)
+function buff_change(buff_name,gain)
 end
