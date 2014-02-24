@@ -13,7 +13,7 @@ function get_sets()
 	sets.precast['Mending Halation'] = {legs="Bagua Pants"}
 	sets.precast['Radial Arcana'] = {feet="Bagua Sandals"}
 	
-	sets.precast.Idle = {main="Dowser's Wand",sub="Genbu's Shield",range="Filiae Bell",head="Geomancy Galero",
+	sets.precast.Idle = {main="Dowser's Wand",sub="Genbu's Shield",range="Filiae Bell",head="Bagua Galero",
 		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Bagua Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
 		waist="Aswang Sash",legs="Nares Trews",feet="Geomancy Sandals"}
@@ -50,7 +50,7 @@ function get_sets()
 		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
 		
-	sets.precast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
+	sets.precast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Omega Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
@@ -64,7 +64,7 @@ function get_sets()
 		
 	sets.TP.WS = {head="Hagondes Hat",
 		neck="Tlamiztli Collar",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Flame Ring",back="Buquwik Cape"
+		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Flame Ring",back="Buquwik Cape",
 		waist="Prosilio Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
 	
 
@@ -150,8 +150,8 @@ end
 function status_change(new,old)
 	if new == 'Idle' then
 		equip(sets.precast.Idle)
-	elseif new == 'Rest' then
-		equip(sets.precast.Resting)
+	elseif new == 'Resting' then
+		equip(sets.precast.Rest)
 	elseif new == 'Engaged' then
 		equip(sets.TP.Engage)
 	end
