@@ -21,7 +21,7 @@ function get_sets()
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Anchoret's Mantle",waist="Warwolf Belt",
 		legs="Manibozho Brais",feet="Thur. Boots +1"}
 
-	sets.precast.WS = {main="Oatixur",ammo="Thew Bomblet",head="Uk'uxkaj Cap",neck="Asperity Necklace",
+	sets.precast.WS = {main="Oatixur",ammo="Thew Bomblet",head="Uk'uxkaj Cap",neck="Tlamiztli Collar",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
 		left_ring="Spiral Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Otronif Boots"}
