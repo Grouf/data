@@ -16,25 +16,28 @@ function get_sets()
 	sets.precast.Camouflage = {body="Orion Jerkin"}
 	sets.precast.Shadowbind = {hands="Orion Bracers"}
 	
-	sets.precast.WS = {head="Orion Beret", neck="Ocachi Gorget", left_ear="Clearview Earring", right_ear="Volley Earring", 
-		body="Orion Jerkin", hands="Buremte Gloves", left_ring="Jalzahn's Ring", right_ring="Paqichikaji Ring", 
-		back="Lutian Cape", waist="Scout's Belt", legs="Thur. Tights +1", feet="Orion Socks"}
+	sets.precast.WS = {head="Orion Beret",neck="Ocachi Gorget",left_ear="Clearview Earring",
+		right_ear="Volley Earring",body="Orion Jerkin",hands="Buremte Gloves",left_ring="Jalzahn's Ring",
+		right_ring="Paqichikaji Ring",back="Lutian Cape",waist="Scout's Belt",
+		legs="Thur. Tights +1",feet="Orion Socks"}
 	
 	--sets.precast.Jishnu = set_combine(sets.precast.WS,{waist="Light Belt"})
 	sets.precast['Jishnu\'s Radiance'] = set_combine(sets.precast.WS,{waist="Light Belt"})
 	
-	sets.precast.WSMelee = {head="Uk'uxkaj Cap", neck="Light Gorget", left_ear="Steelflash Earring", right_ear="Bladeborn Earring", 
-		body="Manibozho Jerkin", hands="Iuitl Wristbands", left_ring="Spiral Ring", right_ring="Rajas Ring", 
-		back="Buquwik Cape", waist="Prosilio Belt", legs="Manibozho Brais", feet="Iuitl Gaiters"}
+	sets.precast.WSMelee = {head="Uk'uxkaj Cap",neck="Light Gorget",left_ear="Steelflash Earring",
+		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Iuitl Wristbands",left_ring="Spiral Ring",
+		right_ring="Rajas Ring",back="Buquwik Cape",waist="Prosilio Belt",
+		legs="Manibozho Brais",feet="Iuitl Gaiters"}
 	
 	sets.precast.Utsusemi = set_combine(sets.precast.WS,{neck="Magoraga Beads",left_ear='Loquac. Earring',
 		left_ring="Prolix Ring",waist="Phasmida Belt",legs="Orion Braccae",feet="Thur. Boots +1"})
 		--Gear Haste: 30%, Fast Cast: 4%
 	
 	sets.TP = {}
-	sets.TP.Ranged = {head="Orion Beret", neck="Ocachi Gorget", left_ear="Clearview Earring", right_ear="Volley Earring", 
-		body="Orion Jerkin", hands="Buremte Gloves", left_ring="Rajas Ring", right_ring="Paqichikaji Ring", 
-		back="Lutian Cape", waist="Scout's Belt", legs="Thur. Tights +1", feet="Orion Socks"}
+	sets.TP.Ranged = {head="Orion Beret",neck="Ocachi Gorget",left_ear="Clearview Earring",
+		right_ear="Volley Earring",body="Orion Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
+		right_ring="Paqichikaji Ring",back="Lutian Cape",waist="Scout's Belt",
+		legs="Thur. Tights +1",feet="Orion Socks"}
 	
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.Ranged
