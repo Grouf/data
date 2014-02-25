@@ -159,21 +159,19 @@ end
 
 function buff_change(buff_name,gain) --gain = True if gained, False if lost
 	if gain then -- something was gained
+		equip(sets.precast[buff_name])
 		if buff_name=='Collimated Fervor' then
 			disable('head')
 			send_command('@input /echo Collimated Fervor ON, head disabled')
 		elseif buff_name=='Bolster' then 
 			disable('body')
 			send_command('@input /echo Bolster ON, body disabled')
-		elseif buff_name=='Full Circle' then
-			disable('hands')
-			send_command('@input /echo Full Circle ON, hands disabled')
 		elseif buff_name=='Mending Halation' then
 			disable('legs')
-			send_command('@input /echo Full Circle ON, hands disabled')
+			send_command('@input /echo Mending Halation ON, hands disabled')
 		elseif buff_name=='Radial Arcana' then
 			disable('feet')
-			send_command('@input /echo Full Circle ON, hands disabled')
+			send_command('@input /echo Radial Arcana ON, hands disabled')
 		end
 	
 	elseif not gain then -- something lost
@@ -183,15 +181,12 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 		elseif buff_name=='Bolster' then 
 			enable('body')
 			send_command('@input /echo Bolster off, body enabled')
-		elseif buff_name=='Full Circle' then
-			enable('hands')
-			send_command('@input /echo Full Circle off, hands enabled')
 		elseif buff_name=='Mending Halation' then
 			enable('legs')
-			send_command('@input /echo Full Circle off, hands enabled')
+			send_command('@input /echo Mending Halation off, hands enabled')
 		elseif buff_name=='Radial Arcana' then
 			enable('feet')
-			send_command('@input /echo Full Circle off, hands enabled')
+			send_command('@input /echo Radial Arcana off, hands enabled')
 		end
 	end
 		
