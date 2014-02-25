@@ -15,10 +15,21 @@
 -- if spell.type == 'BlueMagic' then
 
 
-function get_sets()				
+function get_sets()
+	
+	BlueMagicSpells = {}
+	BlueMagicSpells.STR = {'Vertical Cleave','Death Scissors','Empty Thrash','Dimensional Death','Quadrastrike',
+		'Bloodrake'}
+	
+	BlueMagicSpells.STRDEX = {'Disseverment','Hysteric Barrage','Frenetic Rip','Seedspray','Vanity Dive',
+		'Goblin Rush','Paralyzing Triad'
+	
 	sets.precast = {}
 	
+	--Job Ability--
 	sets.precast.Efflux = {legs="Mavi Tyat +2}
+	sets.precast['Chain Affinity'] = {head="Mavi Kavuk +2"}
+	sets.precast['Burst Affinity'] = {feet="Mavi Basmak +2"}
 	
 	sets.precast.Idle = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Assim. Jubbah",hands="Serpentes Cuffs",left_ring="Epona's Ring",
@@ -26,8 +37,6 @@ function get_sets()
 		legs="Crimson Cuisses",feet="Serpentes Sabots" }
 	
 	sets.precast.Rest = sets.precast.Idle
-	
-	
 	
 	sets.precast.WS = {head="Uk'uxkaj Cap",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Iuitl Wristbands",left_ring="Rajas Ring",
@@ -83,6 +92,15 @@ function get_sets()
 		right_ring="Spiral ring",back="Cornflower Cape",waist="Prosilio Belt",
 		legs="Iuitl Tights",feet="Iuitl Gaiters"}
 		
+	sets.precast.STRMND = { }
+	
+	sets.precast.AGI = { }
+	
+	sets.precast.INT = {head="Hagondes Hat",neck="Stoicheion Medal",left_ear="Hecate's Earring",
+		right_ear="Friomisi Earring",body="Hagondes Coat",hands="Mv. Bazubands +2",left_ring="Spiral Ring",
+		right_ring="Icesoul Ring",back="Cornflower Cape",waist="Phasmida Belt",
+		legs="Hagondes Pants",feet="Hagondes Sabots"}	
+
 	sets.precast.MNDCures = {head="Uk'uxkaj Cap",neck="Mavi Scarf",left_ear="Loquac. Earring",
 		right_ear="Lifestorm Earring",body="Hagondes Coat",hands="Weather. Cuffs",left_ring="Sirona's Ring",
 		right_ring="Solemn Ring",back="Pahtli Cape",waist="Witful Belt",
@@ -98,10 +116,7 @@ function get_sets()
 		right_ring="Solemn Ring",back="Cornflower Cape",waist="Aswang Sash",
 		legs="Iuitl Tights",feet="Iuitl Gaiters"}
 		
-	sets.precast.INT = {head="Hagondes Hat",neck="Stoicheion Medal",left_ear="Hecate's Earring",
-		right_ear="Friomisi Earring",body="Hagondes Coat",hands="Mv. Bazubands +2",left_ring="Spiral Ring",
-		right_ring="Icesoul Ring",back="Cornflower Cape",waist="Phasmida Belt",
-		legs="Hagondes Pants",feet="Hagondes Sabots"}
+
 		
 	--[[Specific spells]]
 	
@@ -186,7 +201,7 @@ function get_sets()
 		back="Swith cape",waist="Witful belt",
 		legs="Orvail Pants +1",feet="Iuitl Gaiters"}
 	
-	sets.precast.BlueMagicFastCast = {head="Uk'uxkaj Cap",left_ear="Loquacious earring",
+	sets.precast.BlueMagicFastCast = {head="Uk'uxkaj Cap",neck="Mavi scarf",left_ear="Loquacious earring",
 		body="Mavi Mintan +2",hands="Mv. Bazubands +2",left_ring="Prolix Ring",
 		back="Swith cape",waist="Witful belt",
 		legs="Orvail Pants +1",feet="Iuitl Gaiters"}
@@ -215,6 +230,71 @@ function get_sets()
 end
 
 function precast(spell)
+	if spell.english == 'Vertical Cleave' or spell.english == 'Death Scissors' or spell.english == 'Empty Thrash' or
+		spell.english == 'Dimensional Death' or spell.english == 'Quadrastrike' or spell.english == 'Bloodrake' or  then
+		equip(sets.BlueMagic.STR)
+	end
+		
+	if spell.english == 'Disseverment' or spell.english == 'Hysteric Barrage' or spell.english == 'Frenetic Rip' or 
+		spell.english == 'Seedspray' or spell.english == 'Vanity Dive' or spell.english == 'Goblin Rush' or 
+		spell.english == 'Paralyzing Triad' then
+		equip(sets.BlueMagic.STRDEX)
+	end
+	
+	if spell.english == 'Quad. Continuum' or spell.english == 'Delta Thrust' or spell.english == 'Cannonball' or 
+		spell.english == 'Glutinous Dart' then
+		equip(sets.BlueMagic.STRVIT)
+	end
+	
+	if spell.english == 'Whirl of Rage' then
+		equip(sets.BlueMagic.STRMND)
+	end
+	
+	if spell.english == 'Benthic Typhoon' or spell.english == 'Final Sting' or spell.english == 'Spiral Spin' then
+		equip(sets.BlueMagic.AGI)
+	end
+	
+	if spell.english == 'Gates of Hades' or spell.english == 'Leafstorm' or spell.english == 'Firespit' or 
+		spell.english == 'Acrid Stream' or spell.english == 'Regurgitation' or spell.english == 'Corrosive Ooze' or 
+		spell.english == 'Thermal Pulse' or spell.english == 'Magic Hammer' or spell.english == 'Evryone. Grudge' or 
+		spell.english == 'Water Bomb' or spell.english == 'Dark Orb' or spell.english == 'Thunderbolt' or 
+		spell.english == 'Tem. Upheaval' or spell.english == 'Embalming Earth' or spell.english == 'Foul Waters' or 
+		spell.english == 'Rending Deluge' or spell.english == 'Droning Whirlwind' then
+		equip(sets.BlueMagic.INT)
+	end
+	
+	if spell.english == 'Magic Fruit' or spell.english == 'Plenilune Embrace' or spell.english == 'Wild Carrot' or 
+		spell.english == 'Pollen' then
+		equip(sets.BlueMagic.Cures)
+	end
+	
+	if spell.english == 'Head Butt' or spell.english == 'Sudden Lunge' or spell.english == 'Blitzstrahl' then
+		equip(sets.BlueMagic.Stun)
+	end
+	
+	if spell.english == 'Heavy Strike' then
+		equip(sets.BlueMagic.HeavyStrike)
+	end
+	
+	if spell.english == 'Charged Whisker' then
+		equip(sets.BlueMagic.ChargedWhisker)
+	end
+	
+	if spell.english == 'Frightful Roar' or spell.english == 'Infrasonics' or spell.english == 'Barbed Crescent' or 
+		spell.english == 'Tourbillion' or spell.english == 'Cimicine Discharge' or spell.english == 'Sub-zero smash' or 
+		spell.english == 'Filamented Hold' or spell.english == 'Mind Blast' or spell.english == 'Sandspin' or 
+		spell.english == 'Hecatomb Wave' or spell.english == 'Cold Wave' then
+		equip(sets.BlueMagic.MagicAccuracy)
+	end
+	
+	if spell.english == 'MP Drainkiss' or spell.english == 'Digest' or spell.english == 'Blood Saber' or 
+		spell.english == 'Blood Drain' or spell.english == 'Osmosis' or spell.english == 'Occultation' or 
+		spell.english == 'Magic Barrier' or spell.english == 'Diamondhide' or spell.english == 'Metallic Body' or 
+		spell.english == 'Retinal Glare' then
+		equip(sets.BlueMagic.SkillRecast)
+
+
+	--[[
 	if sets.precast[spell.english] then
 		equip(sets.precast[spell.english])
 	elseif spell.skill == 'BlueMage' then
@@ -242,14 +322,15 @@ function precast(spell)
 	elseif spell.type=='WeaponSkill' then
 		equip(sets.TP.WS)
 	end
+	]]
 end
 
 --[[Relic augments:
-Head: Luhlaza Keffiyeh: aug
-Body: Luhlaza Jubbah: aug
-Hands: Luhlaza Bazubands: aug
-Legs: Luhlaza Shalwar: aug
-Feet: Luhlaza Charuqs: aug
+Head: Luhlaza Keffiyeh: Convergence
+Body: Luhlaza Jubbah: Enchainment
+Hands: Luhlaza Bazubands: Azure Lore
+Legs: Luhlaza Shalwar: Assimilation
+Feet: Luhlaza Charuqs: Diffusion
 ]]
 
 function midcast(spell)
@@ -273,41 +354,34 @@ function status_change(new,old)
 	end
 end
 
+	sets.precast.Efflux = {legs="Mavi Tyat +2}
+	sets.precast['Chain Affinity'] = {head="Mavi Kavuk +2"}
+	sets.precast['Burst Affinity'] = {feet="Mavi Basmak +2"}
+
 function buff_change(buff_name,gain) --gain = True if gained, False if lost
 	if gain then -- something was gained
-		if buff_name=='Collimated Fervor' then
-			disable('head')
-			send_command('@input /echo Collimated Fervor ON, head disabled')
-		elseif buff_name=='Bolster' then 
-			disable('body')
-			send_command('@input /echo Bolster ON, body disabled')
-		elseif buff_name=='Full Circle' then
-			disable('hands')
-			send_command('@input /echo Full Circle ON, hands disabled')
-		elseif buff_name=='Mending Halation' then
+		equip(sets.precast[buff_name]) --here to make sure appropriate equipment is equipped before disable
+		if buff_name=='Efflux' then
 			disable('legs')
-			send_command('@input /echo Full Circle ON, hands disabled')
-		elseif buff_name=='Radial Arcana' then
+			send_command('@input /echo Efflux ON, legs disabled')
+		elseif buff_name=='Chain Affinity' then 
+			disable('head')
+			send_command('@input /echo Chain Affinity ON, head disabled')
+		elseif buff_name=='Burst Affinity' then
 			disable('feet')
-			send_command('@input /echo Full Circle ON, hands disabled')
+			send_command('@input /echo Burst Affinity ON, feet disabled')
 		end
 	
 	elseif not gain then -- something lost
-		if buff_name=='Collimated Fervor' then
-			enable('head')
-			send_command('@input /echo Collimated Fervor off, head enabled')
-		elseif buff_name=='Bolster' then 
-			enable('body')
-			send_command('@input /echo Bolster off, body enabled')
-		elseif buff_name=='Full Circle' then
-			enable('hands')
-			send_command('@input /echo Full Circle off, hands enabled')
-		elseif buff_name=='Mending Halation' then
+		if buff_name=='Efflux' then
 			enable('legs')
-			send_command('@input /echo Full Circle off, hands enabled')
-		elseif buff_name=='Radial Arcana' then
+			send_command('@input /echo Efflux off, legs enabled')
+		elseif buff_name=='Chain Affinity' then 
+			enable('head')
+			send_command('@input /echo Chain Affinity off, head enabled')
+		elseif buff_name=='Burst Affinity' then
 			enable('feet')
-			send_command('@input /echo Full Circle off, hands enabled')
+			send_command('@input /echo Burst Affinity off, feet enabled')
 		end
 	end
 		
