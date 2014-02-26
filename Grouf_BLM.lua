@@ -80,6 +80,9 @@ function precast(spell)
 		end
 	elseif spell.skill == 'DarkMagic' then
 		equip(sets.precast.DarkMagic)
+		if string.find(spell.english, 'Aspir') or spell.english == 'Drain' then
+			equip({head="Striga Crown",right_ear="Hirudinea Earring"})
+		end
 	elseif spell.skill == 'EnfeeblingMagic' then
 		equip(sets.precast.Enfeeble)
 	elseif spell.skill == 'HealingMagic' then
