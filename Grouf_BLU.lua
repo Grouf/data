@@ -56,7 +56,7 @@ function get_sets()
 		
 		--Cures
 		['Pollen']='Cure',['Healing Breeze']='Cure',['Wild Carrot']='Cure',['Magic Fruit']='Cure',
-		['Plenilune Embrace']='Cure',['White Wind']='Cure'
+		['Plenilune Embrace']='Cure',['White Wind']='Cure',
 		
 		--Stun
 		['Head Butt']='Stun',['Sudden Lunge']='Stun',['Tail Slap']='Stun',['Frypan']='Stun', --Physical
@@ -99,7 +99,7 @@ function get_sets()
 	sets.precast = {}
 	
 	--Job Ability--
-	sets.precast.Efflux = {legs="Mavi Tyat +2}
+	sets.precast.Efflux = {legs="Mavi Tyat +2"}
 	sets.precast['Chain Affinity'] = {head="Mavi Kavuk +2"}
 	sets.precast['Burst Affinity'] = {feet="Mavi Basmak +2"}
 	
@@ -140,12 +140,12 @@ function get_sets()
 	sets.precast['Flash Nova'] = set_combine(sets.precast.WS,{neck="Tjukurrpa Medal",left_ear="Friomisi Earring",
 		body="Hagondes Coat",hands="Buremte Gloves",left_ring="Flame Ring",right_ring="Spiral Ring",
 		--[[right_ring="Aquasoul Ring",]]waist="Caudata Belt",
-		legs="Manibozho brais",feet="Manibozho Boots"}  --[[30% STR/MND with INT for stat]]
+		legs="Manibozho brais",feet="Manibozho Boots"})  --[[30% STR/MND with INT for stat]]
 	
 	sets.precast['True Strike'] = set_combine(sets.precast.WS,{head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",
 		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",
 		hands="Iuitl Wristbands",right_ring="Spiral ring",left_ring="Rajas ring",back="Atheling mantle",
-		waist="Caudata Belt",legs="Quiahuiz Leggings",feet="Manibozho Boots"}
+		waist="Caudata Belt",legs="Quiahuiz Leggings",feet="Manibozho Boots"})
 		
 	--[[Stat sets]]
 	
@@ -314,7 +314,7 @@ function get_sets()
 		
 	sets.TP.SOLO = set_combine(sets.TP.DA,{body="Iuitl Vest"})
 	
-	sets.TP.Learning set_combine(sets.TP.DA,{body="Assim. Jubbah",hands="Magus Bazubands",legs="Mavi Tayt +2"})
+	sets.TP.Learning = set_combine(sets.TP.DA,{body="Assim. Jubbah",hands="Magus Bazubands",legs="Mavi Tayt +2"})
 	
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DA
@@ -398,7 +398,7 @@ function precast(spell)
 		else
 			send_command('@input /echo ~~!! No Set found for ' ..spell.english.. ' !!~~')
 		end
-	elseif --[[other magic types here]] then
+	--elseif --[[other magic types here]] then
 		
 	elseif string.find(spell.english,'Step') or string.find(spell.english,'Violent Flourish') then
 		equip(sets.precast.Step)
@@ -653,7 +653,7 @@ end
 		</elseif>
 </if>
 
---[[ Weaponskill Rules ]]
+-- Weaponskill Rules 
 <if type="WeaponSkill">
 		<if spell="Chant du Cygne">
 			<action type="equip" when="precast" set="Chant du Cygne" />
@@ -696,8 +696,8 @@ end
 		</elseif>
 </if>
 
---[[ Buff Rules ]]
-	--[[Job Ability ]]
+-- Buff Rules 
+	--Job Ability 
 		<if spell="Efflux">
 			<equip when="precast|aftercast">
 				legs="Mavi Tayt +2",
@@ -743,9 +743,9 @@ end
 			<action type=aftercastdelay delay=".5" />
 			<action type="equip" when="precast" set="Fast Cast" />
 			<action type="equip" when="midcast" set="Max Haste" />
-			--[[<action type="equip" when="midcast">
-				back="Repulse Mantle",
-			</action>]]
+			--<action type="equip" when="midcast">
+			--	back="Repulse Mantle",
+			--</action>
 		</elseif>
 
 		<elseif spell="*Spikes">
