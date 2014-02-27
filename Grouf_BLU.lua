@@ -393,8 +393,12 @@ function precast(spell)
 	]]
 	
 	if spell.type == 'BlueMagic' then --don't need because I'm only listing BLU spells in the BMS structure..?
+		send_command('@input /echo precast: Found BlueMagic' )
+		send_command('@input /echo precast BMS: '..BlueMageSpell[spell.english])--sets.precast[BlueMageSpell[spell.english]])
 		if sets.precast[BlueMageSpell[spell.english]] then
 			equip(sets.precast[BlueMageSpell[spell.english]])
+			--send_command('@input /echo preSET: ' ..sets.precast[BlueMageSpell[spell.english]].. ' for ' ..spell.english.. '.')
+			send_command('@input /echo PREset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
 		else
 			send_command('@input /echo ~~!! No Set found for ' ..spell.english.. ' !!~~')
 		end
@@ -446,6 +450,8 @@ Feet: Luhlaza Charuqs: Diffusion
 function midcast(spell)
 	if spell.type == 'BlueMagic' then
 		equip(sets.midcast[BlueMageSpell[spell.english]])
+		--send_command('@input /echo midSET: ' ..sets.precast[BlueMageSpell[spell.english]].. ' for ' ..spell.english.. '.')
+		send_command('@input /echo MIDset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
 	end
 	
 	if spell.element == 'Earth' and spell.target == 'Enemy' then
