@@ -23,7 +23,7 @@ function get_sets()
 
 	sets.precast.WS = {main="Oatixur",ammo="Thew Bomblet",head="Uk'uxkaj Cap",neck="Tlamiztli Collar",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
-		left_ring="Spiral Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Prosilio Belt",
+		left_ring="Spiral Ring",right_ring="Rajas Ring",back="Vassal's Mantle",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Otronif Boots"}
 		
 	sets.precast['Victory Smite'] = set_combine(sets.precast.WS,{neck="Light Gorget"})
