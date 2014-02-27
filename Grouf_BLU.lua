@@ -145,7 +145,7 @@ function get_sets()
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Prosilio Belt",
 		legs="Iuitl Tights",feet="Iuitl Gaiters"}
 	
-	sets.precast.STR = set_combine(sets.precast.BaseSet,{head="Ejekamal Mask",back="Buquwik Cape"} --Done
+	sets.precast.STR = set_combine(sets.precast.BaseSet,{head="Ejekamal Mask",back="Buquwik Cape"}) --Done
 		
 	sets.precast.STRDEX = set_combine(sets.precast.WS,{legs="Manibozho Brais"}) --Done
 		
@@ -308,8 +308,7 @@ function status_change(new,old)
 		equip(sets.aftercast.TP)
 	end
 end
-	sets.precast['Chain Affinity'] = {head="Mavi Kavuk +2",feet="Assim. Charuqs"}
-	sets.precast['Burst Affinity'] = {legs="Assim. Shalwar",feet="Mavi Basmak +2"}
+
 function buff_change(buff_name,gain) --gain = True if gained, False if lost
 	if gain then -- something was gained
 		equip(sets.precast[buff_name]) --here to make sure appropriate equipment is equipped before disable
