@@ -81,7 +81,7 @@ function get_sets()
 		['Regeneration']='FastCast',['Animating Wail']='FastCast',['Battery Charge']='FastCast',['Winds of Promy.']='FastCast',
 		['Feather Barrier']='FastCast',['Memento mori']='FastCast',['Saline Coat']='FastCast',['Warm-Up']='FastCast',
 		['Amplification']='FastCast',['Exuviation']='FastCast',['Fantod']='FastCast',['Plasma Charge']='FastCast',
-		['Reactor Cool']='FastCast',['Barrier Tusk']='FastCast',['Nature\'s Meditation']='FastCast',
+		['Reactor Cool']='FastCast',['Barrier Tusk']='FastCast',['Nat. Meditation']='FastCast',
 		['Orcish Counterstance']='FastCast',['Pyric Bulwark']='FastCast',['Retinal Glare']='FastCast'
 		
 	}
