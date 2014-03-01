@@ -100,10 +100,10 @@ function get_sets()
 	
 	sets.precast.Rest = sets.precast.Idle
 	
-	sets.precast.WS = {head="Uk'uxkaj Cap",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
+	sets.precast.WS = {head="Ejekamal Mask",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Spiral Ring",back="Vassal's Mantle",waist="Prosilio Belt",
-		legs="Manibozho brais",feet="Iuitl Gaiters" } --Done
+		legs="Manibozho brais",feet="Assim. Charuqs" } --Done
 		
 	--[[Sword Weapon Skills]]
 	sets.precast['Chant du Cygne'] = set_combine(sets.precast.WS,{neck="Light Gorget"})
@@ -205,9 +205,14 @@ function get_sets()
 	
 	sets.TP = {}
 	sets.TP.DA = {head="Iuitl Headgear",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Thaumas coat",hands="Iuitl Wristbands",left_ring="Rajas Ring",
+		right_ear="Bladeborn Earring",body="Thaumas coat",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Atheling Mantle",waist="Windbuffet Belt",
-		legs="Iuitl Tights",feet="Iuitl Gaiters" }
+		legs="Quiahuiz Leggings",feet="Iuitl Gaiters" }
+		
+	sets.TP.Acc = {head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
+		right_ear="Bladeborn Earring",body="Thaumas coat",hands="Buremte Gloves",left_ring="Rajas Ring",
+		right_ring="Epona's Ring",back="Atheling Mantle",waist="Windbuffet Belt",
+		legs="Quiahuiz Leggings",feet="Assim. Charuqs" }
 		
 	sets.TP.SOLO = set_combine(sets.TP.DA,{body="Iuitl Vest"})
 	
@@ -244,32 +249,6 @@ function precast(spell)
 		equip(sets.TP.WS)
 	end
 
-	--[[copy from GEO
-	if sets.precast[spell.english] then
-		equip(sets.precast[spell.english])
-	elseif spell.skill == 'BlueMage' then
-		equip(sets.precast.BlueMagic)
-	elseif spell.skill == 'EnhancingMagic' then
-		if spell.english == 'Stoneskin' or spell.english == 'Blink' or 
-		spell.english == 'Aquaveil' or spell.english == 'Phalanx' then
-			equip(sets.precast.Enhancing)
-		else
-			equip(sets.precast.FastCast)
-			send_command('@input /echo FastCast set on')
-		end
-	elseif spell.skill == 'ElementalMagic' then
-		equip(sets.precast.ElementalMagic)
-
-	elseif spell.skill == 'DarkMagic' then
-		equip(sets.precast.DarkMagic)
-	elseif spell.skill == 'EnfeeblingMagic' then
-		equip(sets.precast.Enfeeble)
-	elseif spell.skill == 'HealingMagic' then
-		equip(sets.precast.Cure)
-	elseif spell.type=='WeaponSkill' then
-		equip(sets.TP.WS)
-	end
-	]]
 end
 
 --[[Relic augments:
@@ -357,11 +336,31 @@ function self_command(command)
 		equip(sets.aftercast.TP)
 		send_command('@input /echo SOLO SET')
 		
+	elseif command == 'Acc' then
+		sets.aftercast.TP = sets.TP.Acc
+		--sets.aftercast.Idle = sets.TP.Learn
+		equip(sets.aftercast.TP)
+		send_command('@input /echo SOLO SET')
+		
 	elseif command == 'LEARNING' then
 		sets.aftercast.TP = sets.TP.Learning
 		--sets.aftercast.Idle = sets.TP.Learn
 		equip(sets.aftercast.TP)
 		send_command('@input /echo SOLO SET')
+		
+	elseif command == 'LearnHandsOn' then
+		--sets.aftercast.TP = sets.TP.Learning
+		--sets.aftercast.Idle = sets.TP.Learn
+		equip({hands="Assim. Bazu."})
+		send_command('@wait 0.5; gs disable hands;')
+		--disable('hands')
+		send_command('@input /echo Learning Hands Locked')
+	elseif command == 'LearnHandsOff' then
+		--sets.aftercast.TP = sets.TP.Learning
+		--sets.aftercast.Idle = sets.TP.Learn
+		--equip({hands="Assim. Bazu."})
+		enable('hands')
+		send_command('@input /echo Learning Hands Unlocked')
 	--[[
 	elseif command == 'DT' then
 		sets.aftercast.TP = sets.DT
