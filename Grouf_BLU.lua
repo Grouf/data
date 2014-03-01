@@ -10,7 +10,7 @@ function get_sets()
         --STR
 		['Vertical Cleave']='STR',['Death Scissors']='STR',['Empty Thrash']='STR', ['Dimensional Death']='STR',
 		['Quadrastrike']='STR',['Bloodrake']='Physical',['Power Attack']='STR',['Smite of Rage']='STR',
-		['Heavy Strike']='Physical',--Accuracy Penalty
+		['Heavy Strike']='STR',--Accuracy Penalty
 		['Terror Touch']='STR',['Sickle Slash']='STR',['Uppercut']='STR',['Mandibular Bite']='STR',
 		['Spinal Cleave']='STR',['Asuran Claws']='STR',['Body Slam']='STR',['Battle Dance']='STR',['Bludgeon']='STR',
 		['Screwdriver']='STR',
@@ -223,11 +223,11 @@ end
 function precast(spell)
 	
 	if spell.type == 'BlueMagic' then
-		send_command('@input /echo precast: Found BlueMagic' )
-		send_command('@input /echo precast BMS: '..BlueMageSpell[spell.english])
+		--send_command('@input /echo precast: Found BlueMagic' )
+		--send_command('@input /echo precast BMS: '..BlueMageSpell[spell.english])
 		if sets.precast[BlueMageSpell[spell.english]] then
 			equip(sets.precast[BlueMageSpell[spell.english]])
-			send_command('@input /echo PREset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
+			--send_command('@input /echo PREset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
 		else
 			send_command('@input /echo ~~!! No Set found for ' ..spell.english.. ' !!~~')
 		end
@@ -283,7 +283,7 @@ Feet: Luhlaza Charuqs: Diffusion
 function midcast(spell)
 	if spell.type == 'BlueMagic' then
 		equip(sets.midcast[BlueMageSpell[spell.english]])
-		send_command('@input /echo MIDset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
+		--send_command('@input /echo MIDset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
 	end
 	
 	if spell.element == 'Earth' and spell.target == 'Enemy' then
