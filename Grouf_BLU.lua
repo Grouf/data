@@ -135,7 +135,7 @@ function get_sets()
 	
 	sets.precast['True Strike'] = set_combine(sets.precast.WS,{neck="Tjukurrpa Medal",
 		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",
-		hands="Iuitl Wristbands",left_ring="Rajas ring",right_ring="Spiral ring",back="Atheling mantle",
+		hands="Buremte Gloves",left_ring="Rajas ring",right_ring="Spiral ring",back="Atheling mantle",
 		waist="Caudata Belt",legs="Quiahuiz Leggings",feet="Manibozho Boots"})
 		
 	--[[Stat sets]]
@@ -194,7 +194,7 @@ function get_sets()
 	sets.precast.BlueMagic = {head="Ejekamal Mask",neck="Mavi scarf",left_ear="Loquacious earring",
 		body="Mavi Mintan +2",hands="Symbios Gloves",left_ring="Prolix Ring",
 		back="Swith cape",waist="Witful belt",
-		legs="Assim. Shalwar",feet="Iuitl Gaiters"} --some blue magic, all fast cast
+		legs="Kaabnax Trousers",feet="Iuitl Gaiters"} --some blue magic, all fast cast
 													--25% Haste, Blue Magic Casting -12%, FastCast: 10%
 		
 	sets.midcast = {}
@@ -372,15 +372,19 @@ function self_command(command)
 end
 
 --[[ Gear collection
-Slip#		Items
-=====		=======================================
+Slip#		Head	Body	Hands	Legs	Feet	Accessory
+=====		====================================================
+ 2									Crimson			Loq.Earring
 
 
- 6			Head
-
-10			
+ 6			Yes		NO		NO		NO		NO
  
-15			All but hands, hands for learning
+ 8													Scarf
+10			Yes		Yes		Yes		Yes		NO
+ 
+15			Yes		Yes		Learn	NO		Yes
 
+Iuitl		DA		Yes		NO		Yes		Yes
+Hagondes	Yes		Yes		Yes		Yes		Yes
 
 ]]
