@@ -48,7 +48,7 @@ function get_sets()
 	
 	sets.DT = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Twilight Torque",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",
-		left_ring="Dark Ring",right_ring="Shadow Ring",back="Shadow Mantle",waist="Black Belt",
+		left_ring="Dark Ring",right_ring="Shadow Ring",back="Archon Cape",waist="Black Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots"}
 
 	sets.aftercast = {}
