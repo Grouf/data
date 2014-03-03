@@ -9,8 +9,8 @@ function get_sets()
 	
 	sets.precast.Idle = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Hagondes Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Strendu ring",back="Toro Cape",
-		waist="Aswang Sash",legs="Nares Trews",feet="Spaekona's Sabots"}
+		hands="Serpentes Cuffs",left_ring="Icesoul Ring",right_ring="Strendu ring",back="Toro Cape",
+		waist="Aswang Sash",legs="Nares Trews",feet="Serpentes Sabots"}
 	
 	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff",sub="Elder's Grip"})
 	
@@ -71,7 +71,7 @@ function precast(spell)
 			equip(sets.precast.Enhancing)
 		else
 			equip(sets.precast.FastCast)
-			send_command('@input /echo FastCast set on')
+			--send_command('@input /echo FastCast set on')
 		end
 	elseif spell.skill == 'ElementalMagic' then
 		equip(sets.precast.ElementalMagic)
