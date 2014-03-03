@@ -16,20 +16,13 @@ function get_sets()
 	sets.precast.Collaborator = {head="Raider's Bonnet +2"}
 	--sets.precast['Perfect Dodge'] = {hands="Assassin's Armlets +2"}
 
-	sets.precast.Idle = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Iuitl Wristbands",left_ring="Epona's Ring",
-		right_ring="Rajas Ring",back="Canny Cape",waist="Windbuffet Belt",
-		legs="Kaabnax Trousers",feet="Iuitl Gaiters"}
-	
-	sets.precast.Rest = sets.precast.Idle
-	
-	sets.precast.Ranged = {head="Pillager's Bonnet",neck="Arctier's Torque",left_ear="Clearview earring",
+	sets.precast.Ranged = {head="Pillager's Bonnet",neck="Huani Collar",left_ear="Clearview earring",
 		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Iuitl Wristbands",left_ring="Paqichikaji Ring",
 		right_ring="Jalzahn's Ring",back="Libeccio Mantle",waist="Buccaneer's Belt",
 		legs="Thur. Tights +1",feet="Pillager's Poulaines"}
 	
 	sets.precast.Evisceration = {head="Uk'uxkaj Cap",neck="Shadow Gorget",left_ear="Dudgeon Earring",
-		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Iuitl Wristbands",ring1="Rajas Ring",
+		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Iuitl Wristbands",left_ring="Rajas Ring",
 		right_ring="Spiral Ring",back="Buquwik Cape",waist="Light Belt",
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
 	
@@ -39,7 +32,7 @@ function get_sets()
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
 	
 	sets.precast.Exenterator = {head="Uk'uxkaj Cap",neck="Light Gorget",left_ear="Dudgeon Earring",
-		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Asn. Armlets +2",ring1="Rajas Ring",
+		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Asn. Armlets +2",left_ring="Rajas Ring",
 		right_ring="Spiral Ring",back="Buquwik Cape",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
 	
@@ -49,24 +42,29 @@ function get_sets()
 		legs="Iuitl Tights",feet="Iuitl Gaiters"}
 	
 	sets.precast.Step = {head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Asn. Armlets +2",left_ring="Epona's Ring",
-		right_ring="Rajas Ring",back="Canny Cape",waist="Phasmida Belt",
+		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Asn. Armlets +2",left_ring="Rajas Ring",
+		right_ring="Epona's Ring",back="Canny Cape",waist="Phasmida Belt",
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
 	
+		sets.precast.Idle = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
+		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Iuitl Wristbands",left_ring="Rajas Ring",
+		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
+		legs="Kaabnax Trousers",feet="Fajin Boots"}
+		
 	sets.TP = {}
 	sets.TP.DD = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Iuitl Wristbands",left_ring="Epona's Ring",
-		right_ring="Rajas Ring",back="Canny Cape",waist="Windbuffet Belt",
+		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Iuitl Wristbands",left_ring="Rajas Ring",
+		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Quiahuiz Leggings",feet="Iuitl Gaiters"}
 
 	sets.TP.Solo = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Iuitl Wristbands",left_ring="Epona's Ring",
-		right_ring="Rajas Ring",back="Canny Cape",waist="Windbuffet Belt",
+		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Iuitl Wristbands",left_ring="Rajas Ring",
+		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Quiahuiz Leggings",feet="Iuitl Gaiters"}
 	
 	sets.TP.TH = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Asn. Armlets +2",left_ring="Epona's Ring",
-		right_ring="Rajas Ring",back="Canny Cape",waist="Windbuffet Belt",
+		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Asn. Armlets +2",left_ring="Rajas Ring",
+		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Quiahuiz Leggings",feet="Raid. Poulaines +2"}
 	
 	sets.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Steelflash Earring",
@@ -76,7 +74,7 @@ function get_sets()
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
-	sets.aftercast.Idle = sets.TP.DD
+	sets.aftercast.Idle = set_combine(sets.TP.DD,{feet="Fajin Boots"})
 	send_command('input /macro book 6;wait .1;input /macro set 10')
 	
 end
