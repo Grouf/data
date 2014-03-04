@@ -7,7 +7,7 @@ MNK		Done		Done		Yes
 WHM
 BLM		Done		Some		Yes			
 RDM
-THF		First Draft
+THF		2nd Draft	Yes			NO			Need to make sure Ranged attack will swap
 RNG		Done		Most		Yes			specify melee WS
 											Need JA rules
 											Jishnu's needs testing with escape char
