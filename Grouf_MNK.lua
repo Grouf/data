@@ -34,7 +34,7 @@ function get_sets()
 	sets.TP.DD = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Otronif Gloves",
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
-		legs="Quiahuiz Leggings",feet="Otronif Boots"}
+		legs="Quiahuiz Trousers",feet="Otronif Boots"}
 		
 	sets.TP.Accuracy = {main="Oatixur",ammo="Honed Tathlum",head="Ejekamal Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Hes. Gloves",
@@ -44,7 +44,7 @@ function get_sets()
 	sets.TP.Solo = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
-		legs="Quiahuiz Leggings",feet="Otronif Boots"}
+		legs="Quiahuiz Trousers",feet="Otronif Boots"}
 	
 	sets.DT = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Twilight Torque",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",

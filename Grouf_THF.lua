@@ -55,17 +55,17 @@ function get_sets()
 	sets.TP.DD = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Iuitl Wristbands",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
-		legs="Quiahuiz Leggings",feet="Iuitl Gaiters"}
+		legs="Quiahuiz Trousers",feet="Iuitl Gaiters"}
 
 	sets.TP.Solo = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Iuitl Wristbands",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
-		legs="Quiahuiz Leggings",feet="Iuitl Gaiters"}
+		legs="Quiahuiz Trousers",feet="Iuitl Gaiters"}
 	
 	sets.TP.TH = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Asn. Armlets +2",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
-		legs="Quiahuiz Leggings",feet="Raid. Poulaines +2"}
+		legs="Quiahuiz Trousers",feet="Raid. Poulaines +2"}
 	
 	sets.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Iuitl Wristbands",left_ring="Dark Ring",
