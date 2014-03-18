@@ -109,7 +109,7 @@ function get_sets()
 	sets.precast['Chant du Cygne'] = set_combine(sets.precast.WS,{neck="Light Gorget"})
 	
 	sets.precast['Requiescat'] = set_combine(sets.precast.WS,{neck="Shadow Gorget",left_ring="Solemn Ring",
-		legs="Quiahuiz Leggings"})
+		legs="Quiahuiz Trousers"})
 		
 	--sets.precast['Vorpal Blade']
 	
@@ -126,7 +126,7 @@ function get_sets()
 	--[[Club Weapon Skills  ~~ need work (or removal?) ~~]]
 	
 	sets.precast['Realmrazer'] = set_combine(sets.precast.WS,{neck="Light Gorget",waist="Light Belt",
-		legs="Quiahuiz Leggings"})
+		legs="Quiahuiz Trousers"})
 		
 	sets.precast['Flash Nova'] = set_combine(sets.precast.WS,{neck="Tjukurrpa Medal",left_ear="Friomisi Earring",
 		body="Hagondes Coat",hands="Buremte Gloves",left_ring="Flame Ring",right_ring="Spiral Ring",
@@ -136,7 +136,7 @@ function get_sets()
 	sets.precast['True Strike'] = set_combine(sets.precast.WS,{neck="Tjukurrpa Medal",
 		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",
 		hands="Buremte Gloves",left_ring="Rajas ring",right_ring="Spiral ring",back="Atheling mantle",
-		waist="Caudata Belt",legs="Quiahuiz Leggings",feet="Manibozho Boots"})
+		waist="Caudata Belt",legs="Quiahuiz Trousers",feet="Manibozho Boots"})
 		
 	--[[Stat sets]]
 	
@@ -149,9 +149,9 @@ function get_sets()
 		
 	sets.precast.STRDEX = set_combine(sets.precast.WS,{legs="Manibozho Brais"}) --Done
 		
-	sets.precast.STRVIT = set_combine(sets.precast.WS,{legs="Quiahuiz Leggings"}) --Done
+	sets.precast.STRVIT = set_combine(sets.precast.WS,{legs="Quiahuiz Trousers"}) --Done
 		
-	sets.precast.STRMND = set_combine(sets.precast.WS,{legs="Quiahuiz Leggings"})--Done
+	sets.precast.STRMND = set_combine(sets.precast.WS,{legs="Quiahuiz Trousers"})--Done
 	
 	sets.precast.AGI = set_combine(sets.precast.WS,{body="Iuitl Vest",legs="Kaabnax Trousers"}) --Done
 	
@@ -163,7 +163,7 @@ function get_sets()
 	sets.precast.Cure = {head="Uk'uxkaj Cap",neck="Mavi Scarf",left_ear="Loquac. Earring",
 		right_ear="Lifestorm Earring",body="Hagondes Coat",hands="Buremte Gloves",left_ring="Sirona's Ring",
 		right_ring="Solemn Ring",back="Pahtli Cape",waist="Witful Belt",
-		legs="Quiahuiz Leggings",feet="Hagondes Sabots"} --Done
+		legs="Quiahuiz Trousers",feet="Hagondes Sabots"} --Done
 	
 	sets.precast.mAccuracy = {head="Assim. Keffiyeh",neck="Stoicheion Medal",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Hagondes Cuffs",left_ring="Prolix Ring",
@@ -207,12 +207,12 @@ function get_sets()
 	sets.TP.DA = {head="Iuitl Headgear",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Thaumas coat",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Atheling Mantle",waist="Windbuffet Belt",
-		legs="Quiahuiz Leggings",feet="Iuitl Gaiters" }
+		legs="Quiahuiz Trousers",feet="Iuitl Gaiters" }
 		
 	sets.TP.Acc = {head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Thaumas coat",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Atheling Mantle",waist="Windbuffet Belt",
-		legs="Quiahuiz Leggings",feet="Assim. Charuqs" }
+		legs="Quiahuiz Trousers",feet="Assim. Charuqs" }
 		
 	sets.TP.SOLO = set_combine(sets.TP.DA,{body="Iuitl Vest"})
 	
