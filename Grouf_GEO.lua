@@ -22,7 +22,7 @@ function get_sets()
 	
 	sets.precast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabanax Hat",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Geomancy Tunic",
-		hands="Weather. Cuffs",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
+		hands="Bokwus Gloves",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Witch Sash",legs="Nares Trews",feet="Orvail Souliers +1"}
 		
 	sets.precast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
@@ -85,7 +85,7 @@ function precast(spell)
 			equip(sets.precast.Enhancing)
 		else
 			equip(sets.precast.FastCast)
-			send_command('@input /echo FastCast set on')
+			--send_command('@input /echo FastCast set on')
 		end
 	elseif spell.skill == 'ElementalMagic' then
 		equip(sets.precast.ElementalMagic)
