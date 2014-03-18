@@ -162,12 +162,12 @@ function get_sets()
 
 	sets.precast.Cure = {head="Uk'uxkaj Cap",neck="Mavi Scarf",left_ear="Loquac. Earring",
 		right_ear="Lifestorm Earring",body="Hagondes Coat",hands="Buremte Gloves",left_ring="Sirona's Ring",
-		right_ring="Solemn Ring",back="Pahtli Cape",waist="Witful Belt",
+		right_ring="Solemn Ring",back="Refraction Cape",waist="Witful Belt",
 		legs="Quiahuiz Trousers",feet="Hagondes Sabots"} --Done
 	
 	sets.precast.mAccuracy = {head="Assim. Keffiyeh",neck="Stoicheion Medal",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Hagondes Cuffs",left_ring="Prolix Ring",
-		right_ring="Omega Ring",back="Cornflower Cape",waist="Aswang Sash",
+		right_ring="Strendu Ring",back="Cornflower Cape",waist="Aswang Sash",
 		legs="Iuitl Tights",feet="Hagondes Sabots"} --Done
 	
 	sets.precast.Stun = {head="",neck="Stoicheion Medal",left_ear="Psystorm earring",
