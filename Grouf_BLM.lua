@@ -4,7 +4,7 @@
 		 =========================
 ]]
 
-function get_sets()				
+function get_sets()
 	sets.precast = {}
 	
 	sets.precast.Idle = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Hagondes Hat",
@@ -43,7 +43,6 @@ function get_sets()
 		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Omega Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
 	
-		
 	sets.TP = {}
 	sets.TP.Engage = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Kaabanax Hat",
 		neck="Asperity Necklace",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat",
@@ -110,6 +109,10 @@ function status_change(new,old)
 		equip(sets.precast.Rest)
 	elseif new == 'Engaged' then
 		equip(sets.TP.Engage)
+		send_command('@wait 0.5; gs disable main sub range;')
+	end
+	if old == 'Engaged' then
+		send_command('@wait 0.5; gs enable main sub range;')
 	end
 end
 
