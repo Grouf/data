@@ -84,9 +84,8 @@ function precast(spell)
 		equip(sets.precast[spell.english])
 	elseif spell.type=="WeaponSkill" then
 		equip(sets.precast.WS)
-	elseif string.find(spell.english,'Step') then
-		equip(sets.precast.Step)
-	elseif string.find(spell.english,'Violent Flourish') then
+	elseif string.find(spell.english,'Step') or 
+		string.find(spell.english,'Violent Flourish') then
 		equip(sets.precast.Step)
 	end
 end
