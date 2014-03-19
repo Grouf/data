@@ -89,7 +89,7 @@ function get_sets()
 	sets.precast = {}
 	
 	--Job Ability--
-	sets.precast.Efflux = {legs="Mavi Tyat +2"}
+	sets.precast.Efflux = {legs="Mavi Tayt +2"}
 	sets.precast['Chain Affinity'] = {head="Mavi Kavuk +2",feet="Assim. Charuqs"}
 	sets.precast['Burst Affinity'] = {legs="Assim. Shalwar",feet="Mavi Basmak +2"}
 	
@@ -125,19 +125,22 @@ function get_sets()
 	
 	--[[Club Weapon Skills  ~~ need work (or removal?) ~~]]
 	
+	--[[
 	sets.precast['Realmrazer'] = set_combine(sets.precast.WS,{neck="Light Gorget",waist="Light Belt",
 		legs="Quiahuiz Trousers"})
 		
 	sets.precast['Flash Nova'] = set_combine(sets.precast.WS,{neck="Tjukurrpa Medal",left_ear="Friomisi Earring",
 		body="Hagondes Coat",hands="Buremte Gloves",left_ring="Flame Ring",right_ring="Spiral Ring",
-		--[[right_ring="Aquasoul Ring",]]waist="Caudata Belt",
-		legs="Manibozho brais",feet="Manibozho Boots"})  --[[30% STR/MND with INT for stat]]
+		right_ring="Aquasoul Ring",]aist="Caudata Belt",
+		legs="Manibozho brais",feet="Manibozho Boots"})  --30% STR/MND with INT for stat
 	
 	sets.precast['True Strike'] = set_combine(sets.precast.WS,{neck="Tjukurrpa Medal",
 		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",
 		hands="Buremte Gloves",left_ring="Rajas ring",right_ring="Spiral ring",back="Atheling mantle",
 		waist="Caudata Belt",legs="Quiahuiz Trousers",feet="Manibozho Boots"})
 		
+	]]
+	
 	--[[Stat sets]]
 	
 	sets.precast.BaseStat = {head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",left_ear="Psystorm Earring",
@@ -191,7 +194,7 @@ function get_sets()
 		right_ring="Epona's Ring",back="Atheling Mantle",
 		legs="Manibozho Brais",feet="Assimilator's Charuqs"} --Done
 	
-	sets.precast.BlueMagic = {head="Ejekamal Mask",neck="Mavi scarf",left_ear="Loquacious earring",
+	sets.precast.BlueMagic = {head="Ejekamal Mask",neck="Mavi Scarf",left_ear="Loquacious earring",
 		body="Mavi Mintan +2",hands="Symbios Gloves",left_ring="Prolix Ring",
 		back="Swith cape",waist="Witful belt",
 		legs="Kaabnax Trousers",feet="Iuitl Gaiters"} --some blue magic, all fast cast
@@ -216,7 +219,7 @@ function get_sets()
 		
 	sets.TP.SOLO = set_combine(sets.TP.DA,{body="Iuitl Vest"})
 	
-	sets.TP.Learning = set_combine(sets.TP.DA,{body="Assim. Jubbah",hands="Magus Bazubands",legs="Mavi Tayt +2"})
+	sets.TP.Learning = set_combine(sets.TP.DA,{body="Assim. Jubbah",hands="Assim. Bazubands",legs="Mavi Tayt +2"})
 	
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DA
@@ -292,25 +295,25 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 	if gain then -- something was gained
 		equip(sets.precast[buff_name]) --here to make sure appropriate equipment is equipped before disable
 		if buff_name=='Efflux' then
-			disable('legs')
+			send_command('@wait 0.5; gs disable legs;')
 			send_command('@input /echo Efflux ON, legs disabled')
 		elseif buff_name=='Chain Affinity' then 
-			disable('head','feet')
+			send_command('@wait 0.5; gs disable head feet;')
 			send_command('@input /echo Chain Affinity ON, head,feet disabled')
 		elseif buff_name=='Burst Affinity' then
-			disable('legs','feet')
+			send_command('@wait 0.5; gs disable legs feet;')
 			send_command('@input /echo Burst Affinity ON, legs,feet disabled')
 		end
 	
 	elseif not gain then -- something lost
 		if buff_name=='Efflux' then
-			enable('legs')
+			send_command('@wait 0.5; gs enable legs;')
 			send_command('@input /echo Efflux off, legs enabled')
 		elseif buff_name=='Chain Affinity' then 
-			enable('head','feet')
+			send_command('@wait 0.5; gs enable head feet;')
 			send_command('@input /echo Chain Affinity off, head,feet enabled')
 		elseif buff_name=='Burst Affinity' then
-			enable('legs','feet')
+			send_command('@wait 0.5; gs enable legs feet;')
 			send_command('@input /echo Burst Affinity off, legs, enabled')
 		end
 	end
