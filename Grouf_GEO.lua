@@ -67,9 +67,8 @@ function get_sets()
 		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Flame Ring",back="Buquwik Cape",
 		waist="Prosilio Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
 	
-
 	--sets.aftercast = {}
-
+	
 	send_command('input /macro book 20;wait .1;input /macro set 1')
 	
 end
@@ -100,31 +99,6 @@ function precast(spell)
 		equip(sets.precast.Cure)
 	elseif spell.type=='WeaponSkill' then
 		equip(sets.TP.WS)
-	--elseif spell.type=='JobAbility' then
-		--[[ R E L I C ]]--
-		--[[
-		if spell.english=="Collimated Fervor" then
-			equip({head="Bagua Galero"})
-			disable('head')
-			send_command('@input /echo Relic head on, head disable')
-		elseif spell.english=="Bolster" then
-			equip({body="Bagua Tunic"})
-			disable('body')
-			send_command('@input /echo Relic body on, body disable')
-		elseif spell.english=="Full Circle" then
-			equip({hands="Bagua Mitaines"})
-			disable('hands')
-			send_command('@input /echo Relic hands on, hands disable')
-		elseif spell.english=="Mending Halation" then
-			equip({legs="Bagua Pants"})
-			disable('legs')
-			send_command('@input /echo Relic legs on, legs disable')
-		elseif spell.english=="Radial Arcana" then
-			equip({feet="Bagua Sandals"})
-			disable('feet')
-			send_command('@input /echo Relic feet on, feet disable')
-		end
-		]]
 	end
 end
 
@@ -161,32 +135,32 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 	if gain then -- something was gained
 		equip(sets.precast[buff_name])
 		if buff_name=='Collimated Fervor' then
-			disable('head')
+			send_command('@wait 0.5; gs disable head;')
 			send_command('@input /echo Collimated Fervor ON, head disabled')
 		elseif buff_name=='Bolster' then 
-			disable('body')
+			send_command('@wait 0.5; gs disable body;')
 			send_command('@input /echo Bolster ON, body disabled')
 		elseif buff_name=='Mending Halation' then
-			disable('legs')
-			send_command('@input /echo Mending Halation ON, hands disabled')
+			send_command('@wait 0.5; gs disable legs;')
+			send_command('@input /echo Mending Halation ON, legs disabled')
 		elseif buff_name=='Radial Arcana' then
-			disable('feet')
-			send_command('@input /echo Radial Arcana ON, hands disabled')
+			send_command('@wait 0.5; gs disable feet;')
+			send_command('@input /echo Radial Arcana ON, feet disabled')
 		end
 	
 	elseif not gain then -- something lost
 		if buff_name=='Collimated Fervor' then
-			enable('head')
+			send_command('@wait 0.5; gs enable head;')
 			send_command('@input /echo Collimated Fervor off, head enabled')
 		elseif buff_name=='Bolster' then 
-			enable('body')
+			send_command('@wait 0.5; gs enable body;')
 			send_command('@input /echo Bolster off, body enabled')
 		elseif buff_name=='Mending Halation' then
-			enable('legs')
-			send_command('@input /echo Mending Halation off, hands enabled')
+			send_command('@wait 0.5; gs enable legs;')
+			send_command('@input /echo Mending Halation off, legs enabled')
 		elseif buff_name=='Radial Arcana' then
-			enable('feet')
-			send_command('@input /echo Radial Arcana off, hands enabled')
+			send_command('@wait 0.5; gs enable feet;')
+			send_command('@input /echo Radial Arcana off, feet enabled')
 		end
 	end
 		
