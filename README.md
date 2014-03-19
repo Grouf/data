@@ -4,7 +4,7 @@ Gearswap data folder
 Job		Gear		Rules		Tested		Notes
 ===		====		=====		======		=====
 MNK		Done		Done		Yes
-WHM
+WHM		Done		Done		Most		
 BLM		Done		Some		Yes			
 RDM
 THF		2nd Draft	Yes			NO			Need to make sure Ranged attack will swap
@@ -15,5 +15,5 @@ SAM
 NIN
 SMN
 BLU		Done		Done		Yes			midcast() calling too soon?
-GEO		2nd draft	Some		No			needs rules TESTED for status & relic equip
-											JA rules not needed if sets.precast.name specified..?
+GEO		Done		Done		No			needs rules TESTED for status & relic equip
+
