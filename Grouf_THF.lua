@@ -8,7 +8,7 @@ function get_sets()
 	sets.precast = {}
 	
 	sets.precast.Flee = {feet="Pillager's Poulaines"}
-	sets.precast.Steal = {hands="Pillager's Armlets",legs="Assassin's Culottes",feet="Pillager's Poulaines"
+	sets.precast.Steal = {hands="Pillager's Armlets",legs="Assassin's Culottes",feet="Pillager's Poulaines"}
 	sets.precast.Mug = {head="Assassin's Bonnet"}
 	sets.precast.Despoil = {legs="Raid. Culottes +2", feet="Raid. Poulaines +2"}
 	sets.precast.Conspirator = {body="Raider's Vest +2"}
@@ -45,11 +45,6 @@ function get_sets()
 		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Asn. Armlets +2",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Phasmida Belt",
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
-	
-		sets.precast.Idle = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Iuitl Wristbands",left_ring="Rajas Ring",
-		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
-		legs="Kaabnax Trousers",feet="Fajin Boots"}
 		
 	sets.TP = {}
 	sets.TP.DD = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
@@ -67,14 +62,14 @@ function get_sets()
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Raid. Poulaines +2"}
 	
-	sets.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Steelflash Earring",
+	sets.TP.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Iuitl Wristbands",left_ring="Dark Ring",
 		right_ring="Shadow Ring",back="Shadow Mantle",waist="Phasmida Belt",
 		legs="Kaabnax Trousers",feet="Iuitl Gaiters"}
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
-	sets.aftercast.Idle = set_combine(sets.TP.DD,{feet="Fajin Boots"})
+	sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
 	send_command('input /macro book 6;wait .1;input /macro set 10')
 	
 end
@@ -115,22 +110,22 @@ end
 function self_command(command)
 	if command == 'DD' then
 		sets.aftercast.TP = sets.TP.DD
-		sets.aftercast.Idle = sets.TP.DD
+		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
 		equip(sets.aftercast.TP)
 		send_command('@input /echo DD set')
 	elseif command == 'SOLO' then
 		sets.aftercast.TP = sets.TP.Solo
-		sets.aftercast.Idle = sets.TP.Solo
+		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
 		equip(sets.aftercast.TP)
 		send_command('@input /echo SOLO set')
 	elseif command == 'TH' then
 		sets.aftercast.TP = sets.TP.TH
-		sets.aftercast.Idle = sets.TP.TH
+		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
 		equip(sets.aftercast.TP)
 		send_command('@input /echo Treasure Hunter set')
 	elseif command == 'DT' then
-		sets.aftercast.TP = sets.DT
-		sets.aftercast.Idle = sets.DT
+		sets.aftercast.TP = sets.TP.DT
+		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
 		equip(sets.aftercast.TP)
 		send_command('@input /echo DT set')
 	end
