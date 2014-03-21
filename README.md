@@ -12,7 +12,7 @@ RNG		Done		Most		Yes			specify melee WS
 											Need JA rules
 											Jishnu's needs testing with escape char
 SAM
-NIN		1st Draft	Most		NO			Need to test Migawari, nuke/enfeeble spells
+NIN		Done		Yes			Yes			Need to test Migawari
 SMN
 BLU		Done		Done		Yes			midcast() calling too soon?
 GEO		Done		Done		No			needs rules TESTED for status & relic equip
