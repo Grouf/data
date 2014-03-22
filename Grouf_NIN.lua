@@ -135,7 +135,7 @@ function status_change(new,old)
 	end
 end
 
-function buff_change(status,gain) --gain = True if gained, False if lost
+function buff_change(buff_name,gain) --gain = True if gained, False if lost
 	if gain then -- something was gained
 		if buff_name=='Migawari' then --Need to verify Name
 			equip({body="Iga Ningi +2"}) -- Need to verify this works
