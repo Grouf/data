@@ -14,7 +14,7 @@ function get_sets()
 	sets.precast.Conspirator = {body="Raider's Vest +2"}
 	sets.precast.Accomplice = {head="Raider's Bonnet +2"}
 	sets.precast.Collaborator = {head="Raider's Bonnet +2"}
-	--sets.precast['Perfect Dodge'] = {hands="Assassin's Armlets +2"}
+	sets.precast['Perfect Dodge'] = {hands="Plun. Armlets"}
 
 	sets.precast.Ranged = {head="Pillager's Bonnet",neck="Huani Collar",left_ear="Clearview earring",
 		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Iuitl Wristbands",left_ring="Paqichikaji Ring",
@@ -32,7 +32,7 @@ function get_sets()
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
 	
 	sets.precast.Exenterator = {head="Uk'uxkaj Cap",neck="Light Gorget",left_ear="Dudgeon Earring",
-		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Asn. Armlets +2",left_ring="Rajas Ring",
+		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Plun. Armlets",left_ring="Rajas Ring",
 		right_ring="Spiral Ring",back="Buquwik Cape",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
 	
@@ -42,7 +42,7 @@ function get_sets()
 		legs="Iuitl Tights",feet="Iuitl Gaiters"}
 	
 	sets.precast.Step = {head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Asn. Armlets +2",left_ring="Rajas Ring",
+		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Plun. Armlets",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Phasmida Belt",
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
 		
@@ -58,7 +58,7 @@ function get_sets()
 		legs="Quiahuiz Trousers",feet="Iuitl Gaiters"}
 	
 	sets.TP.TH = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Asn. Armlets +2",left_ring="Rajas Ring",
+		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Plun. Armlets",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Raid. Poulaines +2"}
 	
@@ -104,7 +104,17 @@ function status_change(new,old)
 	end
 end
 
-function buff_change(status,gain_or_loss)
+function buff_change(buff_name,gain)
+	if gain then
+		if buff_name == 'Perfect Dodge' then
+			equip(sets.precast[buff_name])
+			send_command('@wait 0.5; gs disable hands;')
+		end
+	elseif not gain then
+		if buff_name == 'Perfect Dodge' then
+			send_command('@wait 0.5; gs enable hands;')
+		end
+	end
 end
 
 function self_command(command)
