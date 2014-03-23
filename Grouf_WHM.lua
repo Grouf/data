@@ -36,7 +36,7 @@ function get_sets()
 		
 	sets.precast.Stoneskin = set_combine(sets.precast.Enhancing,{neck="Stone Gorget",waist="Siegel Sash"})
 	
-	sets.precast["Protectra V"] = set_combine(sets.precast.Enhancing,{feet="Clr. Duckbills +2"})
+	sets.precast["Protectra V"] = set_combine(sets.precast.Enhancing,{feet="Piety Duckbills"})
 	
 	sets.precast.NA = set_combine(sets.precast.Enhancing,{body="Orison Bliaud +2",hands="Theophany Mitts",
 		back="Mending Cape",legs="Theo. Pantaloons",feet="Gende. Galoshes"})
