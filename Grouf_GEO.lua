@@ -30,7 +30,7 @@ function get_sets()
 		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Omega Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Orvail Pants +1",feet="Hagondes Sabots"}
 		
-	sets.precast.FastCast = {main="Lehbrailg +2",sub="Elder's Grip",head="Hagondes Hat",
+	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Hagondes Hat",
 		left_ear="Loquac. Earring",body="Anhur Robe",
 		hands="Hagondes Cuffs",back="Swith Cape",
 		waist="Witful Belt",legs="Geomancy Pants",feet="Hagondes Sabots"}  --Geo. Pants = 11%
