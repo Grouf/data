@@ -17,7 +17,7 @@ function get_sets()
 	sets.precast['Perfect Dodge'] = {hands="Plun. Armlets"}
 
 	sets.precast.Ranged = {head="Pillager's Bonnet",neck="Huani Collar",left_ear="Clearview earring",
-		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Iuitl Wristbands",left_ring="Paqichikaji Ring",
+		right_ear="Volley Earring",body="Iuitl Vest",hands="Iuitl Wristbands",left_ring="Paqichikaji Ring",
 		right_ring="Jalzahn's Ring",back="Libeccio Mantle",waist="Buccaneer's Belt",
 		legs="Thur. Tights +1",feet="Pillager's Poulaines"}
 	
