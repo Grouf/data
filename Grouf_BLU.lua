@@ -9,7 +9,7 @@ function get_sets()
 	BlueMageSpell = {
         --STR
 		['Vertical Cleave']='STR',['Death Scissors']='STR',['Empty Thrash']='STR', ['Dimensional Death']='STR',
-		['Quadrastrike']='STR',['Bloodrake']='Physical',['Power Attack']='STR',['Smite of Rage']='STR',
+		['Quadrastrike']='STR',['Bloodrake']='STR',['Power Attack']='STR',['Smite of Rage']='STR',
 		['Heavy Strike']='STR',--Accuracy Penalty
 		['Terror Touch']='STR',['Sickle Slash']='STR',['Uppercut']='STR',['Mandibular Bite']='STR',
 		['Spinal Cleave']='STR',['Asuran Claws']='STR',['Body Slam']='STR',['Battle Dance']='STR',['Bludgeon']='STR',
@@ -17,7 +17,7 @@ function get_sets()
 		
 		--STRDEX
 		['Foot Kick']='STRDEX',['Disseverment']='STRDEX',['Hysteric Barrage']='STRDEX',['Frenetic Rip']='STRDEX',
-		['Vanity Dive']='STRDEX',['Seedspray']='Physical',['Goblin Rush']='STRDEX',['Paralyzing Triad']='STRDEX',
+		['Vanity Dive']='STRDEX',['Seedspray']='STRDEX',['Goblin Rush']='STRDEX',['Paralyzing Triad']='STRDEX',
 		['Claw Cyclone']='STRDEX',
 		
 		--STRVIT
