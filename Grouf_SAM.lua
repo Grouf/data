@@ -46,7 +46,13 @@ function get_sets()
 	sets.TP.DD = {head="Otomi Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Unkai Domaru +2", hands="Otronif Gloves", left_ring="Spiral Ring", 
 		right_ring="Rajas Ring", back="Takaha mantle", waist="Cetl Belt", 
-		legs="Unkai Haidate +2", feet="Otronif Boots" }
+		legs="Unkai Haidate +2", feet="Otronif Boots" }  	--With pole Grip Double Attack = 20%
+															--Store TP = 51
+															--Avg Item Level = 111
+															--Acc = 766
+															--Att = 855
+															--Eva = 564
+															--Def = 593
 		
 	--[[sets.TP.EVA = set_combine(sets.TP.DD,{neck="Torero Torque",left_ear="Ethereal Earring",
 		right_ear="Musical Earring",body="Otronif Harness",
