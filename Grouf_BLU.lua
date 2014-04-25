@@ -174,13 +174,13 @@ function get_sets()
 		legs="Iuitl Tights",feet="Hagondes Sabots"} --Done
 	
 	sets.precast.Stun = {head="",neck="Stoicheion Medal",left_ear="Psystorm earring",
-		right_ear="Lifestorm earring",body="Assim. Jubbah",hands="Mv. Bazubands +2",left_ring="Prolix Ring",
+		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Mv. Bazubands +2",left_ring="Prolix Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Witful Belt",
 		legs="Iuitl Tights",feet="Hagondes Sabots"} --25% Haste, 5% Fast Cast, -12% Blue Magic recast
 													--Done
 		
 	sets.precast.Breath = {head="Mirage Keffiyeh",neck="Stoicheion Medal",left_ear="Psystorm earring",
-		right_ear="Lifestorm earring",body="Assim. Jubbah",hands="Hagondes Cuffs",left_ring="Prolix Ring",
+		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Hagondes Cuffs",left_ring="Prolix Ring",
 		back="Cornflower Cape",waist="Aswang Sash",
 		legs="Iuitl Tights",feet="Hagondes Sabots"} --Done
 	
@@ -219,7 +219,7 @@ function get_sets()
 		
 	sets.TP.SOLO = set_combine(sets.TP.DA,{body="Iuitl Vest"})
 	
-	sets.TP.Learning = set_combine(sets.TP.DA,{body="Assim. Jubbah",hands="Assim. Bazubands",legs="Mavi Tayt +2"})
+	sets.TP.Learning = set_combine(sets.TP.DA,{body="Assim. Jubbah",hands="Assim. Bazu.",legs="Mavi Tayt +2"})
 	
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DA
@@ -229,7 +229,7 @@ function get_sets()
 end
 
 function precast(spell)
-	
+
 	if spell.type == 'BlueMagic' then
 		--send_command('@input /echo precast: Found BlueMagic' )
 		--send_command('@input /echo precast BMS: '..BlueMageSpell[spell.english])
