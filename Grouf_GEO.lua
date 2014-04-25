@@ -13,12 +13,18 @@ function get_sets()
 	sets.precast['Mending Halation'] = {legs="Bagua Pants"}
 	sets.precast['Radial Arcana'] = {feet="Bagua Sandals"}
 	
-	sets.precast.Idle = {main="Dowser's Wand",sub="Genbu's Shield",range="Filiae Bell",head="Bagua Galero",
+	sets.precast.Idle = {main="Lehbrailg +2",sub="Mephitis Grip",range="Filiae Bell",head="Bagua Galero",
 		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Bagua Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
 		waist="Aswang Sash",legs="Nares Trews",feet="Geomancy Sandals"}
+		
+	--[[sets.precast.Idle = {main="Lehbrailg +2",sub="Mephitis Grip",range="Filiae Bell",head="Kaabanax Hat",
+		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
+		hands="Bagua Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
+		waist="Aswang Sash",legs="Bagua Pants",feet="Bagua Sandals"} ]]
 	
-	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff",sub="Elder's Grip"})
+	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff",sub="Elder's Grip",
+		hands="Serpentes Cuffs", legs="Nares Trews", feet="Serpentes Sabots"})
 	
 	sets.precast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabanax Hat",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Geomancy Tunic",
@@ -55,19 +61,22 @@ function get_sets()
 		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Omega Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
 	
-		
+	--[[
+	
 	sets.TP = {}
 	sets.TP.Engage = {main="Dowser's Wand",sub="Genbu's Shield",range="Filiae Bell",head="Kaabanax Hat",
 		neck="Asperity Necklace",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Mars's Ring",back="Buquwik Cape",
-		waist="Aswang",legs="Hagondes Pants",feet="Hagondes Sabots"}
+		waist="Aswang Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
 		
 	sets.TP.WS = {head="Hagondes Hat",
 		neck="Tlamiztli Collar",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Flame Ring",back="Buquwik Cape",
 		waist="Prosilio Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
 	
-	--sets.aftercast = {}
+	sets.aftercast = {}
+	
+	]]
 	
 	send_command('input /macro book 20;wait .1;input /macro set 1')
 	
