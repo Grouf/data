@@ -12,7 +12,7 @@ function get_sets()
 		hands="Serpentes Cuffs",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Cleric's Belt",legs="Nares Trews",feet="Serpentes Sabots"}
 
-	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff"})
+	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff",sub="Mephitis Grip"})
 
 	sets.precast.Cure= {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Theophany Cap",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Gendewitha Bliaut",
@@ -21,7 +21,7 @@ function get_sets()
  
 	sets.precast.Enfeeble= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
 		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Theo. Briault",
-		hands="Gendewitha Gages",left_ring="Omega Ring",right_ring="Solemn Ring",back="Refraction Cape",
+		hands="Gendewitha Gages",left_ring="Omega Ring",right_ring="Irrwisch Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Orvail Pants +1",feet="Uk'uxkaj Boots"}
 
 	sets.precast.DRKMagic= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
@@ -44,15 +44,16 @@ function get_sets()
 	sets.precast.Regen = set_combine(sets.precast.Enhancing,{body="Cleric's Briault", hands="Orison Mitts +2",
 		legs="Theo. Pantaloons"})
 	
-	sets.precast.Divine= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Witchstone",head="Kaabanax Hat",
-		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Strophadic Earring",body="Gendewitha Bliaut",
+	sets.precast.Divine= {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Kaabanax Hat",
+		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Gendewitha Bliaut",
 		hands="Otomi Gloves",left_ring="Omega Ring",right_ring="Strendu Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 			
-	sets.precast.Repose = set_combine(sets.precast.Divine,{ammo="Hedgehog Bomb",head="Orison Cap +2",
+	sets.precast.Repose = set_combine(sets.precast.Divine,{sub="Mephitis Grip",ammo="Kalboron Stone",head="Orison Cap +2",
 		left_ear="Lifestorm Earring",right_ear="Psystorm Earring",hands="Gendewitha Gages"})
 	
 	sets.TP = {}
+	
 	sets.TP.Engage = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
 		neck="Tjukurrpa Medal",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Gendewitha Bliaut",
 		hands="Gendewitha Gages",left_ring="Rajas Ring",right_ring="Spiral Ring",back="Buquwik Cape",
