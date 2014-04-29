@@ -8,10 +8,11 @@ function get_sets()
 		
 	sets.precast = {}
 	
-	sets.precast.Meditate = {head="Wakido Kabuto",--[[hands="Sao. Kote +2", ]]}
+	sets.precast.Meditate = {head="Wakido Kabuto", hands="Sakonji Kote"}
 	sets.precast.Hasso = {hands="Wakido Kote", legs="Unkai Haidate +2"}
 	sets.precast["Warding Circle"] = {head="Wakido Kabuto"}
 	sets.precast.Sekkanoki = {hands="Unkai Kote +2"}
+	sets.precast["Blade Bash"] = {hands="Sakonji Kote"}
 	
 	sets.precast.Ranged = {head="Otomi Helm",neck="Ocachi Gorget",left_ear="Clearview earring",
 		right_ear="Bladeborn Earring",body="Otronif Harness",hands="Unkai Kote +2",left_ring="Paqichikaji Ring",
