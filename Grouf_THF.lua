@@ -36,10 +36,10 @@ function get_sets()
 		right_ring="Spiral Ring",back="Buquwik Cape",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
 	
-	sets.precast["Aeolian Edge"] = {head="Thaumas Hat",neck="Stoicheion Medal",left_ear="Hecate's Earring",
+	--[[sets.precast["Aeolian Edge"] = {head="Thaumas Hat",neck="Stoicheion Medal",left_ear="Hecate's Earring",
 		right_ear="Friomisi Earring",body="Iuitl Vest",left_ring="Icesoul Ring",
 		right_ring="Omega Ring",waist="Aquiline Belt",
-		legs="Iuitl Tights",feet="Iuitl Gaiters"}
+		legs="Iuitl Tights",feet="Iuitl Gaiters"}]]
 	
 	sets.precast.Step = {head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Plun. Armlets",left_ring="Rajas Ring",
