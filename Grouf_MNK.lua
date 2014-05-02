@@ -14,11 +14,12 @@ function get_sets()
 	sets.precast.Dodge = {feet="Anchorite's Gaiters"}
 	sets.precast.Focus = {head="Anchorite's Crown"}
 	sets.precast.Boost = {hands="Anchorite's Gloves"}
+	sets.precast.Impetus = {body="Tantra Cyclas +2"}
 	--sets.precast.Mantra = {feet="Melee Gaiters +2"}
 	
 	sets.precast.Step = {main="Oatixur",ammo="Honed Tathlum",head="Ejekamal Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
-		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Anchoret's Mantle",waist="Warwolf Belt",
+		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Anchoret's Mantle",waist="Phasmida Belt",
 		legs="Manibozho Brais",feet="Thur. Boots +1"}
 
 	sets.precast.WS = {main="Oatixur",ammo="Thew Bomblet",head="Uk'uxkaj Cap",neck="Tlamiztli Collar",
