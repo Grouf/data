@@ -43,7 +43,7 @@ function get_sets()
 	
 	sets.precast.Step = {head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Plun. Armlets",left_ring="Rajas Ring",
-		right_ring="Epona's Ring",back="Canny Cape",waist="Phasmida Belt",
+		right_ring="Epona's Ring",back="Letalis Mantle",waist="Phasmida Belt",
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
 		
 	sets.TP = {}

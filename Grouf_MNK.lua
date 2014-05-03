@@ -39,7 +39,7 @@ function get_sets()
 		
 	sets.TP.Accuracy = {main="Oatixur",ammo="Honed Tathlum",head="Ejekamal Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Hes. Gloves",
-		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
+		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Letalis Mantle",waist="Windbuffet Belt",
 		legs="Manibozho Brais",feet="Otronif Boots"}
 
 	sets.TP.Solo = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Asperity Necklace",
