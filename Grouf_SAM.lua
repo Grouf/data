@@ -14,7 +14,7 @@ function get_sets()
 	sets.precast.Sekkanoki = {hands="Unkai Kote +2"}
 	sets.precast["Blade Bash"] = {hands="Sakonji Kote"}
 	
-	sets.precast.Ranged = {head="Otomi Helm",neck="Ocachi Gorget",left_ear="Clearview earring",
+	sets.precast.Ranged = {head="Yaoyotl Helm",neck="Ocachi Gorget",left_ear="Clearview earring",
 		right_ear="Bladeborn Earring",body="Otronif Harness",hands="Unkai Kote +2",left_ring="Paqichikaji Ring",
 		right_ring="Jalzahn's Ring",back="Buquwik Cape",waist="Buccaneer's Belt",
 		legs="Wakido Haidate",feet="Wakido Sune-Ate"} -- R.Acc=647  R.Att=744
@@ -37,14 +37,14 @@ function get_sets()
 	
 	sets.precast["Tachi: Shoha"] = set_combine(sets.precast.WS,{neck="Shadow Gorget", waist="Thunder Belt"})  --STR73+
 	
-	sets.precast.Step = {head="Mikinaak Helm",neck="Unkai Nodowa",left_ear="Steelflash Earring",
+	sets.precast.Step = {head="Yaoyotl Helm",neck="Unkai Nodowa",left_ear="Steelflash Earring",
 		right_ear="Heartseeker Earring",body="Miki. Breastplate",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Spiral Ring",back="Takaha Mantle",waist="Phasmida Belt",
 		legs="Miki. Cuisses",feet="Wakido Sune-Ate"} --Primary Acc: 834
 	
 		
 	sets.TP = {}
-	sets.TP.DD = {head="Otomi Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
+	sets.TP.DD = {head="Yaoyotl Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Unkai Domaru +2", hands="Otronif Gloves", left_ring="Spiral Ring", 
 		right_ring="Rajas Ring", back="Takaha mantle", waist="Cetl Belt", 
 		legs="Unkai Haidate +2", feet="Otronif Boots" }  	--With pole Grip Double Attack = 20%
@@ -60,7 +60,7 @@ function get_sets()
 		right_ring="Defending Ring",waist="Koga sarashi",
 		legs="Otronif Brais"})  --Needs Verify]]
 	
-	sets.TP.DT= {head="Otronif Mask", neck="Twilight Torque", left_ear="Steelflash Earring", 
+	sets.TP.DT= {head="Yaoyotl Helm", neck="Twilight Torque", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Otronif Harness", hands="Otronif Gloves", left_ring="Dark Ring", 
 		right_ring="Dark Ring", back="Ik Cape", waist="Flume Belt", 
 		legs="Otronif Brais", feet="Otronif Boots" }
@@ -77,7 +77,7 @@ function precast(spell)
 	if sets.precast[spell.english] then
 		equip(sets.precast[spell.english])
 		--windower.add_to_chat(204, 'Spell name as set: ' ..spell.english)
-	elseif spell.type=="WeaponSkill" then
+	elseif spell.type=="Weapon Skill" then
 		equip(sets.precast.WS)
 	elseif string.find(spell.english,'Step') or 
 		string.find(spell.english,'Violent Flourish') then
