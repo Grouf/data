@@ -87,7 +87,7 @@ function precast(spell)
 		equip(sets.precast[spell.english])
 	elseif spell.skill == 'Geomancy' then
 		equip(sets.precast.Geomancy)
-	elseif spell.skill == 'EnhancingMagic' then
+	elseif spell.skill == 'Enhancing Magic' then
 		if spell.english == 'Stoneskin' or spell.english == 'Blink' or 
 		spell.english == 'Aquaveil' or spell.english == 'Phalanx' then
 			equip(sets.precast.Enhancing)
@@ -95,16 +95,16 @@ function precast(spell)
 			equip(sets.precast.FastCast)
 			--send_command('@input /echo FastCast set on')
 		end
-	elseif spell.skill == 'ElementalMagic' then
+	elseif spell.skill == 'Elemental Magic' then
 		equip(sets.precast.ElementalMagic)
 		if spell.element == 'Earth' then
 			equip({neck="Quanpur Necklace"})
 		end
-	elseif spell.skill == 'DarkMagic' then
+	elseif spell.skill == 'Dark Magic' then
 		equip(sets.precast.DarkMagic)
-	elseif spell.skill == 'EnfeeblingMagic' then
+	elseif spell.skill == 'Enfeebling Magic' then
 		equip(sets.precast.Enfeeble)
-	elseif spell.skill == 'HealingMagic' then
+	elseif spell.skill == 'Healing Magic' then
 		equip(sets.precast.Cure)
 	elseif spell.type=='WeaponSkill' then
 		equip(sets.TP.WS)

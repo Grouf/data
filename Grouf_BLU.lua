@@ -230,7 +230,7 @@ end
 
 function precast(spell)
 
-	if spell.type == 'BlueMagic' then
+	if spell.type == 'Blue Magic' then
 		--send_command('@input /echo precast: Found BlueMagic' )
 		--send_command('@input /echo precast BMS: '..BlueMageSpell[spell.english])
 		if sets.precast[BlueMageSpell[spell.english]] then
@@ -263,7 +263,7 @@ Feet: Luhlaza Charuqs: Diffusion
 ]]
 
 function midcast(spell)
-	if spell.type == 'BlueMagic' then
+	if spell.type == 'Blue Magic' then
 		equip(sets.midcast[BlueMageSpell[spell.english]])
 		--send_command('@input /echo MIDset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
 	end

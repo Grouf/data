@@ -75,7 +75,7 @@ function precast(spell)
 	if sets.precast[spell.english] then
 		equip(sets.precast[spell.english])
 
-	elseif spell.skill == 'HealingMagic' then
+	elseif spell.skill == 'Healing Magic' then
 		if string.find(spell.english, 'na') then
 			equip(sets.precast.NA)
 			windower.add_to_chat(14, 'NA spell detected: ' ..spell.english)
@@ -83,20 +83,20 @@ function precast(spell)
 			equip(sets.precast.Cure)
 		end
 
-	elseif spell.skill == 'EnhancingMagic' then
+	elseif spell.skill == 'Enhancing Magic' then
 		if string.find(spell.english, 'Regen') then
 			equip(sets.precast.Regen)
 		else
 			equip(sets.precast.Enhancing)
 		end
 		
-	elseif spell.skill == 'DivineMagic' then
+	elseif spell.skill == 'Divine Magic' then
 		equip(sets.precast.Divine)
 		
-	elseif spell.skill == 'DarkMagic' then
+	elseif spell.skill == 'Dark Magic' then
 		equip(sets.precast.DarkMagic)
 
-	elseif spell.skill == 'EnfeeblingMagic' then
+	elseif spell.skill == 'Enfeebling Magic' then
 		equip(sets.precast.Enfeeble)
 		
 	elseif spell.type=="WeaponSkill" then
