@@ -163,7 +163,7 @@ end
 
 function aftercast(spell)
 	if player.status =='Engaged' then
-		equip(sets.precast.TP)
+		equip(sets.TP.Engage)
 	else
 		equip(sets.precast.Idle)
 	end
@@ -176,10 +176,6 @@ function status_change(new,old)
 		equip(sets.precast.Rest)
 	elseif new == 'Engaged' then
 		equip(sets.TP.Engage)
-		send_command('@wait 0.5; gs disable main, sub;') -- check if both disable
-	end
-	if old == "Engaged" then
-		send_command('@wait 0.5; gs enable main, sub;') -- check if both enable
 	end
 		
 end
@@ -225,6 +221,11 @@ function self_command(command)
 		SetMode_Index = 2
 		--SetMode = 'Accuracy'
 		windower.add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
+	elseif command == 'Melee' then
+		disable("main", "sub", "range")
+	elseif command == 'Magic' then
+		enable("main", "sub", "range")
+		
 	end
 	
 	--windower.add_to_chat(14, 'command is: ' ..command)
