@@ -196,37 +196,25 @@ function buff_change(buff_name,gain)
 		elseif buff_name=='Chainspell' then 
 			send_command('@wait 0.5; gs disable body;')
 			send_command('@input /echo Chainspell ON, body disabled')
-		--[[
-		elseif buff_name=='Burst Affinity' then
-			send_command('@wait 0.5; gs disable legs feet;')
-			send_command('@input /echo Burst Affinity ON, legs,feet disabled')
-		]]
 		end
 	
 	elseif not gain then -- something lost
 		if buff_name=='Saboteur' then
-			send_command('@wait 0.5; gs enable hands;')
+			enable("hands")
 			send_command('@input /echo Saboteur off, hands enabled')
 		elseif buff_name=='Chainspell' then 
-			send_command('@wait 0.5; gs enable body;')
+			enable("body")
 			send_command('@input /echo Chainspell off, body enabled')
-		--[[
-		elseif buff_name=='Burst Affinity' then
-			send_command('@wait 0.5; gs enable legs feet;')
-			send_command('@input /echo Burst Affinity off, legs, enabled')
-		]]
 		end
 	end
 end
 
 function self_command(command)
 	if command == 'Potency' then
-		--SetMode = 'Potency'
 		SetMode_Index = 1
 		windower.add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
 	elseif command == 'Accuracy' then
 		SetMode_Index = 2
-		--SetMode = 'Accuracy'
 		windower.add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
 	elseif command == 'Melee' then
 		disable("main", "sub", "range")
