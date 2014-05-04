@@ -13,18 +13,19 @@ function get_sets()
 	sets.precast['Mending Halation'] = {legs="Bagua Pants"}
 	sets.precast['Radial Arcana'] = {feet="Bagua Sandals"}
 	
-	sets.precast.Idle = {main="Lehbrailg +2",sub="Mephitis Grip",range="Filiae Bell",head="Bagua Galero",
+	sets.precast.IdleRefresh = {main="Lehbrailg +2",sub="Mephitis Grip",range="Filiae Bell",head="Bagua Galero",
 		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Bagua Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
 		waist="Aswang Sash",legs="Nares Trews",feet="Geomancy Sandals"}
-		
-	--[[sets.precast.Idle = {main="Lehbrailg +2",sub="Mephitis Grip",range="Filiae Bell",head="Kaabanax Hat",
-		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
-		hands="Bagua Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
-		waist="Aswang Sash",legs="Bagua Pants",feet="Bagua Sandals"} ]]
 	
-	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff",sub="Elder's Grip",
-		hands="Serpentes Cuffs", legs="Nares Trews", feet="Serpentes Sabots"})
+	sets.precast.IdleLuopan = {main="Lehbrailg +2",sub="Mephitis Grip",range="Filiae Bell",head="Bagua Galero",
+		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
+		hands="Geomancy Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
+		waist="Aswang Sash",legs="Nares Trews",feet="Bagua Sandals"}
+	
+	sets.precast.Idle = sets.precast.IdleRefresh
+	
+	sets.precast.Rest = {main="Chatoyant Staff"}
 	
 	sets.precast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabanax Hat",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Geomancy Tunic",
@@ -60,23 +61,6 @@ function get_sets()
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Omega Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
-	
-	--[[
-	
-	sets.TP = {}
-	sets.TP.Engage = {main="Dowser's Wand",sub="Genbu's Shield",range="Filiae Bell",head="Kaabanax Hat",
-		neck="Asperity Necklace",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Mars's Ring",back="Buquwik Cape",
-		waist="Aswang Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
-		
-	sets.TP.WS = {head="Hagondes Hat",
-		neck="Tlamiztli Collar",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Flame Ring",back="Buquwik Cape",
-		waist="Prosilio Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
-	
-	sets.aftercast = {}
-	
-	]]
 	
 	send_command('input /macro book 20;wait .1;input /macro set 1')
 	
@@ -123,11 +107,28 @@ function midcast(spell)
 end
 
 function aftercast(spell)
-	if player.status =='Engaged' then
-		equip(sets.precast.TP)
-	else
+	if player.status == 'Idle' then
 		equip(sets.precast.Idle)
+	elseif player.status == 'Resting' then
+		equip(sets.precast.Rest)
 	end
+end
+
+function pet_change(pet,gain)
+	--windower.add_to_chat(14, 'Pet_Change: ' ..pet.name.. ' gain? ' ..tostring(gain))
+	--pet.name = 'Luopan'
+	if gain then --pet casted
+		sets.precast.Idle = sets.precast.IdleLuopan
+	else
+		sets.precast.Idle = sets.precast.IdleRefresh
+	end
+	equip(sets.precast.Idle)
+end
+
+function pet_status_change(new,old)
+	--windower.add_to_chat(14, 'Pet_Status_Change: ' ..new.. ' / ' ..old)
+	--luapan sits in 'Idle' status
+	--on death status is 'Engaged dead'
 end
 
 function status_change(new,old)
@@ -135,12 +136,11 @@ function status_change(new,old)
 		equip(sets.precast.Idle)
 	elseif new == 'Resting' then
 		equip(sets.precast.Rest)
-	elseif new == 'Engaged' then
-		equip(sets.TP.Engage)
 	end
 end
 
 function buff_change(buff_name,gain) --gain = True if gained, False if lost
+	--windower.add_to_chat(14, 'Buff_Change: ' ..buff_name.. ' gain? ' ..tostring(gain))
 	if gain then -- something was gained
 		equip(sets.precast[buff_name])
 		if buff_name=='Collimated Fervor' then
@@ -159,16 +159,16 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 	
 	elseif not gain then -- something lost
 		if buff_name=='Collimated Fervor' then
-			send_command('@wait 0.5; gs enable head;')
+			enable("head")
 			send_command('@input /echo Collimated Fervor off, head enabled')
 		elseif buff_name=='Bolster' then 
-			send_command('@wait 0.5; gs enable body;')
+			enable("body")
 			send_command('@input /echo Bolster off, body enabled')
 		elseif buff_name=='Mending Halation' then
-			send_command('@wait 0.5; gs enable legs;')
+			enable("legs")
 			send_command('@input /echo Mending Halation off, legs enabled')
 		elseif buff_name=='Radial Arcana' then
-			send_command('@wait 0.5; gs enable feet;')
+			enable("feet")
 			send_command('@input /echo Radial Arcana off, feet enabled')
 		end
 	end
