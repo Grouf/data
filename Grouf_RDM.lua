@@ -7,8 +7,6 @@
 function get_sets()
 	sets.precast = {}
 	
-	--SetMode = "Potency"
-	
 	--Potency/Accuracy sets
 	
 	SetMode_Index = 1
@@ -86,6 +84,15 @@ function get_sets()
 		neck="Estoqueur's Collar", left_ear="Estq. Earring", right_ear="Loquac. Earring", body="Vitivation Tabard", 
 		hands="Gendewitha Gages", left_ring="Prolix Ring", back="Swith Cape",
 		waist="Witful Belt", legs="Orvail Pants +1", feet="Hagondes Sabots"} -- 47% Fast Cast, 13% Haste
+	
+	sets.precast.Warp = sets.precast.Fast
+	sets.precast['Warp II'] = sets.precast.Fast
+	sets.precast.Escape = sets.precast.Fast
+	sets.precast.Tractor = sets.precast.Fast
+	sets.precast.Raise = sets.precast.Fast
+	sets.precast['Raise II'] = sets.precast.Fast
+	sets.precast['Protect V'] = sets.precast.Fast
+	sets.precast['Shell V'] = sets.precast.Fast
 	
 	sets.TP = {}
 	sets.TP.Engage = {ammo="Oreiad's Tathlum", head="Hagondes Hat", 
