@@ -7,12 +7,11 @@
 function get_sets()				
 	sets.precast = {}
 	
-	sets.precast['Collimated Fervor'] = {head="Bagua Galero"}
-	sets.precast.Bolster = {body="Bagua Tunic"}
-	sets.precast['Full Circle'] = {hands="Bagua Mitaines"}
-	sets.precast['Mending Halation'] = {legs="Bagua Pants"}
-	sets.precast['Radial Arcana'] = {feet="Bagua Sandals"}
-	
+	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Hagondes Hat",
+		left_ear="Loquac. Earring",body="Anhur Robe",
+		hands="Hagondes Cuffs",back="Swith Cape",
+		waist="Witful Belt",legs="Geomancy Pants",feet="Hagondes Sabots"}  --Geo. Pants = 10%
+		
 	sets.precast.IdleRefresh = {main="Lehbrailg +2",sub="Mephitis Grip",range="Filiae Bell",head="Bagua Galero",
 		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Bagua Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
@@ -26,38 +25,44 @@ function get_sets()
 	sets.precast.Idle = sets.precast.IdleRefresh
 	
 	sets.precast.Rest = {main="Chatoyant Staff"}
+		
+--Job Ability--
+	sets.JA = {}
+	sets.JA['Collimated Fervor'] = {head="Bagua Galero"}
+	sets.JA.Bolster = {body="Bagua Tunic"}
+	sets.JA['Full Circle'] = {hands="Bagua Mitaines"}
+	sets.JA['Mending Halation'] = {legs="Bagua Pants"}
+	sets.JA['Radial Arcana'] = {feet="Bagua Sandals"}
 	
-	sets.precast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabanax Hat",
+--Midcast
+	sets.midcast = {}
+	
+	sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabanax Hat",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Geomancy Tunic",
 		hands="Bokwus Gloves",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Witch Sash",legs="Nares Trews",feet="Orvail Souliers +1"}
 		
-	sets.precast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
+	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Omega Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Orvail Pants +1",feet="Hagondes Sabots"}
 		
-	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Hagondes Hat",
-		left_ear="Loquac. Earring",body="Anhur Robe",
-		hands="Hagondes Cuffs",back="Swith Cape",
-		waist="Witful Belt",legs="Geomancy Pants",feet="Hagondes Sabots"}  --Geo. Pants = 11%
-	
-	sets.precast.Geomancy = {main="Dowser's Wand",sub="Genbu's Shield",range="Filiae Bell",head="Geomancy Galero",
+	sets.midcast.Geomancy = {main="Dowser's Wand",sub="Genbu's Shield",range="Filiae Bell",head="Geomancy Galero",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",body="Geomancy Tunic",
 		hands="Geomancy Mitaines",back="Lifestream Cape",
 		waist="Witch Sash",legs="Geomancy Pants",feet="Geomancy Sandals"}
 		
 	--Enhancing needs work
-	sets.precast.Enhancing = {body="Anhur Robe",neck="Stone Gorget",hands="Augur's Gloves",
+	sets.midcast.Enhancing = {body="Anhur Robe",neck="Stone Gorget",hands="Augur's Gloves",
 		left_ear="Loquac. Earring",
 		waist="Siegel Sash",legs="Shedir Seraweels",feet="Geomancy Sandals"}
 		
-	sets.precast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Hagondes Hat",
+	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Hagondes Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
 		
-	sets.precast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
+	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Omega Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
@@ -67,32 +72,28 @@ function get_sets()
 end
 
 function precast(spell)
-	if sets.precast[spell.english] then
-		equip(sets.precast[spell.english])
-	elseif spell.skill == 'Geomancy' then
-		equip(sets.precast.Geomancy)
-	elseif spell.skill == 'Enhancing Magic' then
-		if spell.english == 'Stoneskin' or spell.english == 'Blink' or 
-		spell.english == 'Aquaveil' or spell.english == 'Phalanx' then
-			equip(sets.precast.Enhancing)
-		else
-			equip(sets.precast.FastCast)
-			--send_command('@input /echo FastCast set on')
-		end
-	elseif spell.skill == 'Elemental Magic' then
-		equip(sets.precast.ElementalMagic)
-		if spell.element == 'Earth' then
-			equip({neck="Quanpur Necklace"})
-		end
-	elseif spell.skill == 'Dark Magic' then
-		equip(sets.precast.DarkMagic)
-	elseif spell.skill == 'Enfeebling Magic' then
-		equip(sets.precast.Enfeeble)
-	elseif spell.skill == 'Healing Magic' then
-		equip(sets.precast.Cure)
-	elseif spell.type=='WeaponSkill' then
-		equip(sets.TP.WS)
+	--windower.add_to_chat(14, 'Precast: spell type= ' ..spell.type)
+	if spell.type ~= 'JobAbility' and spell.type ~= 'WeaponSkill' then
+		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
+		equip(sets.precast.Fast)
 	end
+	
+	--[[
+	if spell.type=="WeaponSkill" then
+		if sets.WS[spell.english] then
+			equip(sets.WS[spell.english])
+		else
+			equip(sets.WS.Base)
+		end
+	end
+	]]
+	
+	if spell.type=="JobAbility" then
+		if sets.JA[spell.english] then
+			equip(sets.JA[spell.english])
+		end
+	end
+	
 end
 
 --[[Relic augments:
@@ -104,6 +105,36 @@ Feet: Bagua Sandals: Radial Arcana
 ]]
 
 function midcast(spell)
+	if spell.type == 'JobAbility' or spell.type == 'WeaponSkill' then
+	--midcast doesn't exist for JA or WS so cancel the processing of this function
+		--windower.add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
+		return
+	end
+	
+	if sets.midcast[spell.english] then
+		equip(sets.midcast[spell.english])
+	elseif spell.skill == 'Geomancy' then
+		equip(sets.midcast.Geomancy)
+	elseif spell.skill == 'Enhancing Magic' then
+		if spell.english == 'Stoneskin' or spell.english == 'Blink' or 
+		spell.english == 'Aquaveil' or spell.english == 'Phalanx' then
+			equip(sets.midcast.Enhancing)
+		else
+			equip(sets.midcast.FastCast)
+			--send_command('@input /echo FastCast set on')
+		end
+	elseif spell.skill == 'Elemental Magic' then
+		equip(sets.midcast.ElementalMagic)
+		if spell.element == 'Earth' then
+			equip({neck="Quanpur Necklace"})
+		end
+	elseif spell.skill == 'Dark Magic' then
+		equip(sets.midcast.DarkMagic)
+	elseif spell.skill == 'Enfeebling Magic' then
+		equip(sets.midcast.Enfeeble)
+	elseif spell.skill == 'Healing Magic' then
+		equip(sets.midcast.Cure)
+	end
 end
 
 function aftercast(spell)
@@ -142,7 +173,7 @@ end
 function buff_change(buff_name,gain) --gain = True if gained, False if lost
 	--windower.add_to_chat(14, 'Buff_Change: ' ..buff_name.. ' gain? ' ..tostring(gain))
 	if gain then -- something was gained
-		equip(sets.precast[buff_name])
+		equip(sets.JA[buff_name])
 		if buff_name=='Collimated Fervor' then
 			send_command('@wait 0.5; gs disable head;')
 			send_command('@input /echo Collimated Fervor ON, head disabled')
