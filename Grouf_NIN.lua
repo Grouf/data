@@ -23,17 +23,16 @@ function get_sets()
 	sets.precast.Futae = {hands="Iga Tekko +2"}
 
 	sets.precast.Ranged= {head="Uk'uxkaj Cap",neck="Huani Collar",left_ear="Clearview earring",
-		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Hachiya Tekko",left_ring="Paqichikaji Ring",
+		right_ear="Bladeborn Earring",body="Otronif Harness",hands="Hachiya Tekko",left_ring="Paqichikaji Ring",
 		right_ring="Jalzahn's Ring",back="Yokaze Mantle",waist="Buccaneer's Belt",
-		legs="Thur. Tights +1",feet="Pillager's Poulaines"}
+		legs="Thur. Tights +1",feet="Otronif Boots"}
 	
 	sets.precast.WS= {head="Uk'uxkaj Cap",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Otronif Gloves",left_ring="Spiral Ring",
 		right_ring="Rajas Ring",back="Vassal's Mantle",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Otronif Boots"}
 	
-	sets.precast["Blade Hi"] = set_combine(sets.precast.WS,{neck="Shadow Gorget",left_ring="Solemn Ring",
-		hands="Iga Tekko +2"}) --AGI
+	sets.precast["Blade Hi"] = set_combine(sets.precast.WS,{neck="Shadow Gorget",hands="Iga Tekko +2"}) --AGI
 	
 	sets.precast["Blade Shun"] = sets.precast.WS --DEX
 	
@@ -46,7 +45,7 @@ function get_sets()
 	
 	sets.precast.Utsusemi= {head="Athos's Chapeau",neck="Magoraga Beads",left_ear="Phawaylla Earring",
 		right_ear="Loquac. Earring",body="Otronif Harness",hands="Mochizuki Tekko",left_ring="Prolix Ring",
-		right_ring="",back="Yokaze Mantle",waist="Phasmida Belt",
+		back="Yokaze Mantle",waist="Phasmida Belt",
 		legs="Kaabnax Trousers",feet="Iga Kyahan +2"} --30% Haste
 	
 	sets.precast["Migawari: Ichi"] = set_combine(sets.precast.Utsusemi,{body="Iga Ningi +2"})
@@ -56,10 +55,10 @@ function get_sets()
 		right_ring="Omega Ring",back="Yokaze Mantle",waist="Phasmida Belt",
 		legs="Kaabnax Trousers",feet="Hachiya Kyahan"}  --32% Haste, 224 Magic Accuracy
 	
-	sets.precast.Nuke= {head="Koga Hatsuburi",neck="Stoicheion Medal",left_ear="Friomisi Earring",
-		right_ear="Hecate's Earring",body="Otronif Harness",hands="Mochizuki Kekko",left_ring="Prolix Ring",
-		right_ring="Icesoul Ring",back="Toro Cape",
-		legs="Quiahuiz Trousers",feet="Hachiya Kayahan"}
+	sets.precast.Nuke= {--[[head="Koga Hatsuburi",]]neck="Stoicheion Medal",left_ear="Friomisi Earring",
+		right_ear="Hecate's Earring",body="Otronif Harness",hands="Mochizuki Tekko",left_ring="Prolix Ring",
+		back="Toro Cape",
+		legs="Quiahuiz Trousers",feet="Hachiya Kyahan"}
 	
 	sets.precast.Step = {head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
@@ -73,10 +72,10 @@ function get_sets()
 		right_ring="Rajas Ring",back="Yokaze Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Otronif Boots"}
 		
-	sets.TP.EVA = set_combine(sets.TP.DD,{neck="Torero Torque",left_ear="Ethereal Earring",
-		right_ear="Musical Earring",body="Otronif Harness",
-		right_ring="Defending Ring",waist="Koga sarashi",
-		legs="Otronif Brais"})  --Needs Verify
+	--[[sets.TP.EVA = set_combine(sets.TP.DD,{neck="Torero Torque",left_ear="Ethereal Earring",
+		right_ear="Phawaylla Earring",body="Otronif Harness",
+		back="Ik Cape",waist="Phasmida Belt",
+		legs="Otronif Brais"})  --Needs Verify ]]
 	
 	sets.TP.DT= {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Dudgeon Earring",
 		right_ear="Heartseeker earring",body="Otronif Harness",hands="Otronif Gloves",left_ring="Dark Ring",
@@ -155,16 +154,6 @@ function self_command(command)
 		sets.aftercast.Idle = sets.TP.DD
 		equip(sets.aftercast.TP)
 		send_command('@input /echo DD set')
-	elseif command == 'SOLO' then
-		sets.aftercast.TP = sets.TP.Solo
-		sets.aftercast.Idle = sets.TP.Solo
-		equip(sets.aftercast.TP)
-		send_command('@input /echo SOLO set')
-	elseif command == 'TH' then
-		sets.aftercast.TP = sets.TP.TH
-		sets.aftercast.Idle = sets.TP.TH
-		equip(sets.aftercast.TP)
-		send_command('@input /echo Treasure Hunter set')
 	elseif command == 'DT' then
 		sets.aftercast.TP = sets.DT
 		sets.aftercast.Idle = sets.DT
