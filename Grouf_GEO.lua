@@ -172,33 +172,40 @@ end
 
 function buff_change(buff_name,gain) --gain = True if gained, False if lost
 	--windower.add_to_chat(14, 'Buff_Change: ' ..buff_name.. ' gain? ' ..tostring(gain))
-	if gain then -- something was gained
-		equip(sets.JA[buff_name])
-		if buff_name=='Collimated Fervor' then
+	
+	if buff_name=='Collimated Fervor' then
+		if gain then
+			equip(sets.JA['Collimated Fervor'])
 			send_command('@wait 0.5; gs disable head;')
 			send_command('@input /echo Collimated Fervor ON, head disabled')
-		elseif buff_name=='Bolster' then 
-			send_command('@wait 0.5; gs disable body;')
-			send_command('@input /echo Bolster ON, body disabled')
-		elseif buff_name=='Mending Halation' then
-			send_command('@wait 0.5; gs disable legs;')
-			send_command('@input /echo Mending Halation ON, legs disabled')
-		elseif buff_name=='Radial Arcana' then
-			send_command('@wait 0.5; gs disable feet;')
-			send_command('@input /echo Radial Arcana ON, feet disabled')
-		end
-	
-	elseif not gain then -- something lost
-		if buff_name=='Collimated Fervor' then
+		else
 			enable("head")
 			send_command('@input /echo Collimated Fervor off, head enabled')
-		elseif buff_name=='Bolster' then 
+		end
+	elseif buff_name=='Bolster' then 
+		if gain then
+			equip(sets.JA.Bolster)
+			send_command('@wait 0.5; gs disable body;')
+			send_command('@input /echo Bolster ON, body disabled')
+		else
 			enable("body")
 			send_command('@input /echo Bolster off, body enabled')
-		elseif buff_name=='Mending Halation' then
+		end
+	elseif buff_name=='Mending Halation' then
+		if gain then
+			equip(sets.JA['Mending Halation'])
+			send_command('@wait 0.5; gs disable legs;')
+			send_command('@input /echo Mending Halation ON, legs disabled')
+		else
 			enable("legs")
 			send_command('@input /echo Mending Halation off, legs enabled')
-		elseif buff_name=='Radial Arcana' then
+		end
+	elseif buff_name=='Radial Arcana' then
+		if gain then
+			equip(sets.JA['Radial Arcana'])
+			send_command('@wait 0.5; gs disable feet;')
+			send_command('@input /echo Radial Arcana ON, feet disabled')
+		else
 			enable("feet")
 			send_command('@input /echo Radial Arcana off, feet enabled')
 		end
