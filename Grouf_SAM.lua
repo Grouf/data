@@ -54,6 +54,11 @@ function get_sets()
 															--Att = 855
 															--Eva = 564
 															--Def = 593
+	
+	sets.TP.Acc = {head="Yaoyotl Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
+		right_ear="Bladeborn Earring", body="Unkai Domaru +2", hands="Otronif Gloves", left_ring="Spiral Ring", 
+		right_ring="Rajas Ring", back="Takaha mantle", waist="Cetl Belt", 
+		legs="Unkai Haidate +2", feet="Otronif Boots" } --needs more work, added quick for Dimi
 		
 	--[[sets.TP.EVA = set_combine(sets.TP.DD,{neck="Torero Torque",left_ear="Ethereal Earring",
 		right_ear="Musical Earring",body="Otronif Harness",
@@ -118,8 +123,13 @@ function self_command(command)
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Danzo Sune-Ate"})
 		--equip(sets.aftercast.TP)
 		send_command('@input /echo DD set')
+	elseif command == 'ACC' then
+		sets.aftercast.TP = sets.TP.ACC
+		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Danzo Sune-Ate"})
+		--equip(sets.aftercast.TP)
+		send_command('@input /echo ACC set')
 	elseif command == 'DT' then
-		sets.aftercast.TP = sets.DT
+		sets.aftercast.TP = sets.TP.DT
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Danzo Sune-Ate"})
 		--equip(sets.aftercast.TP)
 		send_command('@input /echo DT set')
