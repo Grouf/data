@@ -131,7 +131,7 @@ function precast(spell)
 		end
 	end
 	
-	if spell.type=="JobAbliity" then
+	if spell.type=="JobAbility" then
 		if sets.JA[spell.english] then
 			equip(sets.JA[spell.english])
 		end
@@ -215,25 +215,26 @@ function status_change(new,old)
 end
 
 function buff_change(buff_name,gain)
-	if gain then -- something was gained
-		equip(sets.JA[buff_name]) --here to make sure appropriate equipment is equipped before disable
-		if buff_name=='Saboteur' then
+	if buff_name=='Saboteur' then
+		if gain then
+			equip(sets.JA.Saboteur)
 			send_command('@wait 0.5; gs disable hands;')
 			send_command('@input /echo Saboteur ON, hands disabled')
-		elseif buff_name=='Chainspell' then 
-			send_command('@wait 0.5; gs disable body;')
-			send_command('@input /echo Chainspell ON, body disabled')
-		end
-	
-	elseif not gain then -- something lost
-		if buff_name=='Saboteur' then
+		else
 			enable("hands")
 			send_command('@input /echo Saboteur off, hands enabled')
-		elseif buff_name=='Chainspell' then 
+		end
+	elseif buff_name=='Chainspell' then 
+		if gain then
+			equip(sets.JA.Chainspell)
+			send_command('@wait 0.5; gs disable body;')
+			send_command('@input /echo Chainspell ON, body disabled')
+		else
 			enable("body")
 			send_command('@input /echo Chainspell off, body enabled')
 		end
 	end
+
 end
 
 function self_command(command)
