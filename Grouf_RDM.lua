@@ -138,7 +138,7 @@ function midcast(spell)
 		
 
 	elseif spell.skill == 'Enhancing Magic' then
-		windower.add_to_chat(14, 'Casting spell: ' ..spell.english.. ' on ' ..spell.target.name.. ' with ' ..SetMode_Names[SetMode_Index])
+		--windower.add_to_chat(14, 'Casting spell: ' ..spell.english.. ' on ' ..spell.target.name.. ' with ' ..SetMode_Names[SetMode_Index])
 		equip(sets.precast.Enhancing)
 		
 		if string.find(spell.english, 'Refresh') then
