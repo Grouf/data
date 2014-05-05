@@ -54,10 +54,10 @@ function get_sets()
 	
 	
 	--Job Abilities
-	
-	sets.precast.Chainspell = {body="Vitivation Tabard"}
-	sets.precast.Saboteur = {hands="Estq. Ganthrt. +2"}
-	sets.precast.Composure = { } --Find augment gear
+	sets.JA = {}
+	sets.JA.Chainspell = {body="Vitivation Tabard"}
+	sets.JA.Saboteur = {hands="Estq. Ganthrt. +2"}
+	sets.JA.Composure = { } --Find augment gear
 	--Need other JA listed
 	
 	sets.precast.Idle = {main="Buramenk'ah", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Vitivation Chapeau", 
@@ -83,7 +83,7 @@ function get_sets()
 	sets.precast.Fast = {main="Lehbrailg +2", sub="Arbuda Grip", head="Atrophy Chapeau", 
 		neck="Estoqueur's Collar", left_ear="Estq. Earring", right_ear="Loquac. Earring", body="Vitivation Tabard", 
 		hands="Gendewitha Gages", left_ring="Prolix Ring", back="Swith Cape",
-		waist="Witful Belt", legs="Orvail Pants +1", feet="Hagondes Sabots"} -- 47% Fast Cast, 13% Haste
+		waist="Witful Belt", legs="Orvail Pants +1", feet="Hagondes Sabots"} -- 50% Fast Cast, 13% Haste 
 	
 	sets.precast.Warp = sets.precast.Fast
 	sets.precast['Warp II'] = sets.precast.Fast
@@ -100,13 +100,14 @@ function get_sets()
 		neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring", body="Hagondes Coat", 
 		hands="Hagondes Cuffs", left_ring="Spiral Ring", right_ring="Rajas Ring", back="Atheling Mantle", 
 		waist="Windbuffet Belt", legs="Gendewitha Spats", feet="Hagondes Sabots"}
-		
-	sets.TP.WS = {ammo="Demonry Stone", head="Hagondes Hat", 
+	
+	sets.WS = {}
+	sets.WS.Base = {ammo="Demonry Stone", head="Hagondes Hat", 
 		neck="Tlamiztli Collar", left_ear="Steelflash Earring", right_ear="Bladeborn Earring", body="Hagondes Coat", 
 		hands="Hagondes Cuffs", left_ring="Spiral Ring", right_ring="Rajas Ring", back="Buquwik Cape", 
 		waist="Prosilio Belt", legs="Gendewitha Spats", feet="Hagondes Sabots"}
 	
-	sets.precast.Requiescat = set_combine(sets.TP.WS, {neck="Shadow Gorget"})
+	sets.WS.Requiescat = set_combine(sets.WS.Base, {neck="Shadow Gorget"})
 	
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
@@ -122,9 +123,28 @@ function precast(spell)
 		equip(sets.precast.Fast)
 	end
 	
+	if spell.type=="WeaponSkill" then
+		if sets.WS[spell.english] then
+			equip(sets.WS[spell.english])
+		else
+			equip(sets.WS.Base)
+		end
+	end
+	
+	if spell.type=="JobAbliity" then
+		if sets.JA[spell.english] then
+			equip(sets.JA[spell.english])
+		end
+	end
+	
 end
 
 function midcast(spell)
+	if spell.type == 'JobAbility' or spell.type == 'WeaponSkill' then
+	--midcast doesn't exist for JA or WS so cancel the processing of this function
+		--windower.add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
+		return
+	end
 
 --windower.add_to_chat(14, 'Casting spell: ' ..spell.english.. ' - ' ..spell.skill.. ' on ' ..spell.target.name.. ' with ' ..SetMode_Names[SetMode_Index])
 	if sets.precast[spell.english] then
@@ -171,10 +191,8 @@ function midcast(spell)
 	elseif spell.skill == 'Ninjutsu' then
 		equip(sets.precast.Fast)
 		
-	elseif spell.type=="Weapon Skill" then
-		equip(sets.TP.WS)
 	end
-
+--windower.add_to_chat(14, 'End of Midcast (NOT cancelled)')
 end
 
 function aftercast(spell)
@@ -198,7 +216,7 @@ end
 
 function buff_change(buff_name,gain)
 	if gain then -- something was gained
-		equip(sets.precast[buff_name]) --here to make sure appropriate equipment is equipped before disable
+		equip(sets.JA[buff_name]) --here to make sure appropriate equipment is equipped before disable
 		if buff_name=='Saboteur' then
 			send_command('@wait 0.5; gs disable hands;')
 			send_command('@input /echo Saboteur ON, hands disabled')
