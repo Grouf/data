@@ -23,6 +23,7 @@ Back		Swith				3
 
 Waist		Witful				3
 
-Legs		Orvail +1			5
+Legs		Geomancy Pants		10
+			Orvail +1			5
 
 Feet
