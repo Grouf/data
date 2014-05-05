@@ -91,6 +91,7 @@ function get_sets()
 	sets.precast.Tractor = sets.precast.Fast
 	sets.precast.Raise = sets.precast.Fast
 	sets.precast['Raise II'] = sets.precast.Fast
+	sets.precast.Reraise = sets.precast.Fast
 	sets.precast['Protect V'] = sets.precast.Fast
 	sets.precast['Shell V'] = sets.precast.Fast
 	
@@ -115,7 +116,14 @@ function get_sets()
 end
 
 function precast(spell)
-	--windower.add_to_chat(14, 'Casting spell: ' ..spell.english.. ' - ' ..spell.skill.. ' on ' ..spell.target.name.. ' with ' ..SetMode_Names[SetMode_Index])
+	
+	equip(sets.precast.Fast)
+	
+end
+
+function midcast(spell)
+
+--windower.add_to_chat(14, 'Casting spell: ' ..spell.english.. ' - ' ..spell.skill.. ' on ' ..spell.target.name.. ' with ' ..SetMode_Names[SetMode_Index])
 	if sets.precast[spell.english] then
 		equip(sets.precast[spell.english])
 	
@@ -163,9 +171,7 @@ function precast(spell)
 	elseif spell.type=="Weapon Skill" then
 		equip(sets.TP.WS)
 	end
-end
 
-function midcast(spell)
 end
 
 function aftercast(spell)
