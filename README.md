@@ -6,9 +6,10 @@ Job		Gear		Rules		Tested		Notes
 MNK		Done		Done		Yes
 WHM		Done		Done		Yes		
 BLM		Done		Some		Yes			
-RDM		First Draft	Basic		NO			Using this job for Wardrobe storage re-write
-THF		2nd Draft	Yes			NO			Need to make sure Ranged attack will swap
-RNG		Done		Yes			Yes			specify melee WS?
+RDM		Done		Done		Yes			Using this job for Wardrobe storage re-write
+											Need to refine and test melee sets once Wardrobe released
+THF		Done		Done		Yes			
+RNG		Done		Yes			Yes			
 SAM		Done		Yes			Yes			
 NIN		Done		Yes			Yes			Need to test Migawari
 SMN
