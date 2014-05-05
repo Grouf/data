@@ -136,20 +136,17 @@ function status_change(new,old)
 end
 
 function buff_change(buff_name,gain) --gain = True if gained, False if lost
-	if gain then -- something was gained
-		if buff_name=='Migawari' then --Need to verify Name
+	if buff_name=='Migawari' then
+		if gain then
 			equip({body="Iga Ningi +2"}) -- Need to verify this works
 			send_command('@wait 0.5; gs disable body;')
 			windower.add_to_chat(14, 'Migawari status detected, Empy body on, Body disabled')
-		end
-		
-	elseif not gain then -- something lost
-		if buff_name=='Migawari' then --Need to verify Name
-			send_command('@wait 0.5; gs enable body;')
+		else
+			enable("body")
 			windower.add_to_chat(14, 'Migawari status lost, Body enabled')
 		end
-	
 	end
+	
 end
 
 function self_command(command)
@@ -175,55 +172,3 @@ function self_command(command)
 		send_command('@input /echo DT set')
 	end
 end
-
---[[Spellcast rules
-
-<rules>
-	
-	<if status="idle"> 
-		<equip when="idle|aftercast" set="Idle" /> 
-	</if> 
-	<elseif status="engaged"> 
-		<equip when="engaged|aftercast" set="TP" />
-	</elseif>
-	<!--<elseif status="resting">
-		<equip when="resting|aftercast" set="Rest" />
-	</elseif>-->
-	
-	<if BuffActive="Migawari">
-		<equip when="idle|engaged|resting|precast|midcast|aftercast">
-			<body lock="t">Iga Ningi +2</body>
-		</equip>
-	</if>
-			
-	<if BuffActive="Futae">
-		<equip when="idle|engaged|resting|precast|midcast|aftercast">
-			<hands lock="t">Iga Tekko +2</hands>
-		</equip>
-	</if>
-
-	<!--Magic-->
-	<if Skill="Ninjutsu">
-		<if spell="Utsusemi*">
-			<equip when="precast" set="Utsusemi" />
-		</if>
-		<elseif spell="Migawari*">
-			<equip when="precast" set="NINJUTSU" />
-			<equip when="precast|midcast|aftercast">
-				<body>Iga Ningi +2</body>
-			</equip>
-		</elseif>
-		<elseif spell="Katon*|Hyoton*|Huton*|Doton*|Raiton*|Suiton*">
-			<equip when="precast" set="Nuke" />
-		</elseif>
-		<elseif spell="Aisha*|Jubaku*|Hojo*|Kurayami*|Dokumori*|Yurin*">
-			<equip when="precast" set="Enfeeble" />
-		</elseif>
-		<else>
-			<equip when="precast" set="Utsusemi" />
-		</else>
-	</if>
-			
-
-
-]]
