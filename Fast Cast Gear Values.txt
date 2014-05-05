@@ -1,0 +1,28 @@
+Fast Cast List
+
+Ammo		Incantor Stone		2%
+
+Head		Atrophy Chapeau		11
+			Athos Chapeau		2
+			Nares				10
+			
+Neck		Orunmila's Torque 	5
+
+Ear			Estoqueurs			2
+			Loquacious			2
+			
+Body		Anhur				10
+			Vitivation			12
+
+Hands		Gendewitha			7
+			Thaumas Gloves		4
+
+Ring		Prolix				2
+
+Back		Swith				3
+
+Waist		Witful				3
+
+Legs		Orvail +1			5
+
+Feet
