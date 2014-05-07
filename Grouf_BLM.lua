@@ -7,10 +7,10 @@
 function get_sets()
 	sets.precast = {}
 	
-	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Hagondes Hat",
+	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Nares Cap",
 		left_ear="Loquac. Earring",body="Anhur Robe",
 		hands="Hagondes Cuffs",back="Swith Cape",
-		waist="Witful Belt",legs="Orvail Pants +1",feet="Hagondes Sabots"}
+		waist="Witful Belt",legs="Orvail Pants +1",feet="Hagondes Sabots"} -- 37% Fast Cast
 	
 	sets.precast.Idle = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Hagondes Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat",
