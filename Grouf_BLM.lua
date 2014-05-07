@@ -30,8 +30,9 @@ function get_sets()
 		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Omega Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Orvail Pants +1",feet="Hagondes Sabots"}
 		
-	sets.midcast.Enhancing = {body="Anhur Robe",neck="Stone Gorget",hands="Augur's Gloves",
-		left_ear="Loquac. Earring",
+	sets.midcast.Enhancing = {head="Nares Cap",
+		body="Anhur Robe",neck="Stone Gorget",hands="Augur's Gloves",
+		left_ear="Loquac. Earring",back="Swith Cape",
 		waist="Siegel Sash",legs="Shedir Seraweels",feet="Hagondes Sabots"}
 		
 	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Hagondes Hat",
@@ -99,9 +100,10 @@ function midcast(spell)
 		if spell.english == 'Stoneskin' or spell.english == 'Blink' or 
 		spell.english == 'Aquaveil' or spell.english == 'Phalanx' then
 			equip(sets.midcast.Enhancing)
+			--windower.add_to_chat(14, 'Midcast: Enhancing casting, Enhancing set')
 		else
-			equip(sets.midcast.FastCast)
-			--send_command('@input /echo FastCast set on')
+			equip(sets.precast.FastCast)
+			--windower.add_to_chat(14, 'Midcast: Enhancing casting, Fast Cast set')
 		end
 	elseif spell.skill == 'Elemental Magic' then
 		equip(sets.midcast.ElementalMagic)
