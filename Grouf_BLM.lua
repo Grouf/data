@@ -30,7 +30,6 @@ function get_sets()
 		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Omega Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Orvail Pants +1",feet="Hagondes Sabots"}
 		
-		
 	sets.midcast.Enhancing = {body="Anhur Robe",neck="Stone Gorget",hands="Augur's Gloves",
 		left_ear="Loquac. Earring",
 		waist="Siegel Sash",legs="Shedir Seraweels",feet="Hagondes Sabots"}
@@ -112,7 +111,7 @@ function midcast(spell)
 	elseif spell.skill == 'Dark Magic' then
 		equip(sets.midcast.DarkMagic)
 		if string.find(spell.english, 'Aspir') or spell.english == 'Drain' then
-			equip({head="Striga Crown",right_ear="Hirudinea Earring"})
+			equip({head="Striga Crown"})
 		end
 	elseif spell.skill == 'Enfeebling Magic' then
 		equip(sets.midcast.Enfeeble)
