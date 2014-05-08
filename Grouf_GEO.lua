@@ -75,7 +75,7 @@ function precast(spell)
 	--windower.add_to_chat(14, 'Precast: spell type= ' ..spell.type)
 	if spell.type ~= 'JobAbility' and spell.type ~= 'WeaponSkill' then
 		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
-		equip(sets.precast.Fast)
+		equip(sets.precast.FastCast)
 	end
 	
 	--[[
