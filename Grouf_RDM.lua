@@ -80,20 +80,20 @@ function get_sets()
 	sets.precast.EnhancingOther = set_combine(sets.precast.Enhancing, {head="Estq. Chappel +2", 
 			body="Estq. Sayon +2", hands="Estq. Ganthrt. +2", legs="Estqr. Fuseau +2"})
 	
-	sets.precast.Fast = {main="Lehbrailg +2", sub="Arbuda Grip", head="Atrophy Chapeau", 
+	sets.precast.FastCast = {main="Lehbrailg +2", sub="Arbuda Grip", head="Atrophy Chapeau", 
 		neck="Estoqueur's Collar", left_ear="Estq. Earring", right_ear="Loquac. Earring", body="Vitivation Tabard", 
 		hands="Gendewitha Gages", left_ring="Prolix Ring", back="Swith Cape",
 		waist="Witful Belt", legs="Orvail Pants +1", feet="Hagondes Sabots"} -- 50% Fast Cast, 13% Haste 
 	
-	sets.precast.Warp = sets.precast.Fast
-	sets.precast['Warp II'] = sets.precast.Fast
-	sets.precast.Escape = sets.precast.Fast
-	sets.precast.Tractor = sets.precast.Fast
-	sets.precast.Raise = sets.precast.Fast
-	sets.precast['Raise II'] = sets.precast.Fast
-	sets.precast.Reraise = sets.precast.Fast
-	sets.precast['Protect V'] = sets.precast.Fast
-	sets.precast['Shell V'] = sets.precast.Fast
+	sets.precast.Warp = sets.precast.FastCast
+	sets.precast['Warp II'] = sets.precast.FastCast
+	sets.precast.Escape = sets.precast.FastCast
+	sets.precast.Tractor = sets.precast.FastCast
+	sets.precast.Raise = sets.precast.FastCast
+	sets.precast['Raise II'] = sets.precast.FastCast
+	sets.precast.Reraise = sets.precast.FastCast
+	sets.precast['Protect V'] = sets.precast.FastCast
+	sets.precast['Shell V'] = sets.precast.FastCast
 	
 	sets.TP = {}
 	sets.TP.Engage = {ammo="Oreiad's Tathlum", head="Hagondes Hat", 
@@ -120,7 +120,7 @@ function precast(spell)
 	--windower.add_to_chat(14, 'Precast: spell type= ' ..spell.type)
 	if spell.type ~= 'JobAbility' and spell.type ~= 'WeaponSkill' then
 		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
-		equip(sets.precast.Fast)
+		equip(sets.precast.FastCast)
 	end
 	
 	if spell.type=="WeaponSkill" then
@@ -189,7 +189,7 @@ function midcast(spell)
 		end
 		
 	elseif spell.skill == 'Ninjutsu' then
-		equip(sets.precast.Fast)
+		equip(sets.precast.FastCast)
 		
 	end
 --windower.add_to_chat(14, 'End of Midcast (NOT cancelled)')
