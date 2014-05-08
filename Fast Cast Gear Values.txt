@@ -4,26 +4,26 @@ Ammo		Incantor Stone		2%
 
 Head		Atrophy Chapeau		11
 			Athos Chapeau		2
-			Nares				10
+			Nares Cap			10
 			
 Neck		Orunmila's Torque 	5
 
-Ear			Estoqueurs			2
-			Loquacious			2
+Ear			Estoqueurs Earring	2
+			Loquacious Earring	2
 			
-Body		Anhur				10
-			Vitivation			12
+Body		Anhur Robe			10
+			Vitivation Tabard	12
 
-Hands		Gendewitha			7
+Hands		Gendewitha  Gages	7
 			Thaumas Gloves		4
 
-Ring		Prolix				2
+Ring		Prolix Ring			2
 
-Back		Swith				3
+Back		Swith Cape			3
 
-Waist		Witful				3
+Waist		Witful Belt			3
 
 Legs		Geomancy Pants		10
-			Orvail +1			5
+			Orvail Pants +1		5
 
 Feet
