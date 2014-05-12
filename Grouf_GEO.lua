@@ -76,7 +76,6 @@ function precast(spell)
 	if spell.type ~= 'JobAbility' and spell.type ~= 'WeaponSkill' then
 		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
-	end
 	
 	--[[
 	if spell.type=="WeaponSkill" then
@@ -88,7 +87,7 @@ function precast(spell)
 	end
 	]]
 	
-	if spell.type=="JobAbility" then
+	elseif spell.type=="JobAbility" then
 		if sets.JA[spell.english] then
 			equip(sets.JA[spell.english])
 		end
