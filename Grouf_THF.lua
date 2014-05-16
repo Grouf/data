@@ -23,7 +23,7 @@ function get_sets()
 	
 	sets.precast.Evisceration = {head="Uk'uxkaj Cap",neck="Shadow Gorget",left_ear="Dudgeon Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Iuitl Wristbands",left_ring="Rajas Ring",
-		right_ring="Spiral Ring",back="Buquwik Cape",waist="Light Belt",
+		right_ring="Spiral Ring",back="Buquwik Cape",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
 	
 	sets.precast["Rudra's Storm"] = {head="Ejekamal Mask",neck="Shadow Gorget",left_ear="Steelflash Earring",

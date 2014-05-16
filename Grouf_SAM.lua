@@ -26,7 +26,7 @@ function get_sets()
 	--sets.WS.DD["Tachi: Yukikaze"] = set_combine(sets.WS.DD,{neck="Snow Gorget"}) --STR75
 	--sets.WS.DD["Tachi: Rana"] = set_combine(sets.WS.DD,{neck="Shadow Gorget"}) --STR35
 	
-	sets.WS.DD["Tachi: Shoha"] = set_combine(sets.WS.DD,{neck="Shadow Gorget", waist="Thunder Belt"})
+	sets.WS.DD["Tachi: Shoha"] = set_combine(sets.WS.DD,{neck="Shadow Gorget"})
 	
 	-- Weapon Skill sets:  Accuracy --
 	sets.WS.Acc = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Steelflash Earring", 
@@ -41,7 +41,7 @@ function get_sets()
 	--sets.WS.Acc["Tachi: Yukikaze"] = set_combine(sets.WS.Acc,{neck="Snow Gorget"}) --STR75
 	--sets.WS.Acc["Tachi: Rana"] = set_combine(sets.WS.Acc,{neck="Shadow Gorget"}) --STR35
 	
-	sets.WS.Acc["Tachi: Shoha"] = set_combine(sets.WS.Acc,{neck="Shadow Gorget", waist="Thunder Belt"})
+	sets.WS.Acc["Tachi: Shoha"] = set_combine(sets.WS.Acc,{neck="Shadow Gorget"})
 	
 	
 	

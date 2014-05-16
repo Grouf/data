@@ -22,7 +22,7 @@ function get_sets()
 		legs="Thur. Tights +1",feet="Orion Socks"}
 	
 	--sets.precast.Jishnu = set_combine(sets.precast.WS,{waist="Light Belt"})
-	sets.precast["Jishnu's Radiance"] = set_combine(sets.precast.WS,{waist="Light Belt"})
+	sets.precast["Jishnu's Radiance"] = sets.precast.WS
 	
 	sets.precast.WSMelee = {head="Uk'uxkaj Cap",neck="Light Gorget",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Iuitl Wristbands",left_ring="Spiral Ring",
