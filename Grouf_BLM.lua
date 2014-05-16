@@ -22,7 +22,7 @@ function get_sets()
 	sets.midcast = {}
 	sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabanax Hat",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
-		hands="Weather. Cuffs",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
+		hands="Bokwus Gloves",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Witch Sash",legs="Nares Trews",feet="Orvail Souliers +1"}
 		
 	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
@@ -30,7 +30,7 @@ function get_sets()
 		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Omega Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Orvail Pants +1",feet="Hagondes Sabots"}
 		
-	sets.midcast.Enhancing = {head="Nares Cap",
+	sets.midcast.Enhancing = {main="Lehbrailg +2",sub="Fulcio Grip",head="Nares Cap",
 		body="Anhur Robe",neck="Stone Gorget",hands="Augur's Gloves",
 		left_ear="Loquac. Earring",back="Swith Cape",
 		waist="Siegel Sash",legs="Shedir Seraweels",feet="Hagondes Sabots"}
@@ -48,12 +48,12 @@ function get_sets()
 	sets.TP = {}
 	sets.TP.Engage = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Kaabanax Hat",
 		neck="Asperity Necklace",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Mars's Ring",back="Buquwik Cape",
-		waist="Aswang Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
+		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Spiral Ring",back="Buquwik Cape",
+		waist="Windbuffet Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
 		
 	sets.TP.WS = {head="Hagondes Hat",
 		neck="Tlamiztli Collar",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Flame Ring",back="Buquwik Cape",
+		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Spiral Ring",back="Buquwik Cape",
 		waist="Prosilio Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
 	
 	sets.aftercast = {}
