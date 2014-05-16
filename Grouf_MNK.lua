@@ -19,7 +19,7 @@ function get_sets()
 	
 	sets.precast.Step = {main="Oatixur",ammo="Honed Tathlum",head="Ejekamal Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
-		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Anchoret's Mantle",waist="Phasmida Belt",
+		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Anchoret's Mantle",waist="Warwolf Belt",
 		legs="Manibozho Brais",feet="Thur. Boots +1"}
 
 	sets.precast.WS = {main="Oatixur",ammo="Thew Bomblet",head="Uk'uxkaj Cap",neck="Tlamiztli Collar",
@@ -50,6 +50,11 @@ function get_sets()
 	sets.DT = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Twilight Torque",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",
 		left_ring="Dark Ring",right_ring="Shadow Ring",back="Archon Cape",waist="Black Belt",
+		legs="Kaabnax Trousers",feet="Otronif Boots"}
+	
+	sets.Shark = {main="Oatixur",ammo="Honed Tathlum",head="Uk'uxkaj Cap",neck="Twilight Torque",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",
+		left_ring="Dark Ring",right_ring="Shadow Ring",back="Letalis Mantle",waist="Black Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots"}
 
 	sets.aftercast = {}
@@ -98,21 +103,26 @@ function self_command(command)
 		sets.aftercast.TP = sets.TP.DD
 		sets.aftercast.Idle = sets.TP.DD
 		equip(sets.aftercast.TP)
-		send_command('@input /echo DD SET')
+		send_command('@input /echo DD set')
 	elseif command == 'Accuracy' then
 		sets.aftercast.TP = sets.TP.Accuracy
 		sets.aftercast.Idle = sets.TP.Accuracy
 		equip(sets.aftercast.TP)
-		send_command('@input /echo Accuracy SET')
+		send_command('@input /echo ACCURACY set')
 	elseif command == 'SOLO' then
 		sets.aftercast.TP = sets.TP.Solo
 		sets.aftercast.Idle = sets.TP.Solo
 		equip(sets.aftercast.TP)
-		send_command('@input /echo SOLO SET')
+		send_command('@input /echo SOLO set')
 	elseif command == 'DT' then
 		sets.aftercast.TP = sets.DT
 		sets.aftercast.Idle = sets.DT
 		equip(sets.aftercast.TP)
-		send_command('@input /echo DT SET')
+		send_command('@input /echo DT set')
+	elseif command == 'Shark' then
+		sets.aftercast.TP = sets.Shark
+		sets.aftercast.Idle = sets.Shark
+		equip(sets.aftercast.TP)
+		send_command('@input /echo SHARK set')
 	end
 end
