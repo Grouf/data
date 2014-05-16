@@ -35,7 +35,7 @@ function get_sets()
 		hands="Gendewitha Gages",left_ring="Omega Ring",right_ring="Solemn Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 	
-	sets.midcast.Enhancing = {ammo="Oreiad's Tathlum",
+	sets.midcast.Enhancing = {main="Lehbrailg +2",sub="Fulcio Grip",ammo="Oreiad's Tathlum",
 		neck="Stone Gorget",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Anhur Robe",
 		hands="Augur's Gloves",left_ring="Prolix Ring",back="Swith Cape",
 		waist="Siegel Sash",legs="Shedir Seraweels",feet="Orsn. Duckbills +2"}
