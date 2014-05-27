@@ -14,7 +14,7 @@ function get_sets()
 
 	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff",sub="Mephitis Grip"})
 	
-	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Nares Cap",
+	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Nahtirah Hat",
 		left_ear="Loquac. Earring",body="Anhur Robe",
 		hands="Gendewitha Gages",back="Swith Cape",
 		waist="Witful Belt",legs="Orvail Pants +1",feet="Piety Duckbills"} -- 43% Fast Cast
