@@ -17,9 +17,11 @@ function get_sets()
 	sets.precast.Shadowbind = {hands="Orion Bracers"}
 	
 	sets.precast.WS = {head="Orion Beret",neck="Ocachi Gorget",left_ear="Clearview Earring",
-		right_ear="Volley Earring",body="Orion Jerkin",hands="Buremte Gloves",left_ring="Jalzahn's Ring",
+		right_ear="Volley Earring",body="Orion Jerkin",hands="Buremte Gloves",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Lutian Cape",waist="Scout's Belt",
 		legs="Thur. Tights +1",feet="Orion Socks"}
+		
+	sets.precast["Eagle Eye Shot"] = sets.precast.WS
 	
 	--sets.precast.Jishnu = set_combine(sets.precast.WS,{waist="Light Belt"})
 	sets.precast["Jishnu's Radiance"] = sets.precast.WS
@@ -74,9 +76,12 @@ function aftercast(spell)
 end
 
 function status_change(new,old)
+	--windower.add_to_chat(14, 'status_change; new=' ..new.. ' | old=' ..old)
 	if T{'Idle','Resting'}:contains(new) then
+		--windower.add_to_chat(14, 'status_change; Idle or Resting')
 		equip(sets.aftercast.Idle)
 	elseif new == 'Engaged' then
+		--windower.add_to_chat(14, 'status_change; Engaged')
 		equip(sets.aftercast.TP)
 	end
 end
