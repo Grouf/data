@@ -5,6 +5,9 @@ Ammo		Incantor Stone		2%
 Head		Atrophy Chapeau		11
 			Athos Chapeau		2
 			Nares Cap			10
+			Nahtirah Hat		10
+			Haruspex Hat		8		(for BLU)
+			Haruspex Hat +1		9		(for BLU)
 			
 Neck		Orunmila's Torque 	5
 
