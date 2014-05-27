@@ -22,12 +22,12 @@ function get_sets()
 	sets.precast.Yonin = {legs="Iga Hakama +2"}
 	sets.precast.Futae = {hands="Iga Tekko +2"}
 
-	sets.precast.Ranged= {head="Uk'uxkaj Cap",neck="Huani Collar",left_ear="Clearview earring",
-		right_ear="Bladeborn Earring",body="Otronif Harness",hands="Hachiya Tekko",left_ring="Paqichikaji Ring",
-		right_ring="Jalzahn's Ring",back="Yokaze Mantle",waist="Buccaneer's Belt",
+	sets.precast.Ranged = {head="Uk'uxkaj Cap",neck="Huani Collar",left_ear="Clearview earring",
+		right_ear="Bladeborn Earring",body="Otronif Harness",hands="Hachiya Tekko",left_ring="Fistmele Ring",
+		right_ring="Paqichikaji Ring",back="Yokaze Mantle",waist="Buccaneer's Belt",
 		legs="Thur. Tights +1",feet="Otronif Boots"}
 	
-	sets.precast.WS= {head="Uk'uxkaj Cap",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
+	sets.precast.WS = {head="Uk'uxkaj Cap",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Otronif Gloves",left_ring="Spiral Ring",
 		right_ring="Rajas Ring",back="Vassal's Mantle",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Otronif Boots"}
@@ -43,21 +43,21 @@ function get_sets()
 	sets.precast["Blade Yu"] = set_combine(sets.precast.WS,{left_ear="Friomisi Earring",
 		right_ear="Hecate's Earring",back="Toro Cape"}) --DEX50 INT50
 	
-	sets.precast.Utsusemi= {head="Athos's Chapeau",neck="Magoraga Beads",left_ear="Phawaylla Earring",
+	sets.precast.Utsusemi = {head="Athos's Chapeau",neck="Magoraga Beads",left_ear="Phawaylla Earring",
 		right_ear="Loquac. Earring",body="Otronif Harness",hands="Mochizuki Tekko",left_ring="Prolix Ring",
 		back="Yokaze Mantle",waist="Phasmida Belt",
 		legs="Kaabnax Trousers",feet="Iga Kyahan +2"} --30% Haste
 	
 	sets.precast["Migawari: Ichi"] = set_combine(sets.precast.Utsusemi,{body="Iga Ningi +2"})
 	
-	sets.precast.Enfeeble= {head="Hachiya Hatsuburi",neck="Stoicheion Medal",left_ear="Lifestorm Earring",
+	sets.precast.Enfeeble = {head="Hachiya Hatsuburi",neck="Stoicheion Medal",left_ear="Lifestorm Earring",
 		right_ear="Psystorm Earring",body="Otronif Harness",hands="Mochizuki Tekko",left_ring="Prolix Ring",
 		right_ring="Omega Ring",back="Yokaze Mantle",waist="Phasmida Belt",
 		legs="Kaabnax Trousers",feet="Hachiya Kyahan"}  --32% Haste, 224 Magic Accuracy
 	
-	sets.precast.Nuke= {--[[head="Koga Hatsuburi",]]neck="Stoicheion Medal",left_ear="Friomisi Earring",
+	sets.precast.Nuke = {--[[head="Koga Hatsuburi",]]neck="Stoicheion Medal",left_ear="Friomisi Earring",
 		right_ear="Hecate's Earring",body="Otronif Harness",hands="Mochizuki Tekko",left_ring="Prolix Ring",
-		back="Toro Cape",
+		right_ring="Icesoul Ring",back="Toro Cape",
 		legs="Quiahuiz Trousers",feet="Hachiya Kyahan"}
 	
 	sets.precast.Step = {head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
@@ -77,7 +77,7 @@ function get_sets()
 		back="Ik Cape",waist="Phasmida Belt",
 		legs="Otronif Brais"})  --Needs Verify ]]
 	
-	sets.TP.DT= {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Dudgeon Earring",
+	sets.TP.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Dudgeon Earring",
 		right_ear="Heartseeker earring",body="Otronif Harness",hands="Otronif Gloves",left_ring="Dark Ring",
 		right_ring="Dark Ring",back="Ik Cape",waist="Flume Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots"}
