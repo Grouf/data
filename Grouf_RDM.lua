@@ -5,8 +5,6 @@
 ]]
 
 function get_sets()
-	sets.precast = {}
-	
 	--Potency/Accuracy sets
 	
 	SetMode_Index = 1
@@ -60,40 +58,45 @@ function get_sets()
 	sets.JA.Composure = { } --Find augment gear
 	--Need other JA listed
 	
+	sets.precast = {}
+	
 	sets.precast.Idle = {main="Buramenk'ah", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Vitivation Chapeau", 
 		neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", body="Atrophy Tabard", 
 		hands="Serpentes Cuffs", left_ring="Solemn Ring", right_ring="Sirona's Ring", back="Estoqueur's cape", 
 		waist="Aswang Sash", legs="Nares Trews", feet="Serpentes Sabots"}
 
 	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff"})
-
-	sets.precast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Atrophy Chapeau", 
-		neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Loquac. Earring", body="Gendewitha Bliaut", 
-		hands="Gendewitha Gages", left_ring="Solemn Ring", right_ring="Sirona's Ring", back="Pahtli Cape", 
-		waist="Witch Sash", legs="Atrophy Tights", feet="Orvail Souliers +1"} --50% Cure Potency, MND242, 
-	
-	sets.precast.Enhancing = {head="Atrophy Chapeau", 
-		neck="Stone Gorget", right_ear="Loquac. Earring", body="Vitivation Tabard", 
-		hands="Atrophy Gloves", left_ring="Prolix Ring", back="Estoqueur's Cape", 
-		waist="Siegel Sash", legs="Shedir Seraweels", feet="Estq. Houseaux +2"}
-	
-	sets.precast.EnhancingOther = set_combine(sets.precast.Enhancing, {head="Estq. Chappel +2", 
-			body="Estq. Sayon +2", hands="Estq. Ganthrt. +2", legs="Estqr. Fuseau +2"})
 	
 	sets.precast.FastCast = {main="Lehbrailg +2", sub="Arbuda Grip", head="Atrophy Chapeau", 
 		neck="Estoqueur's Collar", left_ear="Estq. Earring", right_ear="Loquac. Earring", body="Vitivation Tabard", 
 		hands="Gendewitha Gages", left_ring="Prolix Ring", back="Swith Cape",
 		waist="Witful Belt", legs="Orvail Pants +1", feet="Hagondes Sabots"} -- 50% Fast Cast, 13% Haste 
 	
-	sets.precast.Warp = sets.precast.FastCast
-	sets.precast['Warp II'] = sets.precast.FastCast
-	sets.precast.Escape = sets.precast.FastCast
-	sets.precast.Tractor = sets.precast.FastCast
-	sets.precast.Raise = sets.precast.FastCast
-	sets.precast['Raise II'] = sets.precast.FastCast
-	sets.precast.Reraise = sets.precast.FastCast
-	sets.precast['Protect V'] = sets.precast.FastCast
-	sets.precast['Shell V'] = sets.precast.FastCast
+	sets.precast.Step = { }
+	
+	sets.midcast = {}
+	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Atrophy Chapeau", 
+		neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Loquac. Earring", body="Gendewitha Bliaut", 
+		hands="Gendewitha Gages", left_ring="Solemn Ring", right_ring="Sirona's Ring", back="Pahtli Cape", 
+		waist="Witch Sash", legs="Atrophy Tights", feet="Orvail Souliers +1"} --50% Cure Potency, MND242, 
+	
+	sets.midcast.Enhancing = {head="Atrophy Chapeau", 
+		neck="Stone Gorget", right_ear="Loquac. Earring", body="Vitivation Tabard", 
+		hands="Atrophy Gloves", left_ring="Prolix Ring", back="Estoqueur's Cape", 
+		waist="Siegel Sash", legs="Shedir Seraweels", feet="Estq. Houseaux +2"}
+	
+	sets.midcast.EnhancingOther = set_combine(sets.midcast.Enhancing, {head="Estq. Chappel +2", 
+			body="Estq. Sayon +2", hands="Estq. Ganthrt. +2", legs="Estqr. Fuseau +2"})
+	
+	--[[sets.midcast.Warp = sets.precast.FastCast
+	sets.midcast['Warp II'] = sets.precast.FastCast
+	sets.midcast.Escape = sets.precast.FastCast
+	sets.midcast.Tractor = sets.precast.FastCast
+	sets.midcast.Raise = sets.precast.FastCast
+	sets.midcast['Raise II'] = sets.precast.FastCast
+	sets.midcast.Reraise = sets.precast.FastCast
+	sets.midcast['Protect V'] = sets.precast.FastCast
+	sets.midcast['Shell V'] = sets.precast.FastCast]]
 	
 	sets.TP = {}
 	sets.TP.Engage = {ammo="Oreiad's Tathlum", head="Hagondes Hat", 
@@ -132,6 +135,8 @@ function precast(spell)
 	elseif spell.type=="JobAbility" then
 		if sets.JA[spell.english] then
 			equip(sets.JA[spell.english])
+		elseif string.find(spell.english,'Step') or string.find(spell.english,'Violent Flourish') then
+			equip(sets.precast.Step)
 		end
 	end
 	
@@ -145,8 +150,11 @@ function midcast(spell)
 	end
 
 --windower.add_to_chat(14, 'Casting spell: ' ..spell.english.. ' - ' ..spell.skill.. ' on ' ..spell.target.name.. ' with ' ..SetMode_Names[SetMode_Index])
-	if sets.precast[spell.english] then
-		equip(sets.precast[spell.english])
+	if sets.midcast[spell.english] then
+		equip(sets.midcast[spell.english])
+	
+	elseif S{'Warp*','Escape','Tractor','Raise*','Reraise*','Protect*','Shell*','Teleport*'}:contains(spell.english) then
+		equip(sets.precast.FastCast)
 	
 	elseif spell.skill == 'Enfeebling Magic' then
 		equip(sets[SetMode_Names[SetMode_Index]].Enfeeble)
@@ -160,14 +168,14 @@ function midcast(spell)
 
 	elseif spell.skill == 'Enhancing Magic' then
 		--windower.add_to_chat(14, 'Casting spell: ' ..spell.english.. ' on ' ..spell.target.name.. ' with ' ..SetMode_Names[SetMode_Index])
-		equip(sets.precast.Enhancing)
+		equip(sets.midcast.Enhancing)
 		
 		if string.find(spell.english, 'Refresh') then
 			equip({legs="Estoqueur's fuseau +2"})
 		end
 		if spell.target.isallymember and spell.target.name ~= player.name then 
 			windower.add_to_chat(14, spell.target.name.. ' is an alliance member (not me), equip BuffOther.')
-			equip(sets.precast.EnhancingOther)
+			equip(sets.midcast.EnhancingOther)
 		end
 	
 	elseif spell.skill == 'Dark Magic' then
@@ -183,7 +191,7 @@ function midcast(spell)
 		if string.find(spell.english, 'Cursna') then
 			equip({feet="Gende. Galoshes"})
 		else
-			equip(sets.precast.Cure)
+			equip(sets.midcast.Cure)
 		end
 		
 	elseif spell.skill == 'Ninjutsu' then
