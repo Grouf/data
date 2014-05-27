@@ -103,6 +103,11 @@ function get_sets()
 	
 	sets.precast.Rest = sets.precast.Idle
 	
+	sets.precast.FastCast = {head="Ejekamal Mask",left_ear="Loquacious earring",
+		body="Mavi Mintan +2",hands="Mv. Bazubands +2",left_ring="Prolix Ring",
+		back="Swith cape",waist="Witful belt",
+		legs="Orvail Pants +1",feet="Iuitl Gaiters"}--27% Fast Cast, 20% Haste
+	
 	sets.precast.Step = {head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash earring",
 		right_ear="Heartseeker earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Letalis Mantle",
@@ -142,13 +147,13 @@ function get_sets()
 	
 	sets.midcast.STR = set_combine(sets.midcast.BaseSet,{head="Ejekamal Mask",back="Buquwik Cape"}) --Done
 		
-	sets.midcast.STRDEX = set_combine(sets.midcast.WS,{legs="Manibozho Brais"}) --Done
+	sets.midcast.STRDEX = set_combine(sets.midcast.BaseSet,{legs="Manibozho Brais"}) --Done
 		
-	sets.midcast.STRVIT = set_combine(sets.midcast.WS,{legs="Quiahuiz Trousers"}) --Done
+	sets.midcast.STRVIT = set_combine(sets.midcast.BaseSet,{legs="Quiahuiz Trousers"}) --Done
 		
-	sets.midcast.STRMND = set_combine(sets.midcast.WS,{legs="Quiahuiz Trousers"})--Done
+	sets.midcast.STRMND = set_combine(sets.midcast.BaseSet,{legs="Quiahuiz Trousers"})--Done
 	
-	sets.midcast.AGI = set_combine(sets.midcast.WS,{body="Iuitl Vest",legs="Kaabnax Trousers"}) --Done
+	sets.midcast.AGI = set_combine(sets.midcast.BaseSet,{body="Iuitl Vest",legs="Kaabnax Trousers"}) --Done
 	
 	sets.midcast.INT = {head="Hagondes Hat",neck="Stoicheion Medal",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",body="Hagondes Coat",hands="Hagondes Cuffs",left_ring="Icesoul Ring",
@@ -176,15 +181,12 @@ function get_sets()
 		back="Cornflower Cape",waist="Aswang Sash",
 		legs="Iuitl Tights",feet="Hagondes Sabots"} --Done
 	
-	sets.midcast.FastCast = {head="Ejekamal Mask",left_ear="Loquacious earring",
-		body="Mavi Mintan +2",hands="Mv. Bazubands +2",left_ring="Prolix Ring",
-		back="Swith cape",waist="Witful belt",
-		legs="Orvail Pants +1",feet="Iuitl Gaiters"}--27% Fast Cast, 20% Haste
-	
 	sets.midcast.BlueMagic = {head="Ejekamal Mask",neck="Mavi Scarf",left_ear="Loquacious earring",
 		body="Assim. Jubbah",hands="Symbios Gloves",left_ring="Prolix Ring",
 		back="Cornflower Cape",waist="Witful belt",
 		legs="Mavi Tayt +2",feet="Iuitl Gaiters"} --All blue magic, some fast cast
+	
+	sets.midcast.FastCast = sets.precast.FastCast -- for spells that don't need stats
 	
 --TP Sets--
 	sets.TP = {}
@@ -247,10 +249,10 @@ function midcast(spell)
 		return
 	end
 	
-	if spell.type == 'Blue Magic' then
+	if spell.type == 'BlueMagic' then
 		if sets.midcast[BlueMageSpell[spell.english]] then
 			equip(sets.midcast[BlueMageSpell[spell.english]])
-			windower.add_to_chat(14, 'MIDset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
+			--windower.add_to_chat(14, 'MIDset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
 		else
 		windower.add_to_chat(14, '~~!! No Set found for ' ..spell.english.. ' !!~~')
 		end
@@ -282,26 +284,29 @@ end
 function buff_change(buff_name,gain) --gain = True if gained, False if lost
 	if buff_name=='Efflux' then
 		if gain then
+			equip(sets.JA[buff_name])
 			send_command('@wait 0.5; gs disable legs;')
 			send_command('@input /echo Efflux ON, legs disabled')
 		else
-			enable(legs)
+			enable('legs')
 			send_command('@input /echo Efflux off, legs enabled')
 		end
 	elseif buff_name=='Chain Affinity' then
 		if gain then
+			equip(sets.JA[buff_name])
 			send_command('@wait 0.5; gs disable head feet;')
 			send_command('@input /echo Chain Affinity ON, head,feet disabled')
 		else
-			enable(head, feet)
+			enable('head','feet')
 			send_command('@input /echo Chain Affinity off, head,feet enabled')
 		end
 	elseif buff_name=='Burst Affinity' then
 		if gain then
+			equip(sets.JA[buff_name])
 			send_command('@wait 0.5; gs disable legs feet;')
 			send_command('@input /echo Burst Affinity ON, legs,feet disabled')
 		else
-			enable(legs, feet)
+			enable('legs', 'feet')
 			send_command('@input /echo Burst Affinity off, legs, enabled')
 		end
 	end
@@ -339,19 +344,19 @@ function self_command(command)
 		equip(sets.aftercast.TP)
 		send_command('@input /echo SOLO SET')
 		
-	elseif command == 'LearnHandsOn' then
+	elseif command == 'LearningOn' then
 		--sets.aftercast.TP = sets.TP.Learning
 		--sets.aftercast.Idle = sets.TP.Learn
-		equip({hands="Assim. Bazu."})
-		send_command('@wait 0.5; gs disable hands;')
+		equip({body="Assim. Jubbah", hands="Assim. Bazu.", legs="Mavi Tayt +2"})
+		send_command('@wait 0.5; gs disable body hands legs;')
 		--disable('hands')
 		send_command('@input /echo Learning Hands Locked')
-	elseif command == 'LearnHandsOff' then
+	elseif command == 'LearningOff' then
 		--sets.aftercast.TP = sets.TP.Learning
 		--sets.aftercast.Idle = sets.TP.Learn
 		--equip({hands="Assim. Bazu."})
-		enable('hands')
-		send_command('@input /echo Learning Hands Unlocked')
+		enable('body', 'hands', 'legs')
+		send_command('@input /echo Learning Body, Hands, Legs Unlocked')
 	--[[
 	elseif command == 'DT' then
 		sets.aftercast.TP = sets.DT
