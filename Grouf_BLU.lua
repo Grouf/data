@@ -7,7 +7,7 @@
 function get_sets()
 	
 	BlueMageSpell = {
-        --STR
+	--STR
 		['Vertical Cleave']='STR',['Death Scissors']='STR',['Empty Thrash']='STR', ['Dimensional Death']='STR',
 		['Quadrastrike']='STR',['Bloodrake']='STR',['Power Attack']='STR',['Smite of Rage']='STR',
 		['Heavy Strike']='STR',--Accuracy Penalty
@@ -15,24 +15,24 @@ function get_sets()
 		['Spinal Cleave']='STR',['Asuran Claws']='STR',['Body Slam']='STR',['Battle Dance']='STR',['Bludgeon']='STR',
 		['Screwdriver']='STR',
 		
-		--STRDEX
+	--STRDEX
 		['Foot Kick']='STRDEX',['Disseverment']='STRDEX',['Hysteric Barrage']='STRDEX',['Frenetic Rip']='STRDEX',
 		['Vanity Dive']='STRDEX',['Seedspray']='STRDEX',['Goblin Rush']='STRDEX',['Paralyzing Triad']='STRDEX',
 		['Claw Cyclone']='STRDEX',
 		
-		--STRVIT
+	--STRVIT
 		['Quad. Continuum']='STRVIT',['Delta Thrust']='STRVIT',['Cannonball']='STRVIT',['Glutinous Dart']='STRVIT',
 		['Grand Slam']='STRVIT',['Sprout Smack']='STRVIT',
 		
-		--STRMND
+	--STRMND
 		['Whirl of Rage']='STRMND', --AoE Stun 
 		['Ram Charge']='STRMND',
 		
-		--AGI
+	--AGI
 		['Benthic Typhoon']='AGI',['Final Sting']='AGI',['Spiral Spin']='AGI',
 		['Wild Oats']='AGI',['Helldive']='AGI',['Hydro Shot']='AGI',['Jet Stream']='AGI',['Pinecone Bomb']='STRAGI',
 		
-		--INT
+	--INT
 		['Gates of Hades']='INT',['Leafstorm']='INT',['Firespit']='INT',['Acrid Stream']='INT',['Regurgitation']='INT',
 		['Corrosive Ooze']='INT',['Thermal Pulse']='INT',['Magic Hammer']='INT',['Evryone. Grudge']='INT',
 		['Water Bomb']='INT',['Dark Orb']='INT',['Tem. Upheaval']='INT',['Embalming Earth']='INT',
@@ -45,15 +45,15 @@ function get_sets()
 		['Blazing Bound']='INT',['Vapor Spray']='INT',['Bilgestorm']='INT',['Feather storm']='INT',
 		['Queasyshroom']='INT',
 		
-		--Cures
+	--Cures
 		['Pollen']='Cure',['Healing Breeze']='Cure',['Wild Carrot']='Cure',['Magic Fruit']='Cure',
 		['Plenilune Embrace']='Cure',['White Wind']='Cure',
 		
-		--Stun
+	--Stun
 		['Head Butt']='Stun',['Sudden Lunge']='Stun',['Tail Slap']='Stun',['Frypan']='Stun', --Physical
 		['Blitzstrahl']='Stun',['Temporal Shift']='Stun',--Magic
 		
-		--Magic Accuracy
+	--Magic Accuracy
 		['Frightful Roar']='mAccuracy',['Infrasonics']='mAccuracy',['Barbed Crescent']='mAccuracy',['Tourbillion']='mAccuracy',
 		['Cimicine Discharge']='mAccuracy',['Sub-zero Smash']='mAccuracy',['Filamented Hold']='mAccuracy',
 		['Mind Blast']='mAccuracy',['Sandspray']='mAccuracy',['Hecatomb Wave']='mAccuracy',['Cold Wave']='mAccuracy',
@@ -65,34 +65,37 @@ function get_sets()
 		['Jettatura']='mAccuracy',['Absolute Terror']='mAccuracy',['Triumphant Roar']='mAccuracy',
 		['1000 Needles']='mAccuracy',['Voracious Trunk']='mAccuracy',['Lowing']='mAccuracy',['Blistering Roar']='mAccuracy',
 		
-		--Blue Magic Skill, Fast Cast (precast=Fast Cast, midcast=Blue Magic Skill)
-			--uses sets.precast.BlueMagic and sets.midcast.BlueMagic
+	--Blue Magic Skill, Fast Cast (precast=Fast Cast, midcast=Blue Magic Skill)
+		--uses sets.precast.FastCast and sets.midcast.BlueMagic
 		['MP Drainkiss']='BlueMagic',['Digest']='BlueMagic',['Blood Saber']='BlueMagic',['Blood Drain']='BlueMagic',
 		['Osmosis']='BlueMagic',['Occultation']='BlueMagic',['Magic Barrier']='BlueMagic',['Diamondhide']='BlueMagic',
 		['Metallic Body']='BlueMagic',['Carcharian Verve']='BlueMagic',
 		
-        -- Breath spells
+	-- Breath spells
         ['Poison Breath']='Breath',['Magnetite Cloud']='Breath',['Self Destruct']='Breath',['Radiant Breath']='Breath',
         ['Flying Hip Press']='Breath',['Bad Breath']='Breath',['Frost Breath']='Breath',['Heat Breath']='Breath',
         ['Thunder Breath']='Breath',['Wind Breath']='Breath',
 		
-		--FastCast
+	--FastCast
 		['Cocoon']='FastCast',['Harden Shell']='FastCast',['Refueling']='FastCast',['Zephyr Mantle']='FastCast',
 		['Regeneration']='FastCast',['Animating Wail']='FastCast',['Battery Charge']='FastCast',['Winds of Promy.']='FastCast',
-		['Feather Barrier']='FastCast',['Memento mori']='FastCast',['Saline Coat']='FastCast',['Warm-Up']='FastCast',
+		['Feather Barrier']='FastCast',['Memento Mori']='FastCast',['Saline Coat']='FastCast',['Warm-Up']='FastCast',
 		['Amplification']='FastCast',['Exuviation']='FastCast',['Fantod']='FastCast',['Plasma Charge']='FastCast',
 		['Reactor Cool']='FastCast',['Barrier Tusk']='FastCast',['Nat. Meditation']='FastCast',
 		['Orcish Counterstance']='FastCast',['Pyric Bulwark']='FastCast',['Retinal Glare']='FastCast'
 		
 	}
 	
+	
+	
+--Job Ability--
+	sets.JA = {}
+	sets.JA.Efflux = {legs="Mavi Tayt +2"}
+	sets.JA['Chain Affinity'] = {head="Mavi Kavuk +2",feet="Assim. Charuqs"}
+	sets.JA['Burst Affinity'] = {legs="Assim. Shalwar",feet="Mavi Basmak +2"}
+	
+--Precast--
 	sets.precast = {}
-	
-	--Job Ability--
-	sets.precast.Efflux = {legs="Mavi Tayt +2"}
-	sets.precast['Chain Affinity'] = {head="Mavi Kavuk +2",feet="Assim. Charuqs"}
-	sets.precast['Burst Affinity'] = {legs="Assim. Shalwar",feet="Mavi Basmak +2"}
-	
 	sets.precast.Idle = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Assim. Jubbah",hands="Serpentes Cuffs",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Cornflower Cape",waist="Flume Belt",
@@ -100,22 +103,28 @@ function get_sets()
 	
 	sets.precast.Rest = sets.precast.Idle
 	
-	sets.precast.WS = {head="Ejekamal Mask",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
+	sets.precast.Step = {head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash earring",
+		right_ear="Heartseeker earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
+		right_ring="Epona's Ring",back="Letalis Mantle",
+		legs="Manibozho Brais",feet="Assimilator's Charuqs"} --Done
+	
+--Weapon Skills--
+	sets.WS = {}
+	sets.WS.Base = {head="Ejekamal Mask",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Spiral Ring",back="Vassal's Mantle",waist="Prosilio Belt",
 		legs="Manibozho brais",feet="Assim. Charuqs" } --Done
 		
-	--[[Sword Weapon Skills]]
-	sets.precast['Chant du Cygne'] = set_combine(sets.precast.WS,{neck="Light Gorget"})
+	sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{neck="Light Gorget"})
 	
-	sets.precast['Requiescat'] = set_combine(sets.precast.WS,{neck="Shadow Gorget",left_ring="Solemn Ring",
+	sets.WS['Requiescat'] = set_combine(sets.WS.Base,{neck="Shadow Gorget",left_ring="Solemn Ring",
 		legs="Quiahuiz Trousers"})
 		
 	--sets.precast['Vorpal Blade']
 	
 	--sets.precast['Expiacion']
 	
-	sets.precast['Sanguine Blade'] = {head="Uk'uxkaj Cap",neck="Tlamiztli Collar",left_ear="Psystorm Earring",
+	sets.WS['Sanguine Blade'] = {head="Uk'uxkaj Cap",neck="Tlamiztli Collar",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",--[[left_ear="Hecate's earring",right_ear="Friomisi Earring",]]
 		body="Hagondes Coat",hands="Hagondes Cuffs",left_ring="Icesoul Ring",
 		right_ring="Spiral Ring",back="Refraction Cape",waist="Prosilio Belt",
@@ -123,89 +132,61 @@ function get_sets()
 	
 	--sets.precast['Savage Blade']
 	
-	--[[Club Weapon Skills  ~~ need work (or removal?) ~~]]
 	
-	--[[
-	sets.precast['Realmrazer'] = set_combine(sets.precast.WS,{neck="Light Gorget",waist="Light Belt",
-		legs="Quiahuiz Trousers"})
-		
-	sets.precast['Flash Nova'] = set_combine(sets.precast.WS,{neck="Tjukurrpa Medal",left_ear="Friomisi Earring",
-		body="Hagondes Coat",hands="Buremte Gloves",left_ring="Flame Ring",right_ring="Spiral Ring",
-		right_ring="Aquasoul Ring",]aist="Caudata Belt",
-		legs="Manibozho brais",feet="Manibozho Boots"})  --30% STR/MND with INT for stat
-	
-	sets.precast['True Strike'] = set_combine(sets.precast.WS,{neck="Tjukurrpa Medal",
-		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",
-		hands="Buremte Gloves",left_ring="Rajas ring",right_ring="Spiral ring",back="Atheling mantle",
-		waist="Caudata Belt",legs="Quiahuiz Trousers",feet="Manibozho Boots"})
-		
-	]]
-	
-	--[[Stat sets]]
-	
-	sets.precast.BaseStat = {head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",left_ear="Psystorm Earring",
+--Blue Magic Spell Stat sets--
+	sets.midcast = {}
+	sets.midcast.BaseStat = {head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Prosilio Belt",
 		legs="Iuitl Tights",feet="Iuitl Gaiters"}
 	
-	sets.precast.STR = set_combine(sets.precast.BaseSet,{head="Ejekamal Mask",back="Buquwik Cape"}) --Done
+	sets.midcast.STR = set_combine(sets.midcast.BaseSet,{head="Ejekamal Mask",back="Buquwik Cape"}) --Done
 		
-	sets.precast.STRDEX = set_combine(sets.precast.WS,{legs="Manibozho Brais"}) --Done
+	sets.midcast.STRDEX = set_combine(sets.midcast.WS,{legs="Manibozho Brais"}) --Done
 		
-	sets.precast.STRVIT = set_combine(sets.precast.WS,{legs="Quiahuiz Trousers"}) --Done
+	sets.midcast.STRVIT = set_combine(sets.midcast.WS,{legs="Quiahuiz Trousers"}) --Done
 		
-	sets.precast.STRMND = set_combine(sets.precast.WS,{legs="Quiahuiz Trousers"})--Done
+	sets.midcast.STRMND = set_combine(sets.midcast.WS,{legs="Quiahuiz Trousers"})--Done
 	
-	sets.precast.AGI = set_combine(sets.precast.WS,{body="Iuitl Vest",legs="Kaabnax Trousers"}) --Done
+	sets.midcast.AGI = set_combine(sets.midcast.WS,{body="Iuitl Vest",legs="Kaabnax Trousers"}) --Done
 	
-	sets.precast.INT = {head="Hagondes Hat",neck="Stoicheion Medal",left_ear="Psystorm Earring",
+	sets.midcast.INT = {head="Hagondes Hat",neck="Stoicheion Medal",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",body="Hagondes Coat",hands="Hagondes Cuffs",left_ring="Icesoul Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Witful Belt",
 		legs="Hagondes Pants",feet="Hagondes Sabots"}--Done
 
-	sets.precast.Cure = {head="Uk'uxkaj Cap",neck="Mavi Scarf",left_ear="Loquac. Earring",
+	sets.midcast.Cure = {head="Uk'uxkaj Cap",neck="Mavi Scarf",left_ear="Loquac. Earring",
 		right_ear="Lifestorm Earring",body="Hagondes Coat",hands="Buremte Gloves",left_ring="Sirona's Ring",
 		right_ring="Solemn Ring",back="Refraction Cape",waist="Witful Belt",
 		legs="Quiahuiz Trousers",feet="Hagondes Sabots"} --Done
 	
-	sets.precast.mAccuracy = {head="Assim. Keffiyeh",neck="Stoicheion Medal",left_ear="Psystorm Earring",
+	sets.midcast.mAccuracy = {head="Assim. Keffiyeh",neck="Stoicheion Medal",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Hagondes Cuffs",left_ring="Prolix Ring",
 		right_ring="Strendu Ring",back="Cornflower Cape",waist="Aswang Sash",
 		legs="Iuitl Tights",feet="Hagondes Sabots"} --Done
 	
-	sets.precast.Stun = {head="",neck="Stoicheion Medal",left_ear="Psystorm earring",
+	sets.midcast.Stun = {head="",neck="Stoicheion Medal",left_ear="Psystorm earring",
 		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Mv. Bazubands +2",left_ring="Prolix Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Witful Belt",
 		legs="Iuitl Tights",feet="Hagondes Sabots"} --25% Haste, 5% Fast Cast, -12% Blue Magic recast
 													--Done
 		
-	sets.precast.Breath = {head="Mirage Keffiyeh",neck="Stoicheion Medal",left_ear="Psystorm earring",
+	sets.midcast.Breath = {head="Mirage Keffiyeh",neck="Stoicheion Medal",left_ear="Psystorm earring",
 		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Hagondes Cuffs",left_ring="Prolix Ring",
 		back="Cornflower Cape",waist="Aswang Sash",
 		legs="Iuitl Tights",feet="Hagondes Sabots"} --Done
 	
-	sets.precast.FastCast = {head="Ejekamal Mask",left_ear="Loquacious earring",
+	sets.midcast.FastCast = {head="Ejekamal Mask",left_ear="Loquacious earring",
 		body="Mavi Mintan +2",hands="Mv. Bazubands +2",left_ring="Prolix Ring",
 		back="Swith cape",waist="Witful belt",
-		legs="Orvail Pants +1",feet="Iuitl Gaiters"}--Check to make sure full Fast Cast
-
-	sets.precast.Step = {head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash earring",
-		right_ear="Heartseeker earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
-		right_ring="Epona's Ring",back="Atheling Mantle",
-		legs="Manibozho Brais",feet="Assimilator's Charuqs"} --Done
+		legs="Orvail Pants +1",feet="Iuitl Gaiters"}--27% Fast Cast, 20% Haste
 	
-	sets.precast.BlueMagic = {head="Ejekamal Mask",neck="Mavi Scarf",left_ear="Loquacious earring",
-		body="Mavi Mintan +2",hands="Symbios Gloves",left_ring="Prolix Ring",
-		back="Swith cape",waist="Witful belt",
-		legs="Kaabnax Trousers",feet="Iuitl Gaiters"} --some blue magic, all fast cast
-													--25% Haste, Blue Magic Casting -12%, FastCast: 10%
-		
-	sets.midcast = {}
-	sets.midcast.BlueMagic = set_combine(sets.precast.BlueMagic,{head="Mirage Keffiyeh",
-		body="Assim. Jubbah",
-		back="Cornflower Cape",
-		legs="Mavi Tayt +2"})
+	sets.midcast.BlueMagic = {head="Ejekamal Mask",neck="Mavi Scarf",left_ear="Loquacious earring",
+		body="Assim. Jubbah",hands="Symbios Gloves",left_ring="Prolix Ring",
+		back="Cornflower Cape",waist="Witful belt",
+		legs="Mavi Tayt +2",feet="Iuitl Gaiters"} --All blue magic, some fast cast
 	
+--TP Sets--
 	sets.TP = {}
 	sets.TP.DA = {head="Iuitl Headgear",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Thaumas coat",hands="Buremte Gloves",left_ring="Rajas Ring",
@@ -229,27 +210,24 @@ function get_sets()
 end
 
 function precast(spell)
-
-	if spell.type == 'Blue Magic' then
-		--send_command('@input /echo precast: Found BlueMagic' )
-		--send_command('@input /echo precast BMS: '..BlueMageSpell[spell.english])
-		if sets.precast[BlueMageSpell[spell.english]] then
-			equip(sets.precast[BlueMageSpell[spell.english]])
-			--send_command('@input /echo PREset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
+	--windower.add_to_chat(14, 'Precast: spell type= ' ..spell.type)
+	if spell.type ~= 'JobAbility' and spell.type ~= 'WeaponSkill' then
+		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
+		equip(sets.precast.FastCast)
+	
+	elseif spell.type=="WeaponSkill" then
+		if sets.WS[spell.english] then
+			equip(sets.WS[spell.english])
 		else
-			send_command('@input /echo ~~!! No Set found for ' ..spell.english.. ' !!~~')
+			equip(sets.WS.Base)
 		end
-		
-	--elseif --[[other magic types here]] then
 	
-	elseif sets.precast[spell.english] then 
-		equip(sets.precast[spell.english])
-		
-	elseif string.find(spell.english,'Step') or string.find(spell.english,'Violent Flourish') then
-		equip(sets.precast.Step)
-	
-	elseif spell.type=='WeaponSkill' then
-		equip(sets.TP.WS)
+	elseif spell.type=="JobAbility" then
+		if sets.JA[spell.english] then
+			equip(sets.JA[spell.english])
+		elseif string.find(spell.english,'Step') or string.find(spell.english,'Violent Flourish') then
+			equip(sets.precast.Step)
+		end
 	end
 
 end
@@ -263,9 +241,19 @@ Feet: Luhlaza Charuqs: Diffusion
 ]]
 
 function midcast(spell)
+	if spell.type == 'JobAbility' or spell.type == 'WeaponSkill' then
+	--midcast doesn't exist for JA or WS so cancel the processing of this function
+		--windower.add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
+		return
+	end
+	
 	if spell.type == 'Blue Magic' then
-		equip(sets.midcast[BlueMageSpell[spell.english]])
-		--send_command('@input /echo MIDset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
+		if sets.midcast[BlueMageSpell[spell.english]] then
+			equip(sets.midcast[BlueMageSpell[spell.english]])
+			windower.add_to_chat(14, 'MIDset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
+		else
+		windower.add_to_chat(14, '~~!! No Set found for ' ..spell.english.. ' !!~~')
+		end
 	end
 	
 	if spell.element == 'Earth' and spell.target == 'Enemy' then
@@ -292,32 +280,32 @@ function status_change(new,old)
 end
 
 function buff_change(buff_name,gain) --gain = True if gained, False if lost
-	if gain then -- something was gained
-		equip(sets.precast[buff_name]) --here to make sure appropriate equipment is equipped before disable
-		if buff_name=='Efflux' then
+	if buff_name=='Efflux' then
+		if gain then
 			send_command('@wait 0.5; gs disable legs;')
 			send_command('@input /echo Efflux ON, legs disabled')
-		elseif buff_name=='Chain Affinity' then 
+		else
+			enable(legs)
+			send_command('@input /echo Efflux off, legs enabled')
+		end
+	elseif buff_name=='Chain Affinity' then
+		if gain then
 			send_command('@wait 0.5; gs disable head feet;')
 			send_command('@input /echo Chain Affinity ON, head,feet disabled')
-		elseif buff_name=='Burst Affinity' then
+		else
+			enable(head, feet)
+			send_command('@input /echo Chain Affinity off, head,feet enabled')
+		end
+	elseif buff_name=='Burst Affinity' then
+		if gain then
 			send_command('@wait 0.5; gs disable legs feet;')
 			send_command('@input /echo Burst Affinity ON, legs,feet disabled')
-		end
-	
-	elseif not gain then -- something lost
-		if buff_name=='Efflux' then
-			send_command('@wait 0.5; gs enable legs;')
-			send_command('@input /echo Efflux off, legs enabled')
-		elseif buff_name=='Chain Affinity' then 
-			send_command('@wait 0.5; gs enable head feet;')
-			send_command('@input /echo Chain Affinity off, head,feet enabled')
-		elseif buff_name=='Burst Affinity' then
-			send_command('@wait 0.5; gs enable legs feet;')
+		else
+			enable(legs, feet)
 			send_command('@input /echo Burst Affinity off, legs, enabled')
 		end
 	end
-		
+	
 end
 
 function self_command(command)
