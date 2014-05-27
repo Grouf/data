@@ -7,7 +7,7 @@
 function get_sets()				
 	sets.precast = {}
 	
-	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Hagondes Hat",
+	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Nahtirah Hat",
 		left_ear="Loquac. Earring",body="Anhur Robe",
 		hands="Hagondes Cuffs",back="Swith Cape",
 		waist="Witful Belt",legs="Geomancy Pants",feet="Hagondes Sabots"}  --Geo. Pants = 10%
@@ -57,7 +57,7 @@ function get_sets()
 		left_ear="Loquac. Earring",
 		waist="Siegel Sash",legs="Shedir Seraweels",feet="Geomancy Sandals"}
 		
-	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Hagondes Hat",
+	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
