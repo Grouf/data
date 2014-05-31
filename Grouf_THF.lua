@@ -17,24 +17,31 @@ function get_sets()
 	sets.precast['Perfect Dodge'] = {hands="Plun. Armlets"}
 
 	sets.precast.Ranged = {head="Pillager's Bonnet",neck="Huani Collar",left_ear="Clearview earring",
-		right_ear="Volley Earring",body="Iuitl Vest",hands="Iuitl Wristbands",left_ring="Fistmele Ring",
+		right_ear="Volley Earring",body="Iuitl Vest",hands="Buremte Gloves",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Libeccio Mantle",waist="Buccaneer's Belt",
 		legs="Thur. Tights +1",feet="Pillager's Poulaines"}
 	
-	sets.precast.Evisceration = {head="Uk'uxkaj Cap",neck="Shadow Gorget",left_ear="Dudgeon Earring",
+	sets.precast.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Dudgeon Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Iuitl Wristbands",left_ring="Rajas Ring",
-		right_ring="Spiral Ring",back="Buquwik Cape",waist="Prosilio Belt",
+		right_ring="Cho'j Band",back="Buquwik Cape",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
 	
-	sets.precast["Rudra's Storm"] = {head="Whirlpool Mask",neck="Shadow Gorget",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Iuitl Wristbands",left_ring="Rajas Ring",
-		right_ring="Spiral Ring",back="Buquwik Cape",waist="Prosilio Belt",
-		legs="Manibozho Brais",feet="Iuitl Gaiters"}
+	sets.precast.Evisceration = set_combine(sets.precast.WS, {neck="Shadow Gorget"}) -- 30% DEX
 	
-	sets.precast.Exenterator = {head="Uk'uxkaj Cap",neck="Light Gorget",left_ear="Dudgeon Earring",
+	sets.precast["Rudra's Storm"] = set_combine(sets.precast.WS, {neck="Shadow Gorget"}) -- 60% DEX
+	
+	sets.precast["Last Stand"] = set_combine(sets.precast.Ranged, {neck="Ocachi Gorget",feet="Iuitl Gaiters"})
+		
+		--Dancing Edge = 40% CHR, 30% DEX
+		--Mandalic Stab = 30% DEX
+		--Shark Bite = 50% DEX
+		--Last Stand = 73-85% AGI
+		
+	
+	--[[sets.precast.Exenterator = {head="Uk'uxkaj Cap",neck="Light Gorget",left_ear="Dudgeon Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Plun. Armlets",left_ring="Rajas Ring",
 		right_ring="Spiral Ring",back="Buquwik Cape",waist="Prosilio Belt",
-		legs="Manibozho Brais",feet="Iuitl Gaiters"}
+		legs="Manibozho Brais",feet="Iuitl Gaiters"}]]
 	
 	--[[sets.precast["Aeolian Edge"] = {head="Thaumas Hat",neck="Stoicheion Medal",left_ear="Hecate's Earring",
 		right_ear="Friomisi Earring",body="Iuitl Vest",left_ring="Icesoul Ring",
