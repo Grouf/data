@@ -60,7 +60,7 @@ function get_sets()
 		right_ring="Icesoul Ring",back="Toro Cape",
 		legs="Quiahuiz Trousers",feet="Hachiya Kyahan"}
 	
-	sets.precast.Step = {head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
+	sets.precast.Step = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Yokaze Mantle",waist="Phasmida Belt",
 		legs="Hachiya Hakama",feet="Otronif Boots"} --Primary Acc: 907

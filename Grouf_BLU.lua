@@ -108,14 +108,14 @@ function get_sets()
 		back="Swith cape",waist="Witful belt",
 		legs="Orvail Pants +1",feet="Iuitl Gaiters"}--27% Fast Cast, 20% Haste
 	
-	sets.precast.Step = {head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash earring",
+	sets.precast.Step = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash earring",
 		right_ear="Heartseeker earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Letalis Mantle",
 		legs="Manibozho Brais",feet="Assimilator's Charuqs"}
 	
 --Weapon Skills--
 	sets.WS = {}
-	sets.WS.Base = {head="Ejekamal Mask",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
+	sets.WS.Base = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Spiral Ring",back="Vassal's Mantle",waist="Prosilio Belt",
 		legs="Manibozho brais",feet="Assim. Charuqs" }
@@ -145,7 +145,7 @@ function get_sets()
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Prosilio Belt",
 		legs="Iuitl Tights",feet="Iuitl Gaiters"}
 	
-	sets.midcast.STR = set_combine(sets.midcast.BaseSet,{head="Ejekamal Mask",back="Buquwik Cape"})
+	sets.midcast.STR = set_combine(sets.midcast.BaseSet,{head="Whirlpool Mask",back="Buquwik Cape"})
 		
 	sets.midcast.STRDEX = set_combine(sets.midcast.BaseSet,{legs="Manibozho Brais"})
 		
@@ -180,10 +180,10 @@ function get_sets()
 		back="Cornflower Cape",waist="Aswang Sash",
 		legs="Iuitl Tights",feet="Hagondes Sabots"}
 	
-	sets.midcast.BlueMagic = {head="Ejekamal Mask",neck="Mavi Scarf",left_ear="Loquacious earring",
-		body="Assim. Jubbah",hands="Symbios Gloves",left_ring="Prolix Ring",
-		back="Cornflower Cape",waist="Witful belt",
-		legs="Mavi Tayt +2",feet="Iuitl Gaiters"} --All blue magic, some fast cast
+	sets.midcast.BlueMagic = set_combine(sets.precast.FastCast,{neck="Mavi Scarf",
+		body="Assim. Jubbah",hands="Symbios Gloves",
+		back="Cornflower Cape",
+		legs="Mavi Tayt +2"}) --All blue magic, some fast cast
 	
 	sets.midcast.FastCast = sets.precast.FastCast -- for spells that don't need stats
 	
@@ -194,7 +194,7 @@ function get_sets()
 		right_ring="Epona's Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Iuitl Gaiters" }
 		
-	sets.TP.Acc = {head="Ejekamal Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
+	sets.TP.Acc = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Thaumas coat",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Assim. Charuqs" }

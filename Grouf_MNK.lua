@@ -17,7 +17,7 @@ function get_sets()
 	sets.precast.Impetus = {body="Tantra Cyclas +2"}
 	--sets.precast.Mantra = {feet="Melee Gaiters +2"}
 	
-	sets.precast.Step = {main="Oatixur",ammo="Honed Tathlum",head="Ejekamal Mask",neck="Asperity Necklace",
+	sets.precast.Step = {main="Oatixur",ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Anchoret's Mantle",waist="Warwolf Belt",
 		legs="Manibozho Brais",feet="Thur. Boots +1"}
@@ -37,7 +37,7 @@ function get_sets()
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Otronif Boots"}
 		
-	sets.TP.Accuracy = {main="Oatixur",ammo="Honed Tathlum",head="Ejekamal Mask",neck="Asperity Necklace",
+	sets.TP.Accuracy = {main="Oatixur",ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Hes. Gloves",
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Letalis Mantle",waist="Windbuffet Belt",
 		legs="Manibozho Brais",feet="Otronif Boots"}
@@ -54,7 +54,7 @@ function get_sets()
 	
 	sets.Shark = {main="Oatixur",ammo="Honed Tathlum",head="Uk'uxkaj Cap",neck="Twilight Torque",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",
-		left_ring="Dark Ring",right_ring="Shadow Ring",back="Letalis Mantle",waist="Black Belt",
+		left_ring="Dark Ring",right_ring="Shadow Ring",back="Tuilha Cape",waist="Black Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots"}
 
 	sets.aftercast = {}
