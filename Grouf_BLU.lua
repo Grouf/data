@@ -166,12 +166,12 @@ function get_sets()
 		legs="Quiahuiz Trousers",feet="Hagondes Sabots"}
 	
 	sets.midcast.mAccuracy = {head="Assim. Keffiyeh",neck="Stoicheion Medal",left_ear="Psystorm Earring",
-		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Hagondes Cuffs",left_ring="Prolix Ring",
+		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Hagondes Cuffs",left_ring="Sangoma Ring",
 		right_ring="Strendu Ring",back="Cornflower Cape",waist="Aswang Sash",
 		legs="Iuitl Tights",feet="Hagondes Sabots"}
 	
 	sets.midcast.Stun = {head="",neck="Stoicheion Medal",left_ear="Psystorm earring",
-		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Mv. Bazubands +2",left_ring="Prolix Ring",
+		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Mv. Bazubands +2",left_ring="Sangoma Ring",
 		right_ring="Strendu Ring",back="Cornflower Cape",waist="Witful Belt",
 		legs="Iuitl Tights",feet="Hagondes Sabots"} --25% Haste, 5% Fast Cast, -12% Blue Magic recast
 		

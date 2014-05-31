@@ -9,7 +9,7 @@ function get_sets()
 	
 	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Nahtirah Hat",
 		left_ear="Loquac. Earring",body="Anhur Robe",
-		hands="Hagondes Cuffs",back="Swith Cape",
+		hands="Hagondes Cuffs",right_ring="Prolix Ring",back="Swith Cape",
 		waist="Witful Belt",legs="Orvail Pants +1",feet="Hagondes Sabots"} -- 37% Fast Cast
 	
 	sets.precast.Idle = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Hagondes Hat",
@@ -27,7 +27,7 @@ function get_sets()
 		
 	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Omega Ring",back="Refraction Cape",
+		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Orvail Pants +1",feet="Hagondes Sabots"}
 		
 	sets.midcast.Enhancing = {main="Lehbrailg +2",sub="Fulcio Grip",head="Nares Cap",
@@ -42,7 +42,7 @@ function get_sets()
 		
 	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Omega Ring",back="Refraction Cape",
+		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
 	
 	sets.TP = {}

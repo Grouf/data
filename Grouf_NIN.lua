@@ -52,7 +52,7 @@ function get_sets()
 	
 	sets.precast.Enfeeble = {head="Hachiya Hatsuburi",neck="Stoicheion Medal",left_ear="Lifestorm Earring",
 		right_ear="Psystorm Earring",body="Otronif Harness",hands="Mochizuki Tekko",left_ring="Prolix Ring",
-		right_ring="Omega Ring",back="Yokaze Mantle",waist="Phasmida Belt",
+		right_ring="Sangoma Ring",back="Yokaze Mantle",waist="Phasmida Belt",
 		legs="Kaabnax Trousers",feet="Hachiya Kyahan"}  --32% Haste, 224 Magic Accuracy
 	
 	sets.precast.Nuke = {--[[head="Koga Hatsuburi",]]neck="Stoicheion Medal",left_ear="Friomisi Earring",

@@ -16,8 +16,8 @@ function get_sets()
 	
 	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Nahtirah Hat",
 		left_ear="Loquac. Earring",body="Anhur Robe",
-		hands="Gendewitha Gages",back="Swith Cape",
-		waist="Witful Belt",legs="Orvail Pants +1",feet="Piety Duckbills"} -- 43% Fast Cast
+		hands="Gendewitha Gages",right_ring="Prolix Ring",back="Swith Cape",
+		waist="Witful Belt",legs="Orvail Pants +1",feet="Piety Duckbills"} -- ??% Fast Cast
 	
 	sets.midcast = {}
 	sets.midcast.Cure= {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Theophany Cap",
@@ -27,12 +27,12 @@ function get_sets()
  
 	sets.midcast.Enfeeble= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
 		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Theo. Briault",
-		hands="Gendewitha Gages",left_ring="Omega Ring",right_ring="Irrwisch Ring",back="Refraction Cape",
+		hands="Gendewitha Gages",left_ring="Sangoma Ring",right_ring="Irrwisch Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Orvail Pants +1",feet="Piety Duckbills"}
 
 	sets.midcast.DRKMagic= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Gendewitha Bliaut",
-		hands="Gendewitha Gages",left_ring="Omega Ring",right_ring="Solemn Ring",back="Refraction Cape",
+		hands="Gendewitha Gages",left_ring="Sangoma Ring",right_ring="Solemn Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 	
 	sets.midcast.Enhancing = {main="Lehbrailg +2",sub="Fulcio Grip",ammo="Oreiad's Tathlum",

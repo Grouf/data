@@ -9,7 +9,7 @@ function get_sets()
 	
 	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Nahtirah Hat",
 		left_ear="Loquac. Earring",body="Anhur Robe",
-		hands="Hagondes Cuffs",back="Swith Cape",
+		hands="Hagondes Cuffs",right_ring="Prolix Ring",back="Swith Cape",
 		waist="Witful Belt",legs="Geomancy Pants",feet="Hagondes Sabots"}  --Geo. Pants = 10%
 		
 	sets.precast.IdleRefresh = {main="Lehbrailg +2",sub="Mephitis Grip",range="Filiae Bell",head="Bagua Galero",
@@ -44,12 +44,12 @@ function get_sets()
 		
 	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Omega Ring",back="Refraction Cape",
+		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Orvail Pants +1",feet="Hagondes Sabots"}
 		
 	sets.midcast.Geomancy = {main="Dowser's Wand",sub="Genbu's Shield",range="Filiae Bell",head="Geomancy Galero",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",body="Geomancy Tunic",
-		hands="Geomancy Mitaines",back="Lifestream Cape",
+		hands="Geomancy Mitaines",right_ring="Sangoma Ring"back="Lifestream Cape",
 		waist="Witch Sash",legs="Geomancy Pants",feet="Geomancy Sandals"}
 		
 	--Enhancing needs work
@@ -64,7 +64,7 @@ function get_sets()
 		
 	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Omega Ring",back="Refraction Cape",
+		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
 	
 	send_command('input /macro book 20;wait .1;input /macro set 1')
