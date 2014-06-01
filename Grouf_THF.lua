@@ -30,7 +30,8 @@ function get_sets()
 	
 	sets.precast["Rudra's Storm"] = set_combine(sets.precast.WS, {neck="Shadow Gorget"}) -- 60% DEX
 	
-	sets.precast["Last Stand"] = set_combine(sets.precast.Ranged, {neck="Ocachi Gorget",feet="Iuitl Gaiters"})
+	sets.precast["Last Stand"] = set_combine(sets.precast.Ranged, {neck="Ocachi Gorget",feet="Iuitl Gaiters",
+		waist="Caudata Belt"})
 		
 		--Dancing Edge = 40% CHR, 30% DEX
 		--Mandalic Stab = 30% DEX
