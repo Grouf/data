@@ -14,7 +14,7 @@ function get_sets()
 	
 	sets.precast.Idle = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Hagondes Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat",
-		hands="Serpentes Cuffs",left_ring="Icesoul Ring",right_ring="Strendu ring",back="Toro Cape",
+		hands="Serpentes Cuffs",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Nares Trews",feet="Serpentes Sabots"}
 	
 	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff",sub="Elder's Grip"})
@@ -37,12 +37,12 @@ function get_sets()
 		
 	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Hagondes Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Spaekona's Coat",
-		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Strendu ring",back="Toro Cape",
+		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants",feet="Spaekona's Sabots"}
 		
 	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Sangoma Ring",back="Refraction Cape",
+		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
 	
 	sets.TP = {}

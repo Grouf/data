@@ -32,7 +32,7 @@ function get_sets()
 
 	sets.midcast.DRKMagic= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Gendewitha Bliaut",
-		hands="Gendewitha Gages",left_ring="Sangoma Ring",right_ring="Solemn Ring",back="Refraction Cape",
+		hands="Gendewitha Gages",left_ring="Sangoma Ring",right_ring="Acumen Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 	
 	sets.midcast.Enhancing = {main="Lehbrailg +2",sub="Fulcio Grip",ammo="Oreiad's Tathlum",
@@ -53,7 +53,7 @@ function get_sets()
 	
 	sets.midcast.Divine= {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Kaabanax Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Gendewitha Bliaut",
-		hands="Otomi Gloves",left_ring="Omega Ring",right_ring="Strendu Ring",back="Refraction Cape",
+		hands="Otomi Gloves",left_ring="Sangoma Ring",right_ring="Strendu Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 			
 	sets.midcast.Repose = set_combine(sets.precast.Divine,{sub="Mephitis Grip",ammo="Kalboron Stone",head="Orison Cap +2",

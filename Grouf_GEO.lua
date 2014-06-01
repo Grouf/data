@@ -49,7 +49,7 @@ function get_sets()
 		
 	sets.midcast.Geomancy = {main="Dowser's Wand",sub="Genbu's Shield",range="Filiae Bell",head="Geomancy Galero",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",body="Geomancy Tunic",
-		hands="Geomancy Mitaines",right_ring="Sangoma Ring"back="Lifestream Cape",
+		hands="Geomancy Mitaines",right_ring="Sangoma Ring",back="Lifestream Cape",
 		waist="Witch Sash",legs="Geomancy Pants",feet="Geomancy Sandals"}
 		
 	--Enhancing needs work
@@ -59,12 +59,12 @@ function get_sets()
 		
 	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Strendu ring",back="Toro Cape",
+		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
 		
 	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Icesoul Ring",right_ring="Sangoma Ring",back="Refraction Cape",
+		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
 	
 	send_command('input /macro book 20;wait .1;input /macro set 1')
