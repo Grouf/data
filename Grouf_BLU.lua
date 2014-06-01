@@ -211,22 +211,22 @@ function get_sets()
 end
 
 function precast(spell)
-	--windower.add_to_chat(14, 'Precast: spell type= ' ..spell.type)
-	if spell.type ~= 'JobAbility' and spell.type ~= 'WeaponSkill' then
+	--windower.add_to_chat(14, 'Precast: spell type= ' ..spell.type.. ' || spell.prefix= ' ..spell.prefix)
+	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
 		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
 	
-	elseif spell.type=="WeaponSkill" then
+	elseif spell.type == "WeaponSkill" then
 		if sets.WS[spell.english] then
 			equip(sets.WS[spell.english])
 		else
 			equip(sets.WS.Base)
 		end
 	
-	elseif spell.type=="JobAbility" then
+	elseif spell.prefix == "/jobability" then
 		if sets.JA[spell.english] then
 			equip(sets.JA[spell.english])
-		elseif string.find(spell.english,'Step') or string.find(spell.english,'Violent Flourish') then
+		elseif spell.type == "Step" or string.find(spell.english,'Violent Flourish') then
 			equip(sets.precast.Step)
 		end
 	end
@@ -234,7 +234,7 @@ function precast(spell)
 end
 
 function midcast(spell)
-	if spell.type == 'JobAbility' or spell.type == 'WeaponSkill' then
+	if spell.prefix == '/jobability' or spell.type == 'WeaponSkill' then
 	--midcast doesn't exist for JA or WS so cancel the processing of this function
 		--windower.add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
 		return
