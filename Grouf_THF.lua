@@ -45,7 +45,7 @@ function get_sets()
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}]]
 	
 	--[[sets.precast["Aeolian Edge"] = {head="Thaumas Hat",neck="Stoicheion Medal",left_ear="Hecate's Earring",
-		right_ear="Friomisi Earring",body="Iuitl Vest",left_ring="Icesoul Ring",
+		right_ear="Friomisi Earring",body="Iuitl Vest",left_ring="Acumen Ring",
 		right_ring="Omega Ring",waist="Aquiline Belt",
 		legs="Iuitl Tights",feet="Iuitl Gaiters"}]]
 	

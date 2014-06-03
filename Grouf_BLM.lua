@@ -23,19 +23,19 @@ function get_sets()
 	sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabanax Hat",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Bokwus Gloves",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
-		waist="Witch Sash",legs="Nares Trews",feet="Orvail Souliers +1"}
+		waist="Witch Sash",legs="Nares Trews",feet="Weath. Souliers +1"}
 		
 	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Orvail Pants +1",feet="Hagondes Sabots"}
 		
-	sets.midcast.Enhancing = {main="Lehbrailg +2",sub="Fulcio Grip",head="Nares Cap",
+	sets.midcast.Enhancing = {main="Lehbrailg +2",sub="Fulcio Grip",head="Nahtirah Hat",
 		body="Anhur Robe",neck="Stone Gorget",hands="Augur's Gloves",
 		left_ear="Loquac. Earring",back="Swith Cape",
 		waist="Siegel Sash",legs="Shedir Seraweels",feet="Hagondes Sabots"}
 		
-	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Hagondes Hat",
+	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Spaekona's Coat",
 		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants",feet="Spaekona's Sabots"}
@@ -68,6 +68,9 @@ function precast(spell)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
 		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
+		if spell.skill == 'Elemental Magic' then
+			equip({feet="Spaekona's Sabots"})
+		end
 	
 	elseif spell.type == "WeaponSkill" then
 		if sets.WS[spell.english] then
