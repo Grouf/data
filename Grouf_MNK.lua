@@ -10,12 +10,12 @@ function get_sets()
 		left_ear="Soil Pearl",right_ear="Soil Pearl",body="Anchorite's Cyclas",hands="Hes. Gloves",
 		left_ring="Terrasoul Ring",right_ring="Terrasoul Ring",back="Anchoret's Mantle",waist="Warwolf Belt",
 		legs="Kaabnax Trousers",feet="Thur. Boots +1"} --100+131
-	sets.precast.Counterstance = {feet="Melee Gaiters +2"}
+	sets.precast.Counterstance = {feet="Hes. Gaiters"}
 	sets.precast.Dodge = {feet="Anchorite's Gaiters"}
 	sets.precast.Focus = {head="Anchorite's Crown"}
 	sets.precast.Boost = {hands="Anchorite's Gloves"}
 	sets.precast.Impetus = {body="Tantra Cyclas +2"}
-	--sets.precast.Mantra = {feet="Melee Gaiters +2"}
+	sets.precast.Mantra = {feet="Hes. Gaiters"}
 	
 	sets.precast.Step = {main="Oatixur",ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
@@ -38,7 +38,7 @@ function get_sets()
 		legs="Quiahuiz Trousers",feet="Otronif Boots"}
 		
 	sets.TP.Accuracy = {main="Oatixur",ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
-		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Hes. Gloves",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Letalis Mantle",waist="Windbuffet Belt",
 		legs="Manibozho Brais",feet="Otronif Boots"}
 
@@ -47,9 +47,14 @@ function get_sets()
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Otronif Boots"}
 	
-	sets.DT = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Twilight Torque",
+	sets.DT = {main="Oatixur",ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Twilight Torque",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",
 		left_ring="Dark Ring",right_ring="Shadow Ring",back="Archon Cape",waist="Black Belt",
+		legs="Kaabnax Trousers",feet="Otronif Boots"}
+		
+	sets.SalvageDT = {main="Oatixur",ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Twilight Torque",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",
+		left_ring="Dark Ring",right_ring="Dark Ring",back="Repulse Mantle",waist="Black Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots"}
 	
 	sets.Shark = {main="Oatixur",ammo="Honed Tathlum",head="Uk'uxkaj Cap",neck="Twilight Torque",
@@ -64,7 +69,6 @@ function get_sets()
 end
 
 function precast(spell)
-	--show_swaps()  --use for testing swaps
 	if sets.precast[spell.english] then
 		equip(sets.precast[spell.english])
 	elseif spell.type=="WeaponSkill" then
@@ -119,6 +123,11 @@ function self_command(command)
 		sets.aftercast.Idle = sets.DT
 		equip(sets.aftercast.TP)
 		send_command('@input /echo DT set')
+	elseif command == 'SalvageDT' then
+		sets.aftercast.TP = sets.SalvageDT
+		sets.aftercast.Idle = sets.SalvageDT
+		equip(sets.aftercast.TP)
+		send_command('@input /echo SalvageDT set')
 	elseif command == 'Shark' then
 		sets.aftercast.TP = sets.Shark
 		sets.aftercast.Idle = sets.Shark
