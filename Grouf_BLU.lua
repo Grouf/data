@@ -93,6 +93,7 @@ function get_sets()
 	sets.JA.Efflux = {legs="Mavi Tayt +2"}
 	sets.JA['Chain Affinity'] = {head="Mavi Kavuk +2",feet="Assim. Charuqs"}
 	sets.JA['Burst Affinity'] = {legs="Assim. Shalwar",feet="Mavi Basmak +2"}
+	sets.JA.Diffusion = {feet="Luhlaza Charuqs"}
 	
 --Precast--
 	sets.precast = {}
@@ -146,11 +147,11 @@ function get_sets()
 		legs="Iuitl Tights",feet="Iuitl Gaiters"}
 	
 	sets.midcast.STR = set_combine(sets.midcast.BaseSet,{head="Whirlpool Mask",back="Buquwik Cape"})
-		
+	
 	sets.midcast.STRDEX = set_combine(sets.midcast.BaseSet,{legs="Manibozho Brais"})
-		
+	
 	sets.midcast.STRVIT = set_combine(sets.midcast.BaseSet,{legs="Quiahuiz Trousers"})
-		
+	
 	sets.midcast.STRMND = set_combine(sets.midcast.BaseSet,{legs="Quiahuiz Trousers"})
 	
 	sets.midcast.AGI = set_combine(sets.midcast.BaseSet,{body="Iuitl Vest",legs="Kaabnax Trousers"})
