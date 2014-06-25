@@ -186,7 +186,7 @@ function self_command(command)
 		equip(sets.aftercast.TP)
 		WSMode_Index = 1	--WS potency
 		windower.add_to_chat(8, 'DD set')
-	if command == 'ACC' then --Accuracy Set
+	elseif command == 'ACC' then --Accuracy Set
 		sets.aftercast.TP = sets.TP.ACC
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Tandava Crackows"})
 		equip(sets.aftercast.TP)
