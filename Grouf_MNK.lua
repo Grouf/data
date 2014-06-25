@@ -22,7 +22,7 @@ function get_sets()
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Anchoret's Mantle",waist="Warwolf Belt",
 		legs="Manibozho Brais",feet="Thur. Boots +1"}
 
-	sets.precast.WS = {main="Oatixur",ammo="Thew Bomblet",head="Uk'uxkaj Cap",neck="Tlamiztli Collar",
+	sets.precast.WS = {main="Oatixur",ammo="Thew Bomblet",head="Whirlpool Mask",neck="Tlamiztli Collar",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
 		left_ring="Spiral Ring",right_ring="Rajas Ring",back="Vassal's Mantle",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Otronif Boots"}
@@ -32,7 +32,7 @@ function get_sets()
 	sets.precast['Shijin Spiral'] = set_combine(sets.precast.WS,{neck="Flame Gorget"})
 	
 	sets.TP = {}
-	sets.TP.DD = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Asperity Necklace",
+	sets.TP.DD = {main="Oatixur",ammo="Hagneia Stone",head="Whirlpool Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Otronif Gloves",
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Otronif Boots"}
@@ -54,7 +54,7 @@ function get_sets()
 		
 	sets.SalvageDT = {main="Oatixur",ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Twilight Torque",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",
-		left_ring="Dark Ring",right_ring="Dark Ring",back="Repulse Mantle",waist="Black Belt",
+		left_ring="Terrasoul Ring",right_ring="Terrasoul Ring",back="Repulse Mantle",waist="Black Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots"}
 	
 	sets.Shark = {main="Oatixur",ammo="Honed Tathlum",head="Uk'uxkaj Cap",neck="Twilight Torque",
@@ -73,9 +73,8 @@ function precast(spell)
 		equip(sets.precast[spell.english])
 	elseif spell.type=="WeaponSkill" then
 		equip(sets.precast.WS)
-	elseif string.find(spell.english,'Step') then
-		equip(sets.precast.Step)
-	elseif string.find(spell.english,'Violent Flourish') then
+	elseif spell.english:endswith('Step') or spell.english == 'Violent Flourish' then
+		--windower.add_to_chat(14, 'Step set on')
 		equip(sets.precast.Step)
 	end
 end
@@ -92,7 +91,7 @@ function aftercast(spell)
 end
 
 function status_change(new,old)
-	if T{'Idle','Resting'}:contains(new) then
+	if S{'Idle','Resting'}:contains(new) then
 		equip(sets.aftercast.Idle)
 	elseif new == 'Engaged' then
 		equip(sets.aftercast.TP)
