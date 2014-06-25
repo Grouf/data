@@ -26,7 +26,7 @@ function get_sets()
 	--sets.precast.Jishnu = set_combine(sets.precast.WS,{waist="Light Belt"})
 	sets.precast["Jishnu's Radiance"] = sets.precast.WS
 	
-	sets.precast.WSMelee = {head="Uk'uxkaj Cap",neck="Light Gorget",left_ear="Steelflash Earring",
+	sets.precast.WSMelee = {head="Whirlpool Mask",neck="Light Gorget",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Iuitl Wristbands",left_ring="Spiral Ring",
 		right_ring="Rajas Ring",back="Buquwik Cape",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
@@ -61,6 +61,9 @@ function precast(spell)
 	]]
 		equip(sets.precast.WS)
 		--end
+	elseif spell.english == 'Ranged' then
+		--windower.add_to_chat(14, 'Ranged attack found')
+		equip(sets.TP.Ranged)
 	end
 end
 
