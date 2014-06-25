@@ -5,13 +5,13 @@
 ]]
 
 function get_sets()
-	NinjutsuNuke = T{
+	NinjutsuNuke = S{
 		'Katon: Ichi','Suiton: Ichi','Doton: Ichi','Hyoton: Ichi','Huton: Ichi','Raiton: Ichi',
 		'Katon: Ni','Suiton: Ni','Doton: Ni','Hyoton: Ni','Huton: Ni','Raiton: Ni',
 		'Katon: San','Suiton: San','Doton: San','Hyoton: San','Huton: San','Raiton: San'
 		}
 		
-	NinjutsuEnfeeble = T{
+	NinjutsuEnfeeble = S{
 		'Hojo: Ichi','Kurayami: Ichi','Dokumori: Ichi','Jubaku: Ichi','Yurin: Ichi',
 		'Hojo: Ni','Kurayami: Ni','Dokumori: Ni','Jubaku: Ni','Yurin: Ni'
 		}
@@ -27,8 +27,8 @@ function get_sets()
 		right_ring="Paqichikaji Ring",back="Yokaze Mantle",waist="Buccaneer's Belt",
 		legs="Thur. Tights +1",feet="Otronif Boots"}
 	
-	sets.precast.WS = {head="Uk'uxkaj Cap",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Otronif Gloves",left_ring="Spiral Ring",
+	sets.precast.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
+		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Otronif Gloves",left_ring="Cho'j Band",
 		right_ring="Rajas Ring",back="Vassal's Mantle",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Otronif Boots"}
 	
@@ -42,6 +42,8 @@ function get_sets()
 	
 	sets.precast["Blade Yu"] = set_combine(sets.precast.WS,{left_ear="Friomisi Earring",
 		right_ear="Hecate's Earring",back="Toro Cape"}) --DEX50 INT50
+	
+	--sets.precast.FastCast = NEEDS WORK
 	
 	sets.precast.Utsusemi = {head="Athos's Chapeau",neck="Magoraga Beads",left_ear="Phawaylla Earring",
 		right_ear="Loquac. Earring",body="Otronif Harness",hands="Mochizuki Tekko",left_ring="Prolix Ring",
@@ -57,7 +59,7 @@ function get_sets()
 	
 	sets.precast.Nuke = {--[[head="Koga Hatsuburi",]]neck="Stoicheion Medal",left_ear="Friomisi Earring",
 		right_ear="Hecate's Earring",body="Otronif Harness",hands="Mochizuki Tekko",left_ring="Prolix Ring",
-		right_ring="Icesoul Ring",back="Toro Cape",
+		right_ring="Acumen Ring",back="Toro Cape",
 		legs="Quiahuiz Trousers",feet="Hachiya Kyahan"}
 	
 	sets.precast.Step = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
@@ -67,7 +69,7 @@ function get_sets()
 	
 		
 	sets.TP = {}
-	sets.TP.DD = {head="Uk'Uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
+	sets.TP.DD = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Otronif Gloves",left_ring="Epona's Ring",
 		right_ring="Rajas Ring",back="Yokaze Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Otronif Boots"}
