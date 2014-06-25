@@ -12,15 +12,15 @@ function get_sets()
 		hands="Hagondes Cuffs",right_ring="Prolix Ring",back="Swith Cape",
 		waist="Witful Belt",legs="Geomancy Pants",feet="Hagondes Sabots"}  --Geo. Pants = 10%
 		
-	sets.precast.IdleRefresh = {main="Lehbrailg +2",sub="Mephitis Grip",range="Filiae Bell",head="Bagua Galero",
+	sets.precast.IdleRefresh = {main="Lehbrailg +2",sub="Mephitis Grip",range="Dunna",head="Bagua Galero",
 		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Bagua Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
-		waist="Aswang Sash",legs="Nares Trews",feet="Geomancy Sandals"}
+		waist="Aswang Sash",legs="Hagondes Pants",feet="Geomancy Sandals"}
 	
-	sets.precast.IdleLuopan = {main="Lehbrailg +2",sub="Mephitis Grip",range="Filiae Bell",head="Bagua Galero",
+	sets.precast.IdleLuopan = {main="Lehbrailg +2",sub="Mephitis Grip",range="Dunna",head="Bagua Galero",
 		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Geomancy Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
-		waist="Aswang Sash",legs="Nares Trews",feet="Bagua Sandals"}
+		waist="Aswang Sash",legs="Hagondes Pants",feet="Bagua Sandals"}
 	
 	sets.precast.Idle = sets.precast.IdleRefresh
 	
@@ -47,7 +47,7 @@ function get_sets()
 		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Orvail Pants +1",feet="Hagondes Sabots"}
 		
-	sets.midcast.Geomancy = {main="Dowser's Wand",sub="Genbu's Shield",range="Filiae Bell",head="Geomancy Galero",
+	sets.midcast.Geomancy = {main="Dowser's Wand",sub="Genbu's Shield",range="Dunna",head="Geomancy Galero",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",body="Geomancy Tunic",
 		hands="Geomancy Mitaines",right_ring="Sangoma Ring",back="Lifestream Cape",
 		waist="Witch Sash",legs="Geomancy Pants",feet="Geomancy Sandals"}
