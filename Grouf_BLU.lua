@@ -307,7 +307,16 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 			send_command('@input /echo Burst Affinity ON, legs,feet disabled')
 		else
 			enable('legs', 'feet')
-			send_command('@input /echo Burst Affinity off, legs, enabled')
+			send_command('@input /echo Burst Affinity off, legs,feet enabled')
+		end
+	elseif buff_name=='Diffusion' then
+		if gain then
+			equip(sets.JA[buff_name])
+			send_command('@wait 0.5; gs disable feet;')
+			send_command('@input /echo Diffusion ON, feet disabled')
+		else
+			enable('feet')
+			send_command('@input /echo Diffusion off, feet enabled')
 		end
 	end
 	
