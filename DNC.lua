@@ -7,6 +7,9 @@
 	Put one command on one macro:	/console gs c DD		for the Damage Dealing set
 									/console gs c ACC		for the Accuracy set
 									/console gs c DT		for the Damage Taken set
+									
+	You will need to update the set_macro_book() function to your correct book and macro number
+		set_macro_book() is at the bottom of the file
 ]]
 
 function get_sets()
@@ -200,6 +203,7 @@ end
 
 function set_macro_book()
 	-- Default macro book & page
+	--Update the book and macro set to your correct macros
 	if player.sub_job == 'WAR' then
 		send_command('input /macro book 11;wait .1;input /macro set 1')
 	elseif player.sub_job == 'DNC' then
