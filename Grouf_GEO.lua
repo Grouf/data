@@ -33,6 +33,7 @@ function get_sets()
 	sets.JA['Full Circle'] = {hands="Bagua Mitaines"}
 	sets.JA['Mending Halation'] = {legs="Bagua Pants"}
 	sets.JA['Radial Arcana'] = {feet="Bagua Sandals"}
+	sets.JA['Life Cycle'] = {body="Geomancy Tunic"}
 	
 --Midcast
 	sets.midcast = {}
@@ -47,10 +48,11 @@ function get_sets()
 		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Orvail Pants +1",feet="Hagondes Sabots"}
 		
-	sets.midcast.Geomancy = {main="Dowser's Wand",sub="Genbu's Shield",range="Dunna",head="Geomancy Galero",
-		neck="Morgana's Choker",left_ear="Loquac. Earring",body="Geomancy Tunic",
-		hands="Geomancy Mitaines",right_ring="Sangoma Ring",back="Lifestream Cape",
-		waist="Witch Sash",legs="Geomancy Pants",feet="Geomancy Sandals"}
+	sets.midcast.Geomancy = {main="Dowser's Wand",sub="Genbu's Shield",range="Dunna",
+		body="Bagua Tunic",
+		hands="Geomancy Mitaines",back="Lifestream Cape",
+		legs="Bagua Pants"}	--Geomancy Skill:	373+30 = 403
+							--Handbell Skill:	373+18 = 391
 		
 	--Enhancing needs work
 	sets.midcast.Enhancing = {body="Anhur Robe",neck="Stone Gorget",hands="Augur's Gloves",
