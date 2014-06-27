@@ -25,12 +25,12 @@ function get_sets()
 	sets.precast.Ranged = {head="Uk'uxkaj Cap",neck="Huani Collar",left_ear="Clearview earring",
 		right_ear="Bladeborn Earring",body="Otronif Harness",hands="Hachiya Tekko",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Yokaze Mantle",waist="Buccaneer's Belt",
-		legs="Thur. Tights +1",feet="Otronif Boots"}
+		legs="Thur. Tights +1",feet="Otronif Boots +1"}
 	
 	sets.precast.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Otronif Gloves",left_ring="Cho'j Band",
 		right_ring="Rajas Ring",back="Vassal's Mantle",waist="Prosilio Belt",
-		legs="Manibozho Brais",feet="Otronif Boots"}
+		legs="Manibozho Brais",feet="Otronif Boots +1"}
 	
 	sets.precast["Blade Hi"] = set_combine(sets.precast.WS,{neck="Shadow Gorget",hands="Iga Tekko +2"}) --AGI
 	
@@ -64,15 +64,15 @@ function get_sets()
 	
 	sets.precast.Step = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
-		right_ring="Epona's Ring",back="Yokaze Mantle",waist="Phasmida Belt",
-		legs="Hachiya Hakama",feet="Otronif Boots"} --Primary Acc: 907
+		right_ring="Beeline Ring",back="Yokaze Mantle",waist="Phasmida Belt",
+		legs="Hachiya Hakama",feet="Otronif Boots +1"} --Primary Acc: 913
 	
 		
 	sets.TP = {}
 	sets.TP.DD = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Otronif Gloves",left_ring="Epona's Ring",
 		right_ring="Rajas Ring",back="Yokaze Mantle",waist="Windbuffet Belt",
-		legs="Quiahuiz Trousers",feet="Otronif Boots"}
+		legs="Quiahuiz Trousers",feet="Otronif Boots +1"}
 		
 	--[[sets.TP.EVA = set_combine(sets.TP.DD,{neck="Torero Torque",left_ear="Ethereal Earring",
 		right_ear="Phawaylla Earring",body="Otronif Harness",
@@ -82,7 +82,7 @@ function get_sets()
 	sets.TP.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Dudgeon Earring",
 		right_ear="Heartseeker earring",body="Otronif Harness",hands="Otronif Gloves",left_ring="Dark Ring",
 		right_ring="Dark Ring",back="Ik Cape",waist="Flume Belt",
-		legs="Kaabnax Trousers",feet="Otronif Boots"}
+		legs="Kaabnax Trousers",feet="Otronif Boots +1"}
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD

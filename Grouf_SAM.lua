@@ -73,7 +73,7 @@ function get_sets()
 	sets.precast["Tachi: Shoha"] = sets.WS.DD["Tachi: Shoha"]
 	
 	sets.precast.Step = {head="Yaoyotl Helm", neck="Unkai Nodowa", left_ear="Steelflash Earring",
-		right_ear="Heartseeker Earring", body="Miki. Breastplate", hands="Buremte Gloves", left_ring="Spiral Ring",
+		right_ear="Heartseeker Earring", body="Miki. Breastplate", hands="Buremte Gloves", left_ring="Beeline Ring",
 		right_ring="Rajas Ring", back="Takaha Mantle", waist="Phasmida Belt",
 		legs="Miki. Cuisses", feet="Wakido Sune-Ate"} --Primary Acc: 834
 	
@@ -82,7 +82,7 @@ function get_sets()
 	sets.TP.DD = {sub="Pole Grip", head="Otomi Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Wakido Domaru", hands="Otronif Gloves", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Takaha mantle", waist="Cetl Belt", 
-		legs="Wakido Haidate", feet="Otronif Boots" }  	--With pole Grip Double Attack = 20%
+		legs="Wakido Haidate", feet="Otronif Boots +1" }  	--With pole Grip Double Attack = 20%
 															--Store TP = 55
 															--Haste = 
 															--(With IONIS)
@@ -105,7 +105,7 @@ function get_sets()
 	sets.TP.DT= {sub="Pole Grip", head="Yaoyotl Helm", neck="Twilight Torque", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Otronif Harness", hands="Otronif Gloves", left_ring="Dark Ring", 
 		right_ring="Dark Ring", back="Ik Cape", waist="Flume Belt", 
-		legs="Otronif Brais", feet="Otronif Boots" }
+		legs="Otronif Brais", feet="Otronif Boots +1" }
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
