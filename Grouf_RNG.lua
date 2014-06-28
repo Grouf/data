@@ -27,7 +27,7 @@ function get_sets()
 	sets.precast["Jishnu's Radiance"] = sets.precast.WS
 	
 	sets.precast.WSMelee = {head="Whirlpool Mask",neck="Light Gorget",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Iuitl Wristbands",left_ring="Spiral Ring",
+		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Iuitl Wristbands",left_ring="Cho'j Band",
 		right_ring="Rajas Ring",back="Buquwik Cape",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
 	

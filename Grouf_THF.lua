@@ -41,7 +41,7 @@ function get_sets()
 	
 	--[[sets.precast.Exenterator = {head="Uk'uxkaj Cap",neck="Light Gorget",left_ear="Dudgeon Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Plun. Armlets",left_ring="Rajas Ring",
-		right_ring="Spiral Ring",back="Buquwik Cape",waist="Prosilio Belt",
+		right_ring="Cho'j Band",back="Buquwik Cape",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}]]
 	
 	--[[sets.precast["Aeolian Edge"] = {head="Thaumas Hat",neck="Stoicheion Medal",left_ear="Hecate's Earring",
@@ -72,7 +72,7 @@ function get_sets()
 	
 	sets.TP.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Iuitl Wristbands",left_ring="Dark Ring",
-		right_ring="Shadow Ring",back="Shadow Mantle",waist="Phasmida Belt",
+		right_ring="Shadow Ring",back="Repulse Mantle",waist="Phasmida Belt",
 		legs="Kaabnax Trousers",feet="Iuitl Gaiters"}
 
 	sets.aftercast = {}

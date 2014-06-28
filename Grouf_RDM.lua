@@ -109,7 +109,7 @@ function get_sets()
 	
 	sets.TP.Step = {head="Buremte Hat",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Heartseeker Earring",body="Gendewitha Bliaut",hands="Buremte Gloves",left_ring="Rajas Ring",
-		right_ring="Spiral Ring",back="Letalis Mantle",waist="Phasmida Belt",
+		right_ring="Beeline Ring",back="Letalis Mantle",waist="Phasmida Belt",
 		legs="Orvail Pants +1",feet="Atrophy Boots"} --Primary Acc: 796
 	
 	sets.TP.DD = {ammo="Oreiad's Tathlum", head="Hagondes Hat", 

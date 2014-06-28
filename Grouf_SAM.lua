@@ -8,7 +8,7 @@ function get_sets()
 	
 	sets.WS = {}
 	--[[sets.WS.Base = {head="Mikinaak Helm", neck="Tlamiztli Collar", left_ear="Steelflash Earring", 
-		right_ear="Bladeborn Earring", body="Phorcys Korazin", hands="Mikinaak Gauntlets", left_ring="Spiral Ring", 
+		right_ear="Bladeborn Earring", body="Phorcys Korazin", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Buquwik Cape", waist="Prosilio Belt", 
 		legs="Miki. Cuisses", feet="Mikinaak Greaves" }
 		]]

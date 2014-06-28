@@ -118,7 +118,7 @@ function get_sets()
 	sets.WS = {}
 	sets.WS.Base = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
-		right_ring="Spiral Ring",back="Vassal's Mantle",waist="Prosilio Belt",
+		right_ring="Cho'j Band",back="Vassal's Mantle",waist="Prosilio Belt",
 		legs="Manibozho brais",feet="Assim. Charuqs" }
 		
 	sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{neck="Light Gorget"})

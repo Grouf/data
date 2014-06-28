@@ -48,12 +48,12 @@ function get_sets()
 	sets.TP = {}
 	sets.TP.Engage = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Kaabanax Hat",
 		neck="Asperity Necklace",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Spiral Ring",back="Buquwik Cape",
+		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
 		waist="Windbuffet Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
 		
 	sets.TP.WS = {head="Hagondes Hat",
 		neck="Tlamiztli Collar",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Spiral Ring",back="Buquwik Cape",
+		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
 		waist="Prosilio Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
 	
 	sets.aftercast = {}
