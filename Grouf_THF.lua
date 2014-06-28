@@ -53,6 +53,10 @@ function get_sets()
 		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Plun. Armlets",left_ring="Rajas Ring",
 		right_ring="Beeline Ring",back="Letalis Mantle",waist="Phasmida Belt",
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
+	
+	sets.precast['Violent Flourish'] = set_combine(sets.precast.Step, {neck="Stoicheion Medal", 
+		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Perception Ring", 
+		right_ring="Sangoma Ring", legs="Iuitl Tights"})
 		
 	sets.TP = {}
 	sets.TP.DD = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
@@ -87,8 +91,7 @@ function precast(spell)
 		equip(sets.precast[spell.english])
 	elseif spell.type=="WeaponSkill" then
 		equip(sets.precast.WS)
-	elseif string.find(spell.english,'Step') or 
-		string.find(spell.english,'Violent Flourish') then
+	elseif spell.type =='Step'
 		equip(sets.precast.Step)
 	end
 end
