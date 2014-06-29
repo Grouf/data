@@ -91,7 +91,7 @@ function precast(spell)
 		equip(sets.precast[spell.english])
 	elseif spell.type=="WeaponSkill" then
 		equip(sets.precast.WS)
-	elseif spell.type =='Step'
+	elseif spell.type =='Step' then
 		equip(sets.precast.Step)
 	end
 end
