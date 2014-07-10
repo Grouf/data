@@ -25,7 +25,7 @@ function get_sets()
 		hands="Hagondes Cuffs", left_ring="Strendu Ring", right_ring="Acumen Ring", back="Toro Cape", 
 		waist="Aswang Sash", legs="Hagondes Pants", feet="Weath. Souliers +1"}
 	
-	sets.Potency.DRKMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone", head="Kaabanax Hat", 
+	sets.Potency.DRKMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone", head="Kaabnax Hat", 
 		neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", body="Hagondes Coat", 
 		hands="Hagondes Cuffs", left_ring="Strendu Ring", right_ring="Acumen Ring", back="Refraction Cape", 
 		waist="Witch Sash", legs="Hagondes Pants", feet="Hagondes Sabots"}
@@ -45,7 +45,7 @@ function get_sets()
 		hands="Hagondes Cuffs", left_ring="Perception Ring", right_ring="Sangoma Ring", back="Refraction Cape", 
 		waist="Aswang Sash", legs="Hagondes Pants", feet="Hagondes Sabots"}
 	
-	sets.Accuracy.DRKMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone", head="Kaabanax Hat", 
+	sets.Accuracy.DRKMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone", head="Kaabnax Hat", 
 		neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", body="Atrophy Tabard", 
 		hands="Hagondes Cuffs", left_ring="Strendu Ring", right_ring="Perception Ring", back="Refraction Cape", 
 		waist="Witch Sash", legs="Hagondes Pants", feet="Hagondes Sabots"}
@@ -57,13 +57,17 @@ function get_sets()
 	sets.JA.Saboteur = {hands="Estq. Ganthrt. +2"}
 	--sets.JA.Composure = { } --Find augment gear
 	--Need other JA listed
+	sets.JA["Violent Flourish"] = {head="Buremte Hat",neck="Asperity Necklace",left_ear="Steelflash Earring",
+		right_ear="Heartseeker Earring",body="Gendewitha Bliaut",hands="Buremte Gloves",left_ring="Rajas Ring",
+		right_ring="Beeline Ring",back="Letalis Mantle",waist="Phasmida Belt",
+		legs="Orvail Pants +1",feet="Atrophy Boots"} 
 	
 	sets.precast = {}
 	
 	sets.precast.IdleRefresh = {main="Buramenk'ah", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Vitivation Chapeau", 
-		neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", body="Atrophy Tabard", 
-		hands="Serpentes Cuffs", left_ring="Solemn Ring", right_ring="Sirona's Ring", back="Estoqueur's cape", 
-		waist="Aswang Sash", legs="Nares Trews", feet="Serpentes Sabots"}
+		neck="Twilight Torque", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", body="Atrophy Tabard", 
+		hands="Serpentes Cuffs", left_ring="Solemn Ring", right_ring="Sirona's Ring", back="Repulse Mantle", 
+		waist="Flume Belt", legs="Nares Trews", feet="Serpentes Sabots"}
 		
 	sets.precast.IdleDT = {main="Xiutleato",sub="Genbu's Shield", ammo="Brigantia Pebble", head="Nahtirah Hat", 
 		neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Soil Pearl", body="Hagondes Coat", 
@@ -81,7 +85,7 @@ function get_sets()
 		waist="Witful Belt", legs="Orvail Pants +1", feet="Hagondes Sabots"} -- 50% Fast Cast, 13% Haste
 	
 	sets.midcast = {}
-	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Kaabanax Hat", 
+	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Kaabnax Hat", 
 		neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Loquac. Earring", body="Gendewitha Bliaut", 
 		hands="Weath. Cuffs +1", left_ring="Solemn Ring", right_ring="Sirona's Ring", back="Pahtli Cape", 
 		waist="Witch Sash", legs="Atrophy Tights", feet="Weath. Souliers +1"} --59% Cure Pot., 15%Haste ,MND 92+162
@@ -112,7 +116,7 @@ function get_sets()
 		right_ring="Beeline Ring",back="Letalis Mantle",waist="Phasmida Belt",
 		legs="Orvail Pants +1",feet="Atrophy Boots"} --Primary Acc: 796
 	
-	sets.TP.DD = {ammo="Oreiad's Tathlum", head="Hagondes Hat", 
+	sets.TP.DD = {ammo="Oreiad's Tathlum", head="Nahtirah Hat", 
 		neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring", body="Hagondes Coat", 
 		hands="Atrophy Gloves", left_ring="Cho'j Band", right_ring="Rajas Ring", back="Atheling Mantle", 
 		waist="Windbuffet Belt", legs="Hagondes Pants", feet="Atrophy Boots"}
@@ -120,16 +124,28 @@ function get_sets()
 	sets.TP.Accuracy = {}
 	
 	sets.WS = {}
-	sets.WS.Base = {head="Hagondes Hat", 
+	sets.WS.Base = {head="Nahtirah Hat", 
 		neck="Tlamiztli Collar", left_ear="Dudgeon Earring", right_ear="Bladeborn Earring", body="Hagondes Coat", 
 		hands="Atrophy Gloves", left_ring="Cho'j Band", right_ring="Rajas Ring", back="Buquwik Cape", 
 		waist="Prosilio Belt", legs="Hagondes Pants", feet="Atrophy Boots"}
 	
+	sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{head="Buremte Hat", body="Gendewitha Bliaut",
+		neck="Light Gorget",
+		legs="Vitivation Tights"}) -- DEX 80%
+	
 	sets.WS.Requiescat = set_combine(sets.WS.Base, {neck="Shadow Gorget"})
+	
+	sets.WS['Sanguine Blade'] = set_combine(sets.WS.Base, {left_ear="Psystorm Earring",
+		hands="Hagondes Cuffs",left_ring="Icesoul Ring",
+		right_ring="Spiral Ring",back="Refraction Cape",
+		waist="Caudata Belt",feet="Weath. Souliers +1" })
 	
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
 	send_command('input /macro book 5;wait .1;input /macro set 1')
+	
+	sets.DontForget = {left_ear="Reraise Earring", right_ear = "Linkpearl", legs="Crimson Cuisses",
+		feet="Sprinter's Shoes"}
 	
 end
 
@@ -193,8 +209,9 @@ function midcast(spell)
 		if string.find(spell.english, 'Refresh') then
 			equip({legs="Estoqueur's fuseau +2"})
 		end
-		if spell.target.isallymember and spell.target.name ~= player.name then 
-			windower.add_to_chat(14, spell.target.name.. ' is an alliance member (not me), equip BuffOther.')
+		--if spell.target.isallymember and spell.target.name ~= player.name then 
+		if spell.target.name ~= player.name then 
+			--windower.add_to_chat(14, spell.target.name.. ' is _not_ me, equip BuffOther.')
 			equip(sets.midcast.EnhancingOther)
 		end
 	
