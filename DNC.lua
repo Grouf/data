@@ -13,7 +13,7 @@
 ]]
 
 function get_sets()
-		
+	
 	sets.JA = {}
 	sets.JA.Trance = {head="Horos Tiara +1"}
 	--sets.JA['Grand Pas'] = {slot=""}		--no gear augments this right now
@@ -103,7 +103,7 @@ end
 function precast(spell)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
 		--Not a job ability or weapon skill, therefore magic so equip fast cast set
-		equip(sets.precast.FastCast)
+		equip(sets.FastCast)
 	
 	elseif spell.type == "WeaponSkill" then
 		if WSMode_Index == 1 then		--WS Potency
