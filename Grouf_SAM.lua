@@ -44,6 +44,7 @@ function get_sets()
 	sets.WS.Acc["Tachi: Shoha"] = set_combine(sets.WS.Acc,{neck="Shadow Gorget"})
 	
 	sets.JA = {}
+	sets.JA["Meikyo Shisui"] = {feet="Sakonji Sune-Ate"}
 	sets.JA.Meditate = {head="Wakido Kabuto", hands="Sakonji Kote"}
 	sets.JA.Hasso = {hands="Wakido Kote", legs="Unkai Haidate +2"}
 	sets.JA["Warding Circle"] = {head="Wakido Kabuto"}
@@ -53,9 +54,9 @@ function get_sets()
 	sets.precast = {}
 	
 	sets.precast.Ranged = {head="Yaoyotl Helm",neck="Ocachi Gorget",left_ear="Clearview earring",
-		right_ear="Bladeborn Earring",body="Otronif Harness",hands="Unkai Kote +2",left_ring="Paqichikaji Ring",
+		right_ear="Phawaylla Earring",body="Otronif Harness",hands="Buremte Gloves",left_ring="Paqichikaji Ring",
 		right_ring="Fistmele Ring",back="Buquwik Cape",waist="Buccaneer's Belt",
-		legs="Wakido Haidate",feet="Wakido Sune-Ate"} -- R.Acc=693  R.Att=797 iLvl=114
+		legs="Wakido Haidate",feet="Wakido Sune-Ate"} -- R.Acc=732  R.Att=831 iLvl=116 (beetle arrow)
 		
 	sets.precast["Apex Arrow"] = sets.precast.Ranged
 		--[[neck="Light Gorget", 
@@ -92,7 +93,7 @@ function get_sets()
 															--Eva = 631
 															--Def = 869
 	
-	sets.TP.Acc = {sub="Tzacab Grip", head="Yaoyotl Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
+	sets.TP.ACC = {sub="Tzacab Grip", head="Yaoyotl Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Miki. Breastplate", hands="Otronif Gloves", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Takaha mantle", waist="Cetl Belt", 
 		legs="Miki. Cuisses", feet="Wakido Sune-Ate" } --needs more work, added quick for Dimi
@@ -104,13 +105,13 @@ function get_sets()
 	
 	sets.TP.DT= {sub="Pole Grip", head="Yaoyotl Helm", neck="Twilight Torque", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Otronif Harness", hands="Otronif Gloves", left_ring="Dark Ring", 
-		right_ring="Dark Ring", back="Ik Cape", waist="Flume Belt", 
+		right_ring="Dark Ring", back="Repulse Mantle", waist="Flume Belt", 
 		legs="Otronif Brais", feet="Otronif Boots +1" }
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
 	sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Danzo Sune-Ate"})
-	--send_command('input /macro book 12;wait .1;input /macro set 10')
+	
 	set_macro_book()
 	
 end
@@ -173,6 +174,7 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 	elseif not gain then -- something lost
 	
 	end]]
+	--windower.add_to_chat(14, 'buff_name = ' ..buff_name.. ' & ID = ' ..tostring(buff_name.id))
 end
 
 function self_command(command)
@@ -186,7 +188,7 @@ function self_command(command)
 		--sets.precast["Tachi: Yukikaze"] = sets.WS.DD["Tachi: Yukikaze"]
 		--sets.precast["Tachi: Rana"] = sets.WS.DD["Tachi: Rana"]
 		sets.precast["Tachi: Shoha"] = sets.WS.DD["Tachi: Shoha"]
-		send_command('@input /echo DD set')
+		windower.add_to_chat(9, 'DD set')
 		
 	elseif command == 'ACC' then
 		sets.aftercast.TP = sets.TP.ACC
@@ -198,7 +200,7 @@ function self_command(command)
 		--sets.precast["Tachi: Yukikaze"] = sets.WS.Acc["Tachi: Yukikaze"]
 		--sets.precast["Tachi: Rana"] = sets.WS.Acc["Tachi: Rana"]
 		sets.precast["Tachi: Shoha"] = sets.WS.Acc["Tachi: Shoha"]
-		send_command('@input /echo ACC set')
+		windower.add_to_chat(9, 'ACC set')
 		
 	elseif command == 'DT' then
 		sets.aftercast.TP = sets.TP.DT
@@ -210,7 +212,7 @@ function self_command(command)
 		--sets.precast["Tachi: Yukikaze"] = sets.WS.Acc["Tachi: Yukikaze"]
 		--sets.precast["Tachi: Rana"] = sets.WS.Acc["Tachi: Rana"]
 		sets.precast["Tachi: Shoha"] = sets.WS.Acc["Tachi: Shoha"]
-		send_command('@input /echo DT set')
+		windower.add_to_chat(9, 'DT set')
 		
 	end
 	
@@ -219,6 +221,10 @@ function self_command(command)
 	else
 		equip(sets.aftercast.Idle)
 	end
+end
+
+function sub_job_change(new,old)
+	set_macro_book()
 end
 
 function set_macro_book()
