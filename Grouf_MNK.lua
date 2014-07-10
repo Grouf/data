@@ -49,7 +49,7 @@ function get_sets()
 	
 	sets.DT = {main="Oatixur",ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Twilight Torque",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",
-		left_ring="Dark Ring",right_ring="Shadow Ring",back="Archon Cape",waist="Black Belt",
+		left_ring="Dark Ring",right_ring="Shadow Ring",back="Repulse Mantle",waist="Black Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots +1"}
 		
 	sets.SalvageDT = {main="Oatixur",ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Twilight Torque",
@@ -65,7 +65,7 @@ function get_sets()
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
 	sets.aftercast.Idle = sets.TP.DD
-	send_command('input /macro book 2;wait .1;input /macro set 10')
+	set_macro_book()
 end
 
 function precast(spell)
@@ -106,31 +106,44 @@ function self_command(command)
 		sets.aftercast.TP = sets.TP.DD
 		sets.aftercast.Idle = sets.TP.DD
 		equip(sets.aftercast.TP)
-		send_command('@input /echo DD set')
+		windower.add_to_chat(9, 'DD set')
 	elseif command == 'Accuracy' then
 		sets.aftercast.TP = sets.TP.Accuracy
 		sets.aftercast.Idle = sets.TP.Accuracy
 		equip(sets.aftercast.TP)
-		send_command('@input /echo ACCURACY set')
+		windower.add_to_chat(9, 'ACCURACY set')
 	elseif command == 'SOLO' then
 		sets.aftercast.TP = sets.TP.Solo
 		sets.aftercast.Idle = sets.TP.Solo
 		equip(sets.aftercast.TP)
-		send_command('@input /echo SOLO set')
+		windower.add_to_chat(9, 'SOLO set')
 	elseif command == 'DT' then
 		sets.aftercast.TP = sets.DT
 		sets.aftercast.Idle = sets.DT
 		equip(sets.aftercast.TP)
-		send_command('@input /echo DT set')
+		windower.add_to_chat(9, 'DT set')
 	elseif command == 'SalvageDT' then
 		sets.aftercast.TP = sets.SalvageDT
 		sets.aftercast.Idle = sets.SalvageDT
 		equip(sets.aftercast.TP)
-		send_command('@input /echo SalvageDT set')
+		windower.add_to_chat(9, 'SalvageDT set')
 	elseif command == 'Shark' then
 		sets.aftercast.TP = sets.Shark
 		sets.aftercast.Idle = sets.Shark
 		equip(sets.aftercast.TP)
-		send_command('@input /echo SHARK set')
+		windower.add_to_chat(9, 'SHARK set')
+	end
+end
+
+function set_macro_book()
+	-- Default macro book & page
+	if player.sub_job == 'WAR' then
+		send_command('input /macro book 2;wait .1;input /macro set 10')
+	elseif player.sub_job == 'DNC' then
+		send_command('input /macro book 2;wait .1;input /macro set 9')
+	elseif player.sub_job == 'RUN' then
+		send_command('input /macro book 2;wait .1;input /macro set 8')
+	else
+		send_command('input /macro book 2;wait .1;input /macro set 10')
 	end
 end
