@@ -5,33 +5,37 @@
 ]]
 
 function get_sets()				
-	sets.precast = {}
-	sets.precast.Barrage = {hands="Orion Bracers"}
-	sets.precast.Sharpshot = {legs="Orion Braccae"}
-	sets.precast['Double Shot'] = {head="Sylvan Gapette +2"}
-	sets.precast['Velocity Shot'] = {body="Sylvan Caban +2"}
-	sets.precast['Bounty Shot'] = {hands="Syl. Glvltte. +2"}
-	sets.precast['Unlimited Shot'] = {feet="Sylvan Bottln. +2"} --Don't need since it shares timer with Double Shot
-	sets.precast.Scavenge = {feet="Orion Socks"}
-	sets.precast.Camouflage = {body="Orion Jerkin"}
-	sets.precast.Shadowbind = {hands="Orion Bracers"}
+	sets.JA = {}
+	sets.JA.Barrage = {hands="Orion Bracers"}
+	sets.JA.Sharpshot = {legs="Orion Braccae"}
+	sets.JA['Double Shot'] = {head="Sylvan Gapette +2"}
+	sets.JA['Velocity Shot'] = {body="Sylvan Caban +2"}
+	sets.JA['Bounty Shot'] = {hands="Syl. Glvltte. +2"}
+	sets.JA['Unlimited Shot'] = {feet="Sylvan Bottln. +2"} --Don't need since it shares timer with Double Shot
+	sets.JA.Scavenge = {feet="Orion Socks"}
+	sets.JA.Camouflage = {body="Orion Jerkin"}
+	sets.JA.Shadowbind = {hands="Orion Bracers"}
 	
-	sets.precast.WS = {head="Orion Beret",neck="Ocachi Gorget",left_ear="Clearview Earring",
+	sets.Snapshot = {}
+	
+	
+	sets.WS = {}
+	sets.WS.Base = {head="Orion Beret",neck="Ocachi Gorget",left_ear="Clearview Earring",
 		right_ear="Volley Earring",body="Orion Jerkin",hands="Buremte Gloves",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Lutian Cape",waist="Scout's Belt",
 		legs="Thur. Tights +1",feet="Orion Socks"}
 		
-	sets.precast["Eagle Eye Shot"] = sets.precast.WS
+	sets.JA["Eagle Eye Shot"] = sets.WS.Base
 	
-	--sets.precast.Jishnu = set_combine(sets.precast.WS,{waist="Light Belt"})
-	sets.precast["Jishnu's Radiance"] = sets.precast.WS
+	--sets.midcast.Jishnu = set_combine(sets.midcast.WS,{waist="Light Belt"})
+	sets.WS["Jishnu's Radiance"] = sets.WS.Base
 	
-	sets.precast.WSMelee = {head="Whirlpool Mask",neck="Light Gorget",left_ear="Steelflash Earring",
+	--[[sets.midcast.WSMelee = {head="Whirlpool Mask",neck="Light Gorget",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Iuitl Wristbands",left_ring="Cho'j Band",
 		right_ring="Rajas Ring",back="Buquwik Cape",waist="Prosilio Belt",
-		legs="Manibozho Brais",feet="Iuitl Gaiters"}
-	
-	sets.precast.Utsusemi = set_combine(sets.precast.WS,{neck="Magoraga Beads",left_ear='Loquac. Earring',
+		legs="Manibozho Brais",feet="Iuitl Gaiters"}]]
+
+	sets.Utsusemi = set_combine(sets.midcast.WS,{neck="Magoraga Beads",left_ear='Loquac. Earring',
 		left_ring="Prolix Ring",waist="Phasmida Belt",legs="Orion Braccae",feet="Thur. Boots +1"})
 		--Gear Haste: 30%, Fast Cast: 4%
 	
@@ -49,25 +53,41 @@ function get_sets()
 	end --End Sets
 
 function precast(spell)
-	if sets.precast[spell.english] then
-		equip(sets.precast[spell.english])
-	elseif string.find(spell.english,'Utsusemi') then
-		equip(sets.precast.Utsusemi)
-	elseif spell.type=="WeaponSkill" then
-	--[[
-		if string.find(spell.english,'Jishnu') then
-			equip(sets.precast.Jishnu)
+	--windower.add_to_chat(14, 'Precast: spell type= ' ..spell.type)
+	
+	if spell.type=="WeaponSkill" then
+		if sets.WS[spell.english] then
+			equip(sets.WS[spell.english])
 		else
-	]]
-		equip(sets.precast.WS)
-		--end
-	elseif spell.english == 'Ranged' then
-		--windower.add_to_chat(14, 'Ranged attack found')
-		equip(sets.TP.Ranged)
+			equip(sets.WS.Base)
+		end
+
+	elseif spell.prefix=="/jobability" then
+		if sets.JA[spell.english] then
+			equip(sets.JA[spell.english])
+		end
+	
+	elseif spell.english == "Ranged" then
+		equip(sets.Shapshot)
+	
 	end
+	
 end
 
 function midcast(spell)
+	if spell.prefix == '/jobability' or spell.type == 'WeaponSkill' then
+	--midcast doesn't exist for JA or WS so cancel the processing of this function
+		--windower.add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
+		return
+	end
+		
+	if spell.english == 'Ranged' then
+		--windower.add_to_chat(14, 'Ranged attack found')
+		equip(sets.TP.Ranged)
+	elseif string.find(spell.english,'Utsusemi') then
+		equip(sets.Utsusemi)
+	end
+	
 end
 
 function aftercast(spell)
