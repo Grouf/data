@@ -90,7 +90,7 @@ function precast(spell)
 		if sets.WS[spell.english] then
 			equip(sets.WS[spell.english])
 		else
-			equip(sets.WS.Base)
+			equip(sets.TP.WS)
 		end
 	end
 	--[[
@@ -135,9 +135,6 @@ function midcast(spell)
 
 	elseif spell.skill == 'Enfeebling Magic' then
 		equip(sets.midcast.Enfeeble)
-		
-	elseif spell.type=="WeaponSkill" then
-		equip(sets.TP.WS)
 	end
 end
 
