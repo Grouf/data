@@ -133,21 +133,21 @@ function self_command(command)
 		sets.aftercast.TP = sets.TP.DD
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
 		equip(sets.aftercast.TP)
-		send_command('@input /echo DD set')
+		windower.add_to_chat(9, 'DD set')
 	elseif command == 'SOLO' then
 		sets.aftercast.TP = sets.TP.Solo
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
 		equip(sets.aftercast.TP)
-		send_command('@input /echo SOLO set')
+		windower.add_to_chat(9, 'SOLO set')
 	elseif command == 'TH' then
 		sets.aftercast.TP = sets.TP.TH
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
 		equip(sets.aftercast.TP)
-		send_command('@input /echo Treasure Hunter set')
+		windower.add_to_chat(9, 'Treasure Hunter set')
 	elseif command == 'DT' then
 		sets.aftercast.TP = sets.TP.DT
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
 		equip(sets.aftercast.TP)
-		send_command('@input /echo DT set')
+		windower.add_to_chat(9, 'DT set')
 	end
 end

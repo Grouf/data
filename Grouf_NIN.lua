@@ -111,8 +111,7 @@ function precast(spell)
 		
 	elseif spell.type=="WeaponSkill" then
 		equip(sets.precast.WS)
-	elseif string.find(spell.english,'Step') or 
-		string.find(spell.english,'Violent Flourish') then
+	elseif spell.type == 'Step' or spell.english == 'Violent Flourish') then
 		equip(sets.precast.Step)
 	end
 end
@@ -155,11 +154,11 @@ function self_command(command)
 		sets.aftercast.TP = sets.TP.DD
 		sets.aftercast.Idle = sets.TP.DD
 		equip(sets.aftercast.TP)
-		send_command('@input /echo DD set')
+		windower.add_to_chat(9, 'DD set')
 	elseif command == 'DT' then
 		sets.aftercast.TP = sets.DT
 		sets.aftercast.Idle = sets.DT
 		equip(sets.aftercast.TP)
-		send_command('@input /echo DT set')
+		windower.add_to_chat(9, 'DT set')
 	end
 end
