@@ -1,32 +1,33 @@
 Fast Cast List
 
-Ammo		Incantor Stone		2%
+Ammo		Incantor Stone		2%		(    WHM                                        )
 
-Head		Atrophy Chapeau		11
-			Athos Chapeau		2
-			Nares Cap			10
-			Nahtirah Hat		10
-			Haruspex Hat		8		(for BLU)
-			Haruspex Hat +1		9		(for BLU)
+Head		Atrophy Chapeau		11		(            RDM                                )
+			Athos Chapeau		2		(mnk             thf rng     NIN     blu     run)
+			Nares Cap			10		(    whm blm rdm                 smn     geo)
+			Nahtirah Hat		10		(    WHM BLM rdm                 SMN     GEO)
+			Haruspex Hat		8		(MNK whm blm rdm THF RNG         smn BLU geo RUN)
+			Haruspex Hat +1		9		(MNK whm blm rdm THF RNG         smn BLU geo RUN)
 			
-Neck		Orunmila's Torque 	5
+Neck		Orunmila's Torque 	5		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
 
-Ear			Estoqueurs Earring	2
-			Loquacious Earring	2
+Ear			Estoqueurs Earring	2		(            RDM                                )
+			Loquacious Earring	2		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
 			
-Body		Anhur Robe			10
-			Vitivation Tabard	12
+Body		Anhur Robe			10		(    WHM BLM rdm                 SMN BLU GEO    )
+			Vitivation Tabard	12		(            RDM                                )
+			Luhlaza Jubbah		6		(                                    BLU        )
 
-Hands		Gendewitha  Gages	7
-			Thaumas Gloves		4
+Hands		Gendewitha Gages	7		(    WHM     RDM                                )
+			Thaumas Gloves		4		(MNK             THF RNG     NIN     BLU     RUN)
 
-Ring		Prolix Ring			2
+Ring		Prolix Ring			2		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
 
-Back		Swith Cape			3
+Back		Swith Cape			3		(    WHM BLM RDM                 SMN BLU GEO    )
 
-Waist		Witful Belt			3
+Waist		Witful Belt			3		(    WHM BLM RDM                 SMN BLU GEO    )
 
-Legs		Geomancy Pants		10
-			Orvail Pants +1		5
+Legs		Geomancy Pants		10		(                                        GEO    )
+			Orvail Pants +1		5		(    WHM BLM RDM                 SMN BLU geo RUN)
 
 Feet
