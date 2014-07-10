@@ -133,7 +133,7 @@ function get_sets()
 	sets.WS['Sanguine Blade'] = {head="Uk'uxkaj Cap",neck="Tlamiztli Collar",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",--[[left_ear="Hecate's earring",right_ear="Friomisi Earring",]]
 		body="Hagondes Coat",hands="Hagondes Cuffs",left_ring="Icesoul Ring",
-		right_ring="Spiral Ring",back="Refraction Cape",waist="Prosilio Belt",
+		right_ring="Spiral Ring",back="Refraction Cape",waist="Caudata Belt",
 		legs="Hagondes Pants",feet="Hagondes Sabots" }
 	
 	--sets.precast['Savage Blade']
