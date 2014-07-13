@@ -22,7 +22,7 @@ function get_sets()
 		legs="Thur. Tights +1",feet="Pillager's Poulaines"}
 	
 	sets.precast.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Dudgeon Earring",
-		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Iuitl Wristbands",left_ring="Rajas Ring",
+		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Cho'j Band",back="Buquwik Cape",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Iuitl Gaiters"}
 	
@@ -60,12 +60,12 @@ function get_sets()
 		
 	sets.TP = {}
 	sets.TP.DD = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Iuitl Wristbands",left_ring="Rajas Ring",
+		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Iuitl Gaiters"}
 
 	sets.TP.Solo = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Iuitl Wristbands",left_ring="Rajas Ring",
+		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Iuitl Gaiters"}
 	
@@ -75,7 +75,7 @@ function get_sets()
 		legs="Quiahuiz Trousers",feet="Raid. Poulaines +2"}
 	
 	sets.TP.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Iuitl Wristbands",left_ring="Dark Ring",
+		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Qaaxo Mitaines",left_ring="Dark Ring",
 		right_ring="Shadow Ring",back="Repulse Mantle",waist="Phasmida Belt",
 		legs="Kaabnax Trousers",feet="Iuitl Gaiters"}
 
