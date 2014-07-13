@@ -16,6 +16,7 @@ function get_sets()
 	sets.precast.Boost = {hands="Anchorite's Gloves"}
 	sets.precast.Impetus = {body="Tantra Cyclas +2"}
 	sets.precast.Mantra = {feet="Hes. Gaiters"}
+	sets.precast['Formless Strikes'] = {body="Hes. Cyclas"}
 	
 	sets.precast.Step = {main="Oatixur",ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
@@ -33,7 +34,7 @@ function get_sets()
 	
 	sets.TP = {}
 	sets.TP.DD = {main="Oatixur",ammo="Hagneia Stone",head="Whirlpool Mask",neck="Asperity Necklace",
-		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Otronif Gloves",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Qaaxo Mitaines",
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Otronif Boots +1"}
 		
@@ -43,22 +44,22 @@ function get_sets()
 		legs="Manibozho Brais",feet="Otronif Boots +1"}
 
 	sets.TP.Solo = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Asperity Necklace",
-		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Qaaxo Mitaines",
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Otronif Boots +1"}
 	
 	sets.DT = {main="Oatixur",ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Twilight Torque",
-		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Qaaxo Mitaines",
 		left_ring="Dark Ring",right_ring="Shadow Ring",back="Repulse Mantle",waist="Black Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots +1"}
 		
 	sets.SalvageDT = {main="Oatixur",ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Twilight Torque",
-		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Qaaxo Mitaines",
 		left_ring="Terrasoul Ring",right_ring="Terrasoul Ring",back="Repulse Mantle",waist="Black Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots +1"}
 	
 	sets.Shark = {main="Oatixur",ammo="Honed Tathlum",head="Uk'uxkaj Cap",neck="Twilight Torque",
-		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Otronif Gloves",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Qaaxo Mitaines",
 		left_ring="Dark Ring",right_ring="Shadow Ring",back="Tuilha Cape",waist="Black Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots +1"}
 
