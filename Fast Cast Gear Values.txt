@@ -29,5 +29,6 @@ Waist		Witful Belt			3		(    WHM BLM RDM                 SMN BLU GEO    )
 
 Legs		Geomancy Pants		10		(                                        GEO    )
 			Orvail Pants +1		5		(    WHM BLM RDM                 SMN BLU geo RUN)
+			Artsieq Hose		5		(    WHM BLM RDM                 SMN     geo    )
 
 Feet
