@@ -23,12 +23,12 @@ function get_sets()
 	sets.precast.Futae = {hands="Iga Tekko +2"}
 
 	sets.precast.Ranged = {head="Uk'uxkaj Cap",neck="Huani Collar",left_ear="Clearview earring",
-		right_ear="Bladeborn Earring",body="Otronif Harness",hands="Hachiya Tekko",left_ring="Fistmele Ring",
+		right_ear="Bladeborn Earring",body="Mochi. Chainmail",hands="Hachiya Tekko",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Yokaze Mantle",waist="Buccaneer's Belt",
 		legs="Thur. Tights +1",feet="Otronif Boots +1"}
 	
 	sets.precast.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Otronif Gloves",left_ring="Cho'j Band",
+		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Cho'j Band",
 		right_ring="Rajas Ring",back="Vassal's Mantle",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Otronif Boots +1"}
 	
@@ -46,7 +46,7 @@ function get_sets()
 	--sets.precast.FastCast = NEEDS WORK
 	
 	sets.precast.Utsusemi = {head="Athos's Chapeau",neck="Magoraga Beads",left_ear="Phawaylla Earring",
-		right_ear="Loquac. Earring",body="Otronif Harness",hands="Mochizuki Tekko",left_ring="Prolix Ring",
+		right_ear="Loquac. Earring",body="Mochi. Chainmail",hands="Mochizuki Tekko",left_ring="Prolix Ring",
 		back="Yokaze Mantle",waist="Phasmida Belt",
 		legs="Kaabnax Trousers",feet="Iga Kyahan +2"} --30% Haste
 	
@@ -70,7 +70,7 @@ function get_sets()
 		
 	sets.TP = {}
 	sets.TP.DD = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Otronif Gloves",left_ring="Epona's Ring",
+		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Qaaxo Mitaines",left_ring="Epona's Ring",
 		right_ring="Rajas Ring",back="Yokaze Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Otronif Boots +1"}
 		
@@ -80,7 +80,7 @@ function get_sets()
 		legs="Otronif Brais"})  --Needs Verify ]]
 	
 	sets.TP.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Dudgeon Earring",
-		right_ear="Heartseeker earring",body="Otronif Harness",hands="Otronif Gloves",left_ring="Dark Ring",
+		right_ear="Heartseeker earring",body="Otronif Harness",hands="Qaaxo Mitaines",left_ring="Dark Ring",
 		right_ring="Dark Ring",back="Ik Cape",waist="Flume Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots +1"}
 
