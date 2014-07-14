@@ -10,6 +10,7 @@ function get_sets()
 		'Protect', 'Protect II', 'Protect III', 'Protect IV', 'Protect V',
 		'Shell', 'Shell II', 'Shell III', 'Shell IV', 'Shell V', 
 		'Teleport-Dem', 'Teleport-Mea', 'Teleport-Holla', 'Teleport-Altep', 'Teleport-Yhoat', 'Teleport-Vahzl',
+		'Kupipi', 'Ulmia', 'Joachim', 'Sakura'
 		}
 	
 	--Potency/Accuracy sets
@@ -71,8 +72,8 @@ function get_sets()
 	
 	sets.JA["Violent Flourish"] = {head="Buremte Hat", ammo="Kalboron Stone",
 		neck="Stoicheion Medal",left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Atrophy Tabard",
-		hands="Hagondes Cuffs",left_ring="Perception Ring",right_ring="Sangoma Ring",back="Refraction Mantle",
-		waist="Aswang Belt",legs="Mes'yohi Slacks",feet="Hagondes Sabots"} --M.Acc = 112, Prim.Acc = 773
+		hands="Hagondes Cuffs",left_ring="Perception Ring",right_ring="Sangoma Ring",back="Refraction Cape",
+		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"} --M.Acc = 112, Prim.Acc = 773
 	
 	sets.precast = {}
 	
