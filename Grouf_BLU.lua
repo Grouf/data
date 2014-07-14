@@ -191,12 +191,12 @@ function get_sets()
 --TP Sets--
 	sets.TP = {}
 	sets.TP.DA = {head="Iuitl Headgear",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Thaumas coat",hands="Buremte Gloves",left_ring="Rajas Ring",
+		right_ear="Bladeborn Earring",body="Thaumas coat",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Iuitl Gaiters" }
 		
 	sets.TP.Acc = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Thaumas coat",hands="Buremte Gloves",left_ring="Rajas Ring",
+		right_ear="Bladeborn Earring",body="Thaumas coat",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Assim. Charuqs" }
 		
