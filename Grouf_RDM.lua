@@ -30,7 +30,7 @@ function get_sets()
 	sets.Potency.Nuke = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Witchstone", head="Buremte Hat", 
 		neck="Stoicheion Medal", left_ear="Hecate's Earring", right_ear="Friomisi Earring", body="Hagondes Coat", 
 		hands="Hagondes Cuffs", left_ring="Strendu Ring", right_ring="Acumen Ring", back="Toro Cape", 
-		waist="Aswang Sash", legs="Hagondes Pants", feet="Vitivation Boots"}
+		waist="Aswang Sash", legs="Hagondes Pants +1", feet="Vitivation Boots"}
 	
 	sets.Potency.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone", head="Kaabnax Hat", 
 		neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", body="Hagondes Coat", 
@@ -50,7 +50,7 @@ function get_sets()
 	sets.Accuracy.Nuke = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Kalboron Stone", head="Buremte Hat", 
 		neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", body="Atrophy Tabard", 
 		hands="Hagondes Cuffs", left_ring="Perception Ring", right_ring="Sangoma Ring", back="Toro Cape", 
-		waist="Aswang Sash", legs="Hagondes Pants", feet="Vitivation Boots"}
+		waist="Aswang Sash", legs="Hagondes Pants +1", feet="Vitivation Boots"}
 	
 	sets.Accuracy.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone", head="Kaabnax Hat", 
 		neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", body="Atrophy Tabard", 
@@ -188,7 +188,7 @@ function midcast(spell)
 	
 	elseif spell.skill == 'Enfeebling Magic' then
 		equip(sets[SetMode_Names[SetMode_Index]].Enfeeble)
-		print_set(sets[SetMode_Names[SetMode_Index]].Enfeeble)
+		--print_set(sets[SetMode_Names[SetMode_Index]].Enfeeble)
 		if spell.english == 'Dispel' then
 			equip(sets[SetMode_Names[SetMode_Index]].Dispel)
 		end
