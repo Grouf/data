@@ -24,13 +24,13 @@ function get_sets()
 	sets.precast.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Dudgeon Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Cho'j Band",back="Buquwik Cape",waist="Prosilio Belt",
-		legs="Manibozho Brais",feet="Iuitl Gaiters"}
+		legs="Manibozho Brais",feet="Iuitl Gaiters +1"}
 	
 	sets.precast.Evisceration = set_combine(sets.precast.WS, {neck="Shadow Gorget"}) -- 30% DEX
 	
 	sets.precast["Rudra's Storm"] = set_combine(sets.precast.WS, {neck="Shadow Gorget"}) -- 60% DEX
 	
-	sets.precast["Last Stand"] = set_combine(sets.precast.Ranged, {neck="Ocachi Gorget",feet="Iuitl Gaiters",
+	sets.precast["Last Stand"] = set_combine(sets.precast.Ranged, {neck="Ocachi Gorget",feet="Iuitl Gaiters +1",
 		waist="Caudata Belt"})
 		
 		--Dancing Edge = 40% CHR, 30% DEX
@@ -42,17 +42,17 @@ function get_sets()
 	--[[sets.precast.Exenterator = {head="Uk'uxkaj Cap",neck="Light Gorget",left_ear="Dudgeon Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Plun. Armlets",left_ring="Rajas Ring",
 		right_ring="Cho'j Band",back="Buquwik Cape",waist="Prosilio Belt",
-		legs="Manibozho Brais",feet="Iuitl Gaiters"}]]
+		legs="Manibozho Brais",feet="Iuitl Gaiters +1"}]]
 	
 	--[[sets.precast["Aeolian Edge"] = {head="Thaumas Hat",neck="Stoicheion Medal",left_ear="Hecate's Earring",
 		right_ear="Friomisi Earring",body="Iuitl Vest",left_ring="Acumen Ring",
 		right_ring="Omega Ring",waist="Aquiline Belt",
-		legs="Iuitl Tights",feet="Iuitl Gaiters"}]]
+		legs="Iuitl Tights",feet="Iuitl Gaiters +1"}]]
 	
 	sets.precast.Step = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Plun. Armlets",left_ring="Rajas Ring",
 		right_ring="Beeline Ring",back="Letalis Mantle",waist="Phasmida Belt",
-		legs="Manibozho Brais",feet="Iuitl Gaiters"}
+		legs="Manibozho Brais",feet="Iuitl Gaiters +1"}
 	
 	sets.precast['Violent Flourish'] = set_combine(sets.precast.Step, {neck="Stoicheion Medal", 
 		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Perception Ring", 
@@ -62,12 +62,12 @@ function get_sets()
 	sets.TP.DD = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
-		legs="Quiahuiz Trousers",feet="Iuitl Gaiters"}
+		legs="Quiahuiz Trousers",feet="Iuitl Gaiters +1"}
 
 	sets.TP.Solo = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
-		legs="Quiahuiz Trousers",feet="Iuitl Gaiters"}
+		legs="Quiahuiz Trousers",feet="Iuitl Gaiters +1"}
 	
 	sets.TP.TH = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Plun. Armlets",left_ring="Rajas Ring",
@@ -77,7 +77,7 @@ function get_sets()
 	sets.TP.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Iuitl Vest",hands="Qaaxo Mitaines",left_ring="Dark Ring",
 		right_ring="Shadow Ring",back="Repulse Mantle",waist="Phasmida Belt",
-		legs="Kaabnax Trousers",feet="Iuitl Gaiters"}
+		legs="Kaabnax Trousers",feet="Iuitl Gaiters +1"}
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
