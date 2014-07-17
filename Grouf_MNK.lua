@@ -17,6 +17,8 @@ function get_sets()
 	sets.precast.Impetus = {body="Tantra Cyclas +2"}
 	sets.precast.Mantra = {feet="Hes. Gaiters"}
 	sets.precast['Formless Strikes'] = {body="Hes. Cyclas"}
+	sets.precast['Hundred Fists'] = {body="Hes. Hose"}
+	
 	
 	sets.precast.Step = {main="Oatixur",ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
