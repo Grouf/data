@@ -107,7 +107,7 @@ function get_sets()
 	sets.precast.FastCast = {head="Athos's Chapeau",left_ear="Loquacious earring",
 		body="Mavi Mintan +2",hands="Mv. Bazubands +2",left_ring="Prolix Ring",
 		back="Swith cape",waist="Witful belt",
-		legs="Orvail Pants +1",feet="Iuitl Gaiters"}--27% Fast Cast, 20% Haste
+		legs="Orvail Pants +1",feet="Iuitl Gaiters +1"}--27% Fast Cast, 20% Haste
 	
 	sets.precast.Step = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash earring",
 		right_ear="Heartseeker earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
@@ -134,7 +134,7 @@ function get_sets()
 		right_ear="Lifestorm Earring",--[[left_ear="Hecate's earring",right_ear="Friomisi Earring",]]
 		body="Hagondes Coat",hands="Hagondes Cuffs",left_ring="Icesoul Ring",
 		right_ring="Spiral Ring",back="Refraction Cape",waist="Caudata Belt",
-		legs="Hagondes Pants",feet="Hagondes Sabots" }
+		legs="Hagondes Pants +1",feet="Hagondes Sabots" }
 	
 	--sets.precast['Savage Blade']
 	
@@ -144,7 +144,7 @@ function get_sets()
 	sets.midcast.BaseStat = {head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Prosilio Belt",
-		legs="Iuitl Tights",feet="Iuitl Gaiters"}
+		legs="Iuitl Tights",feet="Iuitl Gaiters +1"}
 	
 	sets.midcast.STR = set_combine(sets.midcast.BaseSet,{head="Whirlpool Mask",back="Buquwik Cape"})
 	
@@ -159,7 +159,7 @@ function get_sets()
 	sets.midcast.INT = {head="Hagondes Hat",neck="Stoicheion Medal",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",body="Hagondes Coat",hands="Hagondes Cuffs",left_ring="Icesoul Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Witful Belt",
-		legs="Hagondes Pants",feet="Hagondes Sabots"}
+		legs="Hagondes Pants +1",feet="Hagondes Sabots"}
 
 	sets.midcast.Cure = {head="Uk'uxkaj Cap",neck="Mavi Scarf",left_ear="Loquac. Earring",
 		right_ear="Lifestorm Earring",body="Hagondes Coat",hands="Buremte Gloves",left_ring="Sirona's Ring",
@@ -193,7 +193,7 @@ function get_sets()
 	sets.TP.DA = {head="Iuitl Headgear",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Thaumas coat",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Atheling Mantle",waist="Windbuffet Belt",
-		legs="Quiahuiz Trousers",feet="Iuitl Gaiters" }
+		legs="Quiahuiz Trousers",feet="Iuitl Gaiters +1" }
 		
 	sets.TP.Acc = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Thaumas coat",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
