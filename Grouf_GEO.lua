@@ -15,12 +15,12 @@ function get_sets()
 	sets.precast.IdleRefresh = {main="Lehbrailg +2",sub="Mephitis Grip",range="Dunna",head="Bagua Galero",
 		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Bagua Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
-		waist="Aswang Sash",legs="Hagondes Pants",feet="Geomancy Sandals"}
+		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Geomancy Sandals"}
 	
 	sets.precast.IdleLuopan = {main="Lehbrailg +2",sub="Mephitis Grip",range="Dunna",head="Bagua Galero",
 		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Geomancy Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
-		waist="Aswang Sash",legs="Hagondes Pants",feet="Bagua Sandals"}
+		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Bagua Sandals"}
 	
 	sets.precast.Idle = sets.precast.IdleRefresh
 	
@@ -46,7 +46,7 @@ function get_sets()
 	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
-		waist="Aswang Sash",legs="Orvail Pants +1",feet="Hagondes Sabots"}
+		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 		
 	sets.midcast.Geomancy = {main="Dowser's Wand",sub="Genbu's Shield",range="Dunna",
 		body="Bagua Tunic",
@@ -62,12 +62,12 @@ function get_sets()
 	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
-		waist="Aswang Sash",legs="Hagondes Pants",feet="Weath. Souliers +1"}
+		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Weath. Souliers +1"}
 		
 	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
-		waist="Witch Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
+		waist="Witch Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 	
 	send_command('input /macro book 20;wait .1;input /macro set 1')
 	
