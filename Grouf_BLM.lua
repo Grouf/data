@@ -20,17 +20,17 @@ function get_sets()
 	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff",sub="Elder's Grip"})
 	
 	sets.midcast = {}
-	sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabanax Hat",
+	sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabnax Hat",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Bokwus Gloves",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Witch Sash",legs="Nares Trews",feet="Weath. Souliers +1"}
 		
-	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
+	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
-		waist="Aswang Sash",legs="Orvail Pants +1",feet="Hagondes Sabots"}
+		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 		
-	sets.midcast.Enhancing = {main="Lehbrailg +2",sub="Fulcio Grip",head="Nahtirah Hat",
+	sets.midcast.Enhancing = {main="Lehbrailg +2",head="Nahtirah Hat",
 		body="Anhur Robe",neck="Stone Gorget",hands="Augur's Gloves",
 		left_ear="Loquac. Earring",back="Swith Cape",
 		waist="Siegel Sash",legs="Shedir Seraweels",feet="Hagondes Sabots"}
@@ -38,23 +38,23 @@ function get_sets()
 	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Spaekona's Coat",
 		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
-		waist="Aswang Sash",legs="Hagondes Pants",feet="Spaekona's Sabots"}
+		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Spaekona's Sabots"}
 		
-	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
+	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
-		waist="Witch Sash",legs="Hagondes Pants",feet="Hagondes Sabots"}
+		waist="Witch Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 	
 	sets.TP = {}
-	sets.TP.Engage = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Kaabanax Hat",
+	sets.TP.Engage = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Kaabnax Hat",
 		neck="Asperity Necklace",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
-		waist="Windbuffet Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
-		
-	sets.TP.WS = {head="Hagondes Hat",
+		waist="Windbuffet Belt",legs="Hagondes Pants +1",feet="Hagondes Sabots"}
+
+	sets.WS = {head="Hagondes Hat",
 		neck="Tlamiztli Collar",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
-		waist="Prosilio Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
+		waist="Prosilio Belt",legs="Hagondes Pants +1",feet="Hagondes Sabots"}
 	
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
@@ -76,7 +76,7 @@ function precast(spell)
 		if sets.WS[spell.english] then
 			equip(sets.WS[spell.english])
 		else
-			equip(sets.WS.Base)
+			equip(sets.WS)
 		end
 	end
 	--[[
@@ -139,11 +139,11 @@ function status_change(new,old)
 		equip(sets.precast.Rest)
 	elseif new == 'Engaged' then
 		equip(sets.TP.Engage)
-		send_command('@wait 0.5; gs disable main sub range;')
+		--send_command('@wait 0.5; gs disable main sub range;')
 	end
-	if old == 'Engaged' then
+	--[[if old == 'Engaged' then
 		send_command('@wait 0.5; gs enable main sub range;')
-	end
+	end]]
 end
 
 function buff_change(buff_name,gain)
