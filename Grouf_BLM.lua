@@ -10,12 +10,12 @@ function get_sets()
 	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Nahtirah Hat",
 		left_ear="Loquac. Earring",body="Anhur Robe",
 		hands="Hagondes Cuffs",right_ring="Prolix Ring",back="Swith Cape",
-		waist="Witful Belt",legs="Orvail Pants +1",feet="Hagondes Sabots"} -- 37% Fast Cast
+		waist="Witful Belt",legs="Artsieq Hose",feet="Hagondes Sabots"} -- 37% Fast Cast
 	
 	sets.precast.Idle = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Hagondes Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat",
 		hands="Serpentes Cuffs",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
-		waist="Aswang Sash",legs="Nares Trews",feet="Serpentes Sabots"}
+		waist="Fucho-no-Obi",legs="Nares Trews",feet="Serpentes Sabots"}
 	
 	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff",sub="Elder's Grip"})
 	
@@ -38,7 +38,7 @@ function get_sets()
 	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Spaekona's Coat",
 		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
-		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Spaekona's Sabots"}
+		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Umbani Boots"}
 		
 	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
@@ -49,12 +49,12 @@ function get_sets()
 	sets.TP.Engage = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Kaabnax Hat",
 		neck="Asperity Necklace",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
-		waist="Windbuffet Belt",legs="Hagondes Pants +1",feet="Hagondes Sabots"}
+		waist="Windbuffet Belt",legs="Hagondes Pants +1",feet="Umbani Boots"}
 
 	sets.WS = {head="Hagondes Hat",
 		neck="Tlamiztli Collar",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
-		waist="Prosilio Belt",legs="Hagondes Pants +1",feet="Hagondes Sabots"}
+		waist="Prosilio Belt",legs="Hagondes Pants +1",feet="Umbani Boots"}
 	
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
@@ -115,7 +115,7 @@ function midcast(spell)
 	elseif spell.skill == 'Dark Magic' then
 		equip(sets.midcast.DarkMagic)
 		if string.find(spell.english, 'Aspir') or spell.english == 'Drain' then
-			equip({head="Striga Crown"})
+			equip({head="Striga Crown", waist="Fucho-no-Obi"})
 		end
 	elseif spell.skill == 'Enfeebling Magic' then
 		equip(sets.midcast.Enfeeble)

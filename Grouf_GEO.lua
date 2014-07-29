@@ -15,12 +15,12 @@ function get_sets()
 	sets.precast.IdleRefresh = {main="Lehbrailg +2",sub="Mephitis Grip",range="Dunna",head="Bagua Galero",
 		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Bagua Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
-		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Geomancy Sandals"}
+		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Geomancy Sandals"}
 	
 	sets.precast.IdleLuopan = {main="Lehbrailg +2",sub="Mephitis Grip",range="Dunna",head="Bagua Galero",
 		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Geomancy Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
-		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Bagua Sandals"}
+		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Bagua Sandals"}
 	
 	sets.precast.Idle = sets.precast.IdleRefresh
 	
@@ -131,6 +131,9 @@ function midcast(spell)
 		end
 	elseif spell.skill == 'Dark Magic' then
 		equip(sets.midcast.DarkMagic)
+		if spell.english:startswith('Aspir') or spell.english == 'Drain' then
+			equip({waist="Fucho-no-Obi"})
+		end
 	elseif spell.skill == 'Enfeebling Magic' then
 		equip(sets.midcast.Enfeeble)
 	elseif spell.skill == 'Healing Magic' then

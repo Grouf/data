@@ -30,7 +30,7 @@ function get_sets()
 	sets.Potency.Nuke = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Witchstone", head="Buremte Hat", 
 		neck="Stoicheion Medal", left_ear="Hecate's Earring", right_ear="Friomisi Earring", body="Hagondes Coat", 
 		hands="Hagondes Cuffs", left_ring="Strendu Ring", right_ring="Acumen Ring", back="Toro Cape", 
-		waist="Aswang Sash", legs="Hagondes Pants +1", feet="Vitivation Boots"}
+		waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
 	
 	sets.Potency.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone", head="Kaabnax Hat", 
 		neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", body="Hagondes Coat", 
@@ -80,12 +80,12 @@ function get_sets()
 	sets.precast.IdleRefresh = {main="Buramenk'ah", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Vitivation Chapeau", 
 		neck="Twilight Torque", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", body="Atrophy Tabard", 
 		hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Sangoma Ring", back="Repulse Mantle", 
-		waist="Flume Belt", legs="Nares Trews", feet="Serpentes Sabots"}
+		waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
 		
 	sets.precast.IdleDT = {main="Xiutleato",sub="Genbu's Shield", ammo="Brigantia Pebble", head="Nahtirah Hat", 
 		neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Soil Pearl", body="Hagondes Coat", 
 		hands="Otomi Gloves", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring", back="Repulse Mantle", 
-		waist="Flume Belt", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
+		waist="Flume Belt", legs="Mes'yohi Slacks", feet="Umbani Boots"}
 	
 	sets.Idle = sets.precast.IdleRefresh
 	IdleMode = 'Refresh'
@@ -95,7 +95,7 @@ function get_sets()
 	sets.precast.FastCast = {main="Lehbrailg +2", sub="Arbuda Grip", head="Atrophy Chapeau", 
 		neck="Estoqueur's Collar", left_ear="Estq. Earring", right_ear="Loquac. Earring", body="Vitivation Tabard", 
 		hands="Gendewitha Gages", left_ring="Prolix Ring", back="Swith Cape",
-		waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots"} -- 50% Fast Cast, 19% Haste
+		waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots +1"} -- 50% Fast Cast, 20% Haste
 	
 	sets.midcast = {}
 	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Kaabnax Hat", 
@@ -106,7 +106,7 @@ function get_sets()
 	sets.midcast.Enhancing = {head="Atrophy Chapeau", 
 		neck="Stone Gorget", left_ear="Estq. Earring", right_ear="Loquac. Earring", body="Vitivation Tabard", 
 		hands="Atrophy Gloves", left_ring="Prolix Ring", back="Estoqueur's Cape", 
-		waist="Siegel Sash", legs="Shedir Seraweels", feet="Estq. Houseaux +2"}
+		waist="Siegel Sash", legs="Shedir Seraweels", feet="Estq. Houseaux +2"} --skill=473
 	
 	sets.midcast.EnhancingOther = set_combine(sets.midcast.Enhancing, {head="Estq. Chappel +2", 
 		body="Estq. Sayon +2", hands="Atrophy Gloves", legs="Estqr. Fuseau +2"})
