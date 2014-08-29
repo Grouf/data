@@ -29,7 +29,7 @@ function get_sets()
 	
 	sets.precast.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Cho'j Band",
-		right_ring="Rajas Ring",back="Vassal's Mantle",waist="Prosilio Belt",
+		right_ring="Rajas Ring",back="Vespid Mantle",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Otronif Boots +1"}
 	
 	sets.precast["Blade Hi"] = set_combine(sets.precast.WS,{neck="Shadow Gorget",hands="Iga Tekko +2"}) --AGI
@@ -70,7 +70,7 @@ function get_sets()
 		
 	sets.TP = {}
 	sets.TP.DD = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Qaaxo Mitaines",left_ring="Epona's Ring",
+		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Epona's Ring",
 		right_ring="Rajas Ring",back="Yokaze Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Otronif Boots +1"}
 		
@@ -80,7 +80,7 @@ function get_sets()
 		legs="Otronif Brais"})  --Needs Verify ]]
 	
 	sets.TP.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Dudgeon Earring",
-		right_ear="Heartseeker earring",body="Otronif Harness",hands="Qaaxo Mitaines",left_ring="Dark Ring",
+		right_ear="Heartseeker earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Dark Ring",
 		right_ring="Dark Ring",back="Ik Cape",waist="Flume Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots +1"}
 
