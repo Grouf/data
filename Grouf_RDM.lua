@@ -283,8 +283,6 @@ function buff_change(buff_name,gain)
 			enable("body")
 			send_command('@input /echo Chainspell off, body enabled')
 		end
-	elseif string.find(buff_name, 'Reive') then
-		windower.add_to_chat(9, 'reive name = ' ..buff_name)
 	--[[elseif buff_name == 'Commitment' then
 		windower.add_to_chat(4, 'Commitment gone.')
 		windower.add_to_chat(9, 'Commitment gone.')]]
