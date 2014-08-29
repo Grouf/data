@@ -9,17 +9,17 @@ function get_sets()
 	
 	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Nahtirah Hat",
 		left_ear="Loquac. Earring",body="Anhur Robe",
-		hands="Hagondes Cuffs",right_ring="Prolix Ring",back="Swith Cape",
-		waist="Witful Belt",legs="Geomancy Pants",feet="Hagondes Sabots"}  --Geo. Pants = 10%
+		hands="Hagondes Cuffs",left_ring="Prolix Ring",back="Swith Cape",
+		waist="Witful Belt",legs="Geomancy Pants",feet="Hag. Sabots +1"}  --Geo. Pants = 10%
 		
-	sets.precast.IdleRefresh = {main="Lehbrailg +2",sub="Mephitis Grip",range="Dunna",head="Bagua Galero",
-		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
-		hands="Bagua Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
+	sets.precast.IdleRefresh = {main="Sharur",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
+		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
+		hands="Bagua Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Repulse Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Geomancy Sandals"}
 	
-	sets.precast.IdleLuopan = {main="Lehbrailg +2",sub="Mephitis Grip",range="Dunna",head="Bagua Galero",
-		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
-		hands="Geomancy Mitaines",left_ring="Irrwisch Ring",right_ring="Prolix Ring",back="Lifestream Cape",
+	sets.precast.IdleLuopan = {main="Sharur",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
+		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
+		hands="Geomancy Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Repulse Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Bagua Sandals"}
 	
 	sets.precast.Idle = sets.precast.IdleRefresh
@@ -38,17 +38,17 @@ function get_sets()
 --Midcast
 	sets.midcast = {}
 	
-	sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabanax Hat",
+	sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabnax Hat",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Geomancy Tunic",
 		hands="Bokwus Gloves",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
-		waist="Witch Sash",legs="Nares Trews",feet="Weath. Souliers +1"}
+		waist="Witch Sash",legs="Nares Trews",feet="Umbani Boots"}
 		
-	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
+	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
-		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
+		hands="Hagondes Cuffs",left_ring="Perception Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 		
-	sets.midcast.Geomancy = {main="Dowser's Wand",sub="Genbu's Shield",range="Dunna",
+	sets.midcast.Geomancy = {main="Sharur",sub="Genbu's Shield",range="Dunna",
 		body="Bagua Tunic",
 		hands="Geomancy Mitaines",back="Lifestream Cape",
 		legs="Bagua Pants"}	--Geomancy Skill:	373+30 = 403
@@ -62,12 +62,23 @@ function get_sets()
 	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
-		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Weath. Souliers +1"}
+		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Umbani Boots"}
 		
 	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
 		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
+		
+	sets.TP = {
+		head="Nahtirah Hat", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
+		body="Hagondes Coat", hands="Hagondes Cuffs", left_ring="Beeline Ring", right_ring="Rajas Ring",
+		back="Buquwik Cape", waist="Windbuffet Belt", legs="Mes'yohi Slacks", feet="Hag. Sabots +1"}
+    
+    sets.WS = set_combine(sets.TP, {neck="Tlamiztli Collar", left_ear="Dudgeon Earring", right_ring="Cho'j Band",
+		waist="Prosilio Belt"})
+    
+    
+    
 	
 	send_command('input /macro book 20;wait .1;input /macro set 1')
 	
@@ -79,15 +90,13 @@ function precast(spell)
 		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
 	
-	--[[
 	if spell.type=="WeaponSkill" then
 		if sets.WS[spell.english] then
 			equip(sets.WS[spell.english])
 		else
-			equip(sets.WS.Base)
+			equip(sets.WS)
 		end
 	end
-	]]
 	
 	elseif spell.prefix=="/jobability" then
 		if sets.JA[spell.english] then
@@ -146,6 +155,8 @@ function aftercast(spell)
 		equip(sets.precast.Idle)
 	elseif player.status == 'Resting' then
 		equip(sets.precast.Rest)
+	elseif player.status == 'Engaged' then
+		equip(sets.TP)
 	end
 end
 
@@ -171,6 +182,8 @@ function status_change(new,old)
 		equip(sets.precast.Idle)
 	elseif new == 'Resting' then
 		equip(sets.precast.Rest)
+	elseif new == 'Engaged' then
+		equip(sets.TP)
 	end
 end
 
@@ -215,4 +228,22 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 		end
 	end
 		
+end
+
+function self_command(command)
+	--if command == 'Potency' then
+		--SetMode_Index = 1
+		--windower.add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
+	--elseif command == 'Accuracy' then
+		--SetMode_Index = 2
+		--windower.add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
+	if command == 'Melee' then
+		disable("main", "sub", "range", "ammo")
+		MeleeLock = 'True'
+		windower.add_to_chat(9, 'MeleeLock = ' ..MeleeLock)
+	elseif command == 'Magic' then
+		enable("main", "sub", "range", "ammo")
+		MeleeLock = 'False'
+		windower.add_to_chat(9, 'MeleeLock = ' ..MeleeLock)
+	end
 end
