@@ -6,7 +6,7 @@
 
 function get_sets()				
 	sets.precast = {}
-	sets.precast.Chakra = {main="Oatixur",ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",
+	sets.precast.Chakra = {ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",
 		left_ear="Soil Pearl",right_ear="Soil Pearl",body="Anchorite's Cyclas",hands="Hes. Gloves",
 		left_ring="Terrasoul Ring",right_ring="Terrasoul Ring",back="Anchoret's Mantle",waist="Warwolf Belt",
 		legs="Kaabnax Trousers",feet="Thur. Boots +1"} --100+131
@@ -20,14 +20,14 @@ function get_sets()
 	sets.precast['Hundred Fists'] = {body="Hes. Hose"}
 	
 	
-	sets.precast.Step = {main="Oatixur",ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
+	sets.precast.Step = {ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
 		left_ring="Beeline Ring",right_ring="Rajas Ring",back="Anchoret's Mantle",waist="Warwolf Belt",
 		legs="Manibozho Brais",feet="Thur. Boots +1"}
 
-	sets.precast.WS = {main="Oatixur",ammo="Thew Bomblet",head="Whirlpool Mask",neck="Tlamiztli Collar",
+	sets.precast.WS = {ammo="Thew Bomblet",head="Whirlpool Mask",neck="Tlamiztli Collar",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
-		left_ring="Cho'j Band",right_ring="Rajas Ring",back="Vassal's Mantle",waist="Prosilio Belt",
+		left_ring="Cho'j Band",right_ring="Rajas Ring",back="Vespid Mantle",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Otronif Boots +1"}
 		
 	sets.precast['Victory Smite'] = set_combine(sets.precast.WS,{neck="Light Gorget"})
@@ -35,33 +35,33 @@ function get_sets()
 	sets.precast['Shijin Spiral'] = set_combine(sets.precast.WS,{neck="Flame Gorget"})
 	
 	sets.TP = {}
-	sets.TP.DD = {main="Oatixur",ammo="Hagneia Stone",head="Whirlpool Mask",neck="Asperity Necklace",
-		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Thaumas Coat",hands="Qaaxo Mitaines",
+	sets.TP.DD = {ammo="Hagneia Stone",head="Whirlpool Mask",neck="Asperity Necklace",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Otronif Boots +1"}
 		
-	sets.TP.Accuracy = {main="Oatixur",ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
+	sets.TP.Accuracy = {ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
 		left_ring="Beeline Ring",right_ring="Rajas Ring",back="Letalis Mantle",waist="Windbuffet Belt",
 		legs="Manibozho Brais",feet="Otronif Boots +1"}
 
-	sets.TP.Solo = {main="Oatixur",ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Asperity Necklace",
-		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Qaaxo Mitaines",
+	sets.TP.Solo = {ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Asperity Necklace",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",
 		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Otronif Boots +1"}
 	
-	sets.DT = {main="Oatixur",ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Twilight Torque",
-		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Qaaxo Mitaines",
+	sets.DT = {ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Twilight Torque",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",
 		left_ring="Dark Ring",right_ring="Shadow Ring",back="Repulse Mantle",waist="Black Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots +1"}
 		
-	sets.SalvageDT = {main="Oatixur",ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Twilight Torque",
-		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Qaaxo Mitaines",
+	sets.SalvageDT = {ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Twilight Torque",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",
 		left_ring="Terrasoul Ring",right_ring="Terrasoul Ring",back="Repulse Mantle",waist="Black Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots +1"}
 	
-	sets.Shark = {main="Oatixur",ammo="Honed Tathlum",head="Uk'uxkaj Cap",neck="Twilight Torque",
-		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Otronif Harness",hands="Qaaxo Mitaines",
+	sets.Shark = {ammo="Honed Tathlum",head="Uk'uxkaj Cap",neck="Twilight Torque",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",
 		left_ring="Dark Ring",right_ring="Shadow Ring",back="Tuilha Cape",waist="Black Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots +1"}
 
@@ -80,6 +80,9 @@ function precast(spell)
 		--windower.add_to_chat(14, 'Step set on')
 		equip(sets.precast.Step)
 	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
+	end
 end
 
 function midcast(spell)
@@ -91,6 +94,9 @@ function aftercast(spell)
 	else
 		equip(sets.aftercast.Idle)
 	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
+	end
 end
 
 function status_change(new,old)
@@ -99,9 +105,15 @@ function status_change(new,old)
 	elseif new == 'Engaged' then
 		equip(sets.aftercast.TP)
 	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
+	end
 end
 
 function buff_change(buff_name,gain)
+	--[[if string.find(buff_name, 'Reive') then
+		windower.add_to_chat(9, 'reive name = ' ..buff_name)
+	end]]
 end
 
 function self_command(command)
