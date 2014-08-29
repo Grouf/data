@@ -6,8 +6,7 @@ Job		Gear		Rules		Tested		Notes
 MNK		Done		Done		Yes
 WHM		Done		Done		Yes		
 BLM		Done		Done		Yes			
-RDM		Done		Done		Yes			Using this job for Wardrobe storage re-write
-											Need to refine and test melee sets once Wardrobe released
+RDM		Done		Done		Yes			
 THF		Done		Done		Yes			
 RNG		Done		Done		Yes			
 SAM		Done		Done		Yes			
