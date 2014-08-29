@@ -53,10 +53,11 @@ function get_sets()
 	
 	sets.precast = {}
 	
-	sets.precast.Ranged = {head="Yaoyotl Helm",neck="Ocachi Gorget",left_ear="Clearview earring",
-		right_ear="Phawaylla Earring",body="Otronif Harness",hands="Buremte Gloves",left_ring="Paqichikaji Ring",
+	sets.precast.Ranged = {head="Sakonji Kabuto",neck="Ocachi Gorget",left_ear="Clearview earring",
+		right_ear="Phawaylla Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Paqichikaji Ring",
 		right_ring="Fistmele Ring",back="Buquwik Cape",waist="Buccaneer's Belt",
-		legs="Wakido Haidate",feet="Wakido Sune-Ate"} -- R.Acc=732  R.Att=831 iLvl=116 (beetle arrow)
+		legs="Wakido Haidate",feet="Wakido Sune-Ate"} 	-- R.Acc=787  R.Att=923 iLvl=115 (beetle arrow) ???
+														-- R.Acc=792  R.Att=933 iLvl=115 (tulfaire arrow) ???
 		
 	sets.precast["Apex Arrow"] = sets.precast.Ranged
 		--[[neck="Light Gorget", 
@@ -81,17 +82,16 @@ function get_sets()
 		
 	sets.TP = {}
 	sets.TP.DD = {sub="Pole Grip", head="Otomi Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
-		right_ear="Bladeborn Earring", body="Wakido Domaru", hands="Otronif Gloves", left_ring="Cho'j Band", 
+		right_ear="Bladeborn Earring", body="Sakonji Domaru", hands="Otronif Gloves", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Takaha mantle", waist="Cetl Belt", 
 		legs="Wakido Haidate", feet="Otronif Boots +1" }  	--With pole Grip Double Attack = 20%
-															--Store TP = 55
-															--Haste = 
-															--(With IONIS)
-															--Avg Item Level = 115
-															--Acc = 830
-															--Att = 960
-															--Eva = 631
-															--Def = 869
+															--Store TP = 53
+															--Haste = 30%
+															--Avg Item Level = 116
+															--Acc = 802???
+															--Att = 976???
+															--Eva = 622???
+															--Def = 691???
 	
 	sets.TP.ACC = {sub="Tzacab Grip", head="Yaoyotl Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Miki. Breastplate", hands="Otronif Gloves", left_ring="Cho'j Band", 

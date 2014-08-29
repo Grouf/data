@@ -16,14 +16,17 @@ function get_sets()
 	sets.JA.Camouflage = {body="Orion Jerkin"}
 	sets.JA.Shadowbind = {hands="Orion Bracers"}
 	
-	sets.Snapshot = {}
+	--[[sets.Snapshot = {head="Sylvan Gapette +2",neck="",left_ear="",
+		right_ear="",body="",hands="Arcadian Bracers",left_ring="",
+		right_ring="",back="",waist="",
+		legs="",feet=""} ]]
 	
 	
 	sets.WS = {}
 	sets.WS.Base = {head="Orion Beret",neck="Ocachi Gorget",left_ear="Clearview Earring",
-		right_ear="Volley Earring",body="Orion Jerkin",hands="Buremte Gloves",left_ring="Fistmele Ring",
+		right_ear="Volley Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Lutian Cape",waist="Scout's Belt",
-		legs="Thur. Tights +1",feet="Orion Socks"}
+		legs="Arcadian Braccae",feet="Orion Socks"}
 		
 	sets.JA["Eagle Eye Shot"] = sets.WS.Base
 	
@@ -31,19 +34,19 @@ function get_sets()
 	sets.WS["Jishnu's Radiance"] = sets.WS.Base
 	
 	--[[sets.midcast.WSMelee = {head="Whirlpool Mask",neck="Light Gorget",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Iuitl Wristbands",left_ring="Cho'j Band",
+		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Cho'j Band",
 		right_ring="Rajas Ring",back="Buquwik Cape",waist="Prosilio Belt",
-		legs="Manibozho Brais",feet="Iuitl Gaiters"}]]
+		legs="Manibozho Brais",feet="Qaaxo Leggings"}]]
 
-	sets.Utsusemi = set_combine(sets.midcast.WS,{neck="Magoraga Beads",left_ear='Loquac. Earring',
+	sets.Utsusemi = set_combine(sets.WS.Base,{head="Haruspex Hat",neck="Magoraga Beads",left_ear='Loquac. Earring',
 		left_ring="Prolix Ring",waist="Phasmida Belt",legs="Orion Braccae",feet="Thur. Boots +1"})
-		--Gear Haste: 30%, Fast Cast: 4%
+		--Gear Haste: 30%, Fast Cast: 12%
 	
 	sets.TP = {}
 	sets.TP.Ranged = {head="Orion Beret",neck="Ocachi Gorget",left_ear="Clearview Earring",
-		right_ear="Volley Earring",body="Orion Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
+		right_ear="Volley Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Paqichikaji Ring",back="Lutian Cape",waist="Scout's Belt",
-		legs="Thur. Tights +1",feet="Orion Socks"}
+		legs="Arcadian Braccae",feet="Orion Socks"}
 	
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.Ranged
@@ -68,25 +71,28 @@ function precast(spell)
 		end
 	
 	elseif spell.english == "Ranged" then
-		equip(sets.Shapshot)
+		--equip(sets.Shapshot)
+		equip(sets.TP.Ranged)
 	
+	end
+	if string.find(spell.english,'Utsusemi') then
+		equip(sets.Utsusemi)
 	end
 	
 end
 
 function midcast(spell)
-	if spell.prefix == '/jobability' or spell.type == 'WeaponSkill' then
+	--if spell.prefix == '/jobability' or spell.type == 'WeaponSkill' then
 	--midcast doesn't exist for JA or WS so cancel the processing of this function
 		--windower.add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
-		return
-	end
+	--	return
+	--end
 		
-	if spell.english == 'Ranged' then
+	--if spell.english == 'Ranged' then
 		--windower.add_to_chat(14, 'Ranged attack found')
-		equip(sets.TP.Ranged)
-	elseif string.find(spell.english,'Utsusemi') then
-		equip(sets.Utsusemi)
-	end
+	--	equip(sets.TP.Ranged)
+	--elseif string.find(spell.english,'Utsusemi') then
+	
 	
 end
 
