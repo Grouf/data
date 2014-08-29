@@ -10,7 +10,7 @@ function get_sets()
 		'Protect', 'Protect II', 'Protect III', 'Protect IV', 'Protect V',
 		'Shell', 'Shell II', 'Shell III', 'Shell IV', 'Shell V', 
 		'Teleport-Dem', 'Teleport-Mea', 'Teleport-Holla', 'Teleport-Altep', 'Teleport-Yhoat', 'Teleport-Vahzl',
-		'Kupipi', 'Ulmia', 'Joachim', 'Sakura'
+		'Kupipi', 'Cherukiki', 'Ulmia', 'Joachim', 'Sakura'
 		}
 	
 	--Potency/Accuracy sets
@@ -77,14 +77,14 @@ function get_sets()
 	
 	sets.precast = {}
 	
-	sets.precast.IdleRefresh = {main="Buramenk'ah", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Vitivation Chapeau", 
+	sets.precast.IdleRefresh = {main="Claidheamh Soluis", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Vitivation Chapeau", 
 		neck="Twilight Torque", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", body="Atrophy Tabard", 
 		hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Sangoma Ring", back="Repulse Mantle", 
 		waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
 		
 	sets.precast.IdleDT = {main="Xiutleato",sub="Genbu's Shield", ammo="Brigantia Pebble", head="Nahtirah Hat", 
 		neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Soil Pearl", body="Hagondes Coat", 
-		hands="Otomi Gloves", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring", back="Repulse Mantle", 
+		hands="Weath. Cuffs +1", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring", back="Repulse Mantle", 
 		waist="Flume Belt", legs="Mes'yohi Slacks", feet="Umbani Boots"}
 	
 	sets.Idle = sets.precast.IdleRefresh
@@ -160,6 +160,9 @@ function precast(spell)
 		else
 			equip(sets.WS.Base)
 		end
+		if buffactive['Reive Mark'] then
+			equip({neck="Ygnas's Resolve +1"})
+		end
 	
 	elseif spell.prefix == "/jobability" then
 		if sets.JA[spell.english] then
@@ -183,7 +186,7 @@ function midcast(spell)
 		equip(sets.midcast[spell.english])
 	
 	elseif FastCastOnlySpells:contains(spell.english) then
-		windower.add_to_chat(14, 'Fast Cast only Spell: ' ..spell.english)
+		windower.add_to_chat(9, 'Fast Cast only Spell: ' ..spell.english)
 		equip(sets.precast.FastCast)
 	
 	elseif spell.skill == 'Enfeebling Magic' then
@@ -243,6 +246,9 @@ function aftercast(spell)
 	else
 		equip(sets.Idle)
 	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
+	end
 end
 
 function status_change(new,old)
@@ -253,7 +259,9 @@ function status_change(new,old)
 	elseif new == 'Engaged' then
 		equip(sets.aftercast.TP)
 	end
-		
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
+	end
 end
 
 function buff_change(buff_name,gain)
@@ -275,6 +283,11 @@ function buff_change(buff_name,gain)
 			enable("body")
 			send_command('@input /echo Chainspell off, body enabled')
 		end
+	elseif string.find(buff_name, 'Reive') then
+		windower.add_to_chat(9, 'reive name = ' ..buff_name)
+	--[[elseif buff_name == 'Commitment' then
+		windower.add_to_chat(4, 'Commitment gone.')
+		windower.add_to_chat(9, 'Commitment gone.')]]
 	end
 
 end
