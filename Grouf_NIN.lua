@@ -23,7 +23,7 @@ function get_sets()
 	sets.precast.Futae = {hands="Iga Tekko +2"}
 	sets.precast['Mijin Gakure'] = {legs="Mochizuki Hakama"}
 
-	sets.precast.Ranged = {head="Uk'uxkaj Cap",neck="Huani Collar",left_ear="Clearview earring",
+	sets.precast.Ranged = {head="Uk'uxkaj Cap",neck="Ocachi Gorget",left_ear="Clearview earring",
 		right_ear="Bladeborn Earring",body="Mochi. Chainmail",hands="Hachiya Tekko",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Yokaze Mantle",waist="Buccaneer's Belt",
 		legs="Thur. Tights +1",feet="Otronif Boots +1"}
