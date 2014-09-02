@@ -112,6 +112,9 @@ function precast(spell)
 		
 	elseif spell.type=="WeaponSkill" then
 		equip(sets.precast.WS)
+		if buffactive['Reive Mark'] then
+			equip({neck="Ygnas's Resolve +1"})
+		end
 	elseif spell.type == 'Step' or spell.english == 'Violent Flourish') then
 		equip(sets.precast.Step)
 	end
@@ -126,6 +129,9 @@ function aftercast(spell)
 	else
 		equip(sets.aftercast.Idle)
 	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
+	end
 end
 
 function status_change(new,old)
@@ -133,6 +139,9 @@ function status_change(new,old)
 		equip(sets.aftercast.Idle)
 	elseif new == 'Engaged' then
 		equip(sets.aftercast.TP)
+	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
 	end
 end
 
