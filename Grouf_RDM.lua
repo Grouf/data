@@ -28,12 +28,12 @@ function get_sets()
 		waist="Witch Sash", feet="Vitivation Boots"})
 	
 	sets.Potency.Nuke = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Witchstone", head="Buremte Hat", 
-		neck="Stoicheion Medal", left_ear="Hecate's Earring", right_ear="Friomisi Earring", body="Hagondes Coat", 
+		neck="Stoicheion Medal", left_ear="Hecate's Earring", right_ear="Friomisi Earring", body="Hagondes Coat +1", 
 		hands="Hagondes Cuffs", left_ring="Strendu Ring", right_ring="Acumen Ring", back="Toro Cape", 
 		waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
 	
 	sets.Potency.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone", head="Kaabnax Hat", 
-		neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", body="Hagondes Coat", 
+		neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", body="Hagondes Coat +1", 
 		hands="Hagondes Cuffs", left_ring="Strendu Ring", right_ring="Acumen Ring", back="Refraction Cape", 
 		waist="Witch Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 	
@@ -83,7 +83,7 @@ function get_sets()
 		waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
 		
 	sets.precast.IdleDT = {main="Xiutleato",sub="Genbu's Shield", ammo="Brigantia Pebble", head="Nahtirah Hat", 
-		neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Soil Pearl", body="Hagondes Coat", 
+		neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Soil Pearl", body="Hagondes Coat +1", 
 		hands="Weath. Cuffs +1", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring", back="Repulse Mantle", 
 		waist="Flume Belt", legs="Mes'yohi Slacks", feet="Umbani Boots"}
 	
@@ -116,7 +116,7 @@ function get_sets()
 	sets.TP = {}
 	
 	sets.TP.DD = {ammo="Brigantia Pebble", head="Nahtirah Hat", 
-		neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring", body="Hagondes Coat", 
+		neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring", body="Hagondes Coat +1", 
 		hands="Atrophy Gloves", left_ring="Cho'j Band", right_ring="Rajas Ring", back="Atheling Mantle", 
 		waist="Windbuffet Belt", legs="Mes'yohi Slacks", feet="Atrophy Boots"}
 	
@@ -124,7 +124,7 @@ function get_sets()
 	
 	sets.WS = {}
 	sets.WS.Base = {ammo="Oreiad's Tathlum", head="Nahtirah Hat", 
-		neck="Tlamiztli Collar", left_ear="Dudgeon Earring", right_ear="Bladeborn Earring", body="Hagondes Coat", 
+		neck="Tlamiztli Collar", left_ear="Dudgeon Earring", right_ear="Bladeborn Earring", body="Hagondes Coat +1", 
 		hands="Atrophy Gloves", left_ring="Cho'j Band", right_ring="Rajas Ring", back="Buquwik Cape", 
 		waist="Prosilio Belt", legs="Mes'yohi Slacks", feet="Atrophy Boots"}
 	

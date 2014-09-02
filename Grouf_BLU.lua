@@ -133,7 +133,7 @@ function get_sets()
 	
 	sets.WS['Sanguine Blade'] = {head="Uk'uxkaj Cap",neck="Tlamiztli Collar",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",--[[left_ear="Hecate's earring",right_ear="Friomisi Earring",]]
-		body="Hagondes Coat",hands="Weath. Cuffs +1",left_ring="Icesoul Ring",
+		body="Hagondes Coat +1",hands="Weath. Cuffs +1",left_ring="Icesoul Ring",
 		right_ring="Spiral Ring",back="Refraction Cape",waist="Caudata Belt",
 		legs="Mes'yohi Slacks",feet="Hag. Sabots +1" }
 	
@@ -158,12 +158,12 @@ function get_sets()
 	sets.midcast.AGI = set_combine(sets.midcast.BaseSet,{body="Iuitl Vest",legs="Kaabnax Trousers"})
 	
 	sets.midcast.INT = {head="Hagondes Hat",neck="Stoicheion Medal",left_ear="Psystorm Earring",
-		right_ear="Lifestorm Earring",body="Hagondes Coat",hands="Hagondes Cuffs",left_ring="Icesoul Ring",
+		right_ear="Lifestorm Earring",body="Hagondes Coat +1",hands="Hagondes Cuffs",left_ring="Icesoul Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Witful Belt",
 		legs="Mes'yohi Slacks",feet="Hag. Sabots +1"}
 
 	sets.midcast.Cure = {head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",left_ear="Loquac. Earring",
-		right_ear="Lifestorm Earring",body="Hagondes Coat",hands="Weath. Cuffs +1",left_ring="Sirona's Ring",
+		right_ear="Lifestorm Earring",body="Hagondes Coat +1",hands="Weath. Cuffs +1",left_ring="Sirona's Ring",
 		right_ring="Solemn Ring",back="Pahtli Cape",waist="Witful Belt",
 		legs="Mes'yohi Slacks",feet="Weath. Souliers +1"}
 	

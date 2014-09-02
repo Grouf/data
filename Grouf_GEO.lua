@@ -13,12 +13,12 @@ function get_sets()
 		waist="Witful Belt",legs="Geomancy Pants",feet="Hag. Sabots +1"}  --Geo. Pants = 10%
 		
 	sets.precast.IdleRefresh = {main="Sharur",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
-		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
+		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Bagua Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Repulse Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Geomancy Sandals"}
 	
 	sets.precast.IdleLuopan = {main="Sharur",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
-		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
+		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Geomancy Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Repulse Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Bagua Sandals"}
 	
@@ -44,7 +44,7 @@ function get_sets()
 		waist="Witch Sash",legs="Nares Trews",feet="Umbani Boots"}
 		
 	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
-		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
+		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs",left_ring="Perception Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 		
@@ -60,18 +60,18 @@ function get_sets()
 		waist="Siegel Sash",legs="Shedir Seraweels",feet="Geomancy Sandals"}
 		
 	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
-		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat",
+		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Umbani Boots"}
 		
 	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
-		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat",
+		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 		
 	sets.TP = {
 		head="Nahtirah Hat", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
-		body="Hagondes Coat", hands="Hagondes Cuffs", left_ring="Beeline Ring", right_ring="Rajas Ring",
+		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Beeline Ring", right_ring="Rajas Ring",
 		back="Buquwik Cape", waist="Windbuffet Belt", legs="Mes'yohi Slacks", feet="Hag. Sabots +1"}
     
     sets.WS = set_combine(sets.TP, {neck="Tlamiztli Collar", left_ear="Dudgeon Earring", right_ring="Cho'j Band",
