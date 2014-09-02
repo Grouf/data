@@ -15,7 +15,7 @@ function get_sets()
 	sets.precast.Accomplice = {head="Raider's Bonnet +2"}
 	sets.precast.Collaborator = {head="Raider's Bonnet +2"}
 	sets.precast['Perfect Dodge'] = {hands="Plun. Armlets"}
-	{legs="Plun.Culottes"
+	sets.precast.Feint = {legs="Plun.Culottes"}
 
 	sets.precast.Ranged = {head="Pillager's Bonnet",neck="Huani Collar",left_ear="Clearview earring",
 		right_ear="Volley Earring",body="Iuitl Vest",hands="Buremte Gloves",left_ring="Fistmele Ring",
@@ -60,7 +60,7 @@ function get_sets()
 		right_ring="Sangoma Ring", legs="Iuitl Tights"})
 		
 	sets.TP = {}
-	sets.TP.DD = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
+	sets.TP.DD = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Qaaxo Leggings"}
@@ -92,6 +92,9 @@ function precast(spell)
 		equip(sets.precast[spell.english])
 	elseif spell.type=="WeaponSkill" then
 		equip(sets.precast.WS)
+		if buffactive['Reive Mark'] then
+			equip({neck="Ygnas's Resolve +1"})
+		end
 	elseif spell.type =='Step' then
 		equip(sets.precast.Step)
 	end
@@ -106,6 +109,9 @@ function aftercast(spell)
 	else
 		equip(sets.aftercast.Idle)
 	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
+	end
 end
 
 function status_change(new,old)
@@ -113,6 +119,9 @@ function status_change(new,old)
 		equip(sets.aftercast.Idle)
 	elseif new == 'Engaged' then
 		equip(sets.aftercast.TP)
+	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
 	end
 end
 
