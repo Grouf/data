@@ -17,13 +17,13 @@ function get_sets()
 	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Nahtirah Hat",
 		left_ear="Loquac. Earring",body="Anhur Robe",
 		hands="Gendewitha Gages",right_ring="Prolix Ring",back="Swith Cape",
-		waist="Witful Belt",legs="Artsieq Hose",feet="Piety Duckbills"} -- ??% Fast Cast
+		waist="Witful Belt",legs="Artsieq Hose",feet="Piety Duckbills"} -- 45% Fast Cast
 	
 	sets.midcast = {}
 	sets.midcast.Cure= {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Theophany Cap",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Gendewitha Bliaut",
 		hands="Theophany Mitts",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
-		waist="Cleric's Belt",legs="Orsn. Pantaln. +2",feet="Gende. Galoshes"}
+		waist="Cleric's Belt",legs="Orsn. Pantaln. +2",feet="Piety Duckbills"}
  
 	sets.midcast.Enfeeble= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
 		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Theo. Briault",

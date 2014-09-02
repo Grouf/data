@@ -64,20 +64,15 @@ function get_sets()
 		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Qaaxo Leggings"}
-
-	sets.TP.Solo = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
-		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
-		legs="Quiahuiz Trousers",feet="Qaaxo Leggings"}
 	
 	sets.TP.TH = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Plun. Armlets",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Qaaxo Leggings"}
 	
-	sets.TP.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Dark Ring",
-		right_ring="Shadow Ring",back="Repulse Mantle",waist="Phasmida Belt",
+	sets.TP.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Soil Pearl",
+		right_ear="Soil Pearl",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Dark Ring",
+		right_ring="Shadow Ring",back="Repulse Mantle",waist="Flume Belt",
 		legs="Kaabnax Trousers",feet="Qaaxo Leggings"}
 
 	sets.aftercast = {}
@@ -144,11 +139,6 @@ function self_command(command)
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
 		equip(sets.aftercast.TP)
 		windower.add_to_chat(9, 'DD set')
-	elseif command == 'SOLO' then
-		sets.aftercast.TP = sets.TP.Solo
-		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
-		equip(sets.aftercast.TP)
-		windower.add_to_chat(9, 'SOLO set')
 	elseif command == 'TH' then
 		sets.aftercast.TP = sets.TP.TH
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
