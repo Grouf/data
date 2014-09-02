@@ -21,6 +21,7 @@ function get_sets()
 	sets.precast.Innin = {head="Iga Zukin +2"}
 	sets.precast.Yonin = {legs="Iga Hakama +2"}
 	sets.precast.Futae = {hands="Iga Tekko +2"}
+	sets.precast['Mijin Gakure'] = {legs="Mochizuki Hakama"}
 
 	sets.precast.Ranged = {head="Uk'uxkaj Cap",neck="Huani Collar",left_ear="Clearview earring",
 		right_ear="Bladeborn Earring",body="Mochi. Chainmail",hands="Hachiya Tekko",left_ring="Fistmele Ring",
