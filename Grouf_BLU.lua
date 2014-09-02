@@ -177,13 +177,13 @@ function get_sets()
 		right_ring="Perception Ring",back="Cornflower Cape",waist="Witful Belt",
 		legs="Mes'yohi Slacks",feet="Hagondes Sabots"} --25% Haste, 5% Fast Cast, -12% Blue Magic recast
 		
-	sets.midcast.Breath = {head="Mirage Keffiyeh",neck="Stoicheion Medal",left_ear="Psystorm earring",
+	sets.midcast.Breath = {head="Luhlaza Keffiyeh",neck="Stoicheion Medal",left_ear="Psystorm earring",
 		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Hagondes Cuffs",left_ring="Prolix Ring",
 		back="Cornflower Cape",waist="Aswang Sash",
 		legs="Iuitl Tights",feet="Hagondes Sabots"}
 	
 	sets.midcast.BlueMagic = set_combine(sets.precast.FastCast,{
-		ammo="Mavi Tathlum", head="Mirage Keffiyeh",neck="Mavi Scarf",
+		ammo="Mavi Tathlum", head="Luhlaza Keffiyeh",neck="Mavi Scarf",
 		body="Assim. Jubbah",hands="Symbios Gloves",
 		back="Cornflower Cape",
 		legs="Mavi Tayt +2",feet="Luhlaza Charuqs"}) --All blue magic, some fast cast
