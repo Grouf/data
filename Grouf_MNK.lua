@@ -100,10 +100,10 @@ function aftercast(spell)
 end
 
 function status_change(new,old)
-	if S{'Idle','Resting'}:contains(new) then
-		equip(sets.aftercast.Idle)
-	elseif new == 'Engaged' then
+	if new == 'Engaged' then
 		equip(sets.aftercast.TP)
+	else
+		equip(sets.aftercast.Idle)
 	end
 	if buffactive['Reive Mark'] then
 		equip({neck="Ygnas's Resolve +1"})
