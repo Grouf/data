@@ -20,6 +20,7 @@ Body		Anhur Robe			10		(    WHM BLM rdm                 SMN BLU GEO    )
 
 Hands		Gendewitha Gages	7		(    WHM     RDM                                )
 			Thaumas Gloves		4		(MNK             THF RNG     NIN     BLU     RUN)
+			Repartie Gloves		2		(    whm BLM rdm                 SMN     GEO    )
 
 Ring		Prolix Ring			2		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
 
