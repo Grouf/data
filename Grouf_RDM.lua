@@ -149,6 +149,10 @@ function get_sets()
 end
 
 function precast(spell)
+    if midaction() then
+        cancel_spell()
+        return
+    end
 	--windower.add_to_chat(14, 'Precast: spell=' ..spell.english.. ' spell type=' ..spell.type.. ' Skill=' ..spell.skill)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
 		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
