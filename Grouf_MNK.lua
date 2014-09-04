@@ -69,6 +69,9 @@ function get_sets()
 	sets.aftercast.TP = sets.TP.DD
 	sets.aftercast.Idle = sets.TP.DD
 	set_macro_book()
+	
+	sets.dontforget = {main="Ohrmazd", sub="Oatixur", neck="Ygnas's Resolve +1",
+		left_ear="Linkpearl", right_ear="Reraise Earring"} 
 end
 
 function precast(spell)

@@ -15,7 +15,7 @@ function get_sets()
 	sets.precast.Accomplice = {head="Raider's Bonnet +2"}
 	sets.precast.Collaborator = {head="Raider's Bonnet +2"}
 	sets.precast['Perfect Dodge'] = {hands="Plun. Armlets"}
-	sets.precast.Feint = {legs="Plun.Culottes"}
+	sets.precast.Feint = {legs="Plun. Culottes"}
 
 	sets.precast.Ranged = {head="Pillager's Bonnet",neck="Ocachi Gorget",left_ear="Clearview earring",
 		right_ear="Volley Earring",body="Iuitl Vest",hands="Buremte Gloves",left_ring="Fistmele Ring",
@@ -80,6 +80,8 @@ function get_sets()
 	sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
 	send_command('input /macro book 6;wait .1;input /macro set 10')
 	
+	sets.dontforget = {main="Izhiikoh", sub="Sandung", range="One-eyed", ammo="Acid Bolt", neck="Ygnas's Resolve +1",
+		left_ear="Linkpearl", right_ear="Reraise Earring", left_ring="Bloody Bolt"} 
 end
 
 function precast(spell)
