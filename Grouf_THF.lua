@@ -17,12 +17,12 @@ function get_sets()
 	sets.precast['Perfect Dodge'] = {hands="Plun. Armlets"}
 	sets.precast.Feint = {legs="Plun. Culottes"}
 
-	sets.precast.Ranged = {head="Pillager's Bonnet",neck="Ocachi Gorget",left_ear="Clearview earring",
-		right_ear="Volley Earring",body="Iuitl Vest",hands="Buremte Gloves",left_ring="Fistmele Ring",
+	sets.precast.Ranged = {head="Pillager's Bonnet",neck="Ocachi Gorget",left_ear="Volley earring",
+		right_ear="Clearview Earring",body="Iuitl Vest",hands="Buremte Gloves",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Libeccio Mantle",waist="Buccaneer's Belt",
 		legs="Thur. Tights +1",feet="Pillager's Poulaines"}
 	
-	sets.precast.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Dudgeon Earring",
+	sets.precast.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Moonshade Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Cho'j Band",back="Buquwik Cape",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}
@@ -32,7 +32,7 @@ function get_sets()
 	sets.precast["Rudra's Storm"] = set_combine(sets.precast.WS, {neck="Shadow Gorget"}) -- 80% DEX
 	
 	sets.precast["Last Stand"] = set_combine(sets.precast.Ranged, {neck="Ocachi Gorget",
-		waist="Caudata Belt"})
+		left_ear="Moonshade Earring", waist="Caudata Belt"})
 		
 		--Dancing Edge = 40% DEX, 40% CHR
 		--Mandalic Stab = 60% DEX

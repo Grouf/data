@@ -14,7 +14,7 @@ function get_sets()
 		]]
 	
 	-- Weapon Skill sets:  Damage --
-	sets.WS.DD = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Steelflash Earring", 
+	sets.WS.DD = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Moonshade Earring", 
 		right_ear="Bladeborn Earring", body="Miki. Breastplate", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Buquwik Cape", waist="Prosilio Belt", 
 		legs="Miki. Cuisses", feet="Mikinaak Greaves" }
@@ -29,8 +29,8 @@ function get_sets()
 	sets.WS.DD["Tachi: Shoha"] = set_combine(sets.WS.DD,{neck="Shadow Gorget"})
 	
 	-- Weapon Skill sets:  Accuracy --
-	sets.WS.Acc = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Steelflash Earring", 
-		right_ear="Bladeborn Earring", body="Miki. Breastplate", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
+	sets.WS.Acc = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Moonshade Earring", 
+		right_ear="Steelflash Earring", body="Miki. Breastplate", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Takaha Mantle", waist="Caudata Belt", 
 		legs="Miki. Cuisses", feet="Mikinaak Greaves" }
 		
@@ -53,8 +53,8 @@ function get_sets()
 	
 	sets.precast = {}
 	
-	sets.precast.Ranged = {head="Sakonji Kabuto",neck="Ocachi Gorget",left_ear="Clearview earring",
-		right_ear="Phawaylla Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Paqichikaji Ring",
+	sets.precast.Ranged = {head="Sakonji Kabuto",neck="Ocachi Gorget",left_ear="Moonshade earring",
+		right_ear="Clearview Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Paqichikaji Ring",
 		right_ring="Fistmele Ring",back="Buquwik Cape",waist="Buccaneer's Belt",
 		legs="Wakido Haidate",feet="Wakido Sune-Ate"} 	-- R.Acc=787  R.Att=923 iLvl=115 (beetle arrow) ???
 														-- R.Acc=792  R.Att=933 iLvl=115 (tulfaire arrow) ???

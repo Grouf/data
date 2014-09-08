@@ -28,7 +28,7 @@ function get_sets()
 		right_ring="Paqichikaji Ring",back="Yokaze Mantle",waist="Buccaneer's Belt",
 		legs="Thur. Tights +1",feet="Otronif Boots +1"}
 	
-	sets.precast.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
+	sets.precast.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Moonshade Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Cho'j Band",
 		right_ring="Rajas Ring",back="Vespid Mantle",waist="Prosilio Belt",
 		legs="Manibozho Brais",feet="Otronif Boots +1"}

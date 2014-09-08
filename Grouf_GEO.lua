@@ -74,7 +74,7 @@ function get_sets()
 		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Beeline Ring", right_ring="Rajas Ring",
 		back="Buquwik Cape", waist="Windbuffet Belt", legs="Mes'yohi Slacks", feet="Hag. Sabots +1"}
     
-    sets.WS = set_combine(sets.TP, {neck="Tlamiztli Collar", left_ear="Dudgeon Earring", right_ring="Cho'j Band",
+    sets.WS = set_combine(sets.TP, {neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ring="Cho'j Band",
 		waist="Prosilio Belt"})
     
     

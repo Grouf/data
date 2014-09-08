@@ -52,7 +52,7 @@ function get_sets()
 		waist="Windbuffet Belt",legs="Hagondes Pants +1",feet="Umbani Boots"}
 
 	sets.WS = {head="Hagondes Hat",
-		neck="Tlamiztli Collar",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat +1",
+		neck="Tlamiztli Collar",left_ear="Moonshade Earring",right_ear="Bladeborn Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
 		waist="Prosilio Belt",legs="Hagondes Pants +1",feet="Umbani Boots"}
 	

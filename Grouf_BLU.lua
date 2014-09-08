@@ -117,7 +117,7 @@ function get_sets()
 	
 --Weapon Skills--
 	sets.WS = {}
-	sets.WS.Base = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Steelflash Earring",
+	sets.WS.Base = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Moonshade Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Cho'j Band",back="Vespid Mantle",waist="Prosilio Belt",
 		legs="Manibozho brais",feet="Assim. Charuqs" }

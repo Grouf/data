@@ -23,8 +23,8 @@ function get_sets()
 	
 	
 	sets.WS = {}
-	sets.WS.Base = {head="Orion Beret",neck="Ocachi Gorget",left_ear="Clearview Earring",
-		right_ear="Volley Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Fistmele Ring",
+	sets.WS.Base = {head="Orion Beret",neck="Ocachi Gorget",left_ear="Moonshade Earring",
+		right_ear="Clearview Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Lutian Cape",waist="Scout's Belt",
 		legs="Arcadian Braccae",feet="Orion Socks"}
 		
@@ -43,8 +43,8 @@ function get_sets()
 		--Gear Haste: 30%, Fast Cast: 12%
 	
 	sets.TP = {}
-	sets.TP.Ranged = {head="Orion Beret",neck="Ocachi Gorget",left_ear="Clearview Earring",
-		right_ear="Volley Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Rajas Ring",
+	sets.TP.Ranged = {head="Orion Beret",neck="Ocachi Gorget",left_ear="Volley Earring",
+		right_ear="Clearview Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Paqichikaji Ring",back="Lutian Cape",waist="Scout's Belt",
 		legs="Arcadian Braccae",feet="Orion Socks"}
 	

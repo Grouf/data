@@ -124,7 +124,7 @@ function get_sets()
 	
 	sets.WS = {}
 	sets.WS.Base = {ammo="Oreiad's Tathlum", head="Nahtirah Hat", 
-		neck="Tlamiztli Collar", left_ear="Dudgeon Earring", right_ear="Bladeborn Earring", body="Hagondes Coat +1", 
+		neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ear="Bladeborn Earring", body="Hagondes Coat +1", 
 		hands="Atrophy Gloves", left_ring="Cho'j Band", right_ring="Rajas Ring", back="Buquwik Cape", 
 		waist="Prosilio Belt", legs="Mes'yohi Slacks", feet="Atrophy Boots"}
 	
