@@ -46,7 +46,7 @@ function get_sets()
 		waist="Witch Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 	
 	sets.TP = {}
-	sets.TP.Engage = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Kaabnax Hat",
+	sets.TP.Engage = {main="Lehbrailg +2",sub="Pole Grip",ammo="Witchstone",head="Kaabnax Hat",
 		neck="Asperity Necklace",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
 		waist="Windbuffet Belt",legs="Hagondes Pants +1",feet="Umbani Boots"}
