@@ -210,7 +210,7 @@ function get_sets()
 	--sets.aftercast.Idle = sets.TP.DD
 	send_command('input /macro book 16;wait .1;input /macro set 1')
 	
-	sets.DontForget = {main="Claidheamh Soluis", sub="Sharur", left_ear="Reraise Earring", 
+	sets.DontForget = {main="Claidheamh Soluis", sub="Nehushtan", left_ear="Reraise Earring", 
 		right_ear = "Linkpearl"} --not working for Soluis???
 	sets.DontForget2 = {main="Tamaxchi"}
 		

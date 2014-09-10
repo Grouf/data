@@ -12,12 +12,12 @@ function get_sets()
 		hands="Hagondes Cuffs",left_ring="Prolix Ring",back="Swith Cape",
 		waist="Witful Belt",legs="Geomancy Pants",feet="Hag. Sabots +1"}  --Geo. Pants = 10%
 		
-	sets.precast.IdleRefresh = {main="Sharur",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
+	sets.precast.IdleRefresh = {main="Nehushtan",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
 		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Bagua Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Repulse Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Geomancy Sandals"}
 	
-	sets.precast.IdleLuopan = {main="Sharur",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
+	sets.precast.IdleLuopan = {main="Nehushtan",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
 		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Geomancy Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Repulse Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Bagua Sandals"}
@@ -48,7 +48,7 @@ function get_sets()
 		hands="Hagondes Cuffs",left_ring="Perception Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 		
-	sets.midcast.Geomancy = {main="Sharur",sub="Genbu's Shield",range="Dunna",
+	sets.midcast.Geomancy = {main="Nehushtan",sub="Genbu's Shield",range="Dunna",
 		body="Bagua Tunic",
 		hands="Geomancy Mitaines",back="Lifestream Cape",
 		legs="Bagua Pants"}	--Geomancy Skill:	373+30 = 403
@@ -77,7 +77,7 @@ function get_sets()
     sets.WS = set_combine(sets.TP, {neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ring="Cho'j Band",
 		waist="Prosilio Belt"})
     
-    
+    sets.DontForget = {neck="Quanpur Necklace", left_ear="Reraise Earring", right_ear = "Linkpearl"}
     
 	
 	send_command('input /macro book 20;wait .1;input /macro set 1')
