@@ -69,6 +69,8 @@ function get_sets()
 		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Plun. Armlets",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Qaaxo Leggings"}
+		
+	sets.TP.Dynamis = set_combine(sets.TP.TH, {feet="Raid. Poulaines +2"})
 	
 	sets.TP.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Soil Pearl",
 		right_ear="Soil Pearl",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Dark Ring",
@@ -146,6 +148,11 @@ function self_command(command)
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
 		equip(sets.aftercast.TP)
 		windower.add_to_chat(9, 'Treasure Hunter set')
+	elseif command == 'Dynamis' then
+		sets.aftercast.TP = sets.TP.Dynamis
+		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
+		equip(sets.aftercast.TP)
+		windower.add_to_chat(9, 'Dynamis Treasure Hunter set')
 	elseif command == 'DT' then
 		sets.aftercast.TP = sets.TP.DT
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
