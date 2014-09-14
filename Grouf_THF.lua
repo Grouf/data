@@ -20,7 +20,7 @@ function get_sets()
 	sets.precast.Ranged = {head="Pillager's Bonnet",neck="Ocachi Gorget",left_ear="Volley earring",
 		right_ear="Clearview Earring",body="Iuitl Vest",hands="Buremte Gloves",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Libeccio Mantle",waist="Buccaneer's Belt",
-		legs="Thur. Tights +1",feet="Pillager's Poulaines"}
+		legs="Thur. Tights +1",feet="Scopuli Nails +1"}
 	
 	sets.precast.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Moonshade Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
