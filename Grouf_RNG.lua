@@ -53,6 +53,11 @@ function get_sets()
 	sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
 	send_command('input /macro book 11;wait .1;input /macro set 1')
 	
+	sets.dontforget = {main="Hurlbat", sub="Antican Axe", range="Cibitshavore", left_ear="Linkpearl", 
+		right_ear="Reraise Earring", back="Mecisto. Mantle"}
+	
+	sets.dontforget2 = {range="Illapa"}
+	
 	end --End Sets
 
 function precast(spell)
