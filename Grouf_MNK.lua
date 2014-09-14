@@ -8,7 +8,7 @@ function get_sets()
 	sets.precast = {}
 	sets.precast.Chakra = {ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",
 		left_ear="Soil Pearl",right_ear="Soil Pearl",body="Anchorite's Cyclas",hands="Hes. Gloves",
-		left_ring="Terrasoul Ring",right_ring="Terrasoul Ring",back="Anchoret's Mantle",waist="Warwolf Belt",
+		left_ring="Terrasoul Ring",right_ring="Terrasoul Ring",back="Anchoret's Mantle",waist="Caudata Belt",
 		legs="Kaabnax Trousers",feet="Thur. Boots +1"} --100+131
 	sets.precast.Counterstance = {feet="Hes. Gaiters"}
 	sets.precast.Dodge = {feet="Anchorite's Gaiters"}
@@ -22,7 +22,7 @@ function get_sets()
 	
 	sets.precast.Step = {ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
-		left_ring="Beeline Ring",right_ring="Rajas Ring",back="Anchoret's Mantle",waist="Warwolf Belt",
+		left_ring="Beeline Ring",right_ring="Rajas Ring",back="Anchoret's Mantle",
 		legs="Manibozho Brais",feet="Thur. Boots +1"}
 
 	sets.precast['Violent Flourish'] = set_combine(sets.precast.Step, {neck="Stoicheion Medal", 
