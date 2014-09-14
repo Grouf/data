@@ -24,7 +24,8 @@ Hands		Gendewitha Gages	7		(    WHM     RDM                                )
 
 Ring		Prolix Ring			2		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
 
-Back		Swith Cape			3		(    WHM BLM RDM                 SMN BLU GEO    )
+Back		Lifestream Cape		7		(                                        GEO    )
+Back		Swith Cape			3		(    WHM BLM RDM                 SMN BLU geo    )
 
 Waist		Witful Belt			3		(    WHM BLM RDM                 SMN BLU GEO    )
 
