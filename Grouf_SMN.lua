@@ -70,7 +70,7 @@ function get_sets()
 	sets.Cure = {main="Tamaxchi",sub="Genbu's Shield",
 		head="Kaabnax Hat", neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",
 		body="Hagondes Coat +1", hands="Bokwus Gloves",left_ring="Sirona's Ring", right_ring="Solemn Ring",
-		back="Pahtli Cape", waist="Witch Sash", legs="Nares Trews", feet="Weath. Souliers +1"}
+		back="Pahtli Cape", waist="Witch Sash", legs="Nares Trews", feet="Umbani Boots"}
 		
 	--[[sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
