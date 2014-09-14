@@ -9,17 +9,17 @@ function get_sets()
 	
 	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Nahtirah Hat",
 		left_ear="Loquac. Earring",body="Anhur Robe",
-		hands="Hagondes Cuffs",left_ring="Prolix Ring",back="Swith Cape",
-		waist="Witful Belt",legs="Geomancy Pants",feet="Hag. Sabots +1"}  --Geo. Pants = 10%
+		hands="Hagondes Cuffs",left_ring="Prolix Ring",back="Lifestream Cape",
+		waist="Witful Belt",legs="Geomancy Pants",feet="Hag. Sabots +1"}  --Fast Cast = 47%
 		
 	sets.precast.IdleRefresh = {main="Nehushtan",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
 		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
-		hands="Bagua Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Repulse Mantle",
+		hands="Bagua Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Mecisto. Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Geomancy Sandals"}
 	
 	sets.precast.IdleLuopan = {main="Nehushtan",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
 		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
-		hands="Geomancy Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Repulse Mantle",
+		hands="Geomancy Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Mecisto. Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Bagua Sandals"}
 	
 	sets.precast.Idle = sets.precast.IdleRefresh
@@ -51,7 +51,7 @@ function get_sets()
 	sets.midcast.Geomancy = {main="Nehushtan",sub="Genbu's Shield",range="Dunna",
 		body="Bagua Tunic",
 		hands="Geomancy Mitaines",back="Lifestream Cape",
-		legs="Bagua Pants"}	--Geomancy Skill:	373+30 = 403
+		waist="Sekhmet Corset", legs="Bagua Pants"}	--Geomancy Skill:	373+30 = 403
 							--Handbell Skill:	373+18 = 391
 		
 	--Enhancing needs work
