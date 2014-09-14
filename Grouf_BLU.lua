@@ -13,7 +13,7 @@ function get_sets()
 		['Heavy Strike']='STR',--Accuracy Penalty
 		['Terror Touch']='STR',['Sickle Slash']='STR',['Uppercut']='STR',['Mandibular Bite']='STR',
 		['Spinal Cleave']='STR',['Asuran Claws']='STR',['Body Slam']='STR',['Battle Dance']='STR',['Bludgeon']='STR',
-		['Screwdriver']='STR',['Thrashing Assault']='STR',
+		['Screwdriver']='STR',['Thrashing Assault']='STR', ['Sinker Drill']='STR',
 		
 	--STRDEX
 		['Foot Kick']='STRDEX',['Disseverment']='STRDEX',['Hysteric Barrage']='STRDEX',['Frenetic Rip']='STRDEX',
@@ -43,11 +43,12 @@ function get_sets()
 		['Sandspin']='INT',['Cursed Sphere']='INT',['Blastbomb']='INT',['Bomb Toss']='INT',['Death Ray']='INT',
 		['Ice break']='INT',['Maelstrom']='INT',['Water Bomb']='INT',['Mysterious Light']='INT',['Eyes On Me']='INT',
 		['Blazing Bound']='INT',['Vapor Spray']='INT',['Bilgestorm']='INT',['Feather storm']='INT',
-		['Queasyshroom']='INT',['Subduction']='INT',
+		['Queasyshroom']='INT',['Subduction']='INT', ['Crashing Thunder']='INT', ['Rail Cannon']='INT',
+		['Uproot']='INT',
 		
 	--Cures
 		['Pollen']='Cure',['Healing Breeze']='Cure',['Wild Carrot']='Cure',['Magic Fruit']='Cure',
-		['Plenilune Embrace']='Cure',['White Wind']='Cure',
+		['Plenilune Embrace']='Cure',['White Wind']='Cure', ['Restoral']='Cure',
 		
 	--Stun
 		['Head Butt']='Stun',['Sudden Lunge']='Stun',['Tail Slap']='Stun',['Frypan']='Stun', --Physical
@@ -64,6 +65,7 @@ function get_sets()
 		['Venom Shell']='mAccuracy',['Stinking Gas']='mAccuracy',['Awful Eye']='mAccuracy',['Demoralizing Roar']='mAccuracy',
 		['Jettatura']='mAccuracy',['Absolute Terror']='mAccuracy',['Triumphant Roar']='mAccuracy',
 		['1000 Needles']='mAccuracy',['Voracious Trunk']='mAccuracy',['Lowing']='mAccuracy',['Blistering Roar']='mAccuracy',
+		['Polar Roar']='mAccuracy', --from IceKitty, does AoE Ice+Bind, should be in INT or mAccuracy??
 		
 	--Blue Magic Skill, Fast Cast (precast=Fast Cast, midcast=Blue Magic Skill)
 		--uses sets.precast.FastCast and sets.midcast.BlueMagic
@@ -74,7 +76,7 @@ function get_sets()
 	-- Breath spells
         ['Poison Breath']='Breath',['Magnetite Cloud']='Breath',['Self Destruct']='Breath',['Radiant Breath']='Breath',
         ['Flying Hip Press']='Breath',['Bad Breath']='Breath',['Frost Breath']='Breath',['Heat Breath']='Breath',
-        ['Thunder Breath']='Breath',['Wind Breath']='Breath',
+        ['Thunder Breath']='Breath',['Wind Breath']='Breath',['Diffusion Ray']='Breath',
 		
 	--FastCast
 		['Cocoon']='FastCast',['Harden Shell']='FastCast',['Refueling']='FastCast',['Zephyr Mantle']='FastCast',
@@ -87,10 +89,9 @@ function get_sets()
 		
 	}
 	
-	
-	
 --Job Ability--
 	sets.JA = {}
+	sets.JA['Azure Lore'] = {hands="Luhlaza Bazubands"}
 	sets.JA.Efflux = {legs="Mavi Tayt +2"}
 	sets.JA['Chain Affinity'] = {head="Mavi Kavuk +2",feet="Assim. Charuqs"}
 	sets.JA['Burst Affinity'] = {legs="Assim. Shalwar",feet="Mavi Basmak +2"}
@@ -112,7 +113,7 @@ function get_sets()
 	
 	sets.precast.Step = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash earring",
 		right_ear="Heartseeker earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
-		right_ring="Epona's Ring",back="Letalis Mantle",
+		right_ring="Beeline Ring",back="Letalis Mantle",
 		legs="Manibozho Brais",feet="Assim. Charuqs"}
 	
 --Weapon Skills--
@@ -210,16 +211,16 @@ function get_sets()
 	--sets.aftercast.Idle = sets.TP.DD
 	send_command('input /macro book 16;wait .1;input /macro set 1')
 	
-	sets.DontForget = {main="Claidheamh Soluis", sub="Nehushtan", left_ear="Reraise Earring", 
+	sets.DontForget = {main="Claidheamh Soluis", sub="Buramenk'ah", left_ear="Reraise Earring", 
 		right_ear = "Linkpearl"} --not working for Soluis???
-	sets.DontForget2 = {main="Tamaxchi"}
+	sets.DontForget2 = {main="Tamaxchi", sub="Nehushtan"}
 		
 end
 
 function precast(spell)
-	--windower.add_to_chat(14, 'Precast: spell type= ' ..spell.type.. ' || spell.prefix= ' ..spell.prefix)
+	--windower.add_to_chat(9, 'Precast: spell type= ' ..spell.type.. ' || spell.prefix= ' ..spell.prefix)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
-		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
+		--windower.add_to_chat(9, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
 	
 	elseif spell.type == "WeaponSkill" then
@@ -245,16 +246,16 @@ end
 function midcast(spell)
 	if spell.prefix == '/jobability' or spell.type == 'WeaponSkill' then
 	--midcast doesn't exist for JA or WS so cancel the processing of this function
-		--windower.add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
+		--windower.add_to_chat(9, 'JobAbility or WeaponSkill; Midcast cancelled')
 		return
 	end
 	
 	if spell.type == 'BlueMagic' then
 		if sets.midcast[BlueMageSpell[spell.english]] then
 			equip(sets.midcast[BlueMageSpell[spell.english]])
-			--windower.add_to_chat(14, 'MIDset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
+			--windower.add_to_chat(9, 'MIDset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
 		else
-		windower.add_to_chat(14, '~~!! No Set found for ' ..spell.english.. ' !!~~')
+		windower.add_to_chat(9, '~~!! No Set found for ' ..spell.english.. ' !!~~')
 		end
 	end
 	
