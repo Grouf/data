@@ -193,7 +193,7 @@ function get_sets()
 	
 --TP Sets--
 	sets.TP = {}
-	sets.TP.DA = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
+	sets.TP.DD = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Qaaxo Leggings" }
@@ -203,11 +203,11 @@ function get_sets()
 		right_ring="Epona's Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Assim. Charuqs" }
 	
-	sets.TP.Learning = set_combine(sets.TP.DA,{head="Uk'uxkaj Cap", body="Assim. Jubbah", hands="Assim. Bazu.",
+	sets.TP.Learning = set_combine(sets.TP.DD,{head="Uk'uxkaj Cap", body="Assim. Jubbah", hands="Assim. Bazu.",
 		legs="Mavi Tayt +2"})
 	
 	sets.aftercast = {}
-	sets.aftercast.TP = sets.TP.DA
+	sets.aftercast.TP = sets.TP.DD
 	--sets.aftercast.Idle = sets.TP.DD
 	send_command('input /macro book 16;wait .1;input /macro set 1')
 	
@@ -236,8 +236,10 @@ function precast(spell)
 	elseif spell.prefix == "/jobability" then
 		if sets.JA[spell.english] then
 			equip(sets.JA[spell.english])
-		elseif spell.type == "Step" or string.find(spell.english,'Violent Flourish') then
+		elseif spell.type == "Step" then 
 			equip(sets.precast.Step)
+		elseif spell.english == "Violent Flourish" then
+			equip(sets.midcast.mAccuracy)
 		end
 	end
 
@@ -338,35 +340,39 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 end
 
 function self_command(command)
-	if command == 'DA' then
-		sets.aftercast.TP = sets.TP.DA
+	if command == 'DD' then
+		sets.aftercast.TP = sets.TP.DD
 		--sets.aftercast.Idle = sets.TP.DD
-		equip(sets.aftercast.TP)
-		send_command('@input /echo DA SET')
-	--[[
-	elseif command == 'Accuracy' then
-		sets.aftercast.TP = sets.TP.Accuracy
-		sets.aftercast.Idle = sets.TP.Accuracy
-		equip(sets.aftercast.TP)
-		send_command('@input /echo Accuracy SET')
-	]]
-		
+		sets.precast.Idle = set_combine(sets.precast.Idle, {back="Repulse Mantle"})
+		--equip(sets.aftercast.TP)
+		status_change(player.status)
+		send_command('@input /echo DD SET')
+	elseif command == 'Cap' then
+		sets.aftercast.TP = set_combine(sets.TP.DD, {back="Mecisto. Mantle"})
+		sets.precast.Idle = set_combine(sets.precast.Idle, {back="Mecisto. Mantle"})
+		--sets.precast.
+		status_change(player.status)
+		--equip(sets.aftercast.TP)
+		send_command('@input /echo Capacity SET')
 	elseif command == 'Acc' then
 		sets.aftercast.TP = sets.TP.Acc
 		--sets.aftercast.Idle = sets.TP.Learn
-		equip(sets.aftercast.TP)
+		--equip(sets.aftercast.TP)
+		status_change(player.status)
 		send_command('@input /echo Accuracy set')
-		
 	elseif command == 'LearningOn' then
 		sets.aftercast.TP = sets.TP.Learning
 		--sets.aftercast.Idle = sets.aftercast.TP
 		equip({body="Assim. Jubbah", hands="Assim. Bazu.", legs="Mavi Tayt +2"})
-		send_command('@wait 0.5; gs disable body hands legs;')
-		send_command('@input /echo Learning Hands Locked')
-		equip(sets.aftercast.TP)
+		disable('body', 'hands', 'legs')
+		--send_command('@wait 0.5; gs disable body hands legs;')
+		--send_command('gs disable body hands legs;')
+		send_command('@input /echo Learning Body, Hands, Legs Locked')
+		--equip(sets.aftercast.TP)
+		--status_change(player.status)
 		send_command('@input /echo Learning set')
 	elseif command == 'LearningOff' then
-		sets.aftercast.TP = sets.TP.DA
+		sets.aftercast.TP = sets.TP.DD
 		--sets.aftercast.Idle = sets.TP.Learn
 		--equip({hands="Assim. Bazu."})
 		enable('body', 'hands', 'legs')
