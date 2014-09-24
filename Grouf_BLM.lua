@@ -22,12 +22,12 @@ function get_sets()
 	
 	sets.midcast = {}
 	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
-		head="Kaabnax Hat", neck="Morgana's Choker", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
+		head="Kaabnax Hat", neck="Imbodla Necklace", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
 		body="Hagondes Coat +1", hands="Bokwus Gloves", left_ring="Sirona's Ring", right_ring="Solemn Ring",
 		back="Pahtli Cape", waist="Witch Sash", legs="Nares Trews",feet="Umbani Boots"}
 		
 	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
-		head="Kaabnax Hat", neck="Stoicheion Medal", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
+		head="Kaabnax Hat", neck="Imbodla Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Irrwisch Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 		

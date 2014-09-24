@@ -26,7 +26,7 @@ function get_sets()
 		waist="Cleric's Belt",legs="Orsn. Pantaln. +2",feet="Piety Duckbills"}
  
 	sets.midcast.Enfeeble= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
-		neck="Morgana's Choker",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Theo. Briault",
+		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Theo. Briault",
 		hands="Gendewitha Gages",left_ring="Sangoma Ring",right_ring="Irrwisch Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Piety Duckbills"}
 
