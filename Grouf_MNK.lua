@@ -23,7 +23,7 @@ function get_sets()
 	sets.precast.Step = {ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
 		left_ring="Beeline Ring",right_ring="Rajas Ring",back="Anchoret's Mantle",
-		legs="Manibozho Brais",feet="Thur. Boots +1"}
+		legs="Manibozho Brais",feet="Qaaxo Leggings"}
 
 	sets.precast['Violent Flourish'] = set_combine(sets.precast.Step, {neck="Stoicheion Medal", 
 		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Perception Ring", 
@@ -66,7 +66,7 @@ function get_sets()
 	
 	sets.Shark = {ammo="Honed Tathlum",head="Uk'uxkaj Cap",neck="Twilight Torque",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",
-		left_ring="Dark Ring",right_ring="Shadow Ring",back="Tuilha Cape",waist="Black Belt",
+		left_ring="Zanhi Ring",right_ring="Shadow Ring",back="Tuilha Cape",waist="Black Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots +1"}
 
 	sets.aftercast = {}
@@ -83,12 +83,12 @@ function precast(spell)
 		equip(sets.precast[spell.english])
 	elseif spell.type=="WeaponSkill" then
 		equip(sets.precast.WS)
+		if buffactive['Reive Mark'] then
+			equip({neck="Ygnas's Resolve +1"})
+		end
 	elseif spell.english:endswith('Step') or spell.english == 'Violent Flourish' then
 		--windower.add_to_chat(14, 'Step set on')
 		equip(sets.precast.Step)
-	end
-	if buffactive['Reive Mark'] then
-		equip({neck="Ygnas's Resolve +1"})
 	end
 end
 
