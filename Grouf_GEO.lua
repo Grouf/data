@@ -41,7 +41,7 @@ function get_sets()
 	sets.midcast = {}
 	
 	sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabnax Hat",
-		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Geomancy Tunic",
+		neck="Imbodla Necklace",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Geomancy Tunic",
 		hands="Bokwus Gloves",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Witch Sash",legs="Nares Trews",feet="Umbani Boots"}
 		

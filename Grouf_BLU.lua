@@ -163,7 +163,7 @@ function get_sets()
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Witful Belt",
 		legs="Mes'yohi Slacks",feet="Hag. Sabots +1"}
 
-	sets.midcast.Cure = {head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",left_ear="Loquac. Earring",
+	sets.midcast.Cure = {head="Uk'uxkaj Cap",neck="Imbodla Necklace",left_ear="Loquac. Earring",
 		right_ear="Lifestorm Earring",body="Hagondes Coat +1",hands="Weath. Cuffs +1",left_ring="Sirona's Ring",
 		right_ring="Solemn Ring",back="Pahtli Cape",waist="Witful Belt",
 		legs="Mes'yohi Slacks",feet="Weath. Souliers +1"}
