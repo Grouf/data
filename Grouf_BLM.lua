@@ -8,7 +8,7 @@ function get_sets()
 	sets.precast = {}
 	
 	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",
-		head="Nahtirah Hat", left_ear="Loquac. Earring", 
+		head="Nahtirah Hat", neck="Stoicheion Medal", left_ear="Loquac. Earring", 
 		body="Anhur Robe",hands="Hagondes Cuffs", right_ring="Prolix Ring", 
 		back="Swith Cape",waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots"} 
 		-- 37% Fast Cast
@@ -55,7 +55,7 @@ function get_sets()
 	sets.WS = {head="Hagondes Hat",
 		neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ear="Bladeborn Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Rajas Ring", right_ring="Cho'j Band",
-		back="Buquwik Cape", waist="Prosilio Belt", legs="Hagondes Pants +1", feet="Umbani Boots"}
+		back="Buquwik Cape", waist="Prosilio Belt +1", legs="Hagondes Pants +1", feet="Umbani Boots"}
 	
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD

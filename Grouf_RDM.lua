@@ -131,7 +131,7 @@ function get_sets()
 	sets.WS.Base = {ammo="Oreiad's Tathlum", 
 		head="Nahtirah Hat", neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ear="Bladeborn Earring", 
 		body="Hagondes Coat +1", hands="Atrophy Gloves", left_ring="Cho'j Band", right_ring="Rajas Ring", 
-		back="Buquwik Cape", waist="Prosilio Belt", legs="Mes'yohi Slacks", feet="Atrophy Boots"}
+		back="Buquwik Cape", waist="Prosilio Belt +1", legs="Mes'yohi Slacks", feet="Atrophy Boots"}
 	
 	sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{head="Buremte Hat", body="Gendewitha Bliaut",
 		neck="Light Gorget", legs="Vitivation Tights"}) -- DEX 80%

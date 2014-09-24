@@ -24,7 +24,7 @@ function get_sets()
 	
 	sets.precast.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Moonshade Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
-		right_ring="Cho'j Band",back="Buquwik Cape",waist="Prosilio Belt",
+		right_ring="Cho'j Band",back="Buquwik Cape",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}
 	
 	sets.precast.Evisceration = set_combine(sets.precast.WS, {neck="Shadow Gorget"}) -- 50% DEX
@@ -42,7 +42,7 @@ function get_sets()
 	
 	--[[sets.precast.Exenterator = {head="Uk'uxkaj Cap",neck="Light Gorget",left_ear="Dudgeon Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Plun. Armlets",left_ring="Rajas Ring",
-		right_ring="Cho'j Band",back="Buquwik Cape",waist="Prosilio Belt",
+		right_ring="Cho'j Band",back="Buquwik Cape",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}]]
 	
 	--[[sets.precast["Aeolian Edge"] = {head="Thaumas Hat",neck="Stoicheion Medal",left_ear="Hecate's Earring",

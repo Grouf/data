@@ -120,7 +120,7 @@ function get_sets()
 	sets.WS = {}
 	sets.WS.Base = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Moonshade Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
-		right_ring="Cho'j Band",back="Vespid Mantle",waist="Prosilio Belt",
+		right_ring="Cho'j Band",back="Vespid Mantle",waist="Prosilio Belt +1",
 		legs="Manibozho brais",feet="Assim. Charuqs" }
 		
 	sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{neck="Light Gorget"})
@@ -145,7 +145,7 @@ function get_sets()
 	sets.midcast = {}
 	sets.midcast.BaseStat = {head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Buremte Gloves",left_ring="Rajas Ring",
-		right_ring="Spiral Ring",back="Cornflower Cape",waist="Prosilio Belt",
+		right_ring="Spiral Ring",back="Cornflower Cape",waist="Prosilio Belt +1",
 		legs="Iuitl Tights",feet="Qaaxo Leggings"} --relic119 legs here
 	
 	sets.midcast.STR = set_combine(sets.midcast.BaseSet,{head="Whirlpool Mask",back="Buquwik Cape"})

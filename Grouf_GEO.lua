@@ -77,7 +77,7 @@ function get_sets()
 		back="Buquwik Cape", waist="Windbuffet Belt", legs="Mes'yohi Slacks", feet="Hag. Sabots +1"}
     
     sets.WS = set_combine(sets.TP, {neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ring="Cho'j Band",
-		waist="Prosilio Belt"})
+		waist="Prosilio Belt +1"})
     
     sets.DontForget = {neck="Quanpur Necklace", left_ear="Reraise Earring", right_ear = "Linkpearl",
 		left_ring="Excelsis Ring"}

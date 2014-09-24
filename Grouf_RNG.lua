@@ -35,7 +35,7 @@ function get_sets()
 	
 	--[[sets.midcast.WSMelee = {head="Whirlpool Mask",neck="Light Gorget",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Cho'j Band",
-		right_ring="Rajas Ring",back="Buquwik Cape",waist="Prosilio Belt",
+		right_ring="Rajas Ring",back="Buquwik Cape",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}]]
 
 	sets.Utsusemi = set_combine(sets.WS.Base,{head="Haruspex Hat",neck="Magoraga Beads",left_ear='Loquac. Earring',

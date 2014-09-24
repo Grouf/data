@@ -9,14 +9,14 @@ function get_sets()
 	sets.WS = {}
 	--[[sets.WS.Base = {head="Mikinaak Helm", neck="Tlamiztli Collar", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Phorcys Korazin", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
-		right_ring="Rajas Ring", back="Buquwik Cape", waist="Prosilio Belt", 
+		right_ring="Rajas Ring", back="Buquwik Cape", waist="Prosilio Belt +1", 
 		legs="Miki. Cuisses", feet="Mikinaak Greaves" }
 		]]
 	
 	-- Weapon Skill sets:  Damage --
 	sets.WS.DD = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Moonshade Earring", 
 		right_ear="Bladeborn Earring", body="Miki. Breastplate", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
-		right_ring="Rajas Ring", back="Buquwik Cape", waist="Prosilio Belt", 
+		right_ring="Rajas Ring", back="Buquwik Cape", waist="Prosilio Belt +1", 
 		legs="Miki. Cuisses", feet="Mikinaak Greaves" }
 		
 	sets.WS.DD["Tachi: Fudo"] = set_combine(sets.WS.DD,{neck="Light Gorget"}) --STR60
