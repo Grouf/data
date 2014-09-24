@@ -69,6 +69,9 @@ function precast(spell)
 		else
 			equip(sets.WS.Base)
 		end
+		if buffactive['Reive Mark'] then
+			equip({neck="Ygnas's Resolve +1"})
+		end
 
 	elseif spell.prefix=="/jobability" then
 		if sets.JA[spell.english] then
@@ -107,16 +110,22 @@ function aftercast(spell)
 	else
 		equip(sets.aftercast.Idle)
 	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
+	end
 end
 
 function status_change(new,old)
 	--windower.add_to_chat(14, 'status_change; new=' ..new.. ' | old=' ..old)
-	if T{'Idle','Resting'}:contains(new) then
+	if S{'Idle','Resting'}:contains(new) then
 		--windower.add_to_chat(14, 'status_change; Idle or Resting')
 		equip(sets.aftercast.Idle)
 	elseif new == 'Engaged' then
 		--windower.add_to_chat(14, 'status_change; Engaged')
 		equip(sets.aftercast.TP)
+	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
 	end
 end
 
