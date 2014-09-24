@@ -107,8 +107,8 @@ function get_sets()
 		back="Pahtli Cape", waist="Witch Sash", legs="Atrophy Tights", feet="Umbani Boots"} 
 		--59% Cure Pot., 15%Haste ,MND 92+162
 	
-	sets.midcast.Enhancing = {head="Atrophy Chapeau", 
-		neck="Stone Gorget", left_ear="Estq. Earring", right_ear="Loquac. Earring", 
+	sets.midcast.Enhancing = {main="Arendsi Fleuret", sub="Genbu's Shield", 
+		head="Atrophy Chapeau", neck="Stone Gorget", left_ear="Estq. Earring", right_ear="Loquac. Earring", 
 		body="Vitivation Tabard", hands="Atrophy Gloves", left_ring="Prolix Ring", 
 		back="Estoqueur's Cape", waist="Siegel Sash", legs="Shedir Seraweels", feet="Estq. Houseaux +2"} 
 		--skill=473
