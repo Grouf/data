@@ -41,6 +41,7 @@ function get_sets()
 		waist="Siegel Sash",legs="Shedir Seraweels",feet="Orsn. Duckbills +2"}
 		
 	sets.midcast["Protectra V"] = set_combine(sets.precast.Enhancing,{feet="Piety Duckbills"})
+	sets.midcast["Shellra V"] = set_combine(sets.precast.Enhancing,{legs="Piety Pantaloons"})
 	
 	sets.midcast.NA = set_combine(sets.precast.Enhancing,{body="Orison Bliaud +2",
 		hands="Theophany Mitts",back="Mending Cape",
