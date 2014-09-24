@@ -16,11 +16,13 @@ function get_sets()
 		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Bagua Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Mecisto. Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Geomancy Sandals"}
-	
+	--Repulse Mantle
+	--Mecisto. Mantle
 	sets.precast.IdleLuopan = {main="Nehushtan",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
 		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Geomancy Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Mecisto. Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Bagua Sandals"}
+	--Lifestream Cape
 	
 	sets.precast.Idle = sets.precast.IdleRefresh
 	
@@ -60,7 +62,7 @@ function get_sets()
 		waist="Siegel Sash",legs="Shedir Seraweels",feet="Geomancy Sandals"}
 		
 	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
-		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat +1",
+		neck="Stoicheion Medal",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Umbani Boots"}
 		
@@ -77,7 +79,8 @@ function get_sets()
     sets.WS = set_combine(sets.TP, {neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ring="Cho'j Band",
 		waist="Prosilio Belt"})
     
-    sets.DontForget = {neck="Quanpur Necklace", left_ear="Reraise Earring", right_ear = "Linkpearl"}
+    sets.DontForget = {neck="Quanpur Necklace", left_ear="Reraise Earring", right_ear = "Linkpearl",
+		left_ring="Excelsis Ring"}
     
 	
 	send_command('input /macro book 20;wait .1;input /macro set 1')
@@ -90,13 +93,15 @@ function precast(spell)
 		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
 	
-	if spell.type=="WeaponSkill" then
+	elseif spell.type=="WeaponSkill" then
 		if sets.WS[spell.english] then
 			equip(sets.WS[spell.english])
 		else
 			equip(sets.WS)
 		end
-	end
+		if buffactive['Reive Mark'] then
+			equip({neck="Ygnas's Resolve +1"})
+		end
 	
 	elseif spell.prefix=="/jobability" then
 		if sets.JA[spell.english] then
@@ -141,7 +146,7 @@ function midcast(spell)
 	elseif spell.skill == 'Dark Magic' then
 		equip(sets.midcast.DarkMagic)
 		if spell.english:startswith('Aspir') or spell.english == 'Drain' then
-			equip({waist="Fucho-no-Obi"})
+			equip({left_ring="Excelsis Ring", waist="Fucho-no-Obi"})
 		end
 	elseif spell.skill == 'Enfeebling Magic' then
 		equip(sets.midcast.Enfeeble)
@@ -158,6 +163,9 @@ function aftercast(spell)
 	elseif player.status == 'Engaged' then
 		equip(sets.TP)
 	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
+	end
 end
 
 function pet_change(pet,gain)
@@ -169,6 +177,9 @@ function pet_change(pet,gain)
 		sets.precast.Idle = sets.precast.IdleRefresh
 	end
 	equip(sets.precast.Idle)
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
+	end
 end
 
 function pet_status_change(new,old)
@@ -185,10 +196,15 @@ function status_change(new,old)
 	elseif new == 'Engaged' then
 		equip(sets.TP)
 	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
+	end
 end
 
 function buff_change(buff_name,gain) --gain = True if gained, False if lost
-	--windower.add_to_chat(14, 'Buff_Change: ' ..buff_name.. ' gain? ' ..tostring(gain))
+	--windower.add_to_chat(9, 'Buff_Change: ' ..buff_name.. ' gain? ' ..tostring(gain))
+	--windower.add_to_chat(9, 'print_set(buffactive)')
+	--print_set(buffactive)
 	
 	if buff_name=='Collimated Fervor' then
 		if gain then
@@ -227,8 +243,20 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 			send_command('@input /echo Radial Arcana off, feet enabled')
 		end
 	end
-		
+	
 end
+
+--[[function indi_change(indi, gain)
+	--Useless as it does not (yet?) pass indi name
+
+	windower.add_to_chat(9, 'indi_change: gain=' ..tostring(gain).. ', indi.target=' ..indi.target..
+		', indi.element=' ..indi.element.. ', indi.element_id=' ..indi.element_id.. 
+		', indi.size=' ..indi.size) --can also use player.indi.xxx
+		
+	--windower.add_to_chat(9, 'print_set(indi):')
+	--print_set(indi)
+
+end]]
 
 function self_command(command)
 	--if command == 'Potency' then
