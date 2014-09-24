@@ -170,6 +170,9 @@ function aftercast(spell)
 	--elseif player.status == 'Engaged' then
 		--equip(sets.TP)
 	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
+	end
 end
 
 function pet_change(pet,gain)
@@ -209,6 +212,9 @@ function pet_change(pet,gain)
 		--windower.add_to_chat(9, pet.name.. ' released, Idle=IdleRefresh')
 	end
 	equip(sets.precast.Idle)
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
+	end
 end
 
 function pet_status_change(new,old)
@@ -265,6 +271,9 @@ function status_change(new,old)
 		equip(sets.precast.Rest)
 	--elseif new == 'Engaged' then
 		--equip(sets.TP)
+	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
 	end
 end
 
