@@ -52,7 +52,7 @@ function get_sets()
 	sets.midcast.Auspice = set_combine(sets.precast.Enhancing,{feet="Orsn. Duckbills +2"})
 	
 	sets.midcast.Divine= {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Kaabanax Hat",
-		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Gendewitha Bliaut",
+		neck="Stoicheion Medal",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Gendewitha Bliaut",
 		hands="Otomi Gloves",left_ring="Sangoma Ring",right_ring="Strendu Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 			
@@ -91,6 +91,9 @@ function precast(spell)
 			equip(sets.WS[spell.english])
 		else
 			equip(sets.TP.WS)
+		end
+		if buffactive['Reive Mark'] then
+			equip({neck="Ygnas's Resolve +1"})
 		end
 	end
 	--[[
@@ -144,6 +147,9 @@ function aftercast(spell)
 	else
 		equip(sets.precast.Idle)
 	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
+	end
 end
 
 function status_change(new,old)
@@ -153,6 +159,9 @@ function status_change(new,old)
 		equip(sets.precast.Rest)
 	elseif new == 'Engaged' then
 		equip(sets.TP.Engage)
+	end
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
 	end
 end
 
