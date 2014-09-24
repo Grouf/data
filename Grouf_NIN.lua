@@ -67,15 +67,15 @@ function get_sets()
 		right_ring="Rajas Ring",back="Vespid Mantle",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Otronif Boots +1"}
 	
-	sets.WS["Blade Hi"] = set_combine(sets.WS.Base,{neck="Shadow Gorget",hands="Iga Tekko +2"}) --AGI
+	sets.WS["Blade: Hi"] = set_combine(sets.WS.Base,{neck="Shadow Gorget",hands="Iga Tekko +2"}) --AGI
 	
-	sets.WS["Blade Shun"] = sets.WS.Base --DEX
+	sets.WS["Blade: Shun"] = sets.WS.Base --DEX
 	
-	sets.WS["Blade Kamu"] = sets.WS.Base --STR50 INT50
+	sets.WS["Blade: Kamu"] = sets.WS.Base --STR50 INT50
 	
-	sets.WS["Blade Jin"] = sets.WS.Base --STR30 DEX30
+	sets.WS["Blade: Jin"] = sets.WS.Base --STR30 DEX30
 	
-	sets.WS["Blade Yu"] = set_combine(sets.WS.Base,{left_ear="Friomisi Earring",
+	sets.WS["Blade: Yu"] = set_combine(sets.WS.Base,{left_ear="Friomisi Earring",
 		right_ear="Hecate's Earring",back="Toro Cape"}) --DEX50 INT50
 	
 	
@@ -92,7 +92,7 @@ function get_sets()
 	
 	sets.TP.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Dudgeon Earring",
 		right_ear="Heartseeker earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Dark Ring",
-		right_ring="Dark Ring",back="Ik Cape",waist="Flume Belt",
+		right_ring="Dark Ring",back="Yokaze Mantle",waist="Flume Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots +1"}
 
 	sets.aftercast = {}
