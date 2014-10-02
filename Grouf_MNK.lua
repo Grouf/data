@@ -157,6 +157,10 @@ function self_command(command)
 	end
 end
 
+function sub_job_change(new, old)
+	set_macro_book()
+end
+
 function set_macro_book()
 	-- Default macro book & page
 	if player.sub_job == 'WAR' then
