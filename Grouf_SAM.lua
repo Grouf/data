@@ -130,27 +130,27 @@ end
 function precast(spell)
 	--windower.add_to_chat(9, 'Precast: spell type= ' ..spell.type.. ' .english=' ..spell.english)
 	--[[if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
-		windower.add_to_chat(9, 'not JobAbility or WeaponSkill so Fast Cast')
+		add_to_chat(9, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
 	]]
 	--equip(sets[SetMode_Names[SetMode_Index]].Enfeeble)
 	--sets.DD.WS["Tachi: Fudo"]
 	--equip(sets[SetMode_Names[SetMode_Index]].WS[spell.english])
 	if spell.type == "WeaponSkill" then
-		windower.add_to_chat(9, 'WeaponSkill found: ' ..spell.english)
+		add_to_chat(9, 'WeaponSkill found: ' ..spell.english)
 		if sets[SetMode_Names[SetMode_Index]].WS[spell.english] then
 			equip(sets[SetMode_Names[SetMode_Index]].WS[spell.english])
-			windower.add_to_chat(9, 'Named WS set: ' ..SetMode_Names[SetMode_Index].. ' . ' ..spell.english)
+			add_to_chat(9, 'Named WS set: ' ..SetMode_Names[SetMode_Index].. ' . ' ..spell.english)
 		else
 			equip(sets[SetMode_Names[SetMode_Index]].WS)
-			windower.add_to_chat(9 'General WS set: ' ..SetMode_Names[SetMode_Index].. ' . ' ..spell.english)
+			add_to_chat(9, 'General WS set: ' ..SetMode_Names[SetMode_Index].. ' . ' ..spell.english)
 		end
 		if buffactive['Reive Mark'] then
 			equip({neck="Ygnas's Resolve +1"})
 		end
 	
 	elseif spell.prefix == "/jobability" then
-		--windower.add_to_chat(9, '/jobability found: ' ..spell.english)
+		--add_to_chat(9, '/jobability found: ' ..spell.english)
 		if spell.english == "Third Eye" and not buffactive['Seigan'] then
 			cancel_spell()
 			add_to_chat(12, 'Seigan not active, cancel Third Eye')
@@ -207,25 +207,25 @@ end
 function self_command(command)
 	if command == 'DD' then
 		SetMode_Index = 1
-		windower.add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
+		add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
 		sets.aftercast.TP = sets[SetMode_Names[SetMode_Index]].TP
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Danzo Sune-Ate"})
 	
 	elseif command == 'Accuracy' then
 		SetMode_Index = 2
-		windower.add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
+		add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
 		sets.aftercast.TP = sets[SetMode_Names[SetMode_Index]].TP
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Danzo Sune-Ate"})
 	
 	elseif command == 'DT' then
 		SetMode_Index = 3
-		windower.add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
+		add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
 		sets.aftercast.TP = sets[SetMode_Names[SetMode_Index]].TP
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Danzo Sune-Ate"})
 	
 	elseif command == 'Info' then
-		windower.add_to_chat(9, 'SAM Info:')
-		windower.add_to_chat(9, 'SetMode = ' ..SetMode_Names[SetMode_Index])
+		add_to_chat(9, 'SAM Info:')
+		add_to_chat(9, 'SetMode = ' ..SetMode_Names[SetMode_Index])
 	
 		
 	end
