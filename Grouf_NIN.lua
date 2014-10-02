@@ -58,7 +58,7 @@ function get_sets()
 	sets.midcast.Nuke = {head="Mochi. Hatsuburi", neck="Stoicheion Medal",left_ear="Friomisi Earring",
 		right_ear="Crematio Earring",body="Qaaxo Harness",left_ring="Prolix Ring",
 		left_ring="Perception Ring", right_ring="Acumen Ring",back="Toro Cape",
-		legs="Quiahuiz Trousers",feet="Hachiya Kyahan"} --feet should be 109relic
+		legs="Quiahuiz Trousers",feet="Mochizuki Kyahan"} --feet should be 109relic
 	
 	
 	sets.WS = {}
