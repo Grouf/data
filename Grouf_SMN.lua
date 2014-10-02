@@ -72,7 +72,7 @@ function get_sets()
 		body="Hagondes Coat +1", hands="Bokwus Gloves",left_ring="Sirona's Ring", right_ring="Solemn Ring",
 		back="Pahtli Cape", waist="Witch Sash", legs="Nares Trews", feet="Umbani Boots"}
 		
-	--[[sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
+	--[[sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"} ]]
@@ -85,7 +85,7 @@ function get_sets()
 	sets.BloodPactPhysical = {main="Gridarvor",sub="Elder's Grip",ammo="Seraphicaller",
 		head="Convoker's Horn", neck="Caller's Pendant",left_ear="Caller's Earring",right_ear="Graiai Earring",
 		body="Convoker's Doublet", hands="Glyphic Bracers",left_ring="Bifrost Ring",right_ring="Sangoma Ring",
-		back="Samanisi Cape", waist="Caller's Sash",legs="Convoker's Spats",feet="Glyphic Pigaches"}
+		back="Samanisi Cape", waist="Jaq'ij Sash",legs="Convoker's Spats",feet="Glyphic Pigaches"}
 	
 	sets.BloodPactMagical = {main="Eminent Pole",sub="Elder's Grip",ammo="Seraphicaller",
 		head="Glyphic Horn", neck="Caller's Pendant",left_ear="Caller's Earring",right_ear="Graiai Earring",
@@ -137,9 +137,7 @@ function precast(spell)
 		if buffactive['Reive Mark'] then
 			equip({neck="Ygnas's Resolve +1"})
 		end
-	
 	end
-	
 end
 
 function midcast(spell)
@@ -158,7 +156,6 @@ function midcast(spell)
 		equip(sets.Cure)
 		--windower.add_to_chat(9, 'Cure')
 	end
-	
 end
 
 function aftercast(spell)
