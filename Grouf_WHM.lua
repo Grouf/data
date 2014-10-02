@@ -37,7 +37,7 @@ function get_sets()
 	
 	sets.midcast.Enhancing = {main="Lehbrailg +2",sub="Fulcio Grip",ammo="Oreiad's Tathlum",
 		neck="Stone Gorget",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Anhur Robe",
-		hands="Augur's Gloves",left_ring="Prolix Ring",back="Swith Cape",
+		hands="Augur's Gloves",left_ring="Prolix Ring",back="Mending Cape",
 		waist="Siegel Sash",legs="Shedir Seraweels",feet="Orsn. Duckbills +2"}
 		
 	sets.midcast["Protectra V"] = set_combine(sets.precast.Enhancing,{feet="Piety Duckbills"})
@@ -58,7 +58,7 @@ function get_sets()
 		waist="Witch Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 			
 	sets.midcast.Repose = set_combine(sets.precast.Divine,{sub="Mephitis Grip",ammo="Kalboron Stone",head="Orison Cap +2",
-		left_ear="Psystorm Earring",right_ear="Lifestorm Earring",hands="Gendewitha Gages"})
+		left_ear="Psystorm Earring",right_ear="Lifestorm Earring",hands="Gendewitha Gages", back="Mending Cape"})
 	
 	sets.TP = {}
 	
