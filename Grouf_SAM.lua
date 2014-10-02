@@ -6,82 +6,41 @@
 
 function get_sets()
 	
-	sets.WS = {}
-	--[[sets.WS.Base = {head="Mikinaak Helm", neck="Tlamiztli Collar", left_ear="Steelflash Earring", 
-		right_ear="Bladeborn Earring", body="Phorcys Korazin", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
-		right_ring="Rajas Ring", back="Buquwik Cape", waist="Prosilio Belt +1", 
-		legs="Miki. Cuisses", feet="Mikinaak Greaves" }
-		]]
-	
-	-- Weapon Skill sets:  Damage --
-	sets.WS.DD = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Moonshade Earring", 
-		right_ear="Bladeborn Earring", body="Miki. Breastplate", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
-		right_ring="Rajas Ring", back="Buquwik Cape", waist="Prosilio Belt +1", 
-		legs="Miki. Cuisses", feet="Mikinaak Greaves" }
-		
-	sets.WS.DD["Tachi: Fudo"] = set_combine(sets.WS.DD,{neck="Light Gorget"}) --STR60
-	
-	--sets.WS.DD["Tachi: Kasha"] = set_combine(sets.WS.DD,{neck="Light Gorget"}) --STR75
-	--sets.WS.DD["Tachi: Gekko"] = set_combine(sets.WS.DD,{neck="Snow Gorget"}) --STR75
-	--sets.WS.DD["Tachi: Yukikaze"] = set_combine(sets.WS.DD,{neck="Snow Gorget"}) --STR75
-	--sets.WS.DD["Tachi: Rana"] = set_combine(sets.WS.DD,{neck="Shadow Gorget"}) --STR35
-	
-	sets.WS.DD["Tachi: Shoha"] = set_combine(sets.WS.DD,{neck="Shadow Gorget"})
-	
-	-- Weapon Skill sets:  Accuracy --
-	sets.WS.Acc = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Moonshade Earring", 
-		right_ear="Steelflash Earring", body="Miki. Breastplate", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
-		right_ring="Rajas Ring", back="Takaha Mantle", waist="Caudata Belt", 
-		legs="Miki. Cuisses", feet="Mikinaak Greaves" }
-		
-	sets.WS.Acc["Tachi: Fudo"] = set_combine(sets.WS.Acc,{neck="Light Gorget"}) --STR60
-	
-	--sets.WS.Acc["Tachi: Kasha"] = set_combine(sets.WS.Acc,{neck="Light Gorget"}) --STR75
-	--sets.WS.Acc["Tachi: Gekko"] = set_combine(sets.WS.Acc,{neck="Snow Gorget"}) --STR75
-	--sets.WS.Acc["Tachi: Yukikaze"] = set_combine(sets.WS.Acc,{neck="Snow Gorget"}) --STR75
-	--sets.WS.Acc["Tachi: Rana"] = set_combine(sets.WS.Acc,{neck="Shadow Gorget"}) --STR35
-	
-	sets.WS.Acc["Tachi: Shoha"] = set_combine(sets.WS.Acc,{neck="Shadow Gorget"})
-	
 	sets.JA = {}
 	sets.JA["Meikyo Shisui"] = {feet="Sakonji Sune-Ate"}
-	sets.JA.Meditate = {head="Wakido Kabuto", hands="Sakonji Kote"}
+	sets.JA.Meditate = {head="Wakido Kabuto", hands="Sakonji Kote", back="Takaha Mantle"}
 	sets.JA.Hasso = {hands="Wakido Kote", legs="Unkai Haidate +2"}
 	sets.JA["Warding Circle"] = {head="Wakido Kabuto"}
 	sets.JA.Sekkanoki = {hands="Unkai Kote +2"}
 	sets.JA["Blade Bash"] = {hands="Sakonji Kote"}
-	
-	sets.precast = {}
-	
-	sets.precast.Ranged = {head="Sakonji Kabuto",neck="Ocachi Gorget",left_ear="Moonshade earring",
-		right_ear="Clearview Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Paqichikaji Ring",
-		right_ring="Fistmele Ring",back="Buquwik Cape",waist="Buccaneer's Belt",
-		legs="Wakido Haidate",feet="Wakido Sune-Ate"} 	-- R.Acc=787  R.Att=923 iLvl=115 (beetle arrow) ???
-														-- R.Acc=792  R.Att=933 iLvl=115 (tulfaire arrow) ???
-		
-	sets.precast["Apex Arrow"] = sets.precast.Ranged
-		--[[neck="Light Gorget", 
-			waist="Thunder Belt"]]
-	
-	sets.precast.WS = sets.WS.DD 
-	
-	sets.precast["Tachi: Fudo"] = sets.WS.DD["Tachi: Fudo"]
-	
-	--sets.precast["Tachi: Kasha"] = sets.WS.DD["Tachi: Kasha"]
-	--sets.precast["Tachi: Gekko"] = sets.WS.DD["Tachi: Gekko"]
-	--sets.precast["Tachi: Yukikaze"] = sets.WS.DD["Tachi: Yukikaze"]
-	--sets.precast["Tachi: Rana"] = sets.WS.DD["Tachi: Rana"]
-	
-	sets.precast["Tachi: Shoha"] = sets.WS.DD["Tachi: Shoha"]
-	
-	sets.precast.Step = {head="Yaoyotl Helm", neck="Unkai Nodowa", left_ear="Steelflash Earring",
+	sets.JA.Step = {head="Yaoyotl Helm", neck="Unkai Nodowa", left_ear="Steelflash Earring",
 		right_ear="Heartseeker Earring", body="Miki. Breastplate", hands="Buremte Gloves", left_ring="Beeline Ring",
-		right_ring="Rajas Ring", back="Takaha Mantle", waist="Phasmida Belt",
+		right_ring="Rajas Ring", back="Takaha Mantle", waist="Olseni Belt",
 		legs="Miki. Cuisses", feet="Wakido Sune-Ate"} --Primary Acc: 834
-	
+	sets.JA["Violent Flourish"] = set_combine(sets.JA.Step, {left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		right_ring="Perception Ring", left_ring="Sangoma Ring"})
 		
-	sets.TP = {}
-	sets.TP.DD = {sub="Pole Grip", head="Otomi Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
+	
+	SetMode_Index = 1
+	SetMode_Names = {'DD','Accuracy', 'DT'}
+	
+sets.DD = {}
+	
+	sets.DD.WS = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Moonshade Earring", 
+		right_ear="Bladeborn Earring", body="Miki. Breastplate", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
+		right_ring="Rajas Ring", back="Buquwik Cape", waist="Prosilio Belt +1", 
+		legs="Miki. Cuisses", feet="Mikinaak Greaves"}
+	
+	sets.DD.WS["Tachi: Fudo"] = set_combine(sets.DD.WS,{neck="Light Gorget"}) --STR60
+	
+	--sets.DD.WS["Tachi: Kasha"] = set_combine(sets.DD.WS,{neck="Light Gorget"}) --STR75
+	--sets.DD.WS["Tachi: Gekko"] = set_combine(sets.DD.WS,{neck="Snow Gorget"}) --STR75
+	--sets.DD.WS["Tachi: Yukikaze"] = set_combine(sets.DD.WS,{neck="Snow Gorget"}) --STR75
+	--sets.DD.WS["Tachi: Rana"] = set_combine(sets.DD.WS,{neck="Shadow Gorget"}) --STR35
+	
+	sets.DD.WS["Tachi: Shoha"] = set_combine(sets.DD.WS,{neck="Shadow Gorget"})
+	
+	sets.DD.TP = {sub="Pole Grip", head="Otomi Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Sakonji Domaru", hands="Otronif Gloves", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Takaha mantle", waist="Cetl Belt", 
 		legs="Wakido Haidate", feet="Otronif Boots +1" }  	--With pole Grip Double Attack = 20%
@@ -93,60 +52,117 @@ function get_sets()
 															--Eva = 622???
 															--Def = 691???
 	
-	sets.TP.ACC = {sub="Tzacab Grip", head="Yaoyotl Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
+	
+sets.Accuracy = {}
+	
+	sets.Accuracy.WS = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Moonshade Earring", 
+		right_ear="Steelflash Earring", body="Miki. Breastplate", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
+		right_ring="Rajas Ring", back="Takaha Mantle", waist="Caudata Belt", 
+		legs="Miki. Cuisses", feet="Mikinaak Greaves"}
+	
+	sets.Accuracy.WS["Tachi: Fudo"] = set_combine(sets.Accuracy.WS,{neck="Light Gorget"}) --STR60
+	
+	--sets.Accuracy.WS["Tachi: Kasha"] = set_combine(sets.Accuracy.WS,{neck="Light Gorget"}) --STR75
+	--sets.Accuracy.WS["Tachi: Gekko"] = set_combine(sets.Accuracy.WS,{neck="Snow Gorget"}) --STR75
+	--sets.Accuracy.WS["Tachi: Yukikaze"] = set_combine(sets.Accuracy.WS,{neck="Snow Gorget"}) --STR75
+	--sets.Accuracy.WS["Tachi: Rana"] = set_combine(sets.Accuracy.WS,{neck="Shadow Gorget"}) --STR35
+	
+	sets.Accuracy.WS["Tachi: Shoha"] = set_combine(sets.Accuracy.WS,{neck="Shadow Gorget"})
+	
+	sets.Accuracy.TP = {sub="Tzacab Grip", head="Yaoyotl Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Miki. Breastplate", hands="Otronif Gloves", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Takaha mantle", waist="Cetl Belt", 
-		legs="Miki. Cuisses", feet="Wakido Sune-Ate" } --needs more work, added quick for Dimi
-		
-	--[[sets.TP.EVA = set_combine(sets.TP.DD,{neck="Torero Torque",left_ear="Ethereal Earring",
-		right_ear="Musical Earring",body="Otronif Harness",
-		right_ring="Defending Ring",waist="Koga sarashi",
-		legs="Otronif Brais"})  --Needs Verify]]
+		legs="Miki. Cuisses", feet="Wakido Sune-Ate" }
 	
-	sets.TP.DT= {sub="Pole Grip", head="Yaoyotl Helm", neck="Twilight Torque", left_ear="Steelflash Earring", 
+sets.DT = {}
+	
+	sets.DT.WS = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Moonshade Earring", 
+		right_ear="Bladeborn Earring", body="Miki. Breastplate", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
+		right_ring="Rajas Ring", back="Buquwik Cape", waist="Prosilio Belt +1", 
+		legs="Miki. Cuisses", feet="Mikinaak Greaves"}
+	
+	sets.DT.WS["Tachi: Fudo"] = set_combine(sets.DT.WS,{neck="Light Gorget"}) --STR60
+	
+	--sets.DT.WS["Tachi: Kasha"] = set_combine(sets.DT.WS,{neck="Light Gorget"}) --STR75
+	--sets.DT.WS["Tachi: Gekko"] = set_combine(sets.DT.WS,{neck="Snow Gorget"}) --STR75
+	--sets.DT.WS["Tachi: Yukikaze"] = set_combine(sets.DT.WS,{neck="Snow Gorget"}) --STR75
+	--sets.DT.WS["Tachi: Rana"] = set_combine(sets.DT.WS,{neck="Shadow Gorget"}) --STR35
+	
+	sets.DT.WS["Tachi: Shoha"] = set_combine(sets.DT.WS,{neck="Shadow Gorget"})
+	
+	sets.DT.TP= {sub="Pole Grip", head="Yaoyotl Helm", neck="Twilight Torque", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Otronif Harness", hands="Otronif Gloves", left_ring="Dark Ring", 
 		right_ring="Dark Ring", back="Repulse Mantle", waist="Flume Belt", 
-		legs="Otronif Brais", feet="Otronif Boots +1" }
+		legs="Otronif Brais", feet="Otronif Boots +1"}
+	
 
+	
+	
+	sets.precast = {}
+	--Check if I have items that are either R.Att or R.ACC
+	sets.precast.Ranged = {head="Sakonji Kabuto",neck="Ocachi Gorget",left_ear="Moonshade earring",
+		right_ear="Clearview Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Paqichikaji Ring",
+		right_ring="Fistmele Ring",back="Buquwik Cape",waist="Buccaneer's Belt",
+		legs="Wakido Haidate",feet="Wakido Sune-Ate"} 	-- R.Acc=787  R.Att=923 iLvl=115 (beetle arrow) ???
+														-- R.Acc=792  R.Att=933 iLvl=115 (tulfaire arrow) ???
+		
+	sets.precast["Apex Arrow"] = sets.precast.Ranged
+		--[[neck="Light Gorget", 
+			waist="Thunder Belt"]]
+	
+	sets.Utsusemi = {}
+	
 	sets.aftercast = {}
-	sets.aftercast.TP = sets.TP.DD
+	sets.aftercast.TP = sets.DD.TP
 	sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Danzo Sune-Ate"})
 	
+	sets.DontForget = {main="Tsurumaru", sub="Nativus Halberd", range="Cibitshavore",  
+		left_ear="Reraise Earring", right_ear = "Linkpearl", 
+		back="Mecisto. Mantle" }
+	
 	set_macro_book()
+	
 	
 end
 
 function precast(spell)
-	--windower.add_to_chat(14, 'Precast: spell type= ' ..spell.type.. ' .english=' ..spell.english)
+	--windower.add_to_chat(9, 'Precast: spell type= ' ..spell.type.. ' .english=' ..spell.english)
 	--[[if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
-		windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
+		windower.add_to_chat(9, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
 	]]
+	--equip(sets[SetMode_Names[SetMode_Index]].Enfeeble)
+	--sets.DD.WS["Tachi: Fudo"]
+	--equip(sets[SetMode_Names[SetMode_Index]].WS[spell.english])
 	if spell.type == "WeaponSkill" then
-		--windower.add_to_chat(14, 'WeaponSkill found: ' ..spell.english)
-		if sets.precast[spell.english] then
-			equip(sets.precast[spell.english])
-			--windower.add_to_chat(14, 'Named WS set: ' ..spell.english)
+		windower.add_to_chat(9, 'WeaponSkill found: ' ..spell.english)
+		if sets[SetMode_Names[SetMode_Index]].WS[spell.english] then
+			equip(sets[SetMode_Names[SetMode_Index]].WS[spell.english])
+			windower.add_to_chat(9, 'Named WS set: ' ..SetMode_Names[SetMode_Index].. ' . ' ..spell.english)
 		else
-			equip(sets.precast.WS)
-			--windower.add_to_chat(14, 'General WS set: ' ..spell.english)
+			equip(sets[SetMode_Names[SetMode_Index]].WS)
+			windower.add_to_chat(9 'General WS set: ' ..SetMode_Names[SetMode_Index].. ' . ' ..spell.english)
 		end
 		if buffactive['Reive Mark'] then
 			equip({neck="Ygnas's Resolve +1"})
 		end
 	
 	elseif spell.prefix == "/jobability" then
-		--windower.add_to_chat(14, '/jobability found: ' ..spell.english)
+		--windower.add_to_chat(9, '/jobability found: ' ..spell.english)
+		if spell.english == "Third Eye" and not buffactive['Seigan'] then
+			cancel_spell()
+			add_to_chat(12, 'Seigan not active, cancel Third Eye')
+			return
+		end
 		if sets.JA[spell.english] then
 			equip(sets.JA[spell.english])
 		elseif spell.type == 'Step' or spell.english == 'Violent Flourish' then
-			equip(sets.precast.Step)
+			equip(sets.JA.Step)
 		end
 	
-	elseif sets.precast[spell.english] then
-		--windower.add_to_chat(14, 'Specific precast: ' ..spell.english)
-		equip(sets.precast[spell.english])
-	
+	elseif spell.type == 'Ninjutsu' or spell.type == 'Trust' then
+		windower.add_to_chat(9, 'Spell type ' ..spell.type)
+		equip(sets.Utsusemi)
 	
 	end
 	
@@ -183,53 +199,37 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 	elseif not gain then -- something lost
 	
 	end]]
-	--windower.add_to_chat(14, 'buff_name = ' ..buff_name.. ' & ID = ' ..tostring(buff_name.id))
+	--windower.add_to_chat(9, 'buff_name = ' ..buff_name.. ' & ID = ' ..tostring(buff_name.id))
 end
 
 function self_command(command)
 	if command == 'DD' then
-		sets.aftercast.TP = sets.TP.DD
+		SetMode_Index = 1
+		windower.add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
+		sets.aftercast.TP = sets[SetMode_Names[SetMode_Index]].TP
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Danzo Sune-Ate"})
-		sets.precast.WS = sets.WS.DD 
-		sets.precast["Tachi: Fudo"] = sets.WS.DD["Tachi: Fudo"]
-		--sets.precast["Tachi: Kasha"] = sets.WS.DD["Tachi: Kasha"]
-		--sets.precast["Tachi: Gekko"] = sets.WS.DD["Tachi: Gekko"]
-		--sets.precast["Tachi: Yukikaze"] = sets.WS.DD["Tachi: Yukikaze"]
-		--sets.precast["Tachi: Rana"] = sets.WS.DD["Tachi: Rana"]
-		sets.precast["Tachi: Shoha"] = sets.WS.DD["Tachi: Shoha"]
-		windower.add_to_chat(9, 'DD set')
-		
-	elseif command == 'ACC' then
-		sets.aftercast.TP = sets.TP.ACC
+	
+	elseif command == 'Accuracy' then
+		SetMode_Index = 2
+		windower.add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
+		sets.aftercast.TP = sets[SetMode_Names[SetMode_Index]].TP
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Danzo Sune-Ate"})
-		sets.precast.WS = sets.WS.Acc 
-		sets.precast["Tachi: Fudo"] = sets.WS.Acc["Tachi: Fudo"]
-		--sets.precast["Tachi: Kasha"] = sets.WS.Acc["Tachi: Kasha"]
-		--sets.precast["Tachi: Gekko"] = sets.WS.Acc["Tachi: Gekko"]
-		--sets.precast["Tachi: Yukikaze"] = sets.WS.Acc["Tachi: Yukikaze"]
-		--sets.precast["Tachi: Rana"] = sets.WS.Acc["Tachi: Rana"]
-		sets.precast["Tachi: Shoha"] = sets.WS.Acc["Tachi: Shoha"]
-		windower.add_to_chat(9, 'ACC set')
-		
+	
 	elseif command == 'DT' then
-		sets.aftercast.TP = sets.TP.DT
+		SetMode_Index = 3
+		windower.add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
+		sets.aftercast.TP = sets[SetMode_Names[SetMode_Index]].TP
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Danzo Sune-Ate"})
-		sets.precast.WS = sets.WS.Acc 
-		sets.precast["Tachi: Fudo"] = sets.WS.Acc["Tachi: Fudo"]
-		--sets.precast["Tachi: Kasha"] = sets.WS.Acc["Tachi: Kasha"]
-		--sets.precast["Tachi: Gekko"] = sets.WS.Acc["Tachi: Gekko"]
-		--sets.precast["Tachi: Yukikaze"] = sets.WS.Acc["Tachi: Yukikaze"]
-		--sets.precast["Tachi: Rana"] = sets.WS.Acc["Tachi: Rana"]
-		sets.precast["Tachi: Shoha"] = sets.WS.Acc["Tachi: Shoha"]
-		windower.add_to_chat(9, 'DT set')
+	
+	elseif command == 'Info' then
+		windower.add_to_chat(9, 'SAM Info:')
+		windower.add_to_chat(9, 'SetMode = ' ..SetMode_Names[SetMode_Index])
+	
 		
 	end
 	
-	if player.status =='Engaged' then
-		equip(sets.aftercast.TP)
-	else
-		equip(sets.aftercast.Idle)
-	end
+	status_change(player.status)
+
 end
 
 function sub_job_change(new,old)
