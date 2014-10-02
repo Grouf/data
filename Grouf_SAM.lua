@@ -40,17 +40,25 @@ sets.DD = {}
 	
 	sets.DD.WS["Tachi: Shoha"] = set_combine(sets.DD.WS,{neck="Shadow Gorget"})
 	
+	sets.DD.Ranged = {head="Sakonji Kabuto", neck="Ocachi Gorget", left_ear="Steelflash Earring",
+		right_ear="Clearview Earring", body="Kyujutsugi", hands="Buremte Gloves", left_ring="Paqichikaji Ring",
+		right_ring="Fistmele Ring", back="Buquwik Cape", waist="Buccaneer's Belt",
+		legs="Wakido Haidate", feet="Wakido Sune-Ate"} 	-- R.Acc=861  R.Att=960 iLvl=115 (tulfaire arrow)
+														-- R.Acc=856  R.Att=950 iLvl=115 (demon arrow)
+														-- R.Acc=787  R.Att=923 iLvl=115 (beetle arrow) ???
+	sets.DD.WS["Apex Arrow"] = set_combine(sets.DD.Ranged, {left_ear="Moonshade Earring"})
+	
 	sets.DD.TP = {sub="Pole Grip", head="Yaoyotl Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Xaddi Mail", hands="Xaddi Gauntlets", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Takaha mantle", waist="Cetl Belt", 
-		legs="Wakido Haidate", feet="Otronif Boots +1" }  	--With pole Grip Double Attack = 20%
-															--Store TP = 53
-															--Haste = 30%
-															--Avg Item Level = 116
-															--Acc = 802???
-															--Att = 976???
-															--Eva = 622???
-															--Def = 691???
+		legs="Wakido Haidate", feet="Otronif Boots +1" }  	--With pole Grip Double Attack = 21%
+															--Store TP = 51
+															--Haste = 29%
+															--iLevel = 118
+															--Acc = 878
+															--Att = 995
+															--Eva = 700
+															--Def = 783
 	
 	
 sets.Accuracy = {}
@@ -69,11 +77,19 @@ sets.Accuracy = {}
 	
 	sets.Accuracy.WS["Tachi: Shoha"] = set_combine(sets.Accuracy.WS,{neck="Shadow Gorget"})
 	
+	sets.Accuracy.Ranged = {head="Sakonji Kabuto", neck="Iqabi Necklace", left_ear="Steelflash Earring",
+		right_ear="Clearview Earring", body="Kyujutsugi", hands="Buremte Gloves", left_ring="Paqichikaji Ring",
+		right_ring="Fistmele Ring", back="Kayapa Cape", waist="Buccaneer's Belt",
+		legs="Wakido Haidate", feet="Wakido Sune-Ate"} 	-- R.Acc=787  R.Att=923 iLvl=115 (beetle arrow) ???
+														-- R.Acc=792  R.Att=933 iLvl=115 (tulfaire arrow) ???
+		
+	sets.Accuracy.WS["Apex Arrow"] = set_combine(sets.Accuracy.Ranged, {left_ear="Moonshade Earring"})
+	
 	sets.Accuracy.TP = {sub="Tzacab Grip", head="Yaoyotl Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Miki. Breastplate", hands="Xaddi Gauntlets", left_ring="Cho'j Band", 
-		right_ring="Rajas Ring", back="Takaha mantle", waist="Cetl Belt", 
-		legs="Miki. Cuisses", feet="Wakido Sune-Ate" }
-	
+		right_ring="Rajas Ring", back="Takaha mantle", waist="Olseni Belt", 
+		legs="Miki. Cuisses", feet="Whirlpool Greaves" } --need Wakido feet when they are 119
+			--Accuracy = 941,  iLvl=117
 sets.DT = {}
 	
 	sets.DT.WS = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Moonshade Earring", 
@@ -90,26 +106,15 @@ sets.DT = {}
 	
 	sets.DT.WS["Tachi: Shoha"] = set_combine(sets.DT.WS,{neck="Shadow Gorget"})
 	
+	sets.DT.Ranged = sets.Accuracy.Ranged
+	sets.DT.WS["Apex Arrow"] = sets.Accuracy.WS["Apex Arrow"]
+	
 	sets.DT.TP= {sub="Pole Grip", head="Yaoyotl Helm", neck="Twilight Torque", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Otronif Harness", hands="Xaddi Gauntlets", left_ring="Dark Ring", 
 		right_ring="Dark Ring", back="Repulse Mantle", waist="Flume Belt", 
 		legs="Otronif Brais", feet="Otronif Boots +1"}
 	
 
-	
-	
-	sets.precast = {}
-	--Check if I have items that are either R.Att or R.ACC
-	sets.precast.Ranged = {head="Sakonji Kabuto",neck="Ocachi Gorget",left_ear="Moonshade earring",
-		right_ear="Clearview Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Paqichikaji Ring",
-		right_ring="Fistmele Ring",back="Buquwik Cape",waist="Buccaneer's Belt",
-		legs="Wakido Haidate",feet="Wakido Sune-Ate"} 	-- R.Acc=787  R.Att=923 iLvl=115 (beetle arrow) ???
-														-- R.Acc=792  R.Att=933 iLvl=115 (tulfaire arrow) ???
-		
-	sets.precast["Apex Arrow"] = sets.precast.Ranged
-		--[[neck="Light Gorget", 
-			waist="Thunder Belt"]]
-	
 	sets.Utsusemi = {}
 	
 	sets.aftercast = {}
@@ -207,19 +212,19 @@ end
 function self_command(command)
 	if command == 'DD' then
 		SetMode_Index = 1
-		add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
+		add_to_chat(9, 'SetMode now set to: ' ..SetMode_Names[SetMode_Index] )
 		sets.aftercast.TP = sets[SetMode_Names[SetMode_Index]].TP
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Danzo Sune-Ate"})
 	
 	elseif command == 'Accuracy' then
 		SetMode_Index = 2
-		add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
+		add_to_chat(9, 'SetMode now set to: ' ..SetMode_Names[SetMode_Index] )
 		sets.aftercast.TP = sets[SetMode_Names[SetMode_Index]].TP
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Danzo Sune-Ate"})
 	
 	elseif command == 'DT' then
 		SetMode_Index = 3
-		add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
+		add_to_chat(9, 'SetMode now set to: ' ..SetMode_Names[SetMode_Index] )
 		sets.aftercast.TP = sets[SetMode_Names[SetMode_Index]].TP
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Danzo Sune-Ate"})
 	
