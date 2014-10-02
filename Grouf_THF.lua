@@ -82,7 +82,7 @@ function get_sets()
 	sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
 	send_command('input /macro book 6;wait .1;input /macro set 10')
 	
-	sets.dontforget = {main="Izhiikoh", sub="Sandung", range="One-eyed", ammo="Acid Bolt", neck="Ygnas's Resolve +1",
+	sets.dontforget = {main="Izhiikoh", sub="Sandung", range="Tsoa. Crossbow", ammo="Acid Bolt", neck="Ygnas's Resolve +1",
 		left_ear="Linkpearl", right_ear="Reraise Earring", left_ring="Bloody Bolt"} 
 end
 
