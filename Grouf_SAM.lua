@@ -41,7 +41,7 @@ sets.DD = {}
 	sets.DD.WS["Tachi: Shoha"] = set_combine(sets.DD.WS,{neck="Shadow Gorget"})
 	
 	sets.DD.TP = {sub="Pole Grip", head="Otomi Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
-		right_ear="Bladeborn Earring", body="Sakonji Domaru", hands="Otronif Gloves", left_ring="Cho'j Band", 
+		right_ear="Bladeborn Earring", body="Sakonji Domaru", hands="Xaddi Gauntlets", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Takaha mantle", waist="Cetl Belt", 
 		legs="Wakido Haidate", feet="Otronif Boots +1" }  	--With pole Grip Double Attack = 20%
 															--Store TP = 53
@@ -70,7 +70,7 @@ sets.Accuracy = {}
 	sets.Accuracy.WS["Tachi: Shoha"] = set_combine(sets.Accuracy.WS,{neck="Shadow Gorget"})
 	
 	sets.Accuracy.TP = {sub="Tzacab Grip", head="Yaoyotl Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
-		right_ear="Bladeborn Earring", body="Miki. Breastplate", hands="Otronif Gloves", left_ring="Cho'j Band", 
+		right_ear="Bladeborn Earring", body="Miki. Breastplate", hands="Xaddi Gauntlets", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Takaha mantle", waist="Cetl Belt", 
 		legs="Miki. Cuisses", feet="Wakido Sune-Ate" }
 	
@@ -91,7 +91,7 @@ sets.DT = {}
 	sets.DT.WS["Tachi: Shoha"] = set_combine(sets.DT.WS,{neck="Shadow Gorget"})
 	
 	sets.DT.TP= {sub="Pole Grip", head="Yaoyotl Helm", neck="Twilight Torque", left_ear="Steelflash Earring", 
-		right_ear="Bladeborn Earring", body="Otronif Harness", hands="Otronif Gloves", left_ring="Dark Ring", 
+		right_ear="Bladeborn Earring", body="Otronif Harness", hands="Xaddi Gauntlets", left_ring="Dark Ring", 
 		right_ring="Dark Ring", back="Repulse Mantle", waist="Flume Belt", 
 		legs="Otronif Brais", feet="Otronif Boots +1"}
 	
@@ -119,6 +119,8 @@ sets.DT = {}
 	sets.DontForget = {main="Tsurumaru", sub="Nativus Halberd", range="Cibitshavore",  
 		left_ear="Reraise Earring", right_ear = "Linkpearl", 
 		back="Mecisto. Mantle" }
+	
+	sets.DontForget2 = {main="Tulfaire Arrow", sub="Tulfaire Quiver", range="Demon Arrow", ammo="Demon Quiver"}
 	
 	set_macro_book()
 	
