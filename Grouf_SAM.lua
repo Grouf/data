@@ -40,8 +40,8 @@ sets.DD = {}
 	
 	sets.DD.WS["Tachi: Shoha"] = set_combine(sets.DD.WS,{neck="Shadow Gorget"})
 	
-	sets.DD.TP = {sub="Pole Grip", head="Otomi Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
-		right_ear="Bladeborn Earring", body="Sakonji Domaru", hands="Xaddi Gauntlets", left_ring="Cho'j Band", 
+	sets.DD.TP = {sub="Pole Grip", head="Yaoyotl Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
+		right_ear="Bladeborn Earring", body="Xaddi Mail", hands="Xaddi Gauntlets", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Takaha mantle", waist="Cetl Belt", 
 		legs="Wakido Haidate", feet="Otronif Boots +1" }  	--With pole Grip Double Attack = 20%
 															--Store TP = 53
@@ -77,7 +77,7 @@ sets.Accuracy = {}
 sets.DT = {}
 	
 	sets.DT.WS = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Moonshade Earring", 
-		right_ear="Bladeborn Earring", body="Miki. Breastplate", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
+		right_ear="Bladeborn Earring", body="Xaddi Mail", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Buquwik Cape", waist="Prosilio Belt +1", 
 		legs="Miki. Cuisses", feet="Mikinaak Greaves"}
 	
