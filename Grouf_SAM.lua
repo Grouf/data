@@ -94,8 +94,8 @@ sets.Accuracy = {}
 			--Accuracy = 941,  iLvl=117
 sets.DT = {}
 	
-	sets.DT.WS = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Moonshade Earring", 
-		right_ear="Bladeborn Earring", body="Xaddi Mail", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
+	sets.DT.WS = {head="Gavialis Helm", neck="Tlamiztli Collar", left_ear="Moonshade Earring", 
+		right_ear="Bladeborn Earring", body="Miki. Breastplate", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Buquwik Cape", waist="Prosilio Belt +1", 
 		legs="Miki. Cuisses", feet="Mikinaak Greaves"}
 	
@@ -111,8 +111,8 @@ sets.DT = {}
 	sets.DT.Ranged = sets.Accuracy.Ranged
 	sets.DT.WS["Apex Arrow"] = sets.Accuracy.WS["Apex Arrow"]
 	
-	sets.DT.TP= {sub="Pole Grip", head="Yaoyotl Helm", neck="Twilight Torque", left_ear="Steelflash Earring", 
-		right_ear="Bladeborn Earring", body="Otronif Harness", hands="Xaddi Gauntlets", left_ring="Dark Ring", 
+	sets.DT.TP= {sub="Pole Grip", head="Gavialis Helm", neck="Twilight Torque", left_ear="Steelflash Earring", 
+		right_ear="Bladeborn Earring", body="Xaddi Mail", hands="Xaddi Gauntlets", left_ring="Dark Ring", 
 		right_ring="Dark Ring", back="Repulse Mantle", waist="Flume Belt", 
 		legs="Otronif Brais", feet="Otronif Boots +1"}
 	
