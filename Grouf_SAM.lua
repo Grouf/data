@@ -65,7 +65,7 @@ sets.DD = {}
 	
 sets.Accuracy = {}
 	
-	sets.Accuracy.WS = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Moonshade Earring", 
+	sets.Accuracy.WS = {head="Gavialis Helm", neck="Tlamiztli Collar", left_ear="Moonshade Earring", 
 		right_ear="Steelflash Earring", body="Miki. Breastplate", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Takaha Mantle", waist="Caudata Belt", 
 		legs="Miki. Cuisses", feet="Mikinaak Greaves"}
@@ -81,13 +81,13 @@ sets.Accuracy = {}
 	
 	sets.Accuracy.Ranged = {head="Sakonji Kabuto", neck="Iqabi Necklace", left_ear="Steelflash Earring",
 		right_ear="Clearview Earring", body="Kyujutsugi", hands="Buremte Gloves", left_ring="Paqichikaji Ring",
-		right_ring="Fistmele Ring", back="Kayapa Cape", waist="Buccaneer's Belt",
+		right_ring="Beeline Ring", back="Kayapa Cape", waist="Buccaneer's Belt",
 		legs="Wakido Haidate", feet="Wakido Sune-Ate"} 	-- R.Acc=787  R.Att=923 iLvl=115 (beetle arrow) ???
 														-- R.Acc=792  R.Att=933 iLvl=115 (tulfaire arrow) ???
 		
 	sets.Accuracy.WS["Apex Arrow"] = set_combine(sets.Accuracy.Ranged, {left_ear="Moonshade Earring"})
 	
-	sets.Accuracy.TP = {sub="Tzacab Grip", head="Yaoyotl Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
+	sets.Accuracy.TP = {sub="Tzacab Grip", head="Gavialis Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Miki. Breastplate", hands="Xaddi Gauntlets", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Takaha mantle", waist="Olseni Belt", 
 		legs="Miki. Cuisses", feet="Whirlpool Greaves" } --need Wakido feet when they are 119
