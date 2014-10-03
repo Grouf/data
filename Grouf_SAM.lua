@@ -6,6 +6,8 @@
 
 function get_sets()
 	
+	ElementalWeaponSkills = S{'Tachi: Goten', 'Tachi: Kagero', 'Tachi: Jinpu', 'Tachi: Koki'}
+	
 	sets.JA = {}
 	sets.JA["Meikyo Shisui"] = {feet="Sakonji Sune-Ate"}
 	sets.JA.Meditate = {head="Wakido Kabuto", hands="Sakonji Kote", back="Takaha Mantle"}
@@ -152,6 +154,13 @@ function precast(spell)
 		end
 		if buffactive['Reive Mark'] then
 			equip({neck="Ygnas's Resolve +1"})
+		end
+		if ElementalWeaponSkills:contains(spell.english) then
+			add_to_chat(9, 'Elemental WS: ' ..spell.english.. 'is element: ' ..spell.element..
+				', day element: ' ..world.day_element)
+			if spell.element == world.day_element then
+				equip({head="Gavialis Helm"})
+			end
 		end
 	
 	elseif spell.prefix == "/jobability" then

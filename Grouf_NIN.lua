@@ -16,6 +16,7 @@ function get_sets()
 		'Hojo: Ni','Kurayami: Ni','Dokumori: Ni','Jubaku: Ni','Yurin: Ni'
 		}
 		
+	ElementalWeaponSkills = S{'Blade:Teki', 'Blade: To', 'Blade: Ei', 'Blade: Yu'}
 	
 	sets.JA = {}
 	sets.JA.Innin = {head="Iga Zukin +2"}
@@ -116,6 +117,13 @@ function precast(spell)
 		end
 		if buffactive['Reive Mark'] then
 			equip({neck="Ygnas's Resolve +1"})
+		end
+		if ElementalWeaponSkills:contains(spell.english) then
+			add_to_chat(9, 'Elemental WS: ' ..spell.english.. 'is element: ' ..spell.element..
+				', day element: ' ..world.day_element)
+			if spell.element == world.day_element then
+				equip({head="Gavialis Helm"})
+			end
 		end
 	
 	elseif spell.prefix == "/jobability" then
