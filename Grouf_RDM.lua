@@ -234,10 +234,9 @@ function midcast(spell)
 		end
 	
 	elseif spell.skill == 'Healing Magic' then
-		if string.find(spell.english, 'Cursna') then
+		equip(sets.midcast.Cure)
+		if spell.english == 'Cursna' then
 			equip({feet="Gende. Galoshes"})
-		else
-			equip(sets.midcast.Cure)
 		end
 		
 	elseif spell.skill == 'Ninjutsu' then
