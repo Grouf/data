@@ -66,10 +66,10 @@ function get_sets()
 	--Need other JA listed
 	
 	sets.JA.Step = {head="Buremte Hat",
-		neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
+		neck="Iqabi Necklace", left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
 		body="Gendewitha Bliaut", hands="Buremte Gloves", left_ring="Rajas Ring", right_ring="Beeline Ring",
-		back="Letalis Mantle", waist="Phasmida Belt", legs="Mes'yohi Slacks", feet="Atrophy Boots"} 
-		--Primary Acc: 827
+		back="Letalis Mantle", waist="Olseni Belt", legs="Mes'yohi Slacks", feet="Atrophy Boots"} 
+		--Primary Acc: 827???
 	
 	sets.JA["Violent Flourish"] = {ammo="Kalboron Stone",
 		head="Buremte Hat", neck="Stoicheion Medal", left_ear="Steelflash Earring", right_ear="Heartseeker Earring",

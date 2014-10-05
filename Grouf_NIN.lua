@@ -25,10 +25,10 @@ function get_sets()
 	sets.JA.Sange = {body="Mochi. Chainmail"}
 	sets.JA['Mijin Gakure'] = {legs="Mochizuki Hakama"}
 	
-	sets.JA.Step = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
+	sets.JA.Step = {head="Whirlpool Mask",neck="Iqabi Necklace",left_ear="Steelflash Earring",
 		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
-		right_ring="Beeline Ring",back="Yokaze Mantle",waist="Phasmida Belt",
-		legs="Hachiya Hakama",feet="Otronif Boots +1"} --Primary Acc: 913
+		right_ring="Beeline Ring",back="Yokaze Mantle",waist="Olseni Belt",
+		legs="Hachiya Hakama",feet="Otronif Boots +1"} --Primary Acc: 913???
 	
 	sets.JA['Violent Flourish'] = set_combine(sets.JA.Step, {neck="Stoicheion Medal", 
 		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Perception Ring", 

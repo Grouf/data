@@ -20,10 +20,10 @@ function get_sets()
 	sets.precast['Hundred Fists'] = {body="Hes. Hose"}
 	
 	
-	sets.precast.Step = {ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
+	sets.precast.Step = {ammo="Honed Tathlum",head="Whirlpool Mask",neck="Iqabi Necklace",
 		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
 		left_ring="Beeline Ring",right_ring="Rajas Ring",back="Anchoret's Mantle",
-		legs="Manibozho Brais",feet="Qaaxo Leggings"}
+		waist="Olseni Belt", legs="Manibozho Brais",feet="Qaaxo Leggings"}
 
 	sets.precast['Violent Flourish'] = set_combine(sets.precast.Step, {neck="Stoicheion Medal", 
 		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Perception Ring", 

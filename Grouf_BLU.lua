@@ -111,9 +111,9 @@ function get_sets()
 		back="Swith cape",waist="Witful belt",
 		legs="Orvail Pants +1",feet="Qaaxo Leggings"}--23% Fast Cast, 16% Haste, Blue Magic Casting time -12%
 	
-	sets.precast.Step = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash earring",
+	sets.precast.Step = {head="Whirlpool Mask",neck="Iqabi Necklace",left_ear="Steelflash earring",
 		right_ear="Heartseeker earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
-		right_ring="Beeline Ring",back="Letalis Mantle",
+		right_ring="Beeline Ring",back="Letalis Mantle", waist="Olseni Belt",
 		legs="Manibozho Brais",feet="Assim. Charuqs"}
 	
 --Weapon Skills--

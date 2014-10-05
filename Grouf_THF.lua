@@ -50,9 +50,9 @@ function get_sets()
 		right_ring="Omega Ring",waist="Aquiline Belt",
 		legs="Iuitl Tights",feet="Qaaxo Leggings"}]]
 	
-	sets.precast.Step = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
+	sets.precast.Step = {head="Whirlpool Mask",neck="Iqabi Necklace",left_ear="Steelflash Earring",
 		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Plun. Armlets",left_ring="Rajas Ring",
-		right_ring="Beeline Ring",back="Letalis Mantle",waist="Phasmida Belt",
+		right_ring="Beeline Ring",back="Letalis Mantle",waist="Olseni Belt",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}
 	
 	sets.precast['Violent Flourish'] = set_combine(sets.precast.Step, {neck="Stoicheion Medal", 
