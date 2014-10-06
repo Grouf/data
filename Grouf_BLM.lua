@@ -32,7 +32,7 @@ function get_sets()
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 		
 	sets.midcast.Enhancing = {main="Lehbrailg +2",
-		head="Nahtirah Hat", neck="Stone Gorget", left_ear="Loquac. Earring",
+		head="Umuthi Hat", neck="Stone Gorget", left_ear="Loquac. Earring",
 		body="Anhur Robe", hands="Augur's Gloves",
 		back="Swith Cape", waist="Siegel Sash", legs="Shedir Seraweels", feet="Hag. Sabots +1"}
 		

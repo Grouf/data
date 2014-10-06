@@ -94,9 +94,9 @@ function get_sets()
 		
 	--sets.midcast.BloodPactSP
 	
-	sets.Enhancing = {body="Anhur Robe",neck="Stone Gorget",hands="Augur's Gloves",
+	sets.Enhancing = {head="Umuthi Hat", body="Anhur Robe", neck="Stone Gorget", hands="Augur's Gloves",
 		left_ear="Loquac. Earring",
-		waist="Siegel Sash",legs="Shedir Seraweels"}
+		waist="Siegel Sash", legs="Shedir Seraweels"}
 		
 	--[[sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat +1",
