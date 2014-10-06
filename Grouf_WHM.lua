@@ -7,7 +7,7 @@
 function get_sets()
 	sets.precast = {}
 	
-	sets.precast.Idle= {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
+	sets.precast.Idle= {main="Bolelabunga",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Gendewitha Bliaut",
 		hands="Serpentes Cuffs",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Cleric's Belt",legs="Nares Trews",feet="Serpentes Sabots"}
@@ -24,37 +24,37 @@ function get_sets()
 		neck="Imbodla Necklace",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Gendewitha Bliaut",
 		hands="Theophany Mitts",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Cleric's Belt",legs="Orsn. Pantaln. +2",feet="Piety Duckbills"}
- 
-	sets.midcast.Enfeeble= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
+	
+	sets.midcast.NA = set_combine(sets.precast.Cure,{body="Orison Bliaud +2",
+		hands="Theophany Mitts",back="Mending Cape",
+		legs="Theo. Pantaloons",feet="Gende. Galoshes"})
+	
+	sets.midcast.Enfeeble= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Theo. Briault",
 		hands="Gendewitha Gages",left_ring="Sangoma Ring",right_ring="Irrwisch Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Piety Duckbills"}
 
-	sets.midcast.DRKMagic= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabanax Hat",
+	sets.midcast.DRKMagic= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Gendewitha Bliaut",
 		hands="Gendewitha Gages",left_ring="Sangoma Ring",right_ring="Acumen Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 	
 	sets.midcast.Enhancing = {main="Lehbrailg +2",sub="Fulcio Grip",ammo="Oreiad's Tathlum",
-		neck="Stone Gorget",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Anhur Robe",
-		hands="Augur's Gloves",left_ring="Prolix Ring",back="Mending Cape",
-		waist="Siegel Sash",legs="Shedir Seraweels",feet="Orsn. Duckbills +2"}
+		head="Umuthi Hat", neck="Stone Gorget", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
+		body="Anhur Robe", hands="Augur's Gloves", left_ring="Prolix Ring",
+		back="Mending Cape", waist="Siegel Sash", legs="Shedir Seraweels", feet="Orsn. Duckbills +2"}
 		
 	sets.midcast["Protectra V"] = set_combine(sets.precast.Enhancing,{feet="Piety Duckbills"})
 	sets.midcast["Shellra V"] = set_combine(sets.precast.Enhancing,{legs="Piety Pantaloons"})
-	
-	sets.midcast.NA = set_combine(sets.precast.Enhancing,{body="Orison Bliaud +2",
-		hands="Theophany Mitts",back="Mending Cape",
-		legs="Theo. Pantaloons",feet="Gende. Galoshes"})
 		
-	sets.midcast.Regen = set_combine(sets.precast.Enhancing,{body="Cleric's Briault", hands="Orison Mitts +2",
-		legs="Theo. Pantaloons"})
+	sets.midcast.Regen = set_combine(sets.precast.Enhancing,{main="Bolelabunga", body="Cleric's Briault", 
+		hands="Orison Mitts +2", legs="Theo. Pantaloons"})
 	
 	sets.midcast.Auspice = set_combine(sets.precast.Enhancing,{feet="Orsn. Duckbills +2"})
 	
-	sets.midcast.Divine= {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Kaabanax Hat",
+	sets.midcast.Divine= {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Gendewitha Bliaut",
-		hands="Otomi Gloves",left_ring="Sangoma Ring",right_ring="Strendu Ring",back="Refraction Cape",
+		hands="Gendewitha Gages",left_ring="Sangoma Ring",right_ring="Strendu Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 			
 	sets.midcast.Repose = set_combine(sets.precast.Divine,{sub="Mephitis Grip",ammo="Kalboron Stone",head="Orison Cap +2",
@@ -82,9 +82,9 @@ function get_sets()
 end
 
 function precast(spell)
-	--windower.add_to_chat(14, 'Precast: spell type= ' ..spell.type)
+	--add_to_chat(14, 'Precast: spell type= ' ..spell.type)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
-		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
+		--add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
 	
 	elseif spell.type=="WeaponSkill" then
@@ -109,7 +109,7 @@ end
 function midcast(spell)
 	if spell.prefix == '/jobability' or spell.type == 'WeaponSkill' then
 	--midcast doesn't exist for JA or WS so cancel the processing of this function
-		--windower.add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
+		--add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
 		return
 	end
 	
@@ -119,7 +119,7 @@ function midcast(spell)
 	elseif spell.skill == 'Healing Magic' then
 		if string.find(spell.english, 'na') then
 			equip(sets.midcast.NA)
-			windower.add_to_chat(14, 'NA spell detected: ' ..spell.english)
+			--add_to_chat(14, 'NA spell detected: ' ..spell.english)
 		else
 			equip(sets.midcast.Cure)
 		end
