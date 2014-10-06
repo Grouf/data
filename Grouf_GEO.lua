@@ -12,13 +12,13 @@ function get_sets()
 		hands="Hagondes Cuffs",left_ring="Prolix Ring",back="Lifestream Cape",
 		waist="Witful Belt",legs="Geomancy Pants",feet="Hag. Sabots +1"}  --Fast Cast = 47%
 		
-	sets.precast.IdleRefresh = {main="Nehushtan",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
+	sets.precast.IdleRefresh = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
 		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Bagua Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Mecisto. Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Geomancy Sandals"}
 	--Repulse Mantle
 	--Mecisto. Mantle
-	sets.precast.IdleLuopan = {main="Nehushtan",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
+	sets.precast.IdleLuopan = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
 		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Geomancy Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Mecisto. Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Bagua Sandals"}
@@ -59,8 +59,8 @@ function get_sets()
 			--Total:			802
 		
 	--Enhancing needs work
-	sets.midcast.Enhancing = {body="Anhur Robe",neck="Stone Gorget",hands="Augur's Gloves",
-		left_ear="Loquac. Earring",
+	sets.midcast.Enhancing = {body="Anhur Robe", head="Umuthi Hat", neck="Stone Gorget",
+		hands="Augur's Gloves", left_ear="Loquac. Earring",
 		waist="Siegel Sash",legs="Shedir Seraweels",feet="Geomancy Sandals"}
 		
 	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
