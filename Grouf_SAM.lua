@@ -54,7 +54,7 @@ sets.DD = {}
 		right_ear="Bladeborn Earring", body="Xaddi Mail", hands="Xaddi Gauntlets", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Takaha mantle", waist="Cetl Belt", 
 		legs="Wakido Haidate", feet="Otronif Boots +1" }  	--With pole Grip Double Attack = 21%
-															--Store TP = 51
+															--Store TP = 52
 															--Haste = 29%
 															--iLevel = 118
 															--Acc = 878
