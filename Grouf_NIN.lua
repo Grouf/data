@@ -77,11 +77,11 @@ function get_sets()
 	sets.WS["Blade: Jin"] = sets.WS.Base --STR30 DEX30
 	
 	sets.WS["Blade: Yu"] = set_combine(sets.WS.Base,{left_ear="Friomisi Earring",
-		right_ear="Hecate's Earring",back="Toro Cape"}) --DEX50 INT50
+		right_ear="Crematio Earring",back="Toro Cape"}) --DEX50 INT50
 	
 	
 	sets.TP = {}
-	sets.TP.DD = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
+	sets.TP.DD = {head="Ptica Headgear",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Epona's Ring",
 		right_ring="Rajas Ring",back="Yokaze Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Otronif Boots +1"}
@@ -104,8 +104,9 @@ function get_sets()
 end
 
 function precast(spell)
-	--windower.add_to_chat(14, 'Precast: spell=' ..spell.english.. ' spell type=' ..spell.type.. ' Skill=' ..spell.skill)
-	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
+	--add_to_chat(14, 'Precast: spell=' ..spell.english.. ' spell type=' ..spell.type.. ' Skill=' ..spell.skill)
+	--add_to_chat(14, 'Precast: spell=' ..spell.english.. ' spell type=' ..spell.type)
+	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' and spell.english ~= 'Ranged' then
 		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
 	
@@ -132,6 +133,9 @@ function precast(spell)
 		elseif spell.type == 'Step' then
 			equip(sets.JA.Step)
 		end
+	
+	elseif spell.english == "Ranged" then
+		equip(sets.precast.Ranged)
 	end
 	
 end
@@ -145,18 +149,18 @@ function midcast(spell)
 	
 	if sets.midcast[spell.english] then
 		equip(sets.midcast[spell.english])
-		--windower.add_to_chat(9, 'Spell name as set: ' ..spell.english)
+		--add_to_chat(9, 'Spell name as set: ' ..spell.english)
 	elseif spell.type == "Ninjutsu" then
-		--windower.add_to_chat(9, 'Ninjitsu Detected: ' ..spell.english.. ' ' ..spell.type)
+		--add_to_chat(9, 'Ninjitsu Detected: ' ..spell.english.. ' ' ..spell.type)
 		if NinjutsuNuke:contains(spell.english) then
 			equip(sets.midcast.Nuke)
-			--windower.add_to_chat(9, 'Nuke Detected')
+			--add_to_chat(9, 'Nuke Detected')
 		elseif NinjutsuEnfeeble:contains(spell.english) then
 			equip(sets.midcast.Enfeeble)
-			--windower.add_to_chat(9, 'Enfeeble Detected')
+			--add_to_chat(9, 'Enfeeble Detected')
 		else
 			equip(sets.midcast.Utsusemi)
-			--windower.add_to_chat(9, 'Other Detected, Utsusemi Set: ' ..spell.english)
+			--add_to_chat(9, 'Other Detected, Utsusemi Set: ' ..spell.english)
 		end
 	end
 	
@@ -190,10 +194,10 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 			equip({body="Iga Ningi +2"}) -- Need to verify this works
 			disable('body')
 			--send_command('@wait 0.5; gs disable body;')
-			windower.add_to_chat(9, 'Migawari status detected, Empy body on, Body disabled')
+			add_to_chat(9, 'Migawari status detected, Empy body on, Body disabled')
 		else
 			enable('body')
-			windower.add_to_chat(9, 'Migawari status lost, Body enabled')
+			add_to_chat(9, 'Migawari status lost, Body enabled')
 		end
 	end
 	
@@ -204,11 +208,11 @@ function self_command(command)
 		sets.aftercast.TP = sets.TP.DD
 		sets.aftercast.Idle = sets.TP.DD
 		equip(sets.aftercast.TP)
-		windower.add_to_chat(9, 'DD set')
+		add_to_chat(9, 'DD set')
 	elseif command == 'DT' then
 		sets.aftercast.TP = sets.DT
 		sets.aftercast.Idle = sets.DT
 		equip(sets.aftercast.TP)
-		windower.add_to_chat(9, 'DT set')
+		add_to_chat(9, 'DT set')
 	end
 end
