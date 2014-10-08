@@ -113,11 +113,11 @@ sets.DT = {}
 	
 	sets.DT.TP= {sub="Pole Grip", head="Gavialis Helm", neck="Twilight Torque", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Xaddi Mail", hands="Xaddi Gauntlets", left_ring="Dark Ring", 
-		right_ring="Dark Ring", back="Repulse Mantle", waist="Flume Belt", 
+		right_ring="Shadow Ring", back="Repulse Mantle", waist="Flume Belt", 
 		legs="Otronif Brais", feet="Otronif Boots +1"}
 	
 
-	sets.Utsusemi = {}
+	sets.Utsusemi = {right_ear="Loquac. Earring", right_ring="Prolix Ring"}
 	
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.DD.TP
