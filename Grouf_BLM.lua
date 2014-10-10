@@ -1,51 +1,51 @@
 --[[
-		 =========================
-		|   B L A C K   M A G E   | 
-		 =========================
+		===========================
+		|   B L A C K   M A G E   |
+		===========================
 ]]
 
 function get_sets()
 	sets.precast = {}
-	
+
 	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",
-		head="Nahtirah Hat", neck="Stoicheion Medal", left_ear="Loquac. Earring", 
-		body="Anhur Robe",hands="Hagondes Cuffs", right_ring="Prolix Ring", 
-		back="Swith Cape",waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots"} 
+		head="Nahtirah Hat", neck="Stoicheion Medal", left_ear="Loquac. Earring",
+		body="Anhur Robe",hands="Hagondes Cuffs", right_ring="Prolix Ring",
+		back="Swith Cape",waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots"}
 		-- 37% Fast Cast
-	
+
 	sets.precast.Idle = {main="Lehbrailg +2", sub="Elder's Grip", ammo="Witchstone",
 		head="Hagondes Hat", neck="Stoicheion Medal", left_ear="Hecate's Earring", right_ear="Friomisi Earring",
 		body="Hagondes Coat +1", hands="Serpentes Cuffs", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Toro Cape", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
-	
+
 	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff",sub="Elder's Grip"})
-	
+
 	sets.midcast = {}
 	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
 		head="Kaabnax Hat", neck="Imbodla Necklace", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
 		body="Hagondes Coat +1", hands="Bokwus Gloves", left_ring="Sirona's Ring", right_ring="Solemn Ring",
 		back="Pahtli Cape", waist="Witch Sash", legs="Nares Trews",feet="Umbani Boots"}
-		
+
 	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat", neck="Imbodla Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Irrwisch Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
-		
+
 	sets.midcast.Enhancing = {main="Lehbrailg +2",
 		head="Umuthi Hat", neck="Stone Gorget", left_ear="Loquac. Earring",
 		body="Anhur Robe", hands="Augur's Gloves",
-		back="Swith Cape", waist="Siegel Sash", legs="Shedir Seraweels", feet="Hag. Sabots +1"}
-		
+		back="Swith Cape", waist="Olympus Sash", legs="Shedir Seraweels", feet="Hag. Sabots +1"}
+
 	sets.midcast.ElementalMagic = {main="Lehbrailg +2", sub="Elder's Grip", ammo="Witchstone",
 		head="Buremte Hat", neck="Stoicheion Medal", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Spaekona's Coat", hands="Hagondes Cuffs", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
-		
+
 	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat",	neck="Stoicheion Medal", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Acumen Ring", right_ring="Sangoma Ring",
 		back="Bane Cape", waist="Witch Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
-	
+
 	sets.TP = {}
 	sets.TP.Engage = {main="Lehbrailg +2", sub="Pole Grip", ammo="Witchstone",
 		head="Kaabnax Hat",	neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
@@ -56,14 +56,14 @@ function get_sets()
 		neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ear="Bladeborn Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Rajas Ring", right_ring="Cho'j Band",
 		back="Buquwik Cape", waist="Prosilio Belt +1", legs="Hagondes Pants +1", feet="Umbani Boots"}
-	
+
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
 	sets.aftercast.Idle = sets.TP.DD
 	send_command('input /macro book 4;wait .1;input /macro set 1')
-	
+
 	sets.dontforget = {head="Striga Crown", left_ring="Excelsis Ring", feet="Spaekona's Sabots"}
-	
+
 end
 
 function precast(spell)
@@ -74,7 +74,7 @@ function precast(spell)
 		if spell.skill == 'Elemental Magic' then
 			equip({feet="Spaekona's Sabots"})
 		end
-	
+
 	elseif spell.type == "WeaponSkill" then
 		if sets.WS[spell.english] then
 			equip(sets.WS[spell.english])
@@ -92,7 +92,7 @@ function precast(spell)
 		end
 	end
 	]]
-	
+
 end
 
 function midcast(spell)
@@ -101,17 +101,13 @@ function midcast(spell)
 		--windower.add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
 		return
 	end
-	
+
 	if sets.midcast[spell.english] then
 		equip(sets.midcast[spell.english])
 	elseif spell.skill == 'Enhancing Magic' then
-		if spell.english == 'Stoneskin' or spell.english == 'Blink' or 
-		spell.english == 'Aquaveil' or spell.english == 'Phalanx' then
-			equip(sets.midcast.Enhancing)
-			--windower.add_to_chat(14, 'Midcast: Enhancing casting, Enhancing set')
-		else
-			equip(sets.precast.FastCast)
-			--windower.add_to_chat(14, 'Midcast: Enhancing casting, Fast Cast set')
+		equip(sets.midcast.Enhancing)
+		if spell.english == 'Stoneskin' then
+			equip(waist="Siegel Sash")
 		end
 	elseif spell.skill == 'Elemental Magic' then
 		equip(sets.midcast.ElementalMagic)

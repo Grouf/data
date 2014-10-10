@@ -1,165 +1,165 @@
 --[[
 		=======================
-		|   R E D   M A G E   | 
+		|   R E D   M A G E   |
 		=======================
 ]]
 
 function get_sets()
-	
+
 	FastCastOnlySpells = S{'Warp', 'Warp II','Escape','Tractor','Raise', 'Raise II' ,'Reraise',
 		'Protect', 'Protect II', 'Protect III', 'Protect IV', 'Protect V',
-		'Shell', 'Shell II', 'Shell III', 'Shell IV', 'Shell V', 
+		'Shell', 'Shell II', 'Shell III', 'Shell IV', 'Shell V',
 		'Teleport-Dem', 'Teleport-Mea', 'Teleport-Holla', 'Teleport-Altep', 'Teleport-Yhoat', 'Teleport-Vahzl',
 		'Kupipi', 'Cherukiki', 'Ulmia', 'Joachim', 'Sakura', 'Moogle'
 		}
-	
+
 	--Potency/Accuracy sets
 	SetMode_Index = 1
 	SetMode_Names = {'Potency','Accuracy'}
-	
+
 	sets.Potency = {}
-	
-	sets.Potency.Enfeeble = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Kalboron Stone", 
-		head="Vitivation Chapeau", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", 
-		body="Estq. Sayon +2", hands="Hagondes Cuffs", left_ring="Irrwisch Ring", right_ring="Sangoma Ring", 
+
+	sets.Potency.Enfeeble = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Kalboron Stone",
+		head="Vitivation Chapeau", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		body="Estq. Sayon +2", hands="Hagondes Cuffs", left_ring="Irrwisch Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Uk'uxkaj Boots"}--M.Acc=344
-	
+
 	sets.Potency.Dispel = set_combine(sets.Potency.Enfeeble,{body="Atrophy Tabard +1", hands="Gendewitha Gages",
 		feet="Vitivation Boots"})
-	
-	sets.Potency.Nuke = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Witchstone", 
-		head="Buremte Hat", neck="Stoicheion Medal", left_ear="Crematio Earring", right_ear="Friomisi Earring", 
-		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Strendu Ring", right_ring="Acumen Ring", 
+
+	sets.Potency.Nuke = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Witchstone",
+		head="Buremte Hat", neck="Stoicheion Medal", left_ear="Crematio Earring", right_ear="Friomisi Earring",
+		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Strendu Ring", right_ring="Acumen Ring",
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
-	
-	sets.Potency.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone", 
-		head="Kaabnax Hat", neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", 
-		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Strendu Ring", right_ring="Acumen Ring", 
+
+	sets.Potency.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
+		head="Kaabnax Hat", neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Strendu Ring", right_ring="Acumen Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
-	
-	
+
+
 	sets.Accuracy = {}
-	
-	sets.Accuracy.Enfeeble = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Kalboron Stone", 
-		head="Vitivation Chapeau", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", 
-		body="Atrophy Tabard +1", hands="Hagondes Cuffs", left_ring="Perception Ring", right_ring="Sangoma Ring", 
+
+	sets.Accuracy.Enfeeble = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Kalboron Stone",
+		head="Vitivation Chapeau", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		body="Atrophy Tabard +1", hands="Hagondes Cuffs", left_ring="Perception Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Vitivation Boots"} --M.Acc 383
-	
+
 	sets.Accuracy.Dispel = set_combine(sets.Accuracy.Enfeeble,{})
-	
-	sets.Accuracy.Nuke = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Kalboron Stone", 
-		head="Buremte Hat", neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", 
-		body="Atrophy Tabard +1", hands="Hagondes Cuffs", left_ring="Perception Ring", right_ring="Sangoma Ring", 
+
+	sets.Accuracy.Nuke = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Kalboron Stone",
+		head="Buremte Hat", neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		body="Atrophy Tabard +1", hands="Hagondes Cuffs", left_ring="Perception Ring", right_ring="Sangoma Ring",
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Vitivation Boots"}
-	
-	sets.Accuracy.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone", 
-		head="Kaabnax Hat", neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", 
-		body="Atrophy Tabard +1", hands="Hagondes Cuffs", left_ring="Perception Ring", right_ring="Sangoma Ring", 
+
+	sets.Accuracy.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
+		head="Kaabnax Hat", neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		body="Atrophy Tabard +1", hands="Hagondes Cuffs", left_ring="Perception Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
-	
-	
+
+
 	--Job Abilities
 	sets.JA = {}
 	sets.JA.Chainspell = {body="Vitivation Tabard"}
 	sets.JA.Saboteur = {hands="Estq. Ganthrt. +2"}
 	--sets.JA.Composure = { } --Find augment gear
 	--Need other JA listed
-	
+
 	sets.JA.Step = {head="Buremte Hat",
 		neck="Iqabi Necklace", left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
 		body="Gendewitha Bliaut", hands="Buremte Gloves", left_ring="Rajas Ring", right_ring="Beeline Ring",
-		back="Letalis Mantle", waist="Olseni Belt", legs="Mes'yohi Slacks", feet="Atrophy Boots"} 
+		back="Letalis Mantle", waist="Olseni Belt", legs="Mes'yohi Slacks", feet="Atrophy Boots"}
 		--Primary Acc: 827???
-	
+
 	sets.JA["Violent Flourish"] = {ammo="Kalboron Stone",
 		head="Buremte Hat", neck="Stoicheion Medal", left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
 		body="Atrophy Tabard +1", hands="Hagondes Cuffs", left_ring="Perception Ring", right_ring="Sangoma Ring",
-		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"} 
+		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 		--M.Acc = 112, Prim.Acc = 773
-	
+
 	sets.precast = {}
-	
-	sets.precast.IdleRefresh = {main="Claidheamh Soluis", sub="Genbu's Shield", ammo="Oreiad's Tathlum", 
-		head="Vitivation Chapeau", neck="Twilight Torque", left_ear="Lifestorm Earring", right_ear="Psystorm Earring", 
-		body="Atrophy Tabard +1", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Sangoma Ring", 
+
+	sets.precast.IdleRefresh = {main="Claidheamh Soluis", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
+		head="Vitivation Chapeau", neck="Twilight Torque", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		body="Atrophy Tabard +1", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Sangoma Ring",
 		back="Mecisto. Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
-		
-	sets.precast.IdleDT = {main="Xiutleato",sub="Genbu's Shield", ammo="Brigantia Pebble", 
-		head="Nahtirah Hat", neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Soil Pearl", 
-		body="Hagondes Coat +1", hands="Umuthi Gloves", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring", 
+
+	sets.precast.IdleDT = {main="Xiutleato",sub="Genbu's Shield", ammo="Brigantia Pebble",
+		head="Nahtirah Hat", neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Soil Pearl",
+		body="Hagondes Coat +1", hands="Umuthi Gloves", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
 		back="Mecisto. Mantle", waist="Flume Belt", legs="Mes'yohi Slacks", feet="Umbani Boots"}
-	
+
 	sets.Idle = sets.precast.IdleRefresh
 	IdleMode = 'Refresh'
-	
+
 	sets.Rest = set_combine(sets.Idle,{main="Chatoyant Staff",sub="Mephitis Grip"})
-	
-	sets.precast.FastCast = {main="Lehbrailg +2", sub="Arbuda Grip", 
-		head="Atrophy Chapeau", neck="Estoqueur's Collar", left_ear="Estq. Earring", right_ear="Loquac. Earring", 
-		body="Vitivation Tabard", hands="Gendewitha Gages", left_ring="Prolix Ring", 
-		back="Swith Cape", waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots +1"} 
+
+	sets.precast.FastCast = {main="Lehbrailg +2", sub="Arbuda Grip",
+		head="Atrophy Chapeau", neck="Estoqueur's Collar", left_ear="Estq. Earring", right_ear="Loquac. Earring",
+		body="Vitivation Tabard", hands="Gendewitha Gages", left_ring="Prolix Ring",
+		back="Swith Cape", waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots +1"}
 		-- 50% Fast Cast, 20% Haste
-	
+
 	sets.midcast = {}
-	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum", 
-		head="Kaabnax Hat", neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Loquac. Earring", 
-		body="Gendewitha Bliaut", hands="Weath. Cuffs +1", left_ring="Solemn Ring", right_ring="Sirona's Ring", 
-		back="Pahtli Cape", waist="Witch Sash", legs="Atrophy Tights", feet="Umbani Boots"} 
+	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
+		head="Kaabnax Hat", neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Loquac. Earring",
+		body="Gendewitha Bliaut", hands="Weath. Cuffs +1", left_ring="Solemn Ring", right_ring="Sirona's Ring",
+		back="Pahtli Cape", waist="Witch Sash", legs="Atrophy Tights", feet="Umbani Boots"}
 		--59% Cure Pot., 15%Haste ,MND 92+162
-	
-	sets.midcast.Enhancing = {main="Arendsi Fleuret", sub="Genbu's Shield", 
-		head="Umuthi Hat", neck="Stone Gorget", left_ear="Estq. Earring", right_ear="Loquac. Earring", 
-		body="Vitivation Tabard", hands="Atrophy Gloves +1", left_ring="Prolix Ring", 
-		back="Estoqueur's Cape", waist="Siegel Sash", legs="Shedir Seraweels", feet="Estq. Houseaux +2"} 
-		--skill=473
-	
-	sets.midcast.EnhancingOther = set_combine(sets.midcast.Enhancing, {head="Estq. Chappel +2", 
+
+	sets.midcast.Enhancing = {main="Arendsi Fleuret", sub="Genbu's Shield",
+		head="Umuthi Hat", neck="Stone Gorget", left_ear="Estq. Earring", right_ear="Loquac. Earring",
+		body="Vitivation Tabard", hands="Atrophy Gloves +1", left_ring="Prolix Ring",
+		back="Estoqueur's Cape", waist="Olympus Sash", legs="Atrophy Tights", feet="Estq. Houseaux +2"}
+		--skill=495 ???
+
+	sets.midcast.EnhancingOther = set_combine(sets.midcast.Enhancing, {head="Estq. Chappel +2",
 		body="Estq. Sayon +2", hands="Atrophy Gloves +1", legs="Estqr. Fuseau +2"})
-	
-	
+
+
 	MeleeLock = 'False' --used for info only
 	sets.TP = {}
-	
-	sets.TP.DD = {ammo="Brigantia Pebble", 
-		head="Nahtirah Hat", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring", 
-		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="Rajas Ring", 
+
+	sets.TP.DD = {ammo="Brigantia Pebble",
+		head="Nahtirah Hat", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
+		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="Rajas Ring",
 		back="Atheling Mantle", waist="Windbuffet Belt", legs="Mes'yohi Slacks", feet="Atrophy Boots"}
-	
+
 	sets.TP.Accuracy = {}
-	
+
 	sets.WS = {}
-	sets.WS.Base = {ammo="Oreiad's Tathlum", 
-		head="Nahtirah Hat", neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ear="Bladeborn Earring", 
-		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="Rajas Ring", 
+	sets.WS.Base = {ammo="Oreiad's Tathlum",
+		head="Nahtirah Hat", neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ear="Bladeborn Earring",
+		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="Rajas Ring",
 		back="Buquwik Cape", waist="Prosilio Belt +1", legs="Mes'yohi Slacks", feet="Atrophy Boots"}
-	
+
 	sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{head="Buremte Hat", body="Gendewitha Bliaut",
 		neck="Light Gorget", legs="Vitivation Tights"}) -- DEX 80%
-	
+
 	sets.WS.Requiescat = set_combine(sets.WS.Base, {neck="Shadow Gorget"})
-	
+
 	sets.WS['Sanguine Blade'] = set_combine(sets.WS.Base, {right_ear="Psystorm Earring",
 		hands="Hagondes Cuffs", left_ring="Icesoul Ring",
 		right_ring="Spiral Ring", back="Refraction Cape",
 		waist="Caudata Belt", feet="Umbani Boots" })
-	
+
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
 	send_command('input /macro book 5;wait .1;input /macro set 1')
-	
-	sets.DontForget = {main="Buramenk'ah", neck="Quanpur Necklace", left_ear="Reraise Earring", right_ear = "Linkpearl", 
+
+	sets.DontForget = {main="Buramenk'ah", neck="Quanpur Necklace", left_ear="Reraise Earring", right_ear = "Linkpearl",
 		legs="Estoqueur's Fuseau +2"}
-		
+
 	sets.DontForget2 = {legs="Crimson Cuisses", right_ring="Excelsis Ring"}
-	
+
 end
 
 function precast(spell)
-	--windower.add_to_chat(14, 'Precast: spell=' ..spell.english.. ' spell type=' ..spell.type.. ' Skill=' ..spell.skill)
+	--add_to_chat(14, 'Precast: spell=' ..spell.english.. ' spell type=' ..spell.type.. ' Skill=' ..spell.skill)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
-		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
+		--add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
-	
+
 	elseif spell.type == "WeaponSkill" then
 		if sets.WS[spell.english] then
 			equip(sets.WS[spell.english])
@@ -169,7 +169,7 @@ function precast(spell)
 		if buffactive['Reive Mark'] then
 			equip({neck="Ygnas's Resolve +1"})
 		end
-	
+
 	elseif spell.prefix == "/jobability" then
 		if sets.JA[spell.english] then
 			equip(sets.JA[spell.english])
@@ -177,22 +177,23 @@ function precast(spell)
 			equip(sets.JA.Step)
 		end
 	end
-	
+
 end
 
 function midcast(spell)
 	if spell.prefix == '/jobability' or spell.type == 'WeaponSkill' then
 	--midcast doesn't exist for JA or WS so cancel the processing of this function
-		--windower.add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
+		--add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
 		return
 	end
 
---windower.add_to_chat(14, 'Casting spell: ' ..spell.english.. ' - ' ..spell.skill.. ' on ' ..spell.target.name.. ' with ' ..SetMode_Names[SetMode_Index])
-	
+--add_to_chat(14, 'Casting spell: ' ..spell.english.. ' - ' ..spell.skill.. ' on ' ..spell.target.name.. ' with '
+--	..SetMode_Names[SetMode_Index])
+
 	if FastCastOnlySpells:contains(spell.english) then
-		windower.add_to_chat(9, 'Fast Cast only Spell: ' ..spell.english)
+		add_to_chat(9, 'Fast Cast only Spell: ' ..spell.english)
 		equip(sets.precast.FastCast)
-	
+
 	elseif spell.skill == 'Enfeebling Magic' then
 		equip(sets[SetMode_Names[SetMode_Index]].Enfeeble)
 		--print_set(sets[SetMode_Names[SetMode_Index]].Enfeeble)
@@ -207,43 +208,48 @@ function midcast(spell)
 		--[[if spell.english == "Slow II" or spell.english == "Dia III" then
 			equip({head="Vitivation chapeau"}) **This hat always equipped
 		end]]
-		
+
 	elseif spell.skill == 'Enhancing Magic' then
-		--windower.add_to_chat(14, 'Casting spell: ' ..spell.english.. ' on ' ..spell.target.name.. ' with ' ..SetMode_Names[SetMode_Index])
+		--add_to_chat(14, 'Casting spell: ' ..spell.english.. ' on ' ..spell.target.name.. ' with '
+		--	..SetMode_Names[SetMode_Index])
 		equip(sets.midcast.Enhancing)
-		
+
 		if string.find(spell.english, 'Refresh') then
 			equip({legs="Estoqueur's Fuseau +2"})
+		elseif spell.english == 'Stoneskin' then
+			equip(waist="Siegel Sash", legs="Shedir Seraweels")
+		elseif spell.english == 'Aquaveil' then
+			equip(legs="Shedir Seraweels")
 		end
-		--if spell.target.isallymember and spell.target.name ~= player.name then 
-		if spell.target.name ~= player.name then 
-			--windower.add_to_chat(14, spell.target.name.. ' is _not_ me, equip BuffOther.')
+		--if spell.target.isallymember and spell.target.name ~= player.name then
+		if spell.target.name ~= player.name then
+			--add_to_chat(14, spell.target.name.. ' is _not_ me, equip BuffOther.')
 			equip(sets.midcast.EnhancingOther)
 		end
-		
+
 	elseif spell.skill == 'Dark Magic' then
 		equip(sets[SetMode_Names[SetMode_Index]].DarkMagic)
 		if spell.english:startswith('Aspir') or spell.english == 'Drain' then
 			equip({left_ring="Excelsis Ring", waist="Fucho-no-Obi"})
 		end
-		
+
 	elseif spell.skill == 'Elemental Magic' then
 		equip(sets[SetMode_Names[SetMode_Index]].Nuke)
 		if spell.element == 'Earth' and SetMode_Names[SetMode_Index] == 'Potency' then
 			equip({neck="Quanpur Necklace"})
 		end
-	
+
 	elseif spell.skill == 'Healing Magic' then
 		equip(sets.midcast.Cure)
 		if spell.english == 'Cursna' then
 			equip({feet="Gende. Galoshes"})
 		end
-		
+
 	elseif spell.skill == 'Ninjutsu' then
 		equip(sets.precast.FastCast)
-		
+
 	end
---windower.add_to_chat(14, 'End of Midcast (NOT cancelled)')
+--add_to_chat(14, 'End of Midcast (NOT cancelled)')
 end
 
 function aftercast(spell)
@@ -280,7 +286,7 @@ function buff_change(buff_name,gain)
 			enable("hands")
 			send_command('@input /echo Saboteur off, hands enabled')
 		end
-	elseif buff_name=='Chainspell' then 
+	elseif buff_name=='Chainspell' then
 		if gain then
 			equip(sets.JA.Chainspell)
 			send_command('@wait 0.5; gs disable body;')
@@ -290,8 +296,8 @@ function buff_change(buff_name,gain)
 			send_command('@input /echo Chainspell off, body enabled')
 		end
 	--[[elseif buff_name == 'Commitment' then
-		windower.add_to_chat(4, 'Commitment gone.')
-		windower.add_to_chat(9, 'Commitment gone.')]]
+		add_to_chat(4, 'Commitment gone.')
+		add_to_chat(9, 'Commitment gone.')]]
 	end
 
 end
@@ -299,18 +305,18 @@ end
 function self_command(command)
 	if command == 'Potency' then
 		SetMode_Index = 1
-		windower.add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
+		add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
 	elseif command == 'Accuracy' then
 		SetMode_Index = 2
-		windower.add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
+		add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
 	elseif command == 'Melee' then
 		disable("main", "sub", "range")
 		MeleeLock = 'True'
-		windower.add_to_chat(9, 'MeleeLock = ' ..MeleeLock)
+		add_to_chat(9, 'MeleeLock = ' ..MeleeLock)
 	elseif command == 'Magic' then
 		enable("main", "sub", "range")
 		MeleeLock = 'False'
-		windower.add_to_chat(9, 'MeleeLock = ' ..MeleeLock)
+		add_to_chat(9, 'MeleeLock = ' ..MeleeLock)
 	elseif command == 'IdleRefresh' then
 		sets.Idle = sets.precast.IdleRefresh
 		sets.Rest = set_combine(sets.Idle,{main="Chatoyant Staff",sub="Mephitis Grip"})
@@ -324,15 +330,15 @@ function self_command(command)
 		--send_command('@wait 0.2;')
 		status_change(player.status)
 	elseif command == 'Info' then
-		windower.add_to_chat(9, 'RDM Info:')
-		windower.add_to_chat(9, 'SetMode = ' ..SetMode_Names[SetMode_Index])
-		windower.add_to_chat(9, 'IdleMode = ' ..IdleMode)
-		windower.add_to_chat(9, 'MeleeLock = ' ..MeleeLock)
-	
-		
+		add_to_chat(9, 'RDM Info:')
+		add_to_chat(9, 'SetMode = ' ..SetMode_Names[SetMode_Index])
+		add_to_chat(9, 'IdleMode = ' ..IdleMode)
+		add_to_chat(9, 'MeleeLock = ' ..MeleeLock)
+
+
 	end
-	
-	--windower.add_to_chat(14, 'command is: ' ..command)
+
+	--add_to_chat(14, 'command is: ' ..command)
 	--send_command('@input /echo SOLO SET')
-	
+
 end
