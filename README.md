@@ -1,18 +1,14 @@
-Gearswap data folder
-====================
+#Gearswap data folder
 
-Job		Gear		Rules		Tested		Notes
-===		====		=====		======		=====
-MNK		Done		Done		Yes
-WHM		Done		Done		Yes		
-BLM		Done		Done		Yes			
-RDM		Done		Done		Yes			
-THF		Done		Done		Yes			
-RNG		Done		Done		Yes			
-SAM		Done		Done		Yes			
-NIN		Done		Done		Yes			Need to test Migawari
-SMN
-BLU		Done		Done		Yes			
-GEO		Done		Done		Yes
+Jobs that have gearswap files:
 
-*All jobs need Accuracy and Hybrid Accuracy/Potency sets
+MNK / WHM / BLM / RDM / THF / RNG / SAM / NIN / SMN / BLU	/ GEO
+
+##Commands:
+Within the function `self_command` is defined several commands that can be used in-game.  To find the command to use in-game look for `command == 'name'` and use the command within the single quote. To issue that command use `//consol gs c name`.
+
+###To Do:
+1. Document usable commands at the top of each file
+2. Add `sub_job_change` and `set_macro_book()` to all files
+3. Create accuracy and damage taken sets for BLM / RNG / NIN / SMN
+4. Change all files to use the same implementation of precast and midcast (use RDM as model)
