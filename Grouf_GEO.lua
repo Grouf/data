@@ -64,7 +64,7 @@ function get_sets()
 		waist="Olympus Sash",legs="Shedir Seraweels",feet="Geomancy Sandals"}
 
 	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
-		neck="Stoicheion Medal",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Hagondes Coat +1",
+		neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Umbani Boots"}
 

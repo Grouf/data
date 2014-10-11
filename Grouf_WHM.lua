@@ -53,7 +53,7 @@ function get_sets()
 	sets.midcast.Auspice = set_combine(sets.precast.Enhancing,{feet="Orsn. Duckbills +2"})
 
 	sets.midcast.Divine= {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
-		neck="Stoicheion Medal",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Gendewitha Bliaut",
+		neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Gendewitha Bliaut",
 		hands="Gendewitha Gages",left_ring="Sangoma Ring",right_ring="Strendu Ring",back="Refraction Cape",
 		waist="Witch Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 

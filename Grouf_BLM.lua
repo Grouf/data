@@ -37,12 +37,12 @@ function get_sets()
 		back="Swith Cape", waist="Olympus Sash", legs="Shedir Seraweels", feet="Hag. Sabots +1"}
 
 	sets.midcast.ElementalMagic = {main="Lehbrailg +2", sub="Elder's Grip", ammo="Witchstone",
-		head="Buremte Hat", neck="Stoicheion Medal", left_ear="Crematio Earring", right_ear="Friomisi Earring",
+		head="Buremte Hat", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Spaekona's Coat", hands="Hagondes Cuffs", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
 
 	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
-		head="Kaabnax Hat",	neck="Stoicheion Medal", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
+		head="Kaabnax Hat",	neck="Eddy Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Acumen Ring", right_ring="Sangoma Ring",
 		back="Bane Cape", waist="Witch Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 
