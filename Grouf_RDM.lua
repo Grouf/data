@@ -217,9 +217,9 @@ function midcast(spell)
 		if string.find(spell.english, 'Refresh') then
 			equip({legs="Estoqueur's Fuseau +2"})
 		elseif spell.english == 'Stoneskin' then
-			equip(waist="Siegel Sash", legs="Shedir Seraweels")
+			equip({waist="Siegel Sash", legs="Shedir Seraweels"})
 		elseif spell.english == 'Aquaveil' then
-			equip(legs="Shedir Seraweels")
+			equip({legs="Shedir Seraweels"})
 		end
 		--if spell.target.isallymember and spell.target.name ~= player.name then
 		if spell.target.name ~= player.name then

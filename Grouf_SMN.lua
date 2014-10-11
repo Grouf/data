@@ -152,7 +152,7 @@ function midcast(spell)
 	if spell.skill == 'Enhancing Magic' then
 		equip(sets.Enhancing)
 		if spell.english == 'Stoneskin' then
-			equip(waist="Siegel Sash")
+			equip({waist="Siegel Sash"})
 		end
 	elseif spell.skill == 'Healing Magic' then
 		equip(sets.Cure)
