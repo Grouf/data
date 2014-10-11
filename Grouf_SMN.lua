@@ -94,7 +94,7 @@ function get_sets()
 
 	--sets.midcast.BloodPactSP
 
-	sets.Enhancing = {head="Umuthi Hat", body="Anhur Robe", neck="Stone Gorget", hands="Augur's Gloves",
+	sets.Enhancing = {head="Umuthi Hat", body="Anhur Robe", neck="Colossus's Torque", hands="Augur's Gloves",
 		left_ear="Loquac. Earring",
 		waist="Olympus Sash", legs="Shedir Seraweels"}
 
@@ -152,7 +152,7 @@ function midcast(spell)
 	if spell.skill == 'Enhancing Magic' then
 		equip(sets.Enhancing)
 		if spell.english == 'Stoneskin' then
-			equip({waist="Siegel Sash"})
+			equip({waist="Siegel Sash", neck="Stone Gorget"})
 		end
 	elseif spell.skill == 'Healing Magic' then
 		equip(sets.Cure)

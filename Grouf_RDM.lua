@@ -108,7 +108,7 @@ function get_sets()
 		--59% Cure Pot., 15%Haste ,MND 92+162
 
 	sets.midcast.Enhancing = {main="Arendsi Fleuret", sub="Genbu's Shield",
-		head="Umuthi Hat", neck="Stone Gorget", left_ear="Estq. Earring", right_ear="Loquac. Earring",
+		head="Umuthi Hat", neck="Colossus's Torque", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Vitivation Tabard", hands="Atrophy Gloves +1", left_ring="Prolix Ring",
 		back="Estoqueur's Cape", waist="Olympus Sash", legs="Atrophy Tights", feet="Estq. Houseaux +2"}
 		--skill=495 ???
@@ -217,7 +217,7 @@ function midcast(spell)
 		if string.find(spell.english, 'Refresh') then
 			equip({legs="Estoqueur's Fuseau +2"})
 		elseif spell.english == 'Stoneskin' then
-			equip({waist="Siegel Sash", legs="Shedir Seraweels"})
+			equip({waist="Siegel Sash", legs="Shedir Seraweels", neck="Stone Gorget"})
 		elseif spell.english == 'Aquaveil' then
 			equip({legs="Shedir Seraweels"})
 		end

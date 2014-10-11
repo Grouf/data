@@ -32,7 +32,7 @@ function get_sets()
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 
 	sets.midcast.Enhancing = {main="Lehbrailg +2",
-		head="Umuthi Hat", neck="Stone Gorget", left_ear="Loquac. Earring",
+		head="Umuthi Hat", neck="Colossus's Torque", left_ear="Loquac. Earring",
 		body="Anhur Robe", hands="Augur's Gloves",
 		back="Swith Cape", waist="Olympus Sash", legs="Shedir Seraweels", feet="Hag. Sabots +1"}
 
@@ -107,7 +107,7 @@ function midcast(spell)
 	elseif spell.skill == 'Enhancing Magic' then
 		equip(sets.midcast.Enhancing)
 		if spell.english == 'Stoneskin' then
-			equip({waist="Siegel Sash"})
+			equip({waist="Siegel Sash", neck="Stone Gorget"})
 		end
 	elseif spell.skill == 'Elemental Magic' then
 		equip(sets.midcast.ElementalMagic)

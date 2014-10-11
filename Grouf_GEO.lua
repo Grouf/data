@@ -59,7 +59,7 @@ function get_sets()
 			--Total:			802
 
 	--Enhancing needs work
-	sets.midcast.Enhancing = {body="Anhur Robe", head="Umuthi Hat", neck="Stone Gorget",
+	sets.midcast.Enhancing = {body="Anhur Robe", head="Umuthi Hat", neck="Colossus's Torque",
 		hands="Augur's Gloves", left_ear="Loquac. Earring",
 		waist="Olympus Sash",legs="Shedir Seraweels",feet="Geomancy Sandals"}
 
@@ -135,7 +135,7 @@ function midcast(spell)
 	elseif spell.skill == 'Enhancing Magic' then
 			equip(sets.midcast.Enhancing)
 		if spell.english == 'Stoneskin' then
-			equip({waist="Siegel Sash"})
+			equip({waist="Siegel Sash", neck="Stone Gorget"})
 		end
 	elseif spell.skill == 'Elemental Magic' then
 		equip(sets.midcast.ElementalMagic)
