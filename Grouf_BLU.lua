@@ -158,7 +158,7 @@ function get_sets()
 
 	sets.midcast.AGI = set_combine(sets.midcast.BaseSet,{body="Iuitl Vest",legs="Kaabnax Trousers"})
 
-	sets.midcast.INT = {head="Hagondes Hat",neck="Stoicheion Medal",left_ear="Psystorm Earring",
+	sets.midcast.INT = {head="Hagondes Hat",neck="Eddy Necklace",left_ear="Psystorm Earring",
 		right_ear="Crematio Earring",body="Hagondes Coat +1",hands="Hagondes Cuffs",left_ring="Icesoul Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Aswang Sash",
 		legs="Mes'yohi Slacks",feet="Hag. Sabots +1"} --Was Lifestorm earring in right
@@ -168,17 +168,17 @@ function get_sets()
 		right_ring="Solemn Ring",back="Pahtli Cape",waist="Witful Belt",
 		legs="Mes'yohi Slacks",feet="Weath. Souliers +1"}
 
-	sets.midcast.mAccuracy = {head="Assim. Keffiyeh",neck="Stoicheion Medal",left_ear="Psystorm Earring",
+	sets.midcast.mAccuracy = {head="Assim. Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Hagondes Cuffs",left_ring="Sangoma Ring",
 		right_ring="Perception Ring",back="Cornflower Cape",waist="Aswang Sash",
 		legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 
-	sets.midcast.Stun = {head="Assim. Keffiyeh",neck="Stoicheion Medal",left_ear="Psystorm earring",
+	sets.midcast.Stun = {head="Assim. Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm earring",
 		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Mv. Bazubands +2",left_ring="Sangoma Ring",
 		right_ring="Perception Ring",back="Cornflower Cape",waist="Witful Belt",
 		legs="Mes'yohi Slacks",feet="Hagondes Sabots"} --25% Haste, 5% Fast Cast, -12% Blue Magic recast
 
-	sets.midcast.Breath = {head="Luhlaza Keffiyeh",neck="Stoicheion Medal",left_ear="Psystorm earring",
+	sets.midcast.Breath = {head="Luhlaza Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm earring",
 		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Hagondes Cuffs",left_ring="Prolix Ring",
 		back="Cornflower Cape",waist="Aswang Sash",
 		legs="Iuitl Tights",feet="Hagondes Sabots"}
