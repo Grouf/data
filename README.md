@@ -1,11 +1,13 @@
-#Gearswap data folder
+#GearSwap data folder
 
-Jobs that have gearswap files:
+Jobs that have GearSwap files:
 
 MNK / WHM / BLM / RDM / THF / RNG / SAM / NIN / SMN / BLU	/ GEO
 
 ##Commands:
-Within the function `self_command` is defined several commands that can be used in-game.  To find the command to use in-game look for `command == 'name'` and use the command within the single quote. To issue that command use `//consol gs c name`.
+Within the function `self_command` is defined several commands that can be used in-game.  
+To find the command to use in-game look for `command == 'name'` and use the command within
+the single quote. To issue that command use `//consol gs c name`.
 
 ###To Do:
 1. Document usable commands at the top of each file
