@@ -20,7 +20,7 @@ function get_sets()
 	sets.Potency = {}
 
 	sets.Potency.Enfeeble = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Kalboron Stone",
-		head="Vitivation Chapeau", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Estq. Sayon +2", hands="Hagondes Cuffs", left_ring="Irrwisch Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Uk'uxkaj Boots"}--M.Acc=344
 
@@ -41,7 +41,7 @@ function get_sets()
 	sets.Accuracy = {}
 
 	sets.Accuracy.Enfeeble = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Kalboron Stone",
-		head="Vitivation Chapeau", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Hagondes Cuffs", left_ring="Perception Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Vitivation Boots"} --M.Acc 383
 
@@ -80,7 +80,7 @@ function get_sets()
 	sets.precast = {}
 
 	sets.precast.IdleRefresh = {main="Claidheamh Soluis", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
-		head="Vitivation Chapeau", neck="Twilight Torque", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		head="Viti. Chapeau +1", neck="Twilight Torque", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Sangoma Ring",
 		back="Mecisto. Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
 
@@ -208,7 +208,7 @@ function midcast(spell)
 			end
 		end
 		--[[if spell.english == "Slow II" or spell.english == "Dia III" then
-			equip({head="Vitivation chapeau"}) **This hat always equipped
+			equip({head="Viti. Chapeau +1"}) **This hat always equipped
 		end]]
 
 	elseif spell.skill == 'Enhancing Magic' then
