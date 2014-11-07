@@ -25,14 +25,14 @@ function get_sets()
 	sets.JA.Sange = {body="Mochi. Chainmail"}
 	sets.JA['Mijin Gakure'] = {legs="Mochizuki Hakama"}
 	
-	sets.JA.Step = {head="Whirlpool Mask",neck="Iqabi Necklace",left_ear="Steelflash Earring",
-		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
-		right_ring="Beeline Ring",back="Yokaze Mantle",waist="Olseni Belt",
-		legs="Hachiya Hakama",feet="Otronif Boots +1"} --Primary Acc: 913???
+	sets.JA.Step = {head="Gavialis Helm", neck="Iqabi Necklace", left_ear="Steelflash Earring",
+		right_ear="Heartseeker Earring", body="Manibozho Jerkin", hands="Buremte Gloves", left_ring="Rajas Ring",
+		right_ring="Beeline Ring", back="Yokaze Mantle", waist="Olseni Belt",
+		legs="Hachiya Hakama", feet="Mochizuki Kyahan"} --Primary Acc: 964
 	
 	sets.JA['Violent Flourish'] = set_combine(sets.JA.Step, {neck="Stoicheion Medal", 
 		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Perception Ring", 
-		right_ring="Sangoma Ring"})
+		right_ring="Sangoma Ring", feet="Hachiya Kyahan"}) --Magic Accuracy: +53
 	
 	sets.precast = {}
 	
@@ -42,12 +42,14 @@ function get_sets()
 		legs="Thur. Tights +1", feet="Scopuli Nails +1"}
 	
 	
-	sets.precast.FastCast = {head="Athos's Chapeau",
+	sets.precast.FastCast = {head="Athos's Chapeau", neck="Magoraga Beads", 
 		right_ear="Loquac. Earring", body="Mochi. Chainmail",hands="Mochizuki Tekko", left_ring="Prolix Ring",
-		back="Yokaze Mantle", waist="Phasmida Belt", legs="Kaabnax Trousers"} --30% Haste
-	
+		back="Yokaze Mantle", waist="Phasmida Belt", legs="Kaabnax Trousers", feet="Mochizuki Kyahan"} 	
+																				--30% Haste
+																				--6% Fast Cast
+																				--18% Utsusemi -casting
 	sets.midcast = {}
-	sets.midcast.Utsusemi = {neck="Magoraga Beads", feet="Iga Kyahan +2"}
+	sets.midcast.Utsusemi = {feet="Iga Kyahan +2"}
 	
 	sets.midcast["Migawari: Ichi"] = {body="Iga Ningi +2"}
 	
@@ -57,13 +59,13 @@ function get_sets()
 		feet="Hachiya Kyahan"}  --32% Haste, 230 Magic Accuracy
 	
 	sets.midcast.Nuke = {head="Mochi. Hatsuburi", neck="Stoicheion Medal",left_ear="Friomisi Earring",
-		right_ear="Crematio Earring",body="Qaaxo Harness",left_ring="Prolix Ring",
+		right_ear="Crematio Earring",body="Qaaxo Harness", left_ring="Prolix Ring",
 		left_ring="Perception Ring", right_ring="Acumen Ring",back="Toro Cape",
-		legs="Quiahuiz Trousers",feet="Mochizuki Kyahan"} --feet should be 109relic
+		legs="Quiahuiz Trousers",feet="Mochizuki Kyahan"}
 	
 	
 	sets.WS = {}
-	sets.WS.Base = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Moonshade Earring",
+	sets.WS.Base = {head="Gavialis Helm",neck="Tlamiztli Collar",left_ear="Moonshade Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Cho'j Band",
 		right_ring="Rajas Ring",back="Vespid Mantle",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Otronif Boots +1"}
@@ -143,7 +145,7 @@ end
 function midcast(spell)
 	if spell.prefix == '/jobability' or spell.type == 'WeaponSkill' then
 	--midcast doesn't exist for JA or WS so cancel the processing of this function
-		--windower.add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
+		--add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
 		return
 	end
 	
