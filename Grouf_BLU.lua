@@ -203,8 +203,8 @@ function get_sets()
 		right_ring="Epona's Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Assim. Charuqs" }
 
-	sets.TP.Learning = set_combine(sets.TP.DD,{head="Uk'uxkaj Cap", body="Assim. Jubbah", hands="Assim. Bazu.",
-		legs="Mavi Tayt +2"})
+	sets.TP.Learning = {head="Luhlaza Keffiyeh", body="Assim. Jubbah", hands="Assim. Bazu.",
+		back="Cornflower Cape", legs="Mavi Tayt +2", feet="Luhlaza Charuqs"} --skill = 500
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
@@ -218,9 +218,9 @@ function get_sets()
 end
 
 function precast(spell)
-	--windower.add_to_chat(9, 'Precast: spell type= ' ..spell.type.. ' || spell.prefix= ' ..spell.prefix)
+	--add_to_chat(9, 'Precast: spell type= ' ..spell.type.. ' || spell.prefix= ' ..spell.prefix)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
-		--windower.add_to_chat(9, 'not JobAbility or WeaponSkill so Fast Cast')
+		--add_to_chat(9, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
 
 	elseif spell.type == "WeaponSkill" then
@@ -248,16 +248,16 @@ end
 function midcast(spell)
 	if spell.prefix == '/jobability' or spell.type == 'WeaponSkill' then
 	--midcast doesn't exist for JA or WS so cancel the processing of this function
-		--windower.add_to_chat(9, 'JobAbility or WeaponSkill; Midcast cancelled')
+		--add_to_chat(9, 'JobAbility or WeaponSkill; Midcast cancelled')
 		return
 	end
 
 	if spell.type == 'BlueMagic' then
 		if sets.midcast[BlueMageSpell[spell.english]] then
 			equip(sets.midcast[BlueMageSpell[spell.english]])
-			--windower.add_to_chat(9, 'MIDset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
+			--add_to_chat(9, 'MIDset: ' ..BlueMageSpell[spell.english].. ' for ' ..spell.english.. '.')
 		else
-		windower.add_to_chat(9, '~~!! No Set found for ' ..spell.english.. ' !!~~')
+		add_to_chat(9, '~~!! No Set found for ' ..spell.english.. ' !!~~')
 		end
 	end
 
@@ -299,42 +299,44 @@ Feet: Luhlaza Charuqs: Diffusion
 ]]
 
 function buff_change(buff_name,gain) --gain = True if gained, False if lost
-	if buff_name=='Efflux' then
+	if buff_name == 'Efflux' then
 		if gain then
 			equip(sets.JA[buff_name])
-			send_command('@wait 0.5; gs disable legs;')
-			send_command('@input /echo Efflux ON, legs disabled')
+			disable('legs')
+			add_to_chat(9, 'Efflux ON, legs disabled')
 		else
 			enable('legs')
-			send_command('@input /echo Efflux off, legs enabled')
+			add_to_chat(9, 'Efflux off, legs enabled')
 		end
-	elseif buff_name=='Chain Affinity' then
+	elseif buff_name == 'Chain Affinity' then
 		if gain then
 			equip(sets.JA[buff_name])
-			send_command('@wait 0.5; gs disable head feet;')
-			send_command('@input /echo Chain Affinity ON, head,feet disabled')
+			disable('head', 'feet')
+			add_to_chat(9, 'Chain Affinity ON, head,feet disabled')
 		else
 			enable('head','feet')
-			send_command('@input /echo Chain Affinity off, head,feet enabled')
+			add_to_chat(9, 'Chain Affinity off, head,feet enabled')
 		end
-	elseif buff_name=='Burst Affinity' then
+	elseif buff_name == 'Burst Affinity' then
 		if gain then
 			equip(sets.JA[buff_name])
-			send_command('@wait 0.5; gs disable legs feet;')
-			send_command('@input /echo Burst Affinity ON, legs,feet disabled')
+			disable('legs', 'feet')
+			add_to_chat(9, 'Burst Affinity ON, legs,feet disabled')
 		else
 			enable('legs', 'feet')
-			send_command('@input /echo Burst Affinity off, legs,feet enabled')
+			add_to_chat(9, 'Burst Affinity off, legs,feet enabled')
 		end
-	elseif buff_name=='Diffusion' then
+	elseif buff_name == 'Diffusion' then
 		if gain then
 			equip(sets.JA[buff_name])
-			send_command('@wait 0.5; gs disable feet;')
-			send_command('@input /echo Diffusion ON, feet disabled')
+			disable('feet')
+			add_to_chat(9, 'Diffusion ON, feet disabled')
 		else
 			enable('feet')
-			send_command('@input /echo Diffusion off, feet enabled')
+			add_to_chat(9, 'Diffusion off, feet enabled')
 		end
+	elseif buff_name == 'Reive Mark' and gain then
+		equip({neck="Ygnas's Resolve +1"})
 	end
 
 end
@@ -346,37 +348,37 @@ function self_command(command)
 		sets.precast.Idle = set_combine(sets.precast.Idle, {back="Repulse Mantle"})
 		--equip(sets.aftercast.TP)
 		status_change(player.status)
-		send_command('@input /echo DD SET')
+		add_to_chat(9, 'DD SET')
 	elseif command == 'Cap' then
 		sets.aftercast.TP = set_combine(sets.TP.DD, {back="Mecisto. Mantle"})
 		sets.precast.Idle = set_combine(sets.precast.Idle, {back="Mecisto. Mantle"})
 		--sets.precast.
 		status_change(player.status)
 		--equip(sets.aftercast.TP)
-		send_command('@input /echo Capacity SET')
+		add_to_chat(9, 'Capacity SET')
 	elseif command == 'Acc' then
 		sets.aftercast.TP = sets.TP.Acc
 		--sets.aftercast.Idle = sets.TP.Learn
 		--equip(sets.aftercast.TP)
 		status_change(player.status)
-		send_command('@input /echo Accuracy set')
+		add_to_chat(9, 'Accuracy set')
 	elseif command == 'LearningOn' then
 		sets.aftercast.TP = sets.TP.Learning
 		--sets.aftercast.Idle = sets.aftercast.TP
-		equip({body="Assim. Jubbah", hands="Assim. Bazu.", legs="Mavi Tayt +2"})
-		disable('body', 'hands', 'legs')
+		--equip({body="Assim. Jubbah", hands="Assim. Bazu.", legs="Mavi Tayt +2"})
+		equip(sets.TP.Learning)
+		disable('head', 'body', 'hands', 'back', 'legs', 'feet')
 		--send_command('@wait 0.5; gs disable body hands legs;')
 		--send_command('gs disable body hands legs;')
-		send_command('@input /echo Learning Body, Hands, Legs Locked')
 		--equip(sets.aftercast.TP)
 		--status_change(player.status)
-		send_command('@input /echo Learning set')
+		add_to_chat(9, 'Learning Set  ON')
 	elseif command == 'LearningOff' then
 		sets.aftercast.TP = sets.TP.DD
 		--sets.aftercast.Idle = sets.TP.Learn
 		--equip({hands="Assim. Bazu."})
-		enable('body', 'hands', 'legs')
-		send_command('@input /echo Learning Body, Hands, Legs Unlocked')
+		enable('head', 'body', 'hands', 'back', 'legs', 'feet')
+		add_to_chat(9, 'Learning Set  OFF')
 		status_change(player.status)
 	--[[
 	elseif command == 'DT' then
