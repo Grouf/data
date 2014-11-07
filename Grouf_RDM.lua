@@ -151,6 +151,8 @@ function get_sets()
 		legs="Estoqueur's Fuseau +2"}
 
 	sets.DontForget2 = {legs="Crimson Cuisses", right_ring="Excelsis Ring"}
+	
+	sets.DontForget3 = {legs="Shedir Seraweels"}
 
 end
 
