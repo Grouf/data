@@ -33,8 +33,8 @@ function get_sets()
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
 
 	sets.Potency.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
-		head="Kaabnax Hat", neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Strendu Ring", right_ring="Acumen Ring",
+		head="Kaabnax Hat", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Perception Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 
 
@@ -53,7 +53,7 @@ function get_sets()
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Vitivation Boots"}
 
 	sets.Accuracy.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
-		head="Kaabnax Hat", neck="Stoicheion Medal", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		head="Kaabnax Hat", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Hagondes Cuffs", left_ring="Perception Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 
@@ -79,7 +79,7 @@ function get_sets()
 
 	sets.precast = {}
 
-	sets.precast.IdleRefresh = {main="Claidheamh Soluis", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
+	sets.precast.IdleRefresh = {main="Bolelabunga", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
 		head="Viti. Chapeau +1", neck="Twilight Torque", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Sangoma Ring",
 		back="Mecisto. Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
@@ -150,7 +150,7 @@ function get_sets()
 	sets.DontForget = {main="Buramenk'ah", neck="Quanpur Necklace", left_ear="Reraise Earring", right_ear = "Linkpearl",
 		legs="Estoqueur's Fuseau +2"}
 
-	sets.DontForget2 = {legs="Crimson Cuisses", right_ring="Excelsis Ring"}
+	sets.DontForget2 = {main="Bolelabunga", legs="Crimson Cuisses", right_ring="Excelsis Ring"}
 	
 	sets.DontForget3 = {legs="Shedir Seraweels"}
 
@@ -222,6 +222,8 @@ function midcast(spell)
 			equip({waist="Siegel Sash", legs="Shedir Seraweels", neck="Stone Gorget"})
 		elseif spell.english == 'Aquaveil' then
 			equip({legs="Shedir Seraweels"})
+		elseif string.find(spell.english, 'Regen') then
+			equip({main="Bolelabunga"})
 		end
 		--if spell.target.isallymember and spell.target.name ~= player.name then
 		if spell.target.name ~= player.name then
