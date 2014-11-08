@@ -119,6 +119,9 @@ function precast(spell)
 	--	..spell.prefix.. ' spell.skill=' ..spell.skill)
 	if spell.prefix ~= '/jobability' and spell.prefix ~= '/pet' and spell.type ~= 'WeaponSkill' then
 		equip(sets.precast.FastCast)
+		if spell.english == 'Stoneskin' then
+			equip({head="Umuthi Hat"})
+		end
 
 	elseif spell.prefix=="/pet" then
 		equip(sets.BloodPactDelay)

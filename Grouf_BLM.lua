@@ -73,6 +73,8 @@ function precast(spell)
 		equip(sets.precast.FastCast)
 		if spell.skill == 'Elemental Magic' then
 			equip({feet="Spaekona's Sabots"})
+		elseif spell.english == 'Stoneskin' then
+			equip({head="Umuthi Hat"})
 		end
 
 	elseif spell.type == "WeaponSkill" then

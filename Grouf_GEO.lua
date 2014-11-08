@@ -94,6 +94,9 @@ function precast(spell)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
 		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
+		if spell.english == 'Stoneskin' then
+			equip({head="Umuthi Hat"})
+		end
 
 	elseif spell.type=="WeaponSkill" then
 		if sets.WS[spell.english] then

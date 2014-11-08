@@ -59,7 +59,7 @@ function get_sets()
 	sets.midcast.Divine= {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
 		neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Gendewitha Bliaut",
 		hands="Gendewitha Gages",left_ring="Sangoma Ring",right_ring="Strendu Ring",back="Refraction Cape",
-		waist="Aswang Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
+		waist="Aswang Sash",legs="Gendewitha Spats",feet="Umbani Boots"}
 
 	sets.midcast.Repose = set_combine(sets.precast.Divine,{sub="Mephitis Grip",ammo="Kalboron Stone",head="Orison Cap +2",
 		left_ear="Psystorm Earring",right_ear="Lifestorm Earring",hands="Gendewitha Gages", back="Mending Cape"})
@@ -90,8 +90,11 @@ function precast(spell)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
 		--add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
+		if spell.english == 'Stoneskin' then
+			equip({head="Umuthi Hat"})
+		end
 
-	elseif spell.type=="WeaponSkill" then
+	elseif spell.type=='WeaponSkill' then
 		if sets.WS[spell.english] then
 			equip(sets.WS[spell.english])
 		else
@@ -101,7 +104,7 @@ function precast(spell)
 			equip({neck="Ygnas's Resolve +1"})
 		end
 		
-	elseif spell.prefix=="/jobability" then
+	elseif spell.prefix=='/jobability' then
 		if sets.JA[spell.english] then
 			equip(sets.JA[spell.english])
 		end
