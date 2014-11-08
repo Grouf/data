@@ -5,6 +5,10 @@
 ]]
 
 function get_sets()
+	
+	sets.JA = {}
+	sets.JA.Devotion = {head="Piety Cap"}
+	
 	sets.precast = {}
 
 	sets.precast.Idle= {main="Bolelabunga",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
@@ -96,14 +100,12 @@ function precast(spell)
 		if buffactive['Reive Mark'] then
 			equip({neck="Ygnas's Resolve +1"})
 		end
-	end
-	--[[
-	if spell.prefix=="/jobability" then
+		
+	elseif spell.prefix=="/jobability" then
 		if sets.JA[spell.english] then
 			equip(sets.JA[spell.english])
 		end
 	end
-	]]
 end
 
 function midcast(spell)
