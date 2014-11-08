@@ -102,16 +102,16 @@ function get_sets()
 
 	sets.midcast = {}
 	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
-		head="Kaabnax Hat", neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Loquac. Earring",
+		head="Viti. Chapeau +1", neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Soil Pearl",
 		body="Gendewitha Bliaut", hands="Weath. Cuffs +1", left_ring="Solemn Ring", right_ring="Sirona's Ring",
-		back="Pahtli Cape", waist="Witch Sash", legs="Atrophy Tights", feet="Umbani Boots"}
-		--59% Cure Pot., 15%Haste ,MND 92+162
+		back="Pahtli Cape", waist="Witch Sash", legs="Atrophy Tights +1", feet="Umbani Boots"}
+		--60% Cure Pot., Cure casting -14%, 17%Haste ,MND 92+178
 
 	sets.midcast.Enhancing = {main="Arendsi Fleuret", sub="Genbu's Shield",
 		head="Umuthi Hat", neck="Colossus's Torque", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Vitivation Tabard", hands="Atrophy Gloves +1", left_ring="Prolix Ring",
-		back="Estoqueur's Cape", waist="Olympus Sash", legs="Atrophy Tights", feet="Estq. Houseaux +2"}
-		--skill=495 ???
+		back="Estoqueur's Cape", waist="Olympus Sash", legs="Atrophy Tights +1", feet="Estq. Houseaux +2"}
+		--skill=510
 
 	sets.midcast.EnhancingOther = set_combine(sets.midcast.Enhancing, {head="Estq. Chappel +2",
 		body="Estq. Sayon +2", hands="Atrophy Gloves +1", legs="Estqr. Fuseau +2"})
@@ -217,7 +217,7 @@ function midcast(spell)
 		equip(sets.midcast.Enhancing)
 
 		if string.find(spell.english, 'Refresh') then
-			equip({legs="Estoqueur's Fuseau +2"})
+			equip({legs="Estqr. Fuseau +2"})
 		elseif spell.english == 'Stoneskin' then
 			equip({waist="Siegel Sash", legs="Shedir Seraweels", neck="Stone Gorget"})
 		elseif spell.english == 'Aquaveil' then
