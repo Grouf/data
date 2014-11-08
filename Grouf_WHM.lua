@@ -12,7 +12,7 @@ function get_sets()
 	sets.precast = {}
 
 	sets.precast.Idle= {main="Bolelabunga",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
-		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Gende. Bliaut +1",
+		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Gende. Bilaut +1",
 		hands="Serpentes Cuffs",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Cleric's Belt",legs="Nares Trews",feet="Serpentes Sabots"}
 
@@ -25,7 +25,7 @@ function get_sets()
 
 	sets.midcast = {}
 	sets.midcast.Cure= {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Theophany Cap",
-		neck="Imbodla Necklace",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Gende. Bliaut +1",
+		neck="Imbodla Necklace",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Gende. Bilaut +1",
 		hands="Theophany Mitts",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Cleric's Belt",legs="Orsn. Pantaln. +2",feet="Piety Duckbills"} --Cure Potency 52%
 
@@ -39,7 +39,7 @@ function get_sets()
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Piety Duckbills"}
 
 	sets.midcast.DRKMagic= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Buremte Hat",
-		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Gende. Bliaut +1",
+		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Gende. Bilaut +1",
 		hands="Gendewitha Gages",left_ring="Sangoma Ring",right_ring="Acumen Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 
@@ -57,7 +57,7 @@ function get_sets()
 	sets.midcast.Auspice = set_combine(sets.precast.Enhancing,{feet="Orsn. Duckbills +2"})
 
 	sets.midcast.Divine= {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
-		neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Gende. Bliaut +1",
+		neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Gende. Bilaut +1",
 		hands="Gendewitha Gages",left_ring="Sangoma Ring",right_ring="Strendu Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Gendewitha Spats",feet="Umbani Boots"}
 
@@ -67,12 +67,12 @@ function get_sets()
 	sets.TP = {}
 
 	sets.TP.Engage = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
-		neck="Tjukurrpa Medal",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Gende. Bliaut +1",
+		neck="Tjukurrpa Medal",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Gende. Bilaut +1",
 		hands="Gendewitha Gages",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
 		waist="Windbuffet Belt",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 
 	sets.TP.WS = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
-		neck="Tjukurrpa Medal",left_ear="Moonshade Earring",right_ear="Bladeborn Earring",body="Gende. Bliaut +1",
+		neck="Tjukurrpa Medal",left_ear="Moonshade Earring",right_ear="Bladeborn Earring",body="Gende. Bilaut +1",
 		hands="Gendewitha Gages",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
 		waist="Windbuffet Belt",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 
