@@ -67,7 +67,7 @@ function get_sets()
 
 	sets.JA.Step = {head="Buremte Hat",
 		neck="Iqabi Necklace", left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
-		body="Gendewitha Bliaut", hands="Buremte Gloves", left_ring="Rajas Ring", right_ring="Beeline Ring",
+		body="Gende. Bliaut +1", hands="Buremte Gloves", left_ring="Rajas Ring", right_ring="Beeline Ring",
 		back="Letalis Mantle", waist="Olseni Belt", legs="Mes'yohi Slacks", feet="Atrophy Boots"}
 		--Primary Acc: 827???
 
@@ -103,9 +103,9 @@ function get_sets()
 	sets.midcast = {}
 	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
 		head="Viti. Chapeau +1", neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Soil Pearl",
-		body="Gendewitha Bliaut", hands="Weath. Cuffs +1", left_ring="Solemn Ring", right_ring="Sirona's Ring",
+		body="Gende. Bliaut +1", hands="Weath. Cuffs +1", left_ring="Solemn Ring", right_ring="Sirona's Ring",
 		back="Pahtli Cape", waist="Witch Sash", legs="Atrophy Tights +1", feet="Umbani Boots"}
-		--60% Cure Pot., Cure casting -14%, 17%Haste ,MND 92+178
+		--53% Cure Pot., Cure casting -14%, 17%Haste ,MND 92+178
 
 	sets.midcast.Enhancing = {main="Arendsi Fleuret", sub="Genbu's Shield",
 		head="Umuthi Hat", neck="Colossus's Torque", left_ear="Estq. Earring", right_ear="Loquac. Earring",
@@ -133,7 +133,7 @@ function get_sets()
 		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="Rajas Ring",
 		back="Buquwik Cape", waist="Prosilio Belt +1", legs="Mes'yohi Slacks", feet="Atrophy Boots"}
 
-	sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{head="Buremte Hat", body="Gendewitha Bliaut",
+	sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{head="Buremte Hat", 
 		neck="Light Gorget", legs="Vitivation Tights"}) -- DEX 80%
 
 	sets.WS.Requiescat = set_combine(sets.WS.Base, {neck="Shadow Gorget"})
