@@ -27,7 +27,7 @@ function get_sets()
 	sets.midcast.Cure= {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Theophany Cap",
 		neck="Imbodla Necklace",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Gendewitha Bliaut",
 		hands="Theophany Mitts",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
-		waist="Cleric's Belt",legs="Orsn. Pantaln. +2",feet="Piety Duckbills"}
+		waist="Cleric's Belt",legs="Orsn. Pantaln. +2",feet="Piety Duckbills"} --Cure Potency 59%
 
 	sets.midcast.NA = set_combine(sets.precast.Cure,{body="Orison Bliaud +2",
 		hands="Theophany Mitts",back="Mending Cape",
@@ -41,7 +41,7 @@ function get_sets()
 	sets.midcast.DRKMagic= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Gendewitha Bliaut",
 		hands="Gendewitha Gages",left_ring="Sangoma Ring",right_ring="Acumen Ring",back="Refraction Cape",
-		waist="Witch Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
+		waist="Aswang Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 
 	sets.midcast.Enhancing = {main="Lehbrailg +2",sub="Fulcio Grip",ammo="Oreiad's Tathlum",
 		head="Umuthi Hat", neck="Colossus's Torque", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
@@ -59,7 +59,7 @@ function get_sets()
 	sets.midcast.Divine= {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
 		neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Gendewitha Bliaut",
 		hands="Gendewitha Gages",left_ring="Sangoma Ring",right_ring="Strendu Ring",back="Refraction Cape",
-		waist="Witch Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
+		waist="Aswang Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 
 	sets.midcast.Repose = set_combine(sets.precast.Divine,{sub="Mephitis Grip",ammo="Kalboron Stone",head="Orison Cap +2",
 		left_ear="Psystorm Earring",right_ear="Lifestorm Earring",hands="Gendewitha Gages", back="Mending Cape"})
