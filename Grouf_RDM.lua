@@ -95,10 +95,10 @@ function get_sets()
 	sets.Rest = set_combine(sets.Idle,{main="Chatoyant Staff",sub="Mephitis Grip"})
 
 	sets.precast.FastCast = {main="Lehbrailg +2", sub="Arbuda Grip",
-		head="Atrophy Chapeau", neck="Estoqueur's Collar", left_ear="Estq. Earring", right_ear="Loquac. Earring",
+		head="Atro. Chapeau +1", neck="Stoicheion Medal", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Vitivation Tabard", hands="Gendewitha Gages", left_ring="Prolix Ring",
 		back="Swith Cape", waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots +1"}
-		-- 50% Fast Cast, 20% Haste
+		-- 51% Fast Cast, 21% Haste
 
 	sets.midcast = {}
 	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
