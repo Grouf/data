@@ -105,7 +105,7 @@ function get_sets()
 		head="Viti. Chapeau +1", neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Soil Pearl",
 		body="Gende. Bilaut +1", hands="Weath. Cuffs +1", left_ring="Solemn Ring", right_ring="Sirona's Ring",
 		back="Pahtli Cape", waist="Witch Sash", legs="Atrophy Tights +1", feet="Umbani Boots"}
-		--53% Cure Pot., Cure casting -14%, 17%Haste ,MND 92+178
+		--53% Cure Pot., Cure casting -14%, 18%Haste ,MND 92+182, VIT82+87
 
 	sets.midcast.Enhancing = {main="Arendsi Fleuret", sub="Genbu's Shield",
 		head="Umuthi Hat", neck="Colossus's Torque", left_ear="Estq. Earring", right_ear="Loquac. Earring",
@@ -130,7 +130,7 @@ function get_sets()
 	sets.WS = {}
 	sets.WS.Base = {ammo="Oreiad's Tathlum",
 		head="Nahtirah Hat", neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ear="Bladeborn Earring",
-		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="Rajas Ring",
+		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="K'ayres Ring",
 		back="Buquwik Cape", waist="Prosilio Belt +1", legs="Mes'yohi Slacks", feet="Atrophy Boots"}
 
 	sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{head="Buremte Hat", 
@@ -284,20 +284,20 @@ function buff_change(buff_name,gain)
 	if buff_name=='Saboteur' then
 		if gain then
 			equip(sets.JA.Saboteur)
-			send_command('@wait 0.5; gs disable hands;')
-			send_command('@input /echo Saboteur ON, hands disabled')
+			disable('hands')
+			add_to_chat(9, 'Saboteur ON, hands disabled')
 		else
-			enable("hands")
-			send_command('@input /echo Saboteur off, hands enabled')
+			enable('hands')
+			add_to_chat(9, 'Saboteur off, hands enabled')
 		end
 	elseif buff_name=='Chainspell' then
 		if gain then
 			equip(sets.JA.Chainspell)
-			send_command('@wait 0.5; gs disable body;')
-			send_command('@input /echo Chainspell ON, body disabled')
+			disable('body')
+			add_to_chat(9, 'Chainspell ON, body disabled')
 		else
-			enable("body")
-			send_command('@input /echo Chainspell off, body enabled')
+			enable('body')
+			add_to_chat(9, 'Chainspell off, body enabled')
 		end
 	--[[elseif buff_name == 'Commitment' then
 		add_to_chat(4, 'Commitment gone.')
@@ -314,11 +314,11 @@ function self_command(command)
 		SetMode_Index = 2
 		add_to_chat(9, 'SetMode now set to:' ..SetMode_Names[SetMode_Index] )
 	elseif command == 'Melee' then
-		disable("main", "sub", "range")
+		disable('main', 'sub', 'range')
 		MeleeLock = 'True'
 		add_to_chat(9, 'MeleeLock = ' ..MeleeLock)
 	elseif command == 'Magic' then
-		enable("main", "sub", "range")
+		enable('main', 'sub', 'range')
 		MeleeLock = 'False'
 		add_to_chat(9, 'MeleeLock = ' ..MeleeLock)
 	elseif command == 'IdleRefresh' then
