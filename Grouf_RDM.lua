@@ -68,7 +68,7 @@ function get_sets()
 	sets.JA.Step = {head="Buremte Hat",
 		neck="Iqabi Necklace", left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
 		body="Gende. Bilaut +1", hands="Buremte Gloves", left_ring="Rajas Ring", right_ring="Beeline Ring",
-		back="Letalis Mantle", waist="Olseni Belt", legs="Mes'yohi Slacks", feet="Atrophy Boots"}
+		back="Letalis Mantle", waist="Olseni Belt", legs="Mes'yohi Slacks", feet="Atrophy Boots +1"}
 		--Primary Acc: 827???
 
 	sets.JA["Violent Flourish"] = {ammo="Kalboron Stone",
@@ -115,15 +115,19 @@ function get_sets()
 
 	sets.midcast.EnhancingOther = set_combine(sets.midcast.Enhancing, {head="Estq. Chappel +2",
 		body="Estq. Sayon +2", hands="Atrophy Gloves +1", legs="Estqr. Fuseau +2"})
-
+	
+	sets.midcast.Spikes = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Witchstone",
+		head="Atro. Chapeau +1", neck="Imbodla Necklace", left_ear="Crematio Earring", right_ear="Psystorm Earring",
+		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Icesoul Ring", right_ring="Spiral Ring",
+		back="Toro Cape", waist="Caudata Belt", legs="Mes'yohi Slacks", feet="Umbani Boots"}
 
 	MeleeLock = 'False' --used for info only
 	sets.TP = {}
 
 	sets.TP.DD = {ammo="Brigantia Pebble",
-		head="Nahtirah Hat", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
+		head="Atro. Chapeau +1", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="Rajas Ring",
-		back="Atheling Mantle", waist="Windbuffet Belt", legs="Mes'yohi Slacks", feet="Atrophy Boots"}
+		back="Atheling Mantle", waist="Windbuffet Belt", legs="Viti. Tights +1", feet="Atrophy Boots +1"}
 
 	sets.TP.Accuracy = {}
 
@@ -131,17 +135,17 @@ function get_sets()
 	sets.WS.Base = {ammo="Oreiad's Tathlum",
 		head="Nahtirah Hat", neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ear="Bladeborn Earring",
 		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="K'ayres Ring",
-		back="Buquwik Cape", waist="Prosilio Belt +1", legs="Mes'yohi Slacks", feet="Atrophy Boots"}
+		back="Buquwik Cape", waist="Prosilio Belt +1", legs="Viti. Tights +1", feet="Atrophy Boots +1"}
 
 	sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{head="Buremte Hat", 
-		neck="Light Gorget", legs="Vitivation Tights"}) -- DEX 80%
+		neck="Light Gorget"}) -- DEX 80%
 
 	sets.WS.Requiescat = set_combine(sets.WS.Base, {neck="Shadow Gorget"})
 
 	sets.WS['Sanguine Blade'] = set_combine(sets.WS.Base, {right_ear="Psystorm Earring",
 		hands="Hagondes Cuffs", left_ring="Icesoul Ring",
 		right_ring="Spiral Ring", back="Refraction Cape",
-		waist="Caudata Belt", feet="Umbani Boots" })
+		waist="Caudata Belt", legs="Mes'yohi Slacks", feet="Umbani Boots" })
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
@@ -201,11 +205,8 @@ function midcast(spell)
 		--print_set(sets[SetMode_Names[SetMode_Index]].Enfeeble)
 		if spell.english == 'Dispel' then
 			equip(sets[SetMode_Names[SetMode_Index]].Dispel)
-		end
-		if SetMode_Names[SetMode_Index] == 'Potency' then
-			if spell.english == "Bio III" or spell.english == "Blind II" then
-				equip({legs="Vitivation Tights"})
-			end
+		elseif SetMode_Names[SetMode_Index] == 'Potency' and spell.english == "Blind II" then
+			equip({legs="Vitivation Tights"})
 		end
 		--[[if spell.english == "Slow II" or spell.english == "Dia III" then
 			equip({head="Viti. Chapeau +1"}) **This hat always equipped
@@ -224,6 +225,8 @@ function midcast(spell)
 			equip({legs="Shedir Seraweels"})
 		elseif string.find(spell.english, 'Regen') then
 			equip({main="Bolelabunga"})
+		elseif spell.english:endswith('Spikes') then
+			equip(sets.midcast.Spikes)
 		end
 		--if spell.target.isallymember and spell.target.name ~= player.name then
 		if spell.target.name ~= player.name then
@@ -235,6 +238,8 @@ function midcast(spell)
 		equip(sets[SetMode_Names[SetMode_Index]].DarkMagic)
 		if spell.english:startswith('Aspir') or spell.english == 'Drain' then
 			equip({left_ring="Excelsis Ring", waist="Fucho-no-Obi"})
+		elseif SetMode_Names[SetMode_Index] == 'Potency' and spell.english == "Bio III" then
+			equip({legs="Vitivation Tights"})
 		end
 
 	elseif spell.skill == 'Elemental Magic' then
