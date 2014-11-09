@@ -118,7 +118,7 @@ function midcast(spell)
 		end
 	elseif spell.skill == 'Dark Magic' then
 		equip(sets.midcast.DarkMagic)
-		if string.find(spell.english, 'Aspir') or spell.english == 'Drain' then
+		if spell.english:startswith('Aspir') or spell.english == 'Drain' then
 			equip({head="Striga Crown", left_ring="Excelsis Ring", waist="Fucho-no-Obi"})
 		end
 	elseif spell.skill == 'Enfeebling Magic' then
