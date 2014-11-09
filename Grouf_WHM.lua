@@ -67,12 +67,12 @@ function get_sets()
 	sets.TP = {}
 
 	sets.TP.Engage = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
-		neck="Tjukurrpa Medal",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Gende. Bilaut +1",
+		neck="Asperity Necklace",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Gende. Bilaut +1",
 		hands="Gendewitha Gages",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
 		waist="Windbuffet Belt",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 
 	sets.TP.WS = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
-		neck="Tjukurrpa Medal",left_ear="Moonshade Earring",right_ear="Bladeborn Earring",body="Gende. Bilaut +1",
+		neck="Asperity Necklace",left_ear="Moonshade Earring",right_ear="Bladeborn Earring",body="Gende. Bilaut +1",
 		hands="Gendewitha Gages",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
 		waist="Windbuffet Belt",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 
