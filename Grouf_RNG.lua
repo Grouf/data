@@ -38,8 +38,8 @@ function get_sets()
 		right_ring="Rajas Ring",back="Buquwik Cape",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}]]
 
-	sets.Utsusemi = set_combine(sets.WS.Base,{head="Haruspex Hat",neck="Magoraga Beads",left_ear='Loquac. Earring',
-		left_ring="Prolix Ring",waist="Phasmida Belt",legs="Orion Braccae",feet="Thur. Boots +1"})
+	sets.Utsusemi = set_combine(sets.WS.Base,{head="Haruspex Hat", neck="Magoraga Beads", left_ear='Loquac. Earring',
+		left_ring="Prolix Ring", legs="Orion Braccae", feet="Thur. Boots +1"})
 		--Gear Haste: 30%, Fast Cast: 12%
 	
 	sets.TP = {}

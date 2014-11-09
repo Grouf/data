@@ -44,7 +44,7 @@ function get_sets()
 	
 	sets.precast.FastCast = {head="Athos's Chapeau", neck="Magoraga Beads", 
 		right_ear="Loquac. Earring", body="Mochi. Chainmail",hands="Mochizuki Tekko", left_ring="Prolix Ring",
-		back="Yokaze Mantle", waist="Phasmida Belt", legs="Kaabnax Trousers", feet="Mochizuki Kyahan"} 	
+		back="Yokaze Mantle", legs="Kaabnax Trousers", feet="Mochizuki Kyahan"} 	
 																				--30% Haste
 																				--6% Fast Cast
 																				--18% Utsusemi -casting
