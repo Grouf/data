@@ -8,6 +8,8 @@ function get_sets()
 	
 	sets.JA = {}
 	sets.JA.Devotion = {head="Piety Cap"}
+	sets.JA['Divine Caress'] = {hands="Orison Mitts +2"}
+	sets.JA['Afflatus Solace'] = {body="Orison Bliaud +2"}
 	
 	sets.precast = {}
 
@@ -175,4 +177,12 @@ function status_change(new,old)
 end
 
 function buff_change(buff_name,gain)
+	if buff_name == 'Divine Caress' then
+		if gain then
+			equip(sets.JA[buff_name])
+			disable('hands')
+		else
+			enable('hands')
+		end
+	end
 end
