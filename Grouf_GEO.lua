@@ -50,7 +50,7 @@ function get_sets()
 		hands="Hagondes Cuffs",left_ring="Perception Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 
-	sets.midcast.Geomancy = {main="Nehushtan",sub="Genbu's Shield",range="Dunna",
+	sets.midcast.Geomancy = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",
 		body="Bagua Tunic",
 		hands="Geomancy Mitaines",back="Lifestream Cape",
 		waist="Sekhmet Corset", legs="Bagua Pants"}
