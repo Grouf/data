@@ -107,7 +107,7 @@ function get_sets()
 	sets.precast.Rest = sets.precast.Idle
 
 	sets.precast.FastCast = {head="Haruspex Hat",left_ear="Loquacious earring",
-		body="Mavi Mintan +2",hands="Mv. Bazubands +2",left_ring="Prolix Ring",
+		body="Mavi Mintan +2",hands="Mv. Bazubands +2",left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith cape",waist="Witful belt",
 		legs="Orvail Pants +1",feet="Qaaxo Leggings"}--23% Fast Cast, 16% Haste, Blue Magic Casting time -12%
 
@@ -169,13 +169,13 @@ function get_sets()
 		legs="Mes'yohi Slacks",feet="Weath. Souliers +1"}
 
 	sets.midcast.mAccuracy = {head="Assim. Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm Earring",
-		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Hagondes Cuffs",left_ring="Sangoma Ring",
-		right_ring="Perception Ring",back="Cornflower Cape",waist="Aswang Sash",
+		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Hagondes Cuffs",left_ring="Weather. Ring",
+		right_ring="Sangoma Ring",back="Cornflower Cape",waist="Aswang Sash",
 		legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 
 	sets.midcast.Stun = {head="Assim. Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm earring",
-		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Mv. Bazubands +2",left_ring="Sangoma Ring",
-		right_ring="Perception Ring",back="Cornflower Cape",waist="Witful Belt",
+		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Mv. Bazubands +2",left_ring="Weather. Ring",
+		right_ring="Sangoma Ring",back="Cornflower Cape",waist="Witful Belt",
 		legs="Mes'yohi Slacks",feet="Hagondes Sabots"} --25% Haste, 5% Fast Cast, -12% Blue Magic recast
 
 	sets.midcast.Breath = {head="Luhlaza Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm earring",

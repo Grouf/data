@@ -56,7 +56,7 @@ function get_sets()
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}
 	
 	sets.precast['Violent Flourish'] = set_combine(sets.precast.Step, {neck="Stoicheion Medal", 
-		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Perception Ring", 
+		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Weather. Ring", 
 		right_ring="Sangoma Ring", legs="Iuitl Tights"})
 		
 	sets.TP = {}

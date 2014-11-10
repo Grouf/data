@@ -26,7 +26,7 @@ function get_sets()
 		waist="Olseni Belt", legs="Manibozho Brais",feet="Qaaxo Leggings"}
 
 	sets.precast['Violent Flourish'] = set_combine(sets.precast.Step, {neck="Stoicheion Medal", 
-		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Perception Ring", 
+		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Weather. Ring",  
 		right_ring="Sangoma Ring"})
 		
 	sets.precast.WS = {ammo="Thew Bomblet",head="Whirlpool Mask",neck="Tlamiztli Collar",

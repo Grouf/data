@@ -35,8 +35,8 @@ function get_sets()
 
 	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",
 		head="Nahtirah Hat", left_ear="Loquac. Earring",
-		body="Anhur Robe",right_ring="Prolix Ring",
-		back="Swith Cape",waist="Witful Belt",legs="Artsieq Hose",feet="Hag. Sabots +1"}
+		body="Anhur Robe", left_ring="Weather. Ring", right_ring="Prolix Ring",
+		back="Swith Cape", waist="Witful Belt", legs="Artsieq Hose", feet="Hag. Sabots +1"}
 			--Fast Cast = 38%
 			--Haste = 21%
 

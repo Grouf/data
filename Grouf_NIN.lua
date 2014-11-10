@@ -31,7 +31,7 @@ function get_sets()
 		legs="Hachiya Hakama", feet="Mochizuki Kyahan"} --Primary Acc: 964
 	
 	sets.JA['Violent Flourish'] = set_combine(sets.JA.Step, {neck="Stoicheion Medal", 
-		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Perception Ring", 
+		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Weather. Ring", 
 		right_ring="Sangoma Ring", feet="Hachiya Kyahan"}) --Magic Accuracy: +53
 	
 	sets.precast = {}
@@ -43,7 +43,8 @@ function get_sets()
 	
 	
 	sets.precast.FastCast = {head="Athos's Chapeau", neck="Magoraga Beads", 
-		right_ear="Loquac. Earring", body="Mochi. Chainmail",hands="Mochizuki Tekko", left_ring="Prolix Ring",
+		right_ear="Loquac. Earring", body="Mochi. Chainmail",hands="Mochizuki Tekko", 
+		left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Yokaze Mantle", legs="Kaabnax Trousers", feet="Mochizuki Kyahan"} 	
 																				--30% Haste
 																				--6% Fast Cast
@@ -55,12 +56,12 @@ function get_sets()
 	
 	sets.midcast.Enfeeble = {head="Hachiya Hatsuburi",neck="Stoicheion Medal",left_ear="Lifestorm Earring",
 		right_ear="Psystorm Earring",body="Qaaxo Harness",
-		left_ring="Perception Ring", right_ring="Sangoma Ring",back="Yokaze Mantle",
+		left_ring="Weather. Ring", right_ring="Sangoma Ring",back="Yokaze Mantle",
 		feet="Hachiya Kyahan"}  --32% Haste, 230 Magic Accuracy
 	
 	sets.midcast.Nuke = {head="Mochi. Hatsuburi", neck="Stoicheion Medal",left_ear="Friomisi Earring",
-		right_ear="Crematio Earring",body="Qaaxo Harness", left_ring="Prolix Ring",
-		left_ring="Perception Ring", right_ring="Acumen Ring",back="Toro Cape",
+		right_ear="Crematio Earring",body="Qaaxo Harness", left_ring="Weather. Ring",
+		right_ring="Acumen Ring", right_ring="Acumen Ring",back="Toro Cape",
 		legs="Quiahuiz Trousers",feet="Mochizuki Kyahan"}
 	
 	

@@ -20,7 +20,7 @@ function get_sets()
 		right_ring="Rajas Ring", back="Takaha Mantle", waist="Olseni Belt",
 		legs="Miki. Cuisses", feet="Wakido Sune-Ate"} --Primary Acc: 834
 	sets.JA["Violent Flourish"] = set_combine(sets.JA.Step, {left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		right_ring="Perception Ring", left_ring="Sangoma Ring"})
+		left_ring="Weather. Ring", right_ring="Sangoma Ring"})
 		
 	
 	SetMode_Index = 1
