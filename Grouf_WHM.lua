@@ -35,12 +35,12 @@ function get_sets()
 		hands="Theophany Mitts",back="Mending Cape",
 		legs="Theo. Pantaloons",feet="Gende. Galoshes"})
 
-	sets.midcast.Enfeeble= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
+	sets.midcast.Enfeeble= {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Theo. Briault",
 		hands="Gende. Gages +1",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Piety Duckbills"}
 
-	sets.midcast.DRKMagic= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Buremte Hat",
+	sets.midcast.DRKMagic= {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Gende. Bilaut +1",
 		hands="Gende. Gages +1",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
@@ -58,7 +58,7 @@ function get_sets()
 
 	sets.midcast.Auspice = set_combine(sets.precast.Enhancing,{feet="Orsn. Duckbills +2"})
 
-	sets.midcast.Divine= {main="Lehbrailg +2",sub="Elder's Grip", ammo="Witchstone", head="Buremte Hat",
+	sets.midcast.Divine= {main="Staccato Staff",sub="Elder's Grip", ammo="Witchstone", head="Buremte Hat",
 		neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",body="Gende. Bilaut +1",
 		hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Gendewitha Spats", feet="Umbani Boots"}

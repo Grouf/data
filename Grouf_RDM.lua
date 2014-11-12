@@ -19,19 +19,19 @@ function get_sets()
 
 	sets.Potency = {}
 
-	sets.Potency.Enfeeble = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Kalboron Stone",
+	sets.Potency.Enfeeble = {main="Staccato Staff", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Estq. Sayon +2", hands="Hagondes Cuffs +1", left_ring="Irrwisch Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Uk'uxkaj Boots"}--M.Acc=344
 
 	sets.Potency.Dispel = set_combine(sets.Potency.Enfeeble,{body="Atrophy Tabard +1", feet="Vitivation Boots"})
 
-	sets.Potency.Nuke = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Witchstone",
+	sets.Potency.Nuke = {main="Staccato Staff", sub="Mephitis Grip", ammo="Witchstone",
 		head="Buremte Hat", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Strendu Ring", right_ring="Acumen Ring",
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
 
-	sets.Potency.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
+	sets.Potency.DarkMagic = {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
@@ -39,19 +39,19 @@ function get_sets()
 
 	sets.Accuracy = {}
 
-	sets.Accuracy.Enfeeble = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Kalboron Stone",
+	sets.Accuracy.Enfeeble = {main="Staccato Staff", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Vitivation Boots"} --M.Acc 387
 
 	sets.Accuracy.Dispel = set_combine(sets.Accuracy.Enfeeble,{})
 
-	sets.Accuracy.Nuke = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Kalboron Stone",
+	sets.Accuracy.Nuke = {main="Staccato Staff", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Buremte Hat", neck="Eddy Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Vitivation Boots"}
 
-	sets.Accuracy.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
+	sets.Accuracy.DarkMagic = {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
@@ -113,7 +113,7 @@ function get_sets()
 	sets.midcast.EnhancingOther = set_combine(sets.midcast.Enhancing, {head="Estq. Chappel +2",
 		body="Estq. Sayon +2", hands="Atrophy Gloves +1", legs="Estqr. Fuseau +2"})
 	
-	sets.midcast.Spikes = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Witchstone",
+	sets.midcast.Spikes = {main="Staccato Staff", sub="Mephitis Grip", ammo="Witchstone",
 		head="Atro. Chapeau +1", neck="Imbodla Necklace", left_ear="Crematio Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Icesoul Ring", right_ring="Spiral Ring",
 		back="Toro Cape", waist="Caudata Belt", legs="Mes'yohi Slacks", feet="Umbani Boots"}

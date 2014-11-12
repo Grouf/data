@@ -45,7 +45,7 @@ function get_sets()
 		hands="Bokwus Gloves",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Witch Sash",legs="Nares Trews",feet="Umbani Boots"} --MND=96+131, Cure Pot.=46%
 
-	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
+	sets.midcast.Enfeeble = {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Weather. Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
@@ -63,12 +63,12 @@ function get_sets()
 		hands="Augur's Gloves", left_ear="Loquac. Earring",
 		waist="Olympus Sash",legs="Shedir Seraweels",feet="Geomancy Sandals"}
 
-	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
+	sets.midcast.ElementalMagic = {main="Staccato Staff",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
 		neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Umbani Boots"}
 
-	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
+	sets.midcast.DarkMagic = {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}

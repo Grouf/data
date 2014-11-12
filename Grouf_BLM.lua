@@ -13,7 +13,7 @@ function get_sets()
 		back="Swith Cape",waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots"}
 		-- 37% Fast Cast
 
-	sets.precast.Idle = {main="Lehbrailg +2", sub="Elder's Grip", ammo="Witchstone",
+	sets.precast.Idle = {main="Staccato Staff", sub="Elder's Grip", ammo="Witchstone",
 		head="Hagondes Hat", neck="Stoicheion Medal", left_ear="Hecate's Earring", right_ear="Friomisi Earring",
 		body="Hagondes Coat +1", hands="Serpentes Cuffs", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Toro Cape", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
@@ -26,28 +26,28 @@ function get_sets()
 		body="Hagondes Coat +1", hands="Bokwus Gloves", left_ring="Sirona's Ring", right_ring="Solemn Ring",
 		back="Pahtli Cape", waist="Witch Sash", legs="Nares Trews",feet="Umbani Boots"}
 
-	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
+	sets.midcast.Enfeeble = {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat", neck="Imbodla Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Irrwisch Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 
-	sets.midcast.Enhancing = {main="Lehbrailg +2",
+	sets.midcast.Enhancing = {main="Staccato Staff",
 		head="Umuthi Hat", neck="Colossus's Torque", left_ear="Loquac. Earring",
 		body="Anhur Robe", hands="Augur's Gloves",
 		back="Swith Cape", waist="Olympus Sash", legs="Shedir Seraweels", feet="Hag. Sabots +1"}
 
-	sets.midcast.ElementalMagic = {main="Lehbrailg +2", sub="Elder's Grip", ammo="Witchstone",
+	sets.midcast.ElementalMagic = {main="Staccato Staff", sub="Elder's Grip", ammo="Witchstone",
 		head="Buremte Hat", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Spaekona's Coat", hands="Hagondes Cuffs +1", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
 
-	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
+	sets.midcast.DarkMagic = {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat",	neck="Eddy Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Acumen Ring", right_ring="Sangoma Ring",
 		back="Bane Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 
 	sets.TP = {}
-	sets.TP.Engage = {main="Lehbrailg +2", sub="Pole Grip", ammo="Witchstone",
+	sets.TP.Engage = {main="Staccato Staff", sub="Pole Grip", ammo="Witchstone",
 		head="Kaabnax Hat",	neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Rajas Ring", right_ring="Cho'j Band",
 		back="Buquwik Cape", waist="Windbuffet Belt", legs="Hagondes Pants +1", feet="Umbani Boots"}
