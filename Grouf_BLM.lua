@@ -9,7 +9,7 @@ function get_sets()
 
 	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",
 		head="Nahtirah Hat", neck="Stoicheion Medal", left_ear="Loquac. Earring",
-		body="Anhur Robe",hands="Hagondes Cuffs", left_ring="Weather. Ring", right_ring="Prolix Ring",
+		body="Anhur Robe",hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith Cape",waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots"}
 		-- 37% Fast Cast
 
@@ -28,7 +28,7 @@ function get_sets()
 
 	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat", neck="Imbodla Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
-		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Irrwisch Ring", right_ring="Sangoma Ring",
+		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Irrwisch Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 
 	sets.midcast.Enhancing = {main="Lehbrailg +2",
@@ -38,23 +38,23 @@ function get_sets()
 
 	sets.midcast.ElementalMagic = {main="Lehbrailg +2", sub="Elder's Grip", ammo="Witchstone",
 		head="Buremte Hat", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
-		body="Spaekona's Coat", hands="Hagondes Cuffs", left_ring="Acumen Ring", right_ring="Strendu ring",
+		body="Spaekona's Coat", hands="Hagondes Cuffs +1", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
 
 	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat",	neck="Eddy Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
-		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Acumen Ring", right_ring="Sangoma Ring",
+		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Acumen Ring", right_ring="Sangoma Ring",
 		back="Bane Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 
 	sets.TP = {}
 	sets.TP.Engage = {main="Lehbrailg +2", sub="Pole Grip", ammo="Witchstone",
 		head="Kaabnax Hat",	neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
-		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Rajas Ring", right_ring="Cho'j Band",
+		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Rajas Ring", right_ring="Cho'j Band",
 		back="Buquwik Cape", waist="Windbuffet Belt", legs="Hagondes Pants +1", feet="Umbani Boots"}
 
 	sets.WS = {head="Hagondes Hat",
 		neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ear="Bladeborn Earring",
-		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Rajas Ring", right_ring="Cho'j Band",
+		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Rajas Ring", right_ring="Cho'j Band",
 		back="Buquwik Cape", waist="Prosilio Belt +1", legs="Hagondes Pants +1", feet="Umbani Boots"}
 
 	sets.aftercast = {}

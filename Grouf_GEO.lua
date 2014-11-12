@@ -9,18 +9,18 @@ function get_sets()
 
 	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Nahtirah Hat",
 		left_ear="Loquac. Earring",body="Anhur Robe",
-		hands="Hagondes Cuffs", left_ring="Weather. Ring", right_ring="Prolix Ring",
+		hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants",feet="Hag. Sabots +1"}  --Fast Cast = 47%
 
 	sets.precast.IdleRefresh = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
 		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
-		hands="Bagua Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Mecisto. Mantle",
+		hands="Bagua Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Repulse Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Geomancy Sandals"}
 	--Repulse Mantle
 	--Mecisto. Mantle
 	sets.precast.IdleLuopan = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
 		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
-		hands="Geomancy Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Mecisto. Mantle",
+		hands="Geomancy Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Repulse Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Bagua Sandals"}
 	--Lifestream Cape
 
@@ -47,7 +47,7 @@ function get_sets()
 
 	sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
-		hands="Hagondes Cuffs",left_ring="Weather. Ring",right_ring="Sangoma Ring",back="Refraction Cape",
+		hands="Hagondes Cuffs +1",left_ring="Weather. Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 
 	sets.midcast.Geomancy = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",
@@ -65,17 +65,17 @@ function get_sets()
 
 	sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
 		neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Hagondes Coat +1",
-		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
+		hands="Hagondes Cuffs +1",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Umbani Boots"}
 
 	sets.midcast.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
-		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
+		hands="Hagondes Cuffs +1",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 
 	sets.TP = {
 		head="Nahtirah Hat", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
-		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Beeline Ring", right_ring="Rajas Ring",
+		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Beeline Ring", right_ring="Rajas Ring",
 		back="Buquwik Cape", waist="Windbuffet Belt", legs="Mes'yohi Slacks", feet="Hag. Sabots +1"}
 
     sets.WS = set_combine(sets.TP, {neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ring="Cho'j Band",

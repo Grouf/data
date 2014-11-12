@@ -22,7 +22,7 @@ function get_sets()
 
 	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Nahtirah Hat",
 		left_ear="Loquac. Earring",body="Anhur Robe",
-		hands="Gendewitha Gages", left_ring="Weather. Ring", right_ring="Prolix Ring",back="Swith Cape",
+		hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",back="Swith Cape",
 		waist="Witful Belt",legs="Artsieq Hose",feet="Piety Duckbills"} -- 45% Fast Cast
 
 	sets.midcast = {}
@@ -37,12 +37,12 @@ function get_sets()
 
 	sets.midcast.Enfeeble= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Theo. Briault",
-		hands="Gendewitha Gages",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
+		hands="Gende. Gages +1",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Piety Duckbills"}
 
 	sets.midcast.DRKMagic= {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Gende. Bilaut +1",
-		hands="Gendewitha Gages",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
+		hands="Gende. Gages +1",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 
 	sets.midcast.Enhancing = {main="Lehbrailg +2",sub="Fulcio Grip",ammo="Oreiad's Tathlum",
@@ -60,22 +60,22 @@ function get_sets()
 
 	sets.midcast.Divine= {main="Lehbrailg +2",sub="Elder's Grip", ammo="Witchstone", head="Buremte Hat",
 		neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",body="Gende. Bilaut +1",
-		hands="Gendewitha Gages", left_ring="Weather. Ring", right_ring="Sangoma Ring",
+		hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Gendewitha Spats", feet="Umbani Boots"}
 
 	sets.midcast.Repose = set_combine(sets.precast.Divine,{sub="Mephitis Grip",ammo="Kalboron Stone",head="Orison Cap +2",
-		left_ear="Psystorm Earring",right_ear="Lifestorm Earring",hands="Gendewitha Gages", back="Mending Cape"})
+		left_ear="Psystorm Earring",right_ear="Lifestorm Earring",hands="Gende. Gages +1", back="Mending Cape"})
 
 	sets.TP = {}
 
 	sets.TP.Engage = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
 		neck="Asperity Necklace",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Gende. Bilaut +1",
-		hands="Gendewitha Gages",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
+		hands="Gende. Gages +1",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
 		waist="Windbuffet Belt",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 
 	sets.TP.WS = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
 		neck="Asperity Necklace",left_ear="Moonshade Earring",right_ear="Bladeborn Earring",body="Gende. Bilaut +1",
-		hands="Gendewitha Gages",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
+		hands="Gende. Gages +1",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
 		waist="Windbuffet Belt",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 
 	--[[

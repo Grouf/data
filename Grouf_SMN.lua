@@ -74,7 +74,7 @@ function get_sets()
 
 	--[[sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
-		hands="Hagondes Cuffs",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
+		hands="Hagondes Cuffs +1",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"} ]]
 
 	sets.SummoningSkill = {main="Patriarch Cane",sub="Genbu's Shield",ammo="Seraphicaller",
@@ -100,7 +100,7 @@ function get_sets()
 
 	--[[sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat +1",
-		hands="Hagondes Cuffs",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
+		hands="Hagondes Cuffs +1",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Weath. Souliers +1"} ]]
 
 --Job Ability--

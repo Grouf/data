@@ -21,19 +21,19 @@ function get_sets()
 
 	sets.Potency.Enfeeble = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Estq. Sayon +2", hands="Hagondes Cuffs", left_ring="Irrwisch Ring", right_ring="Sangoma Ring",
+		body="Estq. Sayon +2", hands="Hagondes Cuffs +1", left_ring="Irrwisch Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Uk'uxkaj Boots"}--M.Acc=344
 
 	sets.Potency.Dispel = set_combine(sets.Potency.Enfeeble,{body="Atrophy Tabard +1", feet="Vitivation Boots"})
 
 	sets.Potency.Nuke = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Witchstone",
 		head="Buremte Hat", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
-		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Strendu Ring", right_ring="Acumen Ring",
+		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Strendu Ring", right_ring="Acumen Ring",
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
 
 	sets.Potency.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Hagondes Coat +1", hands="Hagondes Cuffs", left_ring="Weather. Ring", right_ring="Sangoma Ring",
+		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 
 
@@ -41,19 +41,19 @@ function get_sets()
 
 	sets.Accuracy.Enfeeble = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Atrophy Tabard +1", hands="Hagondes Cuffs", left_ring="Weather. Ring", right_ring="Sangoma Ring",
+		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Vitivation Boots"} --M.Acc 387
 
 	sets.Accuracy.Dispel = set_combine(sets.Accuracy.Enfeeble,{})
 
 	sets.Accuracy.Nuke = {main="Lehbrailg +2", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Buremte Hat", neck="Eddy Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Atrophy Tabard +1", hands="Hagondes Cuffs", left_ring="Weather. Ring", right_ring="Sangoma Ring",
+		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Vitivation Boots"}
 
 	sets.Accuracy.DarkMagic = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Atrophy Tabard +1", hands="Hagondes Cuffs", left_ring="Weather. Ring", right_ring="Sangoma Ring",
+		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 
 
@@ -70,7 +70,7 @@ function get_sets()
 
 	sets.JA['Violent Flourish'] = {ammo="Kalboron Stone",
 		head="Buremte Hat", neck="Stoicheion Medal", left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
-		body="Atrophy Tabard +1", hands="Hagondes Cuffs", left_ring="Weather. Ring", right_ring="Sangoma Ring",
+		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 		--M.Acc = 111, Prim.Acc = 747
 
@@ -93,7 +93,7 @@ function get_sets()
 
 	sets.precast.FastCast = {main="Lehbrailg +2", sub="Arbuda Grip",
 		head="Atro. Chapeau +1", neck="Stoicheion Medal", left_ear="Estq. Earring", right_ear="Loquac. Earring",
-		body="Viti. Tabard +1", hands="Gendewitha Gages", left_ring="Weather. Ring", right_ring="Prolix Ring",
+		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith Cape", waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots +1"}
 		-- 51% Fast Cast, 21% Haste
 
@@ -149,7 +149,7 @@ function get_sets()
 	sets.aftercast.TP = sets.TP.DD
 	send_command('input /macro book 5;wait .1;input /macro set 1')
 
-	sets.DontForget = {sud="Thuellaic Ecu +1", neck="Quanpur Necklace", left_ear="Reraise Earring", 
+	sets.DontForget = {sub="Thuellaic Ecu +1", neck="Quanpur Necklace", left_ear="Reraise Earring", 
 		right_ear = "Linkpearl", legs="Estoqueur's Fuseau +2"}
 	sets.DontForget2 = {legs="Crimson Cuisses", right_ring="Excelsis Ring"}
 	sets.DontForget3 = {legs="Shedir Seraweels"}
