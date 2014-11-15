@@ -13,12 +13,12 @@ function get_sets()
 		['Heavy Strike']='STR',--Accuracy Penalty
 		['Terror Touch']='STR',['Sickle Slash']='STR',['Uppercut']='STR',['Mandibular Bite']='STR',
 		['Spinal Cleave']='STR',['Asuran Claws']='STR',['Body Slam']='STR',['Battle Dance']='STR',['Bludgeon']='STR',
-		['Screwdriver']='STR',['Thrashing Assault']='STR', ['Sinker Drill']='STR',
+		['Screwdriver']='STR',['Thrashing Assault']='STR', 
 
 	--STRDEX
 		['Foot Kick']='STRDEX',['Disseverment']='STRDEX',['Hysteric Barrage']='STRDEX',['Frenetic Rip']='STRDEX',
 		['Vanity Dive']='STRDEX',['Seedspray']='STRDEX',['Goblin Rush']='STRDEX',['Paralyzing Triad']='STRDEX',
-		['Claw Cyclone']='STRDEX',
+		['Claw Cyclone']='STRDEX', ['Sinker Drill']='STRDEX',
 
 	--STRVIT
 		['Quad. Continuum']='STRVIT',['Delta Thrust']='STRVIT',['Cannonball']='STRVIT',['Glutinous Dart']='STRVIT',
@@ -100,8 +100,8 @@ function get_sets()
 --Precast--
 	sets.precast = {}
 	sets.precast.Idle = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Assim. Jubbah",hands="Serpentes Cuffs",left_ring="Rajas Ring",
-		right_ring="Epona's Ring",back="Repulse Mantle",waist="Flume Belt",
+		right_ear="Bladeborn Earring",body="Mekosu. Harness",hands="Serpentes Cuffs",left_ring="Rajas Ring",
+		right_ring="Epona's Ring",back="Mecisto. Mantle",waist="Flume Belt",
 		legs="Crimson Cuisses",feet="Serpentes Sabots" }
 
 	sets.precast.Rest = sets.precast.Idle
@@ -111,17 +111,17 @@ function get_sets()
 		back="Swith cape",waist="Witful belt",
 		legs="Orvail Pants +1",feet="Qaaxo Leggings"}--23% Fast Cast, 16% Haste, Blue Magic Casting time -12%
 
-	sets.precast.Step = {head="Whirlpool Mask",neck="Iqabi Necklace",left_ear="Steelflash earring",
-		right_ear="Heartseeker earring",body="Manibozho Jerkin",hands="Buremte Gloves",left_ring="Rajas Ring",
-		right_ring="Beeline Ring",back="Letalis Mantle", waist="Olseni Belt",
-		legs="Manibozho Brais",feet="Assim. Charuqs"}
+	sets.precast.Step = {head="Whirlpool Mask", neck="Iqabi Necklace", left_ear="Steelflash earring",
+		right_ear="Heartseeker earring", body="Mekosu. Harness", hands="Buremte Gloves",left_ring="Rajas Ring",
+		right_ring="Beeline Ring", back="Letalis Mantle", waist="Olseni Belt",
+		legs="Manibozho Brais", feet="Assim. Charuqs"}
 
 --Weapon Skills--
 	sets.WS = {}
-	sets.WS.Base = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Moonshade Earring",
-		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
-		right_ring="Cho'j Band",back="Vespid Mantle",waist="Prosilio Belt +1",
-		legs="Manibozho brais",feet="Assim. Charuqs" }
+	sets.WS.Base = {head="Whirlpool Mask", neck="Tlamiztli Collar", left_ear="Moonshade Earring",
+		right_ear="Bladeborn Earring", body="Manibozho Jerkin", hands="Qaaxo Mitaines", left_ring="Rajas Ring",
+		right_ring="Cho'j Band", back="Vespid Mantle", waist="Prosilio Belt +1",
+		legs="Manibozho Brais", feet="Assim. Charuqs" }
 
 	sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{neck="Light Gorget"})
 
@@ -139,14 +139,14 @@ function get_sets()
 		legs="Mes'yohi Slacks",feet="Hag. Sabots +1" }
 
 	--sets.precast['Savage Blade']
-
+	
 
 --Blue Magic Spell Stat sets--
 	sets.midcast = {}
-	sets.midcast.BaseStat = {head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",left_ear="Psystorm Earring",
-		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Buremte Gloves",left_ring="Rajas Ring",
+	sets.midcast.BaseStat = {head="Uk'uxkaj Cap",neck="Tlamiztli Collar",left_ear="Dudgeon Earring",
+		right_ear="Bladeborn Earring",body="Mekosu. Harness",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Prosilio Belt +1",
-		legs="Iuitl Tights",feet="Qaaxo Leggings"} --relic119 legs here
+		legs="Iuitl Tights +1",feet="Qaaxo Leggings"} --relic119 legs here
 
 	sets.midcast.STR = set_combine(sets.midcast.BaseSet,{head="Whirlpool Mask",back="Buquwik Cape"})
 
@@ -156,7 +156,7 @@ function get_sets()
 
 	sets.midcast.STRMND = set_combine(sets.midcast.BaseSet,{legs="Quiahuiz Trousers"})
 
-	sets.midcast.AGI = set_combine(sets.midcast.BaseSet,{body="Iuitl Vest",legs="Kaabnax Trousers"})
+	sets.midcast.AGI = set_combine(sets.midcast.BaseSet,{body="Iuitl Vest +1",legs="Kaabnax Trousers"})
 
 	sets.midcast.INT = {head="Hagondes Hat",neck="Eddy Necklace",left_ear="Psystorm Earring",
 		right_ear="Crematio Earring",body="Hagondes Coat +1",hands="Hagondes Cuffs +1",left_ring="Icesoul Ring",
@@ -169,19 +169,19 @@ function get_sets()
 		legs="Mes'yohi Slacks",feet="Weath. Souliers +1"}
 
 	sets.midcast.mAccuracy = {head="Assim. Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm Earring",
-		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Hagondes Cuffs +1",left_ring="Weather. Ring",
+		right_ear="Lifestorm Earring",body="Mekosu. Harness",hands="Hagondes Cuffs +1",left_ring="Weather. Ring",
 		right_ring="Sangoma Ring",back="Cornflower Cape",waist="Aswang Sash",
 		legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 
 	sets.midcast.Stun = {head="Assim. Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm earring",
-		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Mv. Bazubands +2",left_ring="Weather. Ring",
+		right_ear="Lifestorm Earring",body="Mekosu. Harness",hands="Mv. Bazubands +2",left_ring="Weather. Ring",
 		right_ring="Sangoma Ring",back="Cornflower Cape",waist="Witful Belt",
 		legs="Mes'yohi Slacks",feet="Hagondes Sabots"} --25% Haste, 5% Fast Cast, -12% Blue Magic recast
 
 	sets.midcast.Breath = {head="Luhlaza Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm earring",
-		right_ear="Lifestorm Earring",body="Assim. Jubbah",hands="Hagondes Cuffs +1",left_ring="Prolix Ring",
+		right_ear="Lifestorm Earring",body="Mekosu. Harness",hands="Hagondes Cuffs +1",left_ring="Prolix Ring",
 		back="Cornflower Cape",waist="Aswang Sash",
-		legs="Iuitl Tights",feet="Hagondes Sabots"}
+		legs="Iuitl Tights +1",feet="Hagondes Sabots"}
 
 	sets.midcast.BlueMagic = set_combine(sets.precast.FastCast,{
 		ammo="Mavi Tathlum", head="Luhlaza Keffiyeh",neck="Mavi Scarf",

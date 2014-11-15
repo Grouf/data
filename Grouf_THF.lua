@@ -18,7 +18,7 @@ function get_sets()
 	sets.precast.Feint = {legs="Plun. Culottes"}
 
 	sets.precast.Ranged = {head="Pillager's Bonnet",neck="Ocachi Gorget",left_ear="Volley earring",
-		right_ear="Clearview Earring",body="Iuitl Vest",hands="Buremte Gloves",left_ring="Fistmele Ring",
+		right_ear="Clearview Earring",body="Mekosu. Harness",hands="Buremte Gloves",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Libeccio Mantle",waist="Buccaneer's Belt",
 		legs="Thur. Tights +1",feet="Scopuli Nails +1"}
 	
@@ -46,18 +46,18 @@ function get_sets()
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}]]
 	
 	--[[sets.precast["Aeolian Edge"] = {head="Thaumas Hat",neck="Stoicheion Medal",left_ear="Hecate's Earring",
-		right_ear="Friomisi Earring",body="Iuitl Vest",left_ring="Acumen Ring",
+		right_ear="Friomisi Earring",body="Iuitl Vest +1",left_ring="Acumen Ring",
 		right_ring="Omega Ring",waist="Aquiline Belt",
-		legs="Iuitl Tights",feet="Qaaxo Leggings"}]]
+		legs="Iuitl Tights +1",feet="Qaaxo Leggings"}]]
 	
 	sets.precast.Step = {head="Whirlpool Mask",neck="Iqabi Necklace",left_ear="Steelflash Earring",
-		right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Plun. Armlets",left_ring="Rajas Ring",
+		right_ear="Heartseeker Earring",body="Mekosu. Harness",hands="Plun. Armlets",left_ring="Rajas Ring",
 		right_ring="Beeline Ring",back="Letalis Mantle",waist="Olseni Belt",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}
 	
 	sets.precast['Violent Flourish'] = set_combine(sets.precast.Step, {neck="Stoicheion Medal", 
 		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Weather. Ring", 
-		right_ring="Sangoma Ring", legs="Iuitl Tights"})
+		right_ring="Sangoma Ring", legs="Iuitl Tights +1"})
 		
 	sets.TP = {}
 	sets.TP.DD = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
@@ -65,10 +65,15 @@ function get_sets()
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Qaaxo Leggings"}
 	
-	sets.TP.TH = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
+	--[[sets.TP.TH = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Plun. Armlets",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
-		legs="Quiahuiz Trousers",feet="Qaaxo Leggings"}
+		legs="Quiahuiz Trousers",feet="Qaaxo Leggings"} ]]
+		
+	sets.TP.TH = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Soil Pearl",
+		right_ear="Soil Pearl",body="Qaaxo Harness",hands="Plun. Armlets",left_ring="Dark Ring",
+		right_ring="Shadow Ring",back="Repulse Mantle",waist="Flume Belt",
+		legs="Quiahuiz Trousers",feet="Raid. Poulaines +2"}
 		
 	sets.TP.Dynamis = set_combine(sets.TP.TH, {feet="Raid. Poulaines +2"})
 	
