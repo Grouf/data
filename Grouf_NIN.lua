@@ -26,7 +26,7 @@ function get_sets()
 	sets.JA['Mijin Gakure'] = {legs="Mochizuki Hakama"}
 	
 	sets.JA.Step = {head="Gavialis Helm", neck="Iqabi Necklace", left_ear="Steelflash Earring",
-		right_ear="Heartseeker Earring", body="Manibozho Jerkin", hands="Buremte Gloves", left_ring="Rajas Ring",
+		right_ear="Heartseeker Earring", body="Mekosu. Harness", hands="Buremte Gloves", left_ring="Rajas Ring",
 		right_ring="Beeline Ring", back="Yokaze Mantle", waist="Olseni Belt",
 		legs="Hachiya Hakama", feet="Mochizuki Kyahan"} --Primary Acc: 964
 	
@@ -37,7 +37,7 @@ function get_sets()
 	sets.precast = {}
 	
 	sets.precast.Ranged = {head="Uk'uxkaj Cap",neck="Ocachi Gorget", left_ear="Clearview earring",
-		right_ear="Bladeborn Earring", body="Mochi. Chainmail", hands="Hachiya Tekko", left_ring="Fistmele Ring",
+		right_ear="Bladeborn Earring", body="Mekosu. Harness", hands="Hachiya Tekko", left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring", back="Yokaze Mantle", waist="Buccaneer's Belt",
 		legs="Thur. Tights +1", feet="Scopuli Nails +1"}
 	
@@ -55,12 +55,12 @@ function get_sets()
 	sets.midcast["Migawari: Ichi"] = {body="Iga Ningi +2"}
 	
 	sets.midcast.Enfeeble = {head="Hachiya Hatsuburi",neck="Stoicheion Medal",left_ear="Lifestorm Earring",
-		right_ear="Psystorm Earring",body="Qaaxo Harness",
+		right_ear="Psystorm Earring",body="Mekosu. Harness",
 		left_ring="Weather. Ring", right_ring="Sangoma Ring",back="Yokaze Mantle",
 		feet="Hachiya Kyahan"}  --32% Haste, 230 Magic Accuracy
 	
 	sets.midcast.Nuke = {head="Mochi. Hatsuburi", neck="Stoicheion Medal",left_ear="Friomisi Earring",
-		right_ear="Crematio Earring",body="Qaaxo Harness", left_ring="Weather. Ring",
+		right_ear="Crematio Earring",body="Mekosu. Harness", left_ring="Weather. Ring",
 		right_ring="Acumen Ring", right_ring="Acumen Ring",back="Toro Cape",
 		legs="Quiahuiz Trousers",feet="Mochizuki Kyahan"}
 	
