@@ -7,6 +7,7 @@
 function get_sets()
 	
 	sets.JA = {}
+	sets.JA.Benediction = {body="Piety Briault"}
 	sets.JA.Devotion = {head="Piety Cap"}
 	sets.JA['Divine Caress'] = {hands="Orison Mitts +2"}
 	sets.JA['Afflatus Solace'] = {body="Orison Bliaud +2"}
@@ -53,7 +54,7 @@ function get_sets()
 	sets.midcast["Protectra V"] = set_combine(sets.precast.Enhancing,{feet="Piety Duckbills"})
 	sets.midcast["Shellra V"] = set_combine(sets.precast.Enhancing,{legs="Piety Pantaloons"})
 
-	sets.midcast.Regen = set_combine(sets.precast.Enhancing,{main="Bolelabunga", body="Cleric's Briault",
+	sets.midcast.Regen = set_combine(sets.precast.Enhancing,{main="Bolelabunga", body="Piety Briault",
 		hands="Orison Mitts +2", legs="Theo. Pantaloons"})
 
 	sets.midcast.Auspice = set_combine(sets.precast.Enhancing,{feet="Orsn. Duckbills +2"})
