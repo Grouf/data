@@ -21,7 +21,7 @@ function get_sets()
 	
 	
 	sets.precast.Step = {ammo="Honed Tathlum",head="Whirlpool Mask",neck="Iqabi Necklace",
-		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
+		left_ear="Steelflash Earring",right_ear="Heartseeker Earring",body="Mekosu. Harness",hands="Hes. Gloves",
 		left_ring="Beeline Ring",right_ring="Rajas Ring",back="Anchoret's Mantle",
 		waist="Olseni Belt", legs="Manibozho Brais",feet="Qaaxo Leggings"}
 
@@ -45,7 +45,7 @@ function get_sets()
 		legs="Quiahuiz Trousers",feet="Otronif Boots +1"}
 		
 	sets.TP.Accuracy = {ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
-		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
+		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Mekosu. Harness",hands="Hes. Gloves",
 		left_ring="Beeline Ring",right_ring="Rajas Ring",back="Letalis Mantle",waist="Windbuffet Belt",
 		legs="Manibozho Brais",feet="Otronif Boots +1"}
 
