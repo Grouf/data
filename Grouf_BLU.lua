@@ -112,7 +112,7 @@ function get_sets()
 		legs="Orvail Pants +1",feet="Qaaxo Leggings"}--23% Fast Cast, 16% Haste, Blue Magic Casting time -12%
 
 	sets.precast.Step = {head="Whirlpool Mask", neck="Iqabi Necklace", left_ear="Steelflash earring",
-		right_ear="Heartseeker earring", body="Mekosu. Harness", hands="Buremte Gloves",left_ring="Rajas Ring",
+		right_ear="Zennaroi Earring", body="Mekosu. Harness", hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Beeline Ring", back="Letalis Mantle", waist="Olseni Belt",
 		legs="Manibozho Brais", feet="Assim. Charuqs"}
 
@@ -132,7 +132,7 @@ function get_sets()
 
 	--sets.precast['Expiacion']
 
-	sets.WS['Sanguine Blade'] = {head="Uk'uxkaj Cap",neck="Tlamiztli Collar",left_ear="Psystorm Earring",
+	sets.WS['Sanguine Blade'] = {head="Hagondes Hat +1",neck="Tlamiztli Collar",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",--[[left_ear="Hecate's earring",right_ear="Friomisi Earring",]]
 		body="Hagondes Coat +1",hands="Weath. Cuffs +1",left_ring="Icesoul Ring",
 		right_ring="Spiral Ring",back="Refraction Cape",waist="Caudata Belt",
@@ -158,7 +158,7 @@ function get_sets()
 
 	sets.midcast.AGI = set_combine(sets.midcast.BaseSet,{body="Iuitl Vest +1",legs="Kaabnax Trousers"})
 
-	sets.midcast.INT = {head="Hagondes Hat",neck="Eddy Necklace",left_ear="Psystorm Earring",
+	sets.midcast.INT = {head="Hagondes Hat +1",neck="Eddy Necklace",left_ear="Psystorm Earring",
 		right_ear="Crematio Earring",body="Hagondes Coat +1",hands="Hagondes Cuffs +1",left_ring="Icesoul Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Aswang Sash",
 		legs="Mes'yohi Slacks",feet="Hag. Sabots +1"} --Was Lifestorm earring in right
@@ -199,7 +199,7 @@ function get_sets()
 		legs="Quiahuiz Trousers",feet="Qaaxo Leggings" }
 
 	sets.TP.Acc = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
+		right_ear="Bladeborn Earring",body="Mekosu. Harness",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Atheling Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Assim. Charuqs" }
 
@@ -213,7 +213,7 @@ function get_sets()
 
 	sets.DontForget = {main="Claidheamh Soluis", sub="Buramenk'ah", left_ear="Reraise Earring",
 		right_ear = "Linkpearl"}
-	sets.DontForget2 = {main="Tamaxchi", sub="Nehushtan"}
+	sets.DontForget2 = {main="Tamaxchi", sub="Bolelabunga"}
 
 end
 
