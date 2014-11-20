@@ -22,7 +22,7 @@ function get_sets()
 	sets.Potency.Enfeeble = {main="Staccato Staff", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Estq. Sayon +2", hands="Hagondes Cuffs +1", left_ring="Irrwisch Ring", right_ring="Sangoma Ring",
-		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Uk'uxkaj Boots"}--M.Acc=344
+		back="Ghostfyre Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Uk'uxkaj Boots"}--M.Acc=348
 
 	sets.Potency.Dispel = set_combine(sets.Potency.Enfeeble,{body="Atrophy Tabard +1", feet="Vitivation Boots"})
 
@@ -42,7 +42,7 @@ function get_sets()
 	sets.Accuracy.Enfeeble = {main="Staccato Staff", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
-		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Vitivation Boots"} --M.Acc 387
+		back="Ghostfyre Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Vitivation Boots"} --M.Acc 391
 
 	sets.Accuracy.Dispel = set_combine(sets.Accuracy.Enfeeble,{})
 
@@ -63,16 +63,16 @@ function get_sets()
 	sets.JA.Saboteur = {hands="Estq. Ganthrt. +2"}
 
 	sets.JA.Step = {head="Buremte Hat",
-		neck="Iqabi Necklace", left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
+		neck="Iqabi Necklace", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
 		body="Atrophy Tabard +1", hands="Buremte Gloves", left_ring="Rajas Ring", right_ring="Beeline Ring",
 		back="Letalis Mantle", waist="Olseni Belt", legs="Viti. Tights +1", feet="Atrophy Boots +1"}
 		--Primary Acc: 862
 
 	sets.JA['Violent Flourish'] = {ammo="Kalboron Stone",
-		head="Buremte Hat", neck="Stoicheion Medal", left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
+		head="Buremte Hat", neck="Stoicheion Medal", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
 		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
-		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
-		--M.Acc = 111, Prim.Acc = 747
+		back="Ghostfyre Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
+		--M.Acc = 115, Prim.Acc = 747
 
 	sets.precast = {}
 
@@ -207,6 +207,9 @@ function midcast(spell)
 		--[[if spell.english == "Slow II" or spell.english == "Dia III" then
 			equip({head="Viti. Chapeau +1"}) **This hat always equipped
 		end]]
+		if SetMode_Names[SetMode_Index] == 'Potency' and spell.english:startswith('Dia') then
+			equip({left_ring="Weather. Ring"})
+		end
 
 	elseif spell.skill == 'Enhancing Magic' then
 		--add_to_chat(14, 'Casting spell: ' ..spell.english.. ' on ' ..spell.target.name.. ' with '
