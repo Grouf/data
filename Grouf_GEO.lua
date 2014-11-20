@@ -14,13 +14,13 @@ function get_sets()
 
 	sets.precast.IdleRefresh = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
 		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
-		hands="Bagua Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Repulse Mantle",
+		hands="Bagua Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Mecisto. Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Geomancy Sandals"}
 	--Repulse Mantle
 	--Mecisto. Mantle
 	sets.precast.IdleLuopan = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
 		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
-		hands="Geomancy Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Repulse Mantle",
+		hands="Geomancy Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Mecisto. Mantle",
 		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Bagua Sandals"}
 	--Lifestream Cape
 
