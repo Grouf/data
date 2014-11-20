@@ -26,7 +26,7 @@ function get_sets()
 	sets.JA['Mijin Gakure'] = {legs="Mochizuki Hakama"}
 	
 	sets.JA.Step = {head="Gavialis Helm", neck="Iqabi Necklace", left_ear="Steelflash Earring",
-		right_ear="Heartseeker Earring", body="Mekosu. Harness", hands="Buremte Gloves", left_ring="Rajas Ring",
+		right_ear="Zennaroi Earring", body="Mekosu. Harness", hands="Buremte Gloves", left_ring="Rajas Ring",
 		right_ring="Beeline Ring", back="Yokaze Mantle", waist="Olseni Belt",
 		legs="Hachiya Hakama", feet="Mochizuki Kyahan"} --Primary Acc: 964
 	
@@ -123,7 +123,7 @@ function precast(spell)
 			equip({neck="Ygnas's Resolve +1"})
 		end
 		if ElementalWeaponSkills:contains(spell.english) then
-			add_to_chat(9, 'Elemental WS: ' ..spell.english.. 'is element: ' ..spell.element..
+			add_to_chat(9, 'Elemental WS: ' ..spell.english.. ' is element: ' ..spell.element..
 				', day element: ' ..world.day_element)
 			if spell.element == world.day_element then
 				equip({head="Gavialis Helm"})

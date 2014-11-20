@@ -16,7 +16,7 @@ function get_sets()
 	sets.JA.Sekkanoki = {hands="Unkai Kote +2"}
 	sets.JA["Blade Bash"] = {hands="Sakonji Kote"}
 	sets.JA.Step = {head="Yaoyotl Helm", neck="Iqabi Necklace", left_ear="Steelflash Earring",
-		right_ear="Heartseeker Earring", body="Miki. Breastplate", hands="Buremte Gloves", left_ring="Beeline Ring",
+		right_ear="Zennaroi Earring", body="Miki. Breastplate", hands="Buremte Gloves", left_ring="Beeline Ring",
 		right_ring="Rajas Ring", back="Takaha Mantle", waist="Olseni Belt",
 		legs="Miki. Cuisses", feet="Wakido Sune-Ate"} --Primary Acc: 834
 	sets.JA["Violent Flourish"] = set_combine(sets.JA.Step, {left_ear="Lifestorm Earring", right_ear="Psystorm Earring",

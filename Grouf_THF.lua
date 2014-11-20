@@ -51,7 +51,7 @@ function get_sets()
 		legs="Iuitl Tights +1",feet="Qaaxo Leggings"}]]
 	
 	sets.precast.Step = {head="Whirlpool Mask",neck="Iqabi Necklace",left_ear="Steelflash Earring",
-		right_ear="Heartseeker Earring",body="Mekosu. Harness",hands="Plun. Armlets",left_ring="Rajas Ring",
+		right_ear="Zennaroi Earring",body="Mekosu. Harness",hands="Plun. Armlets",left_ring="Rajas Ring",
 		right_ring="Beeline Ring",back="Letalis Mantle",waist="Olseni Belt",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}
 	
