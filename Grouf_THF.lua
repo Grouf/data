@@ -70,10 +70,7 @@ function get_sets()
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Qaaxo Leggings"} ]]
 		
-	sets.TP.TH = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Soil Pearl",
-		right_ear="Soil Pearl",body="Qaaxo Harness",hands="Plun. Armlets",left_ring="Dark Ring",
-		right_ring="Shadow Ring",back="Repulse Mantle",waist="Flume Belt",
-		legs="Quiahuiz Trousers",feet="Raid. Poulaines +2"}
+	sets.TP.TH = set_combine(sets.TP.DD, {hands="Plun. Armlets"})
 		
 	sets.TP.Dynamis = set_combine(sets.TP.TH, {feet="Raid. Poulaines +2"})
 	
@@ -81,6 +78,8 @@ function get_sets()
 		right_ear="Soil Pearl",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Dark Ring",
 		right_ring="Shadow Ring",back="Repulse Mantle",waist="Flume Belt",
 		legs="Kaabnax Trousers",feet="Qaaxo Leggings"}
+	
+	sets.TP.DT.TH = set_combine(sets.TP.DT, {hands="Plun. Armlets"})
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
@@ -163,5 +162,10 @@ function self_command(command)
 		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
 		equip(sets.aftercast.TP)
 		windower.add_to_chat(9, 'DT set')
+	elseif command == 'DTTH' then
+		sets.aftercast.TP = sets.TP.DT.TH
+		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
+		equip(sets.aftercast.TP)
+		windower.add_to_chat(9, 'DT.TH set')
 	end
 end
