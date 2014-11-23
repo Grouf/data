@@ -14,7 +14,7 @@ function get_sets()
 		-- 37% Fast Cast
 
 	sets.precast.Idle = {main="Staccato Staff", sub="Elder's Grip", ammo="Witchstone",
-		head="Hagondes Hat", neck="Stoicheion Medal", left_ear="Hecate's Earring", right_ear="Friomisi Earring",
+		head="Hagondes Hat +1", neck="Stoicheion Medal", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Hagondes Coat +1", hands="Serpentes Cuffs", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Toro Cape", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
 
