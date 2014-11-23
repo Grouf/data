@@ -55,7 +55,13 @@ function get_sets()
 		head="Atro. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
-
+	
+	--Stun set used for both precast and midcast
+	sets.Stun = {main="Staccato Staff",sub="Arbuda Grip",ammo="Kalboron Stone",
+		head="Atro. Chapeau +1", neck="Eddy Necklace", left_ear="Estq. Earring", right_ear="Loquac. Earring",
+		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
+		back="Swith Cape", waist="Witful Belt", legs="Artsieq Hose", feet="Vitivation Boots"}
+			--Fast Cast: 54%, Haste:22%
 
 	--Job Abilities
 	sets.JA = {}
@@ -160,7 +166,13 @@ function precast(spell)
 	--add_to_chat(14, 'Precast: spell=' ..spell.english.. ' spell type=' ..spell.type.. ' Skill=' ..spell.skill)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
 		--add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
-		equip(sets.precast.FastCast)
+		if spell.english ~= 'Stun' then
+			equip(sets.precast.FastCast)
+		elseif spell.english == 'Stun' then
+			equip(sets.Stun)
+			--add_to_chat(9, 'STUN set, precast')
+		end
+		
 
 	elseif spell.type == "WeaponSkill" then
 		if sets.WS[spell.english] then
@@ -183,9 +195,12 @@ function precast(spell)
 end
 
 function midcast(spell)
-	if spell.prefix == '/jobability' or spell.type == 'WeaponSkill' then
+	if spell.prefix == '/jobability' or spell.type == 'WeaponSkill' or spell.english == 'Stun' then
 	--midcast doesn't exist for JA or WS so cancel the processing of this function
 		--add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
+		--if spell.english == 'Stun' then
+			--add_to_chat(9, 'STUN set, midcast')
+		--end
 		return
 	end
 
