@@ -5,33 +5,57 @@
 ]]
 
 function get_sets()				
-	sets.precast = {}
 	
-	sets.precast.Flee = {feet="Pillager's Poulaines"}
-	sets.precast.Steal = {hands="Pillager's Armlets",legs="Assassin's Culottes",feet="Pillager's Poulaines"}
-	sets.precast.Mug = {head="Assassin's Bonnet"}
-	sets.precast.Despoil = {legs="Raid. Culottes +2", feet="Raid. Poulaines +2"}
-	sets.precast.Conspirator = {body="Raider's Vest +2"}
-	sets.precast.Accomplice = {head="Raider's Bonnet +2"}
-	sets.precast.Collaborator = {head="Raider's Bonnet +2"}
-	sets.precast['Perfect Dodge'] = {hands="Plun. Armlets"}
-	sets.precast.Feint = {legs="Plun. Culottes"}
-
-	sets.precast.Ranged = {head="Pillager's Bonnet",neck="Ocachi Gorget",left_ear="Volley earring",
+	sets.JA = {}
+	sets.JA.Flee = {feet="Pillager's Poulaines"}
+	sets.JA.Steal = {hands="Pillager's Armlets",legs="Assassin's Culottes",feet="Pillager's Poulaines"}
+	sets.JA.Mug = {head="Plun. Bonnet"}
+	sets.JA.Despoil = {legs="Raid. Culottes +2", feet="Raid. Poulaines +2"}
+	sets.JA.Conspirator = {body="Raider's Vest +2"}
+	sets.JA.Accomplice = {head="Raider's Bonnet +2"}
+	sets.JA.Collaborator = {head="Raider's Bonnet +2"}
+	sets.JA['Perfect Dodge'] = {hands="Plun. Armlets"}
+	sets.JA.Feint = {legs="Plun. Culottes"}
+	sets.JA["Assassin's Charge"] = {feet="Plun. Poulaines"}
+	
+	sets.JA.Step = {head="Whirlpool Mask",neck="Iqabi Necklace",left_ear="Steelflash Earring",
+		right_ear="Zennaroi Earring",body="Mekosu. Harness",hands="Plun. Armlets",left_ring="Rajas Ring",
+		right_ring="Beeline Ring",back="Letalis Mantle",waist="Olseni Belt",
+		legs="Manibozho Brais",feet="Qaaxo Leggings"}
+	
+	sets.JA['Violent Flourish'] = set_combine(sets.JA.Step, {neck="Stoicheion Medal", 
+		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Weather. Ring", 
+		right_ring="Sangoma Ring", legs="Iuitl Tights +1"})
+	
+	sets.precast = {}
+	sets.precast.FastCast = {head="Athos's Chapeau", neck="Magoraga Beads", 
+		right_ear="Loquac. Earring", 
+		left_ring="Weather. Ring", right_ring="Prolix Ring"}
+	
+	
+	sets.Ranged = {head="Pillager's Bonnet",neck="Ocachi Gorget",left_ear="Volley earring",
 		right_ear="Clearview Earring",body="Mekosu. Harness",hands="Buremte Gloves",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Libeccio Mantle",waist="Buccaneer's Belt",
 		legs="Thur. Tights +1",feet="Scopuli Nails +1"}
 	
-	sets.precast.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Moonshade Earring",
+	sets.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Moonshade Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Cho'j Band",back="Buquwik Cape",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}
 	
-	sets.precast.Evisceration = set_combine(sets.precast.WS, {neck="Shadow Gorget"}) -- 50% DEX
+	sets.WS.Evisceration = set_combine(sets.WS, {neck="Shadow Gorget"}) -- DEX50%
 	
-	sets.precast["Rudra's Storm"] = set_combine(sets.precast.WS, {neck="Shadow Gorget"}) -- 80% DEX
+	sets.WS["Rudra's Storm"] = set_combine(sets.WS, {neck="Shadow Gorget"}) -- DEX80%
 	
-	sets.precast["Last Stand"] = set_combine(sets.precast.Ranged, {neck="Ocachi Gorget",
+	sets.WS['Aeolian Edge'] = {head="Uk'uxkaj Cap", neck="Stoicheion Medal", left_ear="Friomisi Earring",
+		right_ear="Crematio Earring", body="Mekosu. Harness", hands="Umuthi Gloves", left_ring="Weather. Ring",
+		right_ring="Acumen Ring", back="Toro Cape", waist="Caudata Belt", 
+		legs="Iuitl Tights +1", feet="Qaaxo Leggings"}	--DEX40%, INT40%
+														--DEX:220, INT:186
+														--MAB:48
+														--M.Acc:42
+
+	sets.WS["Last Stand"] = set_combine(sets.Ranged, {neck="Ocachi Gorget",
 		left_ear="Moonshade Earring", waist="Caudata Belt"})
 		
 		--Dancing Edge = 40% DEX, 40% CHR
@@ -39,68 +63,59 @@ function get_sets()
 		--Shark Bite = 40% DEX, 40% AGI
 		--Last Stand = 73-85% AGI
 		
-	
-	--[[sets.precast.Exenterator = {head="Uk'uxkaj Cap",neck="Light Gorget",left_ear="Dudgeon Earring",
-		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Plun. Armlets",left_ring="Rajas Ring",
-		right_ring="Cho'j Band",back="Buquwik Cape",waist="Prosilio Belt +1",
-		legs="Manibozho Brais",feet="Qaaxo Leggings"}]]
-	
-	--[[sets.precast["Aeolian Edge"] = {head="Thaumas Hat",neck="Stoicheion Medal",left_ear="Hecate's Earring",
-		right_ear="Friomisi Earring",body="Iuitl Vest +1",left_ring="Acumen Ring",
-		right_ring="Omega Ring",waist="Aquiline Belt",
-		legs="Iuitl Tights +1",feet="Qaaxo Leggings"}]]
-	
-	sets.precast.Step = {head="Whirlpool Mask",neck="Iqabi Necklace",left_ear="Steelflash Earring",
-		right_ear="Zennaroi Earring",body="Mekosu. Harness",hands="Plun. Armlets",left_ring="Rajas Ring",
-		right_ring="Beeline Ring",back="Letalis Mantle",waist="Olseni Belt",
-		legs="Manibozho Brais",feet="Qaaxo Leggings"}
-	
-	sets.precast['Violent Flourish'] = set_combine(sets.precast.Step, {neck="Stoicheion Medal", 
-		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Weather. Ring", 
-		right_ring="Sangoma Ring", legs="Iuitl Tights +1"})
-		
 	sets.TP = {}
 	sets.TP.DD = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Qaaxo Leggings"}
-	
-	--[[sets.TP.TH = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Plun. Armlets",left_ring="Rajas Ring",
-		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
-		legs="Quiahuiz Trousers",feet="Qaaxo Leggings"} ]]
 		
 	sets.TP.TH = set_combine(sets.TP.DD, {hands="Plun. Armlets"})
 		
 	sets.TP.Dynamis = set_combine(sets.TP.TH, {feet="Raid. Poulaines +2"})
 	
-	sets.TP.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Soil Pearl",
-		right_ear="Soil Pearl",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Dark Ring",
-		right_ring="Shadow Ring",back="Repulse Mantle",waist="Flume Belt",
-		legs="Kaabnax Trousers",feet="Qaaxo Leggings"}
+	sets.TP.DT = {head="Uk'uxkaj Cap", neck="Twilight Torque", left_ear="Soil Pearl",
+		right_ear="Soil Pearl", body="Qaaxo Harness", hands="Umuthi Gloves", left_ring="Dark Ring",
+		right_ring="Shadow Ring", back="Repulse Mantle", waist="Flume Belt",
+		legs="Kaabnax Trousers", feet="Qaaxo Leggings"}
 	
 	sets.TP.DT.TH = set_combine(sets.TP.DT, {hands="Plun. Armlets"})
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
-	sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
+	sets.aftercast.Idle = set_combine(sets.aftercast.TP,{body="Mekosu. Harness", feet="Fajin Boots"})
 	send_command('input /macro book 6;wait .1;input /macro set 10')
 	
-	sets.dontforget = {main="Izhiikoh", sub="Sandung", range="Tsoa. Crossbow", ammo="Acid Bolt", neck="Ygnas's Resolve +1",
-		left_ear="Linkpearl", right_ear="Reraise Earring", left_ring="Bloody Bolt"} 
+	sets.dontforget = {main="Izhiikoh", sub="Sandung", range="Tsoa. Crossbow", ammo="Acid Bolt", 
+		neck="Ygnas's Resolve +1", left_ear="Linkpearl", right_ear="Reraise Earring", left_ring="Bloody Bolt"} 
 end
 
 function precast(spell)
-	if sets.precast[spell.english] then
-		equip(sets.precast[spell.english])
-	elseif spell.type=="WeaponSkill" then
-		equip(sets.precast.WS)
+	--add_to_chat(9, 'Precast: spell=' ..spell.english.. ' spell type=' ..spell.type.. ' Skill=' ..spell.skill)
+	--if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
+		--add_to_chat(9, 'not JobAbility or WeaponSkill so Fast Cast')
+	--	equip(sets.precast.FastCast)
+		
+	if spell.type == "WeaponSkill" then
+		if sets.WS[spell.english] then
+			equip(sets.WS[spell.english])
+		else
+			equip(sets.WS.Base)
+		end
 		if buffactive['Reive Mark'] then
 			equip({neck="Ygnas's Resolve +1"})
 		end
-	elseif spell.type =='Step' then
-		equip(sets.precast.Step)
+
+	elseif spell.prefix == "/jobability" then
+		if sets.JA[spell.english] then
+			equip(sets.JA[spell.english])
+		elseif spell.type == 'Step' then
+			equip(sets.JA.Step)
+		end
+	
+	elseif spell.english == "Ranged" then
+		equip(sets.Ranged)
 	end
+	
 end
 
 function midcast(spell)
@@ -129,43 +144,60 @@ function status_change(new,old)
 end
 
 function buff_change(buff_name,gain)
-	if gain then
-		if buff_name == 'Perfect Dodge' then
-			equip(sets.precast[buff_name])
-			send_command('@wait 0.5; gs disable hands;')
+	if buff_name == 'Perfect Dodge' then
+		if gain then
+			equip(sets.JA[buff_name])
+			disable('body')
+			add_to_chat(9, 'Perfect Dodge on: Body disabled')
+		else
+			enable('body')
+			add_to_chat(9, 'Perfect Dodge off: Body enabled')
 		end
-	elseif not gain then
-		if buff_name == 'Perfect Dodge' then
-			send_command('@wait 0.5; gs enable hands;')
+	elseif buff_name == "Assassin's Charge" then
+		if gain then
+			equip(sets.JA[buff_name])
+			disable('feet')
+			add_to_chat(9, "Assassin's Charge on: Feet disabled")
+		else
+			enable('feet')
+			add_to_chat(9, "Assassin's Charge off: Feet enabled")
+		end
+	elseif buff_name == 'Feint' then
+		if gain then
+			equip(sets.JA[buff_name])
+			disable('legs')
+			add_to_chat(9, 'Feint on: Legs disabled')
+		else
+			enable('legs')
+			add_to_chat(9, 'Feint off: Legs enabled')
 		end
 	end
+	
 end
 
 function self_command(command)
 	if command == 'DD' then
 		sets.aftercast.TP = sets.TP.DD
-		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
-		equip(sets.aftercast.TP)
+		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{body="Mekosu. Harness", feet="Fajin Boots"})
 		windower.add_to_chat(9, 'DD set')
 	elseif command == 'TH' then
 		sets.aftercast.TP = sets.TP.TH
-		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
-		equip(sets.aftercast.TP)
+		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{body="Mekosu. Harness", feet="Fajin Boots"})
 		windower.add_to_chat(9, 'Treasure Hunter set')
 	elseif command == 'Dynamis' then
 		sets.aftercast.TP = sets.TP.Dynamis
-		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
-		equip(sets.aftercast.TP)
+		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{body="Mekosu. Harness", feet="Fajin Boots"})
 		windower.add_to_chat(9, 'Dynamis Treasure Hunter set')
 	elseif command == 'DT' then
 		sets.aftercast.TP = sets.TP.DT
-		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
-		equip(sets.aftercast.TP)
+		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{body="Mekosu. Harness", feet="Fajin Boots"})
 		windower.add_to_chat(9, 'DT set')
 	elseif command == 'DTTH' then
 		sets.aftercast.TP = sets.TP.DT.TH
-		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
-		equip(sets.aftercast.TP)
+		sets.aftercast.Idle = set_combine(sets.aftercast.TP,{body="Mekosu. Harness", feet="Fajin Boots"})
 		windower.add_to_chat(9, 'DT.TH set')
 	end
+	
+	status_change(player.status)
+	
 end
