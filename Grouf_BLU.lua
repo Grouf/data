@@ -8,84 +8,81 @@ function get_sets()
 
 	BlueMageSpell = {
 	--STR
-		['Vertical Cleave']='STR',['Death Scissors']='STR',['Empty Thrash']='STR', ['Dimensional Death']='STR',
-		['Quadrastrike']='STR',['Bloodrake']='STR',['Power Attack']='STR',['Smite of Rage']='STR',
-		['Heavy Strike']='STR',--Accuracy Penalty
-		['Terror Touch']='STR',['Sickle Slash']='STR',['Uppercut']='STR',['Mandibular Bite']='STR',
-		['Spinal Cleave']='STR',['Asuran Claws']='STR',['Body Slam']='STR',['Battle Dance']='STR',['Bludgeon']='STR',
-		['Screwdriver']='STR',['Thrashing Assault']='STR', 
+		['Asuran Claws']='STR',['Battle Dance']='STR',['Bloodrake']='STR',['Bludgeon']='STR',['Body Slam']='STR',
+		['Death Scissors']='STR',['Dimensional Death']='STR',['Empty Thrash']='STR',['Heavy Strike']='STR',
+		['Mandibular Bite']='STR',['Power Attack']='STR',['Quadrastrike']='STR',['Screwdriver']='STR',['Sickle Slash']='STR',
+		['Smite of Rage']='STR',['Spinal Cleave']='STR',['Terror Touch']='STR',['Thrashing Assault']='STR',
+		['Uppercut']='STR',['Vertical Cleave']='STR',
 
 	--STRDEX
-		['Foot Kick']='STRDEX',['Disseverment']='STRDEX',['Hysteric Barrage']='STRDEX',['Frenetic Rip']='STRDEX',
-		['Vanity Dive']='STRDEX',['Seedspray']='STRDEX',['Goblin Rush']='STRDEX',['Paralyzing Triad']='STRDEX',
-		['Claw Cyclone']='STRDEX', ['Sinker Drill']='STRDEX',
+		['Claw Cyclone']='STRDEX',['Disseverment']='STRDEX',['Foot Kick']='STRDEX',['Frenetic Rip']='STRDEX',
+		['Goblin Rush']='STRDEX',['Hysteric Barrage']='STRDEX',['Paralyzing Triad']='STRDEX',['Seedspray']='STRDEX',
+		['Sinker Drill']='STRDEX',['Vanity Dive']='STRDEX',
 
 	--STRVIT
-		['Quad. Continuum']='STRVIT',['Delta Thrust']='STRVIT',['Cannonball']='STRVIT',['Glutinous Dart']='STRVIT',
-		['Grand Slam']='STRVIT',['Sprout Smack']='STRVIT',
+		['Cannonball']='STRVIT',['Delta Thrust']='STRVIT',['Glutinous Dart']='STRVIT',['Grand Slam']='STRVIT',
+		['Quad. Continuum']='STRVIT',['Sprout Smack']='STRVIT',
 
 	--STRMND
-		['Whirl of Rage']='STRMND', --AoE Stun
 		['Ram Charge']='STRMND',
+		['Whirl of Rage']='STRMND', --AoE Stun
 
 	--AGI
-		['Benthic Typhoon']='AGI',['Final Sting']='AGI',['Spiral Spin']='AGI',
-		['Wild Oats']='AGI',['Helldive']='AGI',['Hydro Shot']='AGI',['Jet Stream']='AGI',['Pinecone Bomb']='STRAGI',
+		['Benthic Typhoon']='AGI',['Final Sting']='AGI',['Helldive']='AGI',['Hydro Shot']='AGI',['Jet Stream']='AGI',
+		['Pinecone Bomb']='AGI',['Spiral Spin']='AGI',['Wild Oats']='AGI',
 
 	--INT
-		['Gates of Hades']='INT',['Leafstorm']='INT',['Firespit']='INT',['Acrid Stream']='INT',['Regurgitation']='INT',
-		['Corrosive Ooze']='INT',['Thermal Pulse']='INT',['Magic Hammer']='INT',['Evryone. Grudge']='INT',
-		['Water Bomb']='INT',['Dark Orb']='INT',['Tem. Upheaval']='INT',['Embalming Earth']='INT',
-		['Foul Waters']='INT',['Rending Deluge']='INT',['Droning Whirlwind']='INT',
-		['Thunderbolt']='INT', --AoE Stun, Unbridled Learning, 30%INT, 20%MND
-		['Charged whisker']='INT',--DEX50%, dINTx2.0
-		['Amorphic Spikes']='INT',--DEX&INT 20%
-		['Sandspin']='INT',['Cursed Sphere']='INT',['Blastbomb']='INT',['Bomb Toss']='INT',['Death Ray']='INT',
-		['Ice break']='INT',['Maelstrom']='INT',['Water Bomb']='INT',['Mysterious Light']='INT',['Eyes On Me']='INT',
-		['Blazing Bound']='INT',['Vapor Spray']='INT',['Bilgestorm']='INT',['Feather storm']='INT',
-		['Queasyshroom']='INT',['Subduction']='INT', ['Crashing Thunder']='INT', ['Rail Cannon']='INT',
-		['Uproot']='INT',
+		['Blazing Bound']='INT',['Corrosive Ooze']='INT',['Foul Waters']='INT',['Ice break']='INT',['Thunderbolt']='INT',
+		['Uproot']='INT',['Water Bomb']='INT',['Crashing Thunder']='INT',['Rail Cannon']='INT',['Acrid Stream']='INT',
+		['Bilgestorm']='INT',['Blastbomb']='INT',['Bomb Toss']='INT',['Cursed Sphere']='INT',['Dark Orb']='INT',
+		['Death Ray']='INT',['Droning Whirlwind']='INT',['Embalming Earth']='INT',['Evryone. Grudge']='INT',['Eyes On Me']='INT',
+		['Feather storm']='INT',['Firespit']='INT',['Gates of Hades']='INT',['Leafstorm']='INT',['Maelstrom']='INT',
+		['Magic Hammer']='INT',['Mysterious Light']='INT',['Polar Roar']='INT',['Queasyshroom']='INT',['Regurgitation']='INT',
+		['Rending Deluge']='INT',['Sandspin']='INT',['Subduction']='INT',['Tem. Upheaval']='INT',['Thermal Pulse']='INT',
+		['Vapor Spray']='INT',['Water Bomb']='INT',
+
+	--DEXINT
+		['Amorphic Spikes']='DEXINT',--DEX&INT 20%
+		['Charged whisker']='DEXINT',--DEX50%, dINTx2.0
 
 	--Cures
-		['Pollen']='Cure',['Healing Breeze']='Cure',['Wild Carrot']='Cure',['Magic Fruit']='Cure',
-		['Plenilune Embrace']='Cure',['White Wind']='Cure', ['Restoral']='Cure',
+		['Healing Breeze']='Cure',['Magic Fruit']='Cure',['Plenilune Embrace']='Cure',['Pollen']='Cure',['Restoral']='Cure',
+		['White Wind']='Cure',['Wild Carrot']='Cure',
 
 	--Stun
-		['Head Butt']='Stun',['Sudden Lunge']='Stun',['Tail Slap']='Stun',['Frypan']='Stun', --Physical
+		['Frypan']='Stun',['Head Butt']='Stun',['Sudden Lunge']='Stun',['Tail Slap']='Stun', --Physical
 		['Blitzstrahl']='Stun',['Temporal Shift']='Stun',--Magic
 
 	--Magic Accuracy
-		['Frightful Roar']='mAccuracy',['Infrasonics']='mAccuracy',['Barbed Crescent']='mAccuracy',['Tourbillion']='mAccuracy',
-		['Cimicine Discharge']='mAccuracy',['Sub-zero Smash']='mAccuracy',['Filamented Hold']='mAccuracy',
-		['Mind Blast']='mAccuracy',['Sandspray']='mAccuracy',['Hecatomb Wave']='mAccuracy',['Cold Wave']='mAccuracy',
-		['Sheep Song']='mAccuracy',['Soporific']='mAccuracy',['Yawn']='mAccuracy',['Dream Flower']='mAccuracy',
-		['Soud Blast']='mAccuracy',['Chaotic Eye']='mAccuracy',['Enervation']='mAccuracy',['Mortal Ray']='mAccuracy',
-		['Light of Penance']='mAccuracy',['Feather Tickle']='mAccuracy',['Reaving Wind']='mAccuracy',
-		['Blank Gaze']='mAccuracy',['Geist Wall']='mAccuracy',['Actinic Burst']='mAccuracy',['Auroral Drape']='mAccuracy',
-		['Venom Shell']='mAccuracy',['Stinking Gas']='mAccuracy',['Awful Eye']='mAccuracy',['Demoralizing Roar']='mAccuracy',
-		['Jettatura']='mAccuracy',['Absolute Terror']='mAccuracy',['Triumphant Roar']='mAccuracy',
-		['1000 Needles']='mAccuracy',['Voracious Trunk']='mAccuracy',['Lowing']='mAccuracy',['Blistering Roar']='mAccuracy',
-		['Polar Roar']='mAccuracy', --from IceKitty, does AoE Ice+Bind, should be in INT or mAccuracy??
+		['1000 Needles']='mAccuracy',['Absolute Terror']='mAccuracy',['Actinic Burst']='mAccuracy',['Auroral Drape']='mAccuracy',
+		['Awful Eye']='mAccuracy',['Barbed Crescent']='mAccuracy',['Blank Gaze']='mAccuracy',['Blistering Roar']='mAccuracy',
+		['Chaotic Eye']='mAccuracy',['Cimicine Discharge']='mAccuracy',['Cold Wave']='mAccuracy',['Demoralizing Roar']='mAccuracy',
+		['Dream Flower']='mAccuracy',['Enervation']='mAccuracy',['Feather Tickle']='mAccuracy',['Filamented Hold']='mAccuracy',
+		['Frightful Roar']='mAccuracy',['Geist Wall']='mAccuracy',['Hecatomb Wave']='mAccuracy',['Infrasonics']='mAccuracy',
+		['Jettatura']='mAccuracy',['Light of Penance']='mAccuracy',['Lowing']='mAccuracy',['Mind Blast']='mAccuracy',
+		['Mortal Ray']='mAccuracy',['Reaving Wind']='mAccuracy',['Sandspray']='mAccuracy',['Sheep Song']='mAccuracy',
+		['Soporific']='mAccuracy',['Sound Blast']='mAccuracy',['Stinking Gas']='mAccuracy',['Sub-zero Smash']='mAccuracy',
+		['Tourbillion']='mAccuracy',['Triumphant Roar']='mAccuracy',['Venom Shell']='mAccuracy',['Voracious Trunk']='mAccuracy',
+		['Yawn']='mAccuracy',
 
 	--Blue Magic Skill, Fast Cast (precast=Fast Cast, midcast=Blue Magic Skill)
 		--uses sets.precast.FastCast and sets.midcast.BlueMagic
-		['MP Drainkiss']='BlueMagic',['Digest']='BlueMagic',['Blood Saber']='BlueMagic',['Blood Drain']='BlueMagic',
-		['Osmosis']='BlueMagic',['Occultation']='BlueMagic',['Magic Barrier']='BlueMagic',['Diamondhide']='BlueMagic',
-		['Metallic Body']='BlueMagic',['Carcharian Verve']='BlueMagic',
+		['Blood Drain']='BlueMagic',['Blood Saber']='BlueMagic',['Carcharian Verve']='BlueMagic',['Diamondhide']='BlueMagic',
+		['Digest']='BlueMagic',['Magic Barrier']='BlueMagic',['Metallic Body']='BlueMagic',['MP Drainkiss']='BlueMagic',
+		['Occultation']='BlueMagic',['Osmosis']='BlueMagic',
 
 	-- Breath spells
-        ['Poison Breath']='Breath',['Magnetite Cloud']='Breath',['Self Destruct']='Breath',['Radiant Breath']='Breath',
-        ['Flying Hip Press']='Breath',['Bad Breath']='Breath',['Frost Breath']='Breath',['Heat Breath']='Breath',
-        ['Thunder Breath']='Breath',['Wind Breath']='Breath',['Diffusion Ray']='Breath',
+		['Bad Breath']='Breath',['Diffusion Ray']='Breath',['Flying Hip Press']='Breath',['Frost Breath']='Breath',
+		['Heat Breath']='Breath',['Magnetite Cloud']='Breath',['Poison Breath']='Breath',['Radiant Breath']='Breath',
+		['Self Destruct']='Breath',['Thunder Breath']='Breath',['Wind Breath']='Breath',
 
 	--FastCast
-		['Cocoon']='FastCast',['Harden Shell']='FastCast',['Refueling']='FastCast',['Zephyr Mantle']='FastCast',
-		['Regeneration']='FastCast',['Animating Wail']='FastCast',['Battery Charge']='FastCast',['Winds of Promy.']='FastCast',
-		['Feather Barrier']='FastCast',['Memento Mori']='FastCast',['Saline Coat']='FastCast',['Warm-Up']='FastCast',
-		['Amplification']='FastCast',['Exuviation']='FastCast',['Fantod']='FastCast',['Plasma Charge']='FastCast',
-		['Reactor Cool']='FastCast',['Barrier Tusk']='FastCast',['Nat. Meditation']='FastCast',
-		['Orcish Counterstance']='FastCast',['Pyric Bulwark']='FastCast',['Retinal Glare']='FastCast',
-		['Erratic Flutter']='FastCast'
+		['Amplification']='FastCast',['Animating Wail']='FastCast',['Barrier Tusk']='FastCast',['Battery Charge']='FastCast',
+		['Cocoon']='FastCast',['Erratic Flutter']='FastCast',['Exuviation']='FastCast',['Fantod']='FastCast',
+		['Feather Barrier']='FastCast',['Harden Shell']='FastCast',['Memento Mori']='FastCast',['Nat. Meditation']='FastCast',
+		['Orcish Counterstance']='FastCast',['Plasma Charge']='FastCast',['Pyric Bulwark']='FastCast',['Reactor Cool']='FastCast',
+		['Refueling']='FastCast',['Regeneration']='FastCast',['Retinal Glare']='FastCast',['Saline Coat']='FastCast',
+		['Warm-Up']='FastCast',	['Winds of Promy.']='FastCast',['Zephyr Mantle']='FastCast'
 
 	}
 
@@ -139,7 +136,7 @@ function get_sets()
 		legs="Mes'yohi Slacks",feet="Hag. Sabots +1" }
 
 	--sets.precast['Savage Blade']
-	
+
 
 --Blue Magic Spell Stat sets--
 	sets.midcast = {}
