@@ -50,10 +50,10 @@ function get_sets()
 		hands="Hagondes Cuffs +1",left_ring="Weather. Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 
-	sets.midcast.Geomancy = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",
+	sets.midcast.Geomancy = {main="Staccato Staff",sub="Arbuda Grip" ,range="Dunna",
 		body="Bagua Tunic",
 		hands="Geomancy Mitaines",back="Lifestream Cape",
-		waist="Sekhmet Corset", legs="Bagua Pants"}
+		waist="Sekhmet Corset", legs="Bagua Pants", feet="Umbani Boots"}
 			--Geomancy Skill:	373+38 = 411  ??
 			--Handbell Skill:	373+18 = 391
 			--Total:			802
@@ -63,7 +63,7 @@ function get_sets()
 		hands="Augur's Gloves", left_ear="Loquac. Earring",
 		waist="Olympus Sash",legs="Shedir Seraweels",feet="Geomancy Sandals"}
 
-	sets.midcast.ElementalMagic = {main="Staccato Staff",sub="Elder's Grip",ammo="Witchstone",head="Buremte Hat",
+	sets.midcast.ElementalMagic = {main="Staccato Staff",sub="Mephitis Grip",ammo="Witchstone",head="Buremte Hat",
 		neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Umbani Boots"}
