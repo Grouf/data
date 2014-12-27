@@ -132,7 +132,7 @@ function get_sets()
 	sets.TP.DD = {ammo="Brigantia Pebble",
 		head="Atro. Chapeau +1", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="Rajas Ring",
-		back="Atheling Mantle", waist="Windbuffet Belt", legs="Viti. Tights +1", feet="Atrophy Boots +1"}
+		back="Bleating Mantle", waist="Windbuffet Belt", legs="Viti. Tights +1", feet="Atrophy Boots +1"}
 
 	sets.TP.Accuracy = {}
 
@@ -140,7 +140,7 @@ function get_sets()
 	sets.WS.Base = {ammo="Oreiad's Tathlum",
 		head="Atro. Chapeau +1", neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ear="Bladeborn Earring",
 		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="K'ayres Ring",
-		back="Buquwik Cape", waist="Prosilio Belt +1", legs="Viti. Tights +1", feet="Atrophy Boots +1"}
+		back="Vespid Mantle", waist="Prosilio Belt +1", legs="Viti. Tights +1", feet="Atrophy Boots +1"}
 
 	sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{head="Buremte Hat", 
 		neck="Light Gorget"}) -- DEX 80%
