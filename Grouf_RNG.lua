@@ -50,7 +50,7 @@ function get_sets()
 	
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.Ranged
-	sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Fajin Boots"})
+	sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Jute Boots +1"})
 	send_command('input /macro book 11;wait .1;input /macro set 1')
 	
 	sets.dontforget = {main="Hurlbat", sub="Antican Axe", range="Cibitshavore", left_ear="Linkpearl", 
