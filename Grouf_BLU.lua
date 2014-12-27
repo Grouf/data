@@ -96,8 +96,8 @@ function get_sets()
 
 --Precast--
 	sets.precast = {}
-	sets.precast.Idle = {head="Uk'uxkaj Cap",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Mekosu. Harness",hands="Serpentes Cuffs",left_ring="Rajas Ring",
+	sets.precast.Idle = {neck="Asperity Necklace",left_ear="Steelflash Earring",
+		right_ear="Bladeborn Earring",body="Respite Cloak",hands="Serpentes Cuffs",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Mecisto. Mantle",waist="Flume Belt",
 		legs="Crimson Cuisses",feet="Serpentes Sabots" }
 
@@ -151,14 +151,14 @@ function get_sets()
 
 	sets.midcast.STRVIT = set_combine(sets.midcast.BaseSet,{legs="Quiahuiz Trousers"})
 
-	sets.midcast.STRMND = set_combine(sets.midcast.BaseSet,{legs="Quiahuiz Trousers"})
+	sets.midcast.STRMND = set_combine(sets.midcast.BaseSet,{legs="Mes'yohi Slacks"})
 
-	sets.midcast.AGI = set_combine(sets.midcast.BaseSet,{body="Iuitl Vest +1",legs="Kaabnax Trousers"})
+	sets.midcast.AGI = set_combine(sets.midcast.BaseSet,{legs="Kaabnax Trousers"})
 
 	sets.midcast.INT = {head="Hagondes Hat +1",neck="Eddy Necklace",left_ear="Psystorm Earring",
 		right_ear="Crematio Earring",body="Hagondes Coat +1",hands="Hagondes Cuffs +1",left_ring="Icesoul Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Aswang Sash",
-		legs="Mes'yohi Slacks",feet="Hag. Sabots +1"} --Was Lifestorm earring in right
+		legs="Mes'yohi Slacks",feet="Hag. Sabots +1"}
 
 	sets.midcast.Cure = {head="Uk'uxkaj Cap",neck="Imbodla Necklace",left_ear="Loquac. Earring",
 		right_ear="Lifestorm Earring",body="Hagondes Coat +1",hands="Weath. Cuffs +1",left_ring="Sirona's Ring",
