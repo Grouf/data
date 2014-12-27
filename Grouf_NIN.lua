@@ -38,7 +38,7 @@ function get_sets()
 	
 	sets.precast.Ranged = {head="Uk'uxkaj Cap",neck="Ocachi Gorget", left_ear="Clearview earring",
 		right_ear="Bladeborn Earring", body="Mekosu. Harness", hands="Hachiya Tekko", left_ring="Fistmele Ring",
-		right_ring="Paqichikaji Ring", back="Yokaze Mantle", waist="Buccaneer's Belt",
+		right_ring="Paqichikaji Ring", back="Yokaze Mantle", waist="Flax Sash",
 		legs="Thur. Tights +1", feet="Scopuli Nails +1"}
 	
 	
@@ -47,7 +47,7 @@ function get_sets()
 		left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Yokaze Mantle", legs="Kaabnax Trousers", feet="Mochizuki Kyahan"} 	
 																				--30% Haste
-																				--6% Fast Cast
+																				--11% Fast Cast???
 																				--18% Utsusemi -casting
 	sets.midcast = {}
 	sets.midcast.Utsusemi = {feet="Iga Kyahan +2"}
@@ -68,7 +68,7 @@ function get_sets()
 	sets.WS = {}
 	sets.WS.Base = {head="Gavialis Helm",neck="Tlamiztli Collar",left_ear="Moonshade Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Cho'j Band",
-		right_ring="Rajas Ring",back="Vespid Mantle",waist="Prosilio Belt +1",
+		right_ring="Rajas Ring",back="Yokaze Mantle",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Otronif Boots +1"}
 	
 	sets.WS["Blade: Hi"] = set_combine(sets.WS.Base,{neck="Shadow Gorget",hands="Iga Tekko +2"}) --AGI
@@ -153,8 +153,8 @@ function midcast(spell)
 	if sets.midcast[spell.english] then
 		equip(sets.midcast[spell.english])
 		--add_to_chat(9, 'Spell name as set: ' ..spell.english)
-	elseif spell.type == "Ninjutsu" then
-		--add_to_chat(9, 'Ninjitsu Detected: ' ..spell.english.. ' ' ..spell.type)
+	elseif spell.type == 'Ninjutsu' then
+		--add_to_chat(9, 'Ninjutsu Detected: ' ..spell.english.. ' ' ..spell.type)
 		if NinjutsuNuke:contains(spell.english) then
 			equip(sets.midcast.Nuke)
 			--add_to_chat(9, 'Nuke Detected')
