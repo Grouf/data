@@ -12,16 +12,16 @@ function get_sets()
 		hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants",feet="Hag. Sabots +1"}  --Fast Cast = 47%
 
-	sets.precast.IdleRefresh = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
-		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
-		hands="Bagua Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Mecisto. Mantle",
-		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Geomancy Sandals"}
+	sets.precast.IdleRefresh = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",
+		neck="Twilight Torque", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
+		body="Respite Cloak", hands="Bagua Mitaines", left_ring="Shadow Ring", right_ring="Dark Ring", 
+		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Hagondes Pants +1", feet="Geomancy Sandals"}
 	--Repulse Mantle
 	--Mecisto. Mantle
-	sets.precast.IdleLuopan = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",head="Nahtirah Hat",
-		neck="Twilight Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
-		hands="Geomancy Mitaines",left_ring="Shadow Ring",right_ring="Dark Ring",back="Mecisto. Mantle",
-		waist="Fucho-no-Obi",legs="Hagondes Pants +1",feet="Bagua Sandals"}
+	sets.precast.IdleLuopan = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
+		neck="Twilight Torque", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
+		body="Respite Cloak", hands="Geomancy Mitaines", left_ring="Shadow Ring", right_ring="Dark Ring", 
+		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Hagondes Pants +1", feet="Bagua Sandals"}
 	--Lifestream Cape
 
 	sets.precast.Idle = sets.precast.IdleRefresh
@@ -54,9 +54,9 @@ function get_sets()
 		body="Bagua Tunic",
 		hands="Geomancy Mitaines",back="Lifestream Cape",
 		waist="Sekhmet Corset", legs="Bagua Pants", feet="Umbani Boots"}
-			--Geomancy Skill:	373+38 = 411  ??
+			--Geomancy Skill:	389+38 = 427
 			--Handbell Skill:	373+18 = 391
-			--Total:			802
+			--Total:			818
 
 	--Enhancing needs work
 	sets.midcast.Enhancing = {body="Anhur Robe", head="Umuthi Hat", neck="Colossus's Torque",
