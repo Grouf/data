@@ -135,10 +135,11 @@ sets.WS = {}
 	
 	sets.FastCast = {right_ear="Loquac. Earring", right_ring="Prolix Ring", left_ring="Weather. Ring"}
 	
-	sets.DontForget = {left_ear="Reraise Earring", right_ear = "Linkpearl", 
-		back="Mecisto. Mantle" }
+	sets.DontForget = {body="Wakido Domaru +1", left_ear="Reraise Earring", right_ear = "Linkpearl", 
+		back="Mecisto. Mantle"}
 	
-	sets.DontForget2 = {main="Tulfaire Arrow", sub="Tulfaire Quiver", range="Demon Arrow", ammo="Demon Quiver"}
+	sets.DontForget2 = {main="Tulfaire Arrow", sub="Tulfaire Quiver", range="Demon Arrow", ammo="Demon Quiver",
+		body="Hime Domaru +1"}
 	
 	set_macro_book()
 
