@@ -24,14 +24,14 @@ MultiHitWeaponSkills = S{'Tachi:Enpi', 'Tachi: Jinpu', 'Tachi: Rana', 'Tachi: Sh
 		'Double Thrust', 'Penta Thrust', 'Impulse Drive'}
 
 SetMode_Index = 1
-SetMode_Names = {'DD','DT'}
+SetMode_Names = {'DD','DT'}		--Switch between DD and DT sets, set using user command 'DDDT'
 Accuracy_Index = 1
-Accuracy = {'None', 'MidAcc', 'HighAcc'}
+Accuracy = {'None', 'MidAcc', 'HighAcc'}	--Accuracy levels set with user command 'Accuracy'
 Weapon_Index = 1
-Weapon = {'Tsurumaru', 'Nativus Halberd'}
-Wakido = 0
-	
-	
+Weapon = {'Tsurumaru', 'Nativus Halberd'}	--Switch between weapons, set using user command 'Weapon'
+Wakido = 0	--Equip when 1, set with user command 'Wakido'
+Hime = 0	--Equip when 1, set when Miser's Roll gained
+
 function get_sets()
 	
 	sets.JA = {}
@@ -83,7 +83,7 @@ sets.Ranged = {head="Sakonji Kabuto +1", neck="Ocachi Gorget", left_ear="Clearvi
 sets.DT = {}
 	sets.DT.Tsurumaru = {main="Tsurumaru", sub="Tzacab Grip", range="Cibitshavore", ammo="Tulfaire Arrow",
 		head="Gavialis Helm", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Bladeborn Earring", 
-		body="Wakido Domaru +1", hands="Umuthi Gloves", left_ring="Dark Ring", right_ring="Shadow Ring", 
+		body="Otro. Harness +1", hands="Umuthi Gloves", left_ring="Dark Ring", right_ring="Shadow Ring", 
 		back="Repulse Mantle", waist="Flume Belt", legs="Otronif Brais +1", feet="Otronif Boots +1"}
 				--Need Sakonji Kote +1
 	
@@ -91,12 +91,12 @@ sets.DT = {}
 	
 	
 sets.WS = {}
-	sets.WS.OneHit = {head="Yaoyotl Helm", neck="Tlamiztli Collar", left_ear="Steelflash Earring", 
+	sets.WS.OneHit = {head="Gavialis Helm", neck="Tlamiztli Collar", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Phorcys Korazin", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Vespid Mantle", waist="Prosilio Belt +1", 
 		legs="Miki. Cuisses", feet="Sak. Sune-Ate +1"}
 		
-	sets.WS.OneHit.MidAcc = set_combine(sets.WS.OneHit,{head="Gavialis Helm", waist="Caudata Belt",
+	sets.WS.OneHit.MidAcc = set_combine(sets.WS.OneHit,{waist="Caudata Belt",
 		feet="Waki. Sune-Ate +1"})
 	
 	sets.WS.OneHit.HighAcc = set_combine(sets.WS.OneHit.MidAcc,{neck="Iqabi Necklace",
@@ -111,7 +111,7 @@ sets.WS = {}
 	sets.WS.MultiHit.MidAcc = set_combine(sets.WS.MultiHit,{back="Letalis Mantle", waist="Olseni Belt"})
 	
 	sets.WS.MultiHit.HighAcc = set_combine(sets.WS.MultiHit.MidAcc,{head="Gavialis Helm", body="Miki. Breastplate",
-		feet="Waki. Sune-Ate +1"})
+		neck="Iqabi Necklace", feet="Waki. Sune-Ate +1"})
 	--Need to refine multi-hit midacc and highacc to match one-hit gear adjustments
 	
 	--Specific gear for WS
@@ -213,31 +213,7 @@ function precast(spell)
 end
 
 function aftercast(spell)
-	
-	--EquipSet = sets[SetMode_Names[SetMode_Index]]  --DD or DT sets
-	
-	--EquipSet = EquipSet[Weapon[Weapon_Index]]  --GK or Polearm
-	
-	--if EquipSet[Accuracy[Accuracy_Index]] then
-	--	add_to_chat(9, 'AFTERcast Accuracy level found: ' ..Accuracy[Accuracy_Index])
-	--	EquipSet = EquipSet[Accuracy[Accuracy_Index]]
-	--end
-	
-	--if Wakido == 1 then
-	--	EquipSet = set_combine(EquipSet, {body="Wakido Domaru +1"})
-	--end
-	
-	--if player.status =='Engaged' then
-	--	equip(EquipSet)
-	--else
-	--	EquipSet = set_combine(EquipSet, {feet="Danzo Sune-Ate"})
-	--	equip(EquipSet)
-	--end
-	--if buffactive['Reive Mark'] then
-	--	equip({neck="Ygnas's Resolve +1"})
-	--end
-	
-	status_change(player.staus)   --comment above after tested for after cast
+	status_change(player.staus)
 end
 
 function status_change(new,old)
@@ -252,6 +228,10 @@ function status_change(new,old)
 	
 	if Wakido == 1 then
 		EquipSet = set_combine(EquipSet, {body="Wakido Domaru +1"})
+	end
+	
+	if Hime == 1 then
+		EquipSet = set_combine(EquipSet, {body="Hime Domaru +1"})
 	end
 	
 	if new =='Engaged' then
@@ -284,6 +264,13 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 			disable('feet')
 		else
 			enable('feet')
+		end
+	
+	elseif buff_name == "Miser's Roll"
+		if gain then
+			Hime = 1
+		else
+			Hime = 0
 		end
 	
 	elseif buff_name == "Meikyo Shisui" then --SP Ability
