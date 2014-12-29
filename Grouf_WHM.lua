@@ -14,8 +14,8 @@ function get_sets()
 	
 	sets.precast = {}
 
-	sets.precast.Idle= {main="Bolelabunga",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
-		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Gende. Bilaut +1",
+	sets.precast.Idle= {main="Bolelabunga",sub="Genbu's Shield",ammo="Oreiad's Tathlum",
+		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Respite Cloak",
 		hands="Serpentes Cuffs",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Cleric's Belt",legs="Nares Trews",feet="Serpentes Sabots"}
 
@@ -27,10 +27,20 @@ function get_sets()
 		waist="Witful Belt",legs="Artsieq Hose",feet="Piety Duckbills"} -- 45% Fast Cast
 
 	sets.midcast = {}
-	sets.midcast.Cure= {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Theophany Cap",
-		neck="Imbodla Necklace",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Gende. Bilaut +1",
-		hands="Theophany Mitts",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
-		waist="Cleric's Belt",legs="Orsn. Pantaln. +2",feet="Piety Duckbills"} --Cure Potency 52%
+	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Theophany Cap",
+		neck="Imbodla Necklace", left_ear="Loquac. Earring", right_ear="Lifestorm Earring", body="Gende. Bilaut +1",
+		hands="Theophany Mitts", left_ring="Sirona's Ring", right_ring="Solemn Ring", back="Mending Cape",
+		waist="Cleric's Belt", legs="Orsn. Pantaln. +2", feet="Piety Duckbills"} --Cure Potency 52%
+	
+	sets.midcast.CureMulti = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Theophany Cap",
+		neck="Imbodla Necklace", left_ear="Loquac. Earring", right_ear="Lifestorm Earring", body="Gende. Bilaut +1",
+		hands="Theophany Mitts", left_ring="Sirona's Ring", right_ring="Solemn Ring", back="Pahtli Cape",
+		waist="Cleric's Belt", legs="Orsn. Pantaln. +2", feet="Piety Duckbills"} --Cure Potency 52%
+
+--[[	Cure Formula:
+		Single Target:		MND/2	+	VIT/4	+	Healing Magic
+		Multi Target:		MNDx3	+	VIT		+	Healing Magic/5
+]]--
 
 	sets.midcast.NA = set_combine(sets.precast.Cure,{body="Orison Bliaud +2",
 		hands="Theophany Mitts",back="Mending Cape",
@@ -89,9 +99,9 @@ function get_sets()
 end
 
 function precast(spell)
-	--add_to_chat(14, 'Precast: spell type= ' ..spell.type)
+	--add_to_chat(9, 'Precast: spell type= ' ..spell.type)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
-		--add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
+		--add_to_chat(9, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
 		if spell.english == 'Stoneskin' then
 			equip({head="Umuthi Hat"})
@@ -117,7 +127,7 @@ end
 function midcast(spell)
 	if spell.prefix == '/jobability' or spell.type == 'WeaponSkill' then
 	--midcast doesn't exist for JA or WS so cancel the processing of this function
-		--add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
+		--add_to_chat(9, 'JobAbility or WeaponSkill; Midcast cancelled')
 		return
 	end
 
@@ -127,9 +137,13 @@ function midcast(spell)
 	elseif spell.skill == 'Healing Magic' then
 		if string.find(spell.english, 'na') then
 			equip(sets.midcast.NA)
-			--add_to_chat(14, 'NA spell detected: ' ..spell.english)
-		else
+			--add_to_chat(9, 'NA spell detected: ' ..spell.english)
+		elseif spell.english:startswith('Cure') then
 			equip(sets.midcast.Cure)
+			add_to_chat(9, 'Single Target Cure: ' ..spell.english)
+		elseif spell.english:startswith('Cura') then
+			equip(sets.midcast.CureMulti)
+			add_to_chat(9, 'Multi Target Cure: ' ..spell.english)
 		end
 
 	elseif spell.skill == 'Enhancing Magic' then
