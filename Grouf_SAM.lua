@@ -24,7 +24,7 @@ MultiHitWeaponSkills = S{'Tachi:Enpi', 'Tachi: Jinpu', 'Tachi: Rana', 'Tachi: Sh
 		'Double Thrust', 'Penta Thrust', 'Impulse Drive'}
 
 SetMode_Index = 1
-SetMode_Names = {'DD','DT'}		--Switch between DD and DT sets, set using user command 'DDDT'
+SetMode_Names = {'DD','DT', 'MDT'}		--Switch between DD and DT sets, set using user command 'DDDT'
 Accuracy_Index = 1
 Accuracy = {'None', 'MidAcc', 'HighAcc'}	--Accuracy levels set with user command 'Accuracy'
 Weapon_Index = 1
@@ -88,6 +88,14 @@ sets.DT = {}
 				--Need Sakonji Kote +1
 	
 	sets.DT['Nativus Halberd'] = set_combine(sets.DT.Tsurumaru, {main="Nativus Halberd"})
+	
+sets.MDT = {}
+	sets.MDT.Tsurumaru = {main="Tsurumaru", sub="Tzacab Grip", range="Cibitshavore", ammo="Tulfaire Arrow",
+		head="Gavialis Helm", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Bladeborn Earring", 
+		body="Kyujutsugi", hands="Umuthi Gloves", left_ring="Dark Ring", right_ring="Shadow Ring", 
+		back="Repulse Mantle", waist="Flume Belt", legs="Otronif Brais +1", feet="Otronif Boots +1"}
+	
+	sets.MDT['Nativus Halberd'] = set_combine(sets.DT.Tsurumaru, {main="Nativus Halberd"})
 	
 	
 sets.WS = {}
@@ -266,7 +274,7 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 			enable('feet')
 		end
 	
-	elseif buff_name == "Miser's Roll"
+	elseif buff_name == "Miser's Roll" then
 		if gain then
 			Hime = 1
 		else
@@ -287,9 +295,8 @@ end
 
 function self_command(command)
 	if command == 'DDDT' then
-		if SetMode_Index == 1 then
-			SetMode_Index = 2
-		else
+		SetMode_Index = SetMode_Index + 1
+		if SetMode_Index == 4 then
 			SetMode_Index = 1
 		end
 		add_to_chat(9, 'SetMode now set to: ' ..SetMode_Names[SetMode_Index] )
