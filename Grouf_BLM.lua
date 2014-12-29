@@ -14,8 +14,8 @@ function get_sets()
 		-- 37% Fast Cast
 
 	sets.precast.Idle = {main="Staccato Staff", sub="Elder's Grip", ammo="Witchstone",
-		head="Hagondes Hat +1", neck="Stoicheion Medal", left_ear="Crematio Earring", right_ear="Friomisi Earring",
-		body="Hagondes Coat +1", hands="Serpentes Cuffs", left_ring="Acumen Ring", right_ring="Strendu ring",
+		neck="Stoicheion Medal", left_ear="Crematio Earring", right_ear="Friomisi Earring",
+		body="Respite Cloak", hands="Serpentes Cuffs", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Toro Cape", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
 
 	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff",sub="Elder's Grip"})
@@ -38,7 +38,7 @@ function get_sets()
 
 	sets.midcast.ElementalMagic = {main="Staccato Staff", sub="Elder's Grip", ammo="Witchstone",
 		head="Buremte Hat", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
-		body="Spaekona's Coat", hands="Hagondes Cuffs +1", left_ring="Acumen Ring", right_ring="Strendu ring",
+		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
 
 	sets.midcast.DarkMagic = {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",
