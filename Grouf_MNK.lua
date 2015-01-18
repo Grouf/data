@@ -41,7 +41,7 @@ function get_sets()
 	sets.TP = {}
 	sets.TP.DD = {ammo="Hagneia Stone",head="Whirlpool Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",
-		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
+		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Bleating Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Otronif Boots +1"}
 		
 	sets.TP.Accuracy = {ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
@@ -51,7 +51,7 @@ function get_sets()
 
 	sets.TP.Solo = {ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",
-		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Atheling Mantle",waist="Windbuffet Belt",
+		left_ring="Epona's Ring",right_ring="Rajas Ring",back="Bleating Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Otronif Boots +1"}
 	
 	sets.DT = {ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Twilight Torque",
@@ -72,6 +72,7 @@ function get_sets()
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
 	sets.aftercast.Idle = sets.TP.DD
+	sets.aftercast.Idle = set_combine(sets.TP.DD,{body="Mekosu. Harness", feet="Herald's Gaiters"})
 	set_macro_book()
 	
 	sets.dontforget = {main="Ohrmazd", sub="Oatixur", neck="Ygnas's Resolve +1",
@@ -126,32 +127,32 @@ end
 function self_command(command)
 	if command == 'DD' then
 		sets.aftercast.TP = sets.TP.DD
-		sets.aftercast.Idle = sets.TP.DD
+		sets.aftercast.Idle = set_combine(sets.TP.DD,{body="Mekosu. Harness", feet="Herald's Gaiters"})
 		equip(sets.aftercast.TP)
 		windower.add_to_chat(9, 'DD set')
 	elseif command == 'Accuracy' then
 		sets.aftercast.TP = sets.TP.Accuracy
-		sets.aftercast.Idle = sets.TP.Accuracy
+		sets.aftercast.Idle = set_combine(sets.TP.DD,{body="Mekosu. Harness", feet="Herald's Gaiters"})
 		equip(sets.aftercast.TP)
 		windower.add_to_chat(9, 'ACCURACY set')
 	elseif command == 'SOLO' then
 		sets.aftercast.TP = sets.TP.Solo
-		sets.aftercast.Idle = sets.TP.Solo
+		sets.aftercast.Idle = set_combine(sets.TP.DD,{body="Mekosu. Harness", feet="Herald's Gaiters"})
 		equip(sets.aftercast.TP)
 		windower.add_to_chat(9, 'SOLO set')
 	elseif command == 'DT' then
 		sets.aftercast.TP = sets.DT
-		sets.aftercast.Idle = sets.DT
+		sets.aftercast.Idle = set_combine(sets.TP.DD,{body="Mekosu. Harness", feet="Herald's Gaiters"})
 		equip(sets.aftercast.TP)
 		windower.add_to_chat(9, 'DT set')
 	elseif command == 'SalvageDT' then
 		sets.aftercast.TP = sets.SalvageDT
-		sets.aftercast.Idle = sets.SalvageDT
+		ssets.aftercast.Idle = set_combine(sets.TP.DD,{body="Mekosu. Harness", feet="Herald's Gaiters"})
 		equip(sets.aftercast.TP)
 		windower.add_to_chat(9, 'SalvageDT set')
 	elseif command == 'Shark' then
 		sets.aftercast.TP = sets.Shark
-		sets.aftercast.Idle = sets.Shark
+		sets.aftercast.Idle = set_combine(sets.TP.DD,{body="Mekosu. Harness", feet="Herald's Gaiters"})
 		equip(sets.aftercast.TP)
 		windower.add_to_chat(9, 'SHARK set')
 	end
