@@ -13,12 +13,12 @@ function get_sets()
 		back="Swith Cape",waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots"}
 		-- 37% Fast Cast
 
-	sets.precast.Idle = {main="Staccato Staff", sub="Elder's Grip", ammo="Witchstone",
+	sets.precast.Idle = {main="Bolelabunga", sub="Genbu's Shield", ammo="Witchstone",
 		neck="Stoicheion Medal", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Respite Cloak", hands="Serpentes Cuffs", left_ring="Acumen Ring", right_ring="Strendu ring",
-		back="Toro Cape", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
+		back="Mecisto. Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
 
-	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff",sub="Elder's Grip"})
+	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff",sub="Mephitis Grip"})
 
 	sets.midcast = {}
 	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
@@ -36,7 +36,7 @@ function get_sets()
 		body="Anhur Robe", hands="Augur's Gloves",
 		back="Swith Cape", waist="Olympus Sash", legs="Shedir Seraweels", feet="Hag. Sabots +1"}
 
-	sets.midcast.ElementalMagic = {main="Staccato Staff", sub="Elder's Grip", ammo="Witchstone",
+	sets.midcast.ElementalMagic = {main="Staccato Staff", sub="Mephitis Grip", ammo="Witchstone",
 		head="Buremte Hat", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
