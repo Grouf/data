@@ -4,6 +4,12 @@
 		=======================
 ]]
 
+--[[
+		WANTED ITEMS
+	Lurid Mitts			-- AAGK
+	Ischemia Chasuble	-- Savage
+]]
+
 function get_sets()
 
 	FastCastOnlySpells = S{'Warp', 'Warp II','Escape','Tractor','Raise', 'Raise II' ,'Reraise',
@@ -60,8 +66,8 @@ function get_sets()
 	sets.Stun = {main="Staccato Staff",sub="Arbuda Grip",ammo="Kalboron Stone",
 		head="Atro. Chapeau +1", neck="Eddy Necklace", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		back="Swith Cape", waist="Witful Belt", legs="Artsieq Hose", feet="Vitivation Boots"}
-			--Fast Cast: 54%, Haste:22%
+		back="Swith Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Vitivation Boots"}
+			--Fast Cast: 51%, Haste:27%
 
 	--Job Abilities
 	sets.JA = {}
