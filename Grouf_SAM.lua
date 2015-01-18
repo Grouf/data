@@ -17,14 +17,14 @@ Metalsinger belt		--Savage
 
 ElementalWeaponSkills = S{'Tachi: Goten', 'Tachi: Kagero', 'Tachi: Jinpu', 'Tachi: Koki',
 		'Thunder Thrust', 'Raiden Thrust'}
-OneHitWeaponSkills = S{'Tachi:Hobaku', 'Tachi: Goten', 'Tachi: Kagero', 'Tachi: Koki', 'Tachi: Yukikaze',
+OneHitWeaponSkills = S{'Tachi: Hobaku', 'Tachi: Goten', 'Tachi: Kagero', 'Tachi: Koki', 'Tachi: Yukikaze',
 		'Tachi: Gekko', 'Tachi: Kasha', 'Tachi: Ageha', 'Tachi: Fudo',
 		'Thunder Thrust', 'Leg Sweep', 'Vorpal Thrust', 'Raiden Thrust', 'Sonic Thrust'}
-MultiHitWeaponSkills = S{'Tachi:Enpi', 'Tachi: Jinpu', 'Tachi: Rana', 'Tachi: Shoha',
+MultiHitWeaponSkills = S{'Tachi: Enpi', 'Tachi: Jinpu', 'Tachi: Rana', 'Tachi: Shoha',
 		'Double Thrust', 'Penta Thrust', 'Impulse Drive'}
 
 SetMode_Index = 1
-SetMode_Names = {'DD','DT', 'MDT'}		--Switch between DD and DT sets, set using user command 'DDDT'
+SetMode_Names = {'DD','DT','MDT','Shark'}		--Switch between DD and DT sets, set using user command 'DDDT'
 Accuracy_Index = 1
 Accuracy = {'None', 'MidAcc', 'HighAcc'}	--Accuracy levels set with user command 'Accuracy'
 Weapon_Index = 1
@@ -93,9 +93,17 @@ sets.MDT = {}
 	sets.MDT.Tsurumaru = {main="Tsurumaru", sub="Tzacab Grip", range="Cibitshavore", ammo="Tulfaire Arrow",
 		head="Gavialis Helm", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Bladeborn Earring", 
 		body="Kyujutsugi", hands="Umuthi Gloves", left_ring="Dark Ring", right_ring="Shadow Ring", 
-		back="Repulse Mantle", waist="Flume Belt", legs="Otronif Brais +1", feet="Otronif Boots +1"}
+		back="Repulse Mantle", waist="Flax Sash", legs="Otronif Brais +1", feet="Otronif Boots +1"}
 	
 	sets.MDT['Nativus Halberd'] = set_combine(sets.DT.Tsurumaru, {main="Nativus Halberd"})
+
+sets.Shark = {}
+	sets.Shark.Tsurumaru = {main="Tsurumaru", sub="Tzacab Grip", range="Cibitshavore", ammo="Tulfaire Arrow",
+		head="Gallian helm +1", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Bladeborn Earring", 
+		body="Kyujutsugi", hands="Umuthi Gloves", left_ring="Zanhi Ring", right_ring="Shadow Ring", 
+		back="Tuilha Cape", waist="Flax Sash", legs="Otronif Brais +1", feet="Otronif Boots +1"}
+	
+	sets.Shark['Nativus Halberd'] = set_combine(sets.DT.Tsurumaru, {main="Nativus Halberd"})
 	
 	
 sets.WS = {}
@@ -133,7 +141,9 @@ sets.WS = {}
 	sets["Tachi: Shoha"] = {neck="Shadow Gorget"}
 	sets["Apex Arrow"] = {neck="Light Gorget"}
 	
-	sets.FastCast = {right_ear="Loquac. Earring", right_ring="Prolix Ring", left_ring="Weather. Ring"}
+	sets.FastCast = {neck="Magoraga Beads", 
+		right_ear="Loquac. Earring", right_ring="Prolix Ring", left_ring="Weather. Ring",
+		waist="Sailfi Belt"}
 	
 	sets.DontForget = {body="Wakido Domaru +1", left_ear="Reraise Earring", right_ear = "Linkpearl", 
 		back="Mecisto. Mantle"}
@@ -222,7 +232,7 @@ function precast(spell)
 end
 
 function aftercast(spell)
-	status_change(player.staus)
+	status_change()
 end
 
 function status_change(new,old)
@@ -243,7 +253,7 @@ function status_change(new,old)
 		EquipSet = set_combine(EquipSet, {body="Hime Domaru +1"})
 	end
 	
-	if new =='Engaged' then
+	if player.status == 'Engaged' then
 		equip(EquipSet)
 	else
 		EquipSet = set_combine(EquipSet, {feet="Danzo Sune-Ate"})
@@ -297,7 +307,7 @@ end
 function self_command(command)
 	if command == 'DDDT' then
 		SetMode_Index = SetMode_Index + 1
-		if SetMode_Index == 4 then
+		if SetMode_Index == 5 then
 			SetMode_Index = 1
 		end
 		add_to_chat(9, 'SetMode now set to: ' ..SetMode_Names[SetMode_Index] )
