@@ -25,19 +25,19 @@ function get_sets()
 
 	sets.Potency = {}
 
-	sets.Potency.Enfeeble = {main="Staccato Staff", sub="Mephitis Grip", ammo="Kalboron Stone",
+	sets.Potency.Enfeeble = {main="Marin Staff", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Estq. Sayon +2", hands="Hagondes Cuffs +1", left_ring="Irrwisch Ring", right_ring="Sangoma Ring",
+		body="Estq. Sayon +2", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Globidonta Ring",
 		back="Ghostfyre Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Uk'uxkaj Boots"}--M.Acc=348
 
-	sets.Potency.Dispel = set_combine(sets.Potency.Enfeeble,{body="Atrophy Tabard +1", feet="Vitivation Boots"})
+	sets.Potency.Dispel = set_combine(sets.Potency.Enfeeble,{body="Atrophy Tabard +1", feet="Vitivation Boots +1"})
 
-	sets.Potency.Nuke = {main="Staccato Staff", sub="Mephitis Grip", ammo="Witchstone",
+	sets.Potency.Nuke = {main="Marin Staff", sub="Mephitis Grip", ammo="Witchstone",
 		head="Buremte Hat", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Strendu Ring", right_ring="Acumen Ring",
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
 
-	sets.Potency.DarkMagic = {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",
+	sets.Potency.DarkMagic = {main="Marin Staff",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Atro. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
@@ -45,29 +45,29 @@ function get_sets()
 
 	sets.Accuracy = {}
 
-	sets.Accuracy.Enfeeble = {main="Staccato Staff", sub="Mephitis Grip", ammo="Kalboron Stone",
+	sets.Accuracy.Enfeeble = {main="Marin Staff", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
-		back="Ghostfyre Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Vitivation Boots"} --M.Acc 391
+		back="Ghostfyre Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Vitivation Boots +1"} --M.Acc 360
 
 	sets.Accuracy.Dispel = set_combine(sets.Accuracy.Enfeeble,{})
 
-	sets.Accuracy.Nuke = {main="Staccato Staff", sub="Mephitis Grip", ammo="Kalboron Stone",
+	sets.Accuracy.Nuke = {main="Marin Staff", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Buremte Hat", neck="Eddy Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
-		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Vitivation Boots"}
+		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Vitivation Boots +1"}
 
-	sets.Accuracy.DarkMagic = {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",
+	sets.Accuracy.DarkMagic = {main="Marin Staff",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Atro. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 	
 	--Stun set used for both precast and midcast
-	sets.Stun = {main="Staccato Staff",sub="Arbuda Grip",ammo="Kalboron Stone",
+	sets.Stun = {main="Marin Staff",sub="Arbuda Grip",ammo="Kalboron Stone",
 		head="Atro. Chapeau +1", neck="Eddy Necklace", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		back="Swith Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Vitivation Boots"}
-			--Fast Cast: 51%, Haste:27%
+		back="Swith Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Vitivation Boots +1"}
+			--Fast Cast: 53%, Haste:27%
 
 	--Job Abilities
 	sets.JA = {}
@@ -97,13 +97,16 @@ function get_sets()
 		head="Atro. Chapeau +1", neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Soil Pearl",
 		body="Atrophy Tabard +1", hands="Umuthi Gloves", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
 		back="Mecisto. Mantle", waist="Flume Belt", legs="Mes'yohi Slacks", feet="Umbani Boots"}
-
+	--Mecisto.
+	--Repulse
+		
+		
 	sets.Idle = sets.precast.IdleRefresh
 	IdleMode = 'Refresh'
 
 	sets.Rest = set_combine(sets.Idle,{main="Bolelabunga"})
 
-	sets.precast.FastCast = {main="Lehbrailg +2", sub="Arbuda Grip",
+	sets.precast.FastCast = {main="Marin Staff", sub="Arbuda Grip",
 		head="Atro. Chapeau +1", neck="Stoicheion Medal", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith Cape", waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots +1"}
@@ -135,7 +138,7 @@ function get_sets()
 	MeleeLock = 'False' --used for info only
 	sets.TP = {}
 
-	sets.TP.DD = {ammo="Brigantia Pebble",
+	sets.TP.DD = {ammo="Paeapua",
 		head="Atro. Chapeau +1", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="Rajas Ring",
 		back="Bleating Mantle", waist="Windbuffet Belt", legs="Viti. Tights +1", feet="Atrophy Boots +1"}
@@ -261,13 +264,16 @@ function midcast(spell)
 		if spell.english:startswith('Aspir') or spell.english == 'Drain' then
 			equip({left_ring="Excelsis Ring", waist="Fucho-no-Obi"})
 		elseif SetMode_Names[SetMode_Index] == 'Potency' and spell.english == "Bio III" then
-			equip({legs="Vitivation Tights"})
+			equip({legs="Viti. Tights +1"})
 		end
 
 	elseif spell.skill == 'Elemental Magic' then
 		equip(sets[SetMode_Names[SetMode_Index]].Nuke)
 		if spell.element == 'Earth' and SetMode_Names[SetMode_Index] == 'Potency' then
 			equip({neck="Quanpur Necklace"})
+		end
+		if spell.element == 'Ice' then
+			equip({main="Ngqoqwanb"})
 		end
 
 	elseif spell.skill == 'Healing Magic' then
