@@ -7,21 +7,21 @@
 function get_sets()
 	sets.precast = {}
 
-	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",head="Nahtirah Hat",
-		left_ear="Loquac. Earring",body="Anhur Robe",
+	sets.precast.FastCast = {main="Marin Staff",sub="Arbuda Grip",head="Nahtirah Hat",
+		body="Anhur Robe", left_ear="Loquac. Earring",
 		hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants",feet="Hag. Sabots +1"}  --Fast Cast = 47%
 
 	sets.precast.IdleRefresh = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",
 		neck="Twilight Torque", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Respite Cloak", hands="Bagua Mitaines", left_ring="Shadow Ring", right_ring="Dark Ring", 
-		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Hagondes Pants +1", feet="Geomancy Sandals"}
+		back="Repulse Mantle",	waist="Fucho-no-Obi", legs="Hagondes Pants +1", feet="Geomancy Sandals"}
 	--Repulse Mantle
 	--Mecisto. Mantle
 	sets.precast.IdleLuopan = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
 		neck="Twilight Torque", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
-		body="Respite Cloak", hands="Geomancy Mitaines", left_ring="Shadow Ring", right_ring="Dark Ring", 
-		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Hagondes Pants +1", feet="Bagua Sandals"}
+		body="Respite Cloak", hands="Geo. Mitaines +1", left_ring="Shadow Ring", right_ring="Dark Ring", 
+		back="Repulse Mantle",	waist="Fucho-no-Obi", legs="Hagondes Pants +1", feet="Bagua Sandals"}
 	--Lifestream Cape
 
 	sets.precast.Idle = sets.precast.IdleRefresh
@@ -45,14 +45,14 @@ function get_sets()
 		hands="Bokwus Gloves",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Witch Sash",legs="Nares Trews",feet="Umbani Boots"} --MND=96+131, Cure Pot.=46%
 
-	sets.midcast.Enfeeble = {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
+	sets.midcast.Enfeeble = {main="Marin Staff",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
-		hands="Hagondes Cuffs +1",left_ring="Weather. Ring",right_ring="Sangoma Ring",back="Refraction Cape",
+		hands="Hagondes Cuffs +1",left_ring="Globidonta Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 
 	sets.midcast.Geomancy = {main="Staccato Staff",sub="Arbuda Grip" ,range="Dunna",
-		body="Bagua Tunic",
-		hands="Geomancy Mitaines",back="Lifestream Cape",
+		body="Bagua Tunic", right_ear="Gwati Earring", 
+		hands="Geo. Mitaines +1",back="Lifestream Cape",
 		waist="Sekhmet Corset", legs="Bagua Pants", feet="Umbani Boots"}
 			--Geomancy Skill:	389+38 = 427
 			--Handbell Skill:	373+18 = 391
@@ -60,15 +60,15 @@ function get_sets()
 
 	--Enhancing needs work
 	sets.midcast.Enhancing = {body="Anhur Robe", head="Umuthi Hat", neck="Colossus's Torque",
-		hands="Augur's Gloves", left_ear="Loquac. Earring",
+		hands="Augur's Gloves", left_ear="Loquac. Earring", right_ear="Andoaa Earring", 
 		waist="Olympus Sash",legs="Shedir Seraweels",feet="Geomancy Sandals"}
 
-	sets.midcast.ElementalMagic = {main="Staccato Staff",sub="Mephitis Grip",ammo="Witchstone",head="Buremte Hat",
+	sets.midcast.ElementalMagic = {main="Marin Staff",sub="Mephitis Grip",ammo="Witchstone",head="Buremte Hat",
 		neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Umbani Boots"}
 
-	sets.midcast.DarkMagic = {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
+	sets.midcast.DarkMagic = {main="Marin Staff",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
@@ -81,7 +81,7 @@ function get_sets()
     sets.WS = set_combine(sets.TP, {neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ring="Cho'j Band",
 		waist="Prosilio Belt +1"})
 
-    sets.DontForget = {neck="Quanpur Necklace", left_ear="Reraise Earring", right_ear = "Linkpearl",
+    sets.DontForget = {main="Ngqoqwanb", neck="Quanpur Necklace", left_ear="Reraise Earring", right_ear = "Linkpearl",
 		left_ring="Excelsis Ring"}
 
 
@@ -96,6 +96,9 @@ function precast(spell)
 		equip(sets.precast.FastCast)
 		if spell.english == 'Stoneskin' then
 			equip({head="Umuthi Hat"})
+		end
+		if spell.skill == 'Elemental Magic' then
+			equip({hands="Bagua Mitaines"})
 		end
 
 	elseif spell.type=="WeaponSkill" then
@@ -144,6 +147,9 @@ function midcast(spell)
 		equip(sets.midcast.ElementalMagic)
 		if spell.element == 'Earth' then
 			equip({neck="Quanpur Necklace"})
+		end
+		if spell.element == 'Ice' then
+			equip({main="Ngqoqwanb"})
 		end
 	elseif spell.skill == 'Dark Magic' then
 		equip(sets.midcast.DarkMagic)
@@ -217,15 +223,15 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 			enable("head")
 			send_command('@input /echo Collimated Fervor off, head enabled')
 		end
-	elseif buff_name=='Bolster' then
-		if gain then
-			equip(sets.JA.Bolster)
-			send_command('@wait 0.5; gs disable body;')
-			send_command('@input /echo Bolster ON, body disabled')
-		else
-			enable("body")
-			send_command('@input /echo Bolster off, body enabled')
-		end
+	--elseif buff_name=='Bolster' then
+		--if gain then
+			--equip(sets.JA.Bolster)
+			--send_command('@wait 0.5; gs disable body;')
+			--send_command('@input /echo Bolster ON, body disabled')
+		--else
+			--enable("body")
+			--send_command('@input /echo Bolster off, body enabled')
+		--end
 	elseif buff_name=='Mending Halation' then
 		if gain then
 			equip(sets.JA['Mending Halation'])
