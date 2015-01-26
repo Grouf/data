@@ -10,6 +10,7 @@ Head		Atrophy Chapeau		11		(            RDM                                )
 			Haruspex Hat +1		9		(MNK whm blm rdm THF RNG         smn BLU geo RUN)
 			
 Neck		Orunmila's Torque 	5		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
+			Orison Locket		5		(    WHM	                                    )
 
 Ear			Estoqueurs Earring	2		(            RDM                                )
 			Loquacious Earring	2		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
