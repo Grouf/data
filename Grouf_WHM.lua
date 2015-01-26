@@ -48,7 +48,7 @@ function get_sets()
 
 	sets.midcast.Enfeeble= {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Theo. Briault",
-		hands="Gende. Gages +1",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
+		hands="Gende. Gages +1",left_ring="Globidonta Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Piety Duckbills"}
 
 	sets.midcast.DRKMagic= {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",head="Buremte Hat",
