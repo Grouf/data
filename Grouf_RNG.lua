@@ -23,10 +23,10 @@ function get_sets()
 	
 	
 	sets.WS = {}
-	sets.WS.Base = {head="Orion Beret",neck="Ocachi Gorget",left_ear="Moonshade Earring",
+	sets.WS.Base = {head="Orion Beret +1",neck="Ocachi Gorget",left_ear="Moonshade Earring",
 		right_ear="Clearview Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Lutian Cape",waist="Scout's Belt",
-		legs="Arcadian Braccae",feet="Scopuli Nails +1"}
+		legs="Arc. Braccae +1",feet="Scopuli Nails +1"}
 		
 	sets.JA["Eagle Eye Shot"] = sets.WS.Base
 	
@@ -43,10 +43,10 @@ function get_sets()
 		--Gear Haste: 30%, Fast Cast: 12%
 	
 	sets.TP = {}
-	sets.TP.Ranged = {head="Orion Beret",neck="Ocachi Gorget",left_ear="Volley Earring",
+	sets.TP.Ranged = {head="Orion Beret +1",neck="Ocachi Gorget",left_ear="Volley Earring",
 		right_ear="Clearview Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Paqichikaji Ring",back="Lutian Cape",waist="Scout's Belt",
-		legs="Arcadian Braccae",feet="Scopuli Nails +1"}
+		legs="Arc. Braccae +1",feet="Scopuli Nails +1"}
 	
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.Ranged
