@@ -34,12 +34,12 @@ function get_sets()
 		--Fast Cast: 17%
 		--Haste: 33%
 
-	sets.Ranged = {head="Pillager's Bonnet",neck="Ocachi Gorget",left_ear="Volley earring",
+	sets.Ranged = {head="Umbani Cap",neck="Ocachi Gorget",left_ear="Volley earring",
 		right_ear="Clearview Earring",body="Mekosu. Harness",hands="Buremte Gloves",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Libeccio Mantle",waist="Flax Sash",
 		legs="Nahtirah Trousers",feet="Scopuli Nails +1"}
 
-	sets.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Moonshade Earring",
+	sets.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Dudgeon Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Cho'j Band",back="Vespid Mantle",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}
@@ -65,7 +65,7 @@ function get_sets()
 		--Last Stand = 73-85% AGI
 
 	sets.TP = {}
-	sets.TP.DD = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
+	sets.TP.DD = {head="Iuitl Headgear +1",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Qaaxo Leggings"}
@@ -75,12 +75,12 @@ function get_sets()
 	sets.TP.Dynamis = set_combine(sets.TP.TH, {neck="Nefarious Collar", feet="Raid. Poulaines +2"})
 
 	sets.TP.Accuracy = {head="Whirlpool Mask",neck="Iqabi Necklace",left_ear="Steelflash Earring",
-	right_ear="Zennaroi Earring",body="Mekosu. Harness",hands="Plun. Armlets +1",left_ring="Rajas Ring",
-	right_ring="Beeline Ring",back="Letalis Mantle",waist="Olseni Belt",
+	right_ear="Zennaroi Earring",body="Emet Harness +1",hands="Plun. Armlets +1",left_ring="Rajas Ring",
+	right_ring="Beeline Ring",back="Grounded Mantle",waist="Olseni Belt",
 	legs="Manibozho Brais",feet="Qaaxo Leggings"}
 
 	sets.TP.DT = {head="Uk'uxkaj Cap", neck="Twilight Torque", left_ear="Soil Pearl",
-		right_ear="Soil Pearl", body="Qaaxo Harness", hands="Umuthi Gloves", left_ring="Dark Ring",
+		right_ear="Soil Pearl", body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Dark Ring",
 		right_ring="Shadow Ring", back="Repulse Mantle", waist="Flume Belt",
 		legs="Kaabnax Trousers", feet="Qaaxo Leggings"}
 
@@ -91,11 +91,15 @@ function get_sets()
 	sets.aftercast.Idle = set_combine(sets.aftercast.TP,{body="Mekosu. Harness", feet="Jute Boots +1"})
 	send_command('input /macro book 6;wait .1;input /macro set 10')
 
-	sets.dontforget = {main="Izhiikoh", sub="Sandung", range="Tsoa. Crossbow", ammo="Acid Bolt",
-		neck="Ygnas's Resolve +1", left_ear="Linkpearl", right_ear="Reraise Earring", left_ring="Bloody Bolt"}
+	sets.dontforget = {main="Izhiikoh", sub="Sandung", range="Tsoa. Crossbow", ammo="Gashing Bolt",
+		neck="Ygnas's Resolve +1", left_ear="Linkpearl", right_ear="Reraise Earring", left_ring="Gash. Bolt Quiver"}
 end
 
 function precast(spell)
+	if spell.type == 'Item' then
+		--If using an item (eg Forbidden Key, Velkk Coffer) cancel actions. (Was changing into fast cast set)
+		return
+	end
 	--add_to_chat(9, 'Precast: spell=' ..spell.english.. ' spell type=' ..spell.type.. ' Skill=' ..spell.skill)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' and spell.english ~= 'Ranged' then
 		--add_to_chat(9, 'not JobAbility or WeaponSkill so Fast Cast')
@@ -105,10 +109,15 @@ function precast(spell)
 		if sets.WS[spell.english] then
 			equip(sets.WS[spell.english])
 		else
-			equip(sets.WS.Base)
+			equip(sets.WS)
+			--add_to_chat(9, 'sets.WS equipped for ' ..spell.english)
 		end
 		if buffactive['Reive Mark'] then
 			equip({neck="Ygnas's Resolve +1"})
+		end
+		if (player.tp > 1749 and player.tp < 2000) or (player.tp > 2749 and player.tp < 3000) then
+			equip({left_ear="Moonshade Earring"})
+			--add_to_chat(9, player.tp.. ' TP, equipping Moonshade Earring')
 		end
 
 	elseif spell.prefix == "/jobability" then
