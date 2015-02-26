@@ -10,6 +10,8 @@
 	Ischemia Chasuble	-- Savage
 ]]
 
+include('Obi_Check')
+
 function get_sets()
 
 	FastCastOnlySpells = S{'Warp', 'Warp II','Escape','Tractor','Raise', 'Raise II' ,'Reraise',
@@ -251,6 +253,7 @@ function midcast(spell)
 		end]]
 		if SetMode_Names[SetMode_Index] == 'Potency' and spell.english:startswith('Dia') then
 			equip({left_ring="Weather. Ring"})
+			obi_check(spell.element)
 		end
 
 	elseif spell.skill == 'Enhancing Magic' then
@@ -284,7 +287,8 @@ function midcast(spell)
 		elseif SetMode_Names[SetMode_Index] == 'Potency' and spell.english == "Bio III" then
 			equip({legs="Viti. Tights +1"})
 		end
-		add obi_check
+		
+		obi_check(spell.element)
 
 	elseif spell.skill == 'Elemental Magic' then
 		equip(sets[SetMode_Names[SetMode_Index]].Nuke)
@@ -294,16 +298,18 @@ function midcast(spell)
 		if spell.element == 'Ice' then
 			equip({main="Ngqoqwanb"})
 		end
-		if spell.element == world.day_element then
-			equip({waist="Hachirin-no-Obi"})
-		end
+		
+		obi_check(spell.element)
 
 	elseif spell.skill == 'Healing Magic' then
 		equip(sets.midcast.Cure)
 		if spell.english == 'Cursna' then
 			equip({feet="Gende. Galoshes"})
 		end
-
+		if spell.english:startswith('Cur') then
+			obi_check(spell.element)
+		end
+		
 	elseif spell.skill == 'Ninjutsu' then
 		equip(sets.precast.FastCast)
 
