@@ -7,7 +7,7 @@
 function get_sets()
 	sets.precast = {}
 
-	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",
+	sets.precast.FastCast = {main="Marin Staff +1",sub="Mephitis Grip",
 		head="Nahtirah Hat", neck="Stoicheion Medal", left_ear="Loquac. Earring",
 		body="Anhur Robe",hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith Cape",waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots"}
@@ -23,31 +23,31 @@ function get_sets()
 	sets.midcast = {}
 	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
 		head="Kaabnax Hat", neck="Imbodla Necklace", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
-		body="Hagondes Coat +1", hands="Bokwus Gloves", left_ring="Sirona's Ring", right_ring="Solemn Ring",
+		body="Hagondes Coat +1", hands="Telchine Gloves", left_ring="Sirona's Ring", right_ring="Solemn Ring",
 		back="Pahtli Cape", waist="Witch Sash", legs="Nares Trews",feet="Umbani Boots"}
 
-	sets.midcast.Enfeeble = {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",
+	sets.midcast.Enfeeble = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat", neck="Imbodla Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Globidonta Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 
-	sets.midcast.Enhancing = {main="Staccato Staff",
+	sets.midcast.Enhancing = {main="Marin Staff +1",
 		head="Umuthi Hat", neck="Colossus's Torque", left_ear="Loquac. Earring",
 		body="Anhur Robe", hands="Augur's Gloves",
 		back="Swith Cape", waist="Olympus Sash", legs="Shedir Seraweels", feet="Hag. Sabots +1"}
 
-	sets.midcast.ElementalMagic = {main="Staccato Staff", sub="Mephitis Grip", ammo="Witchstone",
+	sets.midcast.ElementalMagic = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Witchstone",
 		head="Buremte Hat", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
 
-	sets.midcast.DarkMagic = {main="Staccato Staff",sub="Mephitis Grip",ammo="Kalboron Stone",
+	sets.midcast.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat",	neck="Eddy Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Acumen Ring", right_ring="Sangoma Ring",
 		back="Bane Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 
 	sets.TP = {}
-	sets.TP.Engage = {main="Staccato Staff", sub="Pole Grip", ammo="Witchstone",
+	sets.TP.Engage = {main="Marin Staff +1", sub="Pole Grip", ammo="Witchstone",
 		head="Kaabnax Hat",	neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Rajas Ring", right_ring="Cho'j Band",
 		back="Buquwik Cape", waist="Windbuffet Belt", legs="Hagondes Pants +1", feet="Umbani Boots"}
@@ -115,6 +115,9 @@ function midcast(spell)
 		equip(sets.midcast.ElementalMagic)
 		if spell.element == 'Earth' then
 			equip({neck="Quanpur Necklace"})
+		end
+		if spell.element == 'Ice' then
+			equip({main="Ngqoqwanb"})
 		end
 	elseif spell.skill == 'Dark Magic' then
 		equip(sets.midcast.DarkMagic)

@@ -7,7 +7,7 @@
 function get_sets()
 	sets.precast = {}
 
-	sets.precast.FastCast = {main="Marin Staff",sub="Arbuda Grip",head="Nahtirah Hat",
+	sets.precast.FastCast = {main="Marin Staff +1",sub="Mephitis Grip",head="Nahtirah Hat",
 		body="Anhur Robe", left_ear="Loquac. Earring",
 		hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants",feet="Hag. Sabots +1"}  --Fast Cast = 47%
@@ -42,33 +42,34 @@ function get_sets()
 
 	sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Geomancy Tunic",
-		hands="Bokwus Gloves",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
-		waist="Witch Sash",legs="Nares Trews",feet="Umbani Boots"} --MND=96+131, Cure Pot.=46%
+		hands="Telchine Gloves",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
+		waist="Witch Sash",legs="Nares Trews",feet="Umbani Boots"} --MND=96+151, Cure Pot.=43%
 
-	sets.midcast.Enfeeble = {main="Marin Staff",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
+	sets.midcast.Enfeeble = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Globidonta Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 
 	sets.midcast.Geomancy = {main="Staccato Staff",sub="Arbuda Grip" ,range="Dunna",
-		body="Bagua Tunic", right_ear="Gwati Earring", 
+		head="Telchine Cap", body="Bagua Tunic", right_ear="Gwati Earring", 
 		hands="Geo. Mitaines +1",back="Lifestream Cape",
 		waist="Sekhmet Corset", legs="Bagua Pants", feet="Umbani Boots"}
 			--Geomancy Skill:	389+38 = 427
 			--Handbell Skill:	373+18 = 391
 			--Total:			818
+			--Conserve MP:		16
 
 	--Enhancing needs work
 	sets.midcast.Enhancing = {body="Anhur Robe", head="Umuthi Hat", neck="Colossus's Torque",
 		hands="Augur's Gloves", left_ear="Loquac. Earring", right_ear="Andoaa Earring", 
 		waist="Olympus Sash",legs="Shedir Seraweels",feet="Geomancy Sandals"}
 
-	sets.midcast.ElementalMagic = {main="Marin Staff",sub="Mephitis Grip",ammo="Witchstone",head="Buremte Hat",
+	sets.midcast.ElementalMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Witchstone",head="Buremte Hat",
 		neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Umbani Boots"}
 
-	sets.midcast.DarkMagic = {main="Marin Staff",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
+	sets.midcast.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
