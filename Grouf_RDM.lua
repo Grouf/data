@@ -25,19 +25,19 @@ function get_sets()
 
 	sets.Potency = {}
 
-	sets.Potency.Enfeeble = {main="Marin Staff", sub="Mephitis Grip", ammo="Kalboron Stone",
+	sets.Potency.Enfeeble = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Estq. Sayon +2", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Globidonta Ring",
 		back="Ghostfyre Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Uk'uxkaj Boots"}--M.Acc=348
 
 	sets.Potency.Dispel = set_combine(sets.Potency.Enfeeble,{body="Atrophy Tabard +1", feet="Vitivation Boots +1"})
 
-	sets.Potency.Nuke = {main="Marin Staff", sub="Mephitis Grip", ammo="Witchstone",
+	sets.Potency.Nuke = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Witchstone",
 		head="Buremte Hat", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
-		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Strendu Ring", right_ring="Acumen Ring",
-		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
+		body="Hagondes Coat +1", hands="Telchine Gloves", left_ring="Strendu Ring", right_ring="Acumen Ring",
+		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"} --MAB=153
 
-	sets.Potency.DarkMagic = {main="Marin Staff",sub="Mephitis Grip",ammo="Kalboron Stone",
+	sets.Potency.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Atro. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
@@ -45,25 +45,25 @@ function get_sets()
 
 	sets.Accuracy = {}
 
-	sets.Accuracy.Enfeeble = {main="Marin Staff", sub="Mephitis Grip", ammo="Kalboron Stone",
+	sets.Accuracy.Enfeeble = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Ghostfyre Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Vitivation Boots +1"} --M.Acc 360
 
 	sets.Accuracy.Dispel = set_combine(sets.Accuracy.Enfeeble,{})
 
-	sets.Accuracy.Nuke = {main="Marin Staff", sub="Mephitis Grip", ammo="Kalboron Stone",
+	sets.Accuracy.Nuke = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Buremte Hat", neck="Eddy Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Vitivation Boots +1"}
 
-	sets.Accuracy.DarkMagic = {main="Marin Staff",sub="Mephitis Grip",ammo="Kalboron Stone",
+	sets.Accuracy.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Atro. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
-	
+
 	--Stun set used for both precast and midcast
-	sets.Stun = {main="Marin Staff",sub="Arbuda Grip",ammo="Kalboron Stone",
+	sets.Stun = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Atro. Chapeau +1", neck="Eddy Necklace", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Vitivation Boots +1"}
@@ -73,6 +73,11 @@ function get_sets()
 	sets.JA = {}
 	sets.JA.Chainspell = {body="Viti. Tabard +1"}
 	sets.JA.Saboteur = {hands="Estq. Ganthrt. +2"}
+
+	sets.JA.Waltz = {ammo="Brigantia Pebble",
+		head="Buremte Hat", right_ear="Soil Pearl", left_ear="Soil Pearl",
+		body="Viti. Tabard +1", hands="Atrophy Gloves +1", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
+		back="Refraction Cape", waist="Caudata Belt", legs="Taeon Tights", feet="Taeon Boots"}
 
 	sets.JA.Step = {head="Buremte Hat",
 		neck="Iqabi Necklace", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
@@ -88,7 +93,7 @@ function get_sets()
 
 	sets.precast = {}
 
-	sets.precast.IdleRefresh = {main="Bolelabunga", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
+	sets.precast.IdleRefresh = {main="Bolelabunga", sub="Beatific Shield +1", ammo="Oreiad's Tathlum",
 		head="Viti. Chapeau +1", neck="Twilight Torque", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Serpentes Cuffs", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Mecisto. Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
@@ -99,23 +104,26 @@ function get_sets()
 		back="Mecisto. Mantle", waist="Flume Belt", legs="Mes'yohi Slacks", feet="Umbani Boots"}
 	--Mecisto.
 	--Repulse
-		
-		
+
+	--Genbu's Shield
+	--Beatific Shield +1
+
+
 	sets.Idle = sets.precast.IdleRefresh
 	IdleMode = 'Refresh'
 
 	sets.Rest = set_combine(sets.Idle,{main="Bolelabunga"})
 
-	sets.precast.FastCast = {main="Marin Staff", sub="Arbuda Grip",
+	sets.precast.FastCast = {main="Marin Staff +1", sub="Mephitis Grip",
 		head="Atro. Chapeau +1", neck="Stoicheion Medal", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith Cape", waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots +1"}
-		-- 51% Fast Cast, 21% Haste
+		-- 51% Fast Cast, 20% Haste
 
 	sets.midcast = {}
 	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
 		head="Viti. Chapeau +1", neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Soil Pearl",
-		body="Viti. Tabard +1", hands="Weath. Cuffs +1", left_ring="Solemn Ring", right_ring="Sirona's Ring",
+		body="Viti. Tabard +1", hands="Telchine Gloves", left_ring="Solemn Ring", right_ring="Sirona's Ring",
 		back="Ghostfyre Cape", waist="Witch Sash", legs="Atrophy Tights +1", feet="Umbani Boots"}
 		--51% Cure Pot., Cure casting -6%,  20%Haste, MND 91+180, VIT82+87, Healing Mage: 426
 
@@ -127,67 +135,75 @@ function get_sets()
 
 	sets.midcast.EnhancingOther = set_combine(sets.midcast.Enhancing, {head="Estq. Chappel +2",
 		body="Estq. Sayon +2", hands="Atrophy Gloves +1", legs="Estqr. Fuseau +2"})
-	
-	sets.midcast.Spikes = {main="Staccato Staff", sub="Mephitis Grip", ammo="Witchstone",
+
+	sets.midcast.Spikes = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Witchstone",
 		head="Atro. Chapeau +1", neck="Imbodla Necklace", left_ear="Crematio Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Icesoul Ring", right_ring="Spiral Ring",
 		back="Toro Cape", waist="Caudata Belt", legs="Mes'yohi Slacks", feet="Umbani Boots"}
-	
+
 	sets.midcast.Enspells = set_combine(sets.midcast.Enhancing, {back="Ghostfyre Cape"})
 
 	MeleeLock = 'False' --used for info only
 	sets.TP = {}
 
 	sets.TP.DD = {ammo="Paeapua",
-		head="Atro. Chapeau +1", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
-		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="Rajas Ring",
-		back="Bleating Mantle", waist="Windbuffet Belt", legs="Viti. Tights +1", feet="Atrophy Boots +1"}
+		head="Taeon Chapeau", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
+		body="Emet Harness +1", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="Rajas Ring",
+		back="Bleating Mantle", waist="Windbuffet Belt", legs="Taeon Tights", feet="Taeon Boots"}
+
+	--Windbuffet Belt
+	--Chaac Belt
+	--when using shield:  feet="Atrophy Boots +1"
 
 	sets.TP.Accuracy = {}
 
 	sets.WS = {}
 	sets.WS.Base = {ammo="Oreiad's Tathlum",
-		head="Atro. Chapeau +1", neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ear="Bladeborn Earring",
-		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="K'ayres Ring",
-		back="Vespid Mantle", waist="Prosilio Belt +1", legs="Viti. Tights +1", feet="Atrophy Boots +1"}
+		head="Taeon Chapeau", neck="Fotia Gorget", left_ear="Dudgeon Earring", right_ear="Bladeborn Earring",
+		body="Taeon Tabard", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="K'ayres Ring",
+		back="Vespid Mantle", waist="Prosilio Belt +1", legs="Taeon Tights", feet="Taeon Boots"}
 
-	sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{head="Buremte Hat", 
-		neck="Light Gorget"}) -- DEX 80%
+	--sets.WS['Chant du Cygne'] = -- DEX 80%
 
-	sets.WS.Requiescat = set_combine(sets.WS.Base, {neck="Shadow Gorget"})
+	sets.WS.Requiescat = set_combine(sets.WS.Base, {head="Atro. Chapeau +1", left_ear="Lifestorm Earring",
+		body="Viti. Tabard +1", left_ring="Solemn Ring", right_ring="Sirona's Ring", back="Refraction Cape",
+		legs="Atrophy Tights +1", feet="Vitivation Boots +1"})
 
-	sets.WS['Sanguine Blade'] = set_combine(sets.WS.Base, {right_ear="Psystorm Earring",
-		left_ring="Icesoul Ring", right_ring="Spiral Ring", 
+	sets.WS['Sanguine Blade'] = set_combine(sets.WS.Base, {right_ear="Lifestorm Earring",
+		left_ring="Icesoul Ring", right_ring="Spiral Ring",
 		back="Refraction Cape", waist="Caudata Belt", legs="Mes'yohi Slacks", feet="Umbani Boots" })
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
 	send_command('input /macro book 5;wait .1;input /macro set 1')
 
-	sets.DontForget = {sub="Thuellaic Ecu +1", neck="Quanpur Necklace", left_ear="Reraise Earring", 
-		right_ear = "Linkpearl", legs="Estoqueur's Fuseau +2"}
+	sets.DontForget = {sub="Thuellaic Ecu +1", neck="Quanpur Necklace", left_ear="Reraise Earring",
+		body="Telchine Chas.", legs="Estoqueur's Fuseau +2"}
 	sets.DontForget2 = {legs="Crimson Cuisses", right_ring="Excelsis Ring"}
 	sets.DontForget3 = {legs="Shedir Seraweels"}
 
 end
 
 function precast(spell)
-	--add_to_chat(14, 'Precast: spell=' ..spell.english.. ' spell type=' ..spell.type.. ' Skill=' ..spell.skill)
+	--add_to_chat(9, 'Precast: spell=' ..spell.english.. ' spell type=' ..spell.type.. ' Skill=' ..spell.skill)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' then
-		--add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
+		--add_to_chat(9, 'not JobAbility or WeaponSkill so Fast Cast')
 		if spell.english ~= 'Stun' then
 			equip(sets.precast.FastCast)
 		elseif spell.english == 'Stun' then
 			equip(sets.Stun)
 			--add_to_chat(9, 'STUN set, precast')
 		end
-		
+
 
 	elseif spell.type == "WeaponSkill" then
 		if sets.WS[spell.english] then
 			equip(sets.WS[spell.english])
 		else
 			equip(sets.WS.Base)
+		end
+		if (player.tp > 1749 and player.tp < 2000) or (player.tp > 2749 and player.tp < 3000) then
+			equip({left_ear="Moonshade Earring"})
 		end
 		if buffactive['Reive Mark'] then
 			equip({neck="Ygnas's Resolve +1"})
@@ -198,6 +214,8 @@ function precast(spell)
 			equip(sets.JA[spell.english])
 		elseif spell.type == 'Step' then
 			equip(sets.JA.Step)
+		elseif spell.type == 'Waltz' and spell.english ~= 'Healing Waltz' then
+			equip(sets.JA.Waltz)
 		end
 	end
 
@@ -206,14 +224,14 @@ end
 function midcast(spell)
 	if spell.prefix == '/jobability' or spell.type == 'WeaponSkill' or spell.english == 'Stun' then
 	--midcast doesn't exist for JA or WS so cancel the processing of this function
-		--add_to_chat(14, 'JobAbility or WeaponSkill; Midcast cancelled')
+		--add_to_chat(9, 'JobAbility or WeaponSkill; Midcast cancelled')
 		--if spell.english == 'Stun' then
 			--add_to_chat(9, 'STUN set, midcast')
 		--end
 		return
 	end
 
---add_to_chat(14, 'Casting spell: ' ..spell.english.. ' - ' ..spell.skill.. ' on ' ..spell.target.name.. ' with '
+--add_to_chat(9, 'Casting spell: ' ..spell.english.. ' - ' ..spell.skill.. ' on ' ..spell.target.name.. ' with '
 --	..SetMode_Names[SetMode_Index])
 
 	if FastCastOnlySpells:contains(spell.english) then
@@ -236,7 +254,7 @@ function midcast(spell)
 		end
 
 	elseif spell.skill == 'Enhancing Magic' then
-		--add_to_chat(14, 'Casting spell: ' ..spell.english.. ' on ' ..spell.target.name.. ' with '
+		--add_to_chat(9, 'Casting spell: ' ..spell.english.. ' on ' ..spell.target.name.. ' with '
 		--	..SetMode_Names[SetMode_Index])
 		equip(sets.midcast.Enhancing)
 
@@ -247,7 +265,7 @@ function midcast(spell)
 		elseif spell.english == 'Aquaveil' then
 			equip({legs="Shedir Seraweels"})
 		elseif spell.english:startswith('Regen') then
-			equip({main="Bolelabunga"})
+			equip({main="Bolelabunga", body="Telchine Chas."})
 		elseif spell.english:startswith('En') then
 			equip(sets.midcast.Enspells)
 		elseif spell.english:endswith('Spikes') then
@@ -255,7 +273,7 @@ function midcast(spell)
 		end
 		--if spell.target.isallymember and spell.target.name ~= player.name then
 		if spell.target.name ~= player.name then
-			--add_to_chat(14, spell.target.name.. ' is _not_ me, equip BuffOther.')
+			--add_to_chat(9, spell.target.name.. ' is _not_ me, equip BuffOther.')
 			equip(sets.midcast.EnhancingOther)
 		end
 
@@ -266,6 +284,7 @@ function midcast(spell)
 		elseif SetMode_Names[SetMode_Index] == 'Potency' and spell.english == "Bio III" then
 			equip({legs="Viti. Tights +1"})
 		end
+		add obi_check
 
 	elseif spell.skill == 'Elemental Magic' then
 		equip(sets[SetMode_Names[SetMode_Index]].Nuke)
@@ -274,6 +293,9 @@ function midcast(spell)
 		end
 		if spell.element == 'Ice' then
 			equip({main="Ngqoqwanb"})
+		end
+		if spell.element == world.day_element then
+			equip({waist="Hachirin-no-Obi"})
 		end
 
 	elseif spell.skill == 'Healing Magic' then
@@ -314,7 +336,9 @@ function status_change(new,old)
 end
 
 function buff_change(buff_name,gain)
-	if buff_name=='Saboteur' then
+	if buff_name == 'Reive Mark' and gain then
+		equip({neck="Ygnas's Resolve +1"})
+	elseif buff_name=='Saboteur' then
 		if gain then
 			equip(sets.JA.Saboteur)
 			disable('hands')
@@ -371,7 +395,6 @@ function self_command(command)
 		add_to_chat(9, 'SetMode = ' ..SetMode_Names[SetMode_Index])
 		add_to_chat(9, 'IdleMode = ' ..IdleMode)
 		add_to_chat(9, 'MeleeLock = ' ..MeleeLock)
-
 
 	end
 
