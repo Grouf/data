@@ -27,7 +27,7 @@ function get_sets()
 
 	sets.precast['Violent Flourish'] = set_combine(sets.precast.Step, {neck="Stoicheion Medal", 
 		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Weather. Ring",  
-		right_ring="Sangoma Ring"})
+		right_ring="Sangoma Ring", legs="Mes'yohi Slacks"})
 		
 	sets.precast.WS = {ammo="Thew Bomblet",head="Whirlpool Mask",neck="Tlamiztli Collar",
 		left_ear="Moonshade Earring",right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Hes. Gloves",
@@ -119,9 +119,9 @@ function status_change(new,old)
 end
 
 function buff_change(buff_name,gain)
-	--[[if string.find(buff_name, 'Reive') then
-		windower.add_to_chat(9, 'reive name = ' ..buff_name)
-	end]]
+	if buffactive['Reive Mark'] then
+		equip({neck="Ygnas's Resolve +1"})
+	end
 end
 
 function self_command(command)
