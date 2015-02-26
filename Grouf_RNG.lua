@@ -23,11 +23,11 @@ function get_sets()
 	
 	
 	sets.WS = {}
-	sets.WS.Base = {head="Orion Beret +1",neck="Ocachi Gorget",left_ear="Moonshade Earring",
+	sets.WS.Base = {head="Umbani Cap",neck="Fotia Gorget",left_ear="Moonshade Earring",
 		right_ear="Clearview Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Lutian Cape",waist="Scout's Belt",
-		legs="Arc. Braccae +1",feet="Scopuli Nails +1"}
-		
+		legs="Nahtirah Trousers",feet="Scopuli Nails +1"}
+		--legs="Arc. Braccae +1"
 	sets.JA["Eagle Eye Shot"] = sets.WS.Base
 	
 	--sets.midcast.Jishnu = set_combine(sets.midcast.WS,{waist="Light Belt"})
@@ -38,15 +38,16 @@ function get_sets()
 		right_ring="Rajas Ring",back="Buquwik Cape",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}]]
 
-	sets.Utsusemi = set_combine(sets.WS.Base,{head="Haruspex Hat", neck="Magoraga Beads", left_ear='Loquac. Earring',
-		left_ring="Weather. Ring", right_ring="Prolix Ring", legs="Orion Braccae"})
-		--Gear Haste: 30%, Fast Cast: 12%
+	sets.Utsusemi = set_combine(sets.WS.Base,{head="Haruspex Hat", neck="Magoraga Beads", 
+		body="Taeon Tabard", left_ear='Loquac. Earring', left_ring="Weather. Ring", 
+		right_ring="Prolix Ring", legs="Orion Braccae"})
+		--Gear Haste: 30%, Fast Cast: 19%
 	
 	sets.TP = {}
-	sets.TP.Ranged = {head="Orion Beret +1",neck="Ocachi Gorget",left_ear="Volley Earring",
+	sets.TP.Ranged = {head="Umbani Cap",neck="Ocachi Gorget",left_ear="Volley Earring",
 		right_ear="Clearview Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Paqichikaji Ring",back="Lutian Cape",waist="Scout's Belt",
-		legs="Arc. Braccae +1",feet="Scopuli Nails +1"}
+		legs="Nahtirah Trousers",feet="Scopuli Nails +1"}
 	
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.Ranged
