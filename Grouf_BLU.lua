@@ -161,7 +161,7 @@ function get_sets()
 		legs="Mes'yohi Slacks",feet="Hag. Sabots +1"}
 
 	sets.midcast.Cure = {head="Uk'uxkaj Cap",neck="Imbodla Necklace",left_ear="Loquac. Earring",
-		right_ear="Lifestorm Earring",body="Hagondes Coat +1",hands="Weath. Cuffs +1",left_ring="Sirona's Ring",
+		right_ear="Lifestorm Earring",body="Hagondes Coat +1",hands="Telchine Gloves",left_ring="Sirona's Ring",
 		right_ring="Solemn Ring",back="Pahtli Cape",waist="Witful Belt",
 		legs="Mes'yohi Slacks",feet="Weath. Souliers +1"}
 
@@ -197,7 +197,7 @@ function get_sets()
 
 	sets.TP.Acc = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Mekosu. Harness",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
-		right_ring="Epona's Ring",back="Bleating Mantle",waist="Windbuffet Belt",
+		right_ring="Epona's Ring",back="Letalis Mantle",waist="Windbuffet Belt",
 		legs="Quiahuiz Trousers",feet="Assim. Charuqs" }
 
 	sets.TP.Learning = {head="Luhlaza Keffiyeh", body="Assim. Jubbah", hands="Assim. Bazu.",
