@@ -18,12 +18,13 @@ function get_sets()
 	Magical_BPs = S{"ThunderSpark", "Burning Strike", "Meteorite", "Nether Blast", "Flaming Crush", "Meteor Strike",
 		"Geocrush", "Grand Fall", "Wind Blade", "Heavenly Strike", "Thunderstorm", "Holy Mist", "Lunar Bay",
 		"Night Terror", "Level ? Holy", "Fire II", "Stone II", "Water II", "Aero II", "Blizzard II",
-		"Thunder II", "Fire IV", "Stone IV", "Water IV", "Aero IV", "Blizzard IV", "Thunder IV" }
+		"Thunder II", "Fire IV", "Stone IV", "Water IV", "Aero IV", "Blizzard IV", "Thunder IV",
+		"Conflag Strike"}
 
 	Buff_BPs = S{"Healing Ruby", "Raise II", "Reraise II", "Shining Ruby", "Aerial Armor", "Frost Armor",
 		"Rolling Thunder", "Whispering Wind", "Crimson Howl", "Lightning Armor", "Ecliptic Growl", "Glittering Ruby",
 		"Earthen Ward", "Spring Water", "Hastega", "Noctoshield", "Ecliptic Howl", "Dream Shroud", "Healing Ruby II",
-		"Earthen Armor", "Fleet Wind", "Inferno Howl", "Soothing Ruby", "Heavenward Howl" }
+		"Earthen Armor", "Fleet Wind", "Inferno Howl", "Soothing Ruby", "Heavenward Howl", "Hastega II" }
 
 	Debuff_BPs = S{"Mewing Lullaby", "Eerie Eye", "Somnolence", "Lunar Cry", "Nightmare", "Lunar Roar", "Slowga",
 		"Ultimate Terror", "Sleepga", "Tidal Roar", "Diamond Storm", "Shock Squall", "Pavor Nocturnus" }
@@ -33,25 +34,25 @@ function get_sets()
 
 	sets.precast = {}
 
-	sets.precast.FastCast = {main="Lehbrailg +2",sub="Arbuda Grip",
+	sets.precast.FastCast = {main="Marin Staff +1",sub="Arbuda Grip",
 		head="Nahtirah Hat", left_ear="Loquac. Earring",
 		body="Anhur Robe", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith Cape", waist="Witful Belt", legs="Artsieq Hose", feet="Hag. Sabots +1"}
 			--Fast Cast = 38%
 			--Haste = 21%
 
-	sets.precast.IdleRefresh = {main="Gridarvor",sub="Elder's Grip",ammo="Seraphicaller",
+	sets.precast.IdleRefresh = {main="Bolelabunga", sub="Genbu's Shield",ammo="Seraphicaller",
 		head="Convoker's Horn",neck="Caller's Pendant",left_ear="Caller's Earring",right_ear="Graiai Earring",
 		body="Hagondes Coat +1",hands="Serpentes Cuffs",left_ring="Bifrost Ring",right_ring="Sangoma Ring",
-		back="Conveyance Cape", waist="Caller's Sash",legs="Nares Trews",feet="Serpentes Sabots"}
+		back="Conveyance Cape", waist="Fucho-no-Obi",legs="Assiduity Pants",feet="Serpentes Sabots"}
 
-	sets.precast.IdleAvatar = {main="Gridarvor", sub="Elder's Grip", ammo="Seraphicaller",
+	sets.precast.IdleAvatar = {main="Gridarvor", sub="Mephitis Grip", ammo="Seraphicaller",
 		head="Glyphic Horn", neck="Caller's Pendant",left_ear="Caller's Earring",right_ear="Graiai Earring",
 		body="Hagondes Coat +1", hands="Glyphic Bracers",left_ring="Bifrost Ring",right_ring="Sangoma Ring",
 		back="Samanisi Cape", waist="Caller's Sash", legs="Convoker's Spats", feet="Con. Pigaches"}
 			--Perp. cost: -17
 
-	sets.BloodPactDelay = {main="Eminent Pole", sub="Elder's Grip",ammo="Seraphicaller",
+	sets.BloodPactDelay = {main="Eminent Pole", sub="Mephitis Grip",ammo="Seraphicaller",
 		head="Convoker's Horn", left_ear="Caller's Earring",
 		body="Glyphic Doublet", hands="Glyphic Bracers",
 		back="Samanisi Cape", legs="Glyphic Spats", feet="Glyphic Pigaches"}
@@ -72,7 +73,7 @@ function get_sets()
 		body="Hagondes Coat +1", hands="Bokwus Gloves",left_ring="Sirona's Ring", right_ring="Solemn Ring",
 		back="Pahtli Cape", waist="Witch Sash", legs="Nares Trews", feet="Umbani Boots"}
 
-	--[[sets.midcast.Enfeeble = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
+	--[[sets.midcast.Enfeeble = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"} ]]
@@ -82,12 +83,12 @@ function get_sets()
 		body="Anhur Robe", hands="Glyphic Bracers",
 		back="Conveyance Cape", legs="Caller's Spats +2", feet="Rubeus Boots"}	--Summoning Skill:	+82
 
-	sets.BloodPactPhysical = {main="Gridarvor",sub="Elder's Grip",ammo="Seraphicaller",
+	sets.BloodPactPhysical = {main="Gridarvor",sub="Mephitis Grip",ammo="Seraphicaller",
 		head="Convoker's Horn", neck="Caller's Pendant",left_ear="Caller's Earring",right_ear="Graiai Earring",
 		body="Convoker's Doublet", hands="Glyphic Bracers",left_ring="Bifrost Ring",right_ring="Sangoma Ring",
 		back="Samanisi Cape", waist="Jaq'ij Sash",legs="Convoker's Spats",feet="Glyphic Pigaches"}
 
-	sets.BloodPactMagical = {main="Eminent Pole",sub="Elder's Grip",ammo="Seraphicaller",
+	sets.BloodPactMagical = {main="Eminent Pole",sub="Mephitis Grip",ammo="Seraphicaller",
 		head="Glyphic Horn", neck="Caller's Pendant",left_ear="Caller's Earring",right_ear="Graiai Earring",
 		body="Convoker's Doublet", hands="Glyphic Bracers",left_ring="Bifrost Ring",right_ring="Sangoma Ring",
 		back="Samanisi Cape", waist="Caller's Sash",legs="Glyphic Spats",feet="Hag. Sabots +1"}
@@ -98,7 +99,7 @@ function get_sets()
 		left_ear="Loquac. Earring",
 		waist="Olympus Sash", legs="Shedir Seraweels"}
 
-	--[[sets.midcast.ElementalMagic = {main="Lehbrailg +2",sub="Elder's Grip",head="Buremte Hat",
+	--[[sets.midcast.ElementalMagic = {main="Marin Staff +1",sub="Elder's Grip",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Weath. Souliers +1"} ]]
@@ -115,7 +116,7 @@ end
  --spell.type==BloodPactWard, BloodPactRage, prefix="/pet"
  --spell.english="Avatar's Favor", spell.type="PetCommand"
 function precast(spell)
-	--windower.add_to_chat(9, 'Precast: spell=' ..spell.english.. ', spell.type= ' ..spell.type.. ', spell.prefix='
+	--add_to_chat(9, 'Precast: spell=' ..spell.english.. ', spell.type= ' ..spell.type.. ', spell.prefix='
 	--	..spell.prefix.. ' spell.skill=' ..spell.skill)
 	if spell.prefix ~= '/jobability' and spell.prefix ~= '/pet' and spell.type ~= 'WeaponSkill' then
 		equip(sets.precast.FastCast)
@@ -144,11 +145,11 @@ function precast(spell)
 end
 
 function midcast(spell)
-	--windower.add_to_chat(9, 'Midcast: ' ..spell.english)
+	--add_to_chat(9, 'Midcast: ' ..spell.english)
 	if spell.prefix == '/jobability' or spell.prefix == '/pet' or spell.type == 'WeaponSkill' then
 	--midcast doesn't exist for JA or WS so cancel the processing of this function
 	--	/pet mid cast is handled in pet_midcast()
-		--windower.add_to_chat(9, 'JobAbility or /pet or WeaponSkill; Midcast cancelled')
+		--add_to_chat(9, 'JobAbility or /pet or WeaponSkill; Midcast cancelled')
 		return
 	end
 
@@ -159,7 +160,7 @@ function midcast(spell)
 		end
 	elseif spell.skill == 'Healing Magic' then
 		equip(sets.Cure)
-		--windower.add_to_chat(9, 'Cure')
+		--add_to_chat(9, 'Cure')
 	end
 end
 
@@ -211,7 +212,7 @@ function pet_change(pet,gain)
 	else
 		sets.precast.Idle = sets.precast.IdleRefresh
 		send_command('input /macro book 15;wait .1;input /macro set 10')
-		--windower.add_to_chat(9, pet.name.. ' released, Idle=IdleRefresh')
+		--add_to_chat(9, pet.name.. ' released, Idle=IdleRefresh')
 	end
 	equip(sets.precast.Idle)
 	if buffactive['Reive Mark'] then
@@ -220,13 +221,13 @@ function pet_change(pet,gain)
 end
 
 function pet_status_change(new,old)
-	--windower.add_to_chat(9, 'Pet_Status_Change: ' ..new.. ' / ' ..old)
+	--add_to_chat(9, 'Pet_Status_Change: ' ..new.. ' / ' ..old)
 	--Attacking:  new=Engaged,  old=Idle
 	--Mob dead:  new=Idle,   old=Engaged
 end
 
 function pet_midcast(spell)
-	--windower.add_to_chat(9, 'Pet_Midcast: ' ..spell.english)
+	--add_to_chat(9, 'Pet_Midcast: ' ..spell.english)
 
 --	Physical_BPs
 --	Magical_BPs
@@ -250,12 +251,13 @@ function pet_midcast(spell)
 		equip(sets.SummoningSkill)
 		--windower.add_to_chat(9, 'Buff BP detected')
 	elseif SP_BPs:contains(spell.name) then
-		equip(sets.BloodPactMagical)
-		equip({body="Glyphic Doublet", feet="Glyphic Pigaches"})
-		windower.add_to_chat(9, 'SP BP detected')
 		if spell.name == "Perfect Defense" then
 			equip(sets.SummoningSkill)
-			windower.add_to_chat(9, 'Perfect Defense detected')
+			add_to_chat(9, 'Perfect Defense detected')
+		else
+			equip(set_combine(sets.BloodPactMagical, {body="Glyphic Doublet", feet="Glyphic Pigaches"}))
+			--equip({body="Glyphic Doublet", feet="Glyphic Pigaches"})
+			add_to_chat(9, 'SP BP detected')
 		end
 	end
 
