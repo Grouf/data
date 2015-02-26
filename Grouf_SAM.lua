@@ -83,7 +83,7 @@ sets.Ranged = {head="Sakonji Kabuto +1", neck="Ocachi Gorget", left_ear="Clearvi
 sets.DT = {}
 	sets.DT.Tsurumaru = {main="Tsurumaru", sub="Tzacab Grip", range="Cibitshavore", ammo="Tulfaire Arrow",
 		head="Gavialis Helm", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Bladeborn Earring", 
-		body="Otro. Harness +1", hands="Umuthi Gloves", left_ring="Dark Ring", right_ring="Shadow Ring", 
+		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Dark Ring", right_ring="Shadow Ring", 
 		back="Repulse Mantle", waist="Flume Belt", legs="Otronif Brais +1", feet="Otronif Boots +1"}
 				--Need Sakonji Kote +1
 	
@@ -91,7 +91,7 @@ sets.DT = {}
 	
 sets.MDT = {}
 	sets.MDT.Tsurumaru = {main="Tsurumaru", sub="Tzacab Grip", range="Cibitshavore", ammo="Tulfaire Arrow",
-		head="Gavialis Helm", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Bladeborn Earring", 
+		head="Gavialis Helm", neck="Warder's Charm", left_ear="Steelflash Earring", right_ear="Bladeborn Earring", 
 		body="Kyujutsugi", hands="Umuthi Gloves", left_ring="Dark Ring", right_ring="Shadow Ring", 
 		back="Repulse Mantle", waist="Flax Sash", legs="Otronif Brais +1", feet="Otronif Boots +1"}
 	
@@ -107,7 +107,7 @@ sets.Shark = {}
 	
 	
 sets.WS = {}
-	sets.WS.OneHit = {head="Gavialis Helm", neck="Tlamiztli Collar", left_ear="Steelflash Earring", 
+	sets.WS.OneHit = {head="Gavialis Helm", neck="Fotia Gorget", left_ear="Steelflash Earring", 
 		right_ear="Bladeborn Earring", body="Phorcys Korazin", hands="Mikinaak Gauntlets", left_ring="Cho'j Band", 
 		right_ring="Rajas Ring", back="Vespid Mantle", waist="Prosilio Belt +1", 
 		legs="Miki. Cuisses", feet="Sak. Sune-Ate +1"}
@@ -188,8 +188,8 @@ function precast(spell)
 		end
 		
 		if (player.tp > 1749 and player.tp < 2000) or (player.tp > 2749 and player.tp < 3000) then
-			EquipSet = set_combine(EquipSet,{right_ear="Moonshade Earring"})
-			add_to_chat(9, player.tp.. ' TP, equipping Moonshade Earring')
+			EquipSet = set_combine(EquipSet,{left_ear="Moonshade Earring"})
+			--add_to_chat(9, player.tp.. ' TP, equipping Moonshade Earring')
 		end
 		
 		if ElementalWeaponSkills:contains(spell.english) then
