@@ -119,15 +119,20 @@ function midcast(spell)
 		if spell.element == 'Ice' then
 			equip({main="Ngqoqwanb"})
 		end
+		obi_check(spell.element)
 	elseif spell.skill == 'Dark Magic' then
 		equip(sets.midcast.DarkMagic)
 		if spell.english:startswith('Aspir') or spell.english == 'Drain' then
 			equip({head="Striga Crown", left_ring="Excelsis Ring", waist="Fucho-no-Obi"})
 		end
+		obi_check(spell.element)
 	elseif spell.skill == 'Enfeebling Magic' then
 		equip(sets.midcast.Enfeeble)
 	elseif spell.skill == 'Healing Magic' then
 		equip(sets.midcast.Cure)
+		if spell.english:startswith('Cur') then
+			obi_check(spell.element)
+		end
 	end
 end
 

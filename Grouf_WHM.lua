@@ -145,6 +145,9 @@ function midcast(spell)
 			equip(sets.midcast.CureMulti)
 			add_to_chat(9, 'Multi Target Cure: ' ..spell.english)
 		end
+		if spell.english:startswith('Cur') then
+			obi_check(spell.element)
+		end
 
 	elseif spell.skill == 'Enhancing Magic' then
 		if string.find(spell.english, 'Regen') then
@@ -158,9 +161,13 @@ function midcast(spell)
 
 	elseif spell.skill == 'Divine Magic' then
 		equip(sets.midcast.Divine)
-
+		if spell.english ~= 'Repose' then
+			obi_check(spell.element)
+		end
+		
 	elseif spell.skill == 'Dark Magic' then
 		equip(sets.midcast.DarkMagic)
+		obi_check(spell.element)
 
 	elseif spell.skill == 'Enfeebling Magic' then
 		equip(sets.midcast.Enfeeble)
