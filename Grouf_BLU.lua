@@ -4,6 +4,8 @@
 		=========================
 ]]
 
+include('Obi_Check')
+
 function get_sets()
 
 	BlueMageSpell = {
