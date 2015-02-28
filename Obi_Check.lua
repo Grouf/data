@@ -45,7 +45,7 @@ function obi_check(spell_element)
 
 	--Determine weather element and intensity
 	if world.weather_element == spell_element then
-		add_to_chat(9, 'Weather is same element')
+		--add_to_chat(9, 'Weather is same element')
 		if DoubleIntensityWeather:contains(world.weather_id) then
 			obi_on = obi_on + 2
 			--add_to_chat(9, 'Double intensity')
@@ -54,7 +54,7 @@ function obi_check(spell_element)
 			--add_to_chat(9, 'Single intensity')
 		end
 	elseif world.weather_element == Descendant_Element then
-		add_to_chat(9, 'Weather is descendant element')
+		--add_to_chat(9, 'Weather is descendant element')
 		if DoubleIntensityWeather:contains(world.weather_id) then
 			obi_on = obi_on - 2
 			--add_to_chat(9, 'Double intensity')
