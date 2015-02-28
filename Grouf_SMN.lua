@@ -4,6 +4,8 @@
 		=======================
 ]]
 
+include('Obi_Check')
+
 function get_sets()
 
 	AvatarList = S{"Shiva","Ramuh","Garuda","Leviathan","Diabolos","Titan","Fenrir","Ifrit","Carbuncle",
@@ -70,7 +72,7 @@ function get_sets()
 
 	sets.Cure = {main="Tamaxchi",sub="Genbu's Shield",
 		head="Kaabnax Hat", neck="Imbodla Necklace",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",
-		body="Hagondes Coat +1", hands="Bokwus Gloves",left_ring="Sirona's Ring", right_ring="Solemn Ring",
+		body="Hagondes Coat +1", hands="Telchine Gloves",left_ring="Sirona's Ring", right_ring="Solemn Ring",
 		back="Pahtli Cape", waist="Witch Sash", legs="Nares Trews", feet="Umbani Boots"}
 
 	--[[sets.midcast.Enfeeble = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
@@ -160,7 +162,9 @@ function midcast(spell)
 		end
 	elseif spell.skill == 'Healing Magic' then
 		equip(sets.Cure)
-		--add_to_chat(9, 'Cure')
+		if spell.english:startswith('Cur') then
+			obi_check(spell.element)
+		end
 	end
 end
 
