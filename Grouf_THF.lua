@@ -39,14 +39,14 @@ function get_sets()
 		right_ring="Paqichikaji Ring",back="Libeccio Mantle",waist="Flax Sash",
 		legs="Nahtirah Trousers",feet="Scopuli Nails +1"}
 
-	sets.WS = {head="Whirlpool Mask",neck="Tlamiztli Collar",left_ear="Dudgeon Earring",
+	sets.WS = {head="Whirlpool Mask",neck="Fotia Gorget",left_ear="Dudgeon Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Cho'j Band",back="Vespid Mantle",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}
 
-	sets.WS.Evisceration = set_combine(sets.WS, {neck="Shadow Gorget"}) -- DEX50%
+	--sets.WS.Evisceration = set_combine(sets.WS, {neck="Shadow Gorget"}) -- DEX50%
 
-	sets.WS["Rudra's Storm"] = set_combine(sets.WS, {neck="Shadow Gorget"}) -- DEX80%
+	--sets.WS["Rudra's Storm"] = set_combine(sets.WS, {neck="Shadow Gorget"}) -- DEX80%
 
 	sets.WS['Aeolian Edge'] = {head="Uk'uxkaj Cap", neck="Stoicheion Medal", left_ear="Friomisi Earring",
 		right_ear="Crematio Earring", body="Mekosu. Harness", hands="Umuthi Gloves", left_ring="Weather. Ring",
@@ -56,8 +56,7 @@ function get_sets()
 														--MAB:48
 														--M.Acc:42
 
-	sets.WS["Last Stand"] = set_combine(sets.Ranged, {neck="Ocachi Gorget",
-		left_ear="Moonshade Earring", waist="Caudata Belt"})
+	sets.WS["Last Stand"] = set_combine(sets.Ranged, {waist="Caudata Belt"})
 
 		--Dancing Edge = 40% DEX, 40% CHR
 		--Mandalic Stab = 60% DEX
@@ -68,7 +67,7 @@ function get_sets()
 	sets.TP.DD = {head="Iuitl Headgear +1",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
-		legs="Quiahuiz Trousers",feet="Qaaxo Leggings"}
+		legs="Taeon Tights",feet="Qaaxo Leggings"}
 
 	sets.TP.TH = set_combine(sets.TP.DD, {hands="Plun. Armlets +1"})
 
@@ -92,7 +91,7 @@ function get_sets()
 	send_command('input /macro book 6;wait .1;input /macro set 10')
 
 	sets.dontforget = {main="Izhiikoh", sub="Sandung", range="Tsoa. Crossbow", ammo="Gashing Bolt",
-		neck="Ygnas's Resolve +1", left_ear="Linkpearl", right_ear="Reraise Earring", left_ring="Gash. Bolt Quiver"}
+		neck="Ygnas's Resolve +1", right_ear="Reraise Earring", left_ring="Gash. Bolt Quiver"}
 end
 
 function precast(spell)
