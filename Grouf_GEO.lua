@@ -4,6 +4,8 @@
 		=========================
 ]]
 
+include('Obi_Check')
+
 function get_sets()
 	sets.precast = {}
 
@@ -26,7 +28,7 @@ function get_sets()
 
 	sets.precast.Idle = sets.precast.IdleRefresh
 
-	sets.precast.Rest = {main="Chatoyant Staff"}
+	--sets.precast.Rest = {main="Chatoyant Staff"}
 
 --Job Ability--
 	sets.JA = {}
@@ -50,7 +52,7 @@ function get_sets()
 		hands="Hagondes Cuffs +1",left_ring="Globidonta Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 
-	sets.midcast.Geomancy = {main="Staccato Staff",sub="Arbuda Grip" ,range="Dunna",
+	sets.midcast.Geomancy = {main="Staccato Staff",sub="Mephitis Grip" ,range="Dunna",
 		head="Telchine Cap", body="Bagua Tunic", right_ear="Gwati Earring", 
 		hands="Geo. Mitaines +1",back="Lifestream Cape",
 		waist="Sekhmet Corset", legs="Bagua Pants", feet="Umbani Boots"}
@@ -82,7 +84,7 @@ function get_sets()
     sets.WS = set_combine(sets.TP, {neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ring="Cho'j Band",
 		waist="Prosilio Belt +1"})
 
-    sets.DontForget = {main="Ngqoqwanb", neck="Quanpur Necklace", left_ear="Reraise Earring", right_ear = "Linkpearl",
+    sets.DontForget = {main="Ngqoqwanb", neck="Quanpur Necklace", left_ear="Reraise Earring",
 		left_ring="Excelsis Ring"}
 
 
@@ -143,6 +145,8 @@ function midcast(spell)
 			equip(sets.midcast.Enhancing)
 		if spell.english == 'Stoneskin' then
 			equip({waist="Siegel Sash", neck="Stone Gorget"})
+		elseif spell.english:startswith('Regen') then
+			equip({main="Bolelabunga", body="Telchine Chas."})
 		end
 	elseif spell.skill == 'Elemental Magic' then
 		equip(sets.midcast.ElementalMagic)
@@ -172,8 +176,8 @@ end
 function aftercast(spell)
 	if player.status == 'Idle' then
 		equip(sets.precast.Idle)
-	elseif player.status == 'Resting' then
-		equip(sets.precast.Rest)
+	--elseif player.status == 'Resting' then
+		--equip(sets.precast.Rest)
 	elseif player.status == 'Engaged' then
 		equip(sets.TP)
 	end
