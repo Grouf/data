@@ -4,6 +4,8 @@
 		=================
 ]]
 
+include('Obi_Check')
+
 function get_sets()
 	NinjutsuNuke = S{
 		'Katon: Ichi','Suiton: Ichi','Doton: Ichi','Hyoton: Ichi','Huton: Ichi','Raiton: Ichi',
@@ -22,7 +24,7 @@ function get_sets()
 	sets.JA.Innin = {head="Iga Zukin +2"}
 	sets.JA.Yonin = {legs="Iga Hakama +2"}
 	sets.JA.Futae = {hands="Iga Tekko +2"}
-	sets.JA.Sange = {body="Mochi. Chainmail"}
+	--sets.JA.Sange = {body="Mochi. Chainmail"}
 	sets.JA['Mijin Gakure'] = {legs="Mochizuki Hakama"}
 	
 	sets.JA.Step = {head="Gavialis Helm", neck="Iqabi Necklace", left_ear="Steelflash Earring",
@@ -43,35 +45,35 @@ function get_sets()
 	
 	
 	sets.precast.FastCast = {head="Athos's Chapeau", neck="Magoraga Beads", 
-		right_ear="Loquac. Earring", body="Mochi. Chainmail",hands="Thaumas Gloves", 
+		right_ear="Loquac. Earring", body="Taeon Tabard",hands="Thaumas Gloves", 
 		left_ring="Weather. Ring", right_ring="Prolix Ring",
-		back="Yokaze Mantle", legs="Kaabnax Trousers", feet="Mochizuki Kyahan"} 	
-																				--30% Haste
-																				--11% Fast Cast???
+		back="Yokaze Mantle", waist="Sailfi Belt", legs="Kaabnax Trousers", feet="Mochizuki Kyahan"} 	
+																				--31% Haste
+																				--19% Fast Cast
 																				--18% Utsusemi -casting
 	sets.midcast = {}
-	sets.midcast.Utsusemi = {hands="Mochizuki Tekko", feet="Iga Kyahan +2"}
+	sets.midcast.Utsusemi = {body="Taeon Tabard", hands="Mochizuki Tekko", feet="Iga Kyahan +2"}
 	
 	sets.midcast["Migawari: Ichi"] = {body="Iga Ningi +2"}
 	
 	sets.midcast.Enfeeble = {head="Hachiya Hatsuburi",neck="Stoicheion Medal",left_ear="Lifestorm Earring",
 		right_ear="Psystorm Earring",body="Mekosu. Harness", hands="Mochizuki Tekko",
 		left_ring="Weather. Ring", right_ring="Sangoma Ring",back="Yokaze Mantle",
-		feet="Hachiya Kyahan"}  --32% Haste, 230 Magic Accuracy
+		feet="Scamp's Sollerets"}  --32% Haste, 230 Magic Accuracy
 	
 	sets.midcast.Nuke = {head="Mochi. Hatsuburi", neck="Stoicheion Medal",left_ear="Friomisi Earring",
 		right_ear="Crematio Earring",body="Mekosu. Harness", hands="Mochizuki Tekko", left_ring="Weather. Ring",
 		right_ring="Acumen Ring", right_ring="Acumen Ring",back="Toro Cape",
-		legs="Quiahuiz Trousers",feet="Mochizuki Kyahan"}
+		feet="Mochizuki Kyahan"}
 	
 	
 	sets.WS = {}
-	sets.WS.Base = {head="Gavialis Helm",neck="Tlamiztli Collar",left_ear="Moonshade Earring",
+	sets.WS.Base = {head="Gavialis Helm",neck="Fotia Gorget",left_ear="Dudgeon Earring", 
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Cho'j Band",
 		right_ring="Rajas Ring",back="Yokaze Mantle",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Otronif Boots +1"}
 	
-	sets.WS["Blade: Hi"] = set_combine(sets.WS.Base,{neck="Shadow Gorget",hands="Iga Tekko +2"}) --AGI
+	sets.WS["Blade: Hi"] = set_combine(sets.WS.Base,{hands="Iga Tekko +2"}) --AGI
 	
 	sets.WS["Blade: Shun"] = sets.WS.Base --DEX
 	
@@ -87,7 +89,7 @@ function get_sets()
 	sets.TP.DD = {head="Ptica Headgear",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Epona's Ring",
 		right_ring="Rajas Ring",back="Yokaze Mantle",waist="Windbuffet Belt",
-		legs="Quiahuiz Trousers",feet="Otronif Boots +1"}
+		legs="Taeon Tights",feet="Otronif Boots +1"}
 		
 	--[[sets.TP.EVA = set_combine(sets.TP.DD,{neck="Torero Torque",left_ear="Ethereal Earring",
 		right_ear="Phawaylla Earring",body="Otronif Harness",
@@ -95,10 +97,12 @@ function get_sets()
 		legs="Otronif Brais"})  --Needs Verify ]]
 	
 	sets.TP.DT = {head="Uk'uxkaj Cap",neck="Twilight Torque",left_ear="Dudgeon Earring",
-		right_ear="Heartseeker earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Dark Ring",
-		right_ring="Dark Ring",back="Yokaze Mantle",waist="Flume Belt",
+		right_ear="Heartseeker earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Succor Ring",
+		right_ring="Succor Ring",back="Yokaze Mantle",waist="Flume Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots +1"}
 
+	sets.dontforget = {body="Mochi. Chainmail"}
+		
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
 	sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Danzo Sune-Ate"})
@@ -112,6 +116,9 @@ function precast(spell)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' and spell.english ~= 'Ranged' then
 		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
+		if spell.english:startswith('Utsusemi') then
+			equip({body="Mochi. Chainmail"})
+		end
 	
 	elseif spell.type == "WeaponSkill" then
 		if sets.WS[spell.english] then
@@ -121,6 +128,9 @@ function precast(spell)
 		end
 		if buffactive['Reive Mark'] then
 			equip({neck="Ygnas's Resolve +1"})
+		end
+		if (player.tp > 1749 and player.tp < 2000) or (player.tp > 2749 and player.tp < 3000) then
+			equip({left_ear="Moonshade Earring"})
 		end
 		if ElementalWeaponSkills:contains(spell.english) then
 			add_to_chat(9, 'Elemental WS: ' ..spell.english.. ' is element: ' ..spell.element..
@@ -157,6 +167,7 @@ function midcast(spell)
 		--add_to_chat(9, 'Ninjutsu Detected: ' ..spell.english.. ' ' ..spell.type)
 		if NinjutsuNuke:contains(spell.english) then
 			equip(sets.midcast.Nuke)
+			obi_check(spell.element)
 			--add_to_chat(9, 'Nuke Detected')
 		elseif NinjutsuEnfeeble:contains(spell.english) then
 			equip(sets.midcast.Enfeeble)

@@ -78,7 +78,7 @@ function get_sets()
 	--[[sets.midcast.Enfeeble = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
-		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"} ]]
+		waist="Yamabuki-no-Obi",legs="Mes'yohi Slacks",feet="Hagondes Sabots"} ]]
 
 	sets.SummoningSkill = {main="Patriarch Cane",sub="Genbu's Shield",ammo="Seraphicaller",
 		head="Convoker's Horn", neck="Caller's Pendant",
@@ -97,14 +97,14 @@ function get_sets()
 
 	--sets.midcast.BloodPactSP
 
-	sets.Enhancing = {head="Umuthi Hat", body="Anhur Robe", neck="Colossus's Torque", hands="Augur's Gloves",
+	sets.Enhancing = {head="Umuthi Hat", body="Telchine Chas.", neck="Colossus's Torque", hands="Augur's Gloves",
 		left_ear="Loquac. Earring",
 		waist="Olympus Sash", legs="Shedir Seraweels"}
 
 	--[[sets.midcast.ElementalMagic = {main="Marin Staff +1",sub="Elder's Grip",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
-		waist="Aswang Sash",legs="Hagondes Pants +1",feet="Weath. Souliers +1"} ]]
+		waist="Yamabuki-no-Obi",legs="Hagondes Pants +1",feet="Weath. Souliers +1"} ]]
 
 --Job Ability--
 	sets.JA = {}

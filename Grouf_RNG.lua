@@ -23,7 +23,7 @@ function get_sets()
 	
 	
 	sets.WS = {}
-	sets.WS.Base = {head="Umbani Cap",neck="Fotia Gorget",left_ear="Moonshade Earring",
+	sets.WS.Base = {head="Umbani Cap",neck="Fotia Gorget",left_ear="Volley Earring",
 		right_ear="Clearview Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Lutian Cape",waist="Scout's Belt",
 		legs="Nahtirah Trousers",feet="Scopuli Nails +1"}
@@ -54,7 +54,7 @@ function get_sets()
 	sets.aftercast.Idle = set_combine(sets.aftercast.TP,{feet="Jute Boots +1"})
 	send_command('input /macro book 11;wait .1;input /macro set 1')
 	
-	sets.dontforget = {main="Hurlbat", sub="Antican Axe", range="Cibitshavore", left_ear="Linkpearl", 
+	sets.dontforget = {main="Hurlbat", sub="Antican Axe", range="Cibitshavore", 
 		right_ear="Reraise Earring", back="Mecisto. Mantle"}
 	
 	sets.dontforget2 = {range="Illapa"}
@@ -72,6 +72,9 @@ function precast(spell)
 		end
 		if buffactive['Reive Mark'] then
 			equip({neck="Ygnas's Resolve +1"})
+		end
+		if (player.tp > 1749 and player.tp < 2000) or (player.tp > 2749 and player.tp < 3000) then
+			EquipSet = set_combine(EquipSet,{left_ear="Moonshade Earring"})
 		end
 
 	elseif spell.prefix=="/jobability" then

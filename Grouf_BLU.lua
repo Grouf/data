@@ -117,21 +117,20 @@ function get_sets()
 
 --Weapon Skills--
 	sets.WS = {}
-	sets.WS.Base = {head="Whirlpool Mask", neck="Tlamiztli Collar", left_ear="Moonshade Earring",
+	sets.WS.Base = {head="Whirlpool Mask", neck="Fotia Gorget", left_ear="Moonshade Earring",
 		right_ear="Bladeborn Earring", body="Manibozho Jerkin", hands="Qaaxo Mitaines", left_ring="Rajas Ring",
 		right_ring="Cho'j Band", back="Vespid Mantle", waist="Prosilio Belt +1",
 		legs="Manibozho Brais", feet="Assim. Charuqs" }
 
-	sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{neck="Light Gorget"})
+	--sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{neck="Light Gorget"})
 
-	sets.WS['Requiescat'] = set_combine(sets.WS.Base,{neck="Shadow Gorget",left_ring="Solemn Ring",
-		legs="Quiahuiz Trousers"})
+	sets.WS['Requiescat'] = set_combine(sets.WS.Base,{left_ring="Solemn Ring", legs="Quiahuiz Trousers"})
 
 	--sets.precast['Vorpal Blade']
 
 	--sets.precast['Expiacion']
 
-	sets.WS['Sanguine Blade'] = {head="Hagondes Hat +1",neck="Tlamiztli Collar",left_ear="Psystorm Earring",
+	sets.WS['Sanguine Blade'] = {head="Hagondes Hat +1",neck="Fotia Gorget",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",--[[left_ear="Hecate's earring",right_ear="Friomisi Earring",]]
 		body="Hagondes Coat +1",hands="Weath. Cuffs +1",left_ring="Icesoul Ring",
 		right_ring="Spiral Ring",back="Refraction Cape",waist="Caudata Belt",
@@ -142,7 +141,7 @@ function get_sets()
 
 --Blue Magic Spell Stat sets--
 	sets.midcast = {}
-	sets.midcast.BaseStat = {head="Uk'uxkaj Cap",neck="Tlamiztli Collar",left_ear="Dudgeon Earring",
+	sets.midcast.BaseStat = {head="Uk'uxkaj Cap",neck="Mavi Scarf",left_ear="Dudgeon Earring",
 		right_ear="Bladeborn Earring",body="Mekosu. Harness",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Prosilio Belt +1",
 		legs="Iuitl Tights +1",feet="Qaaxo Leggings"} --relic119 legs here
@@ -159,7 +158,7 @@ function get_sets()
 
 	sets.midcast.INT = {head="Hagondes Hat +1",neck="Eddy Necklace",left_ear="Psystorm Earring",
 		right_ear="Crematio Earring",body="Hagondes Coat +1",hands="Hagondes Cuffs +1",left_ring="Icesoul Ring",
-		right_ring="Spiral Ring",back="Cornflower Cape",waist="Aswang Sash",
+		right_ring="Spiral Ring",back="Cornflower Cape",waist="Yamabuki-no-Obi",
 		legs="Mes'yohi Slacks",feet="Hag. Sabots +1"}
 
 	sets.midcast.Cure = {head="Uk'uxkaj Cap",neck="Imbodla Necklace",left_ear="Loquac. Earring",
@@ -169,7 +168,7 @@ function get_sets()
 
 	sets.midcast.mAccuracy = {head="Assim. Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",body="Mekosu. Harness",hands="Hagondes Cuffs +1",left_ring="Weather. Ring",
-		right_ring="Sangoma Ring",back="Cornflower Cape",waist="Aswang Sash",
+		right_ring="Sangoma Ring",back="Cornflower Cape",waist="Yamabuki-no-Obi",
 		legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 
 	sets.midcast.Stun = {head="Assim. Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm earring",
@@ -179,7 +178,7 @@ function get_sets()
 
 	sets.midcast.Breath = {head="Luhlaza Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm earring",
 		right_ear="Lifestorm Earring",body="Mekosu. Harness",hands="Hagondes Cuffs +1",left_ring="Prolix Ring",
-		back="Cornflower Cape",waist="Aswang Sash",
+		back="Cornflower Cape",waist="Yamabuki-no-Obi",
 		legs="Iuitl Tights +1",feet="Hagondes Sabots"}
 
 	sets.midcast.BlueMagic = set_combine(sets.precast.FastCast,{
@@ -195,12 +194,12 @@ function get_sets()
 	sets.TP.DD = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Bleating Mantle",waist="Windbuffet Belt",
-		legs="Quiahuiz Trousers",feet="Qaaxo Leggings" }
+		legs="Taeon Tights",feet="Qaaxo Leggings" }
 
 	sets.TP.Acc = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Mekosu. Harness",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Letalis Mantle",waist="Windbuffet Belt",
-		legs="Quiahuiz Trousers",feet="Assim. Charuqs" }
+		legs="Taeon Tights",feet="Assim. Charuqs" }
 
 	sets.TP.Learning = {head="Luhlaza Keffiyeh", body="Assim. Jubbah", hands="Assim. Bazu.",
 		back="Cornflower Cape", legs="Mavi Tayt +2", feet="Luhlaza Charuqs"} --skill = 500
@@ -211,7 +210,7 @@ function get_sets()
 	send_command('input /macro book 16;wait .1;input /macro set 1')
 
 	sets.DontForget = {main="Claidheamh Soluis", sub="Buramenk'ah", left_ear="Reraise Earring",
-		right_ear = "Linkpearl"}
+		}
 	sets.DontForget2 = {main="Tamaxchi", sub="Bolelabunga"}
 
 end

@@ -31,22 +31,22 @@ function get_sets()
 	sets.midcast.Enfeeble = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat", neck="Imbodla Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Globidonta Ring", right_ring="Sangoma Ring",
-		back="Refraction Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
+		back="Refraction Cape", waist="Yamabuki-no-Obi", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 
 	sets.midcast.Enhancing = {main="Marin Staff +1",
 		head="Umuthi Hat", neck="Colossus's Torque", left_ear="Loquac. Earring",
-		body="Anhur Robe", hands="Augur's Gloves",
+		body="Telchine Chas.", hands="Augur's Gloves",
 		back="Swith Cape", waist="Olympus Sash", legs="Shedir Seraweels", feet="Hag. Sabots +1"}
 
 	sets.midcast.ElementalMagic = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Witchstone",
 		head="Buremte Hat", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Acumen Ring", right_ring="Strendu ring",
-		back="Toro Cape", waist="Aswang Sash", legs="Hagondes Pants +1", feet="Umbani Boots"}
+		back="Toro Cape", waist="Yamabuki-no-Obi", legs="Hagondes Pants +1", feet="Umbani Boots"}
 
 	sets.midcast.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat",	neck="Eddy Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Acumen Ring", right_ring="Sangoma Ring",
-		back="Bane Cape", waist="Aswang Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
+		back="Bane Cape", waist="Yamabuki-no-Obi", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
 
 	sets.TP = {}
 	sets.TP.Engage = {main="Marin Staff +1", sub="Pole Grip", ammo="Witchstone",
@@ -55,7 +55,7 @@ function get_sets()
 		back="Buquwik Cape", waist="Windbuffet Belt", legs="Hagondes Pants +1", feet="Umbani Boots"}
 
 	sets.WS = {head="Hagondes Hat +1",
-		neck="Tlamiztli Collar", left_ear="Moonshade Earring", right_ear="Bladeborn Earring",
+		neck="Fotia Gorget", left_ear="Moonshade Earring", right_ear="Bladeborn Earring",
 		body="Hagondes Coat +1", hands="Hagondes Cuffs +1", left_ring="Rajas Ring", right_ring="Cho'j Band",
 		back="Buquwik Cape", waist="Prosilio Belt +1", legs="Hagondes Pants +1", feet="Umbani Boots"}
 

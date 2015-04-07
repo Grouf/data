@@ -29,7 +29,7 @@ function get_sets()
 
 	sets.FastCast = {head="Haruspex Hat", neck="Magoraga Beads",
 		right_ear="Loquac. Earring",
-		body="Qaaxo Harness", hands="Qaaxo Mitaines", left_ring="Weather. Ring", right_ring="Prolix Ring",
+		body="Taeon Tabard", hands="Thaumas Gloves", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		waist="Sailfi Belt", legs="Kaabnax Trousers", feet="Qaaxo Leggings"}
 		--Fast Cast: 17%
 		--Haste: 33%
@@ -39,14 +39,14 @@ function get_sets()
 		right_ring="Paqichikaji Ring",back="Libeccio Mantle",waist="Flax Sash",
 		legs="Nahtirah Trousers",feet="Scopuli Nails +1"}
 
+	sets.Ranged.MidAcc = set_combine(sets.Ranged,{neck="Iqabi Necklace"})
+
+	sets.Ranged.HighAcc = sets.Ranged.MidAcc
+
 	sets.WS = {head="Whirlpool Mask",neck="Fotia Gorget",left_ear="Dudgeon Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Cho'j Band",back="Vespid Mantle",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}
-
-	--sets.WS.Evisceration = set_combine(sets.WS, {neck="Shadow Gorget"}) -- DEX50%
-
-	--sets.WS["Rudra's Storm"] = set_combine(sets.WS, {neck="Shadow Gorget"}) -- DEX80%
 
 	sets.WS['Aeolian Edge'] = {head="Uk'uxkaj Cap", neck="Stoicheion Medal", left_ear="Friomisi Earring",
 		right_ear="Crematio Earring", body="Mekosu. Harness", hands="Umuthi Gloves", left_ring="Weather. Ring",
@@ -56,30 +56,50 @@ function get_sets()
 														--MAB:48
 														--M.Acc:42
 
-	sets.WS["Last Stand"] = set_combine(sets.Ranged, {waist="Caudata Belt"})
+	sets.WS["Last Stand"] = set_combine(sets.Ranged, {neck="Fotia Gorget", waist="Caudata Belt"})
 
+		--"Rudra's Storm" = DEX80%
+		--Evisceration = DEX50%
 		--Dancing Edge = 40% DEX, 40% CHR
 		--Mandalic Stab = 60% DEX
 		--Shark Bite = 40% DEX, 40% AGI
 		--Last Stand = 73-85% AGI
 
+--[[ New TP sets
+	sets.DD = {put in here sets.TP.DD}
+	sets.DD.MidAcc = {}
+	sets.DD.HighAcc = {}
+
+	sets.TH = {}
+	sets.TH.TH.MidAcc = {}
+	sets.TH.TH.HighAcc = {}
+
+	sets.Dynamis = {}
+	sets.Dynamis.MidAcc = {}
+	sets.Dynamis.HighAcc = {}
+
+	sets.DT = {}
+	sets.DT.TH = {}
+
+]]
+
 	sets.TP = {}
-	sets.TP.DD = {head="Iuitl Headgear +1",neck="Asperity Necklace",left_ear="Steelflash Earring",
+	sets.TP.DD = {head="Taeon Chapeau",neck="Asperity Necklace",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
-		legs="Taeon Tights",feet="Qaaxo Leggings"}
+		legs="Taeon Tights",feet="Taeon Boots"}
 
 	sets.TP.TH = set_combine(sets.TP.DD, {hands="Plun. Armlets +1"})
 
 	sets.TP.Dynamis = set_combine(sets.TP.TH, {neck="Nefarious Collar", feet="Raid. Poulaines +2"})
 
-	sets.TP.Accuracy = {head="Whirlpool Mask",neck="Iqabi Necklace",left_ear="Steelflash Earring",
+	sets.TP.Accuracy = {head="Taeon Chapeau",neck="Iqabi Necklace",left_ear="Steelflash Earring",
 	right_ear="Zennaroi Earring",body="Emet Harness +1",hands="Plun. Armlets +1",left_ring="Rajas Ring",
 	right_ring="Beeline Ring",back="Grounded Mantle",waist="Olseni Belt",
-	legs="Manibozho Brais",feet="Qaaxo Leggings"}
+	legs="Manibozho Brais",feet="Taeon Boots"}
 
 	sets.TP.DT = {head="Uk'uxkaj Cap", neck="Twilight Torque", left_ear="Soil Pearl",
-		right_ear="Soil Pearl", body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Dark Ring",
+		right_ear="Soil Pearl", body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Succor Ring",
 		right_ring="Shadow Ring", back="Repulse Mantle", waist="Flume Belt",
 		legs="Kaabnax Trousers", feet="Qaaxo Leggings"}
 
@@ -158,14 +178,16 @@ function status_change(new,old)
 end
 
 function buff_change(buff_name,gain)
-	if buff_name == 'Perfect Dodge' then
+	if buff_name == 'Reive Mark' and gain then
+		equip({neck="Ygnas's Resolve +1"})
+	elseif buff_name == 'Feint' then
 		if gain then
 			equip(sets.JA[buff_name])
-			disable('body')
-			add_to_chat(9, 'Perfect Dodge on: Body disabled')
+			disable('legs')
+			add_to_chat(9, 'Feint on: Legs disabled')
 		else
-			enable('body')
-			add_to_chat(9, 'Perfect Dodge off: Body enabled')
+			enable('legs')
+			add_to_chat(9, 'Feint off: Legs enabled')
 		end
 	elseif buff_name == "Assassin's Charge" then
 		if gain then
@@ -176,14 +198,14 @@ function buff_change(buff_name,gain)
 			enable('feet')
 			add_to_chat(9, "Assassin's Charge off: Feet enabled")
 		end
-	elseif buff_name == 'Feint' then
+	elseif buff_name == 'Perfect Dodge' then
 		if gain then
 			equip(sets.JA[buff_name])
-			disable('legs')
-			add_to_chat(9, 'Feint on: Legs disabled')
+			disable('body')
+			add_to_chat(9, 'Perfect Dodge on: Body disabled')
 		else
-			enable('legs')
-			add_to_chat(9, 'Feint off: Legs enabled')
+			enable('body')
+			add_to_chat(9, 'Perfect Dodge off: Body enabled')
 		end
 	end
 

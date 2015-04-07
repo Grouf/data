@@ -7,13 +7,13 @@
 include('Obi_Check')
 
 function get_sets()
-	
+
 	sets.JA = {}
 	sets.JA.Benediction = {body="Piety Briault"}
 	sets.JA.Devotion = {head="Piety Cap"}
 	sets.JA['Divine Caress'] = {hands="Orison Mitts +2"}
 	sets.JA['Afflatus Solace'] = {body="Orison Bliaud +2"}
-	
+
 	sets.precast = {}
 
 	sets.precast.Idle= {main="Bolelabunga",sub="Genbu's Shield",ammo="Oreiad's Tathlum",
@@ -33,7 +33,7 @@ function get_sets()
 		neck="Imbodla Necklace", left_ear="Loquac. Earring", right_ear="Lifestorm Earring", body="Gende. Bilaut +1",
 		hands="Theophany Mitts", left_ring="Sirona's Ring", right_ring="Solemn Ring", back="Mending Cape",
 		waist="Cleric's Belt", legs="Orsn. Pantaln. +2", feet="Piety Duckbills"} --Cure Potency 52%
-	
+
 	sets.midcast.CureMulti = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Theophany Cap",
 		neck="Imbodla Necklace", left_ear="Loquac. Earring", right_ear="Lifestorm Earring", body="Gende. Bilaut +1",
 		hands="Theophany Mitts", left_ring="Sirona's Ring", right_ring="Solemn Ring", back="Pahtli Cape",
@@ -51,16 +51,16 @@ function get_sets()
 	sets.midcast.Enfeeble= {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Theo. Briault",
 		hands="Gende. Gages +1",left_ring="Globidonta Ring",right_ring="Sangoma Ring",back="Refraction Cape",
-		waist="Aswang Sash",legs="Mes'yohi Slacks",feet="Piety Duckbills"}
+		waist="Yamabuki-no-Obi",legs="Mes'yohi Slacks",feet="Piety Duckbills"}
 
 	sets.midcast.DRKMagic= {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Gende. Bilaut +1",
 		hands="Gende. Gages +1",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
-		waist="Aswang Sash",legs="Gendewitha Spats",feet="Gende. Galoshes"}
+		waist="Yamabuki-no-Obi",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 
 	sets.midcast.Enhancing = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Oreiad's Tathlum",
 		head="Umuthi Hat", neck="Colossus's Torque", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
-		body="Anhur Robe", hands="Augur's Gloves", left_ring="Prolix Ring",
+		body="Telchine Chas.", hands="Augur's Gloves", left_ring="Prolix Ring",
 		back="Mending Cape", waist="Olympus Sash", legs="Shedir Seraweels", feet="Orsn. Duckbills +2"}
 
 	sets.midcast["Protectra V"] = set_combine(sets.precast.Enhancing,{feet="Piety Duckbills"})
@@ -74,7 +74,7 @@ function get_sets()
 	sets.midcast.Divine= {main="Marin Staff +1",sub="Mephitis Grip", ammo="Witchstone", head="Buremte Hat",
 		neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",body="Gende. Bilaut +1",
 		hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
-		back="Refraction Cape", waist="Aswang Sash", legs="Gendewitha Spats", feet="Umbani Boots"}
+		back="Refraction Cape", waist="Yamabuki-no-Obi", legs="Gendewitha Spats", feet="Umbani Boots"}
 
 	sets.midcast.Repose = set_combine(sets.precast.Divine,{sub="Mephitis Grip",ammo="Kalboron Stone",head="Orison Cap +2",
 		left_ear="Psystorm Earring",right_ear="Lifestorm Earring",hands="Gende. Gages +1", back="Mending Cape"})
@@ -118,7 +118,7 @@ function precast(spell)
 		if buffactive['Reive Mark'] then
 			equip({neck="Ygnas's Resolve +1"})
 		end
-		
+
 	elseif spell.prefix=='/jobability' then
 		if sets.JA[spell.english] then
 			equip(sets.JA[spell.english])
@@ -166,7 +166,7 @@ function midcast(spell)
 		if spell.english ~= 'Repose' then
 			obi_check(spell.element)
 		end
-		
+
 	elseif spell.skill == 'Dark Magic' then
 		equip(sets.midcast.DarkMagic)
 		obi_check(spell.element)

@@ -101,7 +101,7 @@ function obi_check(spell_element)
 	--Determine if obi should be equipped
 	if obi_on >= 1 then
 		equip({waist="Hachirin-no-Obi"})
-		add_to_chat(9, 'obi_on >=1, equip obi')
+		--add_to_chat(9, 'obi_on >=1, equip obi')
 	end
 
 end
