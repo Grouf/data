@@ -8,16 +8,17 @@ Head		Atrophy Chapeau		11		(            RDM                                )
 			Nahtirah Hat		10		(    WHM BLM rdm                 SMN     GEO)
 			Haruspex Hat		8		(MNK whm blm rdm THF RNG         smn BLU geo RUN)
 			Haruspex Hat +1		9		(MNK whm blm rdm THF RNG         smn BLU geo RUN)
-			
+
 Neck		Orunmila's Torque 	5		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
 			Orison Locket		5		(    WHM	                                    )
 
 Ear			Estoqueurs Earring	2		(            RDM                                )
 			Loquacious Earring	2		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
-			
+
 Body		Anhur Robe			10		(    WHM BLM rdm                 SMN BLU GEO    )
 			Vitivation Tabard	12		(            RDM                                )
 			Luhlaza Jubbah		6		(                                    BLU        )
+			Rosette Jaseran +1	3~6		(    WHM BLM rdm                 SMN     GEO    )
 
 Hands		Gende. Gages +1	7		(    WHM     RDM                                )
 			Thaumas Gloves		4		(MNK             THF RNG     NIN     BLU     RUN)
