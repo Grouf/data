@@ -23,7 +23,7 @@ function get_sets()
 		right_ring="Beeline Ring",back="Letalis Mantle",waist="Olseni Belt",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}
 
-	sets.JA['Violent Flourish'] = set_combine(sets.JA.Step, {neck="Stoicheion Medal",
+	sets.JA['Violent Flourish'] = set_combine(sets.JA.Step, {
 		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Weather. Ring",
 		right_ring="Sangoma Ring", legs="Iuitl Tights +1"})
 
@@ -48,7 +48,7 @@ function get_sets()
 		right_ring="Cho'j Band",back="Vespid Mantle",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}
 
-	sets.WS['Aeolian Edge'] = {head="Uk'uxkaj Cap", neck="Stoicheion Medal", left_ear="Friomisi Earring",
+	sets.WS['Aeolian Edge'] = {head="Uk'uxkaj Cap", left_ear="Friomisi Earring",
 		right_ear="Crematio Earring", body="Mekosu. Harness", hands="Umuthi Gloves", left_ring="Weather. Ring",
 		right_ring="Acumen Ring", back="Toro Cape", waist="Caudata Belt",
 		legs="Iuitl Tights +1", feet="Qaaxo Leggings"}	--DEX40%, INT40%

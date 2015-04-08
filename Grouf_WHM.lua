@@ -54,7 +54,7 @@ function get_sets()
 		waist="Yamabuki-no-Obi",legs="Mes'yohi Slacks",feet="Piety Duckbills"}
 
 	sets.midcast.DRKMagic= {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Buremte Hat",
-		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Gende. Bilaut +1",
+		neck="Eddy Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Gende. Bilaut +1",
 		hands="Gende. Gages +1",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Yamabuki-no-Obi",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 

@@ -72,7 +72,7 @@ function get_sets()
 		waist="Yamabuki-no-Obi",legs="Hagondes Pants +1",feet="Helios Boots"}
 
 	sets.midcast.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
-		neck="Stoicheion Medal",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Helios Jacket",
+		neck="Eddy Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Helios Jacket",
 		hands="Lurid Mitts",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Yamabuki-no-Obi",legs="Azimuth Tights",feet="Hagondes Sabots"}
 

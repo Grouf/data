@@ -10,13 +10,13 @@ function get_sets()
 	sets.precast = {}
 
 	sets.precast.FastCast = {main="Marin Staff +1",sub="Mephitis Grip",
-		head="Nahtirah Hat", neck="Stoicheion Medal", left_ear="Loquac. Earring",
+		head="Nahtirah Hat", left_ear="Loquac. Earring",
 		body="Anhur Robe",hands="Hagondes Cuffs +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith Cape",waist="Witful Belt", legs="Artsieq Hose", feet="Hagondes Sabots"}
 		-- 37% Fast Cast
 
 	sets.precast.Idle = {main="Bolelabunga", sub="Genbu's Shield", ammo="Witchstone",
-		neck="Stoicheion Medal", left_ear="Crematio Earring", right_ear="Friomisi Earring",
+		neck="Twilight Torque", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Respite Cloak", hands="Serpentes Cuffs", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Mecisto. Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
 
