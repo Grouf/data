@@ -39,7 +39,7 @@ function get_sets()
 	sets.precast = {}
 
 	sets.precast.Ranged = {head="Uk'uxkaj Cap",neck="Ocachi Gorget", left_ear="Clearview earring",
-		right_ear="Bladeborn Earring", body="Mekosu. Harness", hands="Hachiya Tekko", left_ring="Fistmele Ring",
+		right_ear="Enervating Earring", body="Mekosu. Harness", hands="Hachiya Tekko", left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring", back="Yokaze Mantle", waist="Flax Sash",
 		legs="Nahtirah Trousers", feet="Scopuli Nails +1"}
 
