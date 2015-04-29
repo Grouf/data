@@ -53,16 +53,16 @@ function get_sets()
 		waist="Famine Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 
 	sets.midcast.Geomancy = {main="Staccato Staff",sub="Mephitis Grip" ,range="Dunna",
-		head="Azimuth Hood +1", body="Bagua Tunic", right_ear="Gwati Earring",
+		head="Azimuth Hood +1", neck="Deviant Necklace", body="Bagua Tunic", right_ear="Gwati Earring",
 		hands="Geo. Mitaines +1",back="Lifestream Cape",
 		waist="Sekhmet Corset", legs="Bagua Pants", feet="Azimuth Gaiters"}
 			--Geomancy Skill:	394+53 = 447
 			--Handbell Skill:	389+18 = 407
 			--Total:			854
-			--Conserve MP:		7
+			--Conserve MP:		9
 
 	--Enhancing needs work
-	sets.midcast.Enhancing = {body="Telchine Chas.", head="Umuthi Hat", neck="Colossus's Torque",
+	sets.midcast.Enhancing = {body="Telchine Chas.", head="Befouled Crown", neck="Colossus's Torque",
 		hands="Augur's Gloves", left_ear="Loquac. Earring", right_ear="Andoaa Earring",
 		waist="Olympus Sash",legs="Shedir Seraweels",feet="Geomancy Sandals"}
 
