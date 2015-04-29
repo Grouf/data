@@ -59,7 +59,7 @@ function get_sets()
 		waist="Yamabuki-no-Obi",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 
 	sets.midcast.Enhancing = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Oreiad's Tathlum",
-		head="Umuthi Hat", neck="Colossus's Torque", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
+		head="Befouled Crown", neck="Colossus's Torque", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
 		body="Telchine Chas.", hands="Augur's Gloves", left_ring="Prolix Ring",
 		back="Mending Cape", waist="Olympus Sash", legs="Shedir Seraweels", feet="Orsn. Duckbills +2"}
 
