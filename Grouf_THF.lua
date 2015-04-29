@@ -10,7 +10,7 @@ function get_sets()
 	sets.JA.Flee = {feet="Pillager's Poulaines"}
 	sets.JA.Steal = {hands="Pillager's Armlets",legs="Assassin's Culottes",feet="Pillager's Poulaines"}
 	sets.JA.Mug = {head="Plun. Bonnet"}
-	sets.JA.Despoil = {legs="Raid. Culottes +2", feet="Raid. Poulaines +2"}
+	sets.JA.Despoil = {legs="Raid. Culottes +2", feet="Skulk. Poulaines +1"}
 	sets.JA.Conspirator = {body="Raider's Vest +2"}
 	sets.JA.Accomplice = {head="Raider's Bonnet +2"}
 	sets.JA.Collaborator = {head="Raider's Bonnet +2"}
@@ -28,14 +28,14 @@ function get_sets()
 		right_ring="Sangoma Ring", legs="Iuitl Tights +1"})
 
 	sets.FastCast = {head="Haruspex Hat", neck="Magoraga Beads",
-		right_ear="Loquac. Earring",
+		left_ear="Etiolation Earring", right_ear="Loquac. Earring",
 		body="Taeon Tabard", hands="Thaumas Gloves", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		waist="Sailfi Belt", legs="Kaabnax Trousers", feet="Qaaxo Leggings"}
-		--Fast Cast: 17%
+		--Fast Cast: 18%
 		--Haste: 33%
 
 	sets.Ranged = {head="Umbani Cap",neck="Ocachi Gorget",left_ear="Volley earring",
-		right_ear="Clearview Earring",body="Mekosu. Harness",hands="Buremte Gloves",left_ring="Fistmele Ring",
+		right_ear="Enervating Earring",body="Mekosu. Harness",hands="Buremte Gloves",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Libeccio Mantle",waist="Flax Sash",
 		legs="Nahtirah Trousers",feet="Scopuli Nails +1"}
 
@@ -48,7 +48,7 @@ function get_sets()
 		right_ring="Cho'j Band",back="Vespid Mantle",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}
 
-	sets.WS['Aeolian Edge'] = {head="Uk'uxkaj Cap", left_ear="Friomisi Earring",
+	sets.WS['Aeolian Edge'] = {head="Uk'uxkaj Cap", neck="Fotia Gorget", left_ear="Friomisi Earring",
 		right_ear="Crematio Earring", body="Mekosu. Harness", hands="Umuthi Gloves", left_ring="Weather. Ring",
 		right_ring="Acumen Ring", back="Toro Cape", waist="Caudata Belt",
 		legs="Iuitl Tights +1", feet="Qaaxo Leggings"}	--DEX40%, INT40%
@@ -91,7 +91,7 @@ function get_sets()
 
 	sets.TP.TH = set_combine(sets.TP.DD, {hands="Plun. Armlets +1"})
 
-	sets.TP.Dynamis = set_combine(sets.TP.TH, {neck="Nefarious Collar", feet="Raid. Poulaines +2"})
+	sets.TP.Dynamis = set_combine(sets.TP.TH, {neck="Nefarious Collar", feet="Skulk. Poulaines +1"})
 
 	sets.TP.Accuracy = {head="Taeon Chapeau",neck="Iqabi Necklace",left_ear="Steelflash Earring",
 	right_ear="Zennaroi Earring",body="Emet Harness +1",hands="Plun. Armlets +1",left_ring="Rajas Ring",
@@ -103,7 +103,7 @@ function get_sets()
 		right_ring="Shadow Ring", back="Repulse Mantle", waist="Flume Belt",
 		legs="Kaabnax Trousers", feet="Qaaxo Leggings"}
 
-	sets.TP.DT.TH = set_combine(sets.TP.DT, {hands="Plun. Armlets +1"})
+	sets.TP.DT.TH = set_combine(sets.TP.DT, {hands="Plun. Armlets +1", feet="Skulk. Poulaines +1"})
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
