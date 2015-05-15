@@ -39,72 +39,74 @@ function get_sets()
 	--Job Abilities
 	sets.JA = {}
 	sets.JA.Chainspell = {body="Viti. Tabard +1"}
-	sets.JA.Saboteur = {hands="Leth. Gantherots"}
+	sets.JA.Saboteur = {hands="Leth. Gantherots +1"}
 
 	sets.JA.Waltz = {ammo="Brigantia Pebble",
-		head="Buremte Hat", right_ear="Soil Pearl", left_ear="Soil Pearl",
+		head="Atro. Chapeau +1", right_ear="Soil Pearl", left_ear="Soil Pearl",
 		body="Viti. Tabard +1", hands="Atrophy Gloves +1", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
-		back="Refraction Cape", waist="Caudata Belt", legs="Viti. Tights +1", feet="Umbani Boots"}
+		back="Refraction Cape", waist="Caudata Belt", legs="Leth. Fuseau +1", feet="Atrophy Boots +1"}
 
-	sets.JA.Step = {head="Buremte Hat",
-		neck="Iqabi Necklace", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
-		body="Atrophy Tabard +1", hands="Buremte Gloves", left_ring="Rajas Ring", right_ring="Beeline Ring",
-		back="Letalis Mantle", waist="Olseni Belt", legs="Viti. Tights +1", feet="Atrophy Boots +1"}
-		--Primary Acc: 862
+	sets.JA.Step = {ammo="Paeapua",
+		head="Taeon Chapeau", neck="Iqabi Necklace", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
+		body="Helios Jacket", hands="Buremte Gloves", left_ring="Rajas Ring", right_ring="Beeline Ring",
+		back="Grounded Mantle", waist="Olseni Belt", legs="Viti. Tights +1", feet="Atrophy Boots +1"}
+		--No Weapon Primary Acc: 317
 
 	sets.JA['Violent Flourish'] = {ammo="Kalboron Stone",
-		head="Buremte Hat", neck="Stoicheion Medal", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
-		body="Atrophy Tabard +1", hands="Lurid Mitts", left_ring="Weather. Ring", right_ring="Sangoma Ring",
-		back="Ghostfyre Cape", waist="Yamabuki-no-Obi", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
-		--M.Acc = 115, Prim.Acc = 747
+		head="Helios Band", neck="Eddy Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		body="Helios Jacket", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
+		back="Ghostfyre Cape", waist="Famine Sash", legs="Leth. Fuseau +1", feet="Hagondes Sabots"}
+		--M.Acc = 174, No Weapon Prim.Acc = 161
 
 	sets.FastCast = {main="Marin Staff +1", sub="Mephitis Grip",
-		head="Atro. Chapeau +1", neck="Stoicheion Medal", left_ear="Estq. Earring", right_ear="Loquac. Earring",
+		head="Atro. Chapeau +1", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		back="Swith Cape", waist="Witful Belt", legs="Artsieq Hose", feet="Taeon Boots"}
-			-- 51% Fast Cast, 20% Haste}
+		waist="Witful Belt", legs="Artsieq Hose", feet="Taeon Boots"}
+			-- 54% Fast Cast, 22% Haste
 
 	sets.Idle = {main="Bolelabunga", sub="Genbu's Shield", ammo="Brigantia Pebble",
 		head="Viti. Chapeau +1", neck="Twilight Torque", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Atrophy Tabard +1", hands="Serpentes Cuffs", left_ring="Weather. Ring", right_ring="Sangoma Ring",
+		body="Atrophy Tabard +1", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
 
 	sets.Idle.DT = {main="Xiutleato",sub="Genbu's Shield", ammo="Brigantia Pebble",
-		head="Atro. Chapeau +1", neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Soil Pearl",
-		body="Atrophy Tabard +1", hands="Umuthi Gloves", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
-		back="Repulse Mantle", waist="Flume Belt", legs="Mes'yohi Slacks", feet="Umbani Boots"}
+		head="Rabid Visor", neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Soil Pearl",
+		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
+		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +1", feet="Leth. Houseaux +1"}
+		-- PDT: -46%, Evasion: 655, Defense: 801
 
 	sets.Idle.MDT = {main="Xiutleato",sub="Beatific Shield +1", ammo="Brigantia Pebble",
-		head="Atro. Chapeau +1", neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Soil Pearl",
-		body="Atrophy Tabard +1", hands="Umuthi Gloves", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
-		back="Repulse Mantle", waist="Flume Belt", legs="Mes'yohi Slacks", feet="Umbani Boots"}
-
+		head="Atro. Chapeau +1", neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Zennaroi Earring",
+		body="Lethargy Sayon +1", hands="Atrophy Gloves +1", left_ring="Shadow Ring", right_ring="Succor Ring",
+		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
+		-- MDB: 28, MDT: -33%, M.Eva: 417
 
 
 	sets.Enfeeble = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Oreiad's Tathlum",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Lethargy Sayon +1", hands="Lurid Mitts", left_ring="Weather. Ring", right_ring="Globidonta Ring",
+		body="Lethargy Sayon +1", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Globidonta Ring",
 		back="Refraction Cape", waist="Witch Sash", legs="Mes'yohi Slacks", feet="Uk'uxkaj Boots"}
-			--Magic Accuracy:	+108
-			--Enfeeble Skill:	500
-			--Total:			608
-			--MND:				+180
+			--Magic Accuracy:	+109???
+			--Enfeeble Skill:	501???
+			--Total:			610???
+			--MND:				+186???
 
 	sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble ,{ammo="Kalboron Stone", waist="Famine Sash",
 		feet="Vitivation Boots +1"})
-			--Magic Accuracy:	+128
-			--Enfeeble Skill:	512
-			--Total:			640
-			--MND:				+178
+			--Magic Accuracy:	+128???
+			--Enfeeble Skill:	512???
+			--Total:			640???
+			--MND:				+178???
 
 	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc ,{head="Helios Band", body="Atrophy Tabard +1",
 		right_ring="Sangoma Ring", back="Ghostfyre Cape"})
-			--Magic Accuracy:	+160
-			--Enfeeble Skill:	511
-			--Total:			671
-			--MND:				+165
+			--Magic Accuracy:	+160???
+			--Enfeeble Skill:	511???
+			--Total:			671???
+			--MND:				+165???
 
-	--Lethargy Sayon +1 is best-in-slot for all enfeebles
+	--Lethargy Sayon +1 is currently best-in-slot for all enfeebles (??)
+		--Ischemia Chasuble gives +6 m.Acc over Lethargy Sayon +1
 
 -- *!*!* Difference between MND and INT enfeebles is Ghastly Tathlum and Yamabuki-no-Obi, for non-Acc (?) *!*!*
 	--[[sets.INTEnfeeble = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Ghastly Tathlum",
@@ -117,63 +119,65 @@ function get_sets()
 		body="Atrophy Tabard +1", hands="Lurid Mitts", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Ghostfyre Cape", waist="Yamabuki-no-Obi", legs="Mes'yohi Slacks", feet="Vitivation Boots +1"} --M.Acc 360
 
-	sets.INTEnfeeble.HighAcc = {} --Lethargy Sayon +1 +1 is best-in-slot for all enfeebles ]]
+	sets.INTEnfeeble.HighAcc = {}
+	]]
 
-	sets.Dispel = set_combine(sets.Enfeeble,{body="Atrophy Tabard +1", feet="Vitivation Boots +1"})
+	sets.Dispel = set_combine(sets.Enfeeble.MidAcc, {right_ring="Sangoma Ring",back="Ghostfyre Cape"})
 
-	sets.Dispel.MidAcc = set_combine(sets.Enfeeble,{})
+	--sets.Dispel.MidAcc = set_combine(sets.Enfeeble,{})
 
-	sets.Dispel.HighAcc = {}
+	--sets.Dispel.HighAcc = {}
 
 	sets.Elemental = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Ghastly Tathlum",
 		head="Helios Band", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Count's Garb", hands="Helios Gloves", left_ring="Strendu Ring", right_ring="Acumen Ring",
-		back="Toro Cape", waist="Yamabuki-no-Obi", legs="Hagondes Pants +1", feet="Helios Boots"} --MAB=183
+		back="Toro Cape", waist="Yamabuki-no-Obi", legs="Hagondes Pants +1", feet="Helios Boots"}
+			--MAB=213, m.Acc: 88 (316 w/Weapon skill)
 
-	sets.Elemental.MidAcc = {
+	sets.Elemental.MidAcc = set_combine(sets.Elemental, {ammo="Kalboron Stone",
 		left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		hands="Helios Gloves???", left_ring="Weather. Ring", right_ring="Sangoma Ring",
-		feet="Vitivation Boots +1???"}
+		left_ring="Weather. Ring", right_ring="Sangoma Ring"})
+			--MAB=189, m.Acc: 120 (348 w/Weapon skill)
 
-	sets.Elemental.HighAcc = {body="Helios Jacket",ammo="Kalboron Stone",}
+	sets.Elemental.HighAcc = set_combine(sets.Elemental.MidAcc, {
+		body="Helios Jacket"})
+		--MAB=176, m.Acc: 147 (348 w/Weapon skill)
 
 	sets.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Ghastly Tathlum",
-		head="Atro. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Helios Jacket", hands="Lurid Mitts", left_ring="Weather. Ring", right_ring="Sangoma Ring",
-		back="Refraction Cape", waist="Yamabuki-no-Obi", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
+		head="Helios Band", neck="Eddy Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		body="Helios Jacket", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
+		back="Refraction Cape", waist="Yamabuki-no-Obi", legs="Leth. Fuseau +1", feet="Hagondes Sabots"}
 
-	sets.DarkMagic.MidAcc = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
-		head="Atro. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Helios Jacket", hands="Lurid Mitts", left_ring="Weather. Ring", right_ring="Sangoma Ring",
-		back="Refraction Cape", waist="Yamabuki-no-Obi", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
+	sets.DarkMagic.MidAcc = set_combine(sets.DarkMagic, {ammo="Kalboron Stone",
+		waist="Famine Sash"})
 
-	sets.DarkMagic.HighAcc = {waist="Famine Sash",}
+	sets.DarkMagic.HighAcc = sets.DarkMagic.MidAcc
 
 	--Stun set used for both precast and midcast
 	sets.Stun = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Atro. Chapeau +1", neck="Eddy Necklace", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		back="Swith Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Vitivation Boots +1"}
-			--Fast Cast: 53%, Haste:27%
+		back="Ghostfyre Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Vitivation Boots +1"}
+			--Fast Cast: 51%, Haste: 26%, M.Acc: 116 (344 w/weapon skill)
 
 	sets.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
 		head="Viti. Chapeau +1", neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Soil Pearl",
 		body="Viti. Tabard +1", hands="Telchine Gloves", left_ring="Solemn Ring", right_ring="Sirona's Ring",
-		back="Ghostfyre Cape", waist="Witch Sash", legs="Atrophy Tights +1", feet="Umbani Boots"}
-		--51% Cure Pot., Cure casting -6%,  20%Haste, MND 91+180, VIT82+87, Healing Mage: 426
+		back="Ghostfyre Cape", waist="Witch Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux +1"}
+		--Cure Pot.: 52%, Cure casting -6%, Haste: 20%, MND: 91+189, VIT: 82+88, Healing Magic: 426
 
 	sets.Enhancing = {main="Arendsi Fleuret", sub="Genbu's Shield",
-		head="Umuthi Hat", neck="Colossus's Torque", left_ear="Estq. Earring", right_ear="Andoaa Earring",
+		head="Befouled Crown", neck="Colossus's Torque", left_ear="Estq. Earring", right_ear="Andoaa Earring",
 		body="Viti. Tabard +1", hands="Atrophy Gloves +1", left_ring="Weather. Ring",  right_ring="Prolix Ring",
-		back="Estoqueur's Cape", waist="Olympus Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux"}
+		back="Estoqueur's Cape", waist="Olympus Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux +1"}
 		--skill=522}
 
-	sets.EnhancingOther = set_combine(sets.Enhancing, {head="Lethargy Chappel",
+	sets.EnhancingOther = set_combine(sets.Enhancing, {head="Lethargy Chappel +1",
 		body="Lethargy Sayon +1", hands="Atrophy Gloves +1", legs="Leth. Fuseau +1"})
 
-	sets.Spikes = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Witchstone",
+	sets.Spikes = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Ghastly Tathlum",
 		head="Atro. Chapeau +1", neck="Imbodla Necklace", left_ear="Crematio Earring", right_ear="Psystorm Earring",
-		body="Atrophy Tabard +1", hands="Atrophy Gloves +1", left_ring="Icesoul Ring", right_ring="Spiral Ring",
+		body="Count's Garb", hands="Atrophy Gloves +1", left_ring="Icesoul Ring", right_ring="Spiral Ring",
 		back="Toro Cape", waist="Caudata Belt", legs="Mes'yohi Slacks", feet="Umbani Boots"}
 			--spike damage gear only works while equipped
 			--INT at casting makes spikes do more damage: adjust above to max INT
@@ -184,44 +188,73 @@ function get_sets()
 
 	sets.DD = {ammo="Paeapua",
 		head="Taeon Chapeau", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
-		body="Taeon Tabard", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="Rajas Ring",
+		body="Taeon Tabard", hands="Atrophy Gloves +1", left_ring="Rajas Ring", right_ring="K'ayres Ring",
 		back="Bleating Mantle", waist="Windbuffet Belt", legs="Taeon Tights", feet="Taeon Boots"}
+			--Without Weapon/Shield: Acc: 226, Att: 281
 
 	--[[Need to sort these out:
 	*Windbuffet Belt
 	*Chaac Belt
-	*when using shield:  feet="Atrophy Boots +1"
+	*when using shield:  feet="Atrophy Boots +1"??
 	*Emet Harness +1
 	]]
 
-	sets.DD.MidAcc = {}
+	sets.DD.MidAcc = set_combine(sets.DD, {neck="Iqabi Necklace", right_ring="Beeline Ring",
+		back="Grounded Mantle", feet="Atrophy Boots +1"})
+			--Without Weapon/Shield: Acc: 272, Att: 217
 
-	sets.DD.HighAcc = {}
-
-
-	sets.DT = {}
-
-	sets.DT.MidAcc = {}
-
-	sets.DT.HighAcc = {}
+	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {right_ear="Heartseeker Earring",
+		hands="Buremte Gloves", waist="Olseni Belt"})
+			--Without Weapon/Shield: Acc: 309, Att: 192
 
 
-	sets.MDT = {}
+	sets.DT = {ammo="Brigantia Pebble",
+		head="Rabid Visor", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
+		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Rajas Ring", right_ring="Succor Ring",
+		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +1", feet="Leth. Houseaux +1"}
+			--Without Weapon/Shield: Acc: 192, Att: 170, EVA: 646, DEF: 768, PDT: -32%
 
-	sets.MDT.MidAcc = {}
 
-	sets.MDT.HighAcc = {}
+	sets.DT.MidAcc = set_combine(sets.DT, {right_ear="Heartseeker Earring", waist="Olseni Belt"})
+			--Without Weapon/Shield: Acc: 220, Att: 157, EVA: 646, DEF: 752, PDT: -28%
 
-	sets.WS = {ammo="Oreiad's Tathlum",
-		head="Taeon Chapeau", neck="Fotia Gorget", left_ear="Dudgeon Earring", right_ear="Bladeborn Earring",
+	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Grounded Mantle"})
+		--Without Weapon/Shield: Acc: 243, Att: 157, EVA: 646, DEF: 755, PDT: -24%
+
+	sets.MDT = {ammo="Brigantia Pebble",
+		head="Atro. Chapeau +1", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
+		body="Lethargy Sayon +1", hands="Atrophy Gloves +1", left_ring="Shadow Ring", right_ring="Succor Ring",
+		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
+			--Without Weapon/Shield: Acc: 172, Att: 165, EVA: 610, DEF: 734,
+			-- MDB: 28, MDT: -8%, M.Eva: 417
+
+	sets.MDT.MidAcc = set_combine(sets.MDT, {waist="Olseni Belt"})
+			--Without Weapon/Shield: Acc: 192, Att: 160, EVA: 610, DEF: 735,
+			-- MDB: 28, MDT: -8%, M.Eva: 417
+
+	sets.MDT.HighAcc = set_combine(sets.MDT.MidAcc, {back="Grounded Mantle"})
+			--Without Weapon/Shield: Acc: 214, Att: 160, EVA: 610, DEF: 732,
+			-- MDB: 28, MDT: -8%, M.Eva: 417
+
+	sets.WS = {ammo="Paeapua",
+		head="Rabid Visor", neck="Fotia Gorget", left_ear="Dudgeon Earring", right_ear="Bladeborn Earring",
 		body="Taeon Tabard", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="K'ayres Ring",
-		back="Vespid Mantle", waist="Prosilio Belt +1", legs="Taeon Tights", feet="Taeon Boots"}
+		back="Buquwik Cape", waist="Prosilio Belt +1", legs="Taeon Tights", feet="Taeon Boots"}
+			--Without Weapon/Shield: STR: +114, Att: 320, Acc: 177
 
-	sets.WS.MidAcc = {}
+	sets.WS.MidAcc = set_combine(sets.WS, {left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
+		hands="Umuthi Gloves", right_ring="Beeline Ring", back="Vespid Mantle"})
+			--Without Weapon/Shield: STR: +98, Att: 302, Acc: 241
 
-	sets.WS.HighAcc = {}
+	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {head="Taeon Chapeau", back="Grounded Mantle",
+		waist="Olseni Belt", feet="Atrophy Boots +1"})
+			--Without Weapon/Shield: STR: +88, Att: 204, Acc: 288
 
-	--sets.WS['Chant du Cygne'] = {} -- DEX 80%
+	--sets.WS['Chant du Cygne'] = {ammo="Paeapua",
+	--	head="Rabid Visor", neck="Fotia Gorget", left_ear="Dudgeon Earring", right_ear="Bladeborn Earring",
+	--	body="Taeon Tabard", hands="Atrophy Gloves +1", left_ring="Cho'j Band", right_ring="K'ayres Ring",
+	--	back="Buquwik Cape", waist="Prosilio Belt +1", legs="Taeon Tights", feet="Taeon Boots"}
+			-- DEX 80%
 
 	--sets.WS['Chant du Cygne'].MidAcc = {}
 
@@ -256,7 +289,11 @@ function get_sets()
 
 	--send_command('input /macro book 5;wait .1;input /macro set 1')
 	set_macro_book()
-
+	
+	sets.DontForget = {body="Telchine Chas.", neck="Quanpur Necklace", legs="Crimson Cuisses",	
+		right_ring="Excelsis Ring"}
+	sets.DontForget2 = {legs="Shedir Seraweels"}
+	
 	--[[
 	sets.DontForget = {sub="Thuellaic Ecu +1", neck="Quanpur Necklace", left_ear="Reraise Earring",
 		body="Telchine Chas."}
@@ -405,6 +442,10 @@ function midcast(spell)
 			end
 		end
 
+		if world.day_element == spell.element then
+			EquipSet = set_combine(EquipSet, {legs="Mes'yohi Slacks"})
+		end
+
 		if Accuracy[Accuracy_Index] ~= 'HighAcc' then
 			Check_for_Obi = 1
 		end
@@ -418,7 +459,7 @@ function midcast(spell)
 			EquipSet = EquipSet[Accuracy[Accuracy_Index]]
 		end
 
-		if Accuracy[Accuracy_Index] == 'None' then
+		if Accuracy[Accuracy_Index] ~= 'HighAcc' and spell.element == "Earth" then
 			EquipSet = set_combine(EquipSet, {neck="Quanpur Necklace"})
 		end
 
@@ -493,38 +534,42 @@ function aftercast(spell)
 end --end aftercast
 
 function status_change(new,old)
+	aftercast()
 		--*!*!* Same as aftercast, try to refine *!*!*--
-	if player.status =='Engaged' then
 
-		EquipSet = sets[SetMode_Names[SetMode_Index]]  --DD or DT or MDT sets
-
-		if EquipSet[Accuracy[Accuracy_Index]] then
-			--add_to_chat(9, 'WS Accuracy level found: ' ..Accuracy[Accuracy_Index])
-			EquipSet = EquipSet[Accuracy[Accuracy_Index]]
-		end
-
-	else
-		EquipSet = sets.Idle -- full refresh set
-
-		if EquipSet[SetMode_Names[SetMode_Index]] then
-			EquipSet = EquipSet[SetMode_Names[SetMode_Index]] --equip set.Idle.DT or sets.Idle.MDT
-		end
-
-	end
-
-	if buffactive['Reive Mark'] then
-		EquipSet = set_combine(EquipSet, {neck="Ygnas's Resolve +1"})
-	end
-
-	if Beatific_On == 1 and SetMode_Names[SetMode_Index] ~= 'MDT' then
-		EquipSet = set_combine(EquipSet, {sub="Beatific Shield +1"})
-	end
-
-	if Mecisto_On == 1 then
-		EquipSet = set_combine(EquipSet, {back="Mecisto. Mantle"})
-	end
-
-	equip(EquipSet)
+	--[[
+	--if player.status =='Engaged' then
+	--
+	--	EquipSet = sets[SetMode_Names[SetMode_Index]]  --DD or DT or MDT sets
+	--
+	--	if EquipSet[Accuracy[Accuracy_Index]] then
+	--		--add_to_chat(9, 'WS Accuracy level found: ' ..Accuracy[Accuracy_Index])
+	--		EquipSet = EquipSet[Accuracy[Accuracy_Index]]
+	--	end
+	--
+	--else
+	--	EquipSet = sets.Idle -- full refresh set
+	--
+	--	if EquipSet[SetMode_Names[SetMode_Index]] then
+	--		EquipSet = EquipSet[SetMode_Names[SetMode_Index]] --equip set.Idle.DT or sets.Idle.MDT
+	--	end
+	--
+	--end
+	--
+	--if buffactive['Reive Mark'] then
+	--	EquipSet = set_combine(EquipSet, {neck="Ygnas's Resolve +1"})
+	--end
+	--
+	--if Beatific_On == 1 and SetMode_Names[SetMode_Index] ~= 'MDT' then
+	--	EquipSet = set_combine(EquipSet, {sub="Beatific Shield +1"})
+	--end
+	--
+	--if Mecisto_On == 1 then
+	--	EquipSet = set_combine(EquipSet, {back="Mecisto. Mantle"})
+	--end
+	--
+	--equip(EquipSet)
+	--]]
 
 end -- end status_change
 
@@ -585,15 +630,19 @@ function self_command(command)
 	elseif command == 'Beatific' then
 		if Beatific_On == 0 then
 			Beatific_On = 1	--always equip Beatific Shield
+			add_to_chat(9, 'Beatific ON')
 		else
 			Beatific_On = 0 -- equip shield defined in sets
+			add_to_chat(9, 'Beatific OFF')
 		end
 
 	elseif command == 'Mecisto' then
 		if Mecisto_On == 0 then
 			Mecisto_On = 1	--always equip Mecisto Mantle
+			add_to_chat(9, 'Mecisto ON')
 		else
 			Mecisto_On = 0 -- equip back defined in sets
+			add_to_chat(9, 'Mecisto OFF')
 		end
 
 	elseif command == 'Info' then
@@ -606,6 +655,9 @@ function self_command(command)
 
 	end
 
+	if command ~= 'Info' or command ~= 'Melee' then
+		aftercast()
+	end
 
 --[[
 	elseif command == 'IdleRefresh' then
