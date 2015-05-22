@@ -655,7 +655,7 @@ function self_command(command)
 
 	end
 
-	if command ~= 'Info' or command ~= 'Melee' then
+	if command ~= 'Info' and command ~= 'Melee' then
 		aftercast()
 	end
 
