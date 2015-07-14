@@ -7,7 +7,11 @@
 include('Obi_Check')
 
 function get_sets()
-
+	
+	FastCastOnlySpells = S{'Warp', 'Warp II','Escape','Tractor','Raise', 'Raise II' ,'Reraise',
+		'Teleport-Dem', 'Teleport-Mea', 'Teleport-Holla', 'Teleport-Altep', 'Teleport-Yhoat', 'Teleport-Vahzl'
+		}
+	
 	sets.JA = {}
 	sets.JA.Benediction = {body="Piety Briault"}
 	sets.JA.Devotion = {head="Piety Cap"}
@@ -131,6 +135,9 @@ function midcast(spell)
 	--midcast doesn't exist for JA or WS so cancel the processing of this function
 		--add_to_chat(9, 'JobAbility or WeaponSkill; Midcast cancelled')
 		return
+	end
+	if FastCastOnlySpells:contains(spell.english) then
+		return --skip midcast if the spell is in the FastCastOnlySpells list at the top
 	end
 
 	if sets.midcast[spell.english] then
