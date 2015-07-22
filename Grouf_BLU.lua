@@ -113,7 +113,7 @@ function get_sets()
 	sets.precast.Step = {head="Whirlpool Mask", neck="Iqabi Necklace", left_ear="Steelflash earring",
 		right_ear="Zennaroi Earring", body="Mekosu. Harness", hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Beeline Ring", back="Letalis Mantle", waist="Olseni Belt",
-		legs="Manibozho Brais", feet="Assim. Charuqs"}
+		legs="Feast Hose", feet="Assim. Charuqs"}
 
 --Weapon Skills--
 	sets.WS = {}

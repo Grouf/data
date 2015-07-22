@@ -10,7 +10,7 @@ function get_sets()
 	sets.precast = {}
 
 	sets.precast.FastCast = {main="Marin Staff +1",sub="Mephitis Grip",head="Nahtirah Hat",
-		body="Anhur Robe", left_ear="Loquac. Earring",
+		body="Anhur Robe", left_ear="Loquac. Earring", right_ear="Etiolation Earring",
 		hands="Geo. Mitaines +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants",feet="Helios Boots"}  --Fast Cast = 47%
 
@@ -204,6 +204,7 @@ function pet_status_change(new,old)
 end
 
 function status_change(new,old)
+--add_to_chat(9, 'Status change: new=' ..new.. ', old=' ..old)
 	if new == 'Idle' then
 		equip(sets.precast.Idle)
 	elseif new == 'Resting' then

@@ -9,7 +9,7 @@ include('Obi_Check')
 function get_sets()
 	
 	FastCastOnlySpells = S{'Warp', 'Warp II','Escape','Tractor',
-		'Raise', 'Raise II' 'Raise III', 'Arise', 
+		'Raise', 'Raise II', 'Raise III', 'Arise', 
 		'Reraise', 'Reraise II', 'Reraise III', 'Reraise IV',
 		'Teleport-Dem', 'Teleport-Mea', 'Teleport-Holla', 'Teleport-Altep', 'Teleport-Yhoat', 'Teleport-Vahzl',
 		'Recall-Pashh', 'Recall-Jugner', 'Recall-Meriph'
@@ -140,6 +140,7 @@ function midcast(spell)
 		return
 	end
 	if FastCastOnlySpells:contains(spell.english) then
+		--add_to_chat(9, 'Fast cast spell found in FastCast List')
 		return --skip midcast if the spell is in the FastCastOnlySpells list at the top
 	end
 

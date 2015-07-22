@@ -23,7 +23,7 @@ function get_sets()
 	sets.precast.Step = {ammo="Honed Tathlum",head="Whirlpool Mask",neck="Iqabi Necklace",
 		left_ear="Steelflash Earring",right_ear="Zennaroi Earring",body="Mekosu. Harness",hands="Hes. Gloves",
 		left_ring="Beeline Ring",right_ring="Rajas Ring",back="Anchoret's Mantle",
-		waist="Olseni Belt", legs="Manibozho Brais",feet="Qaaxo Leggings"}
+		waist="Olseni Belt", legs="Feast Hose",feet="Qaaxo Leggings"}
 
 	sets.precast['Violent Flourish'] = set_combine(sets.precast.Step, {neck="Stoicheion Medal", 
 		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Weather. Ring",  
@@ -47,7 +47,7 @@ function get_sets()
 	sets.TP.Accuracy = {ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Mekosu. Harness",hands="Hes. Gloves",
 		left_ring="Beeline Ring",right_ring="Rajas Ring",back="Letalis Mantle",waist="Windbuffet Belt",
-		legs="Manibozho Brais",feet="Otronif Boots +1"}
+		legs="Feast Hose",feet="Otronif Boots +1"}
 
 	sets.TP.Solo = {ammo="Hagneia Stone",head="Uk'uxkaj Cap",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",

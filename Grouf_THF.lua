@@ -10,10 +10,10 @@ function get_sets()
 	sets.JA.Flee = {feet="Pillager's Poulaines"}
 	sets.JA.Steal = {hands="Pillager's Armlets",legs="Assassin's Culottes",feet="Pillager's Poulaines"}
 	sets.JA.Mug = {head="Plun. Bonnet"}
-	sets.JA.Despoil = {legs="Raid. Culottes +2", feet="Skulk. Poulaines +1"}
-	sets.JA.Conspirator = {body="Raider's Vest +2"}
-	sets.JA.Accomplice = {head="Raider's Bonnet +2"}
-	sets.JA.Collaborator = {head="Raider's Bonnet +2"}
+	sets.JA.Despoil = {legs="Skulker's Culottes", feet="Skulk. Poulaines +1"}
+	sets.JA.Conspirator = {body="Skulker's Vest"}
+	sets.JA.Accomplice = {head="Skulker's Bonnet"}
+	sets.JA.Collaborator = {head="Skulker's Bonnet"}
 	sets.JA['Perfect Dodge'] = {hands="Plun. Armlets +1"}
 	sets.JA.Feint = {legs="Plun. Culottes"}
 	sets.JA["Assassin's Charge"] = {feet="Plun. Poulaines"}
@@ -21,7 +21,7 @@ function get_sets()
 	sets.JA.Step = {head="Whirlpool Mask",neck="Iqabi Necklace",left_ear="Steelflash Earring",
 		right_ear="Zennaroi Earring",body="Mekosu. Harness",hands="Plun. Armlets +1",left_ring="Rajas Ring",
 		right_ring="Beeline Ring",back="Letalis Mantle",waist="Olseni Belt",
-		legs="Manibozho Brais",feet="Qaaxo Leggings"}
+		legs="Feast Hose",feet="Qaaxo Leggings"}
 
 	sets.JA['Violent Flourish'] = set_combine(sets.JA.Step, {
 		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Weather. Ring",
@@ -110,8 +110,9 @@ function get_sets()
 	sets.aftercast.Idle = set_combine(sets.aftercast.TP,{body="Mekosu. Harness", feet="Jute Boots +1"})
 	send_command('input /macro book 6;wait .1;input /macro set 10')
 
-	sets.dontforget = {main="Izhiikoh", sub="Sandung", range="Tsoa. Crossbow", ammo="Gashing Bolt",
+	sets.dontforget = {main="Izhiikoh", range="Tsoa. Crossbow", ammo="Gashing Bolt",
 		neck="Ygnas's Resolve +1", right_ear="Reraise Earring", left_ring="Gash. Bolt Quiver"}
+		--sub="Sandung", 
 end
 
 function precast(spell)

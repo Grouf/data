@@ -30,7 +30,7 @@ function get_sets()
 	sets.JA.Step = {head="Gavialis Helm", neck="Iqabi Necklace", left_ear="Steelflash Earring",
 		right_ear="Zennaroi Earring", body="Mekosu. Harness", hands="Buremte Gloves", left_ring="Rajas Ring",
 		right_ring="Beeline Ring", back="Yokaze Mantle", waist="Olseni Belt",
-		legs="Hachiya Hakama", feet="Mochizuki Kyahan"} --Primary Acc: 964
+		legs="Feast Hose", feet="Mochizuki Kyahan"} --Primary Acc: 964
 
 	sets.JA['Violent Flourish'] = set_combine(sets.JA.Step, {
 		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Weather. Ring",

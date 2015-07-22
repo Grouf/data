@@ -17,7 +17,7 @@ function get_sets()
 	FastCastOnlySpells = S{'Warp', 'Warp II','Escape','Tractor','Raise', 'Raise II' ,'Reraise',
 		'Protect', 'Protect II', 'Protect III', 'Protect IV', 'Protect V',
 		'Shell', 'Shell II', 'Shell III', 'Shell IV', 'Shell V',
-		'Teleport-Dem', 'Teleport-Mea', 'Teleport-Holla', 'Teleport-Altep', 'Teleport-Yhoat', 'Teleport-Vahzl',
+		'Teleport-Dem', 'Teleport-Mea', 'Teleport-Holla', 'Teleport-Altep', 'Teleport-Yhoat', 'Teleport-Vahzl'
 		}
 
 	--[[MNDEnfeebles = S{'Dia', 'Dia II', 'Dia III', 'Diaga', 'Addle', 'Distract', 'Distract II',
@@ -65,7 +65,7 @@ function get_sets()
 			-- 54% Fast Cast, 22% Haste
 
 	sets.Idle = {main="Bolelabunga", sub="Genbu's Shield", ammo="Brigantia Pebble",
-		head="Viti. Chapeau +1", neck="Twilight Torque", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		head="Viti. Chapeau +1", neck="Twilight Torque", left_ear="Lifestorm Earring", right_ear="Etiolation Earring",
 		body="Atrophy Tabard +1", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
 
@@ -76,7 +76,7 @@ function get_sets()
 		-- PDT: -46%, Evasion: 655, Defense: 801
 
 	sets.Idle.MDT = {main="Xiutleato",sub="Beatific Shield +1", ammo="Brigantia Pebble",
-		head="Atro. Chapeau +1", neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Zennaroi Earring",
+		head="Atro. Chapeau +1", neck="Twilight Torque", left_ear="Zennaroi Earring", right_ear="Etiolation Earring",
 		body="Lethargy Sayon +1", hands="Atrophy Gloves +1", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
 		-- MDB: 28, MDT: -33%, M.Eva: 417
@@ -219,20 +219,23 @@ function get_sets()
 			--Without Weapon/Shield: Acc: 220, Att: 157, EVA: 646, DEF: 752, PDT: -28%
 
 	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Grounded Mantle"})
-		--Without Weapon/Shield: Acc: 243, Att: 157, EVA: 646, DEF: 755, PDT: -24%
+			--Without Weapon/Shield: Acc: 243, Att: 157, EVA: 646, DEF: 755, PDT: -24%
 
 	sets.MDT = {ammo="Brigantia Pebble",
 		head="Atro. Chapeau +1", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
 		body="Lethargy Sayon +1", hands="Atrophy Gloves +1", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
+			--RDM/blm
 			--Without Weapon/Shield: Acc: 172, Att: 165, EVA: 610, DEF: 734,
 			-- MDB: 28, MDT: -8%, M.Eva: 417
 
 	sets.MDT.MidAcc = set_combine(sets.MDT, {waist="Olseni Belt"})
+			--RDM/blm
 			--Without Weapon/Shield: Acc: 192, Att: 160, EVA: 610, DEF: 735,
 			-- MDB: 28, MDT: -8%, M.Eva: 417
 
 	sets.MDT.HighAcc = set_combine(sets.MDT.MidAcc, {back="Grounded Mantle"})
+			--RDM/blm
 			--Without Weapon/Shield: Acc: 214, Att: 160, EVA: 610, DEF: 732,
 			-- MDB: 28, MDT: -8%, M.Eva: 417
 
@@ -289,11 +292,11 @@ function get_sets()
 
 	--send_command('input /macro book 5;wait .1;input /macro set 1')
 	set_macro_book()
-	
-	sets.DontForget = {body="Telchine Chas.", neck="Quanpur Necklace", legs="Crimson Cuisses",	
+
+	sets.DontForget = {body="Telchine Chas.", neck="Quanpur Necklace", legs="Crimson Cuisses",
 		right_ring="Excelsis Ring"}
 	sets.DontForget2 = {legs="Shedir Seraweels"}
-	
+
 	--[[
 	sets.DontForget = {sub="Thuellaic Ecu +1", neck="Quanpur Necklace", left_ear="Reraise Earring",
 		body="Telchine Chas."}
@@ -534,6 +537,7 @@ function aftercast(spell)
 end --end aftercast
 
 function status_change(new,old)
+	--add_to_chat(9, 'Status change: new=' ..new.. ', old=' ..old)
 	aftercast()
 		--*!*!* Same as aftercast, try to refine *!*!*--
 

@@ -24,7 +24,7 @@ function get_sets()
 	
 	sets.WS = {}
 	sets.WS.Base = {head="Umbani Cap",neck="Fotia Gorget",left_ear="Volley Earring",
-		right_ear="Clearview Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Fistmele Ring",
+		right_ear="Enervating Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring",back="Lutian Cape",waist="Scout's Belt",
 		legs="Nahtirah Trousers",feet="Scopuli Nails +1"}
 		--legs="Arc. Braccae +1"
@@ -45,7 +45,7 @@ function get_sets()
 	
 	sets.TP = {}
 	sets.TP.Ranged = {head="Umbani Cap",neck="Ocachi Gorget",left_ear="Volley Earring",
-		right_ear="Clearview Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Rajas Ring",
+		right_ear="Enervating Earring",body="Kyujutsugi",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Paqichikaji Ring",back="Lutian Cape",waist="Scout's Belt",
 		legs="Nahtirah Trousers",feet="Scopuli Nails +1"}
 	

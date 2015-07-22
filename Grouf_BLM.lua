@@ -10,10 +10,10 @@ function get_sets()
 	sets.precast = {}
 
 	sets.precast.FastCast = {main="Marin Staff +1",sub="Mephitis Grip",
-		head="Nahtirah Hat", left_ear="Loquac. Earring",
+		head="Nahtirah Hat", left_ear="Loquac. Earring", right_ear="Etiolation Earring", 
 		body="Anhur Robe",hands="Helios Gloves", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith Cape",waist="Witful Belt", legs="Artsieq Hose", feet="Helios Boots"}
-		-- 37% Fast Cast
+		-- 44% Fast Cast
 
 	sets.precast.Idle = {main="Marin Staff +1",sub="Mephitis Grip", ammo="Ghastly Tathlum",
 		neck="Twilight Torque", left_ear="Crematio Earring", right_ear="Friomisi Earring",
