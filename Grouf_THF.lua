@@ -17,11 +17,12 @@ function get_sets()
 	sets.JA['Perfect Dodge'] = {hands="Plun. Armlets +1"}
 	sets.JA.Feint = {legs="Plun. Culottes"}
 	sets.JA["Assassin's Charge"] = {feet="Plun. Poulaines"}
+	sets.JA["Sneak Attack"] = {hands="Skulker's Armlets"}
 
-	sets.JA.Step = {head="Whirlpool Mask",neck="Iqabi Necklace",left_ear="Steelflash Earring",
-		right_ear="Zennaroi Earring",body="Mekosu. Harness",hands="Plun. Armlets +1",left_ring="Rajas Ring",
-		right_ring="Beeline Ring",back="Letalis Mantle",waist="Olseni Belt",
-		legs="Feast Hose",feet="Qaaxo Leggings"}
+	sets.JA.Step = {head="Whirlpool Mask", neck="Iqabi Necklace", left_ear="Steelflash Earring",
+		right_ear="Zennaroi Earring", body="Mekosu. Harness", hands="Plun. Armlets +1", left_ring="Rajas Ring",
+		right_ring="Beeline Ring", back="Letalis Mantle", waist="Olseni Belt",
+		legs="Feast Hose", feet="Qaaxo Leggings"}
 
 	sets.JA['Violent Flourish'] = set_combine(sets.JA.Step, {
 		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Weather. Ring",
@@ -34,10 +35,10 @@ function get_sets()
 		--Fast Cast: 18%
 		--Haste: 33%
 
-	sets.Ranged = {head="Umbani Cap",neck="Ocachi Gorget",left_ear="Volley earring",
-		right_ear="Enervating Earring",body="Mekosu. Harness",hands="Buremte Gloves",left_ring="Fistmele Ring",
-		right_ring="Paqichikaji Ring",back="Libeccio Mantle",waist="Flax Sash",
-		legs="Nahtirah Trousers",feet="Scopuli Nails +1"}
+	sets.Ranged = {head="Umbani Cap", neck="Ocachi Gorget", left_ear="Volley earring",
+		right_ear="Enervating Earring", body="Mekosu. Harness", hands="Buremte Gloves", left_ring="Fistmele Ring",
+		right_ring="Paqichikaji Ring", back="Libeccio Mantle", waist="Eschan Stone",
+		legs="Feast Hose", feet="Scopuli Nails +1"}
 
 	sets.Ranged.MidAcc = set_combine(sets.Ranged,{neck="Iqabi Necklace"})
 
@@ -50,11 +51,14 @@ function get_sets()
 
 	sets.WS['Aeolian Edge'] = {head="Uk'uxkaj Cap", neck="Fotia Gorget", left_ear="Friomisi Earring",
 		right_ear="Crematio Earring", body="Mekosu. Harness", hands="Umuthi Gloves", left_ring="Weather. Ring",
-		right_ring="Acumen Ring", back="Toro Cape", waist="Caudata Belt",
+		right_ring="Acumen Ring", back="Toro Cape", waist="Eschan Stone",
 		legs="Iuitl Tights +1", feet="Qaaxo Leggings"}	--DEX40%, INT40%
-														--DEX:220, INT:186
-														--MAB:48
-														--M.Acc:42
+														--DEX:233, INT:191
+														--MAB:47
+														--M.Acc:47
+														--M.Dam:6
+	
+	sets.WS.Cyclone = sets.WS['Aeolian Edge']  --Cyclone is same as Aeolian
 
 	sets.WS["Last Stand"] = set_combine(sets.Ranged, {neck="Fotia Gorget", waist="Caudata Belt"})
 
