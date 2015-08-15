@@ -16,7 +16,7 @@ function get_sets()
 		-- 44% Fast Cast
 
 	sets.precast.Idle = {main="Marin Staff +1",sub="Mephitis Grip", ammo="Ghastly Tathlum",
-		neck="Twilight Torque", left_ear="Crematio Earring", right_ear="Friomisi Earring",
+		neck="Twilight Torque", left_ear="Crematio Earring", right_ear="Etiolation Earring",
 		body="Respite Cloak", hands="Serpentes Cuffs", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Mecisto. Mantle", waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Serpentes Sabots"}
 
@@ -26,12 +26,16 @@ function get_sets()
 	sets.midcast.Cure = {main="Marin Staff +1",sub="Mephitis Grip", ammo="Oreiad's Tathlum",
 		head="Helios Band", neck="Imbodla Necklace", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
 		body="Helios Jacket", hands="Telchine Gloves", left_ring="Sirona's Ring", right_ring="Solemn Ring",
-		back="Pahtli Cape", waist="Witch Sash", legs="Nares Trews",feet="Umbani Boots"}
+		back="Pahtli Cape", waist="Rumination Sash", legs="Nares Trews",feet="Umbani Boots"}
 
 	sets.midcast.Enfeeble = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
-		head="Helios Band", neck="Imbodla Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
+		head="Befouled Crown", neck="Imbodla Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Helios Jacket", hands="Lurid Mitts", left_ring="Globidonta Ring", right_ring="Sangoma Ring",
-		back="Refraction Cape", waist="Famine Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
+		back="Refraction Cape", waist="Rumination Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
+			--M.Acc: 149
+			--Enfeebling: 450
+			--MND: 267
+			--INT: 270
 
 	sets.midcast.Enhancing = {main="Marin Staff +1",
 		head="Befouled Crown", neck="Colossus's Torque", left_ear="Loquac. Earring", right_ear="Andoaa Earring",
@@ -64,7 +68,8 @@ function get_sets()
 	sets.aftercast.Idle = sets.TP.DD
 	send_command('input /macro book 4;wait .1;input /macro set 1')
 
-	sets.dontforget = {head="Striga Crown", left_ring="Excelsis Ring", feet="Spaekona's Sabots"}
+	sets.dontforget = {head="Striga Crown", left_ring="Excelsis Ring", legs="Doyen Pants", feet="Spaekona's Sabots"}
+	sets.doneforget2 = {head="Umuthi Hat"}
 
 end
 
@@ -76,7 +81,9 @@ function precast(spell)
 		if spell.skill == 'Elemental Magic' then
 			equip({feet="Spaekona's Sabots"})
 		elseif spell.english == 'Stoneskin' then
-			equip({head="Umuthi Hat"})
+			equip({head="Umuthi Hat", legs="Doyen Pants"})
+		elseif spell.english:startswith('Cur') then
+			equip({legs="Doyen Pants"})
 		end
 
 	elseif spell.type == "WeaponSkill" then
