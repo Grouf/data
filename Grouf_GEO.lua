@@ -15,13 +15,13 @@ function get_sets()
 		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants",feet="Helios Boots"}  --Fast Cast = 47%
 
 	sets.precast.IdleRefresh = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",
-		neck="Twilight Torque", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
+		neck="Twilight Torque", left_ear="Psystorm Earring", right_ear="Etiolation Earring",
 		body="Respite Cloak", hands="Bagua Mitaines", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Geomancy Sandals"}
 	--Repulse Mantle
 	--Mecisto. Mantle
 	sets.precast.IdleLuopan = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
-		head="Azimuth Hood +1", neck="Twilight Torque", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
+		head="Azimuth Hood +1", neck="Twilight Torque", left_ear="Psystorm Earring", right_ear="Etiolation Earring",
 		body="Azimuth Coat", hands="Geo. Mitaines +1", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Bagua Sandals"}
 	--Lifestream Cape
@@ -43,9 +43,9 @@ function get_sets()
 	sets.midcast = {}
 
 	sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabnax Hat",
-		neck="Imbodla Necklace",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Geomancy Tunic",
+		neck="Imbodla Necklace",left_ear="Mendi. Earring",right_ear="Lifestorm Earring",body="Geomancy Tunic",
 		hands="Telchine Gloves",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
-		waist="Witch Sash",legs="Nares Trews",feet="Umbani Boots"} --MND=96+151, Cure Pot.=43%
+		waist="Rumination Sash",legs="Nares Trews",feet="Umbani Boots"} --MND=96+151, Cure Pot.=43%
 
 	sets.midcast.Enfeeble = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Helios Jacket",
@@ -53,13 +53,13 @@ function get_sets()
 		waist="Famine Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
 
 	sets.midcast.Geomancy = {main="Staccato Staff",sub="Mephitis Grip" ,range="Dunna",
-		head="Azimuth Hood +1", neck="Deviant Necklace", body="Bagua Tunic", right_ear="Gwati Earring",
-		hands="Geo. Mitaines +1",back="Lifestream Cape",
-		waist="Sekhmet Corset", legs="Bagua Pants", feet="Azimuth Gaiters"}
+		head="Azimuth Hood +1", neck="Deviant Necklace", right_ear="Gwati Earring", left_ear="Mendi. Earring",
+		body="Bagua Tunic", hands="Geo. Mitaines +1",
+		back="Lifestream Cape",	waist="Sekhmet Corset", legs="Bagua Pants", feet="Azimuth Gaiters"}
 			--Geomancy Skill:	394+53 = 447
 			--Handbell Skill:	389+18 = 407
 			--Total:			854
-			--Conserve MP:		9
+			--Conserve MP:		11
 
 	--Enhancing needs work
 	sets.midcast.Enhancing = {body="Telchine Chas.", head="Befouled Crown", neck="Colossus's Torque",
@@ -84,8 +84,8 @@ function get_sets()
     sets.WS = set_combine(sets.TP, {neck="Fotia Gorget", left_ear="Moonshade Earring", right_ring="Cho'j Band",
 		waist="Prosilio Belt +1"})
 
-    sets.DontForget = {body="Telchine Chas.", neck="Quanpur Necklace", left_ear="Reraise Earring",
-		left_ring="Excelsis Ring"}
+    sets.DontForget = {head="Umuthi Hat", body="Telchine Chas.", neck="Quanpur Necklace", left_ear="Reraise Earring",
+		left_ring="Excelsis Ring", legs="Doyen Pants"}
 
 
 	send_command('input /macro book 20;wait .1;input /macro set 1')
@@ -98,7 +98,9 @@ function precast(spell)
 		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
 		if spell.english == 'Stoneskin' then
-			equip({head="Umuthi Hat"})
+			equip({head="Umuthi Hat", legs="Doyen Pants"})
+		elseif spell.english:startswith('Cur') then
+			equip({legs="Doyen Pants"})
 		end
 		if spell.skill == 'Elemental Magic' then
 			equip({hands="Bagua Mitaines"})
