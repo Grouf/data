@@ -8,15 +8,15 @@ function get_sets()
 	sets.JA = {}
 	sets.JA.Barrage = {hands="Orion Bracers"}
 	sets.JA.Sharpshot = {legs="Orion Braccae"}
-	sets.JA['Double Shot'] = {head="Sylvan Gapette +2"}
-	sets.JA['Velocity Shot'] = {body="Sylvan Caban +2"}
-	sets.JA['Bounty Shot'] = {hands="Syl. Glvltte. +2"}
-	sets.JA['Unlimited Shot'] = {feet="Sylvan Bottln. +2"} --Don't need since it shares timer with Double Shot
+	sets.JA['Double Shot'] = {head="Amini Gapette"}
+	sets.JA['Velocity Shot'] = {body="Amini Caban +1"}
+	sets.JA['Bounty Shot'] = {hands="Amini Glovelettes"}
+	sets.JA['Unlimited Shot'] = {feet="Amini Bottillons"} --Don't need since it shares timer with Double Shot
 	sets.JA.Scavenge = {feet="Orion Socks"}
 	sets.JA.Camouflage = {body="Orion Jerkin"}
 	sets.JA.Shadowbind = {hands="Orion Bracers"}
 	
-	--[[sets.Snapshot = {head="Sylvan Gapette +2",neck="",left_ear="",
+	--[[sets.Snapshot = {head="Amini Gapette",neck="",left_ear="",
 		right_ear="",body="",hands="Arcadian Bracers",left_ring="",
 		right_ring="",back="",waist="",
 		legs="",feet=""} ]]
@@ -39,9 +39,9 @@ function get_sets()
 		legs="Manibozho Brais",feet="Qaaxo Leggings"}]]
 
 	sets.Utsusemi = set_combine(sets.WS.Base,{head="Haruspex Hat", neck="Magoraga Beads", 
-		body="Taeon Tabard", left_ear='Loquac. Earring', left_ring="Weather. Ring", 
-		right_ring="Prolix Ring", legs="Orion Braccae"})
-		--Gear Haste: 30%, Fast Cast: 19%
+		body="Taeon Tabard", hands="Thaumas Gloves", left_ear='Loquac. Earring', right_ear="Etiolation Earring", 
+		left_ring="Weather. Ring", right_ring="Prolix Ring", legs="Orion Braccae"})
+		--Gear Haste: 30%, Fast Cast: 26%
 	
 	sets.TP = {}
 	sets.TP.Ranged = {head="Umbani Cap",neck="Ocachi Gorget",left_ear="Volley Earring",
