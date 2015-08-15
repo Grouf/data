@@ -85,13 +85,13 @@ function get_sets()
 	sets.Enfeeble = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Oreiad's Tathlum",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Lethargy Sayon +1", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Globidonta Ring",
-		back="Refraction Cape", waist="Witch Sash", legs="Mes'yohi Slacks", feet="Uk'uxkaj Boots"}
+		back="Refraction Cape", waist="Rumination Sash", legs="Mes'yohi Slacks", feet="Uk'uxkaj Boots"}
 			--Magic Accuracy:	+109???
 			--Enfeeble Skill:	501???
 			--Total:			610???
 			--MND:				+186???
 
-	sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble ,{ammo="Kalboron Stone", waist="Famine Sash",
+	sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble ,{ammo="Kalboron Stone", 
 		feet="Vitivation Boots +1"})
 			--Magic Accuracy:	+128???
 			--Enfeeble Skill:	512???
@@ -163,13 +163,13 @@ function get_sets()
 	sets.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
 		head="Viti. Chapeau +1", neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Soil Pearl",
 		body="Viti. Tabard +1", hands="Telchine Gloves", left_ring="Solemn Ring", right_ring="Sirona's Ring",
-		back="Ghostfyre Cape", waist="Witch Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux +1"}
-		--Cure Pot.: 52%, Cure casting -6%, Haste: 20%, MND: 91+189, VIT: 82+88, Healing Magic: 426
+		back="Ghostfyre Cape", waist="Rumination Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux +1"}
+		--Cure Pot.: 52%, Cure casting -6%, Haste: 20%, MND: 91+188, VIT: 82+88, Healing Magic: 426
 
 	sets.Enhancing = {main="Arendsi Fleuret", sub="Genbu's Shield",
 		head="Befouled Crown", neck="Colossus's Torque", left_ear="Estq. Earring", right_ear="Andoaa Earring",
 		body="Viti. Tabard +1", hands="Atrophy Gloves +1", left_ring="Weather. Ring",  right_ring="Prolix Ring",
-		back="Estoqueur's Cape", waist="Olympus Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux +1"}
+		back="Ghostfyre Cape", waist="Olympus Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux +1"}
 		--skill=522}
 
 	sets.EnhancingOther = set_combine(sets.Enhancing, {head="Lethargy Chappel +1",
@@ -224,15 +224,15 @@ function get_sets()
 	sets.MDT = {ammo="Brigantia Pebble",
 		head="Atro. Chapeau +1", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
 		body="Lethargy Sayon +1", hands="Atrophy Gloves +1", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
+		back="Repulse Mantle", waist="Flax Sash", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
 			--RDM/blm
 			--Without Weapon/Shield: Acc: 172, Att: 165, EVA: 610, DEF: 734,
-			-- MDB: 28, MDT: -8%, M.Eva: 417
+			-- MDB: 28, MDT: -13%, M.Eva: 417
 
 	sets.MDT.MidAcc = set_combine(sets.MDT, {waist="Olseni Belt"})
 			--RDM/blm
 			--Without Weapon/Shield: Acc: 192, Att: 160, EVA: 610, DEF: 735,
-			-- MDB: 28, MDT: -8%, M.Eva: 417
+			-- MDB: 28, MDT: -11%, M.Eva: 417
 
 	sets.MDT.HighAcc = set_combine(sets.MDT.MidAcc, {back="Grounded Mantle"})
 			--RDM/blm
@@ -365,7 +365,6 @@ function midcast(spell)
 		--end
 		return
 	end
-
 --add_to_chat(9, 'Casting spell: ' ..spell.english.. ' - ' ..spell.skill.. ' on ' ..spell.target.name.. ' with '
 --	..SetMode_Names[SetMode_Index])
 
@@ -518,12 +517,16 @@ function aftercast(spell)
 		if EquipSet[SetMode_Names[SetMode_Index]] then
 			EquipSet = EquipSet[SetMode_Names[SetMode_Index]] --equip set.Idle.DT or sets.Idle.MDT
 		end
+		
+		if player.mpp >= 70 and SetMode_Names[SetMode_Index] == 'DD' then
+			EquipSet = set_combine(EquipSet, {legs="Crimson Cuisses"})
+		end
 
 	end
 	if buffactive['Reive Mark'] then
 		EquipSet = set_combine(EquipSet, {neck="Ygnas's Resolve +1"})
 	end
-
+	
 	if Beatific_On == 1 and SetMode_Names[SetMode_Index] ~= 'MDT' then
 		EquipSet = set_combine(EquipSet, {sub="Beatific Shield +1"})
 	end
