@@ -97,7 +97,9 @@ function get_sets()
 		neck="Asperity Necklace",left_ear="Moonshade Earring",right_ear="Bladeborn Earring",body="Gende. Bilaut +1",
 		hands="Gende. Gages +1",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
 		waist="Windbuffet Belt",legs="Gendewitha Spats",feet="Gende. Galoshes"}
-
+	
+	sets.dontforget = {head="Umuthi Hat", legs="Doyen Pants"}
+	
 	--[[
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
@@ -113,7 +115,9 @@ function precast(spell)
 		--add_to_chat(9, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
 		if spell.english == 'Stoneskin' then
-			equip({head="Umuthi Hat"})
+			equip({head="Umuthi Hat", legs="Doyen Pants"})
+		elseif spell.english:startswith('Cur') then
+			equip({legs="Doyen Pants"})
 		end
 
 	elseif spell.type=='WeaponSkill' then
