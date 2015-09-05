@@ -134,7 +134,7 @@ function get_sets()
 		right_ear="Lifestorm Earring",--[[left_ear="Hecate's earring",right_ear="Friomisi Earring",]]
 		body="Hagondes Coat +1",hands="Weath. Cuffs +1",left_ring="Icesoul Ring",
 		right_ring="Spiral Ring",back="Refraction Cape",waist="Caudata Belt",
-		legs="Mes'yohi Slacks",feet="Hag. Sabots +1" }
+		legs="Psycloth Lappas",feet="Hag. Sabots +1" }
 
 	--sets.precast['Savage Blade']
 
@@ -152,29 +152,29 @@ function get_sets()
 
 	sets.midcast.STRVIT = set_combine(sets.midcast.BaseSet,{legs="Quiahuiz Trousers"})
 
-	sets.midcast.STRMND = set_combine(sets.midcast.BaseSet,{legs="Mes'yohi Slacks"})
+	sets.midcast.STRMND = set_combine(sets.midcast.BaseSet,{legs="Psycloth Lappas"})
 
 	sets.midcast.AGI = set_combine(sets.midcast.BaseSet,{legs="Kaabnax Trousers"})
 
 	sets.midcast.INT = {head="Hagondes Hat +1",neck="Eddy Necklace",left_ear="Psystorm Earring",
 		right_ear="Crematio Earring",body="Hagondes Coat +1",hands="Hagondes Cuffs +1",left_ring="Icesoul Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Yamabuki-no-Obi",
-		legs="Mes'yohi Slacks",feet="Hag. Sabots +1"}
+		legs="Psycloth Lappas",feet="Hag. Sabots +1"}
 
 	sets.midcast.Cure = {head="Uk'uxkaj Cap",neck="Imbodla Necklace",left_ear="Loquac. Earring",
 		right_ear="Lifestorm Earring",body="Hagondes Coat +1",hands="Telchine Gloves",left_ring="Sirona's Ring",
 		right_ring="Solemn Ring",back="Pahtli Cape",waist="Witful Belt",
-		legs="Mes'yohi Slacks",feet="Weath. Souliers +1"}
+		legs="Psycloth Lappas",feet="Weath. Souliers +1"}
 
 	sets.midcast.mAccuracy = {head="Assim. Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",body="Mekosu. Harness",hands="Hagondes Cuffs +1",left_ring="Weather. Ring",
 		right_ring="Sangoma Ring",back="Cornflower Cape",waist="Yamabuki-no-Obi",
-		legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
+		legs="Psycloth Lappas",feet="Hagondes Sabots"}
 
 	sets.midcast.Stun = {head="Assim. Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm earring",
 		right_ear="Lifestorm Earring",body="Mekosu. Harness",hands="Mv. Bazubands +2",left_ring="Weather. Ring",
 		right_ring="Sangoma Ring",back="Cornflower Cape",waist="Witful Belt",
-		legs="Mes'yohi Slacks",feet="Hagondes Sabots"} --25% Haste, 5% Fast Cast, -12% Blue Magic recast
+		legs="Psycloth Lappas",feet="Hagondes Sabots"} --25% Haste, 5% Fast Cast, -12% Blue Magic recast
 
 	sets.midcast.Breath = {head="Luhlaza Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm earring",
 		right_ear="Lifestorm Earring",body="Mekosu. Harness",hands="Hagondes Cuffs +1",left_ring="Prolix Ring",

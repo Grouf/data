@@ -31,7 +31,7 @@ function get_sets()
 	sets.midcast.Enfeeble = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Befouled Crown", neck="Imbodla Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Helios Jacket", hands="Lurid Mitts", left_ring="Globidonta Ring", right_ring="Sangoma Ring",
-		back="Refraction Cape", waist="Rumination Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
+		back="Refraction Cape", waist="Rumination Sash", legs="Psycloth Lappas", feet="Hagondes Sabots"}
 			--M.Acc: 149
 			--Enfeebling: 450
 			--MND: 267
@@ -50,7 +50,7 @@ function get_sets()
 	sets.midcast.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat",	neck="Eddy Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Helios Jacket", hands="Lurid Mitts", left_ring="Acumen Ring", right_ring="Sangoma Ring",
-		back="Bane Cape", waist="Famine Sash", legs="Mes'yohi Slacks", feet="Hagondes Sabots"}
+		back="Bane Cape", waist="Famine Sash", legs="Psycloth Lappas", feet="Hagondes Sabots"}
 
 	sets.TP = {}
 	sets.TP.Engage = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Ghastly Tathlum",
