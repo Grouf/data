@@ -26,7 +26,7 @@ function get_sets()
 	sets.precast.Idle= {main="Bolelabunga",sub="Genbu's Shield",ammo="Oreiad's Tathlum",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Respite Cloak",
 		hands="Serpentes Cuffs",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
-		waist="Cleric's Belt",legs="Nares Trews",feet="Serpentes Sabots"}
+		waist="Cleric's Belt",legs="Assid. Pants +1",feet="Serpentes Sabots"}
 
 	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff",sub="Mephitis Grip"})
 
@@ -58,7 +58,7 @@ function get_sets()
 	sets.midcast.Enfeeble= {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Theo. Briault",
 		hands="Gende. Gages +1",left_ring="Globidonta Ring",right_ring="Sangoma Ring",back="Refraction Cape",
-		waist="Yamabuki-no-Obi",legs="Mes'yohi Slacks",feet="Piety Duckbills"}
+		waist="Yamabuki-no-Obi",legs="Psycloth Lappas",feet="Piety Duckbills"}
 
 	sets.midcast.DRKMagic= {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Buremte Hat",
 		neck="Eddy Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Gende. Bilaut +1",
