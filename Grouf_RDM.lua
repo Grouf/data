@@ -82,28 +82,37 @@ function get_sets()
 		-- MDB: 28, MDT: -33%, M.Eva: 417
 
 
-	sets.Enfeeble = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Oreiad's Tathlum",
+	sets.Enfeeble = {main="Serenity", sub="Mephitis Grip", ammo="Oreiad's Tathlum",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Lethargy Sayon +1", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Globidonta Ring",
-		back="Refraction Cape", waist="Rumination Sash", legs="Mes'yohi Slacks", feet="Uk'uxkaj Boots"}
-			--Magic Accuracy:	+109???
-			--Enfeeble Skill:	501???
-			--Total:			610???
-			--MND:				+186???
+		back="Refraction Cape", waist="Rumination Sash", legs="Psycloth Lappas", feet="Uk'uxkaj Boots"}
+			--RDM/blm
+			--Potency:
+			--Magic Accuracy:	+125
+			--Enfeeble Skill:	526
+			--Total:			651 (691 including JP/Gift Magic Acc Bonus (+40))
+			--MND:				91+196?
+			--INT:				101+172?
 
 	sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble ,{ammo="Kalboron Stone", 
 		feet="Vitivation Boots +1"})
-			--Magic Accuracy:	+128???
-			--Enfeeble Skill:	512???
-			--Total:			640???
-			--MND:				+178???
+			--RDM/blm
+			--Mid-Acc:
+			--Magic Accuracy:	+143
+			--Enfeeble Skill:	538
+			--Total:			691 (721 including JP/Gift Magic Acc Bonus(+40))
+			--MND:				91+199?
+			--INT:				101+177?
 
-	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc ,{head="Helios Band", body="Atrophy Tabard +1",
+	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc ,{head="Befouled Crown", body="Atrophy Tabard +1",
 		right_ring="Sangoma Ring", back="Ghostfyre Cape"})
-			--Magic Accuracy:	+160???
-			--Enfeeble Skill:	511???
-			--Total:			671???
-			--MND:				+165???
+			--RDM/blm
+			--High-Acc:
+			--Magic Accuracy:	+155
+			--Enfeeble Skill:	554
+			--Total:			709 (749 including JP/Gift Magic Acc Bonus(+40))
+			--MND:				91+184?
+			--INT:				101+179?
 
 	--Lethargy Sayon +1 is currently best-in-slot for all enfeebles (??)
 		--Ischemia Chasuble gives +6 m.Acc over Lethargy Sayon +1
@@ -112,12 +121,12 @@ function get_sets()
 	--[[sets.INTEnfeeble = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Ghastly Tathlum",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Lethargy Sayon +1", hands="Lurid Mitts", left_ring="Weather. Ring", right_ring="Globidonta Ring",
-		back="Ghostfyre Cape", waist="Yamabuki-no-Obi", legs="Mes'yohi Slacks", feet="Uk'uxkaj Boots"}--M.Acc=348
+		back="Ghostfyre Cape", waist="Yamabuki-no-Obi", legs="Psycloth Lappas", feet="Uk'uxkaj Boots"}--M.Acc=348
 
 	sets.INTEnfeeble.MidAcc = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +1", hands="Lurid Mitts", left_ring="Weather. Ring", right_ring="Sangoma Ring",
-		back="Ghostfyre Cape", waist="Yamabuki-no-Obi", legs="Mes'yohi Slacks", feet="Vitivation Boots +1"} --M.Acc 360
+		back="Ghostfyre Cape", waist="Yamabuki-no-Obi", legs="Psycloth Lappas", feet="Vitivation Boots +1"} --M.Acc 360
 
 	sets.INTEnfeeble.HighAcc = {}
 	]]
@@ -139,7 +148,7 @@ function get_sets()
 		left_ring="Weather. Ring", right_ring="Sangoma Ring"})
 			--MAB=189, m.Acc: 120 (348 w/Weapon skill)
 
-	sets.Elemental.HighAcc = set_combine(sets.Elemental.MidAcc, {
+	sets.Elemental.HighAcc = set_combine(sets.Elemental.MidAcc, {main="Serenity", 
 		body="Helios Jacket"})
 		--MAB=176, m.Acc: 147 (348 w/Weapon skill)
 
@@ -178,7 +187,7 @@ function get_sets()
 	sets.Spikes = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Ghastly Tathlum",
 		head="Atro. Chapeau +1", neck="Imbodla Necklace", left_ear="Crematio Earring", right_ear="Psystorm Earring",
 		body="Count's Garb", hands="Atrophy Gloves +1", left_ring="Icesoul Ring", right_ring="Spiral Ring",
-		back="Toro Cape", waist="Caudata Belt", legs="Mes'yohi Slacks", feet="Umbani Boots"}
+		back="Toro Cape", waist="Caudata Belt", legs="Psycloth Lappas", feet="Umbani Boots"}
 			--spike damage gear only works while equipped
 			--INT at casting makes spikes do more damage: adjust above to max INT
 
@@ -186,11 +195,11 @@ function get_sets()
 
 	MeleeLock = 'False' --used for info only
 
-	sets.DD = {ammo="Paeapua",
+	sets.DD = {ammo="Ginsen",
 		head="Taeon Chapeau", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Taeon Tabard", hands="Atrophy Gloves +1", left_ring="Rajas Ring", right_ring="K'ayres Ring",
 		back="Bleating Mantle", waist="Windbuffet Belt", legs="Taeon Tights", feet="Taeon Boots"}
-			--Without Weapon/Shield: Acc: 226, Att: 281
+			--Without Weapon/Shield: Acc: 226?, Att: 281?
 
 	--[[Need to sort these out:
 	*Windbuffet Belt
@@ -201,11 +210,11 @@ function get_sets()
 
 	sets.DD.MidAcc = set_combine(sets.DD, {neck="Iqabi Necklace", right_ring="Beeline Ring",
 		back="Grounded Mantle", feet="Atrophy Boots +1"})
-			--Without Weapon/Shield: Acc: 272, Att: 217
+			--Without Weapon/Shield: Acc: 272?, Att: 217?
 
-	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {right_ear="Heartseeker Earring",
+	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {ammo="Amar Cluster", right_ear="Heartseeker Earring",
 		hands="Buremte Gloves", waist="Olseni Belt"})
-			--Without Weapon/Shield: Acc: 309, Att: 192
+			--Without Weapon/Shield: Acc: 309?, Att: 192?
 
 
 	sets.DT = {ammo="Brigantia Pebble",
@@ -274,7 +283,7 @@ function get_sets()
 
 	sets.WS['Sanguine Blade'] = set_combine(sets.WS, {right_ear="Lifestorm Earring",
 		left_ring="Icesoul Ring", right_ring="Spiral Ring",
-		back="Refraction Cape", waist="Caudata Belt", legs="Mes'yohi Slacks", feet="Umbani Boots" })
+		back="Refraction Cape", waist="Caudata Belt", legs="Psycloth Lappas", feet="Umbani Boots" })
 
 	--sets.WS['Sanguine Blade'].MidAcc = {}
 
@@ -391,7 +400,7 @@ function midcast(spell)
 				EquipSet = set_combine(EquipSet, {legs="Viti. Tights +1"})
 			--elseif spell.english == 'Dia III' or spell.english == 'Slow II' then
 				--EquipSet = set_combine(EquipSet, {head="Viti. Chapeau +1"})
-				--***Don't need Dia/Slow test as hat always equipped***
+				--***Don't need Dia/Slow test as hat always equipped when no accuracy needed***
 			--elseif spell.english == 'Paralyze II' then
 				--EquipSet = set_combine(EquipSet, {feet="Vitivation Boots +1"})
 				--***Don't want this as Uk boots give potency
@@ -444,9 +453,9 @@ function midcast(spell)
 			end
 		end
 
-		if world.day_element == spell.element then
-			EquipSet = set_combine(EquipSet, {legs="Mes'yohi Slacks"})
-		end
+		--if world.day_element == spell.element then
+		--	EquipSet = set_combine(EquipSet, {legs="Mes'yohi Slacks"})
+		--end
 
 		if Accuracy[Accuracy_Index] ~= 'HighAcc' then
 			Check_for_Obi = 1
