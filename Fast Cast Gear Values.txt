@@ -2,12 +2,13 @@ Fast Cast List
 
 Ammo		Incantor Stone		2%		(    WHM                                        )
 
-Head		Atrophy Chapeau		11		(            RDM                                )
+Head		Atrophy Chapeau +1	12		(            RDM                                )
 			Athos Chapeau		2		(mnk             thf rng     NIN     blu     run)
 			Nares Cap			10		(    whm blm rdm                 smn     geo)
-			Nahtirah Hat		10		(    WHM BLM rdm                 SMN     GEO)
-			Haruspex Hat		8		(MNK whm blm rdm THF RNG         smn BLU geo RUN)
-			Haruspex Hat +1		9		(MNK whm blm rdm THF RNG         smn BLU geo RUN)
+			Nahtirah Hat		10		(    WHM BLM rdm                 smn     GEO)
+			Psycloth Tiara(aug)	10		(        BLM rdm                 SMN BLU GEO)
+			Haruspex Hat		8		(MNK whm blm rdm THF RNG         smn blu geo RUN)
+			Haruspex Hat +1		9		(MNK whm blm rdm THF RNG         smn blu geo RUN)
 
 Neck		Orunmila's Torque 	5		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
 			Orison Locket		5		(    WHM	                                    )
