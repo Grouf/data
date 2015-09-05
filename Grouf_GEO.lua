@@ -23,7 +23,7 @@ function get_sets()
 	sets.precast.IdleLuopan = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
 		head="Azimuth Hood +1", neck="Twilight Torque", left_ear="Psystorm Earring", right_ear="Etiolation Earring",
 		body="Azimuth Coat", hands="Geo. Mitaines +1", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Bagua Sandals"}
+		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Psycloth Lappas", feet="Bagua Sandals"}
 	--Lifestream Cape
 
 	sets.precast.Idle = sets.precast.IdleRefresh
@@ -45,20 +45,20 @@ function get_sets()
 	sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Mendi. Earring",right_ear="Lifestorm Earring",body="Geomancy Tunic",
 		hands="Telchine Gloves",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
-		waist="Rumination Sash",legs="Nares Trews",feet="Umbani Boots"} --MND=96+151, Cure Pot.=43%
+		waist="Rumination Sash",legs="Doyen Pants",feet="Medium's Sabots"} --MND=96+171, Cure Pot.=50%
 
-	sets.midcast.Enfeeble = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
+	sets.midcast.Enfeeble = {main="Serenity",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Helios Jacket",
 		hands="Lurid Mitts",left_ring="Globidonta Ring",right_ring="Sangoma Ring",back="Refraction Cape",
-		waist="Famine Sash",legs="Mes'yohi Slacks",feet="Hagondes Sabots"}
+		waist="Famine Sash",legs="Psycloth Lappas",feet="Hagondes Sabots"}
 
 	sets.midcast.Geomancy = {main="Staccato Staff",sub="Mephitis Grip" ,range="Dunna",
 		head="Azimuth Hood +1", neck="Deviant Necklace", right_ear="Gwati Earring", left_ear="Mendi. Earring",
 		body="Bagua Tunic", hands="Geo. Mitaines +1",
 		back="Lifestream Cape",	waist="Sekhmet Corset", legs="Bagua Pants", feet="Azimuth Gaiters"}
 			--Geomancy Skill:	394+53 = 447
-			--Handbell Skill:	389+18 = 407
-			--Total:			854
+			--Handbell Skill:	389+?? = 412
+			--Total:			859
 			--Conserve MP:		11
 
 	--Enhancing needs work
@@ -66,7 +66,7 @@ function get_sets()
 		hands="Augur's Gloves", left_ear="Loquac. Earring", right_ear="Andoaa Earring",
 		waist="Olympus Sash",legs="Shedir Seraweels",feet="Geomancy Sandals"}
 
-	sets.midcast.ElementalMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Ghastly Tathlum",head="Helios Band",
+	sets.midcast.ElementalMagic = {main="Serenity",sub="Mephitis Grip",ammo="Ghastly Tathlum",head="Helios Band",
 		neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Count's Garb",
 		hands="Helios Gloves",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Yamabuki-no-Obi",legs="Hagondes Pants +1",feet="Helios Boots"}
@@ -79,7 +79,7 @@ function get_sets()
 	sets.TP = {
 		head="Nahtirah Hat", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Helios Jacket", hands="Geo. Mitaines +1", left_ring="Beeline Ring", right_ring="Rajas Ring",
-		back="Buquwik Cape", waist="Windbuffet Belt", legs="Mes'yohi Slacks", feet="Helios Boots"}
+		back="Buquwik Cape", waist="Windbuffet Belt", legs="Psycloth Lappas", feet="Helios Boots"}
 
     sets.WS = set_combine(sets.TP, {neck="Fotia Gorget", left_ear="Moonshade Earring", right_ring="Cho'j Band",
 		waist="Prosilio Belt +1"})
