@@ -38,12 +38,12 @@ function get_sets()
 	sets.JA = {}
 	sets.JA["Meikyo Shisui"] = {feet="Sak. Sune-Ate +1"}
 	sets.JA.Meditate = {head="Wakido Kabuto +1", hands="Sakonji Kote", back="Takaha Mantle"}
-	sets.JA.Hasso = {hands="Wakido Kote +1"}
-	sets.JA.Seigan = {head="Unkai Kabuto +2"}
+	sets.JA.Hasso = {hands="Wakido Kote +1", legs="Kasuga Haidate +1"}
+	sets.JA.Seigan = {head="Kasuga Kabuto"}
 	sets.JA["Third Eye"] = {legs="Sakonji Haidate"}
 	sets.JA["Warding Circle"] = {head="Wakido Kabuto +1"}
-	sets.JA.Sekkanoki = {hands="Unkai Kote +2"}
-	sets.JA.Sengikori = {feet="Unkai Sune-Ate +2"} --grants bonus to Skillchain
+	sets.JA.Sekkanoki = {hands="Kasuga Kote"}
+	sets.JA.Sengikori = {feet="Kasuga Sune-Ate"} --grants bonus to Skillchain
 	sets.JA["Blade Bash"] = {hands="Sakonji Kote"}
 	--sets.JA.Shikikoyo = {legs="Sakonji Haidate"} --Give TP to party member
 	sets.JA.Step = {head="Gavialis Helm", neck="Iqabi Necklace", left_ear="Steelflash Earring",
@@ -71,14 +71,14 @@ sets.DD = {}
 
 	sets.DD['Nativus Halberd'].HighAcc = set_combine(sets.DD.Tsurumaru.HighAcc, {main="Nativus Halberd"})
 
-sets.Ranged = {head="Sakonji Kabuto +1", neck="Ocachi Gorget", left_ear="Clearview Earring",
+sets.Ranged = {head="Sakonji Kabuto +1", neck="Ocachi Gorget", left_ear="Enervating Earring",
 		right_ear="Bladeborn Earring", body="Kyujutsugi", hands="Buremte Gloves", left_ring="Paqichikaji Ring",
-		right_ring="Fistmele Ring", back="Buquwik Cape", waist="Flax Sash",
+		right_ring="Fistmele Ring", back="Buquwik Cape", waist="Eschan Stone",
 		legs="Wakido Haidate +1", feet="Waki. Sune-Ate +1"}
 
 	sets.Ranged.MidAcc = set_combine(sets.Ranged, {back="Kayapa Cape"})
 
-	sets.Ranged.HighAcc = set_combine(sets.Ranged.MidAcc, {neck="Iqabi Necklace"})
+	sets.Ranged.HighAcc = set_combine(sets.Ranged.MidAcc, {neck="Marked Gorget"})
 
 
 sets.DT = {}
@@ -130,18 +130,6 @@ sets.WS = {}
 	sets.WS.MultiHit.HighAcc = set_combine(sets.WS.MultiHit.MidAcc,{head="Gavialis Helm", body="Miki. Breastplate",
 		neck="Iqabi Necklace", feet="Waki. Sune-Ate +1"})
 	--Need to refine multi-hit midacc and highacc to match one-hit gear adjustments
-
-	--[[Specific gear for WS  -- don't need now with combined gorget
-	sets["Tachi: Enpi"] = {neck="Light Gorget"}
-	sets["Tachi: Goten"] = {neck="Light Gorget"}
-	sets["Tachi: Kagero"] = {neck="Flame Gorget"}
-	sets["Tachi: Kasha"] = {neck="Flame Gorget"}
-	sets["Tachi: Rana"] = {neck="Shadow Gorget"}
-	sets["Tachi: Ageha"] = {neck="Shadow Gorget"}
-	sets["Tachi: Fudo"] = {neck="Light Gorget"}
-	sets["Tachi: Shoha"] = {neck="Shadow Gorget"}
-	sets["Apex Arrow"] = {neck="Light Gorget"}
-	]]
 
 	sets.FastCast = {neck="Magoraga Beads",
 		right_ear="Loquac. Earring", right_ring="Prolix Ring", left_ring="Weather. Ring",
