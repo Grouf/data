@@ -38,9 +38,9 @@ function get_sets()
 	sets.Ranged = {head="Umbani Cap", neck="Ocachi Gorget", left_ear="Volley earring",
 		right_ear="Enervating Earring", body="Mekosu. Harness", hands="Buremte Gloves", left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring", back="Libeccio Mantle", waist="Eschan Stone",
-		legs="Feast Hose", feet="Scopuli Nails +1"}
+		legs="Pursuer's Pants", feet="Scopuli Nails +1"}
 
-	sets.Ranged.MidAcc = set_combine(sets.Ranged,{neck="Iqabi Necklace"})
+	sets.Ranged.MidAcc = set_combine(sets.Ranged,{neck="Marked Gorget"})
 
 	sets.Ranged.HighAcc = sets.Ranged.MidAcc
 
@@ -100,7 +100,7 @@ function get_sets()
 	sets.TP.Accuracy = {head="Taeon Chapeau",neck="Iqabi Necklace",left_ear="Steelflash Earring",
 	right_ear="Zennaroi Earring",body="Emet Harness +1",hands="Plun. Armlets +1",left_ring="Rajas Ring",
 	right_ring="Beeline Ring",back="Grounded Mantle",waist="Olseni Belt",
-	legs="Manibozho Brais",feet="Taeon Boots"}
+	legs="Feast Hose",feet="Taeon Boots"}
 
 	sets.TP.DT = {head="Uk'uxkaj Cap", neck="Twilight Torque", left_ear="Soil Pearl",
 		right_ear="Soil Pearl", body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Succor Ring",
