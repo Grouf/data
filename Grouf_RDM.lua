@@ -88,31 +88,31 @@ function get_sets()
 		back="Refraction Cape", waist="Rumination Sash", legs="Psycloth Lappas", feet="Uk'uxkaj Boots"}
 			--RDM/blm
 			--Potency:
-			--Magic Accuracy:	+125
+			--Magic Accuracy:	+140
 			--Enfeeble Skill:	526
-			--Total:			651 (691 including JP/Gift Magic Acc Bonus (+40))
-			--MND:				91+196?
-			--INT:				101+172?
+			--Total:			666 (706 including JP/Gift Magic Acc Bonus (+40))
+			--MND:				91+211
+			--INT:				101+168
 
 	sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble ,{ammo="Kalboron Stone", 
-		feet="Vitivation Boots +1"})
+		feet="Medium's Sabots"})
 			--RDM/blm
 			--Mid-Acc:
-			--Magic Accuracy:	+143
-			--Enfeeble Skill:	538
-			--Total:			691 (721 including JP/Gift Magic Acc Bonus(+40))
-			--MND:				91+199?
-			--INT:				101+177?
+			--Magic Accuracy:	+168
+			--Enfeeble Skill:	541
+			--Total:			709 (749 including JP/Gift Magic Acc Bonus(+40))
+			--MND:				91+213
+			--INT:				101+170
 
 	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc ,{head="Befouled Crown", body="Atrophy Tabard +1",
 		right_ring="Sangoma Ring", back="Ghostfyre Cape"})
 			--RDM/blm
 			--High-Acc:
-			--Magic Accuracy:	+155
-			--Enfeeble Skill:	554
-			--Total:			709 (749 including JP/Gift Magic Acc Bonus(+40))
-			--MND:				91+184?
-			--INT:				101+179?
+			--Magic Accuracy:	+176
+			--Enfeeble Skill:	557
+			--Total:			733 (773 including JP/Gift Magic Acc Bonus(+40))
+			--MND:				91+198
+			--INT:				101+172
 
 	--Lethargy Sayon +1 is currently best-in-slot for all enfeebles (??)
 		--Ischemia Chasuble gives +6 m.Acc over Lethargy Sayon +1
@@ -166,14 +166,14 @@ function get_sets()
 	sets.Stun = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Atro. Chapeau +1", neck="Eddy Necklace", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		back="Ghostfyre Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Vitivation Boots +1"}
-			--Fast Cast: 51%, Haste: 26%, M.Acc: 116 (344 w/weapon skill)
+		back="Ghostfyre Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Medium's Sabots"}
+			--Fast Cast: 51%, Haste: 26%, M.Acc: 117 (344 w/weapon skill)
 
-	sets.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum",
+	sets.Cure = {main="Serenity", sub="Mephitis Grip", ammo="Oreiad's Tathlum",
 		head="Viti. Chapeau +1", neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Soil Pearl",
 		body="Viti. Tabard +1", hands="Telchine Gloves", left_ring="Solemn Ring", right_ring="Sirona's Ring",
 		back="Ghostfyre Cape", waist="Rumination Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux +1"}
-		--Cure Pot.: 52%, Cure casting -6%, Haste: 20%, MND: 91+188, VIT: 82+88, Healing Magic: 426
+		--Cure Pot.: 51%, Cure casting -0%, Haste: 20%, MND: 91+202, VIT: 82+88, Healing Magic: 426
 
 	sets.Enhancing = {main="Arendsi Fleuret", sub="Genbu's Shield",
 		head="Befouled Crown", neck="Colossus's Torque", left_ear="Estq. Earring", right_ear="Andoaa Earring",
@@ -274,7 +274,7 @@ function get_sets()
 
 	sets.WS.Requiescat = set_combine(sets.WS, {head="Atro. Chapeau +1", left_ear="Lifestorm Earring",
 		body="Viti. Tabard +1", left_ring="Solemn Ring", right_ring="Sirona's Ring", back="Refraction Cape",
-		legs="Atrophy Tights +1", feet="Vitivation Boots +1"})
+		legs="Atrophy Tights +1", feet="Medium's Sabots"})
 
 	--sets.WS.Requiescat.MidAcc = {}
 
