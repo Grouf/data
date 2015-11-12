@@ -10,7 +10,6 @@ Sakonji Kote
 --[[Gear needed:
 Lithelimb cap			--AAHM
 Mes'yohi Haubergeon		--Kamulnuts
-Osmium Cuisses			--AAEV
 Scuffler's cosciales	--Savage
 Metalsinger belt		--Savage
 ]]
@@ -29,9 +28,10 @@ SetMode_Names = {'DD','DT','MDT','Shark'}		--Switch between DD and DT sets, set 
 Accuracy_Index = 1
 Accuracy = {'None', 'MidAcc', 'HighAcc'}	--Accuracy levels set with user command 'Accuracy'
 Weapon_Index = 1
-Weapon = {'Tsurumaru', 'Nativus Halberd'}	--Switch between weapons, set using user command 'Weapon'
+Weapon = {'Ichigohitofuri', 'Tsurumaru', 'Nativus Halberd'}	--Switch between weapons, set using user command 'Weapon'
 Wakido = 0	--Equip when 1, set with user command 'Wakido'
 Hime = 0	--Equip when 1, set when Miser's Roll gained
+Mecisto = 1 --Equip when 1, default 1, change with user command 'Mecisto'
 
 function get_sets()
 
@@ -39,13 +39,14 @@ function get_sets()
 	sets.JA["Meikyo Shisui"] = {feet="Sak. Sune-Ate +1"}
 	sets.JA.Meditate = {head="Wakido Kabuto +1", hands="Sakonji Kote", back="Takaha Mantle"}
 	sets.JA.Hasso = {hands="Wakido Kote +1", legs="Kasuga Haidate +1"}
-	sets.JA.Seigan = {head="Kasuga Kabuto"}
+	sets.JA.Seigan = {head="Kasuga Kabuto +1"}
 	sets.JA["Third Eye"] = {legs="Sakonji Haidate"}
 	sets.JA["Warding Circle"] = {head="Wakido Kabuto +1"}
-	sets.JA.Sekkanoki = {hands="Kasuga Kote"}
-	sets.JA.Sengikori = {feet="Kasuga Sune-Ate"} --grants bonus to Skillchain
+	sets.JA.Sekkanoki = {hands="Kasuga Kote +1"}
+	sets.JA.Sengikori = {feet="Kas. Sune-Ate +1"} --grants bonus to Skillchain
 	sets.JA["Blade Bash"] = {hands="Sakonji Kote"}
 	--sets.JA.Shikikoyo = {legs="Sakonji Haidate"} --Give TP to party member
+	
 	sets.JA.Step = {head="Gavialis Helm", neck="Iqabi Necklace", left_ear="Steelflash Earring",
 		right_ear="Zennaroi Earring", body="Miki. Breastplate", hands="Buremte Gloves", left_ring="Beeline Ring",
 		right_ring="Rajas Ring", back="Takaha Mantle", waist="Olseni Belt",
@@ -56,23 +57,32 @@ function get_sets()
 
 sets.DD = {}
 	sets.DD.Tsurumaru = {main="Tsurumaru", sub="Tzacab Grip", range="Cibitshavore", ammo="Tulfaire Arrow",
-		head="Otomi Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
-		body="Xaddi Mail", hands="Xaddi Gauntlets", left_ring="K'ayres Ring", right_ring="Rajas Ring",
-		back="Takaha mantle", waist="Cetl Belt", legs="Xaddi Cuisses", feet="Sak. Sune-Ate +1"} --Store TP +51
-
+		head="Acro Helm", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
+		body="Kasuga Domaru +1", hands="Xaddi Gauntlets", left_ring="K'ayres Ring", right_ring="Rajas Ring",
+		back="Takaha mantle", waist="Cetl Belt", legs="Xaddi Cuisses", feet="Sak. Sune-Ate +1"} --Store TP +70
+			--Otomi Helm, Xaddi Mail
+		
+		
 	sets.DD.Tsurumaru.MidAcc = set_combine(sets.DD.Tsurumaru, {head="Yaoyotl Helm"})
 
-	sets.DD.Tsurumaru.HighAcc = set_combine(sets.DD.Tsurumaru.MidAcc, {head="Gavialis Helm", feet="Waki. Sune-Ate +1"})
+	sets.DD.Tsurumaru.HighAcc = set_combine(sets.DD.Tsurumaru.MidAcc, {head="Gavialis Helm", feet="Kas. Sune-Ate +1"})
 		--TODO Finish adding accuracy gear
 
+	sets.DD['Ichigohitofuri'] = set_combine(sets.DD.Tsurumaru, {main="Ichigohitofuri"})
+
+	sets.DD['Ichigohitofuri'].MidAcc  = set_combine(sets.DD.Tsurumaru.MidAcc, {main="Ichigohitofuri"})
+
+	sets.DD['Ichigohitofuri'].HighAcc = set_combine(sets.DD.Tsurumaru.HighAcc, {main="Ichigohitofuri"})
+		
 	sets.DD['Nativus Halberd'] = set_combine(sets.DD.Tsurumaru, {main="Nativus Halberd"})
 
 	sets.DD['Nativus Halberd'].MidAcc  = set_combine(sets.DD.Tsurumaru.MidAcc, {main="Nativus Halberd"})
 
 	sets.DD['Nativus Halberd'].HighAcc = set_combine(sets.DD.Tsurumaru.HighAcc, {main="Nativus Halberd"})
 
+	
 sets.Ranged = {head="Sakonji Kabuto +1", neck="Ocachi Gorget", left_ear="Enervating Earring",
-		right_ear="Bladeborn Earring", body="Kyujutsugi", hands="Buremte Gloves", left_ring="Paqichikaji Ring",
+		right_ear="Bladeborn Earring", body="Kyujutsugi", hands="Kasuga Kote +1", left_ring="Paqichikaji Ring",
 		right_ring="Fistmele Ring", back="Buquwik Cape", waist="Eschan Stone",
 		legs="Wakido Haidate +1", feet="Waki. Sune-Ate +1"}
 
@@ -85,25 +95,31 @@ sets.DT = {}
 	sets.DT.Tsurumaru = {main="Tsurumaru", sub="Tzacab Grip", range="Cibitshavore", ammo="Tulfaire Arrow",
 		head="Gavialis Helm", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Succor Ring", right_ring="Shadow Ring",
-		back="Repulse Mantle", waist="Flume Belt", legs="Otronif Brais +1", feet="Otronif Boots +1"}
+		back="Repulse Mantle", waist="Flume Belt", legs="Osmium Cuisses", feet="Otronif Boots +1"}
 				--Need Sakonji Kote +1
-
+	
+	sets.DT['Ichigohitofuri'] = set_combine(sets.DT.Tsurumaru, {main="Ichigohitofuri"})
+	
 	sets.DT['Nativus Halberd'] = set_combine(sets.DT.Tsurumaru, {main="Nativus Halberd"})
 
 sets.MDT = {}
 	sets.MDT.Tsurumaru = {main="Tsurumaru", sub="Tzacab Grip", range="Cibitshavore", ammo="Tulfaire Arrow",
 		head="Gavialis Helm", neck="Warder's Charm", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Kyujutsugi", hands="Umuthi Gloves", left_ring="Succor Ring", right_ring="Shadow Ring",
-		back="Repulse Mantle", waist="Flax Sash", legs="Otronif Brais +1", feet="Otronif Boots +1"}
-
+		back="Repulse Mantle", waist="Flax Sash", legs="Osmium Cuisses", feet="Otronif Boots +1"}
+	
+	sets.MDT['Ichigohitofuri'] = set_combine(sets.DT.Tsurumaru, {main="Ichigohitofuri"})
+	
 	sets.MDT['Nativus Halberd'] = set_combine(sets.DT.Tsurumaru, {main="Nativus Halberd"})
 
 sets.Shark = {}
 	sets.Shark.Tsurumaru = {main="Tsurumaru", sub="Tzacab Grip", range="Cibitshavore", ammo="Tulfaire Arrow",
 		head="Gallian helm +1", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Kyujutsugi", hands="Umuthi Gloves", left_ring="Zanhi Ring", right_ring="Shadow Ring",
-		back="Tuilha Cape", waist="Flax Sash", legs="Otronif Brais +1", feet="Otronif Boots +1"}
-
+		back="Tuilha Cape", waist="Flax Sash", legs="Osmium Cuisses", feet="Otronif Boots +1"}
+	
+	sets.Shark['Ichigohitofuri'] = set_combine(sets.DT.Tsurumaru, {main="Ichigohitofuri"})
+	
 	sets.Shark['Nativus Halberd'] = set_combine(sets.DT.Tsurumaru, {main="Nativus Halberd"})
 
 
@@ -131,8 +147,7 @@ sets.WS = {}
 		neck="Iqabi Necklace", feet="Waki. Sune-Ate +1"})
 	--Need to refine multi-hit midacc and highacc to match one-hit gear adjustments
 
-	sets.FastCast = {neck="Magoraga Beads",
-		right_ear="Loquac. Earring", right_ring="Prolix Ring", left_ring="Weather. Ring",
+	sets.FastCast = {right_ear="Loquac. Earring", right_ring="Prolix Ring", left_ring="Weather. Ring",
 		waist="Sailfi Belt"}
 
 	sets.DontForget = {body="Wakido Domaru +1", left_ear="Reraise Earring",
@@ -158,7 +173,7 @@ function precast(spell)
 		elseif MultiHitWeaponSkills:contains(spell.english) then
 			EquipSet = sets.WS.MultiHit
 		elseif spell.english == 'Apex Arrow' then
-			EquipSet = sets.Ranged
+			EquipSet = set_combine(sets.Ranged, {neck="Fotia Gorget"})
 		else
 			add_to_chat(12, 'WS ' ..spell.english.. ' not found, equipping OneHit set')
 			EquipSet = sets.WS.OneHit
@@ -244,6 +259,9 @@ function status_change(new,old)
 	end
 
 	if player.status == 'Engaged' then
+		if Mecisto == 1 then
+			EquipSet = set_combine(EquipSet, {back="Mecisto. Mantle"})
+		end
 		equip(EquipSet)
 	else
 		EquipSet = set_combine(EquipSet, {back="Mecisto. Mantle", feet="Danzo Sune-Ate"})
@@ -317,13 +335,27 @@ function self_command(command)
 			Accuracy_Index = 1
 		end
 		add_to_chat(9, 'Accuracy now set to: ' ..Accuracy[Accuracy_Index] )
+	
+	elseif command == 'Mecisto' then
+		if Mecisto == 1 then
+			Mecisto = 0
+			add_to_chat(9, 'Mecisto OFF')
+		else
+			Mecisto = 1
+			add_to_chat(9, 'Mecisto On')
+		end
 
 	elseif command == 'Weapon' then
+		Weapon_Index = Weapon_Index + 1
+		if Weapon_Index == (#Weapon + 1) then
+			Weapon_Index = 1
+		end
+		--[[
 		if Weapon_Index == 1 then
 			Weapon_Index = 2
 		else
 			Weapon_Index = 1
-		end
+		end]]
 		add_to_chat(9, 'Weapon now set to: ' ..Weapon[Weapon_Index] )
 
 	elseif command == 'Info' then
