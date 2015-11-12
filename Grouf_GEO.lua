@@ -23,7 +23,7 @@ function get_sets()
 	sets.precast.IdleLuopan = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
 		head="Azimuth Hood +1", neck="Twilight Torque", left_ear="Psystorm Earring", right_ear="Etiolation Earring",
 		body="Azimuth Coat", hands="Geo. Mitaines +1", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Psycloth Lappas", feet="Bagua Sandals"}
+		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Psycloth Lappas", feet="Bagua Sandals +1"}
 	--Lifestream Cape
 
 	sets.precast.Idle = sets.precast.IdleRefresh
@@ -33,10 +33,10 @@ function get_sets()
 --Job Ability--
 	sets.JA = {}
 	sets.JA['Collimated Fervor'] = {head="Bagua Galero"}
-	sets.JA.Bolster = {body="Bagua Tunic"}
+	sets.JA.Bolster = {body="Bagua Tunic +1"}
 	sets.JA['Full Circle'] = {head="Azimuth Hood +1"}
 	sets.JA['Mending Halation'] = {legs="Bagua Pants"}
-	sets.JA['Radial Arcana'] = {feet="Bagua Sandals"}
+	sets.JA['Radial Arcana'] = {feet="Bagua Sandals +1"}
 	sets.JA['Life Cycle'] = {body="Geomancy Tunic"}
 
 --Midcast
@@ -54,7 +54,7 @@ function get_sets()
 
 	sets.midcast.Geomancy = {main="Staccato Staff",sub="Mephitis Grip" ,range="Dunna",
 		head="Azimuth Hood +1", neck="Deviant Necklace", right_ear="Gwati Earring", left_ear="Mendi. Earring",
-		body="Bagua Tunic", hands="Geo. Mitaines +1",
+		body="Bagua Tunic +1", hands="Geo. Mitaines +1",
 		back="Lifestream Cape",	waist="Sekhmet Corset", legs="Bagua Pants", feet="Azimuth Gaiters"}
 			--Geomancy Skill:	394+53 = 447
 			--Handbell Skill:	389+?? = 412
@@ -126,10 +126,10 @@ end
 
 --[[Relic augments:
 Head: Bagua Galero: Primeval Zeal
-Body: Bagua Tunic: Bolster
+Body: Bagua Tunic +1: Bolster
 Hands: Bagua Mitaines: Curative Recantation
 Legs: Bagua Pants: Mending Halation
-Feet: Bagua Sandals: Radial Arcana
+Feet: Bagua Sandals +1: Radial Arcana
 ]]
 
 function midcast(spell)
