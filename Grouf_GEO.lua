@@ -22,7 +22,7 @@ function get_sets()
 	--Mecisto. Mantle
 	sets.precast.IdleLuopan = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
 		head="Azimuth Hood +1", neck="Twilight Torque", left_ear="Psystorm Earring", right_ear="Etiolation Earring",
-		body="Azimuth Coat", hands="Geo. Mitaines +1", left_ring="Shadow Ring", right_ring="Succor Ring",
+		body="Azimuth Coat +1", hands="Geo. Mitaines +1", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Psycloth Lappas", feet="Bagua Sandals +1"}
 	--Lifestream Cape
 
@@ -32,7 +32,7 @@ function get_sets()
 
 --Job Ability--
 	sets.JA = {}
-	sets.JA['Collimated Fervor'] = {head="Bagua Galero"}
+	sets.JA['Collimated Fervor'] = {head="Bagua Galero +1"}
 	sets.JA.Bolster = {body="Bagua Tunic +1"}
 	sets.JA['Full Circle'] = {head="Azimuth Hood +1"}
 	sets.JA['Mending Halation'] = {legs="Bagua Pants"}
@@ -71,7 +71,7 @@ function get_sets()
 		hands="Helios Gloves",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Yamabuki-no-Obi",legs="Hagondes Pants +1",feet="Helios Boots"}
 
-	sets.midcast.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero",
+	sets.midcast.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero +1",
 		neck="Eddy Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Helios Jacket",
 		hands="Lurid Mitts",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Yamabuki-no-Obi",legs="Azimuth Tights",feet="Hagondes Sabots"}
@@ -125,7 +125,7 @@ function precast(spell)
 end
 
 --[[Relic augments:
-Head: Bagua Galero: Primeval Zeal
+Head: Bagua Galero +1: Primeval Zeal
 Body: Bagua Tunic +1: Bolster
 Hands: Bagua Mitaines: Curative Recantation
 Legs: Bagua Pants: Mending Halation
@@ -160,6 +160,7 @@ function midcast(spell)
 		equip(sets.midcast.DarkMagic)
 		if spell.english:startswith('Aspir') or spell.english == 'Drain' then
 			equip({left_ring="Excelsis Ring", waist="Fucho-no-Obi"})
+			--Hirudinea Earring?
 		end
 		obi_check(spell.element)
 	elseif spell.skill == 'Enfeebling Magic' then
