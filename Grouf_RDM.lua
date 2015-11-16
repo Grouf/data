@@ -90,8 +90,8 @@ function get_sets()
 			--Potency:
 			--Magic Accuracy:	+140
 			--Enfeeble Skill:	526
-			--Total:			666 (706 including JP/Gift Magic Acc Bonus (+40))
-			--MND:				91+211
+			--Total:			666 (709 including JP/Gift Magic Acc Bonus (+43))
+			--MND:				98+211
 			--INT:				101+168
 
 	sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble ,{ammo="Kalboron Stone", 
@@ -100,8 +100,8 @@ function get_sets()
 			--Mid-Acc:
 			--Magic Accuracy:	+168
 			--Enfeeble Skill:	541
-			--Total:			709 (749 including JP/Gift Magic Acc Bonus(+40))
-			--MND:				91+213
+			--Total:			709 (752 including JP/Gift Magic Acc Bonus(+43))
+			--MND:				98+213
 			--INT:				101+170
 
 	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc ,{head="Befouled Crown", body="Atrophy Tabard +1",
@@ -110,8 +110,8 @@ function get_sets()
 			--High-Acc:
 			--Magic Accuracy:	+176
 			--Enfeeble Skill:	557
-			--Total:			733 (773 including JP/Gift Magic Acc Bonus(+40))
-			--MND:				91+198
+			--Total:			733 (776 including JP/Gift Magic Acc Bonus(+43))
+			--MND:				98+198
 			--INT:				101+172
 
 	--Lethargy Sayon +1 is currently best-in-slot for all enfeebles (??)
