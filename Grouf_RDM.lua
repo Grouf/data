@@ -64,18 +64,18 @@ function get_sets()
 		waist="Witful Belt", legs="Artsieq Hose", feet="Taeon Boots"}
 			-- 54% Fast Cast, 22% Haste
 
-	sets.Idle = {main="Bolelabunga", sub="Genbu's Shield", ammo="Brigantia Pebble",
+	sets.Idle = {main="Emissary", sub="Genbu's Shield", ammo="Brigantia Pebble",
 		head="Viti. Chapeau +1", neck="Twilight Torque", left_ear="Lifestorm Earring", right_ear="Etiolation Earring",
 		body="Atrophy Tabard +1", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
 
-	sets.Idle.DT = {main="Xiutleato",sub="Genbu's Shield", ammo="Brigantia Pebble",
+	sets.Idle.DT = {main="Emissary",sub="Genbu's Shield", ammo="Brigantia Pebble",
 		head="Rabid Visor", neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Soil Pearl",
 		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +1", feet="Leth. Houseaux +1"}
 		-- PDT: -46%, Evasion: 655, Defense: 801
 
-	sets.Idle.MDT = {main="Xiutleato",sub="Beatific Shield +1", ammo="Brigantia Pebble",
+	sets.Idle.MDT = {main="Emissary",sub="Beatific Shield +1", ammo="Brigantia Pebble",
 		head="Atro. Chapeau +1", neck="Twilight Torque", left_ear="Zennaroi Earring", right_ear="Etiolation Earring",
 		body="Lethargy Sayon +1", hands="Atrophy Gloves +1", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
