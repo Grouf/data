@@ -84,7 +84,7 @@ function get_sets()
     sets.WS = set_combine(sets.TP, {neck="Fotia Gorget", left_ear="Moonshade Earring", right_ring="Cho'j Band",
 		waist="Prosilio Belt +1"})
 
-    sets.DontForget = {head="Umuthi Hat", body="Telchine Chas.", neck="Quanpur Necklace", left_ear="Reraise Earring",
+    sets.DontForget = {head="Umuthi Hat", body="Telchine Chas.", left_ear="Reraise Earring",
 		left_ring="Excelsis Ring", legs="Doyen Pants"}
 
 
@@ -152,9 +152,6 @@ function midcast(spell)
 		end
 	elseif spell.skill == 'Elemental Magic' then
 		equip(sets.midcast.ElementalMagic)
-		if spell.element == 'Earth' then
-			equip({neck="Quanpur Necklace"})
-		end
 		obi_check(spell.element)
 	elseif spell.skill == 'Dark Magic' then
 		equip(sets.midcast.DarkMagic)

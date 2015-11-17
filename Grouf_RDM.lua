@@ -302,9 +302,9 @@ function get_sets()
 	--send_command('input /macro book 5;wait .1;input /macro set 1')
 	set_macro_book()
 
-	sets.DontForget = {body="Telchine Chas.", neck="Quanpur Necklace", legs="Crimson Cuisses",
+	sets.DontForget = {body="Telchine Chas.", legs="Crimson Cuisses",
 		right_ring="Excelsis Ring"}
-	sets.DontForget2 = {legs="Shedir Seraweels"}
+	sets.DontForget2 = {main="Bolelabunga", legs="Shedir Seraweels"}
 
 	--[[
 	sets.DontForget = {sub="Thuellaic Ecu +1", neck="Quanpur Necklace", left_ear="Reraise Earring",
@@ -468,10 +468,6 @@ function midcast(spell)
 		if EquipSet[Accuracy[Accuracy_Index]] then
 			--add_to_chat(9, 'WS Accuracy level found: ' ..Accuracy[Accuracy_Index])
 			EquipSet = EquipSet[Accuracy[Accuracy_Index]]
-		end
-
-		if Accuracy[Accuracy_Index] ~= 'HighAcc' and spell.element == "Earth" then
-			EquipSet = set_combine(EquipSet, {neck="Quanpur Necklace"})
 		end
 
 		Check_for_Obi = 1

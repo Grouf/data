@@ -259,9 +259,6 @@ function midcast(spell)
 		end
 	end
 
-	if spell.element == 'Earth' and spell.target == 'Enemy' then
-			equip({neck="Quanpur Necklace"})
-	end
 end
 
 function aftercast(spell)

@@ -122,9 +122,6 @@ function midcast(spell)
 		end
 	elseif spell.skill == 'Elemental Magic' then
 		equip(sets.midcast.ElementalMagic)
-		if spell.element == 'Earth' then
-			equip({neck="Quanpur Necklace"})
-		end
 		if spell.element == 'Ice' then
 			equip({main="Ngqoqwanb"})
 		end
