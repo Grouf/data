@@ -11,7 +11,7 @@ function get_sets()
 	sets.JA.Steal = {hands="Pillager's Armlets",legs="Assassin's Culottes",feet="Pillager's Poulaines"}
 	sets.JA.Mug = {head="Plun. Bonnet"}
 	sets.JA.Despoil = {legs="Skulker's Culottes", feet="Skulk. Poulaines +1"}
-	sets.JA.Conspirator = {body="Skulker's Vest"}
+	sets.JA.Conspirator = {body="Skulker's Vest +1"}
 	sets.JA.Accomplice = {head="Skulker's Bonnet"}
 	sets.JA.Collaborator = {head="Skulker's Bonnet"}
 	sets.JA['Perfect Dodge'] = {hands="Plun. Armlets +1"}
