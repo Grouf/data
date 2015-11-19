@@ -7,7 +7,6 @@
 --[[
 		WANTED ITEMS
 	Ischemia Chasuble	-- Savage   Need for Enfeebling HighAcc, gives +6 m.acc over Lethargy body +1
-	Battlecaster's Boots
 ]]
 
 include('Obi_Check')
@@ -220,15 +219,16 @@ function get_sets()
 	sets.DT = {ammo="Brigantia Pebble",
 		head="Rabid Visor", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Rajas Ring", right_ring="Succor Ring",
-		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +1", feet="Leth. Houseaux +1"}
-			--Without Weapon/Shield: Acc: 192, Att: 170, EVA: 646, DEF: 768, PDT: -32%
-
+		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +1", feet="Battlecast Gaiters"}
+			--RDM/blm
+			--Without Weapon/Shield: Acc: 258, Att: 210, EVA: 680, DEF: 786, PDT: -35%
+			--need to add Emissary & Genbu's Shield
 
 	sets.DT.MidAcc = set_combine(sets.DT, {right_ear="Heartseeker Earring", waist="Olseni Belt"})
-			--Without Weapon/Shield: Acc: 220, Att: 157, EVA: 646, DEF: 752, PDT: -28%
+			--Without Weapon/Shield: Acc: 286, Att: 196, EVA: 680, DEF: 787, PDT: -31%
 
 	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Grounded Mantle"})
-			--Without Weapon/Shield: Acc: 243, Att: 157, EVA: 646, DEF: 755, PDT: -24%
+			--Without Weapon/Shield: Acc: 310, Att: 196, EVA: 680, DEF: 790, PDT: -27%
 
 	sets.MDT = {ammo="Brigantia Pebble",
 		head="Atro. Chapeau +1", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
@@ -237,6 +237,7 @@ function get_sets()
 			--RDM/blm
 			--Without Weapon/Shield: Acc: 172, Att: 165, EVA: 610, DEF: 734,
 			-- MDB: 28, MDT: -13%, M.Eva: 417
+			--need to add Beatific Shield +1
 
 	sets.MDT.MidAcc = set_combine(sets.MDT, {waist="Olseni Belt"})
 			--RDM/blm
