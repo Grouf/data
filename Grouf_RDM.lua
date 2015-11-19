@@ -302,7 +302,7 @@ function get_sets()
 	--send_command('input /macro book 5;wait .1;input /macro set 1')
 	set_macro_book()
 
-	sets.DontForget = {body="Telchine Chas.", legs="Crimson Cuisses",
+	sets.DontForget = {neck="Nodens Gorget", body="Telchine Chas.", legs="Crimson Cuisses",
 		right_ring="Excelsis Ring"}
 	sets.DontForget2 = {main="Bolelabunga", legs="Shedir Seraweels"}
 
@@ -425,7 +425,7 @@ function midcast(spell)
 		if spell.english:startswith('Refresh') then
 			EquipSet = set_combine(EquipSet, {legs="Leth. Fuseau +1"})
 		elseif spell.english == 'Stoneskin' then
-			EquipSet = set_combine(EquipSet, {waist="Siegel Sash", legs="Shedir Seraweels", neck="Stone Gorget"})
+			EquipSet = set_combine(EquipSet, {waist="Siegel Sash", legs="Shedir Seraweels", neck="Nodens Gorget"})
 		elseif spell.english == 'Aquaveil' then
 			EquipSet = set_combine(EquipSet, {legs="Shedir Seraweels"})
 		elseif spell.english:startswith('Regen') then

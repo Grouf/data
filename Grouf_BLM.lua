@@ -24,7 +24,7 @@ function get_sets()
 
 	sets.midcast = {}
 	sets.midcast.Cure = {main="Marin Staff +1",sub="Mephitis Grip", ammo="Oreiad's Tathlum",
-		head="Helios Band", neck="Imbodla Necklace", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
+		head="Helios Band", neck="Nodens Gorget", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
 		body="Helios Jacket", hands="Telchine Gloves", left_ring="Sirona's Ring", right_ring="Solemn Ring",
 		back="Pahtli Cape", waist="Rumination Sash", legs="Nares Trews",feet="Umbani Boots"}
 
@@ -118,7 +118,7 @@ function midcast(spell)
 	elseif spell.skill == 'Enhancing Magic' then
 		equip(sets.midcast.Enhancing)
 		if spell.english == 'Stoneskin' then
-			equip({waist="Siegel Sash", neck="Stone Gorget"})
+			equip({waist="Siegel Sash", neck="Nodens Gorget"})
 		end
 	elseif spell.skill == 'Elemental Magic' then
 		equip(sets.midcast.ElementalMagic)

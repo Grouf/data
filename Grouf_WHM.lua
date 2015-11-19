@@ -98,7 +98,7 @@ function get_sets()
 		hands="Gende. Gages +1",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
 		waist="Windbuffet Belt",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 	
-	sets.dontforget = {head="Umuthi Hat", legs="Doyen Pants"}
+	sets.dontforget = {head="Umuthi Hat", neck="Nodens Gorget", legs="Doyen Pants"}
 	
 	--[[
 	sets.aftercast = {}
@@ -173,7 +173,7 @@ function midcast(spell)
 			equip(sets.midcast.Enhancing)
 		end
 		if spell.english == 'Stoneskin' then
-			equip({waist="Siegel Sash", neck="Stone Gorget"})
+			equip({waist="Siegel Sash", neck="Nodens Gorget"})
 		end
 
 	elseif spell.skill == 'Divine Magic' then
