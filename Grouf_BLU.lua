@@ -91,9 +91,9 @@ function get_sets()
 --Job Ability--
 	sets.JA = {}
 	sets.JA['Azure Lore'] = {hands="Luhlaza Bazubands"}
-	sets.JA.Efflux = {legs="Mavi Tayt +2"}
-	sets.JA['Chain Affinity'] = {head="Mavi Kavuk +2",feet="Assim. Charuqs"}
-	sets.JA['Burst Affinity'] = {legs="Assim. Shalwar",feet="Mavi Basmak +2"}
+	sets.JA.Efflux = {legs="Hashishin Tayt +1"}
+	sets.JA['Chain Affinity'] = {head="Hashishin Kavuk",feet="Assim. Charuqs"}
+	sets.JA['Burst Affinity'] = {legs="Assim. Shalwar",feet="Hashishin Basmak"}
 	sets.JA.Diffusion = {feet="Luhlaza Charuqs"}
 
 --Precast--
@@ -106,7 +106,7 @@ function get_sets()
 	sets.precast.Rest = sets.precast.Idle
 
 	sets.precast.FastCast = {head="Haruspex Hat",left_ear="Loquacious earring",
-		body="Mavi Mintan +2",hands="Mv. Bazubands +2",left_ring="Weather. Ring", right_ring="Prolix Ring",
+		body="Hashishin Mintan",hands="Mv. Bazubands +2",left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith cape",waist="Witful belt",
 		legs="Orvail Pants +1",feet="Qaaxo Leggings"}--23% Fast Cast, 16% Haste, Blue Magic Casting time -12%
 
@@ -141,7 +141,7 @@ function get_sets()
 
 --Blue Magic Spell Stat sets--
 	sets.midcast = {}
-	sets.midcast.BaseStat = {head="Uk'uxkaj Cap",neck="Mavi Scarf",left_ear="Dudgeon Earring",
+	sets.midcast.BaseStat = {head="Uk'uxkaj Cap",neck="Hashishin Scarf",left_ear="Dudgeon Earring",
 		right_ear="Bladeborn Earring",body="Mekosu. Harness",hands="Buremte Gloves",left_ring="Rajas Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Prosilio Belt +1",
 		legs="Iuitl Tights +1",feet="Qaaxo Leggings"} --relic119 legs here
@@ -185,7 +185,7 @@ function get_sets()
 		ammo="Mavi Tathlum", head="Luhlaza Keffiyeh",neck="Mavi Scarf",
 		body="Assim. Jubbah",hands="Symbios Gloves",
 		back="Cornflower Cape",
-		legs="Mavi Tayt +2",feet="Luhlaza Charuqs"}) --All blue magic, some fast cast
+		legs="Hashishin Tayt +1",feet="Luhlaza Charuqs"}) --All blue magic, some fast cast
 
 	sets.midcast.FastCast = sets.precast.FastCast -- for spells that don't need stats
 
@@ -202,7 +202,7 @@ function get_sets()
 		legs="Taeon Tights",feet="Assim. Charuqs" }
 
 	sets.TP.Learning = {head="Luhlaza Keffiyeh", body="Assim. Jubbah", hands="Assim. Bazu.",
-		back="Cornflower Cape", legs="Mavi Tayt +2", feet="Luhlaza Charuqs"} --skill = 500
+		back="Cornflower Cape", legs="Hashishin Tayt +1", feet="Luhlaza Charuqs"} --skill = 500
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
@@ -360,7 +360,7 @@ function self_command(command)
 	elseif command == 'LearningOn' then
 		sets.aftercast.TP = sets.TP.Learning
 		--sets.aftercast.Idle = sets.aftercast.TP
-		--equip({body="Assim. Jubbah", hands="Assim. Bazu.", legs="Mavi Tayt +2"})
+		--equip({body="Assim. Jubbah", hands="Assim. Bazu.", legs="Hashishin Tayt +1"})
 		equip(sets.TP.Learning)
 		disable('head', 'body', 'hands', 'back', 'legs', 'feet')
 		--send_command('@wait 0.5; gs disable body hands legs;')
