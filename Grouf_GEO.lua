@@ -43,7 +43,7 @@ function get_sets()
 	sets.midcast = {}
 
 	sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabnax Hat",
-		neck="Imbodla Necklace",left_ear="Mendi. Earring",right_ear="Lifestorm Earring",body="Geomancy Tunic",
+		neck="Nodens Gorget",left_ear="Mendi. Earring",right_ear="Lifestorm Earring",body="Geomancy Tunic",
 		hands="Telchine Gloves",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Rumination Sash",legs="Doyen Pants",feet="Medium's Sabots"} --MND=96+171, Cure Pot.=50%
 
@@ -55,7 +55,7 @@ function get_sets()
 	sets.midcast.Geomancy = {main="Staccato Staff",sub="Mephitis Grip" ,range="Dunna",
 		head="Azimuth Hood +1", neck="Deviant Necklace", right_ear="Gwati Earring", left_ear="Mendi. Earring",
 		body="Bagua Tunic +1", hands="Geo. Mitaines +1",
-		back="Lifestream Cape",	waist="Sekhmet Corset", legs="Bagua Pants", feet="Azimuth Gaiters"}
+		back="Lifestream Cape",	waist="Sekhmet Corset", legs="Bagua Pants", feet="Azimuth Gaiters +1"}
 			--Geomancy Skill:	394+53 = 447
 			--Handbell Skill:	389+?? = 412
 			--Total:			859
@@ -74,7 +74,7 @@ function get_sets()
 	sets.midcast.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero +1",
 		neck="Eddy Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Helios Jacket",
 		hands="Lurid Mitts",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
-		waist="Yamabuki-no-Obi",legs="Azimuth Tights",feet="Hagondes Sabots"}
+		waist="Yamabuki-no-Obi",legs="Azimuth Tights +1",feet="Hagondes Sabots"}
 
 	sets.TP = {
 		head="Nahtirah Hat", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
@@ -146,7 +146,7 @@ function midcast(spell)
 	elseif spell.skill == 'Enhancing Magic' then
 			equip(sets.midcast.Enhancing)
 		if spell.english == 'Stoneskin' then
-			equip({waist="Siegel Sash", neck="Stone Gorget"})
+			equip({waist="Siegel Sash", neck="Nodens Gorget"})
 		elseif spell.english:startswith('Regen') then
 			equip({main="Bolelabunga", body="Telchine Chas."})
 		end
