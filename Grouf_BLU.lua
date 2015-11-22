@@ -106,7 +106,7 @@ function get_sets()
 	sets.precast.Rest = sets.precast.Idle
 
 	sets.precast.FastCast = {head="Haruspex Hat",left_ear="Loquacious earring",
-		body="Hashishin Mintan",hands="Mv. Bazubands +2",left_ring="Weather. Ring", right_ring="Prolix Ring",
+		body="Hashishin Mintan",hands="Hashi. Bazubands",left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith cape",waist="Witful belt",
 		legs="Orvail Pants +1",feet="Qaaxo Leggings"}--23% Fast Cast, 16% Haste, Blue Magic Casting time -12%
 
