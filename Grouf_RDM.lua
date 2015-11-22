@@ -64,7 +64,7 @@ function get_sets()
 			-- 54% Fast Cast, 22% Haste
 
 	sets.Idle = {main="Emissary", sub="Genbu's Shield", ammo="Brigantia Pebble",
-		head="Viti. Chapeau +1", neck="Twilight Torque", left_ear="Lifestorm Earring", right_ear="Etiolation Earring",
+		head="Viti. Chapeau +1", neck="Sanctity Necklace", left_ear="Lifestorm Earring", right_ear="Etiolation Earring",
 		body="Atrophy Tabard +1", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
 
