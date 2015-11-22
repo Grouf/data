@@ -70,21 +70,38 @@ function get_sets()
 		--Last Stand = 73-85% AGI
 
 --[[ New TP sets
-	sets.DD = {put in here sets.TP.DD}
+	sets.JA.waltz = {}  --need CHR (and VIT added from target)
+	
+	sets.DD = {}
+	sets.DD.TH = {}
 	sets.DD.MidAcc = {}
+	sets.DD.MidAcc.TH = {}
 	sets.DD.HighAcc = {}
-
-	sets.TH = {}
-	sets.TH.TH.MidAcc = {}
-	sets.TH.TH.HighAcc = {}
-
-	sets.Dynamis = {}
-	sets.Dynamis.MidAcc = {}
-	sets.Dynamis.HighAcc = {}
-
+	sets.DD.HighAcc.TH = {}
+	
 	sets.DT = {}
 	sets.DT.TH = {}
-
+	sets.DT.MidAcc = {}
+	sets.DT.MidAcc.TH = {}
+	sets.DT.HighAcc = {}
+	sets.DT.HighAcc.TH = {}
+	
+	sets.Ranged = {}
+	sets.Ranged.MidAcc = {}
+	sets.Ranged.HighAcc = {}
+	
+	sets.SA = {}
+	sets.TA = {}
+	sets.SATA = {}  --use for Mug due to Job Points
+	
+	sets.WS = {} --need single/multi-hit?
+	sets.WS.MidAcc = {}
+	sets.WS.HighAcc = {}
+	
+	sets.WS.Magic = {}	--need acc?
+	
+	
+	--Need set swaps like RDM
 ]]
 
 	sets.TP = {}
@@ -116,7 +133,6 @@ function get_sets()
 
 	sets.dontforget = {main="Izhiikoh", range="Tsoa. Crossbow", ammo="Gashing Bolt",
 		neck="Ygnas's Resolve +1", right_ear="Reraise Earring", left_ring="Gash. Bolt Quiver"}
-		--sub="Sandung", 
 end
 
 function precast(spell)
