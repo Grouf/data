@@ -14,13 +14,13 @@ function get_sets()
 		hands="Geo. Mitaines +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants",feet="Helios Boots"}  --Fast Cast = 47%
 
-	sets.precast.IdleRefresh = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",
+	sets.precast.IdleRefresh = {main="Bolelabunga",sub="Genmei Shield",range="Dunna",
 		neck="Twilight Torque", left_ear="Psystorm Earring", right_ear="Etiolation Earring",
 		body="Respite Cloak", hands="Bagua Mitaines", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Geomancy Sandals"}
 	--Repulse Mantle
 	--Mecisto. Mantle
-	sets.precast.IdleLuopan = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
+	sets.precast.IdleLuopan = {main="Bolelabunga", sub="Genmei Shield", range="Dunna",
 		head="Azimuth Hood +1", neck="Twilight Torque", left_ear="Psystorm Earring", right_ear="Etiolation Earring",
 		body="Azimuth Coat +1", hands="Geo. Mitaines +1", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Psycloth Lappas", feet="Bagua Sandals +1"}
@@ -42,7 +42,7 @@ function get_sets()
 --Midcast
 	sets.midcast = {}
 
-	sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Kaabnax Hat",
+	sets.midcast.Cure = {main="Tamaxchi",sub="Genmei Shield",ammo="Oreiad's Tathlum",head="Kaabnax Hat",
 		neck="Nodens Gorget",left_ear="Mendi. Earring",right_ear="Lifestorm Earring",body="Geomancy Tunic",
 		hands="Telchine Gloves",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Rumination Sash",legs="Doyen Pants",feet="Medium's Sabots"} --MND=96+171, Cure Pot.=50%
@@ -64,7 +64,7 @@ function get_sets()
 	--Enhancing needs work
 	sets.midcast.Enhancing = {body="Telchine Chas.", head="Befouled Crown", neck="Colossus's Torque",
 		hands="Augur's Gloves", left_ear="Loquac. Earring", right_ear="Andoaa Earring",
-		waist="Olympus Sash",legs="Shedir Seraweels",feet="Geomancy Sandals"}
+		waist="Olympus Sash",legs="Shedir Seraweels", feet="Inspirited Boots"}
 
 	sets.midcast.ElementalMagic = {main="Serenity",sub="Mephitis Grip",ammo="Ghastly Tathlum",head="Helios Band",
 		neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Count's Garb",

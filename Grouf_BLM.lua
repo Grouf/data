@@ -40,7 +40,7 @@ function get_sets()
 	sets.midcast.Enhancing = {main="Marin Staff +1",
 		head="Befouled Crown", neck="Colossus's Torque", left_ear="Loquac. Earring", right_ear="Andoaa Earring",
 		body="Telchine Chas.", hands="Augur's Gloves",
-		back="Swith Cape", waist="Olympus Sash", legs="Shedir Seraweels", feet="Helios Boots"}
+		back="Swith Cape", waist="Olympus Sash", legs="Shedir Seraweels", feet="Inspirited Boots"}
 
 	sets.midcast.ElementalMagic = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Ghastly Tathlum",
 		head="Helios Band", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",

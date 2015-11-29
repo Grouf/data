@@ -63,12 +63,12 @@ function get_sets()
 		waist="Witful Belt", legs="Artsieq Hose", feet="Taeon Boots"}
 			-- 54% Fast Cast, 22% Haste
 
-	sets.Idle = {main="Emissary", sub="Genbu's Shield", ammo="Brigantia Pebble",
+	sets.Idle = {main="Emissary", sub="Genmei Shield", ammo="Brigantia Pebble",
 		head="Viti. Chapeau +1", neck="Sanctity Necklace", left_ear="Lifestorm Earring", right_ear="Etiolation Earring",
 		body="Atrophy Tabard +1", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
 
-	sets.Idle.DT = {main="Emissary",sub="Genbu's Shield", ammo="Brigantia Pebble",
+	sets.Idle.DT = {main="Emissary",sub="Genmei Shield", ammo="Brigantia Pebble",
 		head="Rabid Visor", neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Soil Pearl",
 		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +1", feet="Leth. Houseaux +1"}
@@ -174,7 +174,7 @@ function get_sets()
 		back="Ghostfyre Cape", waist="Rumination Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux +1"}
 		--Cure Pot.: 51%, Cure casting -0%, Haste: 20%, MND: 91+202, VIT: 82+88, Healing Magic: 426
 
-	sets.Enhancing = {main="Arendsi Fleuret", sub="Genbu's Shield",
+	sets.Enhancing = {main="Arendsi Fleuret", sub="Genmei Shield",
 		head="Befouled Crown", neck="Colossus's Torque", left_ear="Estq. Earring", right_ear="Andoaa Earring",
 		body="Viti. Tabard +1", hands="Atrophy Gloves +1", left_ring="Weather. Ring",  right_ring="Prolix Ring",
 		back="Ghostfyre Cape", waist="Olympus Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux +1"}
@@ -222,7 +222,7 @@ function get_sets()
 		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +1", feet="Battlecast Gaiters"}
 			--RDM/blm
 			--Without Weapon/Shield: Acc: 258, Att: 210, EVA: 680, DEF: 786, PDT: -35%
-			--need to add Emissary & Genbu's Shield
+			--need to add Emissary & Genmei Shield
 
 	sets.DT.MidAcc = set_combine(sets.DT, {right_ear="Heartseeker Earring", waist="Olseni Belt"})
 			--Without Weapon/Shield: Acc: 286, Att: 196, EVA: 680, DEF: 787, PDT: -31%
@@ -502,7 +502,7 @@ function aftercast(spell)
 	--[[Need triggers for these:
 	*Mecisto.
 	*Repulse
-	*Genbu's Shield
+	*Genmei Shield
 	*Beatific Shield +1
 	*sets.Idle = sets.precast.IdleRefresh
 	*sets.Rest = set_combine(sets.Idle,{main="Bolelabunga"})

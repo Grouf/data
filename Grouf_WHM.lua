@@ -23,7 +23,7 @@ function get_sets()
 
 	sets.precast = {}
 
-	sets.precast.Idle= {main="Bolelabunga",sub="Genbu's Shield",ammo="Oreiad's Tathlum",
+	sets.precast.Idle= {main="Bolelabunga",sub="Genmei Shield",ammo="Oreiad's Tathlum",
 		neck="Morgana's Choker",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",body="Respite Cloak",
 		hands="Serpentes Cuffs",left_ring="Sirona's Ring",right_ring="Solemn Ring",back="Pahtli Cape",
 		waist="Cleric's Belt",legs="Assid. Pants +1",feet="Serpentes Sabots"}
@@ -36,12 +36,12 @@ function get_sets()
 		waist="Witful Belt",legs="Artsieq Hose",feet="Piety Duckbills"} -- 44% Fast Cast
 
 	sets.midcast = {}
-	sets.midcast.Cure = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Theophany Cap",
+	sets.midcast.Cure = {main="Tamaxchi", sub="Genmei Shield", ammo="Oreiad's Tathlum", head="Theophany Cap",
 		neck="Imbodla Necklace", left_ear="Loquac. Earring", right_ear="Lifestorm Earring", body="Gende. Bilaut +1",
 		hands="Theophany Mitts", left_ring="Sirona's Ring", right_ring="Solemn Ring", back="Mending Cape",
 		waist="Cleric's Belt", legs="Orsn. Pantaln. +2", feet="Piety Duckbills"} --Cure Potency 52%
 
-	sets.midcast.CureMulti = {main="Tamaxchi", sub="Genbu's Shield", ammo="Oreiad's Tathlum", head="Theophany Cap",
+	sets.midcast.CureMulti = {main="Tamaxchi", sub="Genmei Shield", ammo="Oreiad's Tathlum", head="Theophany Cap",
 		neck="Imbodla Necklace", left_ear="Loquac. Earring", right_ear="Lifestorm Earring", body="Gende. Bilaut +1",
 		hands="Theophany Mitts", left_ring="Sirona's Ring", right_ring="Solemn Ring", back="Pahtli Cape",
 		waist="Cleric's Belt", legs="Orsn. Pantaln. +2", feet="Piety Duckbills"} --Cure Potency 52%
@@ -88,12 +88,12 @@ function get_sets()
 
 	sets.TP = {}
 
-	sets.TP.Engage = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
+	sets.TP.Engage = {main="Tamaxchi",sub="Genmei Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
 		neck="Asperity Necklace",left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Gende. Bilaut +1",
 		hands="Gende. Gages +1",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
 		waist="Windbuffet Belt",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 
-	sets.TP.WS = {main="Tamaxchi",sub="Genbu's Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
+	sets.TP.WS = {main="Tamaxchi",sub="Genmei Shield",ammo="Oreiad's Tathlum",head="Gende. Caubeen",
 		neck="Asperity Necklace",left_ear="Moonshade Earring",right_ear="Bladeborn Earring",body="Gende. Bilaut +1",
 		hands="Gende. Gages +1",left_ring="Rajas Ring",right_ring="Cho'j Band",back="Buquwik Cape",
 		waist="Windbuffet Belt",legs="Gendewitha Spats",feet="Gende. Galoshes"}
@@ -174,6 +174,8 @@ function midcast(spell)
 		end
 		if spell.english == 'Stoneskin' then
 			equip({waist="Siegel Sash", neck="Nodens Gorget"})
+		elseif spell.english == 'Refresh' then
+			equip({feet="Inspirited Boots"})
 		end
 
 	elseif spell.skill == 'Divine Magic' then
