@@ -87,30 +87,30 @@ function get_sets()
 		back="Refraction Cape", waist="Rumination Sash", legs="Psycloth Lappas", feet="Uk'uxkaj Boots"}
 			--RDM/blm
 			--Potency:
-			--Magic Accuracy:	+140
-			--Enfeeble Skill:	526
-			--Total:			666 (709 including JP/Gift Magic Acc Bonus (+43))
-			--MND:				98+211
+			--Magic Accuracy:	110 (140 with staff and grip)
+			--Enfeeble Skill:	529 (534 with strap)
+			--Total:			639 (717 including JP/Gift Magic Acc Bonus (+43))
+			--MND:				106+211 = 317
 			--INT:				101+168
 
 	sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble ,{ammo="Kalboron Stone", 
 		feet="Medium's Sabots"})
 			--RDM/blm
 			--Mid-Acc:
-			--Magic Accuracy:	+168
-			--Enfeeble Skill:	541
-			--Total:			709 (752 including JP/Gift Magic Acc Bonus(+43))
-			--MND:				98+213
+			--Magic Accuracy:	138 (168 with staff and grip)
+			--Enfeeble Skill:	544 (549 with strap)
+			--Total:			682 (760 including JP/Gift Magic Acc Bonus(+43))
+			--MND:				106+213 = 319
 			--INT:				101+170
 
 	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc ,{head="Befouled Crown", body="Atrophy Tabard +1",
 		right_ring="Sangoma Ring", back="Ghostfyre Cape"})
 			--RDM/blm
 			--High-Acc:
-			--Magic Accuracy:	+176
-			--Enfeeble Skill:	557
-			--Total:			733 (776 including JP/Gift Magic Acc Bonus(+43))
-			--MND:				98+198
+			--Magic Accuracy:	151 (181 with staff and grip)
+			--Enfeeble Skill:	554 (559 with strap)
+			--Total:			705 (783 including JP/Gift Magic Acc Bonus(+43))
+			--MND:				106+198 = 304
 			--INT:				101+172
 
 	--Lethargy Sayon +1 is currently best-in-slot for all enfeebles (??)
@@ -136,20 +136,20 @@ function get_sets()
 
 	--sets.Dispel.HighAcc = {}
 
-	sets.Elemental = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Ghastly Tathlum",
+	sets.Elemental = {main="Marin Staff +1", sub="Niobid Strap", ammo="Ghastly Tathlum",
 		head="Helios Band", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Count's Garb", hands="Helios Gloves", left_ring="Strendu Ring", right_ring="Acumen Ring",
 		back="Toro Cape", waist="Yamabuki-no-Obi", legs="Hagondes Pants +1", feet="Helios Boots"}
-			--MAB=213, m.Acc: 88 (316 w/Weapon skill)
+			--MAB=218, m.Acc: 88 (316 w/Weapon skill)
 
 	sets.Elemental.MidAcc = set_combine(sets.Elemental, {ammo="Kalboron Stone",
 		left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		left_ring="Weather. Ring", right_ring="Sangoma Ring"})
-			--MAB=189, m.Acc: 120 (348 w/Weapon skill)
+			--MAB=194, m.Acc: 120 (348 w/Weapon skill)
 
 	sets.Elemental.HighAcc = set_combine(sets.Elemental.MidAcc, {main="Serenity", 
 		body="Helios Jacket"})
-		--MAB=176, m.Acc: 147 (348 w/Weapon skill)
+		--MAB=180, m.Acc: 147 (348 w/Weapon skill)
 
 	sets.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Ghastly Tathlum",
 		head="Helios Band", neck="Eddy Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
@@ -169,10 +169,10 @@ function get_sets()
 			--Fast Cast: 51%, Haste: 26%, M.Acc: 117 (344 w/weapon skill)
 
 	sets.Cure = {main="Serenity", sub="Mephitis Grip", ammo="Oreiad's Tathlum",
-		head="Viti. Chapeau +1", neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Soil Pearl",
-		body="Viti. Tabard +1", hands="Telchine Gloves", left_ring="Solemn Ring", right_ring="Sirona's Ring",
+		head="Viti. Chapeau +1", neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Mendi. Earring",
+		body="Viti. Tabard +1", hands="Telchine Gloves", left_ring="Globidonta Ring", right_ring="Sirona's Ring",
 		back="Ghostfyre Cape", waist="Rumination Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux +1"}
-		--Cure Pot.: 51%, Cure casting -0%, Haste: 20%, MND: 91+202, VIT: 82+88, Healing Magic: 426
+		--Cure Pot.: 50%, Cure casting -20%, Haste: 20%, MND: 91+211, VIT: 82+85, Healing Magic: 426
 
 	sets.Enhancing = {main="Arendsi Fleuret", sub="Genmei Shield",
 		head="Befouled Crown", neck="Colossus's Torque", left_ear="Estq. Earring", right_ear="Andoaa Earring",
@@ -183,12 +183,18 @@ function get_sets()
 	sets.EnhancingOther = set_combine(sets.Enhancing, {head="Lethargy Chappel +1",
 		body="Lethargy Sayon +1", hands="Atrophy Gloves +1", legs="Leth. Fuseau +1"})
 
-	sets.Spikes = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Ghastly Tathlum",
-		head="Atro. Chapeau +1", neck="Imbodla Necklace", left_ear="Crematio Earring", right_ear="Psystorm Earring",
-		body="Count's Garb", hands="Atrophy Gloves +1", left_ring="Icesoul Ring", right_ring="Spiral Ring",
-		back="Toro Cape", waist="Caudata Belt", legs="Psycloth Lappas", feet="Umbani Boots"}
+	sets.Spikes = {main="Marin Staff +1", sub="Niobid Strap", ammo="Ghastly Tathlum",
+		head="Leth. Chappel +1", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
+		body="Count's Garb", hands="Telchine Gloves", left_ring="Strendu Ring", right_ring="Acumen Ring",
+		back="Toro Cape", waist="Yamabuki-no-Obi", legs="Psycloth Lappas", feet="Inspirited Boots"}
 			--spike damage gear only works while equipped
 			--INT at casting makes spikes do more damage: adjust above to max INT
+			--formula is floor( ( INT + 50) / 12 )
+			--cap: blaze=25, ice&lightning=15
+			--based on formula only need 250 INT to get cap
+			--after cap stack MAB (not sure if carries over after gear change)
+		--INT +171 (no weapon)
+		--MAB 137 (no weapon)
 
 	sets.Enspells = set_combine(sets.Enhancing, {back="Ghostfyre Cape"})
 

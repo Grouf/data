@@ -21,9 +21,9 @@ function get_sets()
 	ElementalWeaponSkills = S{'Blade:Teki', 'Blade: To', 'Blade: Ei', 'Blade: Yu'}
 
 	sets.JA = {}
-	sets.JA.Innin = {head="Iga Zukin +2"}
-	sets.JA.Yonin = {legs="Iga Hakama +2"}
-	sets.JA.Futae = {hands="Iga Tekko +2"}
+	sets.JA.Innin = {head="Hattori Zukin"}
+	sets.JA.Yonin = {legs="Hattori Hakama"}
+	sets.JA.Futae = {hands="Hattori Tekko"}
 	--sets.JA.Sange = {body="Mochi. Chainmail"}
 	sets.JA['Mijin Gakure'] = {legs="Mochizuki Hakama"}
 
@@ -52,9 +52,9 @@ function get_sets()
 																				--19% Fast Cast
 																				--18% Utsusemi -casting
 	sets.midcast = {}
-	sets.midcast.Utsusemi = {body="Taeon Tabard", hands="Mochizuki Tekko", feet="Iga Kyahan +2"}
+	sets.midcast.Utsusemi = {body="Taeon Tabard", hands="Mochizuki Tekko", feet="Hattori Kyahan +1"}
 
-	sets.midcast["Migawari: Ichi"] = {body="Iga Ningi +2"}
+	sets.midcast["Migawari: Ichi"] = {body="Hattori Ningi +1"}
 
 	sets.midcast.Enfeeble = {head="Hachiya Hatsuburi", left_ear="Lifestorm Earring",
 		right_ear="Psystorm Earring",body="Mekosu. Harness", hands="Mochizuki Tekko",
@@ -73,7 +73,7 @@ function get_sets()
 		right_ring="Rajas Ring",back="Yokaze Mantle",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Otronif Boots +1"}
 
-	sets.WS["Blade: Hi"] = set_combine(sets.WS.Base,{hands="Iga Tekko +2"}) --AGI
+	sets.WS["Blade: Hi"] = set_combine(sets.WS.Base,{hands="Hattori Tekko"}) --AGI
 
 	sets.WS["Blade: Shun"] = sets.WS.Base --DEX
 
@@ -205,7 +205,7 @@ end
 function buff_change(buff_name,gain) --gain = True if gained, False if lost
 	if buff_name=='Migawari' then
 		if gain then
-			equip({body="Iga Ningi +2"}) -- Need to verify this works
+			equip({body="Hattori Ningi +1"}) -- Need to verify this works
 			disable('body')
 			--send_command('@wait 0.5; gs disable body;')
 			add_to_chat(9, 'Migawari status detected, Empy body on, Body disabled')

@@ -31,7 +31,7 @@ function get_sets()
 	sets.midcast.Enfeeble = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Befouled Crown", neck="Imbodla Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Helios Jacket", hands="Lurid Mitts", left_ring="Globidonta Ring", right_ring="Sangoma Ring",
-		back="Refraction Cape", waist="Rumination Sash", legs="Psycloth Lappas", feet="Hagondes Sabots"}
+		back="Refraction Cape", waist="Rumination Sash", legs="Psycloth Lappas", feet="Hagondes Sabots"}--check medium's sabots
 			--M.Acc: 149
 			--Enfeebling: 450
 			--MND: 267

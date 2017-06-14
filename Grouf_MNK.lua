@@ -14,9 +14,10 @@ function get_sets()
 	sets.precast.Dodge = {feet="Anchorite's Gaiters"}
 	sets.precast.Focus = {head="Anchorite's Crown"}
 	sets.precast.Boost = {hands="Anchorite's Gloves"}
-	sets.precast.Impetus = {body="Tantra Cyclas +2"}
+	sets.precast.Impetus = {body="Bhikku Cyclas +1"}
 	sets.precast.Mantra = {feet="Hes. Gaiters"}
 	sets.precast['Formless Strikes'] = {body="Hes. Cyclas"}
+	sets.precast['Perfect Counter'] = {head="Bhikku Crown"}
 	sets.precast['Hundred Fists'] = {body="Hes. Hose"}
 	
 	

@@ -58,7 +58,7 @@ function get_sets()
 	sets.midcast.Enfeeble= {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Theo. Briault",
 		hands="Gende. Gages +1",left_ring="Globidonta Ring",right_ring="Sangoma Ring",back="Refraction Cape",
-		waist="Yamabuki-no-Obi",legs="Psycloth Lappas",feet="Piety Duckbills"}
+		waist="Yamabuki-no-Obi",legs="Psycloth Lappas",feet="Piety Duckbills"} --check medium's sabots
 
 	sets.midcast.DRKMagic= {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Buremte Hat",
 		neck="Eddy Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Gende. Bilaut +1",
