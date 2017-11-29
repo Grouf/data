@@ -18,15 +18,16 @@ function get_sets()
 	sets.JA.Feint = {legs="Plun. Culottes"}
 	sets.JA["Assassin's Charge"] = {feet="Plun. Poulaines"}
 	sets.JA["Sneak Attack"] = {hands="Skulker's Armlets"}
+	sets.JA["Trick Attack"] = { } --AGI increase Damage
 
 	sets.JA.Step = {head="Whirlpool Mask", neck="Iqabi Necklace", left_ear="Steelflash Earring",
 		right_ear="Zennaroi Earring", body="Mekosu. Harness", hands="Plun. Armlets +1", left_ring="Rajas Ring",
 		right_ring="Beeline Ring", back="Letalis Mantle", waist="Olseni Belt",
-		legs="Feast Hose", feet="Qaaxo Leggings"}
+		legs="Feast Hose", feet="Qaaxo Leggings"}  --need accuracy
 
 	sets.JA['Violent Flourish'] = set_combine(sets.JA.Step, {
 		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Weather. Ring",
-		right_ring="Sangoma Ring", legs="Iuitl Tights +1"})
+		right_ring="Sangoma Ring", legs="Iuitl Tights +1"}) --Accuracy for hit, Magic Accuracy for Stun
 
 	sets.FastCast = {head="Haruspex Hat", neck="Magoraga Beads",
 		left_ear="Etiolation Earring", right_ear="Loquac. Earring",
@@ -38,7 +39,9 @@ function get_sets()
 	sets.Ranged = {head="Umbani Cap", neck="Ocachi Gorget", left_ear="Volley earring",
 		right_ear="Enervating Earring", body="Mekosu. Harness", hands="Buremte Gloves", left_ring="Fistmele Ring",
 		right_ring="Paqichikaji Ring", back="Libeccio Mantle", waist="Eschan Stone",
-		legs="Pursuer's Pants", feet="Scopuli Nails +1"}
+		legs="Pursuer's Pants", feet="Scopuli Nails +1"} 
+		--AGI for Ranged Accuracy: 4AGI=3R.Acc
+		--STR for Ranged Attack
 
 	sets.Ranged.MidAcc = set_combine(sets.Ranged,{neck="Marked Gorget"})
 
@@ -62,12 +65,12 @@ function get_sets()
 
 	sets.WS["Last Stand"] = set_combine(sets.Ranged, {neck="Fotia Gorget", waist="Caudata Belt"})
 
-		--"Rudra's Storm" = DEX80%
-		--Evisceration = DEX50%
-		--Dancing Edge = 40% DEX, 40% CHR
-		--Mandalic Stab = 60% DEX
-		--Shark Bite = 40% DEX, 40% AGI
-		--Last Stand = 73-85% AGI
+		--"Rudra's Storm" = DEX80%			TP:Damage
+		--Evisceration = DEX50%				TP:
+		--Dancing Edge = 40% DEX, 40% CHR	TP:Accuracy
+		--Mandalic Stab = 60% DEX			TP:
+		--Shark Bite = 40% DEX, 40% AGI		TP:
+		--Last Stand = 73-85% AGI			TP:
 
 --[[ New TP sets
 	sets.JA.waltz = {}  --need CHR (and VIT added from target)
@@ -110,9 +113,10 @@ function get_sets()
 		right_ring="Epona's Ring",back="Canny Cape",waist="Windbuffet Belt",
 		legs="Taeon Tights",feet="Taeon Boots"}
 
-	sets.TP.TH = set_combine(sets.TP.DD, {hands="Plun. Armlets +1"})
+	sets.TP.TH = set_combine(sets.TP.DD, {hands="Plun. Armlets +1", feet="Skulk. Poulaines +1"})
 
-	sets.TP.Dynamis = set_combine(sets.TP.TH, {neck="Nefarious Collar", feet="Skulk. Poulaines +1"})
+	sets.TP.Dynamis = set_combine(sets.TP.TH, {neck="Nefarious Collar", hands="Plun. Armlets +1",
+		feet="Skulk. Poulaines +1"})
 
 	sets.TP.Accuracy = {head="Taeon Chapeau",neck="Iqabi Necklace",left_ear="Steelflash Earring",
 	right_ear="Zennaroi Earring",body="Emet Harness +1",hands="Plun. Armlets +1",left_ring="Rajas Ring",

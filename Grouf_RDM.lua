@@ -44,6 +44,8 @@ function get_sets()
 		head="Atro. Chapeau +1", right_ear="Soil Pearl", left_ear="Soil Pearl",
 		body="Viti. Tabard +1", hands="Atrophy Gloves +1", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
 		back="Refraction Cape", waist="Caudata Belt", legs="Leth. Fuseau +1", feet="Atrophy Boots +1"}
+		--Cure, Healing Waltz = Erase
+		--CHR of caster, VIT of Target
 
 	sets.JA.Step = {ammo="Paeapua",
 		head="Taeon Chapeau", neck="Iqabi Necklace", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
@@ -56,6 +58,7 @@ function get_sets()
 		body="Helios Jacket", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Ghostfyre Cape", waist="Famine Sash", legs="Leth. Fuseau +1", feet="Hagondes Sabots"}
 		--M.Acc = 174, No Weapon Prim.Acc = 161
+		--Stuns
 
 	sets.FastCast = {main="Marin Staff +1", sub="Mephitis Grip",
 		head="Atro. Chapeau +1", left_ear="Estq. Earring", right_ear="Loquac. Earring",
@@ -65,8 +68,9 @@ function get_sets()
 
 	sets.Idle = {main="Emissary", sub="Genmei Shield", ammo="Brigantia Pebble",
 		head="Viti. Chapeau +1", neck="Sanctity Necklace", left_ear="Lifestorm Earring", right_ear="Etiolation Earring",
-		body="Atrophy Tabard +1", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Succor Ring",
+		body="Atrophy Tabard +2", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
+		--Refresh
 
 	sets.Idle.DT = {main="Emissary",sub="Genmei Shield", ammo="Brigantia Pebble",
 		head="Rabid Visor", neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Soil Pearl",
@@ -76,42 +80,46 @@ function get_sets()
 
 	sets.Idle.MDT = {main="Emissary",sub="Beatific Shield +1", ammo="Brigantia Pebble",
 		head="Atro. Chapeau +1", neck="Twilight Torque", left_ear="Zennaroi Earring", right_ear="Etiolation Earring",
-		body="Lethargy Sayon +1", hands="Atrophy Gloves +1", left_ring="Shadow Ring", right_ring="Succor Ring",
+		body="Atrophy Tabard +2", hands="Atrophy Gloves +1", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
-		-- MDB: 28, MDT: -33%, M.Eva: 417
+		-- MDB: 28, M.Eva: 421, MDT: -28%, DT: -8%, PTD: -11%, Evasion: 191
 
 
 	sets.Enfeeble = {main="Serenity", sub="Mephitis Grip", ammo="Oreiad's Tathlum",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Lethargy Sayon +1", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Globidonta Ring",
-		back="Refraction Cape", waist="Rumination Sash", legs="Psycloth Lappas", feet="Uk'uxkaj Boots"}
+		body="Atrophy Tabard +2", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Globidonta Ring",
+		back="Sucellos's Cape", waist="Rumination Sash", legs="Psycloth Lappas", feet="Uk'uxkaj Boots"}
 			--RDM/blm
 			--Potency:
-			--Magic Accuracy:	110 (140 with staff and grip)
-			--Enfeeble Skill:	529 (534 with strap)
-			--Total:			639 (717 including JP/Gift Magic Acc Bonus (+43))
-			--MND:				106+211 = 317
-			--INT:				101+168
+			--Magic Accuracy:	145 (175 with staff and grip)
+			--Enfeeble Skill:	558 (563 with strap)
+			--JP/Gift:			65
+			--Total:			768 (803)
+			--MND:				106+226 = 332
+			--INT:				101+171 = 272
+			--***Lethargy Sayon +1*** for solo as solo is lower level mobs; figure out how
 
 	sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble ,{ammo="Kalboron Stone", 
 		feet="Medium's Sabots"})
 			--RDM/blm
 			--Mid-Acc:
-			--Magic Accuracy:	138 (168 with staff and grip)
-			--Enfeeble Skill:	544 (549 with strap)
-			--Total:			682 (760 including JP/Gift Magic Acc Bonus(+43))
-			--MND:				106+213 = 319
-			--INT:				101+170
+			--Magic Accuracy:	173 (203 with staff and grip)
+			--Enfeeble Skill:	573 (578 with strap)
+			--JP/Gift:			65
+			--Total:			811 (846)
+			--MND:				106+228 = 334
+			--INT:				101+173 = 274
 
-	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc ,{head="Befouled Crown", body="Atrophy Tabard +1",
-		right_ring="Sangoma Ring", back="Ghostfyre Cape"})
+	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc ,{head="Befouled Crown", range="Aureole",
+		neck="Incanter's Torque", right_ring="Sangoma Ring"})
 			--RDM/blm
 			--High-Acc:
-			--Magic Accuracy:	151 (181 with staff and grip)
-			--Enfeeble Skill:	554 (559 with strap)
-			--Total:			705 (783 including JP/Gift Magic Acc Bonus(+43))
-			--MND:				106+198 = 304
-			--INT:				101+172
+			--Magic Accuracy:	205 (235 with staff and grip)
+			--Enfeeble Skill:	567 (572 with strap)
+			--JP/Gift:			65
+			--Total:			837 (872)
+			--MND:				106+215 = 321
+			--INT:				101+180 = 281
 
 	--Lethargy Sayon +1 is currently best-in-slot for all enfeebles (??)
 		--Ischemia Chasuble gives +6 m.Acc over Lethargy Sayon +1
@@ -124,7 +132,7 @@ function get_sets()
 
 	sets.INTEnfeeble.MidAcc = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Kalboron Stone",
 		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Atrophy Tabard +1", hands="Lurid Mitts", left_ring="Weather. Ring", right_ring="Sangoma Ring",
+		body="Atrophy Tabard +2", hands="Lurid Mitts", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Ghostfyre Cape", waist="Yamabuki-no-Obi", legs="Psycloth Lappas", feet="Vitivation Boots +1"} --M.Acc 360
 
 	sets.INTEnfeeble.HighAcc = {}
@@ -139,8 +147,12 @@ function get_sets()
 	sets.Elemental = {main="Marin Staff +1", sub="Niobid Strap", ammo="Ghastly Tathlum",
 		head="Helios Band", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Count's Garb", hands="Helios Gloves", left_ring="Strendu Ring", right_ring="Acumen Ring",
-		back="Toro Cape", waist="Yamabuki-no-Obi", legs="Hagondes Pants +1", feet="Helios Boots"}
-			--MAB=218, m.Acc: 88 (316 w/Weapon skill)
+		back="Sucellos's Cape", waist="Yamabuki-no-Obi", legs="Hagondes Pants +1", feet="Helios Boots"}
+			--Magic Attack Bonus:	185 (218 with Weapon&Strap)
+			--Magic Accuracy:		88 (108 w/Weapon&Strap)
+			--Magic Damage:			46
+			--INT:					101+171 = 272
+			--Elemental Skill:		394
 
 	sets.Elemental.MidAcc = set_combine(sets.Elemental, {ammo="Kalboron Stone",
 		left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
@@ -167,18 +179,20 @@ function get_sets()
 		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Ghostfyre Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Medium's Sabots"}
 			--Fast Cast: 51%, Haste: 26%, M.Acc: 117 (344 w/weapon skill)
+			--This used for Tojil, need to make for Magic Accuracy
 
-	sets.Cure = {main="Serenity", sub="Mephitis Grip", ammo="Oreiad's Tathlum",
+	sets.Cure = {main="Serenity", sub="Achaq Grip", ammo="Oreiad's Tathlum",
 		head="Viti. Chapeau +1", neck="Estoqueur's Collar", left_ear="Lifestorm Earring", right_ear="Mendi. Earring",
 		body="Viti. Tabard +1", hands="Telchine Gloves", left_ring="Globidonta Ring", right_ring="Sirona's Ring",
-		back="Ghostfyre Cape", waist="Rumination Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux +1"}
-		--Cure Pot.: 50%, Cure casting -20%, Haste: 20%, MND: 91+211, VIT: 82+85, Healing Magic: 426
+		back="Pahtli Cape", waist="Rumination Sash", legs="Atrophy Tights +1", feet="Vanya Clogs"}
+		--Cure Pot.: 55%, Cure casting -27%, Haste: 20%, MND: 106+212, VIT: 97+83, Healing Magic: 466
 
 	sets.Enhancing = {main="Arendsi Fleuret", sub="Genmei Shield",
 		head="Befouled Crown", neck="Colossus's Torque", left_ear="Estq. Earring", right_ear="Andoaa Earring",
 		body="Viti. Tabard +1", hands="Atrophy Gloves +1", left_ring="Weather. Ring",  right_ring="Prolix Ring",
 		back="Ghostfyre Cape", waist="Olympus Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux +1"}
 		--skill=522}
+		--Ghostfyre Cape gives Haste 17m ||  Sucellos's Cape gives Haste 16m
 
 	sets.EnhancingOther = set_combine(sets.Enhancing, {head="Lethargy Chappel +1",
 		body="Lethargy Sayon +1", hands="Atrophy Gloves +1", legs="Leth. Fuseau +1"})
@@ -190,8 +204,8 @@ function get_sets()
 			--spike damage gear only works while equipped
 			--INT at casting makes spikes do more damage: adjust above to max INT
 			--formula is floor( ( INT + 50) / 12 )
-			--cap: blaze=25, ice&lightning=15
-			--based on formula only need 250 INT to get cap
+			--damage cap: blaze=25, ice&lightning=15
+			--based on formula need 250 INT to get blaze cap (130 for ice/lightning)
 			--after cap stack MAB (not sure if carries over after gear change)
 		--INT +171 (no weapon)
 		--MAB 137 (no weapon)
@@ -202,7 +216,7 @@ function get_sets()
 
 	sets.DD = {ammo="Ginsen",
 		head="Taeon Chapeau", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
-		body="Taeon Tabard", hands="Atrophy Gloves +1", left_ring="Rajas Ring", right_ring="K'ayres Ring",
+		body="Taeon Tabard", hands="Atrophy Gloves +1", left_ring="Hetairoi Ring", right_ring="K'ayres Ring",
 		back="Bleating Mantle", waist="Windbuffet Belt", legs="Taeon Tights", feet="Taeon Boots"}
 			--Without Weapon/Shield: Acc: 226?, Att: 281?
 
@@ -310,7 +324,7 @@ function get_sets()
 	set_macro_book()
 
 	sets.DontForget = {neck="Nodens Gorget", body="Telchine Chas.", legs="Crimson Cuisses",
-		right_ring="Excelsis Ring"}
+		right_ring="Excelsis Ring", feet="Gende. Galoshes"}
 	sets.DontForget2 = {main="Bolelabunga", legs="Shedir Seraweels"}
 
 	--[[
@@ -327,7 +341,7 @@ function precast(spell)
 		--If using an item (eg Forbidden Key, Velkk Coffer) cancel actions. (Was changing into fast cast set)
 		return
 	end
-	--add_to_chat(9, 'Precast: spell=' ..spell.english.. ' spell type=' ..spell.type.. ' Skill=' ..spell.skill)
+	--add_to_chat(9, 'Precast: spell=' ..spell.english.. ' spell type=' ..spell.type.. ' Skill=' ..spell.skill.. ' Prefix=' ..spell.prefix)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' and spell.english ~= 'Ranged'then
 		--add_to_chat(9, 'not JobAbility, WeaponSkill, or Ranged Attack so Fast Cast')
 		if spell.english ~= 'Stun' then
@@ -404,7 +418,7 @@ function midcast(spell)
 
 		if Accuracy[Accuracy_Index] == 'None' then  --don't need accuracy gear
 			if spell.english == 'Blind II' then
-				EquipSet = set_combine(EquipSet, {legs="Viti. Tights +1"})
+				EquipSet = set_combine(EquipSet, {legs="Viti. Tights +1"})  --Augment: Enhance effect
 			--elseif spell.english == 'Dia III' or spell.english == 'Slow II' then
 				--EquipSet = set_combine(EquipSet, {head="Viti. Chapeau +1"})
 				--***Don't need Dia/Slow test as hat always equipped when no accuracy needed***
@@ -430,7 +444,7 @@ function midcast(spell)
 		end
 
 		if spell.english:startswith('Refresh') then
-			EquipSet = set_combine(EquipSet, {legs="Leth. Fuseau +1"})
+			EquipSet = set_combine(EquipSet, {body="Atrophy Tabard +2", legs="Leth. Fuseau +1"})
 		elseif spell.english == 'Stoneskin' then
 			EquipSet = set_combine(EquipSet, {waist="Siegel Sash", legs="Shedir Seraweels", neck="Nodens Gorget"})
 		elseif spell.english == 'Aquaveil' then
@@ -456,7 +470,7 @@ function midcast(spell)
 			if spell.english:startswith('Aspir') or spell.english == 'Drain' then
 				EquipSet = set_combine(EquipSet, {right_ring="Excelsis Ring", waist="Fucho-no-Obi"})
 			elseif spell.english == "Bio III" then
-				EquipSet = set_combine(EquipSet, {legs="Viti. Tights +1"})
+				EquipSet = set_combine(EquipSet, {legs="Viti. Tights +1"}) --Augment: Enhance effect
 			end
 		end
 
@@ -492,6 +506,7 @@ function midcast(spell)
 
 
 	elseif spell.skill == 'Ninjutsu' then
+		--don't need to check obi as will only /nin, only used for dual wield and utsusemi
 		EquipSet = sets.FastCast
 
 	end --end of spell.skill
