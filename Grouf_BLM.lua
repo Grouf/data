@@ -10,7 +10,7 @@ function get_sets()
 	sets.precast = {}
 
 	sets.precast.FastCast = {main="Marin Staff +1",sub="Mephitis Grip",
-		head="Nahtirah Hat", left_ear="Loquac. Earring", right_ear="Etiolation Earring", 
+		head="Nahtirah Hat", left_ear="Loquac. Earring", right_ear="Etiolation Earring",
 		body="Anhur Robe",hands="Helios Gloves", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith Cape",waist="Witful Belt", legs="Artsieq Hose", feet="Helios Boots"}
 		-- 44% Fast Cast
@@ -27,6 +27,7 @@ function get_sets()
 		head="Helios Band", neck="Nodens Gorget", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
 		body="Helios Jacket", hands="Telchine Gloves", left_ring="Sirona's Ring", right_ring="Solemn Ring",
 		back="Pahtli Cape", waist="Rumination Sash", legs="Nares Trews",feet="Umbani Boots"}
+			--need either Vanya Clogs or Medium's Sabots
 
 	sets.midcast.Enfeeble = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Befouled Crown", neck="Imbodla Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
@@ -46,6 +47,7 @@ function get_sets()
 		head="Helios Band", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Count's Garb", hands="Helios Gloves", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Toro Cape", waist="Yamabuki-no-Obi", legs="Hagondes Pants +1", feet="Helios Boots"}
+			--Umbani Boots?
 
 	sets.midcast.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Kaabnax Hat",	neck="Eddy Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",

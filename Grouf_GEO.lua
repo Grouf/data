@@ -69,7 +69,7 @@ function get_sets()
 	sets.midcast.ElementalMagic = {main="Serenity",sub="Mephitis Grip",ammo="Ghastly Tathlum",head="Helios Band",
 		neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Count's Garb",
 		hands="Helios Gloves",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
-		waist="Yamabuki-no-Obi",legs="Hagondes Pants +1",feet="Helios Boots"}
+		waist="Yamabuki-no-Obi",legs="Hagondes Pants +1",feet="Helios Boots"} --Umbani Boots?
 
 	sets.midcast.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Bagua Galero +1",
 		neck="Eddy Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Helios Jacket",
