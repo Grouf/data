@@ -10,14 +10,14 @@ function get_sets()
 	sets.JA.Flee = {feet="Pillager's Poulaines"}
 	sets.JA.Steal = {hands="Pillager's Armlets",legs="Assassin's Culottes",feet="Pillager's Poulaines"}
 	sets.JA.Mug = {head="Plun. Bonnet"}
-	sets.JA.Despoil = {legs="Skulker's Culottes", feet="Skulk. Poulaines +1"}
+	sets.JA.Despoil = {legs="Skulk. Culottes +1", feet="Skulk. Poulaines +1"}
 	sets.JA.Conspirator = {body="Skulker's Vest +1"}
-	sets.JA.Accomplice = {head="Skulker's Bonnet"}
-	sets.JA.Collaborator = {head="Skulker's Bonnet"}
+	sets.JA.Accomplice = {head="Skulker's Bonnet +1"}
+	sets.JA.Collaborator = {head="Skulker's Bonnet +1"}
 	sets.JA['Perfect Dodge'] = {hands="Plun. Armlets +1"}
 	sets.JA.Feint = {legs="Plun. Culottes"}
 	sets.JA["Assassin's Charge"] = {feet="Plun. Poulaines"}
-	sets.JA["Sneak Attack"] = {hands="Skulker's Armlets"}
+	sets.JA["Sneak Attack"] = {hands="Skulk. Armlets +1"}
 	sets.JA["Trick Attack"] = { } --AGI increase Damage
 
 	sets.JA.Step = {head="Whirlpool Mask", neck="Iqabi Necklace", left_ear="Steelflash Earring",

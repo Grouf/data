@@ -21,9 +21,9 @@ function get_sets()
 	ElementalWeaponSkills = S{'Blade:Teki', 'Blade: To', 'Blade: Ei', 'Blade: Yu'}
 
 	sets.JA = {}
-	sets.JA.Innin = {head="Hattori Zukin"}
-	sets.JA.Yonin = {legs="Hattori Hakama"}
-	sets.JA.Futae = {hands="Hattori Tekko"}
+	sets.JA.Innin = {head="Hattori Zukin +1"}
+	sets.JA.Yonin = {legs="Hattori Hakama +1"}
+	sets.JA.Futae = {hands="Hattori Tekko +1"}
 	--sets.JA.Sange = {body="Mochi. Chainmail"}
 	sets.JA['Mijin Gakure'] = {legs="Mochizuki Hakama"}
 
@@ -73,7 +73,7 @@ function get_sets()
 		right_ring="Rajas Ring",back="Yokaze Mantle",waist="Prosilio Belt +1",
 		legs="Manibozho Brais",feet="Otronif Boots +1"}
 
-	sets.WS["Blade: Hi"] = set_combine(sets.WS.Base,{hands="Hattori Tekko"}) --AGI
+	sets.WS["Blade: Hi"] = set_combine(sets.WS.Base,{hands="Hattori Tekko +1"}) --AGI
 
 	sets.WS["Blade: Shun"] = sets.WS.Base --DEX
 
