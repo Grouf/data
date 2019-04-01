@@ -5,7 +5,7 @@
 ]]
 
 --[[AF/Relic 119 upgrade
-Sakonji Kote
+Sakonji Kote +1
 ]]
 --[[Gear needed:
 Lithelimb cap			--AAHM
@@ -37,15 +37,15 @@ function get_sets()
 
 	sets.JA = {}
 	sets.JA["Meikyo Shisui"] = {feet="Sak. Sune-Ate +1"}
-	sets.JA.Meditate = {head="Wakido Kabuto +1", hands="Sakonji Kote", back="Takaha Mantle"}
+	sets.JA.Meditate = {head="Wakido Kabuto +1", hands="Sakonji Kote +1", back="Takaha Mantle"}
 	sets.JA.Hasso = {hands="Wakido Kote +1", legs="Kasuga Haidate +1"}
 	sets.JA.Seigan = {head="Kasuga Kabuto +1"}
-	sets.JA["Third Eye"] = {legs="Sakonji Haidate"}
+	sets.JA["Third Eye"] = {legs="Sakonji Haidate +1"}
 	sets.JA["Warding Circle"] = {head="Wakido Kabuto +1"}
 	sets.JA.Sekkanoki = {hands="Kasuga Kote +1"}
 	sets.JA.Sengikori = {feet="Kas. Sune-Ate +1"} --grants bonus to Skillchain
-	sets.JA["Blade Bash"] = {hands="Sakonji Kote"}
-	--sets.JA.Shikikoyo = {legs="Sakonji Haidate"} --Give TP to party member
+	sets.JA["Blade Bash"] = {hands="Sakonji Kote +1"}
+	--sets.JA.Shikikoyo = {legs="Sakonji Haidate +1"} --Give TP to party member
 	
 	sets.JA.Step = {head="Gavialis Helm", neck="Iqabi Necklace", left_ear="Steelflash Earring",
 		right_ear="Zennaroi Earring", body="Miki. Breastplate", hands="Buremte Gloves", left_ring="Beeline Ring",
@@ -96,7 +96,7 @@ sets.DT = {}
 		head="Gavialis Helm", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Osmium Cuisses", feet="Otronif Boots +1"}
-				--Need Sakonji Kote +1
+				--Need Sakonji Kote +1 +1
 	
 	sets.DT['Ichigohitofuri'] = set_combine(sets.DT.Tsurumaru, {main="Ichigohitofuri"})
 	

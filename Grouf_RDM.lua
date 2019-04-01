@@ -48,16 +48,17 @@ function get_sets()
 		--CHR of caster, VIT of Target
 
 	sets.JA.Step = {ammo="Amar Cluster",
-		head="Taeon Chapeau", neck="Iqabi Necklace", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
-		body="Helios Jacket", hands="Buremte Gloves", left_ring="Rajas Ring", right_ring="Beeline Ring",
-		back="Grounded Mantle", waist="Olseni Belt", legs="Viti. Tights +1", feet="Atrophy Boots +1"}
-		--No Weapon Primary Acc: 317
+		head="Taeon Chapeau", neck="Subtlety Spec.", left_ear="Digni. Earring", right_ear="Zennaroi Earring",
+		body="Despair Mail", hands="Buremte Gloves", left_ring="Candent Ring", right_ring="Beeline Ring",
+		back="Agema Cape", waist="Olseni Belt", legs="Viti. Tights +1", feet="Atrophy Boots +1"}
+		--No Weapon Primary Acc: 519
+		--was neck="Iqabi Necklace" -> better to have to reduce items?  check all jobs
 
 	sets.JA['Violent Flourish'] = {ammo="Kalboron Stone",
-		head="Helios Band", neck="Eddy Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Helios Jacket", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
-		back="Ghostfyre Cape", waist="Famine Sash", legs="Leth. Fuseau +1", feet="Hagondes Sabots"}
-		--M.Acc = 174, No Weapon Prim.Acc = 161
+		head="Helios Band", neck="Sanctity Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		body="Chironic Doublet", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
+		back="Sucellos's Cape", waist="Famine Sash", legs="Leth. Fuseau +1", feet="Hagondes Sabots"}
+		--M.Acc = 203, No Weapon Prim.Acc = 322
 		--Stuns
 
 	sets.FastCast = {main="Marin Staff +1", sub="Mephitis Grip",
@@ -80,7 +81,7 @@ function get_sets()
 
 	sets.Idle.MDT = {main="Emissary",sub="Beatific Shield +1", ammo="Brigantia Pebble",
 		head="Atro. Chapeau +1", neck="Twilight Torque", left_ear="Zennaroi Earring", right_ear="Etiolation Earring",
-		body="Atrophy Tabard +2", hands="Atrophy Gloves +1", left_ring="Shadow Ring", right_ring="Succor Ring",
+		body="Atrophy Tabard +2", hands="Atrophy Gloves +2", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
 		-- MDB: 28, M.Eva: 421, MDT: -28%, DT: -8%, PTD: -11%, Evasion: 191
 
@@ -124,21 +125,9 @@ function get_sets()
 	--Lethargy Sayon +1 is currently best-in-slot for all enfeebles (??)
 		--Ischemia Chasuble gives +6 m.Acc over Lethargy Sayon +1
 
--- *!*!* Difference between MND and INT enfeebles is Ghastly Tathlum and Yamabuki-no-Obi, for non-Acc (?) *!*!*
-	--[[sets.INTEnfeeble = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Ghastly Tathlum",
-		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Lethargy Sayon +1", hands="Lurid Mitts", left_ring="Weather. Ring", right_ring="Globidonta Ring",
-		back="Ghostfyre Cape", waist="Yamabuki-no-Obi", legs="Psycloth Lappas", feet="Uk'uxkaj Boots"}--M.Acc=348
-
-	sets.INTEnfeeble.MidAcc = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Kalboron Stone",
-		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Atrophy Tabard +2", hands="Lurid Mitts", left_ring="Weather. Ring", right_ring="Sangoma Ring",
-		back="Ghostfyre Cape", waist="Yamabuki-no-Obi", legs="Psycloth Lappas", feet="Vitivation Boots +1"} --M.Acc 360
-
-	sets.INTEnfeeble.HighAcc = {}
-	]]
-
-	sets.Dispel = set_combine(sets.Enfeeble.MidAcc, {right_ring="Sangoma Ring",back="Ghostfyre Cape"})
+	sets.Dispel = set_combine(sets.Enfeeble.MidAcc, {right_ring="Sangoma Ring",back="Sucellos's Cape"})
+		--Enfeeble Skill = 573
+		--M.Acc = 181
 
 	--sets.Dispel.MidAcc = set_combine(sets.Enfeeble,{})
 
@@ -146,14 +135,15 @@ function get_sets()
 
 	sets.Elemental = {main="Marin Staff +1", sub="Niobid Strap", ammo="Ghastly Tathlum",
 		head="Helios Band", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
-		body="Count's Garb", hands="Helios Gloves", left_ring="Strendu Ring", right_ring="Acumen Ring",
+		body="Chironic Doublet", hands="Helios Gloves", left_ring="Strendu Ring", right_ring="Acumen Ring",
 		back="Sucellos's Cape", waist="Yamabuki-no-Obi", legs="Hagondes Pants +1", feet="Helios Boots"}
 		--Check Umbani Boots
-			--Magic Attack Bonus:	185 (218 with Weapon&Strap)
-			--Magic Accuracy:		88 (108 w/Weapon&Strap)
-			--Magic Damage:			46
-			--INT:					101+171 = 272
+			--Magic Attack Bonus:	190 (223 with Weapon&Strap)
+			--Magic Accuracy:		128 (148 w/Weapon&Strap)
+			--Magic Damage:			36
+			--INT:					101+170 = 271
 			--Elemental Skill:		394
+		--Count's Garb has m.Crit - find situation?
 
 	sets.Elemental.MidAcc = set_combine(sets.Elemental, {ammo="Kalboron Stone",
 		left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
@@ -189,10 +179,10 @@ function get_sets()
 		--Cure Pot.: 55%, Cure casting -27%, Haste: 20%, MND: 106+204, VIT: 97+83, Healing Magic: 476
 
 	sets.Enhancing = {main="Arendsi Fleuret", sub="Genmei Shield",
-		head="Befouled Crown", neck="Colossus's Torque", left_ear="Estq. Earring", right_ear="Andoaa Earring",
+		head="Befouled Crown", neck="Incanter's Torque", left_ear="Estq. Earring", right_ear="Andoaa Earring",
 		body="Viti. Tabard +1", hands="Atrophy Gloves +2", left_ring="Weather. Ring",  right_ring="Prolix Ring",
 		back="Ghostfyre Cape", waist="Olympus Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux +1"}
-		--skill=522}
+		--skill=555}
 		--Ghostfyre Cape gives Haste 17m ||  Sucellos's Cape gives Haste 16m
 
 	sets.EnhancingOther = set_combine(sets.Enhancing, {head="Lethargy Chappel +1",
@@ -215,17 +205,17 @@ function get_sets()
 
 	MeleeLock = 'False' --used for info only
 
---NEED to add weapons/shield.  based on subjob: sword&shield vs. dual wield
+--NEED? to add weapons/shield.  based on subjob: sword&shield vs. dual wield 
 	sets.DD = {main="Arendsi Fleuret", sub="Genmei Shield", ammo="Ginsen",
 		head="Taeon Chapeau", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Despair Mail", hands="Atrophy Gloves +2", left_ring="Hetairoi Ring", right_ring="K'ayres Ring",
-		back="Bleating Mantle", waist="Windbuffet Belt", legs="Taeon Tights", feet="Taeon Boots"}
+		back="Bleating Mantle", waist="Sarissaphoroi Belt", legs="Taeon Tights", feet="Taeon Boots"}
 			--Acc: 917, Att: 966
-			--Eva: 684, Def: 1019
-			--Haste: 25
-			--Double att: 12 (with melee lock Temper +24% = 36)
+			--Eva: 684, Def: 1026
+			--Haste: 28
+			--Double att: 14 (with melee lock Temper +24% = 38)
 			--Triple att: 12 (CP cape -2% = 10%)
-			--Quad. att:  1
+			--Quad. att:  0
 
 	--[[Need to sort these out:
 	*Windbuffet Belt
@@ -236,12 +226,12 @@ function get_sets()
 
 	sets.DD.MidAcc = set_combine(sets.DD, {neck="Sanctity Necklace", right_ring="Beeline Ring",
 		back="Grounded Mantle", feet="Atrophy Boots +1"})
-			--Without Weapon/Shield: Acc: 272?, Att: 217?
+			--Without Weapon/Shield: Acc: 358, Att: 267
 
-	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {ammo="Amar Cluster", head="Subtlety Spec.",
-		right_ear="Heartseeker Earring",
-		hands="Buremte Gloves", waist="Olseni Belt"})
-			--Without Weapon/Shield: Acc: 309?, Att: 192?
+	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {ammo="Amar Cluster", neck="Subtlety Spec.",
+		left_ear="Digni. Earring", right_ear="Zennaroi Earring",
+		waist="Olseni Belt"})
+			--Without Weapon/Shield: Acc: 396, Att: 234
 
 
 	sets.DT = {main="Emissary", sub="Genmei Shield", ammo="Brigantia Pebble",
@@ -278,7 +268,7 @@ function get_sets()
 			-- MDB: 28, MDT: -8%, M.Eva: 417
 
 	sets.WS = {ammo="Paeapua",
-		head="Rabid Visor", neck="Fotia Gorget", left_ear="Dudgeon Earring", right_ear="Bladeborn Earring",
+		head="Sukeroku Hachi.", neck="Fotia Gorget", left_ear="Dudgeon Earring", right_ear="Bladeborn Earring",
 		body="Taeon Tabard", hands="Atrophy Gloves +2", left_ring="Cho'j Band", right_ring="K'ayres Ring",
 		back="Buquwik Cape", waist="Prosilio Belt +1", legs="Taeon Tights", feet="Taeon Boots"}
 			--Without Weapon/Shield: STR: +114, Att: 320, Acc: 177
@@ -312,7 +302,8 @@ function get_sets()
 
 	sets.WS['Sanguine Blade'] = set_combine(sets.WS, {right_ear="Lifestorm Earring",
 		left_ring="Icesoul Ring", right_ring="Spiral Ring",
-		back="Refraction Cape", waist="Caudata Belt", legs="Psycloth Lappas", feet="Umbani Boots" })
+		back="Refraction Cape", waist="Caudata Belt", legs="Psycloth Lappas", feet="Inspirited Boots" })
+		--was feet="Umbani Boots"
 
 	--sets.WS['Sanguine Blade'].MidAcc = {}
 
@@ -333,7 +324,7 @@ function get_sets()
 
 	sets.DontForget = {neck="Nodens Gorget", body="Telchine Chas.", legs="Crimson Cuisses",
 		right_ring="Excelsis Ring"}
-	sets.DontForget2 = {main="Bolelabunga", legs="Shedir Seraweels"}
+	sets.DontForget2 = {main="Bolelabunga", legs="Shedir Seraweels", feet="Vanya Clogs"}
 
 	--[[
 	sets.DontForget = {sub="Thuellaic Ecu +1", neck="Quanpur Necklace", left_ear="Reraise Earring",
