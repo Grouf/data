@@ -42,16 +42,16 @@ function get_sets()
 	sets.JA.Saboteur = {hands="Leth. Gantherots +1"}
 
 	sets.JA.Waltz = {ammo="Brigantia Pebble",
-		head="Atro. Chapeau +1", right_ear="Soil Pearl", left_ear="Soil Pearl",
+		head="Atro. Chapeau +2", right_ear="Soil Pearl", left_ear="Soil Pearl",
 		body="Viti. Tabard +1", hands="Atrophy Gloves +2", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
-		back="Refraction Cape", waist="Caudata Belt", legs="Leth. Fuseau +1", feet="Atrophy Boots +1"}
+		back="Refraction Cape", waist="Caudata Belt", legs="Leth. Fuseau +1", feet="Atrophy Boots +2"}
 		--Cure, Healing Waltz = Erase
 		--CHR of caster, VIT of Target
 
 	sets.JA.Step = {ammo="Amar Cluster",
 		head="Taeon Chapeau", neck="Subtlety Spec.", left_ear="Digni. Earring", right_ear="Zennaroi Earring",
 		body="Despair Mail", hands="Buremte Gloves", left_ring="Candent Ring", right_ring="Beeline Ring",
-		back="Agema Cape", waist="Olseni Belt", legs="Viti. Tights +1", feet="Atrophy Boots +1"}
+		back="Agema Cape", waist="Olseni Belt", legs="Viti. Tights +1", feet="Atrophy Boots +2"}
 		--No Weapon Primary Acc: 519
 		--was neck="Iqabi Necklace" -> better to have to reduce items?  check all jobs
 
@@ -63,7 +63,7 @@ function get_sets()
 		--Stuns
 
 	sets.FastCast = {main="Emissary", sub="Genmei Shield",
-		head="Atro. Chapeau +1", left_ear="Estq. Earring", right_ear="Loquac. Earring",
+		head="Atro. Chapeau +2", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		waist="Witful Belt", legs="Artsieq Hose", feet="Taeon Boots"}
 			-- 61% Fast Cast, 22% Haste
@@ -81,7 +81,7 @@ function get_sets()
 		-- PDT: -46%, Evasion: 655, Defense: 801
 
 	sets.Idle.MDT = {main="Emissary",sub="Beatific Shield +1", ammo="Brigantia Pebble",
-		head="Atro. Chapeau +1", neck="Twilight Torque", left_ear="Zennaroi Earring", right_ear="Etiolation Earring",
+		head="Atro. Chapeau +2", neck="Twilight Torque", left_ear="Zennaroi Earring", right_ear="Etiolation Earring",
 		body="Atrophy Tabard +2", hands="Atrophy Gloves +2", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
 		-- MDB: 28, M.Eva: 421, MDT: -28%, DT: -8%, PTD: -11%, Evasion: 191
@@ -168,7 +168,7 @@ function get_sets()
 	--Don't need now?
 	--[[
 	sets.Stun = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
-		head="Atro. Chapeau +1", neck="Incanter's Torque", left_ear="Estq. Earring", right_ear="Loquac. Earring",
+		head="Atro. Chapeau +2", neck="Incanter's Torque", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Ghostfyre Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Medium's Sabots"}
 			--Fast Cast: 51%, Haste: 26%, M.Acc: 112 (339 w/weapon skill)
@@ -178,13 +178,13 @@ function get_sets()
 	sets.Cure = {main="Serenity", sub="Achaq Grip", ammo="Oreiad's Tathlum",
 		head="Viti. Chapeau +1", neck="Incanter's Torque", left_ear="Lifestorm Earring", right_ear="Mendi. Earring",
 		body="Viti. Tabard +1", hands="Telchine Gloves", left_ring="Globidonta Ring", right_ring="Sirona's Ring",
-		back="Pahtli Cape", waist="Rumination Sash", legs="Atrophy Tights +1", feet="Vanya Clogs"}
+		back="Pahtli Cape", waist="Rumination Sash", legs="Atrophy Tights +2", feet="Vanya Clogs"}
 		--Cure Pot.: 55%, Cure casting -27%, Haste: 20%, MND: 106+204, VIT: 97+83, Healing Magic: 476
 
 	sets.Enhancing = {main="Arendsi Fleuret", sub="Genmei Shield",
 		head="Befouled Crown", neck="Incanter's Torque", left_ear="Estq. Earring", right_ear="Andoaa Earring",
 		body="Viti. Tabard +1", hands="Atrophy Gloves +2", left_ring="Weather. Ring",  right_ring="Prolix Ring",
-		back="Ghostfyre Cape", waist="Olympus Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux +1"}
+		back="Ghostfyre Cape", waist="Olympus Sash", legs="Atrophy Tights +2", feet="Leth. Houseaux +1"}
 		--skill=555}
 		--Ghostfyre Cape gives Haste 17m ||  Sucellos's Cape gives Haste 16m
 		--NEED to check Vitiation Gloves for duration
@@ -224,12 +224,12 @@ function get_sets()
 	--[[Need to sort these out:
 	*Windbuffet Belt
 	*Chaac Belt
-	*when using shield:  feet="Atrophy Boots +1"??
+	*when using shield:  feet="Atrophy Boots +2"??
 	*Emet Harness +1
 	]]
 
 	sets.DD.MidAcc = set_combine(sets.DD, {neck="Sanctity Necklace", right_ring="Beeline Ring",
-		back="Grounded Mantle", feet="Atrophy Boots +1"})
+		back="Grounded Mantle", feet="Atrophy Boots +2"})
 			--Without Weapon/Shield: Acc: 358, Att: 267
 
 	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {ammo="Amar Cluster", neck="Subtlety Spec.",
@@ -253,7 +253,7 @@ function get_sets()
 			--Without Weapon/Shield: Acc: 310, Att: 196, EVA: 680, DEF: 790, PDT: -27%
 
 	sets.MDT = {main="Emissary", sub="Beatific Shield +1", ammo="Brigantia Pebble",
-		head="Atro. Chapeau +1", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
+		head="Atro. Chapeau +2", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
 		body="Lethargy Sayon +1", hands="Atrophy Gloves +2", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flax Sash", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
 			--RDM/blm
@@ -283,7 +283,7 @@ function get_sets()
 			--Without Weapon/Shield: STR: +98, Att: 302, Acc: 241
 
 	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {head="Taeon Chapeau", back="Grounded Mantle",
-		waist="Olseni Belt", feet="Atrophy Boots +1"})
+		waist="Olseni Belt", feet="Atrophy Boots +2"})
 			--Without Weapon/Shield: STR: +88, Att: 204, Acc: 288
 
 	--sets.WS['Chant du Cygne'] = {ammo="Paeapua",
@@ -296,9 +296,9 @@ function get_sets()
 
 	--sets.WS['Chant du Cygne'].HighAcc = {}
 
-	sets.WS.Requiescat = set_combine(sets.WS, {head="Atro. Chapeau +1", left_ear="Lifestorm Earring",
+	sets.WS.Requiescat = set_combine(sets.WS, {head="Atro. Chapeau +2", left_ear="Lifestorm Earring",
 		body="Viti. Tabard +1", left_ring="Solemn Ring", right_ring="Sirona's Ring", back="Refraction Cape",
-		legs="Atrophy Tights +1", feet="Medium's Sabots"})
+		legs="Atrophy Tights +2", feet="Medium's Sabots"})
 
 	--sets.WS.Requiescat.MidAcc = {}
 
