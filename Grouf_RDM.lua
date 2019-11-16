@@ -34,6 +34,7 @@ function get_sets()
 	Accuracy = {'None', 'MidAcc', 'HighAcc'}	--Accuracy levels set with user command 'Accuracy'
 	Beatific_On = 0 							--set with user command 'Beatific'; used to equip when not in MDT gear
 	Mecisto_On = 1								--set with user command 'Mecisto'; default on, equip CP cape in aftercast
+	MeleeLock = 'False' 						--used for info only
 
 	--Job Abilities
 	sets.JA = {}
@@ -57,17 +58,17 @@ function get_sets()
 	sets.JA['Violent Flourish'] = {ammo="Kalboron Stone",
 		head="Helios Band", neck="Sanctity Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Chironic Doublet", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
-		back="Sucellos's Cape", waist="Famine Sash", legs="Leth. Fuseau +1", feet="Hagondes Sabots"}
+		back="Sucellos's Cape", waist="Famine Sash", legs="Leth. Fuseau +1", feet="Medium's Sabots"}
 		--M.Acc = 203, No Weapon Prim.Acc = 322
 		--Stuns
 
-	sets.FastCast = {main="Marin Staff +1", sub="Mephitis Grip",
+	sets.FastCast = {main="Emissary", sub="Genmei Shield",
 		head="Atro. Chapeau +1", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		waist="Witful Belt", legs="Artsieq Hose", feet="Taeon Boots"}
-			-- 54% Fast Cast, 22% Haste
+			-- 61% Fast Cast, 22% Haste
 
-	sets.Idle = {main="Emissary", sub="Genmei Shield", ammo="Brigantia Pebble",
+	sets.Idle = {main="Bolelabunga", sub="Genmei Shield", ammo="Brigantia Pebble",
 		head="Viti. Chapeau +1", neck="Sanctity Necklace", left_ear="Lifestorm Earring", right_ear="Etiolation Earring",
 		body="Atrophy Tabard +2", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
@@ -150,14 +151,13 @@ function get_sets()
 		left_ring="Weather. Ring", right_ring="Sangoma Ring"})
 			--MAB=194, m.Acc: 120 (348 w/Weapon skill)
 
-	sets.Elemental.HighAcc = set_combine(sets.Elemental.MidAcc, {main="Serenity",
-		body="Helios Jacket"})
-		--MAB=180, m.Acc: 147 (348 w/Weapon skill)
+	sets.Elemental.HighAcc = set_combine(sets.Elemental.MidAcc, {main="Serenity"})
+		--recalc--MAB=180, m.Acc: 147 (348 w/Weapon skill)
 
 	sets.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Ghastly Tathlum",
 		head="Helios Band", neck="Incanter's Torque", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Helios Jacket", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
-		back="Refraction Cape", waist="Yamabuki-no-Obi", legs="Leth. Fuseau +1", feet="Hagondes Sabots"}
+		body="Chironic Doublet", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
+		back="Refraction Cape", waist="Yamabuki-no-Obi", legs="Leth. Fuseau +1", feet="Medium's Sabots"}
 
 	sets.DarkMagic.MidAcc = set_combine(sets.DarkMagic, {ammo="Kalboron Stone",
 		waist="Famine Sash"})
@@ -165,12 +165,15 @@ function get_sets()
 	sets.DarkMagic.HighAcc = sets.DarkMagic.MidAcc
 
 	--Stun set used for both precast and midcast
+	--Don't need now?
+	--[[
 	sets.Stun = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
 		head="Atro. Chapeau +1", neck="Incanter's Torque", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Ghostfyre Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Medium's Sabots"}
 			--Fast Cast: 51%, Haste: 26%, M.Acc: 112 (339 w/weapon skill)
 			--This used for Tojil, need to make for Magic Accuracy
+	]]
 
 	sets.Cure = {main="Serenity", sub="Achaq Grip", ammo="Oreiad's Tathlum",
 		head="Viti. Chapeau +1", neck="Incanter's Torque", left_ear="Lifestorm Earring", right_ear="Mendi. Earring",
@@ -184,6 +187,7 @@ function get_sets()
 		back="Ghostfyre Cape", waist="Olympus Sash", legs="Atrophy Tights +1", feet="Leth. Houseaux +1"}
 		--skill=555}
 		--Ghostfyre Cape gives Haste 17m ||  Sucellos's Cape gives Haste 16m
+		--NEED to check Vitiation Gloves for duration
 
 	sets.EnhancingOther = set_combine(sets.Enhancing, {head="Lethargy Chappel +1",
 		body="Lethargy Sayon +1", legs="Leth. Fuseau +1"})
@@ -203,13 +207,13 @@ function get_sets()
 
 	sets.Enspells = set_combine(sets.Enhancing, {back="Ghostfyre Cape"})
 
-	MeleeLock = 'False' --used for info only
+
 
 --NEED? to add weapons/shield.  based on subjob: sword&shield vs. dual wield 
 	sets.DD = {main="Arendsi Fleuret", sub="Genmei Shield", ammo="Ginsen",
 		head="Taeon Chapeau", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Despair Mail", hands="Atrophy Gloves +2", left_ring="Hetairoi Ring", right_ring="K'ayres Ring",
-		back="Bleating Mantle", waist="Sarissaphoroi Belt", legs="Taeon Tights", feet="Taeon Boots"}
+		back="Bleating Mantle", waist="Sarissapho. Belt", legs="Taeon Tights", feet="Taeon Boots"}
 			--Acc: 917, Att: 966
 			--Eva: 684, Def: 1026
 			--Haste: 28
@@ -267,6 +271,7 @@ function get_sets()
 			--Without Weapon/Shield: Acc: 214, Att: 160, EVA: 610, DEF: 732,
 			-- MDB: 28, MDT: -8%, M.Eva: 417
 
+--Fotia belt needs adding.  need list of fTP all hit WS?
 	sets.WS = {ammo="Paeapua",
 		head="Sukeroku Hachi.", neck="Fotia Gorget", left_ear="Dudgeon Earring", right_ear="Bladeborn Earring",
 		body="Taeon Tabard", hands="Atrophy Gloves +2", left_ring="Cho'j Band", right_ring="K'ayres Ring",
@@ -274,7 +279,7 @@ function get_sets()
 			--Without Weapon/Shield: STR: +114, Att: 320, Acc: 177
 
 	sets.WS.MidAcc = set_combine(sets.WS, {left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
-		hands="Umuthi Gloves", right_ring="Beeline Ring", back="Vespid Mantle"})
+		hands="Umuthi Gloves", right_ring="Beeline Ring", back="Vespid Mantle", waist="Caudata Belt"})
 			--Without Weapon/Shield: STR: +98, Att: 302, Acc: 241
 
 	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {head="Taeon Chapeau", back="Grounded Mantle",
@@ -343,12 +348,12 @@ function precast(spell)
 	--add_to_chat(9, 'Precast: spell=' ..spell.english.. ' spell type=' ..spell.type.. ' Skill=' ..spell.skill.. ' Prefix=' ..spell.prefix)
 	if spell.prefix ~= '/jobability' and spell.type ~= 'WeaponSkill' and spell.english ~= 'Ranged'then
 		--add_to_chat(9, 'not JobAbility, WeaponSkill, or Ranged Attack so Fast Cast')
-		if spell.english ~= 'Stun' then
+		--if spell.english ~= 'Stun' then
 			equip(sets.FastCast)
-		elseif spell.english == 'Stun' then
-			equip(sets.Stun)
+		--elseif spell.english == 'Stun' then
+			--equip(sets.Stun)
 			--add_to_chat(9, 'STUN set, precast')
-		end
+		--end
 
 
 	elseif spell.type == "WeaponSkill" then
@@ -415,17 +420,18 @@ function midcast(spell)
 			EquipSet = EquipSet[Accuracy[Accuracy_Index]]
 		end
 
-		if Accuracy[Accuracy_Index] == 'None' then  --don't need accuracy gear
-			if spell.english == 'Blind II' then
-				EquipSet = set_combine(EquipSet, {legs="Viti. Tights +1"})  --Augment: Enhance effect
+		--if Accuracy[Accuracy_Index] == 'None' then  --don't need accuracy gear
+			--if spell.english == 'Blind II' then
+				--augment changed on tights
+				--EquipSet = set_combine(EquipSet, {legs="Viti. Tights +1"})  --Augment: Enhance effect
 			--elseif spell.english == 'Dia III' or spell.english == 'Slow II' then
 				--EquipSet = set_combine(EquipSet, {head="Viti. Chapeau +1"})
 				--***Don't need Dia/Slow test as hat always equipped when no accuracy needed***
 			--elseif spell.english == 'Paralyze II' then
 				--EquipSet = set_combine(EquipSet, {feet="Vitivation Boots +1"})
 				--***Don't want this as Uk boots give potency
-			end
-		end
+			--end
+		--end
 
 		if spell.english:startswith('Dia') then
 			Check_for_Obi = 1
@@ -468,8 +474,9 @@ function midcast(spell)
 		if Accuracy[Accuracy_Index] == 'None' then
 			if spell.english:startswith('Aspir') or spell.english == 'Drain' then
 				EquipSet = set_combine(EquipSet, {right_ring="Excelsis Ring", waist="Fucho-no-Obi"})
-			elseif spell.english == "Bio III" then
-				EquipSet = set_combine(EquipSet, {legs="Viti. Tights +1"}) --Augment: Enhance effect
+			--elseif spell.english == "Bio III" then
+				-- Augment changed on tights
+				--EquipSet = set_combine(EquipSet, {legs="Viti. Tights +1"}) --Augment: Enhance effect
 			end
 		end
 

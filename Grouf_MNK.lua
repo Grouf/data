@@ -9,7 +9,7 @@ function get_sets()
 	sets.precast.Chakra = {ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Tjukurrpa Medal",
 		left_ear="Soil Pearl",right_ear="Soil Pearl",body="Anchorite's Cyclas",hands="Hes. Gloves",
 		left_ring="Terrasoul Ring",right_ring="Terrasoul Ring",back="Anchoret's Mantle",waist="Caudata Belt",
-		legs="Kaabnax Trousers",feet="Thur. Boots +1"} --100+131
+		legs="Kaabnax Trousers",feet="Thur. Boots +1"} --100+131  --add Unmoving Collar?
 	sets.precast.Counterstance = {feet="Hes. Gaiters"}
 	sets.precast.Dodge = {feet="Anchorite's Gaiters"}
 	sets.precast.Focus = {head="Anchorite's Crown"}
