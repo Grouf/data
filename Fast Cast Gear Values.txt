@@ -4,9 +4,9 @@ Ammo		Incantor Stone		2%		(    WHM                                        )
 
 Head		Atrophy Chapeau +1	12		(            RDM                                )
 			Athos Chapeau		2		(mnk             thf rng     NIN     blu     run)
-			Nares Cap			10		(    whm blm rdm                 smn     geo)
-			Nahtirah Hat		10		(    WHM BLM rdm                 smn     GEO)
-			Psycloth Tiara(aug)	10		(        BLM rdm                 SMN BLU GEO)
+			Nares Cap			10		(    whm blm rdm                 smn     geo    )
+			Nahtirah Hat		10		(    WHM BLM rdm                 smn     GEO    )
+			Psycloth Tiara(aug)	10		(        BLM rdm                 SMN BLU GEO    )
 			Haruspex Hat		8		(MNK whm blm rdm THF RNG         smn blu geo RUN)
 			Haruspex Hat +1		9		(MNK whm blm rdm THF RNG         smn blu geo RUN)
 

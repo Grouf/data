@@ -177,17 +177,17 @@ function get_sets()
 	sets.midcast.mAccuracy = {head="Assim. Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",body="Mekosu. Harness",hands="Hagondes Cuffs +1",left_ring="Weather. Ring",
 		right_ring="Sangoma Ring",back="Cornflower Cape",waist="Yamabuki-no-Obi",
-		legs="Psycloth Lappas",feet="Hagondes Sabots"}
+		legs="Psycloth Lappas",feet="Medium's Sabots"}
 
 	sets.midcast.Stun = {head="Assim. Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm earring",
 		right_ear="Lifestorm Earring",body="Mekosu. Harness",hands="Mv. Bazubands +2",left_ring="Weather. Ring",
 		right_ring="Sangoma Ring",back="Cornflower Cape",waist="Witful Belt",
-		legs="Psycloth Lappas",feet="Hagondes Sabots"} --25% Haste, 5% Fast Cast, -12% Blue Magic recast
+		legs="Psycloth Lappas",feet="Medium's Sabots"} --25% Haste, 5% Fast Cast, -12% Blue Magic recast
 
 	sets.midcast.Breath = {head="Luhlaza Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm earring",
 		right_ear="Lifestorm Earring",body="Mekosu. Harness",hands="Hagondes Cuffs +1",left_ring="Prolix Ring",
 		back="Cornflower Cape",waist="Yamabuki-no-Obi",
-		legs="Iuitl Tights +1",feet="Hagondes Sabots"}
+		legs="Iuitl Tights +1",feet="Medium's Sabots"}
 
 	sets.midcast.BlueMagic = set_combine(sets.precast.FastCast,{
 		ammo="Mavi Tathlum", head="Luhlaza Keffiyeh",neck="Mavi Scarf",

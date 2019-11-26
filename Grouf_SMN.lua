@@ -78,7 +78,7 @@ function get_sets()
 	--[[sets.midcast.Enfeeble = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
-		waist="Yamabuki-no-Obi",legs="Mes'yohi Slacks",feet="Hagondes Sabots"} ]]
+		waist="Yamabuki-no-Obi",legs="Mes'yohi Slacks",feet="Medium's Sabots"} ]]
 
 	sets.SummoningSkill = {main="Patriarch Cane",sub="Genbu's Shield",ammo="Seraphicaller",
 		head="Convoker's Horn", neck="Caller's Pendant",
