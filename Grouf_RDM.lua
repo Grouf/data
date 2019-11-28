@@ -38,12 +38,12 @@ function get_sets()
 
 	--Job Abilities
 	sets.JA = {}
-	sets.JA.Chainspell = {body="Viti. Tabard +1"}
+	sets.JA.Chainspell = {body="Viti. Tabard +2"}
 	sets.JA.Saboteur = {hands="Leth. Gantherots +1"}
 
 	sets.JA.Waltz = {ammo="Brigantia Pebble",
 		head="Atro. Chapeau +2", right_ear="Soil Pearl", left_ear="Soil Pearl",
-		body="Viti. Tabard +1", hands="Atrophy Gloves +2", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
+		body="Viti. Tabard +2", hands="Atrophy Gloves +2", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
 		back="Refraction Cape", waist="Caudata Belt", legs="Leth. Fuseau +1", feet="Atrophy Boots +2"}
 		--Cure, Healing Waltz = Erase
 		--CHR of caster, VIT of Target
@@ -64,12 +64,12 @@ function get_sets()
 
 	sets.FastCast = {main="Emissary", sub="Genmei Shield",
 		head="Atro. Chapeau +2", left_ear="Estq. Earring", right_ear="Loquac. Earring",
-		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
+		body="Viti. Tabard +2", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		waist="Witful Belt", legs="Artsieq Hose", feet="Taeon Boots"}
 			-- 61% Fast Cast, 22% Haste
 
 	sets.Idle = {main="Bolelabunga", sub="Genmei Shield", ammo="Brigantia Pebble",
-		head="Viti. Chapeau +1", neck="Sanctity Necklace", left_ear="Lifestorm Earring", right_ear="Etiolation Earring",
+		head="Viti. Chapeau +2", neck="Sanctity Necklace", left_ear="Lifestorm Earring", right_ear="Etiolation Earring",
 		body="Atrophy Tabard +2", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
 		--Refresh
@@ -88,38 +88,38 @@ function get_sets()
 
 
 	sets.Enfeeble = {main="Serenity", sub="Enki Strap", ammo="Oreiad's Tathlum",
-		head="Viti. Chapeau +1", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		head="Viti. Chapeau +2", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +2", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Stikini Ring",
 		back="Sucellos's Cape", waist="Rumination Sash", legs="Psycloth Lappas", feet="Vitiation Boots +2"}
 			--RDM/blm
 			--Potency:
-			--Magic Accuracy:	186 (221 with staff and grip)
+			--Magic Accuracy:	213 (248 with staff and grip)
 			--Enfeeble Skill:	572
 			--Merit:			5+15 (hat augment)
 			--JP/Gift:			65
-			--Total:			843 (878)
+			--Total:			870 (905)
 			--MND:				106+217 = 323 (352 with staff and grip)
 			--INT:				101+181 = 282
 
 	sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble ,{range="Aureole"})
 			--RDM/blm
 			--Mid-Acc:
-			--Magic Accuracy:	193 (228 with staff and grip)
+			--Magic Accuracy:	220 (255 with staff and grip)
 			--Enfeeble Skill:	572
 			--Merit:			5+15 (hat augment)
 			--JP/Gift:			65
-			--Total:			850 (885)
+			--Total:			877 (912)
 			--MND:				106+213 = 319 (348 with staff and grip)
 			--INT:				101+181 = 282
 
 	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc ,{neck="Incanter's Torque", left_ring="Stikini Ring"})
 			--RDM/blm
 			--High-Acc:
-			--Magic Accuracy:	191 (226 with staff and grip)
+			--Magic Accuracy:	218 (253 with staff and grip)
 			--Enfeeble Skill:	582
 			--Merit:			5+15 (hat augment)
 			--JP/Gift:			65
-			--Total:			858 (893)
+			--Total:			885 (920)
 			--MND:				106+211 = 317 (346 with staff and grip)
 			--INT:				101+181 = 282
 
@@ -169,7 +169,7 @@ function get_sets()
 	--[[
 	sets.Stun = {main="Marin Staff +1",sub="Enki Strap",ammo="Kalboron Stone",
 		head="Atro. Chapeau +2", neck="Incanter's Torque", left_ear="Estq. Earring", right_ear="Loquac. Earring",
-		body="Viti. Tabard +1", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
+		body="Viti. Tabard +2", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Ghostfyre Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Vitiation Boots +2"}
 			--Fast Cast: 51%, Haste: 26%, M.Acc: 112 (339 w/weapon skill)
 			--This used for Tojil, need to make for Magic Accuracy
@@ -177,13 +177,13 @@ function get_sets()
 
 	sets.Cure = {main="Serenity", sub="Enki Strap", ammo="Oreiad's Tathlum",
 		head="Atro. Chapeau +2", neck="Incanter's Torque", left_ear="Lifestorm Earring", right_ear="Mendi. Earring",
-		body="Viti. Tabard +1", hands="Telchine Gloves", left_ring="Stikini Ring", right_ring="Stikini Ring",
+		body="Viti. Tabard +2", hands="Telchine Gloves", left_ring="Stikini Ring", right_ring="Stikini Ring",
 		back="Pahtli Cape", waist="Rumination Sash", legs="Atrophy Tights +2", feet="Vanya Clogs"}
 		--Cure Pot.: 56%, Cure casting -27%, Haste: 20%, MND: 106+216, VIT: 97+95, Healing Magic: 478
 
 	sets.Enhancing = {main="Arendsi Fleuret", sub="Genmei Shield",
 		head="Befouled Crown", neck="Incanter's Torque", left_ear="Estq. Earring", right_ear="Andoaa Earring",
-		body="Viti. Tabard +1", hands="Viti. Gloves +2", left_ring="Stikini Ring",  right_ring="Stikini Ring",
+		body="Viti. Tabard +2", hands="Viti. Gloves +2", left_ring="Stikini Ring",  right_ring="Stikini Ring",
 		back="Ghostfyre Cape", waist="Olympus Sash", legs="Atrophy Tights +2", feet="Leth. Houseaux +1"}
 		--skill=555}
 		--Ghostfyre Cape gives Haste 17m ||  Sucellos's Cape gives Haste 16m
@@ -273,12 +273,13 @@ function get_sets()
 
 --Fotia belt needs adding.  need list of fTP all hit WS?
 	sets.WS = {ammo="Paeapua",
-		head="Sukeroku Hachi.", neck="Fotia Gorget", left_ear="Dudgeon Earring", right_ear="Bladeborn Earring",
-		body="Taeon Tabard", hands="Atrophy Gloves +2", left_ring="Cho'j Band", right_ring="K'ayres Ring",
+		head="Viti. Chapeau +2", neck="Fotia Gorget", left_ear="Dudgeon Earring", right_ear="Bladeborn Earring",
+		body="Viti. Tabard +2", hands="Atrophy Gloves +2", left_ring="Cho'j Band", right_ring="K'ayres Ring",
 		back="Buquwik Cape", waist="Prosilio Belt +1", legs="Taeon Tights", feet="Taeon Boots"}
 			--Without Weapon/Shield: STR: +114, Att: 320, Acc: 177
 
-	sets.WS.MidAcc = set_combine(sets.WS, {left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
+	sets.WS.MidAcc = set_combine(sets.WS, {head="Sukeroku Hachi.",
+		left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
 		hands="Umuthi Gloves", right_ring="Beeline Ring", back="Vespid Mantle", waist="Fotia Belt"})
 			--Without Weapon/Shield: STR: +98, Att: 302, Acc: 241
 
@@ -297,7 +298,7 @@ function get_sets()
 	--sets.WS['Chant du Cygne'].HighAcc = {}
 
 	--[[sets.WS.Requiescat = set_combine(sets.WS, {head="Atro. Chapeau +2", left_ear="Lifestorm Earring",
-		body="Viti. Tabard +1", left_ring="Stikini Ring", right_ring="Stikini Ring", back="Refraction Cape",
+		body="Viti. Tabard +2", left_ring="Stikini Ring", right_ring="Stikini Ring", back="Refraction Cape",
 		legs="Atrophy Tights +2", feet="Vitiation Boots +2"})
 		]]
 
@@ -427,7 +428,7 @@ function midcast(spell)
 				--augment changed on tights
 				--EquipSet = set_combine(EquipSet, {legs="Viti. Tights +1"})  --Augment: Enhance effect
 			--elseif spell.english == 'Dia III' or spell.english == 'Slow II' then
-				--EquipSet = set_combine(EquipSet, {head="Viti. Chapeau +1"})
+				--EquipSet = set_combine(EquipSet, {head="Viti. Chapeau +2"})
 				--***Don't need Dia/Slow test as hat always equipped when no accuracy needed***
 			--elseif spell.english == 'Paralyze II' then
 				--EquipSet = set_combine(EquipSet, {feet="Vitivation Boots +1"})
