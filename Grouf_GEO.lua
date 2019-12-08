@@ -42,7 +42,7 @@ function get_sets()
 --Midcast
 	sets.midcast = {}
 
-	sets.midcast.Cure = {main="Tamaxchi",sub="Genmei Shield",ammo="Oreiad's Tathlum",head="Kaabnax Hat",
+	sets.midcast.Cure = {main="Serenity", sub="Enki Strap",ammo="Oreiad's Tathlum",head="Kaabnax Hat",
 		neck="Nodens Gorget",left_ear="Mendi. Earring",right_ear="Lifestorm Earring",body="Telchine Chas.",
 		hands="Telchine Gloves",left_ring="Stikini Ring",right_ring="Stikini Ring",back="Pahtli Cape",
 		waist="Rumination Sash",legs="Doyen Pants",feet="Medium's Sabots"} --MND=96+171, Cure Pot.=50%  
@@ -64,9 +64,9 @@ function get_sets()
 		--add gifted earring, Calamitous earring
 
 	--Enhancing needs work
-	sets.midcast.Enhancing = {body="Telchine Chas.", head="Befouled Crown", neck="Incanter's Torque",
-		left_ear="Loquac. Earring", right_ear="Andoaa Earring",
-		hands="Augur's Gloves", left_ring="Stikini Ring", right_ring="Stikini Ring", 
+	sets.midcast.Enhancing = {main="Bolelabunga",sub="Ammurapi Shield",
+		head="Befouled Crown", neck="Incanter's Torque",left_ear="Loquac. Earring", right_ear="Andoaa Earring",
+		body="Telchine Chas.", hands="Augur's Gloves", left_ring="Stikini Ring", right_ring="Stikini Ring", 
 		waist="Olympus Sash",legs="Shedir Seraweels", feet="Inspirited Boots"}
 
 	sets.midcast.ElementalMagic = {main="Serenity",sub="Enki Strap",ammo="Ghastly Tathlum",head="Helios Band",
