@@ -263,7 +263,7 @@ function status_change(new,old)
 	aftercast()
 		--*!*!* Same as aftercast, try to refine *!*!*--
 
-	--[[
+	--
 	--if player.status =='Engaged' then
 	--
 	--	EquipSet = sets[SetMode_Names[SetMode_Index]]  --DD or DT or MDT sets
@@ -295,7 +295,7 @@ function status_change(new,old)
 	--end
 	--
 	--equip(EquipSet)
-	--]]
+	--
 
 end -- end status_change
 
