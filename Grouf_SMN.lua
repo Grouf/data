@@ -36,7 +36,7 @@ function get_sets()
 
 	sets.precast = {}
 
-	sets.precast.FastCast = {main="Marin Staff +1",sub="Arbuda Grip",
+	sets.precast.FastCast = {main="Oranyan",sub="Arbuda Grip",
 		head="Nahtirah Hat", left_ear="Loquac. Earring",
 		body="Anhur Robe", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith Cape", waist="Witful Belt", legs="Artsieq Hose", feet="Hag. Sabots +1"}
@@ -73,9 +73,9 @@ function get_sets()
 	sets.Cure = {main="Tamaxchi",sub="Genbu's Shield",
 		head="Kaabnax Hat", neck="Imbodla Necklace",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",
 		body="Hagondes Coat +1", hands="Telchine Gloves",left_ring="Sirona's Ring", right_ring="Solemn Ring",
-		back="Pahtli Cape", waist="Rumination Sash", legs="Nares Trews", feet="Umbani Boots"}
+		back="Pahtli Cape", waist="Luminary Sash", legs="Nares Trews", feet="Umbani Boots"}
 
-	--[[sets.midcast.Enfeeble = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
+	--[[sets.midcast.Enfeeble = {main="Oranyan",sub="Mephitis Grip",ammo="Elis Tome",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Irrwisch Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Yamabuki-no-Obi",legs="Mes'yohi Slacks",feet="Medium's Sabots"} ]]
@@ -101,7 +101,7 @@ function get_sets()
 		left_ear="Loquac. Earring",
 		waist="Olympus Sash", legs="Shedir Seraweels"}
 
-	--[[sets.midcast.ElementalMagic = {main="Marin Staff +1",sub="Elder's Grip",head="Buremte Hat",
+	--[[sets.midcast.ElementalMagic = {main="Oranyan",sub="Elder's Grip",head="Buremte Hat",
 		neck="Stoicheion Medal",left_ear="Hecate's Earring",right_ear="Friomisi Earring",body="Hagondes Coat +1",
 		hands="Hagondes Cuffs +1",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
 		waist="Yamabuki-no-Obi",legs="Hagondes Pants +1",feet="Weath. Souliers +1"} ]]

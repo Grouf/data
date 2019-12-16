@@ -30,18 +30,18 @@ function get_sets()
 
 	sets.precast.Rest = set_combine(sets.precast.Idle,{main="Chatoyant Staff",sub="Mephitis Grip"})
 
-	sets.precast.FastCast = {main="Marin Staff +1",sub="Mephitis Grip",head="Nahtirah Hat",
+	sets.precast.FastCast = {main="Oranyan",sub="Mephitis Grip",head="Nahtirah Hat",
 		left_ear="Loquac. Earring",body="Anhur Robe",
 		hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",back="Swith Cape",
 		waist="Witful Belt",legs="Artsieq Hose",feet="Piety Duckbills"} -- 44% Fast Cast
 
 	sets.midcast = {}
-	sets.midcast.Cure = {main="Tamaxchi", sub="Genmei Shield", ammo="Oreiad's Tathlum", head="Theophany Cap",
+	sets.midcast.Cure = {main="Serenity", sub="Enki Strap", ammo="Oreiad's Tathlum", head="Theophany Cap",
 		neck="Imbodla Necklace", left_ear="Loquac. Earring", right_ear="Lifestorm Earring", body="Gende. Bilaut +1",
 		hands="Theophany Mitts", left_ring="Sirona's Ring", right_ring="Solemn Ring", back="Mending Cape",
 		waist="Cleric's Belt", legs="Orsn. Pantaln. +2", feet="Piety Duckbills"} --Cure Potency 52%
 
-	sets.midcast.CureMulti = {main="Tamaxchi", sub="Genmei Shield", ammo="Oreiad's Tathlum", head="Theophany Cap",
+	sets.midcast.CureMulti = {main="Serenity", sub="Enki Strap", ammo="Oreiad's Tathlum", head="Theophany Cap",
 		neck="Imbodla Necklace", left_ear="Loquac. Earring", right_ear="Lifestorm Earring", body="Gende. Bilaut +1",
 		hands="Theophany Mitts", left_ring="Sirona's Ring", right_ring="Solemn Ring", back="Pahtli Cape",
 		waist="Cleric's Belt", legs="Orsn. Pantaln. +2", feet="Piety Duckbills"} --Cure Potency 52%
@@ -55,17 +55,17 @@ function get_sets()
 		hands="Theophany Mitts",back="Mending Cape",
 		legs="Theo. Pantaloons",feet="Gende. Galoshes"})
 
-	sets.midcast.Enfeeble= {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Kaabnax Hat",
+	sets.midcast.Enfeeble= {main="Oranyan",sub="Mephitis Grip",ammo="Elis Tome",head="Kaabnax Hat",
 		neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Theo. Briault",
 		hands="Gende. Gages +1",left_ring="Globidonta Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Yamabuki-no-Obi",legs="Psycloth Lappas",feet="Piety Duckbills"} --check medium's sabots
 
-	sets.midcast.DRKMagic= {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",head="Buremte Hat",
+	sets.midcast.DRKMagic= {main="Oranyan",sub="Mephitis Grip",ammo="Elis Tome",head="Buremte Hat",
 		neck="Eddy Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Gende. Bilaut +1",
 		hands="Gende. Gages +1",left_ring="Acumen Ring",right_ring="Sangoma Ring",back="Refraction Cape",
 		waist="Yamabuki-no-Obi",legs="Gendewitha Spats",feet="Gende. Galoshes"}
 
-	sets.midcast.Enhancing = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Oreiad's Tathlum",
+	sets.midcast.Enhancing = {main="Oranyan",sub="Mephitis Grip",ammo="Oreiad's Tathlum",
 		head="Befouled Crown", neck="Colossus's Torque", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
 		body="Telchine Chas.", hands="Augur's Gloves", left_ring="Prolix Ring",
 		back="Mending Cape", waist="Olympus Sash", legs="Shedir Seraweels", feet="Orsn. Duckbills +2"}
@@ -78,12 +78,12 @@ function get_sets()
 
 	sets.midcast.Auspice = set_combine(sets.precast.Enhancing,{feet="Orsn. Duckbills +2"})
 
-	sets.midcast.Divine= {main="Marin Staff +1",sub="Mephitis Grip", ammo="Witchstone", head="Buremte Hat",
+	sets.midcast.Divine= {main="Oranyan",sub="Mephitis Grip", ammo="Witchstone", head="Buremte Hat",
 		neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",body="Gende. Bilaut +1",
 		hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Sangoma Ring",
 		back="Refraction Cape", waist="Yamabuki-no-Obi", legs="Gendewitha Spats", feet="Umbani Boots"}
 
-	sets.midcast.Repose = set_combine(sets.precast.Divine,{sub="Mephitis Grip",ammo="Kalboron Stone",head="Orison Cap +2",
+	sets.midcast.Repose = set_combine(sets.precast.Divine,{sub="Mephitis Grip",ammo="Elis Tome",head="Orison Cap +2",
 		left_ear="Psystorm Earring",right_ear="Lifestorm Earring",hands="Gende. Gages +1", back="Mending Cape"})
 
 	sets.TP = {}

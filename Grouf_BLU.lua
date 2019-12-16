@@ -219,7 +219,7 @@ function get_sets()
 
 	sets.DontForget = {main="Claidheamh Soluis", sub="Buramenk'ah", left_ear="Reraise Earring",
 		}
-	sets.DontForget2 = {main="Tamaxchi", sub="Bolelabunga"}
+	sets.DontForget2 = {main="Bolelabunga"}
 
 end
 

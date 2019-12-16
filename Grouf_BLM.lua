@@ -9,13 +9,13 @@ include('Obi_Check')
 function get_sets()
 	sets.precast = {}
 
-	sets.precast.FastCast = {main="Marin Staff +1",sub="Mephitis Grip",
+	sets.precast.FastCast = {main="Oranyan",sub="Mephitis Grip",
 		head="Nahtirah Hat", left_ear="Loquac. Earring", right_ear="Etiolation Earring",
 		body="Anhur Robe",hands="Helios Gloves", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith Cape",waist="Witful Belt", legs="Artsieq Hose", feet="Helios Boots"}
 		-- 44% Fast Cast
 
-	sets.precast.Idle = {main="Marin Staff +1",sub="Mephitis Grip", ammo="Ghastly Tathlum",
+	sets.precast.Idle = {main="Oranyan",sub="Mephitis Grip", ammo="Ghastly Tathlum",
 		neck="Twilight Torque", left_ear="Crematio Earring", right_ear="Etiolation Earring",
 		body="Respite Cloak", hands="Serpentes Cuffs", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Mecisto. Mantle", waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Serpentes Sabots"}
@@ -23,39 +23,39 @@ function get_sets()
 	sets.precast.Rest = sets.precast.Idle
 
 	sets.midcast = {}
-	sets.midcast.Cure = {main="Marin Staff +1",sub="Mephitis Grip", ammo="Oreiad's Tathlum",
+	sets.midcast.Cure = {main="Oranyan",sub="Mephitis Grip", ammo="Oreiad's Tathlum",
 		head="Helios Band", neck="Nodens Gorget", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
 		body="Helios Jacket", hands="Telchine Gloves", left_ring="Sirona's Ring", right_ring="Solemn Ring",
-		back="Pahtli Cape", waist="Rumination Sash", legs="Nares Trews",feet="Umbani Boots"}
+		back="Pahtli Cape", waist="Luminary Sash", legs="Nares Trews",feet="Umbani Boots"}
 			--need either Vanya Clogs or Medium's Sabots
 
-	sets.midcast.Enfeeble = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
+	sets.midcast.Enfeeble = {main="Oranyan",sub="Mephitis Grip",ammo="Elis Tome",
 		head="Befouled Crown", neck="Imbodla Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Helios Jacket", hands="Lurid Mitts", left_ring="Globidonta Ring", right_ring="Sangoma Ring",
-		back="Refraction Cape", waist="Rumination Sash", legs="Psycloth Lappas", feet="Medium's Sabots"}--check medium's sabots
+		back="Refraction Cape", waist="Luminary Sash", legs="Psycloth Lappas", feet="Medium's Sabots"}--check medium's sabots
 			--M.Acc: 149
 			--Enfeebling: 450
 			--MND: 267
 			--INT: 270
 
-	sets.midcast.Enhancing = {main="Marin Staff +1",
+	sets.midcast.Enhancing = {main="Oranyan",
 		head="Befouled Crown", neck="Colossus's Torque", left_ear="Loquac. Earring", right_ear="Andoaa Earring",
 		body="Telchine Chas.", hands="Augur's Gloves",
 		back="Swith Cape", waist="Olympus Sash", legs="Shedir Seraweels", feet="Inspirited Boots"}
 
-	sets.midcast.ElementalMagic = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Ghastly Tathlum",
+	sets.midcast.ElementalMagic = {main="Oranyan", sub="Mephitis Grip", ammo="Ghastly Tathlum",
 		head="Helios Band", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Count's Garb", hands="Helios Gloves", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Toro Cape", waist="Yamabuki-no-Obi", legs="Hagondes Pants +1", feet="Helios Boots"}
 			--Umbani Boots?
 
-	sets.midcast.DarkMagic = {main="Marin Staff +1",sub="Mephitis Grip",ammo="Kalboron Stone",
+	sets.midcast.DarkMagic = {main="Oranyan",sub="Mephitis Grip",ammo="Elis Tome",
 		head="Kaabnax Hat",	neck="Eddy Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Helios Jacket", hands="Lurid Mitts", left_ring="Acumen Ring", right_ring="Sangoma Ring",
 		back="Bane Cape", waist="Famine Sash", legs="Psycloth Lappas", feet="Medium's Sabots"}
 
 	sets.TP = {}
-	sets.TP.Engage = {main="Marin Staff +1", sub="Mephitis Grip", ammo="Ghastly Tathlum",
+	sets.TP.Engage = {main="Oranyan", sub="Mephitis Grip", ammo="Ghastly Tathlum",
 		head="Helios Band",	neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Helios Jacket", hands="Helios Gloves", left_ring="Rajas Ring", right_ring="Cho'j Band",
 		back="Buquwik Cape", waist="Windbuffet Belt", legs="Hagondes Pants +1", feet="Helios Boots"}
