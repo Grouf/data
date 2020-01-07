@@ -26,7 +26,7 @@ function get_sets()
 	sets.JA.Accomplice = {head="Skulker's Bonnet +1"}
 	sets.JA.Collaborator = {head="Skulker's Bonnet +1"}
 	sets.JA['Perfect Dodge'] = {hands="Plun. Armlets +1"}
-	sets.JA.Feint = {legs="Plun. Culottes"}
+	sets.JA.Feint = {legs="Plun. Culottes +1"}
 	--sets.JA["Assassin's Charge"] = {feet="Plun. Poulaines"}
 	sets.JA["Sneak Attack"] = {hands="Skulk. Armlets +1"}
 	sets.JA["Trick Attack"] = { } --AGI increase Damage
@@ -37,7 +37,7 @@ function get_sets()
 		--Cure, Healing Waltz = Erase
 		--CHR of caster, VIT of Target
 
-	sets.JA.Step = {head="Skulker's Bonnet +1", neck="Subtlety Spec.", left_ear="Steelflash Earring", right_ear="Zennaroi Earring", 
+	sets.JA.Step = {head="Skulker's Bonnet +1", neck="Subtlety Spec.", left_ear="Telos Earring", right_ear="Zennaroi Earring", 
 		body="Rawhide Vest", hands="Herculean Gloves", left_ring="Candent Ring", right_ring="Beeline Ring", 
 		back="Grounded Mantle", waist="Olseni Belt", legs="Feast Hose", feet="Rawhide Boots"}  --need accuracy
 
@@ -46,32 +46,27 @@ function get_sets()
 		right_ring="Stikini Ring", legs="Iuitl Tights +1"}) --Accuracy for hit, Magic Accuracy for Stun
 		--Stuns
 
-	sets.FastCast = {head="Haruspex Hat", neck="Magoraga Beads",
-		left_ear="Etiolation Earring", right_ear="Loquac. Earring",
+	sets.FastCast = {head="Haruspex Hat", neck="Magoraga Beads", left_ear="Etiolation Earring", right_ear="Loquac. Earring",
 		body="Taeon Tabard", hands="Thaumas Gloves", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		waist="Sailfi Belt", legs="Kaabnax Trousers", feet="Rawhide Boots"}
 		--Fast Cast: 18%
 		--Haste: 33%
 
-	sets.Idle = {head="Taeon Chapeau",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Rawhide Vest",hands="Herculean Gloves",left_ring="Hetairoi Ring",
-		right_ring="Epona's Ring",back="Canny Cape",waist="Sarissapho. Belt",
-		legs="Ta'lab Trousers",feet="Jute Boots +1"}
+	sets.Idle = {head="Taeon Chapeau",neck="Asperity Necklace",left_ear="Infused Earring", right_ear="Etiolation Earring",
+		body="Rawhide Vest",hands="Herculean Gloves",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
+		back="Canny Cape",waist="Sarissapho. Belt",legs="Ta'lab Trousers",feet="Jute Boots +1"}
 
-	sets.Idle.TH = {head="Taeon Chapeau",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Rawhide Vest",hands="Plun. Armlets +1",left_ring="Hetairoi Ring",
-		right_ring="Epona's Ring",back="Canny Cape",waist="Chaac Belt",
-		legs="Ta'lab Trousers",feet="Jute Boots +1"}
+	sets.Idle.TH = {head="Taeon Chapeau",neck="Asperity Necklace",left_ear="Infused Earring", right_ear="Etiolation Earring",
+		body="Rawhide Vest",hands="Plun. Armlets +1",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
+		back="Canny Cape",waist="Chaac Belt", legs="Ta'lab Trousers",feet="Jute Boots +1"}
 		
-	sets.Idle.DT = {head="Lithelimb Cap", neck="Twilight Torque", left_ear="Etiolation Earring",
-		right_ear="Allegro Earring", body="Emet Harness +1", hands="Herculean Gloves", left_ring="Succor Ring",
-		right_ring="Shadow Ring", back="Repulse Mantle", waist="Flume Belt",
-		legs="Kaabnax Trousers", feet="Jute Boots +1"}
+	sets.Idle.DT = {head="Lithelimb Cap", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring", 
+		body="Emet Harness +1", hands="Herculean Gloves", left_ring="Succor Ring", right_ring="Shadow Ring",
+		back="Repulse Mantle", waist="Flume Belt",legs="Kaabnax Trousers", feet="Jute Boots +1"}
 		
-	sets.Ranged = {head="Umbani Cap", neck="Iskur Gorget", left_ear="Volley earring",
-		right_ear="Enervating Earring", body="Mekosu. Harness", hands="Buremte Gloves", left_ring="Fistmele Ring",
-		right_ring="Paqichikaji Ring", back="Libeccio Mantle", waist="Eschan Stone",
-		legs="Pursuer's Pants", feet="Scopuli Nails +1"} 
+	sets.Ranged = {head="Umbani Cap", neck="Iskur Gorget", left_ear="Volley earring", right_ear="Enervating Earring",
+		body="Mekosu. Harness", hands="Pursuer's Cuffs", left_ring="Fistmele Ring", right_ring="Paqichikaji Ring",
+		back="Libeccio Mantle", waist="Eschan Stone", legs="Pursuer's Pants", feet="Scopuli Nails +1"} 
 		--AGI for Ranged Accuracy: 4AGI=3R.Acc
 		--STR for Ranged Attack
 
@@ -81,16 +76,14 @@ function get_sets()
 
 
 --M E L E E
-	sets.DD = {head="Taeon Chapeau",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Rawhide Vest",hands="Herculean Gloves",left_ring="Hetairoi Ring",
-		right_ring="Epona's Ring",back="Canny Cape",waist="Sarissapho. Belt",
-		legs="Ta'lab Trousers",feet="Rawhide Boots"}
+	sets.DD = {head="Taeon Chapeau",neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
+		body="Rawhide Vest",hands="Herculean Gloves",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
+		back="Canny Cape",waist="Sarissapho. Belt", legs="Ta'lab Trousers",feet="Rawhide Boots"}
 
 
 	sets.DD.MidAcc = set_combine(sets.DD, {head="Whirlpool Mask", neck="Subtlety Spec.",
 		right_ear="Zennaroi Earring", left_ring="Beeline Ring",
-		back="Grounded Mantle",waist="Olseni Belt",
-		legs="Feast Hose"})
+		back="Grounded Mantle",waist="Olseni Belt",legs="Feast Hose"})
 
 	sets.DD.HighAcc = sets.DD.MidAcc
 
@@ -100,12 +93,12 @@ function get_sets()
 	sets.TH.HighAcc = sets.TH.MidAcc
 
 
-	sets.DT = {head="Lithelimb Cap", neck="Twilight Torque", left_ear="Etiolation Earring",
-		right_ear="Allegro Earring", body="Emet Harness +1", hands="Herculean Gloves", left_ring="Succor Ring",
-		right_ring="Shadow Ring", back="Repulse Mantle", waist="Flume Belt",
-		legs="Kaabnax Trousers", feet="Skulk. Poulaines +1"} --  kaabnax needs replacing
+	sets.DT = {head="Lithelimb Cap", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		body="Emet Harness +1", hands="Herculean Gloves", left_ring="Succor Ring", right_ring="Shadow Ring",
+		back="Repulse Mantle", waist="Flume Belt", legs="Kaabnax Trousers", feet="Skulk. Poulaines +1"} 
+			--  kaabnax needs replacing
 
-	sets.DT.MidAcc = set_combine(sets.DT, {right_ear="Heartseeker Earring", waist="Olseni Belt"})
+	sets.DT.MidAcc = set_combine(sets.DT, { waist="Olseni Belt"})
 
 
 	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Grounded Mantle"})
@@ -113,25 +106,24 @@ function get_sets()
 
 
 
-	sets.WS = {head="Whirlpool Mask",neck="Fotia Gorget",left_ear="Dudgeon Earring",
-		right_ear="Bladeborn Earring",body="Taeon Tabard",hands="Herculean Gloves",left_ring="Excelsis Ring",
-		right_ring="Cho'j Band",back="Vespid Mantle",waist="Prosilio Belt +1",
-		legs="Ta'lab Trousers",feet="Rawhide Boots"} --Done
+	sets.WS = {head="Whirlpool Mask",neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
+		body="Taeon Tabard",hands="Herculean Gloves",left_ring="Excelsis Ring", right_ring="Cho'j Band",
+		back="Vespid Mantle",waist="Prosilio Belt +1", legs="Ta'lab Trousers",feet="Rawhide Boots"} --Done
 
 
 	sets.WS.MidAcc = set_combine(sets.WS, {head="Sukeroku Hachi.",
-		left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
 		hands="Umuthi Gloves", right_ring="Beeline Ring", back="Vespid Mantle", waist="Fotia Belt"})
 
 
-	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {head="Taeon Chapeau", back="Grounded Mantle",
-		waist="Olseni Belt", feet="Atrophy Boots +2"})
+	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {head="Taeon Chapeau", left_ear="Zennaroi Earring",
+		back="Grounded Mantle", waist="Olseni Belt", feet="Atrophy Boots +2"})
 	
 	
-	sets.WS['Aeolian Edge'] = {head="Whirlpool Mask", neck="Fotia Gorget", left_ear="Friomisi Earring",
-		right_ear="Crematio Earring", body="Mekosu. Harness", hands="Umuthi Gloves", left_ring="Weather. Ring",
-		right_ring="Acumen Ring", back="Toro Cape", waist="Eschan Stone",
-		legs="Pursuer's Pants", feet="Rawhide Boots"}	--DEX40%, INT40%
+	sets.WS['Aeolian Edge'] = {
+		head="Whirlpool Mask", neck="Fotia Gorget", left_ear="Friomisi Earring", right_ear="Crematio Earring",
+		body="Mekosu. Harness", hands="Umuthi Gloves", left_ring="Weather. Ring", right_ring="Acumen Ring",
+		back="Toro Cape", waist="Eschan Stone", legs="Pursuer's Pants", feet="Rawhide Boots"}	
+														--DEX40%, INT40%
 														--DEX:233, INT:191
 														--MAB:47
 														--M.Acc:47
@@ -143,7 +135,7 @@ function get_sets()
 	sets.WS.Cyclone.MidAcc = sets.WS.Cyclone
 	sets.WS.Cyclone.HighAcc = sets.WS.Cyclone
 
-	sets.WS["Last Stand"] = set_combine(sets.Ranged, {neck="Fotia Gorget", waist="Fotia Belt"})
+	sets.WS["Last Stand"] = set_combine(sets.Ranged, {neck="Fotia Gorget", right_ear="Ishvara Earring", waist="Fotia Belt"})
 	sets.WS["Last Stand"].MidAcc = sets.WS["Last Stand"]
 	sets.WS["Last Stand"].HighAcc = sets.WS["Last Stand"]
 
@@ -157,7 +149,7 @@ function get_sets()
 
 	set_macro_book()
 
-	sets.DontForget = {main="Izhiikoh", range="Tsoa. Crossbow", ammo="Gashing Bolt",
+	sets.DontForget = {main="Mandau", range="Tsoa. Crossbow", ammo="Gashing Bolt",
 		right_ear="Reraise Earring", left_ring="Gash. Bolt Quiver"}
 
 end
@@ -208,6 +200,9 @@ function precast(spell)
 		elseif spell.type == 'Waltz' and spell.english ~= 'Healing Waltz' then
 			equip(sets.JA.Waltz)
 		end
+	
+	elseif spell.english == "Ranged" then
+		equip(sets.Ranged)
 	end
 
 end --end precast
@@ -312,7 +307,7 @@ function buff_change(buff_name,gain)
 			enable('hands')
 			add_to_chat(9, 'Perfect Dodge off, hands enabled')
 		end
-	--sets.JA.Feint = {legs="Plun. Culottes"}
+	--sets.JA.Feint = {legs="Plun. Culottes +1"}
 	elseif buff_name=='Feint' then
 		if gain then
 			equip(sets.JA.Feint)
