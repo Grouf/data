@@ -75,7 +75,7 @@ function get_sets()
 		waist="Yamabuki-no-Obi",legs="Hagondes Pants +1",feet="Helios Boots"}
 
 	sets.midcast.DarkMagic = {main="Oranyan",sub="Enki Strap",ammo="Elis Tome",head="Bagua Galero +1",
-		neck="Eddy Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Helios Jacket",
+		neck="Erra Pendant",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Helios Jacket",
 		hands="Lurid Mitts",left_ring="Evanescence Ring",right_ring="Stikini Ring",back="Refraction Cape",
 		waist="Yamabuki-no-Obi",legs="Azimuth Tights +1",feet="Geomancy Sandals +2"}
 

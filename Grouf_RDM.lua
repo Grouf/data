@@ -88,16 +88,16 @@ function get_sets()
 
 
 	sets.Enfeeble = {main="Arendsi Fleuret", sub="Ammurapi Shield", Range="Kaja Bow",
-		head="Viti. Chapeau +3", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		head="Viti. Chapeau +3", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Snotra Earring",
 		body="Atrophy Tabard +2", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Stikini Ring",
 		back="Sucellos's Cape", waist="Luminary Sash", legs="Psycloth Lappas", feet="Vitiation Boots +2"}
 			--RDM/blm
 			--Potency:  need update
-			--Magic Accuracy:	247 (282 with staff and grip)
-			--Enfeeble Skill:	572
+			--Magic Accuracy:	227 (315 with weapons)
+			--Enfeeble Skill:	579
 			--Merit:			5+15 (hat augment)
 			--JP/Gift:			65
-			--Total:			904 (939)
+			--Total:			891 (979)
 			--MND:				106+213 = 319 (348 with staff and grip)
 			--INT:				101+181 = 282
 
@@ -105,11 +105,11 @@ function get_sets()
 	sets.Enfeeble.MidAcc = sets.Enfeeble
 			--RDM/blm
 			--Mid-Acc:
-			--Magic Accuracy:	247 (282 with staff and grip)
-			--Enfeeble Skill:	572
+			--Magic Accuracy:	227 (315 with weapons)
+			--Enfeeble Skill:	579
 			--Merit:			5+15 (hat augment)
 			--JP/Gift:			65
-			--Total:			904 (939)
+			--Total:			891 (979)
 			--MND:				106+213 = 319 (348 with staff and grip)
 			--INT:				101+181 = 282
 
