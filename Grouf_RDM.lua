@@ -70,7 +70,7 @@ function get_sets()
 
 	sets.Idle = {main="Bolelabunga", sub="Genmei Shield", ammo="Brigantia Pebble",
 		head="Viti. Chapeau +3", neck="Sanctity Necklace", left_ear="Infused Earring", right_ear="Etiolation Earring",
-		body="Atrophy Tabard +2", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Succor Ring",
+		body="Atrophy Tabard +3", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
 		--Refresh
 
@@ -82,36 +82,36 @@ function get_sets()
 
 	sets.Idle.MDT = {main="Emissary",sub="Beatific Shield +1", ammo="Brigantia Pebble",
 		head="Atro. Chapeau +2", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
-		body="Atrophy Tabard +2", hands="Atrophy Gloves +2", left_ring="Shadow Ring", right_ring="Succor Ring",
+		body="Atrophy Tabard +3", hands="Atrophy Gloves +2", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
 		-- MDB: 28, M.Eva: 421, MDT: -28%, DT: -8%, PTD: -11%, Evasion: 191
 
 
 	sets.Enfeeble = {main="Arendsi Fleuret", sub="Ammurapi Shield", Range="Kaja Bow",
 		head="Viti. Chapeau +3", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Snotra Earring",
-		body="Atrophy Tabard +2", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Stikini Ring",
+		body="Atrophy Tabard +3", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Stikini Ring",
 		back="Sucellos's Cape", waist="Luminary Sash", legs="Psycloth Lappas", feet="Vitiation Boots +2"}
 			--RDM/blm
 			--Potency:  need update
-			--Magic Accuracy:	227 (315 with weapons)
-			--Enfeeble Skill:	579
+			--Magic Accuracy:	??? (325 with weapons)
+			--Enfeeble Skill:	581
 			--Merit:			5+15 (hat augment)
 			--JP/Gift:			65
-			--Total:			891 (979)
-			--MND:				106+213 = 319 (348 with staff and grip)
-			--INT:				101+181 = 282
+			--Total:			??? (991)
+			--MND:				106+255 = ??? (361 with weapon)
+			--INT:				101+186 = 287
 
 	--sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble ,{range="Aureole"})  8
 	sets.Enfeeble.MidAcc = sets.Enfeeble
 			--RDM/blm
 			--Mid-Acc:
-			--Magic Accuracy:	227 (315 with weapons)
-			--Enfeeble Skill:	579
+			--Magic Accuracy:	??? (315 with weapons)
+			--Enfeeble Skill:	581
 			--Merit:			5+15 (hat augment)
 			--JP/Gift:			65
-			--Total:			891 (979)
-			--MND:				106+213 = 319 (348 with staff and grip)
-			--INT:				101+181 = 282
+			--Total:			??? (991)
+			--MND:				106+255 = ??? (361 with weapon)
+			--INT:				101+186 = 287
 
 	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc ,{neck="Incanter's Torque", left_ring="Stikini Ring"})
 			--RDM/blm
@@ -451,7 +451,7 @@ function midcast(spell)
 		end
 
 		if spell.english:startswith('Refresh') then
-			EquipSet = set_combine(EquipSet, {body="Atrophy Tabard +2", legs="Leth. Fuseau +1"})
+			EquipSet = set_combine(EquipSet, {body="Atrophy Tabard +3", legs="Leth. Fuseau +1"})
 		elseif spell.english == 'Stoneskin' then
 			EquipSet = set_combine(EquipSet, {waist="Siegel Sash", legs="Shedir Seraweels", neck="Nodens Gorget"})
 		elseif spell.english == 'Aquaveil' then
