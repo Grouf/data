@@ -47,7 +47,7 @@ function get_sets()
 
 	sets.JA.Step = {head="Hizamaru Somen +2", neck="Iqabi Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Hiza. Haramaki +2", hands="Hizamaru Kote +2", left_ring="Beeline Ring", right_ring="Hizamaru Ring",
-		back="Smertrios's Mantle", waist="Olseni Belt", legs="Hizamaru Hizayoroi +1", feet="Hiza. Sune-Ate +1"} --Primary Acc: 1091
+		back="Smertrios's Mantle", waist="Olseni Belt", legs="Hiza. Hizayoroi +2", feet="Hiza. Sune-Ate +2"} --Primary Acc: 1091
 
 	sets.JA["Violent Flourish"] = set_combine(sets.JA.Step, {left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		left_ring="Weather. Ring", right_ring="Stikini Ring"}) --Accuracy for hit, Magic Accuracy for Stun
@@ -94,7 +94,7 @@ function get_sets()
 		back="Smertrios's Mantle", waist="Cetl Belt", legs="Ryuo Hakama +1", feet="Ryuo Sune-Ate +1"}
 
 
-	sets.DD.MidAcc = set_combine(sets.DD, {feet="Hiza. Sune-Ate +1"})
+	sets.DD.MidAcc = set_combine(sets.DD, {feet="Hiza. Sune-Ate +2"})
 
 	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {waist="Olseni Belt"})
 
@@ -126,7 +126,7 @@ function get_sets()
 	sets.WS = {ammo="Knobkierrie",
 		head="Hizamaru Somen +2", neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
 		body="Hiza. Haramaki +2", hands="Hizamaru Kote +2", left_ring="K'ayres Ring", right_ring="Cho'j Band",
-		back="Smertrios's Mantle", waist="Prosilio Belt +1", legs="Hiza. Hizayoroi +1", feet="Ryuo Sune-Ate +1"}
+		back="Smertrios's Mantle", waist="Prosilio Belt +1", legs="Hiza. Hizayoroi +2", feet="Ryuo Sune-Ate +1"}
 			-- legs Ryuo Hakama +1   use for SC?
 
 	sets.WS.MidAcc = set_combine(sets.WS, {waist="Fotia Belt"})
@@ -191,7 +191,7 @@ end --end precast
 
 function midcast(spell)
 	
-	--THF has no mid cast
+	--SAM has no mid cast
 		return
 		
 end  --end midcast
