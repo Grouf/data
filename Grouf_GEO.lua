@@ -20,7 +20,7 @@ function get_sets()
 		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Nares Trews", feet="Geomancy Sandals +2"}
 	--Repulse Mantle
 	--Mecisto. Mantle
-	sets.precast.IdleLuopan = {main="Bolelabunga", sub="Genmei Shield", range="Dunna",
+	sets.precast.IdleLuopan = {main="Idris", sub="Genmei Shield", range="Dunna",
 		head="Azimuth Hood +1", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Azimuth Coat +1", hands="Geo. Mitaines +2", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Psycloth Lappas", feet="Bagua Sandals +1"}
@@ -33,7 +33,7 @@ function get_sets()
 --Job Ability--
 	sets.JA = {}
 	sets.JA['Collimated Fervor'] = {head="Bagua Galero +1"}
-	sets.JA.Bolster = {body="Bagua Tunic +1"}
+	sets.JA.Bolster = {body="Bagua Tunic +2"}
 	sets.JA['Full Circle'] = {head="Azimuth Hood +1"}
 	sets.JA['Mending Halation'] = {legs="Bagua Pants +1"}
 	sets.JA['Radial Arcana'] = {feet="Bagua Sandals +1"}
@@ -48,18 +48,18 @@ function get_sets()
 		back="Pahtli Cape", waist="Luminary Sash",legs="Doyen Pants",feet="Vanya Clogs"} --MND=111+197, Cure Pot.=43%  
 			--feet to vanya clogs
 
-	sets.midcast.Enfeeble = {main="Gada", sub="Ammurapi Shield", ammo="Elis Tome",
+	sets.midcast.Enfeeble = {main="Gada", sub="Ammurapi Shield", range="Dunna",
 		head="Kaabnax Hat", neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
-		body="Helios Jacket", hands="Lurid Mitts", left_ring="Stikini Ring", right_ring="Stikini Ring",
+		body="Bagua Tunic +2", hands="Lurid Mitts", left_ring="Stikini Ring", right_ring="Stikini Ring",
 		back="Refraction Cape", waist="Luminary Sash",legs="Psycloth Lappas",feet="Geomancy Sandals +2"}
 
-	sets.midcast.Geomancy = {main="Solstice",sub="Genmei Shield" ,range="Dunna",
+	sets.midcast.Geomancy = {main="Idris",sub="Genmei Shield" ,range="Dunna",
 		head="Azimuth Hood +1", neck="Incanter's Torque", right_ear="Gifted Earring", left_ear="Calamitous Earring",
-		body="Bagua Tunic +1", hands="Geo. Mitaines +2",left_ring="Stikini Ring",right_ring="Stikini Ring",
+		body="Bagua Tunic +2", hands="Geo. Mitaines +2",left_ring="Stikini Ring",right_ring="Stikini Ring",
 		back="Lifestream Cape",	waist="Luminary Sash", legs="Bagua Pants +1", feet="Azimuth Gaiters +1"}
-			--Geomancy Skill:	471
-			--Handbell Skill:	437
-			--Total:			908
+			--Geomancy Skill:	481
+			--Handbell Skill:	432
+			--Total:			913
 			--Conserve MP:		17
 		--Merlinic Crackows if not Indi spell?
 
@@ -69,19 +69,19 @@ function get_sets()
 		body="Telchine Chas.", hands="Augur's Gloves", left_ring="Stikini Ring", right_ring="Stikini Ring", 
 		waist="Olympus Sash",legs="Shedir Seraweels", feet="Inspirited Boots"}
 
-	sets.midcast.ElementalMagic = {main="Oranyan",sub="Enki Strap",ammo="Ghastly Tathlum",head="Helios Band",
-		neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",body="Count's Garb",
-		hands="Helios Gloves",left_ring="Acumen Ring",right_ring="Strendu ring",back="Toro Cape",
-		waist="Yamabuki-no-Obi",legs="Hagondes Pants +1",feet="Helios Boots"}
+	sets.midcast.ElementalMagic = {main="Oranyan",sub="Enki Strap",ammo="Ghastly Tathlum",
+		head="Helios Band", neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",
+		body="Count's Garb", hands="Helios Gloves",left_ring="Acumen Ring",right_ring="Strendu ring",
+		back="Toro Cape", waist="Yamabuki-no-Obi",legs="Hagondes Pants +1",feet="Helios Boots"}
 
-	sets.midcast.DarkMagic = {main="Oranyan",sub="Enki Strap",ammo="Elis Tome",head="Bagua Galero +1",
-		neck="Erra Pendant",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",body="Helios Jacket",
-		hands="Lurid Mitts",left_ring="Evanescence Ring",right_ring="Stikini Ring",back="Refraction Cape",
-		waist="Yamabuki-no-Obi",legs="Azimuth Tights +1",feet="Geomancy Sandals +2"}
+	sets.midcast.DarkMagic = {main="Oranyan",sub="Enki Strap",ammo="Elis Tome",
+		head="Bagua Galero +1", neck="Erra Pendant",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
+		body="Bagua Tunic +2", hands="Lurid Mitts",left_ring="Evanescence Ring",right_ring="Stikini Ring",
+		back="Refraction Cape", waist="Yamabuki-no-Obi",legs="Azimuth Tights +1",feet="Geomancy Sandals +2"}
 
 	sets.TP = {
 		head="Nahtirah Hat", neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
-		body="Helios Jacket", hands="Geo. Mitaines +2", left_ring="Beeline Ring", right_ring="K'ayres Ring",
+		body="Bagua Tunic +2", hands="Geo. Mitaines +2", left_ring="Beeline Ring", right_ring="K'ayres Ring",
 		back="Buquwik Cape", waist="Windbuffet Belt", legs="Psycloth Lappas", feet="Helios Boots"}
 
     sets.WS = set_combine(sets.TP, {neck="Fotia Gorget", right_ear="Ishvara Earring", right_ring="Cho'j Band",
@@ -133,7 +133,7 @@ end
 
 --[[Relic augments:
 Head: Bagua Galero +1: Primeval Zeal
-Body: Bagua Tunic +1: Bolster
+Body: Bagua Tunic +2: Bolster
 Hands: Bagua Mitaines +1: Curative Recantation
 Legs: Bagua Pants +1: Mending Halation
 Feet: Bagua Sandals +1: Radial Arcana
