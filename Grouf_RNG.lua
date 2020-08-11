@@ -13,7 +13,7 @@ function get_sets()
 	sets.JA['Bounty Shot'] = {hands="Amini Glovelettes"}
 	sets.JA['Unlimited Shot'] = {feet="Amini Bottillons +1"} --Don't need since it shares timer with Double Shot
 	sets.JA.Scavenge = {feet="Orion Socks"}
-	sets.JA.Camouflage = {body="Orion Jerkin"}
+	sets.JA.Camouflage = {body="Orion Jerkin +1"}
 	sets.JA.Shadowbind = {hands="Orion Bracers"}
 	
 	--[[sets.Snapshot = {head="Amini Gapette",neck="",left_ear="",

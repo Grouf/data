@@ -45,7 +45,7 @@ function get_sets()
 		--CHR of caster, VIT of Target
 	]]  --need to update
 
-	sets.JA.Step = {head="Hizamaru Somen +2", neck="Iqabi Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
+	sets.JA.Step = {head="Hizamaru Somen +2", neck="Subtlety Spec.", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Hiza. Haramaki +2", hands="Hizamaru Kote +2", left_ring="Beeline Ring", right_ring="Hizamaru Ring",
 		back="Smertrios's Mantle", waist="Olseni Belt", legs="Hiza. Hizayoroi +2", feet="Hiza. Sune-Ate +2"} --Primary Acc: 1091
 
@@ -53,18 +53,18 @@ function get_sets()
 		left_ring="Weather. Ring", right_ring="Stikini Ring"}) --Accuracy for hit, Magic Accuracy for Stun
 		--Stuns
 
-	sets.FastCast = {left_ear="Etiolation Earring", right_ear="Loquac. Earring", right_ring="Prolix Ring", 
+	sets.FastCast = {left_ear="Loquac. Earring", right_ear="Etiolation Earring", right_ring="Prolix Ring", 
 		left_ring="Weather. Ring", waist="Sailfi Belt"}
 		--Fast Cast: 18%???
 		--Haste: 33%
 
 	sets.Idle = {ammo="Ginsen",
 		head="Hizamaru Somen +2", neck="Asperity Necklace", left_ear="Infused Earring", right_ear="Etiolation Earring",
-		body="Hiza. Haramaki +2", hands="Hizamaru Kote +2", left_ring="K'ayres Ring", right_ring="Hizamaru Ring",
+		body="Hiza. Haramaki +2", hands="Hizamaru Kote +2", left_ring="Ilabrat Ring", right_ring="Hizamaru Ring",
 		back="Smertrios's Mantle", waist="Cetl Belt", legs="Ryuo Hakama +1", feet="Danzo Sune-Ate"}
 
 	sets.Idle.DT = {ammo="Ginsen",
-		head="Lithelimb Cap", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Ynglinga Sallet", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Emet Harness +1", hands="Sakonji Kote +1", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Agema Cape", waist="Flume Belt", legs="Osmium Cuisses", feet="Otronif Boots +1"}
 		
@@ -90,17 +90,17 @@ function get_sets()
 --M E L E E
 	sets.DD = {ammo="Ginsen",
 		head="Hizamaru Somen +2", neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
-		body="Kasuga Domaru +1", hands="Hizamaru Kote +2", left_ring="K'ayres Ring", right_ring="Hizamaru Ring",
+		body="Kasuga Domaru +1", hands="Hizamaru Kote +2", left_ring="Ilabrat Ring", right_ring="Hizamaru Ring",
 		back="Smertrios's Mantle", waist="Cetl Belt", legs="Ryuo Hakama +1", feet="Ryuo Sune-Ate +1"}
 
 
-	sets.DD.MidAcc = set_combine(sets.DD, {feet="Hiza. Sune-Ate +2"})
+	sets.DD.MidAcc = set_combine(sets.DD, {body="Sakonji Domaru +3", feet="Hiza. Sune-Ate +2"})
 
 	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {waist="Olseni Belt"})
 
 
 	sets.DT = {ammo="Ginsen",
-		head="Lithelimb Cap", neck="Twilight Torque", left_ear="Telos Earring", right_ear="Digni. Earring",
+		head="Ynglinga Sallet", neck="Twilight Torque", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Emet Harness +1", hands="Sakonji Kote +1", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Agema Cape", waist="Flume Belt", legs="Osmium Cuisses", feet="Otronif Boots +1"}
 
@@ -124,22 +124,23 @@ function get_sets()
 
 
 	sets.WS = {ammo="Knobkierrie",
-		head="Hizamaru Somen +2", neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
-		body="Hiza. Haramaki +2", hands="Hizamaru Kote +2", left_ring="K'ayres Ring", right_ring="Cho'j Band",
-		back="Smertrios's Mantle", waist="Prosilio Belt +1", legs="Hiza. Hizayoroi +2", feet="Ryuo Sune-Ate +1"}
+		head="Hizamaru Somen +2", neck="Fotia Gorget", left_ear="Thrud Earring", right_ear="Ishvara Earring",
+		body="Sakonji Domaru +3", hands="Hizamaru Kote +2", left_ring="Shukuyu Ring", right_ring="Cho'j Band",
+		back="Smertrios's Mantle", waist="Fotia Belt", legs="Hiza. Hizayoroi +2", feet="Ryuo Sune-Ate +1"}
 			-- legs Ryuo Hakama +1   use for SC?
+			--delete?  Prosilio Belt +1
 
-	sets.WS.MidAcc = set_combine(sets.WS, {waist="Fotia Belt"})
+	sets.WS.MidAcc = set_combine(sets.WS, {feet="Hiza. Sune-Ate +2"})
 
 
-	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {feet="Waki. Sune-Ate +1"})
+	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {head="Ynglinga Sallet"})
 	
 
 
 
 	set_macro_book()
 
-	sets.DontForget = {main="Masamune",sub="Tzacab Grip", right_ear="Reraise Earring"}
+	sets.DontForget = {main="Masamune",sub="Utu Grip", right_ear="Reraise Earring"}
 
 end
 

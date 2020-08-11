@@ -9,8 +9,9 @@ Head		Atrophy Chapeau +1	12		(            RDM                                )
 			Psycloth Tiara(aug)	10		(        BLM rdm                 SMN BLU GEO    )
 			Haruspex Hat		8		(MNK whm blm rdm THF RNG         smn blu geo RUN)
 			Haruspex Hat +1		9		(MNK whm blm rdm THF RNG         smn blu geo RUN)
+			Herculean Helm		7		(mnk             THF RNG     NIN     blu geo run)
 
-Neck		Orunmila's Torque 	5		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
+Neck		Orunmila's Torque 	5	xx	(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
 			Orison Locket		5		(    WHM	                                    )
 
 Ear			Estoqueurs Earring	2		(            RDM                                )
@@ -26,16 +27,19 @@ Hands		Gende. Gages +1		7		(    WHM     RDM                                )
 			Thaumas Gloves		4		(MNK             THF RNG     NIN     BLU     RUN)
 			Repartie Gloves		2		(    whm BLM rdm                 SMN     GEO    )
 
-Ring		Prolix Ring			2		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
+Ring		Prolix Ring			2		(mnk whm blm rdm thf rng sam nin smn blu geo run)
+			Weather. Ring		5		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
+			Weather. Ring +1	6		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
 
 Back		Lifestream Cape		7		(                                        GEO    )
 			Swith Cape			3		(    WHM BLM RDM                 SMN BLU geo    )
+			Andartia's Mantle   10		(							 NIN                )
 
 Waist		Witful Belt			3		(    WHM BLM RDM                 SMN BLU GEO    )
-			Channeler's Stone	2		(    WHM BLM RDM				 SMN	 GEO	)
+			Channeler's Stone	2		(    whm blm rdm				 smn	 geo	)
 
 Legs		Geomancy Pants		10		(                                        GEO    )
 			Orvail Pants +1		5		(    WHM BLM RDM                 SMN BLU geo RUN)
 			Artsieq Hose		5		(    WHM BLM RDM                 SMN     geo    )
 
-Feet
+Feet		Navon Crackows		5		(    WHM BLM RDM                 SMN     GEO    )

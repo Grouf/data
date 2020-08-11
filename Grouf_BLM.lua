@@ -4,6 +4,8 @@
 		===========================
 ]]
 
+Lathi
+
 include('Obi_Check')
 
 function get_sets()
@@ -24,7 +26,7 @@ function get_sets()
 
 	sets.midcast = {}
 	sets.midcast.Cure = {main="Oranyan",sub="Mephitis Grip", ammo="Oreiad's Tathlum",
-		head="Helios Band", neck="Nodens Gorget", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
+		head="Vanya Hood", neck="Nodens Gorget", left_ear="Loquac. Earring", right_ear="Lifestorm Earring",
 		body="Helios Jacket", hands="Telchine Gloves", left_ring="Sirona's Ring", right_ring="Solemn Ring",
 		back="Pahtli Cape", waist="Luminary Sash", legs="Nares Trews",feet="Umbani Boots"}
 			--need either Vanya Clogs or Medium's Sabots

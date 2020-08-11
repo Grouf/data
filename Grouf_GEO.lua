@@ -9,21 +9,21 @@ include('Obi_Check')
 function get_sets()
 	sets.precast = {}
 
-	sets.precast.FastCast = {main="Oranyan",sub="Enki Strap",head="Nahtirah Hat",
-		body="Anhur Robe", left_ear="Loquac. Earring", right_ear="Etiolation Earring",
-		hands="Geo. Mitaines +2", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants +2",feet="Helios Boots"}  --Fast Cast = 47%?
+	sets.precast.FastCast = {main="Idris",sub="Genmei Shield", range="Dunna",
+		head="Nahtirah Hat", left_ear="Loquac. Earring", right_ear="Etiolation Earring",
+		body="Anhur Robe", hands="Geo. Mitaines +2", left_ring="Weather. Ring", right_ring="Prolix Ring",
+		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants +2",feet="Helios Boots"}  --Fast Cast = 56%
 
-	sets.precast.IdleRefresh = {main="Bolelabunga",sub="Genmei Shield",range="Dunna",
-		neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
-		body="Respite Cloak", hands="Bagua Mitaines +1", left_ring="Shadow Ring", right_ring="Succor Ring",
+	sets.precast.IdleRefresh = {main="Idris",sub="Genmei Shield",range="Dunna",
+		head="Bagua Galero +2", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		body="Geomancy Tunic +3", hands="Bagua Mitaines +2", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Nares Trews", feet="Geomancy Sandals +2"}
 	--Repulse Mantle
 	--Mecisto. Mantle
 	sets.precast.IdleLuopan = {main="Idris", sub="Genmei Shield", range="Dunna",
-		head="Azimuth Hood +1", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
-		body="Azimuth Coat +1", hands="Geo. Mitaines +2", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Psycloth Lappas", feet="Bagua Sandals +1"}
+		head="Bagua Galero +2", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		body="Geomancy Tunic +3", hands="Geo. Mitaines +2", left_ring="Shadow Ring", right_ring="Succor Ring",
+		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Geomancy Pants +2", feet="Bagua Sandals +1"}
 	--Lifestream Cape
 
 	sets.precast.Idle = sets.precast.IdleRefresh
@@ -32,63 +32,67 @@ function get_sets()
 
 --Job Ability--
 	sets.JA = {}
-	sets.JA['Collimated Fervor'] = {head="Bagua Galero +1"}
-	sets.JA.Bolster = {body="Bagua Tunic +2"}
+	sets.JA['Collimated Fervor'] = {head="Bagua Galero +2"}
+	sets.JA.Bolster = {body="Bagua Tunic +3"}
 	sets.JA['Full Circle'] = {head="Azimuth Hood +1"}
-	sets.JA['Mending Halation'] = {legs="Bagua Pants +1"}
+	sets.JA['Mending Halation'] = {legs="Bagua Pants +2"}
 	sets.JA['Radial Arcana'] = {feet="Bagua Sandals +1"}
-	sets.JA['Life Cycle'] = {body="Geomancy Tunic +2"}
+	sets.JA['Life Cycle'] = {body="Geomancy Tunic +3"}
 
 --Midcast
 	sets.midcast = {}
 
 	sets.midcast.Cure = {main="Gada", sub="Ammurapi Shield", ammo="Oreiad's Tathlum",
-		head="Kaabnax Hat", neck="Nodens Gorget",left_ear="Mendi. Earring",right_ear="Lifestorm Earring",
-		body="Geomancy Tunic +2", hands="Telchine Gloves",left_ring="Stikini Ring",right_ring="Stikini Ring",
-		back="Pahtli Cape", waist="Luminary Sash",legs="Doyen Pants",feet="Vanya Clogs"} --MND=111+197, Cure Pot.=43%  
-			--feet to vanya clogs
+		head="Vanya Hood", neck="Nodens Gorget",left_ear="Mendi. Earring",right_ear="Lifestorm Earring",
+		body="Geomancy Tunic +3", hands="Telchine Gloves",left_ring="Stikini Ring",right_ring="Stikini Ring",
+		back="Pahtli Cape", waist="Luminary Sash",legs="Doyen Pants",feet="Vanya Clogs"}
+		--MND=111+206, Cure Pot.=60%  
+		
 
 	sets.midcast.Enfeeble = {main="Gada", sub="Ammurapi Shield", range="Dunna",
-		head="Kaabnax Hat", neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
-		body="Bagua Tunic +2", hands="Lurid Mitts", left_ring="Stikini Ring", right_ring="Stikini Ring",
-		back="Refraction Cape", waist="Luminary Sash",legs="Psycloth Lappas",feet="Geomancy Sandals +2"}
+		head="Bagua Galero +2", neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
+		body="Bagua Tunic +3", hands="Azimuth Gloves +1", left_ring="Stikini Ring", right_ring="Stikini Ring",
+		back="Refraction Cape", waist="Luminary Sash",legs="Bagua Pants +2",feet="Geomancy Sandals +2"}
 
 	sets.midcast.Geomancy = {main="Idris",sub="Genmei Shield" ,range="Dunna",
 		head="Azimuth Hood +1", neck="Incanter's Torque", right_ear="Gifted Earring", left_ear="Calamitous Earring",
-		body="Bagua Tunic +2", hands="Geo. Mitaines +2",left_ring="Stikini Ring",right_ring="Stikini Ring",
-		back="Lifestream Cape",	waist="Luminary Sash", legs="Bagua Pants +1", feet="Azimuth Gaiters +1"}
+		body="Bagua Tunic +3", hands="Geo. Mitaines +2",left_ring="Stikini Ring",right_ring="Stikini Ring",
+		back="Lifestream Cape",	waist="Luminary Sash", legs="Bagua Pants +2", feet="Azimuth Gaiters +1"}
 			--Geomancy Skill:	481
 			--Handbell Skill:	432
 			--Total:			913
 			--Conserve MP:		17
 		--Merlinic Crackows if not Indi spell?
+		--Reti Pendant for Conserve MP? :: need to check skill
+		--Thaumaturge's Cape for Conserve MP? :: need to check skill
 
 	--Enhancing needs work
 	sets.midcast.Enhancing = {main="Gada", sub="Ammurapi Shield",
 		head="Befouled Crown", neck="Incanter's Torque",left_ear="Loquac. Earring", right_ear="Andoaa Earring",
 		body="Telchine Chas.", hands="Augur's Gloves", left_ring="Stikini Ring", right_ring="Stikini Ring", 
-		waist="Olympus Sash",legs="Shedir Seraweels", feet="Inspirited Boots"}
+		waist="Olympus Sash",legs="Shedir Seraweels", feet="Regal Pumps"}
 
 	sets.midcast.ElementalMagic = {main="Oranyan",sub="Enki Strap",ammo="Ghastly Tathlum",
-		head="Helios Band", neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",
-		body="Count's Garb", hands="Helios Gloves",left_ring="Acumen Ring",right_ring="Strendu ring",
-		back="Toro Cape", waist="Yamabuki-no-Obi",legs="Hagondes Pants +1",feet="Helios Boots"}
+		head="Bagua Galero +2", neck="Eddy Necklace",left_ear="Crematio Earring",right_ear="Friomisi Earring",
+		body="Bagua Tunic +3", hands="Bagua Mitaines +2",left_ring="Acumen Ring",right_ring="Strendu ring",
+		back="Toro Cape", waist="Yamabuki-no-Obi",legs="Bagua Pants +2",feet="Helios Boots"}
 
-	sets.midcast.DarkMagic = {main="Oranyan",sub="Enki Strap",ammo="Elis Tome",
-		head="Bagua Galero +1", neck="Erra Pendant",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
-		body="Bagua Tunic +2", hands="Lurid Mitts",left_ring="Evanescence Ring",right_ring="Stikini Ring",
-		back="Refraction Cape", waist="Yamabuki-no-Obi",legs="Azimuth Tights +1",feet="Geomancy Sandals +2"}
+	sets.midcast.DarkMagic = {main="Idris",sub="Ammurapi Shield",ammo="Dunna",
+		head="Bagua Galero +2", neck="Erra Pendant",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
+		body="Geomancy Tunic +3", hands="Bagua Mitaines +2",left_ring="Evanescence Ring",right_ring="Stikini Ring",
+		back="Refraction Cape", waist="Luminary Sash",legs="Azimuth Tights +1",feet="Geomancy Sandals +2"}
+		--Dark Magic = 439
+		--M.Accuracy = 283
 
-	sets.TP = {
-		head="Nahtirah Hat", neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
-		body="Bagua Tunic +2", hands="Geo. Mitaines +2", left_ring="Beeline Ring", right_ring="K'ayres Ring",
-		back="Buquwik Cape", waist="Windbuffet Belt", legs="Psycloth Lappas", feet="Helios Boots"}
+	sets.TP = {main="Idris",sub="Genmei Shield" ,range="Dunna",
+		head="Bagua Galero +2", neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
+		body="Bagua Tunic +3", hands="Bagua Mitaines +2", left_ring="Hetairoi Ring", right_ring="K'ayres Ring",
+		back="Buquwik Cape", waist="Windbuffet Belt", legs="Bagua Pants +2", feet="Helios Boots"}
 
-    sets.WS = set_combine(sets.TP, {neck="Fotia Gorget", right_ear="Ishvara Earring", right_ring="Cho'j Band",
-		waist="Prosilio Belt +1"})
+    sets.WS = set_combine(sets.TP, {head="Sukeroku Hachi.", neck="Fotia Gorget", right_ear="Ishvara Earring", 
+		right_ring="Cho'j Band", waist="Fotia Belt"})
 
-    sets.DontForget = {head="Umuthi Hat", body="Telchine Chas.", 
-		left_ring="Excelsis Ring", legs="Doyen Pants"}
+    sets.DontForget = {head="Umuthi Hat", body="Telchine Chas.", legs="Doyen Pants"}
 
 
 	send_command('input /macro book 20;wait .1;input /macro set 1')
@@ -110,7 +114,7 @@ function precast(spell)
 			equip({legs="Doyen Pants"})
 		end
 		if spell.skill == 'Elemental Magic' then
-			equip({hands="Bagua Mitaines +1"})
+			equip({hands="Bagua Mitaines +2"})
 		end
 
 	elseif spell.type=="WeaponSkill" then
@@ -132,10 +136,10 @@ function precast(spell)
 end
 
 --[[Relic augments:
-Head: Bagua Galero +1: Primeval Zeal
-Body: Bagua Tunic +2: Bolster
-Hands: Bagua Mitaines +1: Curative Recantation
-Legs: Bagua Pants +1: Mending Halation
+Head: Bagua Galero +2: Primeval Zeal
+Body: Bagua Tunic +3: Bolster
+Hands: Bagua Mitaines +2: Curative Recantation
+Legs: Bagua Pants +2: Mending Halation
 Feet: Bagua Sandals +1: Radial Arcana
 ]]
 
@@ -156,6 +160,8 @@ function midcast(spell)
 			equip({waist="Siegel Sash", neck="Nodens Gorget"})
 		elseif spell.english:startswith('Regen') then
 			equip({main="Bolelabunga", body="Telchine Chas."})
+		elseif spell.english:startswith('Refresh') then
+			equip({main="Bolelabunga", feet="Inspirited Boots"})
 		end
 	elseif spell.skill == 'Elemental Magic' then
 		equip(sets.midcast.ElementalMagic)

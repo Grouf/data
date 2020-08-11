@@ -4,6 +4,20 @@
 		=========================
 ]]
 
+--[[	Weapons:
+
+Tizona - mythic lol
+
+main hands: Naegling
+			Maxentius
+		both from Ambuscade
+
+off hand:	Thibron w/ 1000 TP bonus  - Magian trial
+			Colada possible - from reisenjima Irongiant, augmentable
+
+]]
+
+
 include('Obi_Check')
 
 function get_sets()

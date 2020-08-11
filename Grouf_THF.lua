@@ -18,8 +18,8 @@ function get_sets()
 
 	--Job Abilities
 	sets.JA = {}
-	sets.JA.Flee = {feet="Pillager's Poulaines"}
-	sets.JA.Steal = {hands="Pillager's Armlets",legs="Assassin's Culottes",feet="Pillager's Poulaines"}
+	sets.JA.Flee = {feet="Pill. Poulaines +1"}
+	sets.JA.Steal = {hands="Pill. Armlets +1",legs="Assassin's Culottes",feet="Pill. Poulaines +1"}
 	--sets.JA.Mug = {head="Plun. Bonnet"}
 	sets.JA.Despoil = {legs="Skulk. Culottes +1", feet="Skulk. Poulaines +1"}
 	sets.JA.Conspirator = {body="Skulker's Vest +1"}
@@ -29,7 +29,7 @@ function get_sets()
 	sets.JA.Feint = {legs="Plun. Culottes +1"}
 	--sets.JA["Assassin's Charge"] = {feet="Plun. Poulaines"}
 	sets.JA["Sneak Attack"] = {hands="Skulk. Armlets +1"}
-	sets.JA["Trick Attack"] = { } --AGI increase Damage
+	sets.JA["Trick Attack"] = { hands="Pill. Armlets +1" } --AGI increase Damage
 
 	sets.JA.Waltz = {head="Lithelimb Cap", neck="Twilight Torque", right_ear="Soil Pearl", left_ear="Soil Pearl",
 		body="Rawhide Vest", hands="Plun. Armlets +1", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
@@ -46,26 +46,26 @@ function get_sets()
 		right_ring="Stikini Ring", legs="Iuitl Tights +1"}) --Accuracy for hit, Magic Accuracy for Stun
 		--Stuns
 
-	sets.FastCast = {head="Haruspex Hat", neck="Magoraga Beads", left_ear="Etiolation Earring", right_ear="Loquac. Earring",
+	sets.FastCast = {head="Herculean Helm", neck="Magoraga Beads", left_ear="Etiolation Earring", right_ear="Loquac. Earring",
 		body="Taeon Tabard", hands="Thaumas Gloves", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		waist="Sailfi Belt", legs="Kaabnax Trousers", feet="Rawhide Boots"}
-		--Fast Cast: 18%
-		--Haste: 33%
+		--Fast Cast: 30%
+		--Haste: 34%
 
 	sets.Idle = {head="Taeon Chapeau",neck="Asperity Necklace",left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Rawhide Vest",hands="Herculean Gloves",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
-		back="Canny Cape",waist="Sarissapho. Belt",legs="Ta'lab Trousers",feet="Jute Boots +1"}
+		back="Canny Cape",waist="Sarissapho. Belt",legs="Volte Hose",feet="Jute Boots +1"}
 
 	sets.Idle.TH = {head="Taeon Chapeau",neck="Asperity Necklace",left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Rawhide Vest",hands="Plun. Armlets +1",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
-		back="Canny Cape",waist="Chaac Belt", legs="Ta'lab Trousers",feet="Jute Boots +1"}
+		back="Canny Cape",waist="Chaac Belt", legs="Volte Hose",feet="Jute Boots +1"}
 		
 	sets.Idle.DT = {head="Lithelimb Cap", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring", 
 		body="Emet Harness +1", hands="Herculean Gloves", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Repulse Mantle", waist="Flume Belt",legs="Kaabnax Trousers", feet="Jute Boots +1"}
 		
 	sets.Ranged = {head="Umbani Cap", neck="Iskur Gorget", left_ear="Volley earring", right_ear="Enervating Earring",
-		body="Mekosu. Harness", hands="Pursuer's Cuffs", left_ring="Fistmele Ring", right_ring="Paqichikaji Ring",
+		body="Mekosu. Harness", hands="Pursuer's Cuffs", left_ring="Dingir Ring", right_ring="Paqichikaji Ring",
 		back="Libeccio Mantle", waist="Eschan Stone", legs="Pursuer's Pants", feet="Scopuli Nails +1"} 
 		--AGI for Ranged Accuracy: 4AGI=3R.Acc
 		--STR for Ranged Attack
@@ -83,7 +83,7 @@ function get_sets()
 
 	sets.DD.MidAcc = set_combine(sets.DD, {head="Whirlpool Mask", neck="Subtlety Spec.",
 		right_ear="Zennaroi Earring", left_ring="Beeline Ring",
-		back="Grounded Mantle",waist="Olseni Belt",legs="Feast Hose"})
+		back="Grounded Mantle",waist="Olseni Belt",legs="Volte Hose"})
 
 	sets.DD.HighAcc = sets.DD.MidAcc
 
@@ -107,12 +107,12 @@ function get_sets()
 
 
 	sets.WS = {head="Whirlpool Mask",neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
-		body="Taeon Tabard",hands="Herculean Gloves",left_ring="Excelsis Ring", right_ring="Cho'j Band",
-		back="Vespid Mantle",waist="Prosilio Belt +1", legs="Ta'lab Trousers",feet="Rawhide Boots"} --Done
+		body="Taeon Tabard",hands="Herculean Gloves",left_ring="Ilabrat Ring", right_ring="Cho'j Band",
+		back="Vespid Mantle",waist="Fotia Belt", legs="Ta'lab Trousers",feet="Rawhide Boots"} --Done
 
 
 	sets.WS.MidAcc = set_combine(sets.WS, {head="Sukeroku Hachi.",
-		hands="Umuthi Gloves", right_ring="Beeline Ring", back="Vespid Mantle", waist="Fotia Belt"})
+		hands="Umuthi Gloves", right_ring="Beeline Ring", back="Vespid Mantle"})
 
 
 	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {head="Taeon Chapeau", left_ear="Zennaroi Earring",
