@@ -3,6 +3,9 @@
 Jobs that have GearSwap files that will be updated:
 - MNK / BLM / RDM / THF / RNG / SAM / NIN / BLU / GEO
 
+Jobs that have completed file:
+- :x:
+
 These files are here for historical purposes:
 - WHM / SMN
 
