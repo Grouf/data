@@ -25,11 +25,13 @@ Body		Anhur Robe			10		(    WHM BLM rdm                 SMN BLU GEO    )
 
 Hands		Gende. Gages +1		7		(    WHM     RDM                                )
 			Thaumas Gloves		4		(MNK             THF RNG     NIN     BLU     RUN)
-			Repartie Gloves		2		(    whm BLM rdm                 SMN     GEO    )
+			Repartie Gloves		2		(    whm blm rdm                 smn     geo    )
+			Volte Gloves		6		(    whm BLM rdm                 SMN     GEO    )
 
 Ring		Prolix Ring			2		(mnk whm blm rdm thf rng sam nin smn blu geo run)
 			Weather. Ring		5		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
 			Weather. Ring +1	6		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)
+			Kishar Ring			4		(    WHM BLM RDM             NIN SMN BLU GEO RUN)
 
 Back		Lifestream Cape		7		(                                        GEO    )
 			Swith Cape			3		(    WHM BLM RDM                 SMN BLU geo    )

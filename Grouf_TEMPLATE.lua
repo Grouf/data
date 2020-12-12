@@ -90,6 +90,13 @@ function get_sets()
 
 	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc ,{neck="Incanter's Torque", left_ring="Stikini Ring"})
 
+	sets.Dispel = set_combine(sets.Enfeeble.MidAcc, {back="Sucellos's Cape"})
+		--Enfeeble Skill = 573
+		--M.Acc = 181
+
+	--sets.Dispel.MidAcc = set_combine(sets.Enfeeble,{})
+
+	--sets.Dispel.HighAcc = {}
 
 
 	sets.Elemental = {main="Oranyan", sub="Niobid Strap", ammo="Ghastly Tathlum",
