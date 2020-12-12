@@ -13,7 +13,7 @@ the single quote. To issue that command in a macro use `//console gs c name`.
 
 
 ## To Do:
-4. Document usable commands at the top of each file
+1. Change all files to use the same implementation of precast and midcast (use RDM and SAM as model)
 2. Add `sub_job_change` and `set_macro_book()` to all files
 3. Create accuracy and damage taken sets
-1. Change all files to use the same implementation of precast and midcast (use RDM and SAM as model)
+4. Document usable commands at the top of each file
