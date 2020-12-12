@@ -17,3 +17,4 @@ the single quote. To issue that command in a macro use `//console gs c name`.
 2. Add `sub_job_change` and `set_macro_book()` to all files
 3. Create accuracy and damage taken sets
 4. Document usable commands at the top of each file
+5. Modify Obi_Check.lua to return a T/F value and update jobs to use it
