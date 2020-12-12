@@ -6,7 +6,8 @@
 
 --[[
 		WANTED ITEMS
-	Ischemia Chasuble	-- Savage   Need for Enfeebling HighAcc, gives +6 m.acc over Lethargy body +1
+	Haven Hose - Stoneskin : Anemic Aloysius, Abyssea - Uleguerand
+	Emphatikos Rope - Aquaveil : Xan, Abyssea - Vunkerl
 ]]
 
 include('Obi_Check')
@@ -42,67 +43,67 @@ function get_sets()
 	sets.JA.Saboteur = {hands="Leth. Gantherots +1"}
 
 	sets.JA.Waltz = {ammo="Brigantia Pebble",
-		head="Atro. Chapeau +3", right_ear="Soil Pearl", left_ear="Soil Pearl",
+		head="Atrophy Chapeau +3", right_ear="Soil Pearl", left_ear="Soil Pearl",
 		body="Viti. Tabard +3", hands="Atrophy Gloves +3", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
-		back="Refraction Cape", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Atrophy Boots +2"}
+		back="Refraction Cape", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Atro. Boots +3"}
 		--Cure, Healing Waltz = Erase
 		--CHR of caster, VIT of Target
 
 	sets.JA.Step = {
 		head="Viti. Chapeau +3", neck="Subtlety Spec.", left_ear="Zennaroi Earring", right_ear="Digni. Earring",
-		body="Despair Mail", hands="Atrophy Gloves +3", left_ring="Candent Ring", right_ring="Beeline Ring",
-		back="Agema Cape", waist="Olseni Belt", legs="Viti. Tights +2", feet="Atrophy Boots +2"}
+		body="Jhakri Robe +2", hands="Atrophy Gloves +3", left_ring="Candent Ring", right_ring="Beeline Ring",
+		back="Agema Cape", waist="Olseni Belt", legs="Viti. Tights +3", feet="Atro. Boots +3"}
 		--No Weapon Primary Acc: 519
 		--was neck="Iqabi Necklace" -> better to have to reduce items?  check all jobs
 
 	sets.JA['Violent Flourish'] = {Range="Kaja Bow",
-		head="Helios Band", neck="Sanctity Necklace", left_ear="Snotra Earring", right_ear="Digni. Earring",
+		head="Jhakri Coronal +2", neck="Sanctity Necklace", left_ear="Snotra Earring", right_ear="Digni. Earring",
 		body="Chironic Doublet", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Stikini Ring",
-		back="Sucellos's Cape", waist="Famine Sash", legs="Leth. Fuseau +1", feet="Vitiation Boots +2"}
+		back="Sucellos's Cape", waist="Famine Sash", legs="Leth. Fuseau +1", feet="Vitiation Boots +3"}
 		--M.Acc = 211, No Weapon Prim.Acc = 322 ??
 		--Stuns
 
-	sets.FastCast = {main="Emissary", sub="Genmei Shield",
-		head="Atro. Chapeau +3", left_ear="Loquac. Earring", right_ear="Etiolation Earring",
-		body="Viti. Tabard +3", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		back="Perimede Cape", waist="Witful Belt", legs="Artsieq Hose", feet="Atro. Boots +2"}
-			-- 61% Fast Cast, 22% Haste
+	sets.FastCast = {main="Crocea Mors", sub="Genmei Shield",
+		head="Atrophy Chapeau +3", left_ear="Loquac. Earring", right_ear="Etiolation Earring",
+		body="Viti. Tabard +3", hands="Umuthi Gloves", left_ring="Weather. Ring", right_ring="Kishar Ring",
+		back="Perimede Cape", waist="Witful Belt", legs="Viti. Tights +3", feet="Atro. Boots +3"}
+			-- 66% Fast Cast, 26% Haste, Job Trait: 30%, Gifts: 8%
 
-	sets.Idle = {main="Bolelabunga", sub="Genmei Shield", range="Kaja Bow",
+	sets.Idle = {main="Emissary", sub="Genmei Shield", range="Kaja Bow",
 		head="Viti. Chapeau +3", neck="Sanctity Necklace", left_ear="Infused Earring", right_ear="Etiolation Earring",
-		body="Atrophy Tabard +3", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
+		body="Jhakri Robe +2", hands="Volte Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
+		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Volte Gaiters"}
 		--Refresh
 
 	sets.Idle.DT = {main="Emissary",sub="Genmei Shield", range="Kaja Bow",
 		head="Rabid Visor", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +2", feet="Leth. Houseaux +1"}
+		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +3", feet="Atro. Boots +3"}
 		-- PDT: -46%, Evasion: 655, Defense: 801
 
 	sets.Idle.MDT = {main="Emissary",sub="Beatific Shield +1", range="Kaja Bow",
-		head="Atro. Chapeau +3", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Atrophy Chapeau +3", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Atrophy Tabard +3", hands="Atrophy Gloves +3", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
+		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Atro. Boots +3"}
 		-- MDB: 28, M.Eva: 421, MDT: -28%, DT: -8%, PTD: -11%, Evasion: 191
 
 
-	sets.Enfeeble = {main="Naegling", sub="Ammurapi Shield", range="Kaja Bow",
-		head="Viti. Chapeau +3", neck="Imbodla Necklace", left_ear="Snotra Earring", right_ear="Digni. Earring",
+	sets.Enfeeble = {main="Crocea Mors", sub="Ammurapi Shield", range="Kaja Bow",
+		head="Viti. Chapeau +3", neck="Dls. Torque +2", left_ear="Snotra Earring", right_ear="Digni. Earring",
 		body="Atrophy Tabard +3", hands="Leth. Gantherots +1", left_ring="Kishar Ring", right_ring="Stikini Ring",
-		back="Sucellos's Cape", waist="Luminary Sash", legs="Psycloth Lappas", feet="Vitiation Boots +2"}
-			--RDM/blm
+		back="Sucellos's Cape", waist="Luminary Sash", legs="Psycloth Lappas", feet="Vitiation Boots +3"}
+			--RDM/sch
 			--Potency:  !need update
-			--Magic Accuracy:	??? (325 with weapons)
-			--Enfeeble Skill:	581
+			--Magic Accuracy:	365
+			--Enfeeble Skill:	586
 			--Merit:			5+15 (hat augment)
 			--JP/Gift:			90
-			--Total:			??? (1016)
-			--MND:				106+255 = ??? (361 with weapon)
-			--INT:				101+186 = 287
+			--Total:			1061
+			--MND:				107+271 = ??? (361 with weapon)
+			--INT:				99+206 = 287
 
 	--sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble ,{range="Aureole"})  8
-	sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble ,{left_ring="Weather. Ring"})
+	sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble, {left_ring="Weather. Ring", legs="Chironic Hose"})
 			--RDM/blm
 			--Mid-Acc:
 			--Magic Accuracy:	??? (315 with weapons)
@@ -113,7 +114,7 @@ function get_sets()
 			--MND:				106+255 = ??? (361 with weapon)
 			--INT:				101+186 = 287
 
-	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc ,{neck="Incanter's Torque", left_ring="Stikini Ring"})
+	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc, {left_ring="Stikini Ring"})
 			--RDM/blm
 			--High-Acc:		need re-calc
 			--Magic Accuracy:	253 (288 with staff and grip)
@@ -136,14 +137,14 @@ function get_sets()
 	--sets.Dispel.HighAcc = {}
 
 	sets.Elemental = {main="Oranyan", sub="Niobid Strap", ammo="Pemphredo Tathlum",
-		head="Helios Band", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
-		body="Chironic Doublet", hands="Helios Gloves", left_ring="Strendu Ring", right_ring="Acumen Ring",
-		back="Sucellos's Cape", waist="Yamabuki-no-Obi", legs="Hagondes Pants +1", feet="Vitiation Boots +2"}
+		head="Jhakri Coronal +2", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", left_ring="Strendu Ring", right_ring="Acumen Ring",
+		back="Sucellos's Cape", waist="Yamabuki-no-Obi", legs="Jhakri Slops +2", feet="Vitiation Boots +3"}
 		--Check Umbani Boots
 			--Magic Attack Bonus:	190 (223 with Weapon&Strap)
 			--Magic Accuracy:		128 (148 w/Weapon&Strap)
 			--Magic Damage:			36
-			--INT:					101+170 = 271
+			--INT:					99+248 = 347
 			--Elemental Skill:		394
 		--Count's Garb has m.Crit - find situation?
 
@@ -156,9 +157,9 @@ function get_sets()
 		--recalc--MAB=180, m.Acc: 147 (348 w/Weapon skill)
 
 	sets.DarkMagic = {main="Oranyan",sub="Enki Strap", range="Kaja Bow",
-		head="Helios Band", neck="Erra Pendant", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		head="Jhakri Coronal +2", neck="Erra Pendant", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Chironic Doublet", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Evanescence Ring",
-		back="Refraction Cape", waist="Yamabuki-no-Obi", legs="Leth. Fuseau +1", feet="Vitiation Boots +2"}
+		back="Refraction Cape", waist="Yamabuki-no-Obi", legs="Leth. Fuseau +1", feet="Vitiation Boots +3"}
 
 	sets.DarkMagic.MidAcc = set_combine(sets.DarkMagic, {waist="Famine Sash"})
 
@@ -168,9 +169,9 @@ function get_sets()
 	--Don't need now?
 	--[[
 	sets.Stun = {main="Oranyan",sub="Enki Strap",ammo="Elis Tome",
-		head="Atro. Chapeau +3", neck="Incanter's Torque", left_ear="Estq. Earring", right_ear="Loquac. Earring",
+		head="Atrophy Chapeau +3", neck="Incanter's Torque", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +3", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		back="Ghostfyre Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Vitiation Boots +2"}
+		back="Ghostfyre Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Vitiation Boots +3"}
 			--Fast Cast: 51%, Haste: 26%, M.Acc: 112 (339 w/weapon skill)
 			--This used for Tojil, need to make for Magic Accuracy
 	]]
@@ -184,7 +185,7 @@ function get_sets()
 		--w/ 
 		--Cure Pot.: 56%, Cure casting -27%, Haste: 20%, MND: 106+244, VIT: 97+95, Healing Magic: 484
 
-	sets.Enhancing = {main="Naegling", sub="Ammurapi Shield",
+	sets.Enhancing = {main="Crocea Mors", sub="Ammurapi Shield",
 		head="Befouled Crown", neck="Incanter's Torque", left_ear="Andoaa Earring", right_ear="Etiolation Earring",
 		body="Viti. Tabard +3", hands="Viti. Gloves +3", left_ring="Stikini Ring",  right_ring="Stikini Ring",
 		back="Ghostfyre Cape", waist="Olympus Sash", legs="Atrophy Tights +3", feet="Leth. Houseaux +1"}
@@ -195,10 +196,13 @@ function get_sets()
 	sets.EnhancingOther = set_combine(sets.Enhancing, {head="Lethargy Chappel +1",
 		body="Lethargy Sayon +1", legs="Leth. Fuseau +1"})
 
+	sets.Stoneskin = {waist="Siegel Sash", legs="Shedir Seraweels", neck="Nodens Gorget", 
+	right_ear="Earthcry Earring"}
+
 	sets.Spikes = {main="Oranyan", sub="Niobid Strap",
 		head="Leth. Chappel +1", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Atrophy Tabard +3", hands="Telchine Gloves", left_ring="Strendu Ring", right_ring="Acumen Ring",
-		back="Sucellos's Cape", waist="Yamabuki-no-Obi", legs="Viti. Tights +2", feet="Inspirited Boots"}
+		back="Sucellos's Cape", waist="Yamabuki-no-Obi", legs="Viti. Tights +3", feet="Inspirited Boots"}
 			--spike damage gear only works while equipped
 			--INT at casting makes spikes do more damage: adjust above to max INT
 			--formula is floor( ( INT + 50) / 12 )
@@ -213,10 +217,10 @@ function get_sets()
 
 
 --NEED? to add weapons/shield.  based on subjob: sword&shield vs. dual wield 
-	sets.DD = {main="Naegling", sub="Ammurapi Shield", ammo="Ginsen",
-		head="Viti. Chapeau +3", neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
+	sets.DD = {main="Crocea Mors", sub="Ammurapi Shield", ammo="Ginsen",
+		head="Jhakri Coronal +2", neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Viti. Tabard +3", hands="Atrophy Gloves +3", left_ring="Hetairoi Ring", right_ring="K'ayres Ring",
-		back="Bleating Mantle", waist="Sarissapho. Belt", legs="Viti. Tights +2", feet="Atro. Boots +2"}
+		back="Bleating Mantle", waist="Sarissapho. Belt", legs="Jhakri Slops +2", feet="Atro. Boots +3"}
 			--Acc: 917, Att: 966
 			--Eva: 684, Def: 1026
 			--Haste: 28
@@ -227,12 +231,12 @@ function get_sets()
 	--[[Need to sort these out:
 	*Windbuffet Belt
 	*Chaac Belt
-	*when using shield:  feet="Atrophy Boots +2"??
+	*when using shield:  feet="Atro. Boots +3"??
 	*Emet Harness +1
 	]]
 
-	sets.DD.MidAcc = set_combine(sets.DD, {neck="Sanctity Necklace", right_ring="Beeline Ring",
-		back="Grounded Mantle", feet="Atrophy Boots +2"})
+	sets.DD.MidAcc = set_combine(sets.DD, {neck="Sanctity Necklace", body="Jhakri Robe +2", right_ring="Beeline Ring",
+		back="Grounded Mantle", feet="Atro. Boots +3"})
 			--Without Weapon/Shield: Acc: 358, Att: 267
 
 	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {neck="Subtlety Spec.",
@@ -244,7 +248,7 @@ function get_sets()
 	sets.DT = {main="Emissary", sub="Genmei Shield", ammo="Brigantia Pebble",
 		head="Rabid Visor", neck="Twilight Torque", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +2", feet="Battlecast Gaiters"}
+		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +3", feet="Battlecast Gaiters"}
 			--RDM/blm
 			--Without Weapon/Shield: Acc: 258, Att: 210, EVA: 680, DEF: 786, PDT: -35%
 			--need to add Emissary & Genmei Shield
@@ -252,19 +256,19 @@ function get_sets()
 	sets.DT.MidAcc = set_combine(sets.DT, {right_ear="Zennaroi Earring", waist="Olseni Belt"})
 			--Without Weapon/Shield: Acc: 286, Att: 196, EVA: 680, DEF: 787, PDT: -31%
 
-	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {legs="Carmine Cuisses +1", back="Grounded Mantle"})
+	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Grounded Mantle"})
 			--Without Weapon/Shield: Acc: 310, Att: 196, EVA: 680, DEF: 790, PDT: -27%
 
 	sets.MDT = {main="Emissary", sub="Beatific Shield +1", ammo="Brigantia Pebble",
-		head="Atro. Chapeau +3", neck="Twilight Torque", left_ear="Telos Earring", right_ear="Zennaroi Earring",
+		head="Atrophy Chapeau +3", neck="Twilight Torque", left_ear="Telos Earring", right_ear="Etiolation Earring",
 		body="Lethargy Sayon +1", hands="Atrophy Gloves +3", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Repulse Mantle", waist="Flax Sash", legs="Atrophy Tights +3", feet="Leth. Houseaux +1"}
+		back="Repulse Mantle", waist="Flax Sash", legs="Atrophy Tights +3", feet="Atro. Boots +3"}
 			--RDM/blm
 			--Without Weapon/Shield: Acc: 172, Att: 165, EVA: 610, DEF: 734,
 			-- MDB: 29, MDT: -13%, M.Eva: 422
 			--need to add Beatific Shield +1
 
-	sets.MDT.MidAcc = set_combine(sets.MDT, {neck="Twilight Torque", waist="Olseni Belt"})
+	sets.MDT.MidAcc = set_combine(sets.MDT, {right_ear="Zennaroi Earring", waist="Olseni Belt"})
 			--RDM/blm
 			--Without Weapon/Shield: Acc: 192, Att: 160, EVA: 610, DEF: 735,
 			-- MDB: 28, MDT: -11%, M.Eva: 417
@@ -278,7 +282,7 @@ function get_sets()
 	sets.WS = {ammo="Ginsen",
 		head="Viti. Chapeau +3", neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
 		body="Viti. Tabard +3", hands="Atrophy Gloves +3", left_ring="Cho'j Band", right_ring="K'ayres Ring",
-		back="Buquwik Cape", waist="Fotia Belt", legs="Viti. Tights +2", feet="Atro. Boots +2"}
+		back="Buquwik Cape", waist="Fotia Belt", legs="Viti. Tights +3", feet="Atro. Boots +3"}
 			--Without Weapon/Shield: STR: +114, Att: 320, Acc: 177
 
 	sets.WS.MidAcc = set_combine(sets.WS, {head="Sukeroku Hachi.",
@@ -286,7 +290,7 @@ function get_sets()
 			--Without Weapon/Shield: STR: +98, Att: 302, Acc: 241
 
 	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {right_ear="Zennaroi Earring", back="Grounded Mantle",
-		waist="Olseni Belt", legs="Carmine Cuisses +1" ,feet="Atrophy Boots +2"})
+		waist="Olseni Belt", legs="Carmine Cuisses +1"})
 			--Without Weapon/Shield: STR: +88, Att: 204, Acc: 288
 
 	--sets.WS['Chant du Cygne'] = {ammo="Paeapua",
@@ -299,9 +303,9 @@ function get_sets()
 
 	--sets.WS['Chant du Cygne'].HighAcc = {}
 
-	--[[sets.WS.Requiescat = set_combine(sets.WS, {head="Atro. Chapeau +3", left_ear="Lifestorm Earring",
+	--[[sets.WS.Requiescat = set_combine(sets.WS, {head="Atrophy Chapeau +3", left_ear="Lifestorm Earring",
 		body="Viti. Tabard +3", left_ring="Stikini Ring", right_ring="Stikini Ring", back="Refraction Cape",
-		legs="Atrophy Tights +3", feet="Vitiation Boots +2"})
+		legs="Atrophy Tights +3", feet="Vitiation Boots +3"})
 		]]
 
 	--sets.WS.Requiescat.MidAcc = {}
@@ -332,8 +336,8 @@ function get_sets()
 	--send_command('input /macro book 5;wait .1;input /macro set 1')
 	set_macro_book()
 
-	sets.DontForget = {neck="Nodens Gorget", body="Telchine Chas.", legs="Carmine Cuisses +1"}
-	sets.DontForget2 = {main="Bolelabunga", legs="Shedir Seraweels"}
+	sets.DontForget = {main="Naegling", neck="Nodens Gorget", body="Telchine Chas.", legs="Carmine Cuisses +1"}
+	sets.DontForget2 = {main="Bolelabunga", legs="Shedir Seraweels", right_ear="Earthcry Earring"}
 
 	--[[
 	sets.DontForget = {sub="Thuellaic Ecu +1", neck="Quanpur Necklace", left_ear="Reraise Earring",
@@ -427,7 +431,7 @@ function midcast(spell)
 		--if Accuracy[Accuracy_Index] == 'None' then  --don't need accuracy gear
 			--if spell.english == 'Blind II' then
 				--augment changed on tights
-				--EquipSet = set_combine(EquipSet, {legs="Viti. Tights +2"})  --Augment: Enhance effect
+				--EquipSet = set_combine(EquipSet, {legs="Viti. Tights +3"})  --Augment: Enhance effect
 			--elseif spell.english == 'Dia III' or spell.english == 'Slow II' then
 				--EquipSet = set_combine(EquipSet, {head="Viti. Chapeau +3"})
 				--***Don't need Dia/Slow test as hat always equipped when no accuracy needed***
@@ -455,7 +459,11 @@ function midcast(spell)
 		if spell.english:startswith('Refresh') then
 			EquipSet = set_combine(EquipSet, {body="Atrophy Tabard +3", legs="Leth. Fuseau +1"})
 		elseif spell.english == 'Stoneskin' then
-			EquipSet = set_combine(EquipSet, {waist="Siegel Sash", legs="Shedir Seraweels", neck="Nodens Gorget"})
+			--EquipSet = set_combine(EquipSet, {waist="Siegel Sash", legs="Shedir Seraweels", neck="Nodens Gorget", 
+			--right_ear="Earthcry Earring"})
+			EquipSet = set_combine(EquipSet, sets.Stoneskin)
+
+			--sets.Stoneskin
 		elseif spell.english == 'Aquaveil' then
 			EquipSet = set_combine(EquipSet, {head="Chironic Hat", legs="Shedir Seraweels"})
 		elseif spell.english:startswith('Regen') then
@@ -480,7 +488,7 @@ function midcast(spell)
 				EquipSet = set_combine(EquipSet, {waist="Fucho-no-Obi"})
 			--elseif spell.english == "Bio III" then
 				-- Augment changed on tights
-				--EquipSet = set_combine(EquipSet, {legs="Viti. Tights +2"}) --Augment: Enhance effect
+				--EquipSet = set_combine(EquipSet, {legs="Viti. Tights +3"}) --Augment: Enhance effect
 			end
 		end
 

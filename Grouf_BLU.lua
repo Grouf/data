@@ -112,51 +112,50 @@ function get_sets()
 
 --Job Ability--
 	sets.JA = {}
-	sets.JA['Azure Lore'] = {hands="Luhlaza Bazubands"}
+	sets.JA['Azure Lore'] = {hands="Luh. Bazubands +1"}
 	sets.JA.Efflux = {legs="Hashishin Tayt +1"}
-	sets.JA['Chain Affinity'] = {head="Hashishin Kavuk",feet="Assim. Charuqs"}
-	sets.JA['Burst Affinity'] = {legs="Assim. Shalwar",feet="Hashishin Basmak"}
-	sets.JA.Diffusion = {feet="Luhlaza Charuqs"}
+	sets.JA['Chain Affinity'] = {head="Hashishin Kavuk +1",feet="Assim. Charuqs +1"}
+	sets.JA['Burst Affinity'] = {legs="Assim. Shalwar +1",feet="Hashi. Basmak +1"}
+	sets.JA.Diffusion = {feet="Luhlaza Charuqs +1"}
 
 --Precast--
 	sets.precast = {}
-	sets.precast.Idle = {neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Respite Cloak",hands="Serpentes Cuffs",left_ring="Rajas Ring",
-		right_ring="Epona's Ring",back="Mecisto. Mantle",waist="Flume Belt",
-		legs="Crimson Cuisses",feet="Serpentes Sabots" }
+	sets.precast.Idle = {head="Rawhide Mask", neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
+		body="Jhakri Robe +2", hands="Serpentes Cuffs", left_ring="Hetairoi Ring", right_ring="Epona's Ring",
+		back="Mecisto. Mantle", waist="Flume Belt", legs="Carmine Cuisses +1", feet="Serpentes Sabots" }
 
 	sets.precast.Rest = sets.precast.Idle
 
 	sets.precast.FastCast = {head="Haruspex Hat",left_ear="Loquacious earring",
-		body="Hashishin Mintan",hands="Hashi. Bazubands",left_ring="Weather. Ring", right_ring="Prolix Ring",
+		body="Hashishin Mintan +1",hands="Hashi. Bazu. +1",left_ring="Weather. Ring", right_ring="Prolix Ring",
 		back="Swith cape",waist="Witful belt",
-		legs="Orvail Pants +1",feet="Qaaxo Leggings"}--23% Fast Cast, 16% Haste, Blue Magic Casting time -12%
+		legs="Assim. Shalwar +1",feet="Assim. Charuqs +1"}--23% Fast Cast, 16% Haste, Blue Magic Casting time -12%
 
-	sets.precast.Step = {head="Whirlpool Mask", neck="Iqabi Necklace", left_ear="Steelflash earring",
-		right_ear="Zennaroi Earring", body="Mekosu. Harness", hands="Buremte Gloves",left_ring="Rajas Ring",
+	sets.precast.Step = {head="Jhakri Coronal +2", neck="Iqabi Necklace", left_ear="Telos earring",
+		right_ear="Zennaroi Earring", body="Jhakri Robe +2", hands="Buremte Gloves",left_ring="Hetairoi Ring",
 		right_ring="Beeline Ring", back="Letalis Mantle", waist="Olseni Belt",
-		legs="Feast Hose", feet="Assim. Charuqs"}
+		legs="Feast Hose", feet="Assim. Charuqs +1"}
 
 --Weapon Skills--
 	sets.WS = {}
-	sets.WS.Base = {head="Whirlpool Mask", neck="Fotia Gorget", left_ear="Moonshade Earring",
-		right_ear="Bladeborn Earring", body="Manibozho Jerkin", hands="Qaaxo Mitaines", left_ring="Rajas Ring",
+	sets.WS.Base = {head="Jhakri Coronal +2", neck="Fotia Gorget", left_ear="Moonshade Earring",
+		right_ear="Digni. Earring", body="Jhakri Robe +2", hands="Jhakri Cuffs +2", left_ring="Hetairoi Ring",
 		right_ring="Cho'j Band", back="Vespid Mantle", waist="Prosilio Belt +1",
-		legs="Manibozho Brais", feet="Assim. Charuqs" }
+		legs="Jhakri Slops +2", feet="Assim. Charuqs +1" }
 
 	--sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{neck="Light Gorget"})
 
-	sets.WS['Requiescat'] = set_combine(sets.WS.Base,{left_ring="Solemn Ring", legs="Quiahuiz Trousers"})
+	sets.WS['Requiescat'] = set_combine(sets.WS.Base,{left_ring="Solemn Ring", legs="Jhakri Slops +2"})
 
 	--sets.precast['Vorpal Blade']
 
 	--sets.precast['Expiacion']
 
-	sets.WS['Sanguine Blade'] = {head="Hagondes Hat +1",neck="Fotia Gorget",left_ear="Psystorm Earring",
+	sets.WS['Sanguine Blade'] = {head="Jhakri Coronal +2",neck="Fotia Gorget",left_ear="Psystorm Earring",
 		right_ear="Lifestorm Earring",--[[left_ear="Hecate's earring",right_ear="Friomisi Earring",]]
-		body="Hagondes Coat +1",hands="Weath. Cuffs +1",left_ring="Icesoul Ring",
+		body="Jhakri Robe +2",hands="Weath. Cuffs +1",left_ring="Icesoul Ring",
 		right_ring="Spiral Ring",back="Refraction Cape",waist="Caudata Belt",
-		legs="Psycloth Lappas",feet="Hag. Sabots +1" }
+		legs="Psycloth Lappas",feet="Jhakri Pigaches +2" }
 
 	--sets.precast['Savage Blade']
 
@@ -164,67 +163,67 @@ function get_sets()
 --Blue Magic Spell Stat sets--
 	sets.midcast = {}
 	sets.midcast.BaseStat = {head="Uk'uxkaj Cap",neck="Hashishin Scarf",left_ear="Dudgeon Earring",
-		right_ear="Bladeborn Earring",body="Mekosu. Harness",hands="Buremte Gloves",left_ring="Rajas Ring",
+		right_ear="Digni. Earring",body="Jhakri Robe +2",hands="Buremte Gloves",left_ring="Hetairoi Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Prosilio Belt +1",
-		legs="Iuitl Tights +1",feet="Qaaxo Leggings"} --relic119 legs here
+		legs="Luhlaza Shalwar +1",feet="Jhakri Pigaches +2"} --relic119 legs here
 
-	sets.midcast.STR = set_combine(sets.midcast.BaseSet,{head="Whirlpool Mask",back="Buquwik Cape"})
+	sets.midcast.STR = set_combine(sets.midcast.BaseSet,{head="Jhakri Coronal +2",back="Buquwik Cape"})
 
-	sets.midcast.STRDEX = set_combine(sets.midcast.BaseSet,{legs="Manibozho Brais"})
+	sets.midcast.STRDEX = set_combine(sets.midcast.BaseSet,{legs="Jhakri Slops +2"})
 
-	sets.midcast.STRVIT = set_combine(sets.midcast.BaseSet,{legs="Quiahuiz Trousers"})
+	sets.midcast.STRVIT = set_combine(sets.midcast.BaseSet,{legs="Jhakri Slops +2"})
 
 	sets.midcast.STRMND = set_combine(sets.midcast.BaseSet,{legs="Psycloth Lappas"})
 
 	sets.midcast.AGI = set_combine(sets.midcast.BaseSet,{legs="Kaabnax Trousers"})
 
-	sets.midcast.INT = {head="Hagondes Hat +1",neck="Eddy Necklace",left_ear="Psystorm Earring",
-		right_ear="Crematio Earring",body="Hagondes Coat +1",hands="Hagondes Cuffs +1",left_ring="Icesoul Ring",
+	sets.midcast.INT = {head="Jhakri Coronal +2",neck="Eddy Necklace",left_ear="Psystorm Earring",
+		right_ear="Crematio Earring",body="Jhakri Robe +2",hands="Jhakri Cuffs +2",left_ring="Icesoul Ring",
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Yamabuki-no-Obi",
-		legs="Psycloth Lappas",feet="Hag. Sabots +1"}
+		legs="Psycloth Lappas",feet="Jhakri Pigaches +2"}
 
 	sets.midcast.Cure = {head="Uk'uxkaj Cap",neck="Imbodla Necklace",left_ear="Loquac. Earring",
-		right_ear="Lifestorm Earring",body="Hagondes Coat +1",hands="Telchine Gloves",left_ring="Sirona's Ring",
+		right_ear="Lifestorm Earring",body="Jhakri Robe +2",hands="Telchine Gloves",left_ring="Sirona's Ring",
 		right_ring="Solemn Ring",back="Pahtli Cape",waist="Witful Belt",
 		legs="Psycloth Lappas",feet="Weath. Souliers +1"}
 
-	sets.midcast.mAccuracy = {head="Assim. Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm Earring",
-		right_ear="Lifestorm Earring",body="Mekosu. Harness",hands="Hagondes Cuffs +1",left_ring="Weather. Ring",
+	sets.midcast.mAccuracy = {head="Assim. Keffiyeh +1",neck="Eddy Necklace",left_ear="Psystorm Earring",
+		right_ear="Lifestorm Earring",body="Jhakri Robe +2",hands="Jhakri Cuffs +2",left_ring="Weather. Ring",
 		right_ring="Sangoma Ring",back="Cornflower Cape",waist="Yamabuki-no-Obi",
 		legs="Psycloth Lappas",feet="Medium's Sabots"}
 
-	sets.midcast.Stun = {head="Assim. Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm earring",
-		right_ear="Lifestorm Earring",body="Mekosu. Harness",hands="Mv. Bazubands +2",left_ring="Weather. Ring",
+	sets.midcast.Stun = {head="Assim. Keffiyeh +1",neck="Eddy Necklace",left_ear="Psystorm earring",
+		right_ear="Lifestorm Earring",body="Jhakri Robe +2",hands="Hashi. Bazu. +1",left_ring="Weather. Ring",
 		right_ring="Sangoma Ring",back="Cornflower Cape",waist="Witful Belt",
 		legs="Psycloth Lappas",feet="Medium's Sabots"} --25% Haste, 5% Fast Cast, -12% Blue Magic recast
 
-	sets.midcast.Breath = {head="Luhlaza Keffiyeh",neck="Eddy Necklace",left_ear="Psystorm earring",
-		right_ear="Lifestorm Earring",body="Mekosu. Harness",hands="Hagondes Cuffs +1",left_ring="Prolix Ring",
+	sets.midcast.Breath = {head="Luh. Keffiyeh +1",neck="Eddy Necklace",left_ear="Psystorm earring",
+		right_ear="Lifestorm Earring",body="Jhakri Robe +2",hands="Jhakri Cuffs +2",left_ring="Prolix Ring",
 		back="Cornflower Cape",waist="Yamabuki-no-Obi",
-		legs="Iuitl Tights +1",feet="Medium's Sabots"}
+		legs="Jhakri Slops +2",feet="Medium's Sabots"}
 
 	sets.midcast.BlueMagic = set_combine(sets.precast.FastCast,{
-		ammo="Mavi Tathlum", head="Luhlaza Keffiyeh",neck="Mavi Scarf",
-		body="Assim. Jubbah",hands="Symbios Gloves",
+		ammo="Mavi Tathlum", head="Luh. Keffiyeh +1",neck="Mavi Scarf",
+		body="Assim. Jubbah +1",hands="Symbios Gloves",
 		back="Cornflower Cape",
-		legs="Hashishin Tayt +1",feet="Luhlaza Charuqs"}) --All blue magic, some fast cast
+		legs="Hashishin Tayt +1",feet="Luhlaza Charuqs +1"}) --All blue magic, some fast cast
 
 	sets.midcast.FastCast = sets.precast.FastCast -- for spells that don't need stats
 
 --TP Sets--
 	sets.TP = {}
-	sets.TP.DD = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
+	sets.TP.DD = {head="Jhakri Coronal +2",neck="Asperity Necklace",left_ear="Telos Earring",
+		right_ear="Digni. Earring",body="Jhakri Robe +2",hands="Jhakri Cuffs +2",left_ring="Hetairoi Ring",
 		right_ring="Epona's Ring",back="Bleating Mantle",waist="Windbuffet Belt",
-		legs="Taeon Tights",feet="Qaaxo Leggings" }
+		legs="Taeon Tights",feet="Jhakri Pigaches +2" }
 
-	sets.TP.Acc = {head="Whirlpool Mask",neck="Asperity Necklace",left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",body="Mekosu. Harness",hands="Qaaxo Mitaines",left_ring="Rajas Ring",
+	sets.TP.Acc = {head="Jhakri Coronal +2",neck="Asperity Necklace",left_ear="Telos Earring",
+		right_ear="Digni. Earring",body="Jhakri Robe +2",hands="Jhakri Cuffs +2",left_ring="Hetairoi Ring",
 		right_ring="Epona's Ring",back="Letalis Mantle",waist="Windbuffet Belt",
-		legs="Taeon Tights",feet="Assim. Charuqs" }
+		legs="Taeon Tights",feet="Assim. Charuqs +1" }
 
-	sets.TP.Learning = {head="Luhlaza Keffiyeh", body="Assim. Jubbah", hands="Assim. Bazu.",
-		back="Cornflower Cape", legs="Hashishin Tayt +1", feet="Luhlaza Charuqs"} --skill = 500
+	sets.TP.Learning = {head="Luh. Keffiyeh +1", body="Assim. Jubbah +1", hands="Assim. Bazu. +1",
+		back="Cornflower Cape", legs="Hashishin Tayt +1", feet="Luhlaza Charuqs +1"} --skill = 500
 
 	sets.aftercast = {}
 	sets.aftercast.TP = sets.TP.DD
@@ -308,11 +307,11 @@ function status_change(new,old)
 end
 
 --[[Relic augments:
-Head: Luhlaza Keffiyeh: Convergence
+Head: Luh. Keffiyeh +1: Convergence
 Body: Luhlaza Jubbah: Enchainment
-Hands: Luhlaza Bazubands: Azure Lore
+Hands: Luh. Bazubands +1: Azure Lore
 Legs: Luhlaza Shalwar: Assimilation
-Feet: Luhlaza Charuqs: Diffusion
+Feet: Luhlaza Charuqs +1: Diffusion
 ]]
 
 function buff_change(buff_name,gain) --gain = True if gained, False if lost
@@ -382,7 +381,7 @@ function self_command(command)
 	elseif command == 'LearningOn' then
 		sets.aftercast.TP = sets.TP.Learning
 		--sets.aftercast.Idle = sets.aftercast.TP
-		--equip({body="Assim. Jubbah", hands="Assim. Bazu.", legs="Hashishin Tayt +1"})
+		--equip({body="Assim. Jubbah +1", hands="Assim. Bazu. +1", legs="Hashishin Tayt +1"})
 		equip(sets.TP.Learning)
 		disable('head', 'body', 'hands', 'back', 'legs', 'feet')
 		--send_command('@wait 0.5; gs disable body hands legs;')
@@ -393,7 +392,7 @@ function self_command(command)
 	elseif command == 'LearningOff' then
 		sets.aftercast.TP = sets.TP.DD
 		--sets.aftercast.Idle = sets.TP.Learn
-		--equip({hands="Assim. Bazu."})
+		--equip({hands="Assim. Bazu. +1"})
 		enable('head', 'body', 'hands', 'back', 'legs', 'feet')
 		add_to_chat(9, 'Learning Set  OFF')
 		status_change(player.status)

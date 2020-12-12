@@ -71,7 +71,7 @@ function get_sets()
 	--sets.midcast = {}
 
 	sets.Cure = {main="Tamaxchi",sub="Genbu's Shield",
-		head="Kaabnax Hat", neck="Imbodla Necklace",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",
+		head="Vanya Hood", neck="Imbodla Necklace",left_ear="Loquac. Earring",right_ear="Lifestorm Earring",
 		body="Hagondes Coat +1", hands="Telchine Gloves",left_ring="Sirona's Ring", right_ring="Solemn Ring",
 		back="Pahtli Cape", waist="Luminary Sash", legs="Nares Trews", feet="Umbani Boots"}
 

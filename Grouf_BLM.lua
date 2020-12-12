@@ -4,7 +4,7 @@
 		===========================
 ]]
 
-Lathi
+--Lathi
 
 include('Obi_Check')
 
@@ -52,7 +52,7 @@ function get_sets()
 			--Umbani Boots?
 
 	sets.midcast.DarkMagic = {main="Oranyan",sub="Mephitis Grip",ammo="Elis Tome",
-		head="Kaabnax Hat",	neck="Eddy Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
+		head="Arch. Petasos +1",	neck="Eddy Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 		body="Helios Jacket", hands="Lurid Mitts", left_ring="Acumen Ring", right_ring="Sangoma Ring",
 		back="Bane Cape", waist="Famine Sash", legs="Psycloth Lappas", feet="Medium's Sabots"}
 
