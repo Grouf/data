@@ -17,13 +17,13 @@ function get_sets()
 	sets.precast.IdleRefresh = {main="Idris",sub="Genmei Shield",range="Dunna",
 		head="Bagua Galero +3", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Jhakri Robe +2", hands="Bagua Mitaines +3", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Nares Trews", feet="Geo. Sandals +3"}
+		back="Repulse Mantle",	waist="Fucho-no-Obi", legs="Nares Trews", feet="Geo. Sandals +3"}
 	--Repulse Mantle
 	--Mecisto. Mantle
 	sets.precast.IdleLuopan = {main="Idris", sub="Genmei Shield", range="Dunna",
 		head="Azimuth Hood +1", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Geomancy Tunic +3", hands="Geo. Mitaines +3", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Geomancy Pants +3", feet="Bagua Sandals +2"}
+		back="Repulse Mantle",	waist="Fucho-no-Obi", legs="Geomancy Pants +3", feet="Bagua Sandals +2"}
 	--Lifestream Cape
 
 	sets.precast.Idle = sets.precast.IdleRefresh
@@ -74,14 +74,14 @@ function get_sets()
 		body="Telchine Chas.", hands="Augur's Gloves", left_ring="Stikini Ring", right_ring="Stikini Ring", 
 		waist="Olympus Sash",legs="Shedir Seraweels", feet="Regal Pumps +1"}
 
-	sets.midcast.ElementalMagic = {main="Idris", sub="Ammurapi Shield", ammo="Ghastly Tathlum",
+	sets.midcast.ElementalMagic = {main="Idris", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		head="Bagua Galero +3", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Bagua Tunic +3", hands="Bagua Mitaines +3",left_ring="Acumen Ring",right_ring="Jhakri ring",
-		back="Toro Cape", waist="Yamabuki-no-Obi", legs="Bagua Pants +2", feet="Jhakri Pigaches +2"}
-			--				Jhakri
-			--INT +197		+207
-			--M.Acc 204		259
-			--MAB 300		342
+		back="Nantosuelta's Cape", waist="Yamabuki-no-Obi", legs="Bagua Pants +2", feet="Jhakri Pigaches +2"}
+			--INT +227
+			--M.Acc 325
+			--MAB 372  
+			--Ghastly Thathlum?
 	
 	--sets.midcast.ElementalMagic.MidAcc = { hands=Jhakri, Body=Jhakri, pants=Jhakri }
 
@@ -118,7 +118,7 @@ function get_sets()
     sets.WS = set_combine(sets.TP, {head="Sukeroku Hachi.", neck="Fotia Gorget", right_ear="Ishvara Earring", 
 		right_ring="Cho'j Band", waist="Fotia Belt"})
 
-    sets.DontForget = {head="Umuthi Hat", body="Telchine Chas.", legs="Doyen Pants"}
+    sets.DontForget = {head="Umuthi Hat", body="Telchine Chas.", legs="Doyen Pants", left_ear="Earthcry Earring"}
 
 
 	send_command('input /macro book 20;wait .1;input /macro set 1')
@@ -281,6 +281,7 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 			--enable("body")
 			--send_command('@input /echo Bolster off, body enabled')
 		--end
+	--[[
 	elseif buff_name=='Mending Halation' then
 		if gain then
 			equip(sets.JA['Mending Halation'])
@@ -299,6 +300,7 @@ function buff_change(buff_name,gain) --gain = True if gained, False if lost
 			enable("feet")
 			send_command('@input /echo Radial Arcana off, feet enabled')
 		end
+		]]
 	end
 
 end
