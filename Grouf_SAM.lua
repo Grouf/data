@@ -28,11 +28,11 @@ function get_sets()
 	--Job Abilities
 	sets.JA = {}
 	sets.JA["Meikyo Shisui"] = {feet="Sak. Sune-Ate +1"}
-	sets.JA.Meditate = {head="Wakido Kabuto +2", hands="Sakonji Kote +1", back="Smertrios's Mantle"}
+	sets.JA.Meditate = {head="Wakido Kabuto +3", hands="Sakonji Kote +1", back="Smertrios's Mantle"}
 	sets.JA.Hasso = {hands="Wakido Kote +2", legs="Kasuga Haidate +1", feet="Wakido Sune. +2"}
 	sets.JA.Seigan = {head="Kasuga Kabuto +1"}
 	sets.JA["Third Eye"] = {legs="Sakonji Haidate +1"}
-	sets.JA["Warding Circle"] = {head="Wakido Kabuto +2"}
+	sets.JA["Warding Circle"] = {head="Wakido Kabuto +3"}
 	sets.JA.Sekkanoki = {hands="Kasuga Kote +1"}
 	sets.JA.Sengikori = {feet="Kas. Sune-Ate +1"} --grants bonus to Skillchain
 	sets.JA["Blade Bash"] = {hands="Sakonji Kote +1"}
@@ -59,7 +59,7 @@ function get_sets()
 		--Haste: 33%
 
 	sets.Idle = {ammo="Ginsen",
-		head="Wakido Kabuto +2", neck="Asperity Necklace", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Wakido Kabuto +3", neck="Asperity Necklace", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Hiza. Haramaki +2", hands="Hizamaru Kote +2", left_ring="Ilabrat Ring", right_ring="Hizamaru Ring",
 		back="Smertrios's Mantle", waist="Cetl Belt", legs="Ryuo Hakama +1", feet="Danzo Sune-Ate"}
 
