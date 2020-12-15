@@ -43,11 +43,11 @@ function get_sets()
 --Midcast
 	sets.midcast = {}
 
-	sets.midcast.Cure = {main="Gada", sub="Ammurapi Shield", ammo="Oreiad's Tathlum",
+	sets.midcast.Cure = {main="Gada", sub="Ammurapi Shield", range="Dunna",
 		head="Vanya Hood", neck="Nodens Gorget",left_ear="Mendi. Earring",right_ear="Lifestorm Earring",
 		body="Geomancy Tunic +3", hands="Telchine Gloves",left_ring="Stikini Ring",right_ring="Stikini Ring",
 		back="Pahtli Cape", waist="Luminary Sash",legs="Doyen Pants",feet="Vanya Clogs"}
-		--MND=111+206, Cure Pot.=60%  
+		--MND=111+202, Cure Pot.=60%, Healing Skill =223
 		
 
 	sets.midcast.Enfeeble = {main="Gada", sub="Ammurapi Shield", range="Dunna",
