@@ -54,7 +54,7 @@ function get_sets()
 		--Stuns
 
 	sets.FastCast = {left_ear="Loquac. Earring", right_ear="Etiolation Earring", left_ring="Weather. Ring", 
-		right_ring="Prolix Ring", waist="Sailfi Belt", legs="Arjuna Breeches"}
+		right_ring="Prolix Ring", waist="Sailfi Belt +1", legs="Arjuna Breeches"}
 		--Fast Cast: 18%???
 		--Haste: 33%
 
