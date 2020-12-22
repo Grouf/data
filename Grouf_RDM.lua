@@ -56,7 +56,7 @@ function get_sets()
 		--No Weapon Primary Acc: 519
 		--was neck="Iqabi Necklace" -> better to have to reduce items?  check all jobs
 
-	sets.JA['Violent Flourish'] = {Range="Kaja Bow",
+	sets.JA['Violent Flourish'] = {Range="Ullr",
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", left_ear="Snotra Earring", right_ear="Digni. Earring",
 		body="Chironic Doublet", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Stikini Ring",
 		back="Sucellos's Cape", waist="Famine Sash", legs="Leth. Fuseau +1", feet="Vitiation Boots +3"}
@@ -69,26 +69,26 @@ function get_sets()
 		back="Perimede Cape", waist="Witful Belt", legs="Viti. Tights +3", feet="Atro. Boots +3"}
 			-- 66% Fast Cast, 26% Haste, Job Trait: 30%, Gifts: 8%
 
-	sets.Idle = {main="Emissary", sub="Genmei Shield", range="Kaja Bow",
+	sets.Idle = {main="Emissary", sub="Genmei Shield", range="Ullr",
 		head="Viti. Chapeau +3", neck="Sanctity Necklace", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Jhakri Robe +2", hands="Volte Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Volte Gaiters"}
 		--Refresh
 
-	sets.Idle.DT = {main="Emissary",sub="Genmei Shield", range="Kaja Bow",
+	sets.Idle.DT = {main="Emissary",sub="Genmei Shield", range="Ullr",
 		head="Rabid Visor", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +3", feet="Atro. Boots +3"}
 		-- PDT: -46%, Evasion: 655, Defense: 801
 
-	sets.Idle.MDT = {main="Emissary",sub="Beatific Shield +1", range="Kaja Bow",
+	sets.Idle.MDT = {main="Emissary",sub="Beatific Shield +1", range="Ullr",
 		head="Atrophy Chapeau +3", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Atrophy Tabard +3", hands="Atrophy Gloves +3", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Atro. Boots +3"}
 		-- MDB: 28, M.Eva: 421, MDT: -28%, DT: -8%, PTD: -11%, Evasion: 191
 
 
-	sets.Enfeeble = {main="Crocea Mors", sub="Ammurapi Shield", range="Kaja Bow",
+	sets.Enfeeble = {main="Crocea Mors", sub="Ammurapi Shield", range="Ullr",
 		head="Viti. Chapeau +3", neck="Dls. Torque +2", left_ear="Snotra Earring", right_ear="Digni. Earring",
 		body="Atrophy Tabard +3", hands="Leth. Gantherots +1", left_ring="Kishar Ring", right_ring="Stikini Ring",
 		back="Sucellos's Cape", waist="Luminary Sash", legs="Psycloth Lappas", feet="Vitiation Boots +3"}
@@ -153,10 +153,10 @@ function get_sets()
 		left_ring="Weather. Ring", right_ring="Stikini Ring"})
 			--MAB=194, m.Acc: 120 (348 w/Weapon skill)
 
-	sets.Elemental.HighAcc = set_combine(sets.Elemental.MidAcc, {range="Kaja Bow", neck="Sanctity Necklace"})
+	sets.Elemental.HighAcc = set_combine(sets.Elemental.MidAcc, {range="Ullr", neck="Sanctity Necklace"})
 		--recalc--MAB=180, m.Acc: 147 (348 w/Weapon skill)
 
-	sets.DarkMagic = {main="Oranyan",sub="Enki Strap", range="Kaja Bow",
+	sets.DarkMagic = {main="Oranyan",sub="Enki Strap", range="Ullr",
 		head="Jhakri Coronal +2", neck="Erra Pendant", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Chironic Doublet", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Evanescence Ring",
 		back="Refraction Cape", waist="Yamabuki-no-Obi", legs="Leth. Fuseau +1", feet="Vitiation Boots +3"}
@@ -186,15 +186,15 @@ function get_sets()
 		--Cure Pot.: 56%, Cure casting -27%, Haste: 20%, MND: 106+244, VIT: 97+95, Healing Magic: 484
 
 	sets.Enhancing = {main="Crocea Mors", sub="Ammurapi Shield",
-		head="Befouled Crown", neck="Incanter's Torque", left_ear="Andoaa Earring", right_ear="Etiolation Earring",
+		head="Befouled Crown", neck="Dls. Torque +2", left_ear="Andoaa Earring", right_ear="Etiolation Earring",
 		body="Viti. Tabard +3", hands="Viti. Gloves +3", left_ring="Stikini Ring",  right_ring="Stikini Ring",
 		back="Ghostfyre Cape", waist="Olympus Sash", legs="Atrophy Tights +3", feet="Leth. Houseaux +1"}
 		--skill=555}
-		-- hands="Atrophy Gloves +3"
+		-- hands="Atrophy Gloves +3", Incanter's Torque
 		--Ghostfyre Cape gives Haste 17m ||  Sucellos's Cape gives Haste 16m
 
 	sets.EnhancingOther = set_combine(sets.Enhancing, {head="Lethargy Chappel +1",
-		body="Lethargy Sayon +1", legs="Leth. Fuseau +1"})
+		body="Lethargy Sayon +1", legs="Leth. Fuseau +1"}) --Enhancing Skill = 533
 
 	sets.Stoneskin = {waist="Siegel Sash", legs="Shedir Seraweels", neck="Nodens Gorget", 
 	right_ear="Earthcry Earring"}
@@ -476,6 +476,7 @@ function midcast(spell)
 
 
 	elseif spell.skill == 'Dark Magic' then
+		--Aspir, Drain, Bio, Stun
 		EquipSet = sets.DarkMagic
 
 		if EquipSet[Accuracy[Accuracy_Index]] then
@@ -495,6 +496,7 @@ function midcast(spell)
 		--if world.day_element == spell.element then
 		--	EquipSet = set_combine(EquipSet, {legs="Mes'yohi Slacks"})
 		--end
+
 
 		if Accuracy[Accuracy_Index] ~= 'HighAcc' then
 			Check_for_Obi = 1
