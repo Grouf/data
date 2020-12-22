@@ -76,13 +76,13 @@ function get_sets()
 		--Refresh
 
 	sets.Idle.DT = {main="Emissary",sub="Genmei Shield", range="Ullr",
-		head="Rabid Visor", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Rabid Visor", neck="Loricate Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +3", feet="Atro. Boots +3"}
 		-- PDT: -46%, Evasion: 655, Defense: 801
 
 	sets.Idle.MDT = {main="Emissary",sub="Beatific Shield +1", range="Ullr",
-		head="Atrophy Chapeau +3", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Atrophy Chapeau +3", neck="Loricate Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Atrophy Tabard +3", hands="Atrophy Gloves +3", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Atro. Boots +3"}
 		-- MDB: 28, M.Eva: 421, MDT: -28%, DT: -8%, PTD: -11%, Evasion: 191
@@ -246,7 +246,7 @@ function get_sets()
 
 
 	sets.DT = {main="Emissary", sub="Genmei Shield", ammo="Brigantia Pebble",
-		head="Rabid Visor", neck="Twilight Torque", left_ear="Telos Earring", right_ear="Digni. Earring",
+		head="Rabid Visor", neck="Loricate Torque", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +3", feet="Battlecast Gaiters"}
 			--RDM/blm
@@ -260,7 +260,7 @@ function get_sets()
 			--Without Weapon/Shield: Acc: 310, Att: 196, EVA: 680, DEF: 790, PDT: -27%
 
 	sets.MDT = {main="Emissary", sub="Beatific Shield +1", ammo="Brigantia Pebble",
-		head="Atrophy Chapeau +3", neck="Twilight Torque", left_ear="Telos Earring", right_ear="Etiolation Earring",
+		head="Atrophy Chapeau +3", neck="Loricate Torque", left_ear="Telos Earring", right_ear="Etiolation Earring",
 		body="Lethargy Sayon +1", hands="Atrophy Gloves +3", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flax Sash", legs="Atrophy Tights +3", feet="Atro. Boots +3"}
 			--RDM/blm

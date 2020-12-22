@@ -38,7 +38,7 @@ function get_sets()
 	sets.JA["Blade Bash"] = {hands="Sakonji Kote +1"}
 	--sets.JA.Shikikoyo = {legs="Sakonji Haidate +1"} --Give TP to party member
 
-	--[[sets.JA.Waltz = {head="Lithelimb Cap", neck="Twilight Torque", right_ear="Soil Pearl", left_ear="Soil Pearl",
+	--[[sets.JA.Waltz = {head="Lithelimb Cap", neck="Loricate Torque", right_ear="Soil Pearl", left_ear="Soil Pearl",
 		body="Rawhide Vest", hands="Plun. Armlets +1", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
 		back="Repulse Mantle", waist="Chaac Belt", legs="Pursuer's Pants", feet="Rawhide Boots"}
 		--Cure, Healing Waltz = Erase
@@ -64,12 +64,12 @@ function get_sets()
 		back="Smertrios's Mantle", waist="Cetl Belt", legs="Ryuo Hakama +1", feet="Danzo Sune-Ate"}
 
 	sets.Idle.DT = {ammo="Ginsen",
-		head="Ynglinga Sallet", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Ynglinga Sallet", neck="Loricate Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Emet Harness +1", hands="Sakonji Kote +1", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Agema Cape", waist="Flume Belt", legs="Arjuna Breeches", feet="Otronif Boots +1"}
 		
 	sets.Idle.MDT = {ammo="Ginsen",
-		head="Terminal Helm", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Terminal Helm", neck="Loricate Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Hiza. Haramaki +2", hands="Sakonji Kote +1", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Agema Cape", waist="Flax Sash", legs="Arjuna Breeches", feet="Otronif Boots +1"}
 	
@@ -100,7 +100,7 @@ function get_sets()
 
 
 	sets.DT = {ammo="Ginsen",
-		head="Ynglinga Sallet", neck="Twilight Torque", left_ear="Telos Earring", right_ear="Digni. Earring",
+		head="Ynglinga Sallet", neck="Loricate Torque", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Emet Harness +1", hands="Sakonji Kote +1", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Agema Cape", waist="Flume Belt", legs="Arjuna Breeches", feet="Otronif Boots +1"}
 
@@ -111,7 +111,7 @@ function get_sets()
 	
 	
 	sets.MDT = {ammo="Ginsen",
-		head="Terminal Helm", neck="Twilight Torque", left_ear="Telos Earring", right_ear="Digni. Earring",
+		head="Terminal Helm", neck="Loricate Torque", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Hiza. Haramaki +2", hands="Sakonji Kote +1", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Agema Cape", waist="Flax Sash", legs="Arjuna Breeches", feet="Otronif Boots +1"}
 

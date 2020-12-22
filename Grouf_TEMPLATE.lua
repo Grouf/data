@@ -66,13 +66,13 @@ function get_sets()
 		--Refresh
 
 	sets.Idle.DT = {main="Emissary",sub="Genmei Shield", ammo="Brigantia Pebble",
-		head="Rabid Visor", neck="Twilight Torque", left_ear="Soil Pearl", right_ear="Soil Pearl",
+		head="Rabid Visor", neck="Loricate Torque", left_ear="Soil Pearl", right_ear="Soil Pearl",
 		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +1", feet="Leth. Houseaux +1"}
 		-- PDT: -46%, Evasion: 655, Defense: 801
 
 	sets.Idle.MDT = {main="Emissary",sub="Beatific Shield +1", ammo="Brigantia Pebble",
-		head="Atro. Chapeau +2", neck="Twilight Torque", left_ear="Zennaroi Earring", right_ear="Etiolation Earring",
+		head="Atro. Chapeau +2", neck="Loricate Torque", left_ear="Zennaroi Earring", right_ear="Etiolation Earring",
 		body="Atrophy Tabard +2", hands="Atrophy Gloves +2", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
 		-- MDB: 28, M.Eva: 421, MDT: -28%, DT: -8%, PTD: -11%, Evasion: 191
@@ -166,7 +166,7 @@ function get_sets()
 
 
 	sets.DT = {main="Emissary", sub="Genmei Shield", ammo="Brigantia Pebble",
-		head="Rabid Visor", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
+		head="Rabid Visor", neck="Loricate Torque", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
 		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Rajas Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +1", feet="Battlecast Gaiters"}
 
@@ -178,12 +178,12 @@ function get_sets()
 
 
 	sets.MDT = {main="Emissary", sub="Beatific Shield +1", ammo="Brigantia Pebble",
-		head="Atro. Chapeau +2", neck="Twilight Torque", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
+		head="Atro. Chapeau +2", neck="Loricate Torque", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
 		body="Lethargy Sayon +1", hands="Atrophy Gloves +2", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flax Sash", legs="Atrophy Tights +2", feet="Leth. Houseaux +1"}
 
 
-	sets.MDT.MidAcc = set_combine(sets.MDT, {neck="Twilight Torque", waist="Olseni Belt"})
+	sets.MDT.MidAcc = set_combine(sets.MDT, {neck="Loricate Torque", waist="Olseni Belt"})
 
 
 	sets.MDT.HighAcc = set_combine(sets.MDT.MidAcc, {back="Grounded Mantle"})
