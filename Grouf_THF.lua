@@ -31,7 +31,7 @@ function get_sets()
 	sets.JA["Sneak Attack"] = {hands="Skulk. Armlets +1"}
 	sets.JA["Trick Attack"] = {body="Plunderer's Vest +3", hands="Pill. Armlets +1"} --AGI increase Damage
 
-	sets.JA.Waltz = {head="Lithelimb Cap", neck="Twilight Torque", right_ear="Soil Pearl", left_ear="Soil Pearl",
+	sets.JA.Waltz = {head="Lithelimb Cap", neck="Loricate Torque", right_ear="Soil Pearl", left_ear="Soil Pearl",
 		body="Rawhide Vest", hands="Plun. Armlets +1", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
 		back="Repulse Mantle", waist="Chaac Belt", legs="Pursuer's Pants", feet="Rawhide Boots"}
 		--Cure, Healing Waltz = Erase
@@ -58,9 +58,9 @@ function get_sets()
 
 	sets.Idle.TH = {head="Taeon Chapeau",neck="Asperity Necklace",left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Rawhide Vest",hands="Plun. Armlets +1",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
-		back="Canny Cape",waist="Chaac Belt", legs="Volte Hose", feet="Jute Boots +1"}
+		back="Canny Cape",waist="Sarissapho. Belt", legs="Volte Hose", feet="Jute Boots +1"}
 		
-	sets.Idle.DT = {head="Lithelimb Cap", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring", 
+	sets.Idle.DT = {head="Lithelimb Cap", neck="Loricate Torque", left_ear="Infused Earring", right_ear="Etiolation Earring", 
 		body="Emet Harness +1", hands="Herculean Gloves", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Repulse Mantle", waist="Flume Belt",legs="Volte Hose", feet="Jute Boots +1"}
 		
@@ -79,7 +79,7 @@ function get_sets()
 	sets.DD = {head="Taeon Chapeau",neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Rawhide Vest",hands="Herculean Gloves",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
 		back="Canny Cape",waist="Sarissapho. Belt", legs="Ta'lab Trousers",feet="Rawhide Boots"}
-
+			--solo use Relic+3 Body?
 
 	sets.DD.MidAcc = set_combine(sets.DD, {head="Whirlpool Mask", neck="Subtlety Spec.",
 		right_ear="Zennaroi Earring", left_ring="Beeline Ring",
@@ -88,14 +88,14 @@ function get_sets()
 	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {legs="Volte Hose"})
 
 		--TH caps at +8 for gear/Job Trait
-	sets.TH = set_combine(sets.DD, {hands="Plun. Armlets +1", legs="Volte Hose", 
-		feet="Skulk. Poulaines +1"}) --Done
+	sets.TH = set_combine(sets.DD, {body="Plunderer's Vest +3", hands="Plun. Armlets +1", legs="Volte Hose", 
+		feet="Skulk. Poulaines +1"}) --vest if solo, off if group?
 	sets.TH.MidAcc = set_combine(sets.DD.MidAcc,{hands="Plun. Armlets +1", legs="Volte Hose",
 		feet="Skulk. Poulaines +1"})
 	sets.TH.HighAcc = sets.TH.MidAcc
 
 
-	sets.DT = {head="Lithelimb Cap", neck="Twilight Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
+	sets.DT = {head="Lithelimb Cap", neck="Loricate Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Emet Harness +1", hands="Herculean Gloves", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Volte Hose", feet="Skulk. Poulaines +1"} 
 
