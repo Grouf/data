@@ -75,12 +75,12 @@ function get_sets()
 		waist="Olympus Sash",legs="Shedir Seraweels", feet="Regal Pumps +1"}
 
 	sets.midcast.ElementalMagic = {main="Idris", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
-		head="Bagua Galero +3", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
+		head="Bagua Galero +3", neck="Eddy Necklace", left_ear="Barkaro. Earring", right_ear="Friomisi Earring",
 		body="Bagua Tunic +3", hands="Bagua Mitaines +3",left_ring="Acumen Ring",right_ring="Jhakri ring",
-		back="Nantosuelta's Cape", waist="Yamabuki-no-Obi", legs="Bagua Pants +2", feet="Jhakri Pigaches +2"}
-			--INT +227
-			--M.Acc 325
-			--MAB 372  
+		back="Nantosuelta's Cape", waist="Yamabuki-no-Obi", legs="Merlinic Shalwar", feet="Jhakri Pigaches +2"}
+			--INT +236
+			--M.Acc 361
+			--MAB 381
 			--Ghastly Thathlum?
 	
 	--sets.midcast.ElementalMagic.MidAcc = { hands=Jhakri, Body=Jhakri, pants=Jhakri }
