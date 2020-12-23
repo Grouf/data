@@ -76,7 +76,7 @@ function get_sets()
 --[[	
 	sets.Ranged = {head="Umbani Cap", neck="Iskur Gorget", left_ear="Volley earring",
 		right_ear="Enervating Earring", body="Mekosu. Harness", hands="Buremte Gloves", left_ring="Fistmele Ring",
-		right_ring="Paqichikaji Ring", back="Libeccio Mantle", waist="Eschan Stone",
+		right_ring="Cacoethic Ring", back="Libeccio Mantle", waist="Eschan Stone",
 		legs="Pursuer's Pants", feet="Scopuli Nails +1"} 
 		--AGI for Ranged Accuracy: 4AGI=3R.Acc
 		--STR for Ranged Attack

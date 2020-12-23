@@ -97,7 +97,7 @@ function get_sets()
 
 	--[[sets.Ranged = {head="Uk'uxkaj Cap",neck="Ocachi Gorget", left_ear="Clearview earring",
 		right_ear="Enervating Earring", body="Mekosu. Harness", hands="Hachiya Tekko +1", left_ring="Fistmele Ring",
-		right_ring="Paqichikaji Ring", back="Yokaze Mantle", waist="Flax Sash",
+		right_ring="Cacoethic Ring", back="Yokaze Mantle", waist="Flax Sash",
 		legs="Nahtirah Trousers", feet="Scopuli Nails +1"} ]]
 		
 

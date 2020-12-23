@@ -65,7 +65,7 @@ function get_sets()
 		back="Repulse Mantle", waist="Flume Belt",legs="Volte Hose", feet="Jute Boots +1"}
 		
 	sets.Ranged = {head="Pursuer's Beret", neck="Iskur Gorget", left_ear="Volley earring", right_ear="Enervating Earring",
-		body="Sayadio's Kaftan", hands="Pursuer's Cuffs", left_ring="Dingir Ring", right_ring="Paqichikaji Ring",
+		body="Sayadio's Kaftan", hands="Pursuer's Cuffs", left_ring="Dingir Ring", right_ring="Cacoethic Ring",
 		back="Libeccio Mantle", waist="Eschan Stone", legs="Pursuer's Pants", feet="Pursuer's Gaiters"} 
 		--AGI for Ranged Accuracy: 4AGI=3R.Acc
 		--STR for Ranged Attack
