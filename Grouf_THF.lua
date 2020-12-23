@@ -32,13 +32,13 @@ function get_sets()
 	sets.JA["Trick Attack"] = {body="Plunderer's Vest +3", hands="Pill. Armlets +1"} --AGI increase Damage
 
 	sets.JA.Waltz = {head="Lithelimb Cap", neck="Loricate Torque", right_ear="Soil Pearl", left_ear="Soil Pearl",
-		body="Rawhide Vest", hands="Plun. Armlets +1", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
+		body="Plunderer's Vest +3", hands="Plun. Armlets +1", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
 		back="Repulse Mantle", waist="Chaac Belt", legs="Pursuer's Pants", feet="Rawhide Boots"}
 		--Cure, Healing Waltz = Erase
 		--CHR of caster, VIT of Target
 
 	sets.JA.Step = {head="Skulker's Bonnet +1", neck="Subtlety Spec.", left_ear="Telos Earring", right_ear="Zennaroi Earring", 
-		body="Rawhide Vest", hands="Herculean Gloves", left_ring="Candent Ring", right_ring="Beeline Ring", 
+		body="Plunderer's Vest +3", hands="Herculean Gloves", left_ring="Candent Ring", right_ring="Beeline Ring", 
 		back="Grounded Mantle", waist="Olseni Belt", legs="Volte Hose", feet="Rawhide Boots"}  --need accuracy
 
 	sets.JA['Violent Flourish'] = set_combine(sets.JA.Step, {
@@ -48,16 +48,16 @@ function get_sets()
 
 	sets.FastCast = {head="Herculean Helm", neck="Magoraga Beads", left_ear="Etiolation Earring", right_ear="Loquac. Earring",
 		body="Taeon Tabard", hands="Thaumas Gloves", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		waist="Sailfi Belt", legs="Volte Hose", feet="Rawhide Boots"}
+		waist="Sailfi Belt +1", legs="Volte Hose", feet="Rawhide Boots"}
 		--Fast Cast: 30%
 		--Haste: 34%
 
 	sets.Idle = {head="Taeon Chapeau",neck="Asperity Necklace",left_ear="Infused Earring", right_ear="Etiolation Earring",
-		body="Rawhide Vest",hands="Herculean Gloves",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
+		body="Plunderer's Vest +3",hands="Herculean Gloves",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
 		back="Canny Cape",waist="Sarissapho. Belt",legs="Volte Hose", feet="Jute Boots +1"}
 
 	sets.Idle.TH = {head="Taeon Chapeau",neck="Asperity Necklace",left_ear="Infused Earring", right_ear="Etiolation Earring",
-		body="Rawhide Vest",hands="Plun. Armlets +1",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
+		body="Plunderer's Vest +3",hands="Plun. Armlets +1",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
 		back="Canny Cape",waist="Sarissapho. Belt", legs="Volte Hose", feet="Jute Boots +1"}
 		
 	sets.Idle.DT = {head="Lithelimb Cap", neck="Loricate Torque", left_ear="Infused Earring", right_ear="Etiolation Earring", 
@@ -77,8 +77,9 @@ function get_sets()
 
 --M E L E E
 	sets.DD = {head="Taeon Chapeau",neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
-		body="Rawhide Vest",hands="Herculean Gloves",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
+		body="Plunderer's Vest +3",hands="Herculean Gloves",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
 		back="Canny Cape",waist="Sarissapho. Belt", legs="Ta'lab Trousers",feet="Rawhide Boots"}
+			--Rawhide Vest
 			--solo use Relic+3 Body?
 
 	sets.DD.MidAcc = set_combine(sets.DD, {head="Whirlpool Mask", neck="Subtlety Spec.",
