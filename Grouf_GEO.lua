@@ -15,13 +15,13 @@ function get_sets()
 		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants +3",feet="Regal Pumps +1"}  --Fast Cast = 58%
 
 	sets.precast.IdleRefresh = {main="Idris",sub="Genmei Shield",range="Dunna",
-		head="Bagua Galero +3", neck="Loricate Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Bagua Galero +3", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Jhakri Robe +2", hands="Bagua Mitaines +3", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle",	waist="Fucho-no-Obi", legs="Nares Trews", feet="Geo. Sandals +3"}
 	--Repulse Mantle
 	--Mecisto. Mantle
 	sets.precast.IdleLuopan = {main="Idris", sub="Genmei Shield", range="Dunna",
-		head="Azimuth Hood +1", neck="Loricate Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Azimuth Hood +1", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Geomancy Tunic +3", hands="Geo. Mitaines +3", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle",	waist="Fucho-no-Obi", legs="Geomancy Pants +3", feet="Bagua Sandals +2"}
 	--Lifestream Cape

@@ -18,7 +18,7 @@ function get_sets()
 		-- 44% Fast Cast
 
 	sets.precast.Idle = {main="Oranyan",sub="Mephitis Grip", ammo="Ghastly Tathlum",
-		neck="Loricate Torque", left_ear="Crematio Earring", right_ear="Etiolation Earring",
+		neck="Loricate Torque +1", left_ear="Crematio Earring", right_ear="Etiolation Earring",
 		body="Respite Cloak", hands="Serpentes Cuffs", left_ring="Acumen Ring", right_ring="Strendu ring",
 		back="Mecisto. Mantle", waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Serpentes Sabots"}
 

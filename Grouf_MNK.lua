@@ -75,13 +75,13 @@ function get_sets()
 
 --[[need update
 	sets.Idle.DT = {ammo="Brigantia Pebble",
-		head="Rabid Visor", neck="Loricate Torque", left_ear="Soil Pearl", right_ear="Soil Pearl",
+		head="Rabid Visor", neck="Loricate Torque +1", left_ear="Soil Pearl", right_ear="Soil Pearl",
 		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +1", feet="Leth. Houseaux +1"}
 		-- PDT: -46%, Evasion: 655, Defense: 801
 
 	sets.Idle.MDT = {ammo="Brigantia Pebble",
-		head="Atro. Chapeau +2", neck="Loricate Torque", left_ear="Zennaroi Earring", right_ear="Etiolation Earring",
+		head="Atro. Chapeau +2", neck="Loricate Torque +1", left_ear="Zennaroi Earring", right_ear="Etiolation Earring",
 		body="Atrophy Tabard +2", hands="Atrophy Gloves +2", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
 		-- MDB: 28, M.Eva: 421, MDT: -28%, DT: -8%, PTD: -11%, Evasion: 191
@@ -111,7 +111,7 @@ function get_sets()
 
 
 
-	sets.DT = {} --[[ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Loricate Torque",
+	sets.DT = {} --[[ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Loricate Torque +1",
 		left_ear="Telos Earring", right_ear="Digni. Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",
 		left_ring="Dark Ring",right_ring="Shadow Ring",back="Repulse Mantle",waist="Black Belt",
 		legs="Kaabnax Trousers",feet="Otronif Boots +1"} 
@@ -124,12 +124,12 @@ function get_sets()
 
 
 	sets.MDT = {} --[[main="Emissary", sub="Beatific Shield +1", ammo="Brigantia Pebble",
-		head="Atro. Chapeau +2", neck="Loricate Torque", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
+		head="Atro. Chapeau +2", neck="Loricate Torque +1", left_ear="Steelflash Earring", right_ear="Zennaroi Earring",
 		body="Lethargy Sayon +1", hands="Atrophy Gloves +2", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flax Sash", legs="Atrophy Tights +2", feet="Leth. Houseaux +1"}
 
 
-	sets.MDT.MidAcc = set_combine(sets.MDT, {neck="Loricate Torque", waist="Olseni Belt"})
+	sets.MDT.MidAcc = set_combine(sets.MDT, {neck="Loricate Torque +1", waist="Olseni Belt"})
 
 
 	sets.MDT.HighAcc = set_combine(sets.MDT.MidAcc, {back="Grounded Mantle"}) ]]

@@ -31,7 +31,7 @@ function get_sets()
 	sets.JA["Sneak Attack"] = {hands="Skulk. Armlets +1"}
 	sets.JA["Trick Attack"] = {body="Plunderer's Vest +3", hands="Pill. Armlets +1"} --AGI increase Damage
 
-	sets.JA.Waltz = {head="Lithelimb Cap", neck="Loricate Torque", right_ear="Soil Pearl", left_ear="Soil Pearl",
+	sets.JA.Waltz = {head="Lithelimb Cap", neck="Loricate Torque +1", right_ear="Soil Pearl", left_ear="Soil Pearl",
 		body="Plunderer's Vest +3", hands="Plun. Armlets +1", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
 		back="Repulse Mantle", waist="Chaac Belt", legs="Pursuer's Pants", feet="Rawhide Boots"}
 		--Cure, Healing Waltz = Erase
@@ -60,7 +60,7 @@ function get_sets()
 		body="Plunderer's Vest +3",hands="Plun. Armlets +1",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
 		back="Canny Cape",waist="Sarissapho. Belt", legs="Volte Hose", feet="Jute Boots +1"}
 		
-	sets.Idle.DT = {head="Lithelimb Cap", neck="Loricate Torque", left_ear="Infused Earring", right_ear="Etiolation Earring", 
+	sets.Idle.DT = {head="Lithelimb Cap", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring", 
 		body="Emet Harness +1", hands="Herculean Gloves", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Repulse Mantle", waist="Flume Belt",legs="Volte Hose", feet="Jute Boots +1"}
 		
@@ -96,7 +96,7 @@ function get_sets()
 	sets.TH.HighAcc = sets.TH.MidAcc
 
 
-	sets.DT = {head="Lithelimb Cap", neck="Loricate Torque", left_ear="Infused Earring", right_ear="Etiolation Earring",
+	sets.DT = {head="Lithelimb Cap", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Emet Harness +1", hands="Herculean Gloves", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Volte Hose", feet="Skulk. Poulaines +1"} 
 

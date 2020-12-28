@@ -116,7 +116,7 @@ function get_sets()
 
 
 
-	sets.DT = {head="Lithelimb Cap",neck="Loricate Torque",left_ear="Telos Earring", right_ear="Digni. earring",
+	sets.DT = {head="Lithelimb Cap",neck="Loricate Torque +1",left_ear="Telos Earring", right_ear="Digni. earring",
 		body="Emet Harness +1",hands="Hizamaru Kote +2",left_ring="Succor Ring", right_ring="Succor Ring",
 		back="Yokaze Mantle",waist="Flume Belt", legs="Ryuo Hakama +1",feet="Otronif Boots +1"}
 
@@ -127,12 +127,12 @@ function get_sets()
 
 
 
-	sets.MDT = {head="Lithelimb Cap",neck="Loricate Torque",left_ear="Telos Earring", right_ear="Digni. earring",
+	sets.MDT = {head="Lithelimb Cap",neck="Loricate Torque +1",left_ear="Telos Earring", right_ear="Digni. earring",
 		body="Mochi. Chainmail +3",hands="Hizamaru Kote +2",left_ring="Succor Ring", right_ring="Succor Ring",
 		back="Yokaze Mantle",waist="Flume Belt", legs="Ryuo Hakama +1",feet="Otronif Boots +1"}
 
 
-	sets.MDT.MidAcc = set_combine(sets.MDT, {neck="Loricate Torque", waist="Olseni Belt"})
+	sets.MDT.MidAcc = set_combine(sets.MDT, {neck="Loricate Torque +1", waist="Olseni Belt"})
 
 
 	sets.MDT.HighAcc = set_combine(sets.MDT.MidAcc, {back="Grounded Mantle"})
