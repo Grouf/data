@@ -19,6 +19,7 @@ function get_sets()
 	--	'Shell', 'Shell II', 'Shell III', 'Shell IV', 'Shell V',
 		'Teleport-Dem', 'Teleport-Mea', 'Teleport-Holla', 'Teleport-Altep', 'Teleport-Yhoat', 'Teleport-Vahzl'
 		}
+	ElementalBarSpells = S{'Barfire', 'Barblizzard', 'Baraero', 'Barstone', 'Barthunder', 'Barwater'}
 
 	--[[MNDEnfeebles = S{'Dia', 'Dia II', 'Dia III', 'Diaga', 'Addle', 'Distract', 'Distract II',
 		'Frazzle', 'Frazzle II', 'ParaLyze', 'ParaLyze II', 'Slow', 'Slow II', 'Silence'}
@@ -472,6 +473,8 @@ function midcast(spell)
 			EquipSet = sets.Enspells
 		elseif spell.english:endswith('Spikes') then
 			EquipSet = sets.Spikes
+		elseif ElementalBarSpells:contains(spell.english) then
+			EquipSet = set_combine(EquipSet, {legs="Shedir Seraweels"})
 		end
 
 
