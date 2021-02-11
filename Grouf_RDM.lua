@@ -71,7 +71,7 @@ function get_sets()
 			-- 66% Fast Cast, 26% Haste, Job Trait: 30%, Gifts: 8%
 
 	sets.Idle = {main="Emissary", sub="Genmei Shield", range="Ullr",
-		head="Viti. Chapeau +3", neck="Sanctity Necklace", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Viti. Chapeau +3", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Jhakri Robe +2", hands="Volte Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Volte Gaiters"}
 		--Refresh
@@ -338,7 +338,7 @@ function get_sets()
 	set_macro_book()
 
 	sets.DontForget = {main="Naegling", neck="Nodens Gorget", body="Telchine Chas.", legs="Carmine Cuisses +1"}
-	sets.DontForget2 = {main="Bolelabunga", legs="Shedir Seraweels", right_ear="Earthcry Earring"}
+	sets.DontForget2 = {main="Bolelabunga", head="Chironic Hat", legs="Shedir Seraweels", right_ear="Earthcry Earring"}
 
 	--[[
 	sets.DontForget = {sub="Thuellaic Ecu +1", neck="Quanpur Necklace", left_ear="Reraise Earring",
@@ -675,12 +675,12 @@ function self_command(command)
 		add_to_chat(9, 'Accuracy now set to: ' ..Accuracy[Accuracy_Index] )
 
 	elseif command == 'Melee' then
-		disable('main', 'sub', 'range')
+		disable('main', 'sub', 'range', 'ammo')
 		MeleeLock = 'True'
 		add_to_chat(9, 'MeleeLock = ' ..MeleeLock)
 
 	elseif command == 'Magic' then
-		enable('main', 'sub', 'range')
+		enable('main', 'sub', 'range', 'ammo')
 		MeleeLock = 'False'
 		add_to_chat(9, 'MeleeLock = ' ..MeleeLock)
 
