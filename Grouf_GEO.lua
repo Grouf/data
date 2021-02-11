@@ -35,7 +35,7 @@ function get_sets()
 	sets.JA['Collimated Fervor'] = {head="Bagua Galero +3"} --don't have meritted 
 	sets.JA.Bolster = {body="Bagua Tunic +3"}
 	sets.JA['Full Circle'] = {head="Azimuth Hood +1"}
-	sets.JA['Mending Halation'] = {legs="Bagua Pants +2"}
+	sets.JA['Mending Halation'] = {legs="Bagua Pants +3"}
 	sets.JA['Radial Arcana'] = {feet="Bagua Sandals +2"}
 	sets.JA['Life Cycle'] = {body="Geomancy Tunic +3", back="Nantosuelta's Cape"}
 	sets.JA['Concentric Pulse'] = {head="Bagua Galero +3"}
@@ -58,7 +58,7 @@ function get_sets()
 	sets.midcast.Geomancy = {main="Idris",sub="Genmei Shield" ,range="Dunna",
 		head="Azimuth Hood +1", neck="Incanter's Torque", right_ear="Gifted Earring", left_ear="Calamitous Earring",
 		body="Bagua Tunic +3", hands="Geo. Mitaines +3",left_ring="Stikini Ring",right_ring="Stikini Ring",
-		back="Nantosuelta's Cape",	waist="Luminary Sash", legs="Bagua Pants +2", feet="Azimuth Gaiters +1"}
+		back="Nantosuelta's Cape",	waist="Luminary Sash", legs="Bagua Pants +3", feet="Azimuth Gaiters +1"}
 			--Geomancy Skill:	480
 			--Handbell Skill:	450
 			--Total:			930
@@ -97,7 +97,7 @@ function get_sets()
 		sets.TP = {main="Idris", sub="Genmei Shield", range="Dunna",
 		head="Bagua Galero +3", neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Bagua Tunic +3", hands="Bagua Mitaines +3", left_ring="Hetairoi Ring", right_ring="K'ayres Ring",
-		back="Buquwik Cape", waist="Windbuffet Belt", legs="Bagua Pants +2", feet="Helios Boots"}
+		back="Buquwik Cape", waist="Windbuffet Belt", legs="Bagua Pants +3", feet="Helios Boots"}
 		--				Jhakri
 		--Acc: 895		1024
 		--Att: 923		1203
@@ -165,7 +165,7 @@ end
 Head: Bagua Galero +3: Primeval Zeal
 Body: Bagua Tunic +3: Bolster
 Hands: Bagua Mitaines +3: Curative Recantation
-Legs: Bagua Pants +2: Mending Halation
+Legs: Bagua Pants +3: Mending Halation
 Feet: Bagua Sandals +2: Radial Arcana
 ]]
 
