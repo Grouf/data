@@ -21,22 +21,22 @@ function get_sets()
 	--#SetMode_Names    <- This outputs the number of elements
 	Accuracy_Index = 1
 	Accuracy = {'None', 'MidAcc', 'HighAcc'}	--Accuracy levels set with user command 'Accuracy'
-	--Beatific_On = 0 							--set with user command 'Beatific'; used to equip when not in MDT gear
+	Wakido_On = 0								--set with user command 'Wakido'; used to equip when not in P/MDT gear
 	Mecisto_On = 1								--set with user command 'Mecisto'; default on, equip CP cape in aftercast
 	--MeleeLock = 'False' 						--variable used for info only, work done in self_command function
 
 	--Job Abilities
 	sets.JA = {}
-	sets.JA["Meikyo Shisui"] = {feet="Sak. Sune-Ate +1"}
+	sets.JA["Meikyo Shisui"] = {feet="Sak. Sune-Ate +3"}
 	sets.JA.Meditate = {head="Wakido Kabuto +3", hands="Sakonji Kote +1", back="Smertrios's Mantle"}
-	sets.JA.Hasso = {hands="Wakido Kote +2", legs="Kasuga Haidate +1", feet="Wakido Sune. +2"}
+	sets.JA.Hasso = {hands="Wakido Kote +3", legs="Kasuga Haidate +1", feet="Wakido Sune. +3"}
 	sets.JA.Seigan = {head="Kasuga Kabuto +1"}
-	sets.JA["Third Eye"] = {legs="Sakonji Haidate +1"}
+	sets.JA["Third Eye"] = {legs="Sakonji Haidate +3"}
 	sets.JA["Warding Circle"] = {head="Wakido Kabuto +3"}
 	sets.JA.Sekkanoki = {hands="Kasuga Kote +1"}
 	sets.JA.Sengikori = {feet="Kas. Sune-Ate +1"} --grants bonus to Skillchain
 	sets.JA["Blade Bash"] = {hands="Sakonji Kote +1"}
-	--sets.JA.Shikikoyo = {legs="Sakonji Haidate +1"} --Give TP to party member
+	--sets.JA.Shikikoyo = {legs="Sakonji Haidate +3"} --Give TP to party member
 
 	--[[sets.JA.Waltz = {head="Lithelimb Cap", neck="Loricate Torque +1", right_ear="Soil Pearl", left_ear="Soil Pearl",
 		body="Rawhide Vest", hands="Plun. Armlets +1", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
@@ -58,19 +58,26 @@ function get_sets()
 		--Fast Cast: 18%???
 		--Haste: 33%
 
+	sets.Ranged = {head="Sakonji Kabuto +3", neck="Ocachi Gorget", left_ear="Enervating Earring",
+		right_ear="Telos Earring", body="Kyujutsugi", hands="Kasuga Kote +1", left_ring="Paqichikaji Ring",
+		right_ring="Fistmele Ring", back="Buquwik Cape", waist="Eschan Stone",
+		legs="Wakido Haidate +3", feet="Wakido Sune. +3"}
+
+	sets.Wakido = {body="Wakido Domaru +3"}
+
 	sets.Idle = {ammo="Ginsen",
-		head="Wakido Kabuto +3", neck="Asperity Necklace", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Wakido Kabuto +3", neck="Sam. Nodowa +2", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Hiza. Haramaki +2", hands="Hizamaru Kote +2", left_ring="Ilabrat Ring", right_ring="Hizamaru Ring",
 		back="Smertrios's Mantle", waist="Cetl Belt", legs="Ryuo Hakama +1", feet="Danzo Sune-Ate"}
 
 	sets.Idle.DT = {ammo="Ginsen",
 		head="Ynglinga Sallet", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
-		body="Emet Harness +1", hands="Sakonji Kote +1", left_ring="Succor Ring", right_ring="Shadow Ring",
+		body="Wakido Domaru +3", hands="Sakonji Kote +1", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Agema Cape", waist="Flume Belt", legs="Arjuna Breeches", feet="Otronif Boots +1"}
 		
 	sets.Idle.MDT = {ammo="Ginsen",
 		head="Terminal Helm", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
-		body="Hiza. Haramaki +2", hands="Sakonji Kote +1", left_ring="Succor Ring", right_ring="Shadow Ring",
+		body="Wakido Domaru +3", hands="Sakonji Kote +1", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Agema Cape", waist="Flax Sash", legs="Arjuna Breeches", feet="Otronif Boots +1"}
 	
 --[[	
@@ -89,7 +96,7 @@ function get_sets()
 
 --M E L E E
 	sets.DD = {ammo="Ginsen",
-		head="Sakonji Kabuto +3", neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
+		head="Sakonji Kabuto +3", neck="Sam. Nodowa +2", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Kasuga Domaru +1", hands="Hizamaru Kote +2", left_ring="Ilabrat Ring", right_ring="Hizamaru Ring",
 		back="Smertrios's Mantle", waist="Cetl Belt", legs="Ryuo Hakama +1", feet="Ryuo Sune-Ate +1"}
 
@@ -101,7 +108,7 @@ function get_sets()
 
 	sets.DT = {ammo="Ginsen",
 		head="Ynglinga Sallet", neck="Loricate Torque +1", left_ear="Telos Earring", right_ear="Digni. Earring",
-		body="Emet Harness +1", hands="Sakonji Kote +1", left_ring="Succor Ring", right_ring="Shadow Ring",
+		body="Wakido Domaru +3", hands="Sakonji Kote +1", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Agema Cape", waist="Flume Belt", legs="Arjuna Breeches", feet="Otronif Boots +1"}
 
 	sets.DT.MidAcc = set_combine(sets.DT, {waist="Olseni Belt"})
@@ -112,7 +119,7 @@ function get_sets()
 	
 	sets.MDT = {ammo="Ginsen",
 		head="Terminal Helm", neck="Loricate Torque +1", left_ear="Telos Earring", right_ear="Digni. Earring",
-		body="Hiza. Haramaki +2", hands="Sakonji Kote +1", left_ring="Succor Ring", right_ring="Shadow Ring",
+		body="Wakido Domaru +3", hands="Sakonji Kote +1", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Agema Cape", waist="Flax Sash", legs="Arjuna Breeches", feet="Otronif Boots +1"}
 
 	sets.MDT.MidAcc = set_combine(sets.DT, {waist="Olseni Belt"})
@@ -124,7 +131,7 @@ function get_sets()
 
 
 	sets.WS = {ammo="Knobkierrie",
-		head="Sakonji Kabuto +3", neck="Fotia Gorget", left_ear="Thrud Earring", right_ear="Ishvara Earring",
+		head="Sakonji Kabuto +3", neck="Sam. Nodowa +2", left_ear="Thrud Earring", right_ear="Ishvara Earring",
 		body="Sakonji Domaru +3", hands="Hizamaru Kote +2", left_ring="Shukuyu Ring", right_ring="Cho'j Band",
 		back="Smertrios's Mantle", waist="Fotia Belt", legs="Wakido Haidate +3", feet="Ryuo Sune-Ate +1"}
 			-- legs Ryuo Hakama +1   use for SC?
@@ -135,12 +142,16 @@ function get_sets()
 
 	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {head="Ynglinga Sallet"})
 	
+	--sets.WS["Tachi: Ageha"] = set_combine(sets.WS)
 
+	sets.WS['Apex Arrow'] = set_combine(sets.Ranged, { neck="Fotia Gorget",  waist="Fotia Belt", 
+		left_ear="Ishvara Earring", right_ear="Thrud Earring"})
+	sets.WS['Empyreal Arrow'] = sets.WS['Apex Arrow']
 
 
 	set_macro_book()
 
-	sets.DontForget = {main="Masamune",sub="Utu Grip", right_ear="Reraise Earring"}
+	sets.DontForget = {main="Masamune",sub="Utu Grip"}
 
 end
 
@@ -158,6 +169,11 @@ function precast(spell)
 			--equip(sets.Stun)
 			--add_to_chat(9, 'STUN set, precast')
 		--end
+	
+	elseif spell.english == "Ranged" then
+		--equip(sets.Shapshot)
+		--equip(sets.TP.Ranged)
+		equip(sets.Ranged)
 
 
 	elseif spell.type == "WeaponSkill" then
@@ -224,9 +240,9 @@ function aftercast(spell)
 		EquipSet = set_combine(EquipSet, {neck="Ygnas's Resolve +1"})
 	end
 
-	--[[if Beatific_On == 1 and SetMode_Names[SetMode_Index] ~= 'MDT' then
-		EquipSet = set_combine(EquipSet, {sub="Beatific Shield +1"})
-	end]]
+	if Wakido_On == 1 and SetMode_Names[SetMode_Index] == 'DD' then
+		EquipSet = set_combine(EquipSet, sets.Wakido)
+	end
 
 	if Mecisto_On == 1 then
 		EquipSet = set_combine(EquipSet, {back="Mecisto. Mantle"})
@@ -245,15 +261,15 @@ end -- end status_change
 function buff_change(buff_name,gain)
 	if buff_name == 'Reive Mark' and gain then
 		equip({neck="Ygnas's Resolve +1"})
-	--sets.JA["Meikyo Shisui"] = {feet="Sak. Sune-Ate +1"}
+	--sets.JA["Meikyo Shisui"] = {feet="Sak. Sune-Ate +3"}
 	elseif buff_name=='Meikyo Shisui' then
 		if gain then
 			equip(sets.JA["Meikyo Shisui"])
 			disable('feet')
-			add_to_chat(9, 'Meikyo Shisui ON, hands disabled')
+			add_to_chat(9, 'Meikyo Shisui ON, feet disabled')
 		else
 			enable('feet')
-			add_to_chat(9, 'Meikyo Shisui off, hands enabled')
+			add_to_chat(9, 'Meikyo Shisui off, feet enabled')
 		end
 	--sets.JA.Feint = {legs="Plun. Culottes"}
 	elseif buff_name=='Feint' then
@@ -309,15 +325,15 @@ function self_command(command)
 		MeleeLock = 'False'
 		add_to_chat(9, 'MeleeLock = ' ..MeleeLock)
 	]]
-	--[[elseif command == 'Beatific' then
-		if Beatific_On == 0 then
-			Beatific_On = 1	--always equip Beatific Shield
-			add_to_chat(9, 'Beatific ON')
+	elseif command == 'Wakido' then
+		if Wakido_On == 0 then
+			Wakido_On = 1	--always equip Wakido body
+			add_to_chat(9, 'Wakido ON')
 		else
-			Beatific_On = 0 -- equip shield defined in sets
-			add_to_chat(9, 'Beatific OFF')
+			Wakido_On = 0 -- equip body defined in sets
+			add_to_chat(9, 'Wakido OFF')
 		end
-	]]
+	
 
 	elseif command == 'Mecisto' then
 		if Mecisto_On == 0 then
@@ -332,13 +348,13 @@ function self_command(command)
 		add_to_chat(9, 'SAM Info:')
 		add_to_chat(9, 'SetMode = ' ..SetMode_Names[SetMode_Index])
 		add_to_chat(9, 'Accuracy = ' ..Accuracy[Accuracy_Index])
-		--add_to_chat(9, 'Beatific_On = ' ..tostring(Beatific_On))
+		add_to_chat(9, 'Wakido_On = ' ..tostring(Wakido_On))
 		add_to_chat(9, 'Mecisto_On = ' ..tostring(Mecisto_On))
 		--add_to_chat(9, 'MeleeLock = ' ..MeleeLock)
 
 	end
 
-	if command ~= 'Info' and command ~= 'Melee' then
+	if command ~= 'Info' then
 		aftercast()
 	end
 
