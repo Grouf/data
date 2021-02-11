@@ -18,10 +18,11 @@ function get_sets()
 
 	--Job Abilities
 	sets.JA = {}
-	sets.JA.Flee = {feet="Pill. Poulaines +1"}
-	sets.JA.Steal = {hands="Pill. Armlets +1",legs="Assassin's Culottes",feet="Pill. Poulaines +1"}
+	sets.JA.Flee = {feet="Pill. Poulaines +2"}
+	sets.JA.Steal = {hands="Pill. Armlets +2",legs="Assassin's Culottes",feet="Pill. Poulaines +2"}
 	--sets.JA.Mug = {head="Plun. Bonnet"}
 	sets.JA.Despoil = {legs="Skulk. Culottes +1", feet="Skulk. Poulaines +1"}
+	sets.JA.Hide = {body="Pillager's Vest +2"}
 	sets.JA.Conspirator = {body="Skulker's Vest +1"}
 	sets.JA.Accomplice = {head="Skulker's Bonnet +1"}
 	sets.JA.Collaborator = {head="Skulker's Bonnet +1"}
@@ -29,7 +30,7 @@ function get_sets()
 	sets.JA.Feint = {legs="Plun. Culottes +1"}
 	--sets.JA["Assassin's Charge"] = {feet="Plun. Poulaines"}
 	sets.JA["Sneak Attack"] = {hands="Skulk. Armlets +1"}
-	sets.JA["Trick Attack"] = {body="Plunderer's Vest +3", hands="Pill. Armlets +1"} --AGI increase Damage
+	sets.JA["Trick Attack"] = {body="Plunderer's Vest +3", hands="Pill. Armlets +2"} --AGI increase Damage
 
 	sets.JA.Waltz = {head="Lithelimb Cap", neck="Loricate Torque +1", right_ear="Soil Pearl", left_ear="Soil Pearl",
 		body="Plunderer's Vest +3", hands="Plun. Armlets +1", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
@@ -52,11 +53,11 @@ function get_sets()
 		--Fast Cast: 30%
 		--Haste: 34%
 
-	sets.Idle = {head="Taeon Chapeau",neck="Asperity Necklace",left_ear="Infused Earring", right_ear="Etiolation Earring",
+	sets.Idle = {head="Volte Cap",neck="Asperity Necklace",left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Plunderer's Vest +3",hands="Herculean Gloves",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
 		back="Canny Cape",waist="Sarissapho. Belt",legs="Volte Hose", feet="Jute Boots +1"}
 
-	sets.Idle.TH = {head="Taeon Chapeau",neck="Asperity Necklace",left_ear="Infused Earring", right_ear="Etiolation Earring",
+	sets.Idle.TH = {head="Volte Cap",neck="Asperity Necklace",left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Plunderer's Vest +3",hands="Plun. Armlets +1",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
 		back="Canny Cape",waist="Sarissapho. Belt", legs="Volte Hose", feet="Jute Boots +1"}
 		
@@ -89,9 +90,9 @@ function get_sets()
 	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {legs="Volte Hose"})
 
 		--TH caps at +8 for gear/Job Trait
-	sets.TH = set_combine(sets.DD, {body="Plunderer's Vest +3", hands="Plun. Armlets +1", legs="Volte Hose", 
+	sets.TH = set_combine(sets.DD, {head="Volte Cap", body="Plunderer's Vest +3", hands="Plun. Armlets +1", legs="Volte Hose", 
 		feet="Skulk. Poulaines +1"}) --vest if solo, off if group?
-	sets.TH.MidAcc = set_combine(sets.DD.MidAcc,{hands="Plun. Armlets +1", legs="Volte Hose",
+	sets.TH.MidAcc = set_combine(sets.DD.MidAcc,{head="Volte Cap", hands="Plun. Armlets +1", legs="Volte Hose",
 		feet="Skulk. Poulaines +1"})
 	sets.TH.HighAcc = sets.TH.MidAcc
 
@@ -152,7 +153,7 @@ function get_sets()
 	set_macro_book()
 
 	sets.DontForget = {main="Mandau", range="Tsoa. Crossbow", ammo="Gashing Bolt",
-		right_ear="Reraise Earring", left_ring="Gash. Bolt Quiver"}
+		left_ring="Gash. Bolt Quiver"}
 
 end
 
