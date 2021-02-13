@@ -89,17 +89,17 @@ function get_sets()
 		-- MDB: 28, M.Eva: 421, MDT: -28%, DT: -8%, PTD: -11%, Evasion: 191
 
 
-	sets.Enfeeble = {main="Crocea Mors", sub="Ammurapi Shield", range="Ullr",
+	sets.Enfeeble = {main="Crocea Mors", sub="Ammurapi Shield", ammo="Regal Gem",
 		head="Viti. Chapeau +3", neck="Dls. Torque +2", left_ear="Snotra Earring", right_ear="Digni. Earring",
 		body="Atrophy Tabard +3", hands="Leth. Gantherots +1", left_ring="Kishar Ring", right_ring="Stikini Ring",
 		back="Sucellos's Cape", waist="Luminary Sash", legs="Psycloth Lappas", feet="Vitiation Boots +3"}
 			--RDM/sch
 			--Potency:  !need update
-			--Magic Accuracy:	365
-			--Enfeeble Skill:	586
+			--Magic Accuracy:	395
+			--Enfeeble Skill:	581
 			--Merit:			5+15 (hat augment)
 			--JP/Gift:			90
-			--Total:			1061
+			--Total:			1086
 			--MND:				107+271 = ??? (361 with weapon)
 			--INT:				99+206 = 287
 
@@ -115,7 +115,7 @@ function get_sets()
 			--MND:				106+255 = ??? (361 with weapon)
 			--INT:				101+186 = 287
 
-	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc, {left_ring="Stikini Ring"})
+	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc, {range="Ullr", left_ring="Stikini Ring"})
 			--RDM/blm
 			--High-Acc:		need re-calc
 			--Magic Accuracy:	253 (288 with staff and grip)
