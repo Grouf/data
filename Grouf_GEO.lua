@@ -17,13 +17,13 @@ function get_sets()
 	sets.precast.IdleRefresh = {main="Idris",sub="Genmei Shield",range="Dunna",
 		head="Bagua Galero +3", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Jhakri Robe +2", hands="Bagua Mitaines +3", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Repulse Mantle",	waist="Fucho-no-Obi", legs="Nares Trews", feet="Geo. Sandals +3"}
+		back="Repulse Mantle",	waist="Fucho-no-Obi", legs="Volte Brais", feet="Geo. Sandals +3"}
 	--Repulse Mantle
 	--Mecisto. Mantle
 	sets.precast.IdleLuopan = {main="Idris", sub="Genmei Shield", range="Dunna",
 		head="Azimuth Hood +1", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Geomancy Tunic +3", hands="Geo. Mitaines +3", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Repulse Mantle",	waist="Fucho-no-Obi", legs="Geomancy Pants +3", feet="Bagua Sandals +2"}
+		back="Repulse Mantle",	waist="Fucho-no-Obi", legs="Volte Brais", feet="Bagua Sandals +3"}
 	--Lifestream Cape
 
 	sets.precast.Idle = sets.precast.IdleRefresh
@@ -36,7 +36,7 @@ function get_sets()
 	sets.JA.Bolster = {body="Bagua Tunic +3"}
 	sets.JA['Full Circle'] = {head="Azimuth Hood +1"}
 	sets.JA['Mending Halation'] = {legs="Bagua Pants +3"}
-	sets.JA['Radial Arcana'] = {feet="Bagua Sandals +2"}
+	sets.JA['Radial Arcana'] = {feet="Bagua Sandals +3"}
 	sets.JA['Life Cycle'] = {body="Geomancy Tunic +3", back="Nantosuelta's Cape"}
 	sets.JA['Concentric Pulse'] = {head="Bagua Galero +3"}
 
@@ -53,7 +53,7 @@ function get_sets()
 	sets.midcast.Enfeeble = {main="Gada", sub="Ammurapi Shield", range="Dunna",
 		head="Bagua Galero +3", neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
 		body="Bagua Tunic +3", hands="Azimuth Gloves +1", left_ring="Stikini Ring", right_ring="Stikini Ring",
-		back="Refraction Cape", waist="Luminary Sash",legs="Psycloth Lappas",feet="Geo. Sandals +3"}
+		back="Refraction Cape", waist="Luminary Sash",legs="Psycloth Lappas",feet="Bagua Sandals +3"}
 
 	sets.midcast.Geomancy = {main="Idris",sub="Genmei Shield" ,range="Dunna",
 		head="Azimuth Hood +1", neck="Incanter's Torque", right_ear="Gifted Earring", left_ear="Calamitous Earring",
@@ -77,11 +77,12 @@ function get_sets()
 	sets.midcast.ElementalMagic = {main="Idris", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		head="Bagua Galero +3", neck="Eddy Necklace", left_ear="Barkaro. Earring", right_ear="Friomisi Earring",
 		body="Bagua Tunic +3", hands="Bagua Mitaines +3",left_ring="Acumen Ring",right_ring="Jhakri ring",
-		back="Nantosuelta's Cape", waist="Yamabuki-no-Obi", legs="Merlinic Shalwar", feet="Jhakri Pigaches +2"}
+		back="Nantosuelta's Cape", waist="Yamabuki-no-Obi", legs="Merlinic Shalwar", feet="Bagua Sandals +3"}
 			--INT +236
 			--M.Acc 361
 			--MAB 381
 			--Ghastly Thathlum?
+			--Jhakri Pigaches +2 for more m.acc?
 	
 	--sets.midcast.ElementalMagic.MidAcc = { hands=Jhakri, Body=Jhakri, pants=Jhakri }
 
@@ -166,7 +167,7 @@ Head: Bagua Galero +3: Primeval Zeal
 Body: Bagua Tunic +3: Bolster
 Hands: Bagua Mitaines +3: Curative Recantation
 Legs: Bagua Pants +3: Mending Halation
-Feet: Bagua Sandals +2: Radial Arcana
+Feet: Bagua Sandals +3: Radial Arcana
 ]]
 
 function midcast(spell)
