@@ -137,7 +137,7 @@ function get_sets()
 		--Def: 1091		927
 
 	--sets.DD.MidAcc = set_combine(sets.DD, {neck="Sanctity Necklace", right_ring="Beeline Ring",
-	--	back="Grounded Mantle", feet="Atrophy Boots +2"})
+	--	back="Ground. Mantle +1", feet="Atrophy Boots +2"})
 
 	--sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {ammo="Amar Cluster", neck="Subtlety Spec.",
 	--	left_ear="Digni. Earring", right_ear="Zennaroi Earring",
@@ -154,7 +154,7 @@ function get_sets()
 	sets.DT.MidAcc = set_combine(sets.DT, {right_ear="Heartseeker Earring", waist="Olseni Belt"})
 
 
-	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Grounded Mantle"})
+	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Ground. Mantle +1"})
 
 
 
@@ -167,7 +167,7 @@ function get_sets()
 	sets.MDT.MidAcc = set_combine(sets.MDT, {neck="Loricate Torque +1", waist="Olseni Belt"})
 
 
-	sets.MDT.HighAcc = set_combine(sets.MDT.MidAcc, {back="Grounded Mantle"})
+	sets.MDT.HighAcc = set_combine(sets.MDT.MidAcc, {back="Ground. Mantle +1"})
 	]]
 
 
@@ -185,7 +185,7 @@ function get_sets()
 	--	hands="Umuthi Gloves", right_ring="Beeline Ring", back="Vespid Mantle", waist="Fotia Belt"})
 
 
-	--sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {head="Taeon Chapeau", back="Grounded Mantle",
+	--sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {head="Taeon Chapeau", back="Ground. Mantle +1",
 	--	waist="Olseni Belt", feet="Atrophy Boots +2"})
 
 

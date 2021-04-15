@@ -24,7 +24,7 @@ function get_sets()
 	
 	sets.WS = {}
 	sets.WS.Base = {head="Pursuer's Beret", neck="Fotia Gorget", left_ear="Ishvara Earring", right_ear="Enervating Earring",
-		body="Arc. Jerkin +3", hands="Pursuer's Cuffs", left_ring="Dingir Ring", right_ring="Cacoethic Ring",
+		body="Arc. Jerkin +3", hands="Pursuer's Cuffs", left_ring="Dingir Ring", right_ring="Cacoethic Ring +1",
 		back="Belenus's Cape", waist="Fotia Belt", legs="Pursuer's Pants", feet="Pursuer's Gaiters"}
 	
 	sets.JA["Eagle Eye Shot"] = set_combine(sets.WS.Base, {legs="Arc. Braccae +1"})
@@ -46,13 +46,13 @@ function get_sets()
 		--Gear Haste: 30%, Fast Cast: 26%
 	
 	sets.PreRange = {head="Orion Beret +1", 
-		body="Arc. Jerkin +3", hands="Arc. Bracers +1", left_ring="Dingir Ring", right_ring="Cacoethic Ring",
+		body="Arc. Jerkin +3", hands="Arc. Bracers +1", left_ring="Dingir Ring", right_ring="Cacoethic Ring +1",
 		back="Belenus's Cape", legs="Pursuer's Pants", feet="Arcadian Socks +1"}
 		--Adds Rapid Shot:  should be snapshot?
 
 	sets.TP = {}
 	sets.TP.Ranged = {head="Pursuer's Beret", neck="Iskur Gorget", left_ear="Volley Earring", right_ear="Enervating Earring",
-		body="Arc. Jerkin +3", hands="Pursuer's Cuffs", left_ring="Dingir Ring", right_ring="Cacoethic Ring",
+		body="Arc. Jerkin +3", hands="Pursuer's Cuffs", left_ring="Dingir Ring", right_ring="Cacoethic Ring +1",
 		back="Belenus's Cape", waist="Eschan Stone", legs="Pursuer's Pants", feet="Pursuer's Gaiters"}
 	
 	sets.aftercast = {}

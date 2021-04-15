@@ -19,15 +19,16 @@ function get_sets()
 	--Job Abilities
 	sets.JA = {}
 	sets.JA.Flee = {feet="Pill. Poulaines +2"}
-	sets.JA.Steal = {hands="Pill. Armlets +2",legs="Assassin's Culottes",feet="Pill. Poulaines +2"}
-	--sets.JA.Mug = {head="Plun. Bonnet"}
+	sets.JA.Steal = {head="Plun. Bonnet +3", hands="Pill. Armlets +2",legs="Assassin's Culottes",feet="Pill. Poulaines +2"}
+		--pill. armlets +2/3 don't have steal: get +1?
+	sets.JA.Mug = {head="Plun. Bonnet +3"}
 	sets.JA.Despoil = {legs="Skulk. Culottes +1", feet="Skulk. Poulaines +1"}
 	sets.JA.Hide = {body="Pillager's Vest +2"}
 	sets.JA.Conspirator = {body="Skulker's Vest +1"}
 	sets.JA.Accomplice = {head="Skulker's Bonnet +1"}
 	sets.JA.Collaborator = {head="Skulker's Bonnet +1"}
 	sets.JA['Perfect Dodge'] = {hands="Plun. Armlets +1"}
-	sets.JA.Feint = {legs="Plun. Culottes +1"}
+	sets.JA.Feint = {legs="Plun. Culottes +3"}
 	--sets.JA["Assassin's Charge"] = {feet="Plun. Poulaines"}
 	sets.JA["Sneak Attack"] = {hands="Skulk. Armlets +1"}
 	sets.JA["Trick Attack"] = {body="Plunderer's Vest +3", hands="Pill. Armlets +2"} --AGI increase Damage
@@ -38,9 +39,10 @@ function get_sets()
 		--Cure, Healing Waltz = Erase
 		--CHR of caster, VIT of Target
 
-	sets.JA.Step = {head="Skulker's Bonnet +1", neck="Subtlety Spec.", left_ear="Telos Earring", right_ear="Zennaroi Earring", 
-		body="Plunderer's Vest +3", hands="Herculean Gloves", left_ring="Candent Ring", right_ring="Beeline Ring", 
-		back="Grounded Mantle", waist="Olseni Belt", legs="Volte Hose", feet="Rawhide Boots"}  --need accuracy
+	sets.JA.Step = {head="Pill. Bonnet +2", neck="Subtlety Spec.", left_ear="Telos Earring", right_ear="Zennaroi Earring", 
+		body="Pillager's Vest +2", hands="Pill. Armlets +2", left_ring="Ilabrat Ring", right_ring="Cacoethic Ring +1", 
+		back="Ground. Mantle +1", waist="Olseni Belt", legs="Pill. Culottes +2", feet="Pill. Poulaines +2"}  --need accuracy
+			--Acc:  1248
 
 	sets.JA['Violent Flourish'] = set_combine(sets.JA.Step, {
 		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Weather. Ring",
@@ -53,20 +55,20 @@ function get_sets()
 		--Fast Cast: 30%
 		--Haste: 34%
 
-	sets.Idle = {head="Volte Cap",neck="Asperity Necklace",left_ear="Infused Earring", right_ear="Etiolation Earring",
+	sets.Idle = {head="Volte Cap",neck="Loricate Torque +1",left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Plunderer's Vest +3",hands="Herculean Gloves",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
-		back="Canny Cape",waist="Sarissapho. Belt",legs="Volte Hose", feet="Jute Boots +1"}
+		back="Canny Cape",waist="Sailfi Belt +1",legs="Volte Hose", feet="Jute Boots +1"}
 
-	sets.Idle.TH = {head="Volte Cap",neck="Asperity Necklace",left_ear="Infused Earring", right_ear="Etiolation Earring",
+	sets.Idle.TH = {head="Volte Cap",neck="Loricate Torque +1",left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Plunderer's Vest +3",hands="Plun. Armlets +1",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
-		back="Canny Cape",waist="Sarissapho. Belt", legs="Volte Hose", feet="Jute Boots +1"}
+		back="Canny Cape",waist="Sailfi Belt +1", legs="Volte Hose", feet="Jute Boots +1"}
 		
 	sets.Idle.DT = {head="Lithelimb Cap", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring", 
 		body="Emet Harness +1", hands="Herculean Gloves", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Repulse Mantle", waist="Flume Belt",legs="Volte Hose", feet="Jute Boots +1"}
 		
 	sets.Ranged = {head="Pursuer's Beret", neck="Iskur Gorget", left_ear="Volley earring", right_ear="Enervating Earring",
-		body="Sayadio's Kaftan", hands="Pursuer's Cuffs", left_ring="Dingir Ring", right_ring="Cacoethic Ring",
+		body="Sayadio's Kaftan", hands="Pursuer's Cuffs", left_ring="Dingir Ring", right_ring="Cacoethic Ring +1",
 		back="Libeccio Mantle", waist="Eschan Stone", legs="Pursuer's Pants", feet="Pursuer's Gaiters"} 
 		--AGI for Ranged Accuracy: 4AGI=3R.Acc
 		--STR for Ranged Attack
@@ -77,17 +79,20 @@ function get_sets()
 
 
 --M E L E E
-	sets.DD = {head="Taeon Chapeau",neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
+	sets.DD = {head="Plun. Bonnet +3",neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Plunderer's Vest +3",hands="Herculean Gloves",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
-		back="Canny Cape",waist="Sarissapho. Belt", legs="Ta'lab Trousers",feet="Rawhide Boots"}
+		back="Canny Cape",waist="Sailfi Belt +1", legs="Ta'lab Trousers",feet="Rawhide Boots"}
+			--Haste: 36
+			-- Double Attack: 10
+			-- Triple Attack: 22
+			--Use Relid Legs for more acc/att?
 			--Rawhide Vest
 			--solo use Relic+3 Body?
 
-	sets.DD.MidAcc = set_combine(sets.DD, {head="Whirlpool Mask", neck="Subtlety Spec.",
-		right_ear="Zennaroi Earring", left_ring="Beeline Ring",
-		back="Grounded Mantle",waist="Olseni Belt",legs="Feast Hose"})
+	sets.DD.MidAcc = set_combine(sets.DD, {neck="Subtlety Spec.", right_ear="Zennaroi Earring", left_ring="Beeline Ring",
+		back="Ground. Mantle +1", waist="Olseni Belt", legs="Plun. Culottes +3"})
 
-	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {legs="Volte Hose"})
+	sets.DD.HighAcc = sets.DD.MidAcc
 
 		--TH caps at +8 for gear/Job Trait
 	sets.TH = set_combine(sets.DD, {head="Volte Cap", body="Plunderer's Vest +3", hands="Plun. Armlets +1", legs="Volte Hose", 
@@ -99,31 +104,30 @@ function get_sets()
 
 	sets.DT = {head="Lithelimb Cap", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Emet Harness +1", hands="Herculean Gloves", left_ring="Succor Ring", right_ring="Shadow Ring",
-		back="Repulse Mantle", waist="Flume Belt", legs="Volte Hose", feet="Skulk. Poulaines +1"} 
+		back="Repulse Mantle", waist="Flume Belt", legs="Volte Hose", feet="Skulk. Poulaines +1"}
 
 	sets.DT.MidAcc = set_combine(sets.DT, { waist="Olseni Belt"})
 
 
-	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Grounded Mantle"})
+	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Ground. Mantle +1"})
 
 
 
 
-	sets.WS = {head="Whirlpool Mask",neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
-		body="Taeon Tabard",hands="Herculean Gloves",left_ring="Ilabrat Ring", right_ring="Cho'j Band",
-		back="Vespid Mantle",waist="Fotia Belt", legs="Ta'lab Trousers",feet="Rawhide Boots"} --Done
+	sets.WS = {head="Pill. Bonnet +2",neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
+		body="Plunderer's Vest +3",hands="Herculean Gloves", left_ring="Ilabrat Ring", right_ring="Shukuyu Ring",
+		back="Vespid Mantle",waist="Fotia Belt", legs="Plun. Culottes +3",feet="Rawhide Boots"} --NOT Done
 
 
-	sets.WS.MidAcc = set_combine(sets.WS, {head="Sukeroku Hachi.",
-		hands="Umuthi Gloves", right_ring="Beeline Ring", back="Vespid Mantle"})
+	sets.WS.MidAcc = set_combine(sets.WS, {hands="Umuthi Gloves", back="Vespid Mantle"})
 
 
-	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {head="Taeon Chapeau", left_ear="Zennaroi Earring",
-		back="Grounded Mantle", waist="Olseni Belt"})
+	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {left_ear="Zennaroi Earring",
+		back="Ground. Mantle +1", waist="Olseni Belt"})
 	
-	
+	--fix WS
 	sets.WS['Aeolian Edge'] = {
-		head="Whirlpool Mask", neck="Fotia Gorget", left_ear="Friomisi Earring", right_ear="Crematio Earring",
+		head="Pill. Bonnet +2", neck="Fotia Gorget", left_ear="Friomisi Earring", right_ear="Crematio Earring",
 		body="Sayadio's Kaftan", hands="Umuthi Gloves", left_ring="Weather. Ring", right_ring="Acumen Ring",
 		back="Toro Cape", waist="Eschan Stone", legs="Pursuer's Pants", feet="Rawhide Boots"}	
 														--DEX40%, INT40%
@@ -310,7 +314,7 @@ function buff_change(buff_name,gain)
 			enable('hands')
 			add_to_chat(9, 'Perfect Dodge off, hands enabled')
 		end
-	--sets.JA.Feint = {legs="Plun. Culottes +1"}
+	--sets.JA.Feint = {legs="Plun. Culottes +3"}
 	elseif buff_name=='Feint' then
 		if gain then
 			equip(sets.JA.Feint)

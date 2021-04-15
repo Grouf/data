@@ -45,7 +45,7 @@ function get_sets()
 
 	sets.JA.Step = {head="Hizamaru Somen +2", neck="Subtlety Spec.", left_ear="Zennaroi Earring", right_ear="Digni. Earring",
 		body="Mochi. Chainmail +3", hands="Hizamaru Kote +2", left_ring="Beeline Ring", right_ring="Hizamaru Ring",
-		back="Grounded Mantle", waist="Eschan Stone", legs="Hiza. Hizayoroi +2", feet="Hiza. Sune-Ate +2"}
+		back="Ground. Mantle +1", waist="Eschan Stone", legs="Hiza. Hizayoroi +2", feet="Hiza. Sune-Ate +2"}
 		--No Weapon Primary Acc: 814
 
 	--[[ sets.JA['Violent Flourish'] = {Range="Kaja Bow",
@@ -57,7 +57,7 @@ function get_sets()
 
 	sets.FastCast = {head="Herculean Helm", neck="Magoraga Beads", left_ear="Etiolation Earring", right_ear="Loquac. Earring",
 		body="Taeon Tabard",hands="Thaumas Gloves", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		back="Andartia's Mantle", waist="Sailfi Belt", legs="Kaabnax Trousers", feet="Mochizuki Kyahan +1"}
+		back="Andartia's Mantle", waist="Sailfi Belt +1", legs="Kaabnax Trousers", feet="Mochizuki Kyahan +1"}
 		--34% Haste
 		--40% Fast Cast
 		--18% Utsusemi -casting?
@@ -104,10 +104,12 @@ function get_sets()
 	sets.DD = {head="Hizamaru Somen +2",neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Mochi. Chainmail +3",hands="Hizamaru Kote +2", left_ring="Epona's Ring",right_ring="Hizamaru Ring",
 		back="Yokaze Mantle",waist="Windbuffet Belt", legs="Ryuo Hakama +1",feet="Ryuo Sune-Ate +1"}
+		--Use Sarissaphoroi Belt
+			--Use Sailfi belt +1 if augmented
 
 
 	sets.DD.MidAcc = set_combine(sets.DD, {neck="Sanctity Necklace", right_ring="Beeline Ring",
-		back="Grounded Mantle", feet="Hiza. Sune-Ate +2"})
+		back="Ground. Mantle +1", feet="Hiza. Sune-Ate +2"})
 
 	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {neck="Subtlety Spec.",
 		left_ear="Digni. Earring", right_ear="Zennaroi Earring",
@@ -123,7 +125,7 @@ function get_sets()
 	sets.DT.MidAcc = set_combine(sets.DT, {feet="Hiza. Sune-Ate +2"})
 
 
-	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Grounded Mantle"})
+	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Ground. Mantle +1"})
 
 
 
@@ -135,7 +137,7 @@ function get_sets()
 	sets.MDT.MidAcc = set_combine(sets.MDT, {neck="Loricate Torque +1", waist="Olseni Belt"})
 
 
-	sets.MDT.HighAcc = set_combine(sets.MDT.MidAcc, {back="Grounded Mantle"})
+	sets.MDT.HighAcc = set_combine(sets.MDT.MidAcc, {back="Ground. Mantle +1"})
 
 
 

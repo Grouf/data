@@ -60,7 +60,7 @@ function get_sets()
 	sets.JA['Violent Flourish'] = {Range="Ullr",
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", left_ear="Snotra Earring", right_ear="Digni. Earring",
 		body="Chironic Doublet", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Stikini Ring",
-		back="Sucellos's Cape", waist="Famine Sash", legs="Leth. Fuseau +1", feet="Vitiation Boots +3"}
+		back="Sucellos's Cape", waist="Luminary Sash", legs="Leth. Fuseau +1", feet="Vitiation Boots +3"}
 		--M.Acc = 211, No Weapon Prim.Acc = 322 ??
 		--Stuns
 
@@ -162,7 +162,7 @@ function get_sets()
 		body="Chironic Doublet", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Evanescence Ring",
 		back="Refraction Cape", waist="Yamabuki-no-Obi", legs="Leth. Fuseau +1", feet="Vitiation Boots +3"}
 
-	sets.DarkMagic.MidAcc = set_combine(sets.DarkMagic, {waist="Famine Sash"})
+	sets.DarkMagic.MidAcc = set_combine(sets.DarkMagic, {waist="Luminary Sash"})
 
 	sets.DarkMagic.HighAcc = sets.DarkMagic.MidAcc
 
@@ -230,14 +230,15 @@ function get_sets()
 			--Quad. att:  0
 
 	--[[Need to sort these out:
-	*Windbuffet Belt
+	*Windbuffet Belt - Don't need
+	*Use Sailfi Belt +1 if Augmented
 	*Chaac Belt
 	*when using shield:  feet="Atro. Boots +3"??
 	*Emet Harness +1
 	]]
 
 	sets.DD.MidAcc = set_combine(sets.DD, {neck="Sanctity Necklace", body="Jhakri Robe +2", right_ring="Beeline Ring",
-		back="Grounded Mantle", feet="Atro. Boots +3"})
+		back="Ground. Mantle +1", feet="Atro. Boots +3"})
 			--Without Weapon/Shield: Acc: 358, Att: 267
 
 	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {neck="Subtlety Spec.",
@@ -257,7 +258,7 @@ function get_sets()
 	sets.DT.MidAcc = set_combine(sets.DT, {right_ear="Zennaroi Earring", waist="Olseni Belt"})
 			--Without Weapon/Shield: Acc: 286, Att: 196, EVA: 680, DEF: 787, PDT: -31%
 
-	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Grounded Mantle"})
+	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Ground. Mantle +1"})
 			--Without Weapon/Shield: Acc: 310, Att: 196, EVA: 680, DEF: 790, PDT: -27%
 
 	sets.MDT = {main="Emissary", sub="Beatific Shield +1", ammo="Brigantia Pebble",
@@ -274,7 +275,7 @@ function get_sets()
 			--Without Weapon/Shield: Acc: 192, Att: 160, EVA: 610, DEF: 735,
 			-- MDB: 28, MDT: -11%, M.Eva: 417
 
-	sets.MDT.HighAcc = set_combine(sets.MDT.MidAcc, {back="Grounded Mantle"})
+	sets.MDT.HighAcc = set_combine(sets.MDT.MidAcc, {back="Ground. Mantle +1"})
 			--RDM/blm
 			--Without Weapon/Shield: Acc: 214, Att: 160, EVA: 610, DEF: 732,
 			-- MDB: 28, MDT: -8%, M.Eva: 417
@@ -282,7 +283,7 @@ function get_sets()
 --Fotia belt needs adding.  need list of fTP all hit WS?
 	sets.WS = {ammo="Ginsen",
 		head="Viti. Chapeau +3", neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
-		body="Viti. Tabard +3", hands="Atrophy Gloves +3", left_ring="Cho'j Band", right_ring="K'ayres Ring",
+		body="Viti. Tabard +3", hands="Atrophy Gloves +3", left_ring="Ilabrat Ring", right_ring="K'ayres Ring",
 		back="Buquwik Cape", waist="Fotia Belt", legs="Viti. Tights +3", feet="Atro. Boots +3"}
 			--Without Weapon/Shield: STR: +114, Att: 320, Acc: 177
 
@@ -290,7 +291,7 @@ function get_sets()
 		hands="Umuthi Gloves", right_ring="Beeline Ring", back="Vespid Mantle", waist="Fotia Belt"})
 			--Without Weapon/Shield: STR: +98, Att: 302, Acc: 241
 
-	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {right_ear="Zennaroi Earring", back="Grounded Mantle",
+	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {right_ear="Zennaroi Earring", back="Ground. Mantle +1",
 		waist="Olseni Belt", legs="Carmine Cuisses +1"})
 			--Without Weapon/Shield: STR: +88, Att: 204, Acc: 288
 

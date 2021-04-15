@@ -96,7 +96,7 @@ function get_sets()
 
 
 	sets.DD.MidAcc = set_combine(sets.DD, {neck="Sanctity Necklace", right_ring="Beeline Ring",
-		back="Grounded Mantle",  feet="Hiza. Sune-Ate +2"})
+		back="Ground. Mantle +1",  feet="Hiza. Sune-Ate +2"})
 		
 	--[[ {ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Mekosu. Harness",hands="Hes. Gloves",
@@ -119,7 +119,7 @@ function get_sets()
 	sets.DT.MidAcc = set_combine(sets.DT, {right_ear="Heartseeker Earring", waist="Olseni Belt"})
 
 
-	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Grounded Mantle"}) ]]
+	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Ground. Mantle +1"}) ]]
 
 
 
@@ -132,7 +132,7 @@ function get_sets()
 	sets.MDT.MidAcc = set_combine(sets.MDT, {neck="Loricate Torque +1", waist="Olseni Belt"})
 
 
-	sets.MDT.HighAcc = set_combine(sets.MDT.MidAcc, {back="Grounded Mantle"}) ]]
+	sets.MDT.HighAcc = set_combine(sets.MDT.MidAcc, {back="Ground. Mantle +1"}) ]]
 
 
 
@@ -146,7 +146,7 @@ function get_sets()
 		back="Vespid Mantle"})
 
 
-	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {back="Grounded Mantle",
+	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {back="Ground. Mantle +1",
 		waist="Olseni Belt"})
 
 

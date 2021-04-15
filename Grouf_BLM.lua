@@ -102,9 +102,9 @@ function get_sets()
 	sets.DarkMagic = {ammo="Pemphredo Tathlum",
 	head="Arch. Petasos +1", neck="Eddy Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 	body="Jhakri Robe +2", hands="Lurid Mitts", left_ring="Evanescence Ring",right_ring="Stikini Ring",
-	back="Bane Cape", waist="Famine Sash", legs="Psycloth Lappas", feet="Medium's Sabots"}
+	back="Bane Cape", waist="Yamabuki-no-Obi", legs="Psycloth Lappas", feet="Medium's Sabots"}
 
-	sets.DarkMagic.MidAcc = set_combine(sets.DarkMagic, {waist="Famine Sash"})
+	sets.DarkMagic.MidAcc = set_combine(sets.DarkMagic, {waist="Luminary Sash"})
 
 	sets.DarkMagic.HighAcc = sets.DarkMagic.MidAcc
 
@@ -169,7 +169,7 @@ function get_sets()
 	]]
 
 	sets.DD.MidAcc = set_combine(sets.DD, {neck="Sanctity Necklace", body="Jhakri Robe +2", right_ring="Beeline Ring",
-		back="Grounded Mantle", feet="Atro. Boots +3"})
+		back="Ground. Mantle +1", feet="Atro. Boots +3"})
 			--Without Weapon/Shield: Acc: 358, Att: 267
 
 	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {neck="Subtlety Spec.",
@@ -216,7 +216,7 @@ function get_sets()
 		hands="Umuthi Gloves", right_ring="Beeline Ring", back="Vespid Mantle", waist="Fotia Belt"})
 			--Without Weapon/Shield: STR: +98, Att: 302, Acc: 241
 
-	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {right_ear="Zennaroi Earring", back="Grounded Mantle",
+	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {right_ear="Zennaroi Earring", back="Ground. Mantle +1",
 		waist="Olseni Belt", legs="Carmine Cuisses +1"})
 			--Without Weapon/Shield: STR: +88, Att: 204, Acc: 288
 
