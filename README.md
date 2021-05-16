@@ -20,7 +20,7 @@ the single quote. To issue that command in a macro use `//console gs c name`.
     - MNK / BLM / RDM:heavy_check_mark: / THF / RNG / SAM:heavy_check_mark: / NIN / BLU / GEO
 2. Add `sub_job_change` and `set_macro_book()` to all files
     - MNK / BLM / RDM / THF / RNG / SAM / NIN / BLU / GEO
-3. Create accuracy and damage taken sets
+3. Create Store TP/Accuracy and damage taken sets
     - MNK / BLM / RDM / THF / RNG / SAM / NIN / BLU / GEO
 4. Document usable commands at the top of each file
     - MNK / BLM / RDM / THF / RNG / SAM / NIN / BLU / GEO

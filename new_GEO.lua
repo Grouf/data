@@ -21,7 +21,7 @@ function get_sets()
 	Accuracy_Index = 1
 	Accuracy = {'None', 'MidAcc', 'HighAcc'}	--Accuracy levels set with user command 'Accuracy'
 
-	Mecisto_On = 1								--set with user command 'Mecisto'; default on, equip CP cape in aftercast
+	Mecisto_On = 0								--set with user command 'Mecisto'; default on, equip CP cape in aftercast
 	MeleeLock = 'False' 						--variable used for info only, work done in self_command function
 	LuopanActive = 'False'
 		--For Modes.lua
@@ -38,21 +38,22 @@ function get_sets()
 	--sets.JA['Mending Halation'] = {legs="Bagua Pants +2"} --Not merited
 	sets.JA['Radial Arcana'] = {feet="Bagua Sandals +2"}
 	sets.JA['Life Cycle'] = {body="Geomancy Tunic +3", back="Nantosuelta's Cape"}
+	sets.JA['Concentric Pulse'] = {head="Bagua Galero +3"}
 
 	sets.FastCast = {main="Idris",sub="Genmei Shield", range="Dunna",
 		head="Nahtirah Hat", left_ear="Loquac. Earring", right_ear="Etiolation Earring",
-		body="Anhur Robe", hands="Volte Gloves", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants +2",feet="Regal Pumps"}  --Fast Cast = 56%
+		body="Anhur Robe", hands="Volte Gloves", left_ring="Weather. Ring", right_ring="Kishar Ring",
+		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants +3",feet="Regal Pumps +1"}  --Fast Cast = 56%
 
 	sets.IdleRefresh = {main="Idris",sub="Genmei Shield",range="Dunna",
 		head="Bagua Galero +3", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
-		body="Geomancy Tunic +3", hands="Bagua Mitaines +3", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Nares Trews", feet="Geo. Sandals +3"}
+		body="Jhakri Robe +2", hands="Bagua Mitaines +3", left_ring="Shadow Ring", right_ring="Succor Ring",
+		back="Repulse Mantle",	waist="Fucho-no-Obi", legs="Volte Brais", feet="Geo. Sandals +3"}
 
 	sets.IdleLuopan = {main="Idris", sub="Genmei Shield", range="Dunna",
-		head="Bagua Galero +3", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Azimuth Hood +1", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Geomancy Tunic +3", hands="Geo. Mitaines +3", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Mecisto. Mantle",	waist="Fucho-no-Obi", legs="Geomancy Pants +2", feet="Bagua Sandals +2"}
+		back="Repulse Mantle",	waist="Fucho-no-Obi", legs="Volte Brais", feet="Bagua Sandals +3"}
 
 
 -- M A G I C --
@@ -69,8 +70,8 @@ function get_sets()
 		--Reti Pendant for Conserve MP? :: need to check skill
 		--Thaumaturge's Cape for Conserve MP? :: need to check skill
 
-	sets.Enfeeble = {main="Gada", sub="Ammurapi Shield", range="Dunna",
-		head="Bagua Galero +3", neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
+	sets.Enfeeble = {main="Idris", sub="Ammurapi Shield", range="Dunna",
+		head="Bagua Galero +3", neck="Incanter's Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
 		body="Bagua Tunic +3", hands="Azimuth Gloves +1", left_ring="Stikini Ring", right_ring="Stikini Ring",
 		back="Aurist's Cape", waist="Luminary Sash",legs="Psycloth Lappas",feet="Geo. Sandals +3"}
 
@@ -81,7 +82,7 @@ function get_sets()
 	sets.Enfeeble.HighAcc = set_combine(sets.Enfeeble.MidAcc ,{neck="Incanter's Torque"})
 
 
-	sets.Elemental = {main="Idris", sub="Ammurapi Shield", ammo="Ghastly Tathlum",
+	sets.Elemental = {main="Idris", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 	head="Jhakri Coronal +2", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 	body="Bagua Tunic +3", hands="Bagua Mitaines +3",left_ring="Acumen Ring",right_ring="Jhakri ring",
 	back="Toro Cape", waist="Yamabuki-no-Obi", legs="Bagua Pants +2", feet="Jhakri Pigaches +2"}
@@ -171,7 +172,7 @@ function get_sets()
 	]]
 
 
-	sets.WS = set_combine(sets.DD, {head="Sukeroku Hachi.", neck="Fotia Gorget", right_ear="Ishvara Earring", 
+	sets.WS = set_combine(sets.DD, {head=" ", neck="Fotia Gorget", right_ear="Ishvara Earring", 
 		right_ring="Cho'j Band", waist="Fotia Belt"})
 
 	--sets.WS = {ammo="Paeapua",
@@ -180,7 +181,7 @@ function get_sets()
 	--	back="Buquwik Cape", waist="Prosilio Belt +1", legs="Taeon Tights", feet="Taeon Boots"}
 
 
-	--sets.WS.MidAcc = set_combine(sets.WS, {head="Sukeroku Hachi.",
+	--sets.WS.MidAcc = set_combine(sets.WS, {head=" ",
 	--	left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
 	--	hands="Umuthi Gloves", right_ring="Beeline Ring", back="Vespid Mantle", waist="Fotia Belt"})
 

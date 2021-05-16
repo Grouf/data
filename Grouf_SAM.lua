@@ -22,7 +22,7 @@ function get_sets()
 	Accuracy_Index = 1
 	Accuracy = {'None', 'MidAcc', 'HighAcc'}	--Accuracy levels set with user command 'Accuracy'
 	Wakido_On = 0								--set with user command 'Wakido'; used to equip when not in P/MDT gear
-	Mecisto_On = 1								--set with user command 'Mecisto'; default on, equip CP cape in aftercast
+	Mecisto_On = 0								--set with user command 'Mecisto'; default on, equip CP cape in aftercast
 	--MeleeLock = 'False' 						--variable used for info only, work done in self_command function
 
 	--Job Abilities
@@ -70,12 +70,12 @@ function get_sets()
 		back="Smertrios's Mantle", waist="Cetl Belt", legs="Ryuo Hakama +1", feet="Danzo Sune-Ate"}
 
 	sets.Idle.DT = {ammo="Ginsen",
-		head="Ynglinga Sallet", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Loess Barbuta", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Wakido Domaru +3", hands="Sakonji Kote +3", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Agema Cape", waist="Flume Belt", legs="Arjuna Breeches", feet="Otronif Boots +1"}
 		
 	sets.Idle.MDT = {ammo="Ginsen",
-		head="Terminal Helm", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Loess Barbuta", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Wakido Domaru +3", hands="Sakonji Kote +3", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Agema Cape", waist="Flax Sash", legs="Arjuna Breeches", feet="Otronif Boots +1"}
 	
@@ -107,7 +107,7 @@ function get_sets()
 
 
 	sets.DT = {ammo="Ginsen",
-		head="Ynglinga Sallet", neck="Loricate Torque +1", left_ear="Telos Earring", right_ear="Digni. Earring",
+		head="Loess Barbuta", neck="Loricate Torque +1", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Wakido Domaru +3", hands="Sakonji Kote +3", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Agema Cape", waist="Flume Belt", legs="Arjuna Breeches", feet="Otronif Boots +1"}
 
@@ -118,7 +118,7 @@ function get_sets()
 	
 	
 	sets.MDT = {ammo="Ginsen",
-		head="Terminal Helm", neck="Loricate Torque +1", left_ear="Telos Earring", right_ear="Digni. Earring",
+		head="Loess Barbuta", neck="Loricate Torque +1", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Wakido Domaru +3", hands="Sakonji Kote +3", left_ring="Succor Ring", right_ring="Shadow Ring",
 		back="Agema Cape", waist="Flax Sash", legs="Arjuna Breeches", feet="Otronif Boots +1"}
 

@@ -9,7 +9,7 @@ function get_sets()
 	sets.JA.Barrage = {hands="Orion Bracers +1"}
 	sets.JA.Sharpshot = {legs="Orion Braccae +1"}
 	sets.JA['Double Shot'] = {head="Amini Gapette +1", body="Arc. Jerkin +3"}
-	sets.JA['Velocity Shot'] = {body="Amini Caban +1"}
+	sets.JA['Velocity Shot'] = {body="Amini Caban +1", back="Belenus's Cape"}
 	sets.JA['Bounty Shot'] = {hands="Amini Glovelettes +1", legs="Volte Hose", waist="Chaac Belt"}
 	sets.JA['Unlimited Shot'] = {feet="Amini Bottillons +1"} --Don't need since it shares timer with Double Shot
 	sets.JA.Scavenge = {feet="Orion Socks +1"}
@@ -33,7 +33,7 @@ function get_sets()
 	sets.WS["Jishnu's Radiance"] = sets.WS.Base
 
 	sets.WS.Wildfire = set_combine(sets.WS.Base, {head="Herculean Helm", left_ear="Friomisi Earring", right_ear="Crematio Earring",
-		right_ring="Acumen Ring", back="Toro Cape"}) --Rawhide body?
+		right_ring="Acumen Ring"}) --[[, back="Toro Cape"}) Rawhide body?]]
 	
 	--[[sets.midcast.WSMelee = {head="Whirlpool Mask",neck="Light Gorget",left_ear="Steelflash Earring",
 		right_ear="Bladeborn Earring",body="Manibozho Jerkin",hands="Qaaxo Mitaines",left_ring="Cho'j Band",

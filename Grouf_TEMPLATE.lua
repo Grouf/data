@@ -41,7 +41,7 @@ function get_sets()
 
 	sets.JA.Step = {ammo="Amar Cluster",
 		head="Taeon Chapeau", neck="Subtlety Spec.", left_ear="Digni. Earring", right_ear="Zennaroi Earring",
-		body="Despair Mail", hands="Buremte Gloves", left_ring="Candent Ring", right_ring="Beeline Ring",
+		body="Despair Mail", hands="Buremte Gloves", left_ring="Cacoethic Ring +1", right_ring="Beeline Ring",
 		back="Agema Cape", waist="Olseni Belt", legs="Viti. Tights +1", feet="Atrophy Boots +2"}
 		--No Weapon Primary Acc: 519
 		--was neck="Iqabi Necklace" -> better to have to reduce items?  check all jobs
@@ -62,7 +62,7 @@ function get_sets()
 	sets.Idle = {main="Bolelabunga", sub="Genmei Shield", ammo="Brigantia Pebble",
 		head="Viti. Chapeau +2", neck="Sanctity Necklace", left_ear="Lifestorm Earring", right_ear="Etiolation Earring",
 		body="Atrophy Tabard +2", hands="Serpentes Cuffs", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Serpentes Sabots"}
+		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Volte Brais", feet="Serpentes Sabots"}
 		--Refresh
 
 	sets.Idle.DT = {main="Emissary",sub="Genmei Shield", ammo="Brigantia Pebble",
@@ -80,7 +80,7 @@ function get_sets()
 
 -- M A G I C --
 	sets.Enfeeble = {main="Serenity", sub="Enki Strap", Range="Kaja Bow",
-		head="Viti. Chapeau +2", neck="Imbodla Necklace", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
+		head="Viti. Chapeau +2", neck="Incanter's Torque", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
 		body="Atrophy Tabard +2", hands="Leth. Gantherots +1", left_ring="Weather. Ring", right_ring="Stikini Ring",
 		back="Sucellos's Cape", waist="Luminary Sash", legs="Psycloth Lappas", feet="Vitiation Boots +2"}
 
@@ -99,7 +99,7 @@ function get_sets()
 	--sets.Dispel.HighAcc = {}
 
 
-	sets.Elemental = {main="Oranyan", sub="Niobid Strap", ammo="Ghastly Tathlum",
+	sets.Elemental = {main="Oranyan", sub="Niobid Strap", ammo="Pemphredo Tathlum",
 		head="Helios Band", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Chironic Doublet", hands="Helios Gloves", left_ring="Strendu Ring", right_ring="Acumen Ring",
 		back="Sucellos's Cape", waist="Yamabuki-no-Obi", legs="Hagondes Pants +1", feet="Helios Boots"}
@@ -138,7 +138,7 @@ function get_sets()
 	sets.EnhancingOther = set_combine(sets.Enhancing, {head="Lethargy Chappel +1",
 		body="Lethargy Sayon +1", legs="Leth. Fuseau +1"})
 
-	sets.Spikes = {main="Oranyan", sub="Niobid Strap", ammo="Ghastly Tathlum",
+	sets.Spikes = {main="Oranyan", sub="Niobid Strap", ammo="Pemphredo Tathlum",
 		head="Leth. Chappel +1", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
 		body="Count's Garb", hands="Telchine Gloves", left_ring="Strendu Ring", right_ring="Acumen Ring",
 		back="Sucellos's Cape", waist="Yamabuki-no-Obi", legs="Psycloth Lappas", feet="Inspirited Boots"}
@@ -151,7 +151,7 @@ function get_sets()
 --M E L E E
 	sets.DD = {main="Arendsi Fleuret", sub="Genmei Shield", ammo="Ginsen",
 		head="Taeon Chapeau", neck="Asperity Necklace", left_ear="Steelflash Earring", right_ear="Bladeborn Earring",
-		body="Despair Mail", hands="Atrophy Gloves +2", left_ring="Hetairoi Ring", right_ring="K'ayres Ring",
+		body="Despair Mail", hands="Atrophy Gloves +2", left_ring="Hetairoi Ring", right_ring="Jhakri Ring",
 		back="Bleating Mantle", waist="Sarissapho. Belt", legs="Taeon Tights", feet="Taeon Boots"}
 
 
@@ -192,11 +192,11 @@ function get_sets()
 
 	sets.WS = {ammo="Paeapua",
 		head="Viti. Chapeau +2", neck="Fotia Gorget", left_ear="Dudgeon Earring", right_ear="Bladeborn Earring",
-		body="Viti. Tabard +3", hands="Atrophy Gloves +2", left_ring="Cho'j Band", right_ring="K'ayres Ring",
+		body="Viti. Tabard +3", hands="Atrophy Gloves +2", left_ring="Shukuyu Rring", right_ring="Jhakri Ring",
 		back="Buquwik Cape", waist="Prosilio Belt +1", legs="Taeon Tights", feet="Taeon Boots"}
 
 
-	sets.WS.MidAcc = set_combine(sets.WS, {head="Sukeroku Hachi.",
+	sets.WS.MidAcc = set_combine(sets.WS, {
 		left_ear="Steelflash Earring", right_ear="Heartseeker Earring",
 		hands="Umuthi Gloves", right_ring="Beeline Ring", back="Vespid Mantle", waist="Fotia Belt"})
 

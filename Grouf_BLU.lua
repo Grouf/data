@@ -17,6 +17,15 @@ off hand:	Thibron w/ 1000 TP bonus  - Magian trial
 
 ]]
 
+--[[Ammo:  (verify: can change without losing TP)
+		Ginsen
+		Pemphredo Tathlum
+		Mantoptera Eye
+		Falcon Eye
+		Honed Tathlum?
+		Hydrocera?
+]]
+
 
 include('Obi_Check')
 
@@ -112,7 +121,7 @@ function get_sets()
 
 --Job Ability--
 	sets.JA = {}
-	sets.JA['Azure Lore'] = {hands="Luh. Bazubands +1"}
+	sets.JA['Azure Lore'] = {hands="Luh. Bazubands +3"}
 	sets.JA.Efflux = {legs="Hashishin Tayt +1"}
 	sets.JA['Chain Affinity'] = {head="Hashishin Kavuk +1",feet="Assim. Charuqs +1"}
 	sets.JA['Burst Affinity'] = {legs="Assim. Shalwar +1",feet="Hashi. Basmak +1"}
@@ -140,7 +149,7 @@ function get_sets()
 	sets.WS = {}
 	sets.WS.Base = {head="Jhakri Coronal +2", neck="Fotia Gorget", left_ear="Moonshade Earring",
 		right_ear="Digni. Earring", body="Jhakri Robe +2", hands="Jhakri Cuffs +2", left_ring="Hetairoi Ring",
-		right_ring="Cho'j Band", back="Vespid Mantle", waist="Prosilio Belt +1",
+		right_ring="Shukuyu Ring", back="Vespid Mantle", waist="Prosilio Belt +1",
 		legs="Jhakri Slops +2", feet="Assim. Charuqs +1" }
 
 	--sets.WS['Chant du Cygne'] = set_combine(sets.WS.Base,{neck="Light Gorget"})
@@ -182,7 +191,7 @@ function get_sets()
 		right_ring="Spiral Ring",back="Cornflower Cape",waist="Yamabuki-no-Obi",
 		legs="Psycloth Lappas",feet="Jhakri Pigaches +2"}
 
-	sets.midcast.Cure = {head="Uk'uxkaj Cap",neck="Imbodla Necklace",left_ear="Loquac. Earring",
+	sets.midcast.Cure = {head="Uk'uxkaj Cap",neck="Incanter's Torque",left_ear="Loquac. Earring",
 		right_ear="Lifestorm Earring",body="Jhakri Robe +2",hands="Telchine Gloves",left_ring="Sirona's Ring",
 		right_ring="Solemn Ring",back="Pahtli Cape",waist="Witful Belt",
 		legs="Psycloth Lappas",feet="Weath. Souliers +1"}

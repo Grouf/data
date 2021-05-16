@@ -22,19 +22,20 @@ function get_sets()
 	sets.JA = {}
 	sets.JA.Chakra = {ammo="Brigantia Pebble",
 		head="Hizamaru Somen +2",neck="Unmoving Collar", left_ear="Soil Pearl",right_ear="Soil Pearl",
-		body="Anch. Cyclas +1",hands="Hes. Gloves +1", left_ring="Terrasoul Ring",right_ring="Terrasoul Ring",
+		body="Anch. Cyclas +1",hands="Hes. Gloves +3", left_ring="Terrasoul Ring",right_ring="Terrasoul Ring",
 		back="Anchoret's Mantle",legs="Hiza. Hizayoroi +2",feet="Hiza. Sune-Ate +2"} 
 			--VIT 109+174
-	sets.JA.Counterstance = {feet="Hes. Gaiters +1"}
+	sets.JA.Counterstance = {feet="Hes. Gaiters +3"}
 	sets.JA.Dodge = {feet="Anch. Gaiters +1"}
 	sets.JA.Focus = {head="Anchor. Crown +1"}
 	sets.JA.Boost = {hands="Anch. Gloves +1"}
 	sets.JA.Impetus = {body="Bhikku Cyclas +1"}
-	sets.JA.Mantra = {feet="Hes. Gaiters +1"}
+	sets.JA.Mantra = {feet="Hes. Gaiters +3"}
 	sets.JA.Footwork = {back="Segomo's Mantle", feet="Shukuyu Sune-Ate"}  --Bhikku Gaiters for more acc?
+		--[[During Footwork Dragon&Tornado Kick WS use Kick Attack Damage -- need to check for footwork for '"Kick Attack" Attack']]
 	sets.JA['Formless Strikes'] = {body="Hes. Cyclas +3"}
 	sets.JA['Perfect Counter'] = {head="Bhikku Crown +1"}
-	sets.JA['Hundred Fists'] = {legs="Hes. Hose +1"}
+	sets.JA['Hundred Fists'] = {legs="Hes. Hose +3"}
 	
 	sets.JA['Chi Blast'] = {
 		head="Anchor. Crown +1", left_ear="Lifestorm Earring", 
@@ -76,13 +77,13 @@ function get_sets()
 --[[need update
 	sets.Idle.DT = {ammo="Brigantia Pebble",
 		head="Rabid Visor", neck="Loricate Torque +1", left_ear="Soil Pearl", right_ear="Soil Pearl",
-		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
+		body="Hes. Cyclas +3", hands="Umuthi Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +1", feet="Leth. Houseaux +1"}
 		-- PDT: -46%, Evasion: 655, Defense: 801
 
 	sets.Idle.MDT = {ammo="Brigantia Pebble",
 		head="Atro. Chapeau +2", neck="Loricate Torque +1", left_ear="Zennaroi Earring", right_ear="Etiolation Earring",
-		body="Atrophy Tabard +2", hands="Atrophy Gloves +2", left_ring="Shadow Ring", right_ring="Succor Ring",
+		body="Hes. Cyclas +3", hands="Atrophy Gloves +2", left_ring="Shadow Ring", right_ring="Succor Ring",
 		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
 		-- MDB: 28, M.Eva: 421, MDT: -28%, DT: -8%, PTD: -11%, Evasion: 191
 	]]
@@ -137,13 +138,12 @@ function get_sets()
 
 
 	sets.WS = {ammo="Knobkierrie",
-		head="Hizamaru Somen +2", neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
+		head="Hes. Crown +3", neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
 		body="Hiza. Haramaki +2", hands="Hizamaru Kote +2", left_ring="Shukuyu Ring", right_ring="Niqmaddu Ring",
 		back="Segomo's Mantle", waist="Fotia Belt", legs="Hiza. Hizayoroi +2", feet="Hiza. Sune-Ate +2"}
 
 
-	sets.WS.MidAcc = set_combine(sets.WS, {head="Sukeroku Hachi.",
-		back="Vespid Mantle"})
+	sets.WS.MidAcc = sets.WS
 
 
 	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {back="Ground. Mantle +1",

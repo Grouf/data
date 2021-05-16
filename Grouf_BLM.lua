@@ -44,10 +44,10 @@ function get_sets()
 		back="Perimede Cape",waist="Witful Belt", legs="Artsieq Hose", feet="Volte Gaiters"}
 			-- 66% Fast Cast, 26% Haste, Job Trait: 30%, Gifts: 8%
 
-	sets.Idle = {ammo="Ghastly Tathlum",
+	sets.Idle = {ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Loricate Torque +1", left_ear="Crematio Earring", right_ear="Etiolation Earring",
 		body="Jhakri Robe +2", hands="Volte Gloves", left_ring="Acumen Ring", right_ring="Strendu ring",
-		back="Mecisto. Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Volte Gaiters"}
+		back="Mecisto. Mantle", waist="Fucho-no-Obi", legs="Volte Brais", feet="Volte Gaiters"}
 		--Refresh
 
 	sets.Idle.DT = {}
@@ -57,7 +57,7 @@ function get_sets()
 	sets.ElementalDebuff = {"Arch. Tonban +1"}
 
 	sets.Enfeeble = {ammo="Pemphredo Tathlum",
-	head="Befouled Crown", neck="Imbodla Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
+	head="Befouled Crown", neck="Incanter's Torque", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
 	body="Jhakri Robe +2", hands="Lurid Mitts", left_ring="Stikini Ring",right_ring="Stikini Ring",
 	back="Refraction Cape", waist="Luminary Sash", legs="Psycloth Lappas", feet="Medium's Sabots"}
 			--RDM/sch
@@ -79,9 +79,9 @@ function get_sets()
 
 	--sets.Dispel.HighAcc = {}
 
-	sets.Elemental = {ammo="Ghastly Tathlum",
+	sets.Elemental = {ammo="Pemphredo Tathlum",
 	head="Jhakri Coronal +2", neck="Incanter's Torque", left_ear="Friomisi Earring", right_ear="Markaro. Earring",
-	body="Jhakri Robe +2", hands="Jhakri Cuffs +2", left_ring="Strendu Ring", right_ring="Jhakri ring",
+	body="Jhakri Robe +2", hands="Arch. Gloves +3", left_ring="Strendu Ring", right_ring="Jhakri ring",
 	back="Toro Cape", waist="Yamabuki-no-Obi", legs="Merlinic Shalwar", feet="Jhakri Pigaches +2"}
 		--Check Umbani Boots
 			--Magic Attack Bonus:	190 (223 with Weapon&Strap)
@@ -122,11 +122,12 @@ function get_sets()
 	sets.Cure = {ammo="Oreiad's Tathlum",
 	head="Vanya Hood", neck="Nodens Gorget", left_ear="Mendi. Earring",right_ear="Lifestorm Earring",
 	body="Jhakri Robe +2", hands="Telchine Gloves", left_ring="Stikini Ring",right_ring="Stikini Ring",
-	back="Pahtli Cape", waist="Luminary Sash", legs="Nares Trews",feet="Vanya Clogs"}
+	back="Pahtli Cape", waist="Luminary Sash", legs="??",feet="Vanya Clogs"}
 
 	sets.Enhancing = {head="Befouled Crown", neck="Colossus's Torque", left_ear="Loquac. Earring", right_ear="Andoaa Earring",
 	body="Telchine Chas.", hands="Augur's Gloves",
 	back="Swith Cape", waist="Olympus Sash", legs="Shedir Seraweels", feet="Inspirited Boots"}
+		--boots needs to be Regal pumps +1, Inspirited needs to be conditional on refresh in midcast
 
 
 	sets.Stoneskin = {waist="Siegel Sash", legs="Shedir Seraweels", neck="Nodens Gorget", 
@@ -152,8 +153,8 @@ function get_sets()
 --NEED? to add weapons/shield.  based on subjob: sword&shield vs. dual wield 
 	sets.DD = {ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
-		body="Viti. Tabard +3", hands="Atrophy Gloves +3", left_ring="Hetairoi Ring", right_ring="K'ayres Ring",
-		back="Bleating Mantle", waist="Sarissapho. Belt", legs="Jhakri Slops +2", feet="Atro. Boots +3"}
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", left_ring="Hetairoi Ring", right_ring="Jhakri Ring",
+		back="Bleating Mantle", waist="Sarissapho. Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 			--Acc: 917, Att: 966
 			--Eva: 684, Def: 1026
 			--Haste: 28
@@ -165,7 +166,6 @@ function get_sets()
 	*Windbuffet Belt
 	*Chaac Belt
 	*when using shield:  feet="Atro. Boots +3"??
-	*Emet Harness +1
 	]]
 
 	sets.DD.MidAcc = set_combine(sets.DD, {neck="Sanctity Necklace", body="Jhakri Robe +2", right_ring="Beeline Ring",
@@ -207,17 +207,17 @@ function get_sets()
 
 --Fotia belt needs adding.  need list of fTP all hit WS?
 	sets.WS = {ammo="Ginsen",
-		head="Viti. Chapeau +3", neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
-		body="Viti. Tabard +3", hands="Atrophy Gloves +3", left_ring="Cho'j Band", right_ring="K'ayres Ring",
-		back="Buquwik Cape", waist="Fotia Belt", legs="Viti. Tights +3", feet="Atro. Boots +3"}
+		head="Jhakri Coronal +2", neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", left_ring="Shukuyu Ring", right_ring="Jhakri Ring",
+		back="Buquwik Cape", waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 			--Without Weapon/Shield: STR: +114, Att: 320, Acc: 177
 
-	sets.WS.MidAcc = set_combine(sets.WS, {head="Sukeroku Hachi.",
+	sets.WS.MidAcc = set_combine(sets.WS, {
 		hands="Umuthi Gloves", right_ring="Beeline Ring", back="Vespid Mantle", waist="Fotia Belt"})
 			--Without Weapon/Shield: STR: +98, Att: 302, Acc: 241
 
 	sets.WS.HighAcc = set_combine(sets.WS.MidAcc, {right_ear="Zennaroi Earring", back="Ground. Mantle +1",
-		waist="Olseni Belt", legs="Carmine Cuisses +1"})
+		waist="Olseni Belt"})
 			--Without Weapon/Shield: STR: +88, Att: 204, Acc: 288
 
 	--sets.WS['Chant du Cygne'] = {ammo="Paeapua",

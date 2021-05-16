@@ -12,7 +12,8 @@ function get_sets()
 	sets.precast.FastCast = {main="Idris",sub="Genmei Shield", range="Dunna",
 		head="Nahtirah Hat", left_ear="Loquac. Earring", right_ear="Etiolation Earring",
 		body="Anhur Robe", hands="Volte Gloves", left_ring="Weather. Ring", right_ring="Kishar Ring",
-		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants +3",feet="Regal Pumps +1"}  --Fast Cast = 58%
+		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants +3",feet="Volte Gaiters"}  
+			--Fast Cast = 69%
 
 	sets.precast.IdleRefresh = {main="Idris",sub="Genmei Shield",range="Dunna",
 		head="Bagua Galero +3", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
@@ -46,12 +47,12 @@ function get_sets()
 	sets.midcast.Cure = {main="Gada", sub="Ammurapi Shield", range="Dunna",
 		head="Vanya Hood", neck="Nodens Gorget",left_ear="Mendi. Earring",right_ear="Lifestorm Earring",
 		body="Geomancy Tunic +3", hands="Telchine Gloves",left_ring="Stikini Ring",right_ring="Stikini Ring",
-		back="Pahtli Cape", waist="Luminary Sash",legs="Doyen Pants",feet="Vanya Clogs"}
-		--MND=111+202, Cure Pot.=60%, Healing Skill =223
+		back="Pahtli Cape", waist="Luminary Sash",legs="Geomancy Pants +3",feet="Vanya Clogs"}
+		--MND=111+207, Cure Pot.=60%, Healing Skill =223
 		
 
-	sets.midcast.Enfeeble = {main="Gada", sub="Ammurapi Shield", range="Dunna",
-		head="Bagua Galero +3", neck="Imbodla Necklace",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
+	sets.midcast.Enfeeble = {main="Idris", sub="Ammurapi Shield", range="Dunna",
+		head="Bagua Galero +3", neck="Incanter's Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
 		body="Bagua Tunic +3", hands="Azimuth Gloves +1", left_ring="Stikini Ring", right_ring="Stikini Ring",
 		back="Refraction Cape", waist="Luminary Sash",legs="Psycloth Lappas",feet="Bagua Sandals +3"}
 
@@ -116,10 +117,10 @@ function get_sets()
 		--Eva: 681		533
 		--Def: 1091		927
 
-    sets.WS = set_combine(sets.TP, {head="Sukeroku Hachi.", neck="Fotia Gorget", right_ear="Ishvara Earring", 
-		right_ring="Cho'j Band", waist="Fotia Belt"})
+    sets.WS = set_combine(sets.TP, {neck="Fotia Gorget", right_ear="Ishvara Earring", 
+		right_ring="Shukuyu Ring", waist="Fotia Belt"})
 
-    sets.DontForget = {head="Umuthi Hat", body="Telchine Chas.", legs="Doyen Pants", left_ear="Earthcry Earring"}
+    sets.DontForget = {head="Umuthi Hat", body="Telchine Chas.", left_ear="Earthcry Earring"}
 
 
 	send_command('input /macro book 20;wait .1;input /macro set 1')
@@ -136,9 +137,9 @@ function precast(spell)
 		--windower.add_to_chat(14, 'not JobAbility or WeaponSkill so Fast Cast')
 		equip(sets.precast.FastCast)
 		if spell.english == 'Stoneskin' then
-			equip({head="Umuthi Hat", legs="Doyen Pants"})
-		elseif spell.english:startswith('Cur') then
-			equip({legs="Doyen Pants"})
+			equip({head="Umuthi Hat"})
+		--elseif spell.english:startswith('Cur') then
+			--equip({legs="Doyen Pants"})
 		end
 		if spell.skill == 'Elemental Magic' then
 			equip({hands="Bagua Mitaines +3"})

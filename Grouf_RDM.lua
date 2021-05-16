@@ -52,7 +52,7 @@ function get_sets()
 
 	sets.JA.Step = {
 		head="Viti. Chapeau +3", neck="Subtlety Spec.", left_ear="Zennaroi Earring", right_ear="Digni. Earring",
-		body="Jhakri Robe +2", hands="Atrophy Gloves +3", left_ring="Candent Ring", right_ring="Beeline Ring",
+		body="Jhakri Robe +2", hands="Atrophy Gloves +3", left_ring="Cacoethic Ring +1", right_ring="Beeline Ring",
 		back="Agema Cape", waist="Olseni Belt", legs="Viti. Tights +3", feet="Atro. Boots +3"}
 		--No Weapon Primary Acc: 519
 		--was neck="Iqabi Necklace" -> better to have to reduce items?  check all jobs
@@ -73,7 +73,7 @@ function get_sets()
 	sets.Idle = {main="Emissary", sub="Genmei Shield", range="Ullr",
 		head="Viti. Chapeau +3", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Jhakri Robe +2", hands="Volte Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Nares Trews", feet="Volte Gaiters"}
+		back="Repulse Mantle", waist="Fucho-no-Obi", legs="Volte Brais", feet="Volte Gaiters"}
 		--Refresh
 
 	sets.Idle.DT = {main="Emissary",sub="Genmei Shield", range="Ullr",
@@ -92,7 +92,7 @@ function get_sets()
 	sets.Enfeeble = {main="Crocea Mors", sub="Ammurapi Shield", ammo="Regal Gem",
 		head="Viti. Chapeau +3", neck="Dls. Torque +2", left_ear="Snotra Earring", right_ear="Digni. Earring",
 		body="Atrophy Tabard +3", hands="Leth. Gantherots +1", left_ring="Kishar Ring", right_ring="Stikini Ring",
-		back="Sucellos's Cape", waist="Luminary Sash", legs="Psycloth Lappas", feet="Vitiation Boots +3"}
+		back="Sucellos's Cape", waist="Luminary Sash", legs="Chironic Hose", feet="Vitiation Boots +3"}
 			--RDM/sch
 			--Potency:  !need update
 			--Magic Accuracy:	395
@@ -104,7 +104,7 @@ function get_sets()
 			--INT:				99+206 = 287
 
 	--sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble ,{range="Aureole"})  8
-	sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble, {left_ring="Weather. Ring", legs="Chironic Hose"})
+	sets.Enfeeble.MidAcc = set_combine(sets.Enfeeble, {left_ring="Weather. Ring"})
 			--RDM/blm
 			--Mid-Acc:
 			--Magic Accuracy:	??? (315 with weapons)
@@ -220,7 +220,7 @@ function get_sets()
 --NEED? to add weapons/shield.  based on subjob: sword&shield vs. dual wield 
 	sets.DD = {main="Crocea Mors", sub="Ammurapi Shield", ammo="Ginsen",
 		head="Jhakri Coronal +2", neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
-		body="Viti. Tabard +3", hands="Atrophy Gloves +3", left_ring="Hetairoi Ring", right_ring="K'ayres Ring",
+		body="Viti. Tabard +3", hands="Atrophy Gloves +3", left_ring="Ilabrat Ring", right_ring="Hetairoi Ring",
 		back="Bleating Mantle", waist="Sarissapho. Belt", legs="Jhakri Slops +2", feet="Atro. Boots +3"}
 			--Acc: 917, Att: 966
 			--Eva: 684, Def: 1026
@@ -283,11 +283,11 @@ function get_sets()
 --Fotia belt needs adding.  need list of fTP all hit WS?
 	sets.WS = {ammo="Ginsen",
 		head="Viti. Chapeau +3", neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
-		body="Viti. Tabard +3", hands="Atrophy Gloves +3", left_ring="Ilabrat Ring", right_ring="K'ayres Ring",
+		body="Viti. Tabard +3", hands="Atrophy Gloves +3", left_ring="Ilabrat Ring", right_ring="Shukuyu Ring",
 		back="Buquwik Cape", waist="Fotia Belt", legs="Viti. Tights +3", feet="Atro. Boots +3"}
 			--Without Weapon/Shield: STR: +114, Att: 320, Acc: 177
 
-	sets.WS.MidAcc = set_combine(sets.WS, {head="Sukeroku Hachi.",
+	sets.WS.MidAcc = set_combine(sets.WS, {head="Jhakri Coronal +2",
 		hands="Umuthi Gloves", right_ring="Beeline Ring", back="Vespid Mantle", waist="Fotia Belt"})
 			--Without Weapon/Shield: STR: +98, Att: 302, Acc: 241
 
