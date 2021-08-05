@@ -24,9 +24,10 @@ Body		Anhur Robe			10		(    WHM BLM rdm                 SMN BLU GEO    )
 			Rosette Jaseran +1	3~6		(    WHM BLM rdm                 SMN     GEO    )
 
 Hands		Gende. Gages +1		7		(    WHM     RDM                                )
-			Thaumas Gloves		4		(MNK             THF RNG     NIN     BLU     RUN)
+			Thaumas Gloves		4		(mnk             thf rng     nin     blu     run)
 			Repartie Gloves		2		(    whm blm rdm                 smn     geo    )
 			Volte Gloves		6		(    whm BLM rdm                 SMN     GEO    )
+			Herculean Gloves	6		(MNK             THF RNG     NIN     BLU     RUN)
 
 Ring		Prolix Ring			2		(mnk whm blm rdm thf rng sam nin smn blu geo run)
 			Weather. Ring		5		(MNK WHM BLM RDM THF RNG SAM NIN SMN BLU GEO RUN)

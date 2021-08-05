@@ -35,18 +35,18 @@ function get_sets()
 
 	--Job Abilities
 	sets.JA = {}
-	sets.JA.Manafont = {body="Arch. Coat +1"}
+	sets.JA.Manafont = {body="Arch. Coat +3"}
 	sets.JA.Manawall = {body="Viti. Tabard +3"}
 	--sets.JA.Saboteur = {hands="Leth. Gantherots +1"}
 
 	sets.FastCast = {head="Nahtirah Hat", left_ear="Loquac. Earring", right_ear="Etiolation Earring",
 		body="Anhur Robe",hands="Volte Gloves", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		back="Perimede Cape",waist="Witful Belt", legs="Artsieq Hose", feet="Volte Gaiters"}
+		back="Perimede Cape",waist="Witful Belt", legs="Volte Brais", feet="Volte Gaiters"}
 			-- 66% Fast Cast, 26% Haste, Job Trait: 30%, Gifts: 8%
 
 	sets.Idle = {ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Loricate Torque +1", left_ear="Crematio Earring", right_ear="Etiolation Earring",
-		body="Jhakri Robe +2", hands="Volte Gloves", left_ring="Acumen Ring", right_ring="Strendu ring",
+		body="Jhakri Robe +2", hands="Volte Gloves", left_ring="Acumen Ring", right_ring="Jhakri Ring",
 		back="Mecisto. Mantle", waist="Fucho-no-Obi", legs="Volte Brais", feet="Volte Gaiters"}
 		--Refresh
 
@@ -54,12 +54,13 @@ function get_sets()
 
 	sets.Idle.MDT = {}
 
-	sets.ElementalDebuff = {"Arch. Tonban +1"}
+	sets.ElementalDebuff = {"Arch. Tonban +3"}
 
 	sets.Enfeeble = {ammo="Pemphredo Tathlum",
 	head="Befouled Crown", neck="Incanter's Torque", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
-	body="Jhakri Robe +2", hands="Lurid Mitts", left_ring="Stikini Ring",right_ring="Stikini Ring",
+	body="Jhakri Robe +2", hands="Volte Gloves", left_ring="Stikini Ring",right_ring="Stikini Ring",
 	back="Refraction Cape", waist="Luminary Sash", legs="Psycloth Lappas", feet="Medium's Sabots"}
+	--volte gloves -> Spaekona's Gloves +3
 			--RDM/sch
 			--Potency:  !need update
 			--Magic Accuracy:	365
@@ -80,8 +81,8 @@ function get_sets()
 	--sets.Dispel.HighAcc = {}
 
 	sets.Elemental = {ammo="Pemphredo Tathlum",
-	head="Jhakri Coronal +2", neck="Incanter's Torque", left_ear="Friomisi Earring", right_ear="Markaro. Earring",
-	body="Jhakri Robe +2", hands="Arch. Gloves +3", left_ring="Strendu Ring", right_ring="Jhakri ring",
+	head="Jhakri Coronal +2", neck="Incanter's Torque", left_ear="Friomisi Earring", right_ear="Barkaro. Earring",
+	body="Jhakri Robe +2", hands="Arch. Gloves +3", left_ring="Acumen Ring", right_ring="Jhakri ring",
 	back="Toro Cape", waist="Yamabuki-no-Obi", legs="Merlinic Shalwar", feet="Jhakri Pigaches +2"}
 		--Check Umbani Boots
 			--Magic Attack Bonus:	190 (223 with Weapon&Strap)
@@ -100,8 +101,8 @@ function get_sets()
 		--recalc--MAB=180, m.Acc: 147 (348 w/Weapon skill)
 
 	sets.DarkMagic = {ammo="Pemphredo Tathlum",
-	head="Arch. Petasos +1", neck="Eddy Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
-	body="Jhakri Robe +2", hands="Lurid Mitts", left_ring="Evanescence Ring",right_ring="Stikini Ring",
+	head="Arch. Petasos +3", neck="Eddy Necklace", left_ear="Psystorm Earring", right_ear="Lifestorm Earring",
+	body="Jhakri Robe +2", hands="Volte Gloves", left_ring="Evanescence Ring",right_ring="Stikini Ring",
 	back="Bane Cape", waist="Yamabuki-no-Obi", legs="Psycloth Lappas", feet="Medium's Sabots"}
 
 	sets.DarkMagic.MidAcc = set_combine(sets.DarkMagic, {waist="Luminary Sash"})
@@ -114,7 +115,7 @@ function get_sets()
 	sets.Stun = {main="Oranyan",sub="Enki Strap",ammo="Elis Tome",
 		head="Atrophy Chapeau +3", neck="Incanter's Torque", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +3", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		back="Ghostfyre Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Vitiation Boots +3"}
+		back="Ghostfyre Cape", waist="Sailfi Belt", legs="Volte Brais", feet="Vitiation Boots +3"}
 			--Fast Cast: 51%, Haste: 26%, M.Acc: 112 (339 w/weapon skill)
 			--This used for Tojil, need to make for Magic Accuracy
 	]]
@@ -122,10 +123,10 @@ function get_sets()
 	sets.Cure = {ammo="Oreiad's Tathlum",
 	head="Vanya Hood", neck="Nodens Gorget", left_ear="Mendi. Earring",right_ear="Lifestorm Earring",
 	body="Jhakri Robe +2", hands="Telchine Gloves", left_ring="Stikini Ring",right_ring="Stikini Ring",
-	back="Pahtli Cape", waist="Luminary Sash", legs="??",feet="Vanya Clogs"}
+	back="Pahtli Cape", waist="Luminary Sash", legs="Psycloth Lappas",feet="Vanya Clogs"}
 
-	sets.Enhancing = {head="Befouled Crown", neck="Colossus's Torque", left_ear="Loquac. Earring", right_ear="Andoaa Earring",
-	body="Telchine Chas.", hands="Augur's Gloves",
+	sets.Enhancing = {head="Befouled Crown", neck="Incanter's Torque", left_ear="Mimir Earring", right_ear="Andoaa Earring",
+	body="Telchine Chas.", hands="Volte Gloves",
 	back="Swith Cape", waist="Olympus Sash", legs="Shedir Seraweels", feet="Inspirited Boots"}
 		--boots needs to be Regal pumps +1, Inspirited needs to be conditional on refresh in midcast
 
@@ -135,7 +136,7 @@ function get_sets()
 
 	sets.Spikes = {main="Oranyan", sub="Niobid Strap",
 		head="Leth. Chappel +1", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
-		body="Atrophy Tabard +3", hands="Telchine Gloves", left_ring="Strendu Ring", right_ring="Acumen Ring",
+		body="Atrophy Tabard +3", hands="Telchine Gloves", left_ring="Acumen Ring", right_ring="Jhakri Ring",
 		back="Sucellos's Cape", waist="Yamabuki-no-Obi", legs="Viti. Tights +3", feet="Inspirited Boots"}
 			--spike damage gear only works while equipped
 			--INT at casting makes spikes do more damage: adjust above to max INT

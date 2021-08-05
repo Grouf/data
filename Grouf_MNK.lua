@@ -63,7 +63,8 @@ function get_sets()
 		--M.Acc = 211, No Weapon Prim.Acc = 322 ??
 		--Stuns
 
-	sets.FastCast = {left_ear="Loquac. Earring", right_ear="Etiolation Earring", right_ring="Prolix Ring", 
+	sets.FastCast = {left_ear="Loquac. Earring", right_ear="Etiolation Earring", 
+		hands="Herculean Gloves", right_ring="Prolix Ring", 
 		left_ring="Weather. Ring", waist="Black Belt"}
 
 	sets.Idle = {ammo="Brigantia Pebble",
@@ -102,7 +103,7 @@ function get_sets()
 	--[[ {ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
 		left_ear="Steelflash Earring",right_ear="Bladeborn Earring",body="Mekosu. Harness",hands="Hes. Gloves",
 		left_ring="Beeline Ring",right_ring="Rajas Ring",back="Letalis Mantle",waist="Windbuffet Belt",
-		legs="Feast Hose",feet="Otronif Boots +1"}
+		legs="Feast Hose",feet="Nyame Sollerets"}
 		]]
 
 	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {neck="Subtlety Spec.",
@@ -115,7 +116,7 @@ function get_sets()
 	sets.DT = {} --[[ammo="Brigantia Pebble",head="Uk'uxkaj Cap",neck="Loricate Torque +1",
 		left_ear="Telos Earring", right_ear="Digni. Earring",body="Qaaxo Harness",hands="Qaaxo Mitaines",
 		left_ring="Dark Ring",right_ring="Shadow Ring",back="Repulse Mantle",waist="Black Belt",
-		legs="Kaabnax Trousers",feet="Otronif Boots +1"} 
+		legs="Kaabnax Trousers",feet="Nyame Sollerets"} 
 
 	sets.DT.MidAcc = set_combine(sets.DT, {right_ear="Heartseeker Earring", waist="Olseni Belt"})
 

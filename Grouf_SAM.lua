@@ -69,15 +69,26 @@ function get_sets()
 		body="Hiza. Haramaki +2", hands="Hizamaru Kote +2", left_ring="Ilabrat Ring", right_ring="Hizamaru Ring",
 		back="Smertrios's Mantle", waist="Cetl Belt", legs="Ryuo Hakama +1", feet="Danzo Sune-Ate"}
 
+--[[ **OLD SETS NEED TO DELETED UN-NEEDED GEAR**	
 	sets.Idle.DT = {ammo="Ginsen",
-		head="Loess Barbuta", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Loess Barbuta +1", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Wakido Domaru +3", hands="Sakonji Kote +3", left_ring="Succor Ring", right_ring="Shadow Ring",
-		back="Agema Cape", waist="Flume Belt", legs="Arjuna Breeches", feet="Otronif Boots +1"}
+		back="Agema Cape", waist="Flume Belt", legs="Arjuna Breeches", feet="Nyame Sollerets"}
 		
 	sets.Idle.MDT = {ammo="Ginsen",
-		head="Loess Barbuta", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Loess Barbuta +1", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Wakido Domaru +3", hands="Sakonji Kote +3", left_ring="Succor Ring", right_ring="Shadow Ring",
-		back="Agema Cape", waist="Flax Sash", legs="Arjuna Breeches", feet="Otronif Boots +1"}
+		back="Agema Cape", waist="Flax Sash", legs="Arjuna Breeches", feet="Nyame Sollerets"}]]		
+
+	sets.Idle.DT = {ammo="Ginsen",
+		head="Nyame Helm", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		body="Wakido Domaru +3", hands="Nyame Gauntlets", left_ring="Succor Ring", right_ring="Shadow Ring",
+		back="Agema Cape", waist="Flume Belt", legs="Nyame Flanchard", feet="Nyame Sollerets"}
+		
+	sets.Idle.MDT = {ammo="Ginsen",
+		head="Nyame Helm", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		body="Wakido Domaru +3", hands="Nyame Gauntlets", left_ring="Succor Ring", right_ring="Shadow Ring",
+		back="Agema Cape", waist="Flax Sash", legs="Nyame Flanchard", feet="Nyame Sollerets"}
 	
 --[[	
 	sets.Ranged = {head="Umbani Cap", neck="Iskur Gorget", left_ear="Volley earring",
@@ -105,27 +116,31 @@ function get_sets()
 
 	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {waist="Olseni Belt"})
 
+	--[[head="Nyame Helm", 
+		body="Wakido Domaru +3", hands="Nyame Gauntlets"
+		 legs="Nyame Flanchard", feet="Nyame Sollerets"}
+	]]
 
 	sets.DT = {ammo="Ginsen",
-		head="Loess Barbuta", neck="Loricate Torque +1", left_ear="Telos Earring", right_ear="Digni. Earring",
-		body="Wakido Domaru +3", hands="Sakonji Kote +3", left_ring="Succor Ring", right_ring="Shadow Ring",
-		back="Agema Cape", waist="Flume Belt", legs="Arjuna Breeches", feet="Otronif Boots +1"}
+		head="Nyame Helm", neck="Loricate Torque +1", left_ear="Telos Earring", right_ear="Digni. Earring",
+		body="Wakido Domaru +3", hands="Nyame Gauntlets", left_ring="Succor Ring", right_ring="Shadow Ring",
+		back="Agema Cape", waist="Flume Belt", legs="Nyame Flanchard", feet="Nyame Sollerets"}
 
-	sets.DT.MidAcc = set_combine(sets.DT, {waist="Olseni Belt"})
+	sets.DT.MidAcc = sets.DT
 
 
-	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Ground. Mantle +1"})
+	sets.DT.HighAcc = sets.DT.MidAcc
 	
 	
 	sets.MDT = {ammo="Ginsen",
-		head="Loess Barbuta", neck="Loricate Torque +1", left_ear="Telos Earring", right_ear="Digni. Earring",
-		body="Wakido Domaru +3", hands="Sakonji Kote +3", left_ring="Succor Ring", right_ring="Shadow Ring",
-		back="Agema Cape", waist="Flax Sash", legs="Arjuna Breeches", feet="Otronif Boots +1"}
+		head="Nyame Helm", neck="Loricate Torque +1", left_ear="Telos Earring", right_ear="Digni. Earring",
+		body="Wakido Domaru +3", hands="Nyame Gauntlets", left_ring="Succor Ring", right_ring="Shadow Ring",
+		back="Agema Cape", waist="Flax Sash", legs="Nyame Flanchard", feet="Nyame Sollerets"}
 
-	sets.MDT.MidAcc = set_combine(sets.DT, {waist="Olseni Belt"})
+	sets.MDT.MidAcc = sets.DT
 
 
-	sets.MDT.HighAcc = set_combine(sets.DT.MidAcc, {back="Ground. Mantle +1"})
+	sets.MDT.HighAcc = sets.DT.MidAcc
 
 
 
@@ -151,7 +166,7 @@ function get_sets()
 
 	set_macro_book()
 
-	sets.DontForget = {main="Masamune",sub="Utu Grip"}
+	sets.DontForget = {main="Masamune", sub="Utu Grip", body="Shining One"}
 
 end
 

@@ -77,21 +77,21 @@ function get_sets()
 		--Refresh
 
 	sets.Idle.DT = {main="Emissary",sub="Genmei Shield", range="Ullr",
-		head="Rabid Visor", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
-		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +3", feet="Atro. Boots +3"}
+		head="Nyame Helm", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		body="Nyame Mail", hands="Nyame Gauntlets", left_ring="Shadow Ring", right_ring="Succor Ring",
+		back="Repulse Mantle", waist="Flume Belt", legs="Nyame Flanchard", feet="Nyame Sollerets"}
 		-- PDT: -46%, Evasion: 655, Defense: 801
 
 	sets.Idle.MDT = {main="Emissary",sub="Beatific Shield +1", range="Ullr",
-		head="Atrophy Chapeau +3", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
-		body="Atrophy Tabard +3", hands="Atrophy Gloves +3", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Repulse Mantle", waist="Flume Belt", legs="Leth. Fuseau +1", feet="Atro. Boots +3"}
+		head="Nyame Helm", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		body="Nyame Mail", hands="Nyame Gauntlets", left_ring="Shadow Ring", right_ring="Succor Ring",
+		back="Repulse Mantle", waist="Flume Belt", legs="Nyame Flanchard", feet="Nyame Sollerets"}
 		-- MDB: 28, M.Eva: 421, MDT: -28%, DT: -8%, PTD: -11%, Evasion: 191
 
 
 	sets.Enfeeble = {main="Crocea Mors", sub="Ammurapi Shield", ammo="Regal Gem",
 		head="Viti. Chapeau +3", neck="Dls. Torque +2", left_ear="Snotra Earring", right_ear="Digni. Earring",
-		body="Atrophy Tabard +3", hands="Leth. Gantherots +1", left_ring="Kishar Ring", right_ring="Stikini Ring",
+		body="Atrophy Tabard +3", hands="Regal Cuffs", left_ring="Kishar Ring", right_ring="Stikini Ring",
 		back="Sucellos's Cape", waist="Luminary Sash", legs="Chironic Hose", feet="Vitiation Boots +3"}
 			--RDM/sch
 			--Potency:  !need update
@@ -139,7 +139,7 @@ function get_sets()
 
 	sets.Elemental = {main="Oranyan", sub="Niobid Strap", ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", left_ring="Strendu Ring", right_ring="Acumen Ring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", left_ring="Acumen Ring", right_ring="Jhakri Ring",
 		back="Sucellos's Cape", waist="Yamabuki-no-Obi", legs="Jhakri Slops +2", feet="Vitiation Boots +3"}
 		--Check Umbani Boots
 			--Magic Attack Bonus:	190 (223 with Weapon&Strap)
@@ -172,7 +172,7 @@ function get_sets()
 	sets.Stun = {main="Oranyan",sub="Enki Strap",ammo="Elis Tome",
 		head="Atrophy Chapeau +3", neck="Incanter's Torque", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +3", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		back="Ghostfyre Cape", waist="Sailfi Belt", legs="Artsieq Hose", feet="Vitiation Boots +3"}
+		back="Ghostfyre Cape", waist="Sailfi Belt", legs="Volte Brais", feet="Vitiation Boots +3"}
 			--Fast Cast: 51%, Haste: 26%, M.Acc: 112 (339 w/weapon skill)
 			--This used for Tojil, need to make for Magic Accuracy
 	]]
@@ -187,10 +187,10 @@ function get_sets()
 		--Cure Pot.: 56%, Cure casting -27%, Haste: 20%, MND: 106+244, VIT: 97+95, Healing Magic: 484
 
 	sets.Enhancing = {main="Crocea Mors", sub="Ammurapi Shield",
-		head="Befouled Crown", neck="Dls. Torque +2", left_ear="Andoaa Earring", right_ear="Etiolation Earring",
+		head="Befouled Crown", neck="Dls. Torque +2", left_ear="Andoaa Earring", right_ear="Mimir Earring",
 		body="Viti. Tabard +3", hands="Viti. Gloves +3", left_ring="Stikini Ring",  right_ring="Stikini Ring",
 		back="Ghostfyre Cape", waist="Olympus Sash", legs="Atrophy Tights +3", feet="Leth. Houseaux +1"}
-		--skill=555}
+		--skill=593}
 		-- hands="Atrophy Gloves +3", Incanter's Torque
 		--Ghostfyre Cape gives Haste 17m ||  Sucellos's Cape gives Haste 16m
 
@@ -202,7 +202,7 @@ function get_sets()
 
 	sets.Spikes = {main="Oranyan", sub="Niobid Strap",
 		head="Leth. Chappel +1", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
-		body="Atrophy Tabard +3", hands="Telchine Gloves", left_ring="Strendu Ring", right_ring="Acumen Ring",
+		body="Atrophy Tabard +3", hands="Telchine Gloves", left_ring="Acumen Ring", right_ring="Jhakri Ring",
 		back="Sucellos's Cape", waist="Yamabuki-no-Obi", legs="Viti. Tights +3", feet="Inspirited Boots"}
 			--spike damage gear only works while equipped
 			--INT at casting makes spikes do more damage: adjust above to max INT
@@ -246,11 +246,15 @@ function get_sets()
 		waist="Olseni Belt"})
 			--Without Weapon/Shield: Acc: 396, Att: 234
 
-
-	sets.DT = {main="Emissary", sub="Genmei Shield", ammo="Brigantia Pebble",
+--[[	sets.DT = {main="Emissary", sub="Genmei Shield", ammo="Brigantia Pebble",
 		head="Rabid Visor", neck="Loricate Torque +1", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Emet Harness +1", hands="Umuthi Gloves", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +3", feet="Battlecast Gaiters"}
+		back="Repulse Mantle", waist="Flume Belt", legs="Viti. Tights +3", feet="Battlecast Gaiters"}]]
+
+	sets.DT = {main="Emissary", sub="Genmei Shield", ammo="Brigantia Pebble",
+		head="Nyame Helm", neck="Loricate Torque +1", left_ear="Telos Earring", right_ear="Digni. Earring",
+		body="Nyame Mail", hands="Nyame Gauntlets", left_ring="Shadow Ring", right_ring="Succor Ring",
+		back="Repulse Mantle", waist="Flume Belt", legs="Nyame Flanchard", feet="Nyame Sollerets"}
 			--RDM/blm
 			--Without Weapon/Shield: Acc: 258, Att: 210, EVA: 680, DEF: 786, PDT: -35%
 			--need to add Emissary & Genmei Shield
@@ -467,7 +471,7 @@ function midcast(spell)
 
 			--sets.Stoneskin
 		elseif spell.english == 'Aquaveil' then
-			EquipSet = set_combine(EquipSet, {head="Chironic Hat", legs="Shedir Seraweels"})
+			EquipSet = set_combine(EquipSet, {head="Chironic Hat", hands="Regal Cuffs", legs="Shedir Seraweels"})
 		elseif spell.english:startswith('Regen') then
 			EquipSet = set_combine(EquipSet, {main="Bolelabunga", body="Telchine Chas."})
 		elseif spell.english:startswith('En') then

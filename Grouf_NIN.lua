@@ -1,10 +1,20 @@
 --[[
-		=======================
-		|   T E M P L A T E   |
-		=======================
+		=================
+		|   N I N J A   |
+		=================
 ]]
 
 
+--** Don't have any ammo slots defined in sets **--
+--Date Shuriken : Emnity+3
+--Grenade Core : MAB
+
+--[[Emnity gear options
+	Emet Harness +1
+	Cryptic Earring
+	Mochi. Kyahan +3
+
+]]
 include('Obi_Check')  --for mages
 
 function get_sets()
@@ -22,7 +32,7 @@ function get_sets()
 
 	--Equip variables
 	SetMode_Index = 1
-	SetMode_Names = {'DD','DT','MDT'}		--Switch between DD and DT sets, set using user command 'SetMode'
+	SetMode_Names = {'DD','DT'}		--Switch between DD and DT sets, set using user command 'SetMode'
 	--#SetMode_Names    <- This outputs the number of elements
 	Accuracy_Index = 1
 	Accuracy = {'None', 'MidAcc', 'HighAcc'}	--Accuracy levels set with user command 'Accuracy'
@@ -34,16 +44,16 @@ function get_sets()
 	sets.JA.Yonin = {legs="Hattori Hakama +1"}
 	sets.JA.Futae = {hands="Hattori Tekko +1"}
 	--sets.JA.Sange = {body="Mochi. Chainmail +1"}
-	sets.JA['Mijin Gakure'] = {legs="Mochizuki Hakama +1"}
+	sets.JA['Mijin Gakure'] = {legs="Mochizuki Hakama +3"}
 
-	--[[sets.JA.Waltz = {ammo="Brigantia Pebble",
-		head="Atro. Chapeau +2", right_ear="Soil Pearl", left_ear="Soil Pearl",
-		body="Viti. Tabard +3", hands="Atrophy Gloves +2", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
-		back="Refraction Cape", waist="Caudata Belt", legs="Leth. Fuseau +1", feet="Atrophy Boots +2"} ]]
+	sets.JA.Waltz = {
+		head="Mochi. Hatsuburi +3", right_ear="Soil Pearl", left_ear="Soil Pearl",
+		body="Mochi. Chainmail +3", hands="Mochizuki Tekko +3", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
+		waist="Chaac Belt", legs="Mochi. Hakama +3", feet="Mochi. Kyahan +3"}
 		--Cure, Healing Waltz = Erase
 		--CHR of caster, VIT of Target
 
-	sets.JA.Step = {head="Hizamaru Somen +2", neck="Subtlety Spec.", left_ear="Zennaroi Earring", right_ear="Digni. Earring",
+	sets.JA.Step = {head="Hizamaru Somen +2", neck="Ninja Nodowa +2", left_ear="Zennaroi Earring", right_ear="Digni. Earring",
 		body="Mochi. Chainmail +3", hands="Hizamaru Kote +2", left_ring="Beeline Ring", right_ring="Hizamaru Ring",
 		back="Ground. Mantle +1", waist="Eschan Stone", legs="Hiza. Hizayoroi +2", feet="Hiza. Sune-Ate +2"}
 		--No Weapon Primary Acc: 814
@@ -56,41 +66,60 @@ function get_sets()
 		--Stuns
 
 	sets.FastCast = {head="Herculean Helm", neck="Magoraga Beads", left_ear="Etiolation Earring", right_ear="Loquac. Earring",
-		body="Taeon Tabard",hands="Thaumas Gloves", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		back="Andartia's Mantle", waist="Sailfi Belt +1", legs="Kaabnax Trousers", feet="Mochizuki Kyahan +1"}
-		--34% Haste
-		--40% Fast Cast
+		body="Taeon Tabard",hands="Herculean Gloves", left_ring="Weather. Ring", right_ring="Kishar Ring",
+		back={name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Spell interruption rate down-10%'}},
+		waist="Sailfi Belt +1", legs="Arjuna Breeches", feet="Mochi. Kyahan +3"}
+		--33% Haste
+		--48% Fast Cast
 		--18% Utsusemi -casting?
 	
 	
-	sets.Idle = {head="Hizamaru Somen +2",neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
+	sets.Idle = {head="Hizamaru Somen +2",neck="Sanctity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Hiza. Haramaki +2",hands="Hizamaru Kote +2", left_ring="Epona's Ring",right_ring="Hizamaru Ring",
-		back="Yokaze Mantle",waist="Windbuffet Belt", legs="Ryuo Hakama +1",feet="Danzo Sune-Ate"}
+		back="Repulse Mantle",waist="Windbuffet Belt", legs="Ryuo Hakama +1",feet="Danzo Sune-Ate"}
 		--Refresh
 
-	sets.Idle.DT = {head="Hizamaru Somen +2",neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
-		body="Emet Harness +1",hands="Hizamaru Kote +2", left_ring="Epona's Ring",right_ring="Hizamaru Ring",
-		back="Yokaze Mantle",waist="Windbuffet Belt", legs="Ryuo Hakama +1",feet="Danzo Sune-Ate"}
-		-- PDT: -46%, Evasion: 655, Defense: 801
-
-	sets.Idle.MDT = {head="Hizamaru Somen +2",neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
+	sets.Idle.DT = {head="Nyame Helm", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		body="Nyame Mail", hands="Nyame Gauntlets", left_ring="Succor Ring", right_ring="Shadow Ring",
+		back={ name="Andartia's Mantle", augments={'AGI+20','Accuracy+20 Attack+20','Attack+10','Weapon skill damage +10%','System: 1 ID: 640 Val: 4',}}, 
+		waist="Sailfi Belt +1", legs="Nyame Flanchard", feet="Nyame Sollerets"}
+			-- DT: -47%, Evasion: 1088, Defense: 1365
+--[[
+	sets.Idle.MDT = {head="Hizamaru Somen +2",neck="Ninja Nodowa +2", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Hiza. Haramaki +2",hands="Hizamaru Kote +2", left_ring="Epona's Ring",right_ring="Hizamaru Ring",
-		back="Yokaze Mantle",waist="Windbuffet Belt", legs="Ryuo Hakama +1",feet="Danzo Sune-Ate"}
+		back="Repulse Mantle",waist="Windbuffet Belt", legs="Ryuo Hakama +1",feet="Danzo Sune-Ate"}
 		-- MDB: 28, M.Eva: 421, MDT: -28%, DT: -8%, PTD: -11%, Evasion: 191
-
+]]
 
 -- M A G I C --
-	sets.Utsusemi = {body="Taeon Tabard", hands="Mochizuki Tekko +1", back="Andartia's Mantle", feet="Hattori Kyahan +1"}
+		-- Ninjitsu is used for Nuke potency, Migawari mitigation, Enfeeble Accuracy.
+	sets.Buffs = {head="Hachiya Hatsu. +2", neck="Incanter's Torque", hands="Mochizuki Tekko +3", right_ring="Stikini Ring", feet="Mochi. Kyahan +3"}
+		--Ninjutsu Skill = 491
 
-	sets["Migawari: Ichi"] = {body="Hattori Ningi +1"}
+	sets.Utsusemi = {hands="Mochizuki Tekko +3", 
+	back={name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Spell interruption rate down-10%'}},
+		feet="Hattori Kyahan +1"}
 
-	sets.Enfeeble = {head="Hachiya Hatsuburi +1", left_ear="Lifestorm Earring", right_ear="Psystorm Earring",
-		body="Mochi. Chainmail +3", hands="Mochizuki Tekko +1",left_ring="Weather. Ring", right_ring="Stikini Ring",
-		back="Andartia's Mantle",feet="Mochi. Kyahan +1"}  --32% Haste, 230 Magic Accuracy
+	sets.MigawariCast = set_combine(sets.Buffs, {body="Hattori Ningi +1", left_ring="Stikini Ring"})
+		--Ninjutsu Skill = 489
 
-	sets.Nuke = {head="Mochi. Hatsuburi +1", left_ear="Friomisi Earring", right_ear="Crematio Earring",
-		body="Mochi. Chainmail +3", hands="Mochizuki Tekko +1", left_ring="Weather. Ring", right_ring="Acumen Ring",
-		back="Toro Cape", feet="Mochizuki Kyahan +1"}
+	sets.MigawariLock = {body="Hattori Ningi +1"}
+
+	sets.Enfeeble = {head="Mochi. Hatsuburi +3", neck="Sanctity Necklace", left_ear="Etiolation Earring", right_ear="Digni. Earring",
+		body="Mochi. Chainmail +3", hands="Mochizuki Tekko +3",left_ring="Weather. Ring", right_ring="Stikini Ring",
+		back={name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Spell interruption rate down-10%'}},
+		legs="Mochi. Hakama +3", feet="Mochi. Kyahan +3"}  --32% Haste, 230 Magic Accuracy
+
+	sets.Nuke = {head="Mochi. Hatsuburi +3", neck="Sanctity Necklace", left_ear="Friomisi Earring", right_ear="Crematio Earring",
+		body="Gyve Doublet", hands="Nyame Gauntlets", left_ring="Dingir Ring", right_ring="Acumen Ring",
+		back="Toro Cape", waist="Eschan Stone", legs="Nyame Flanchard", feet="Nyame Sollerets"}
+			--Feet: feet="Mochi. Kyahan +3 Relic+3 augment gives +25% MAB  vs.  Nyame Sollerets  ::  Need to test
+			--Gyve Doublet  vs.  Nyame Mail  ::  need to test
+
+			--Grenade Core?
+
+			--Magic Acc: 210
+			--Magic Att: 240
 
 
 --M E L E E
@@ -101,50 +130,59 @@ function get_sets()
 		legs="Nahtirah Trousers", feet="Scopuli Nails +1"} ]]
 		
 
-	sets.DD = {head="Hizamaru Somen +2",neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
-		body="Mochi. Chainmail +3",hands="Hizamaru Kote +2", left_ring="Epona's Ring",right_ring="Hizamaru Ring",
-		back="Yokaze Mantle",waist="Windbuffet Belt", legs="Ryuo Hakama +1",feet="Ryuo Sune-Ate +1"}
-		--Use Sarissaphoroi Belt
-			--Use Sailfi belt +1 if augmented
+	sets.DD = {head="Mochi. Hatsuburi +3",neck="Ninja Nodowa +2", left_ear="Telos Earring", right_ear="Digni. Earring",
+		body="Mochi. Chainmail +3",hands="Mochizuki Tekko +3", left_ring="Epona's Ring",right_ring="Ilabrat Ring",
+		back={ name="Andartia's Mantle", augments={'AGI+20','Accuracy+20 Attack+20','Attack+10','Weapon skill damage +10%','System: 1 ID: 640 Val: 4',}},
+		waist="Sailfi Belt +1", legs="Ryuo Hakama +1",feet="Ryuo Sune-Ate +1"}
+			-- Primary Att/Acc:  1448 / 1126
+			--Secondary Att/Acc: 1291 / 1107
+			-- Haste: 34%
+
+		--mid/high acc need redo
+	sets.DD.MidAcc = set_combine(sets.DD, {feet="Hiza. Sune-Ate +2"})
+			-- Primary Att/Acc:  1424 / 1177
+			--Secondary Att/Acc: 1263 / 1158
+			-- Haste: 34%
+
+	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {legs="Mochi. Hakama +3", feet="Mochi. Kyahan +3"})
+			-- Primary Att/Acc:  1517 / 1191
+			--Secondary Att/Acc: 1353 / 1172
+			-- Haste: 36%
 
 
-	sets.DD.MidAcc = set_combine(sets.DD, {neck="Sanctity Necklace", right_ring="Beeline Ring",
-		back="Ground. Mantle +1", feet="Hiza. Sune-Ate +2"})
+		--DT/MDT need redo
+	sets.DT = {head="Nyame Helm", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		body="Nyame Mail", hands="Nyame Gauntlets", left_ring="Succor Ring", right_ring="Shadow Ring",
+		back={ name="Andartia's Mantle", augments={'AGI+20','Accuracy+20 Attack+20','Attack+10','Weapon skill damage +10%','System: 1 ID: 640 Val: 4',}}, 
+		waist="Sailfi Belt +1", legs="Nyame Flanchard", feet="Nyame Sollerets"}
+			-- DT: -47%, Evasion: 1088, Defense: 1365
+			-- Primary Att/Acc:  1243 / 1097
+			--Secondary Att/Acc: 1089 / 1078
+			-- Haste: 29%
 
-	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {neck="Subtlety Spec.",
-		left_ear="Digni. Earring", right_ear="Zennaroi Earring",
-		waist="Olseni Belt"})
-
-
-
-
-	sets.DT = {head="Lithelimb Cap",neck="Loricate Torque +1",left_ear="Telos Earring", right_ear="Digni. earring",
-		body="Emet Harness +1",hands="Hizamaru Kote +2",left_ring="Succor Ring", right_ring="Succor Ring",
-		back="Yokaze Mantle",waist="Flume Belt", legs="Ryuo Hakama +1",feet="Otronif Boots +1"}
-
-	sets.DT.MidAcc = set_combine(sets.DT, {feet="Hiza. Sune-Ate +2"})
+	sets.DT.MidAcc = sets.DT
 
 
-	sets.DT.HighAcc = set_combine(sets.DT.MidAcc, {back="Ground. Mantle +1"})
+	sets.DT.HighAcc = sets.DT.MidAcc
 
-
-
+--[[
 	sets.MDT = {head="Lithelimb Cap",neck="Loricate Torque +1",left_ear="Telos Earring", right_ear="Digni. earring",
 		body="Mochi. Chainmail +3",hands="Hizamaru Kote +2",left_ring="Succor Ring", right_ring="Succor Ring",
-		back="Yokaze Mantle",waist="Flume Belt", legs="Ryuo Hakama +1",feet="Otronif Boots +1"}
+		back="Yokaze Mantle",waist="Flume Belt", legs="Ryuo Hakama +1",feet="Nyame Sollerets"}
 
 
 	sets.MDT.MidAcc = set_combine(sets.MDT, {neck="Loricate Torque +1", waist="Olseni Belt"})
 
 
 	sets.MDT.HighAcc = set_combine(sets.MDT.MidAcc, {back="Ground. Mantle +1"})
+]]
 
 
-
-	sets.WS = {head="Hizamaru Somen +2", neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
-		body="Mochi. Chainmail +3", hands="Hizamaru Kote +2", left_ring="Shukuyu Ring", right_ring="Ilabrat Ring",
-		back="Yokaze Mantle", waist="Fotia Belt", legs="Hiza. Hizayoroi +2", feet="Hiza. Sune-Ate +2"}
-
+	sets.WS = {head="Hachiya Hatsu. +2", neck="Ninja Nodowa +2", left_ear="Telos Earring", right_ear="Ishvara Earring",
+		body="Mochi. Chainmail +3", hands="Mochizuki Tekko +3", left_ring="Shukuyu Ring", right_ring="Ilabrat Ring",
+		back={ name="Andartia's Mantle", augments={'AGI+20','Accuracy+20 Attack+20','Attack+10','Weapon skill damage +10%','System: 1 ID: 640 Val: 4',}},
+		waist="Fotia Belt", legs="Mochi. Hakama +3", feet="Mochi. Kyahan +3"}
+		
 	sets.WS["Blade: Hi"] = set_combine(sets.WS.Base,{hands="Hattori Tekko +1"}) --AGI
 
 	sets.WS["Blade: Shun"] = sets.WS.Base --DEX
@@ -155,6 +193,9 @@ function get_sets()
 
 	sets.WS["Blade: Yu"] = set_combine(sets.WS.Base,{left_ear="Friomisi Earring",
 		right_ear="Crematio Earring",back="Toro Cape"}) --DEX50 INT50
+	sets.WS["Blade: Ei"] = sets.WS["Blade: Yu"]
+	sets.WS["Blade: To"] = sets.WS["Blade: Yu"]
+	sets.WS["Blade: Teki"] = sets.WS["Blade: Yu"]
 
 	sets.WS.MidAcc = sets.WS
 
@@ -247,16 +288,23 @@ function midcast(spell)
 		--add_to_chat(9, 'Spell name as set: ' ..spell.english)
 	elseif spell.type == 'Ninjutsu' then
 		--add_to_chat(9, 'Ninjutsu Detected: ' ..spell.english.. ' ' ..spell.type)
-		if NinjutsuNuke:contains(spell.english) then
+		if spell.english:startswith('Utsusemi') then
+			equip(sets.Utsusemi)
+			--add_to_chat(9, 'Utsusemi Detected')
+		elseif NinjutsuNuke:contains(spell.english) then
+			--add_to_chat(9, 'Nuke Detected')
 			equip(sets.Nuke)
 			obi_check(spell.element)
-			--add_to_chat(9, 'Nuke Detected')
+			
 		elseif NinjutsuEnfeeble:contains(spell.english) then
 			equip(sets.Enfeeble)
 			--add_to_chat(9, 'Enfeeble Detected')
+		elseif spell.english:startswith('Migawari') then
+			equip(sets.MigawariCast)
+			--add_to_chat(9, 'Migawari Detected')
 		else
-			equip(sets.Utsusemi)
-			--add_to_chat(9, 'Other Detected, Utsusemi Set: ' ..spell.english)
+			equip(sets.Buffs)
+			--add_to_chat(9, 'Other Detected, Buffs Set: ' ..spell.english)
 		end
 	end
 end
@@ -265,7 +313,7 @@ function aftercast(spell)
 
 	if player.status =='Engaged' then
 
-		EquipSet = sets[SetMode_Names[SetMode_Index]]  --DD or DT or MDT sets
+		EquipSet = sets[SetMode_Names[SetMode_Index]]  --DD or DT sets
 
 		if EquipSet[Accuracy[Accuracy_Index]] then
 			--add_to_chat(9, 'WS Accuracy level found: ' ..Accuracy[Accuracy_Index])
@@ -276,7 +324,7 @@ function aftercast(spell)
 		EquipSet = sets.Idle 
 
 		if EquipSet[SetMode_Names[SetMode_Index]] then
-			EquipSet = EquipSet[SetMode_Names[SetMode_Index]] --equip set.Idle.DT or sets.Idle.MDT
+			EquipSet = EquipSet[SetMode_Names[SetMode_Index]] --equip set.Idle.DT
 		end
 
 	end
@@ -305,23 +353,24 @@ function buff_change(buff_name,gain)
 		equip({neck="Ygnas's Resolve +1"})
 	elseif buff_name=='Migawari' then
 		if gain then
-			equip(sets["Migawari: Ichi"])
+			equip(sets.MigawariLock)
 			disable('body')
 			add_to_chat(9, 'Migawari ON, body disabled')
 		else
 			enable('body')
 			add_to_chat(9, 'Migawari off, body enabled')
+			aftercast()
 		end
-	--[[elseif buff_name=='Chainspell' then
+	elseif buff_name=='Futae' then
 		if gain then
-			equip(sets.JA.Chainspell)
-			disable('body')
-			add_to_chat(9, 'Chainspell ON, body disabled')
+			equip(sets.JA.Futae)
+			disable('hands')
+			add_to_chat(9, 'Futae ON, hands disabled')
 		else
-			enable('body')
-			add_to_chat(9, 'Chainspell off, body enabled')
+			enable('hands')
+			add_to_chat(9, 'Futae off, hands enabled')
 		end
-	elseif buff_name == 'Commitment' then
+	--[[elseif buff_name == 'Commitment' then
 		add_to_chat(4, 'Commitment gone.')
 		add_to_chat(9, 'Commitment gone.')]]
 	end

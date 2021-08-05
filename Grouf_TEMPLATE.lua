@@ -56,7 +56,7 @@ function get_sets()
 	sets.FastCast = {main="Emissary", sub="Genmei Shield",
 		head="Atro. Chapeau +2", left_ear="Estq. Earring", right_ear="Loquac. Earring",
 		body="Viti. Tabard +3", hands="Gende. Gages +1", left_ring="Weather. Ring", right_ring="Prolix Ring",
-		waist="Witful Belt", legs="Artsieq Hose", feet="Taeon Boots"}
+		waist="Witful Belt", legs="Volte Brais", feet="Taeon Boots"}
 			-- 61% Fast Cast, 22% Haste
 
 	sets.Idle = {main="Bolelabunga", sub="Genmei Shield", ammo="Brigantia Pebble",
@@ -101,7 +101,7 @@ function get_sets()
 
 	sets.Elemental = {main="Oranyan", sub="Niobid Strap", ammo="Pemphredo Tathlum",
 		head="Helios Band", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
-		body="Chironic Doublet", hands="Helios Gloves", left_ring="Strendu Ring", right_ring="Acumen Ring",
+		body="Chironic Doublet", hands="Helios Gloves", left_ring="Acumen Ring", right_ring="Jhakri Ring",
 		back="Sucellos's Cape", waist="Yamabuki-no-Obi", legs="Hagondes Pants +1", feet="Helios Boots"}
 
 
@@ -140,7 +140,7 @@ function get_sets()
 
 	sets.Spikes = {main="Oranyan", sub="Niobid Strap", ammo="Pemphredo Tathlum",
 		head="Leth. Chappel +1", neck="Eddy Necklace", left_ear="Crematio Earring", right_ear="Friomisi Earring",
-		body="Count's Garb", hands="Telchine Gloves", left_ring="Strendu Ring", right_ring="Acumen Ring",
+		body="Count's Garb", hands="Telchine Gloves", left_ring="Acumen Ring", right_ring="Jhakri Ring",
 		back="Sucellos's Cape", waist="Yamabuki-no-Obi", legs="Psycloth Lappas", feet="Inspirited Boots"}
 
 

@@ -1,4 +1,5 @@
 Upgrade paths
+    :Delramoth Wardrobe3 can get rid of all gear..?
 
 Taeon Tabard -->>  augment to Fast Cast
 Sarissaphoroi Belt  ->  Sailfi Belt +1 augmented (Unity)
@@ -8,3 +9,10 @@ Jute Boots +1 -->  THF/RNG Artefact feet
 Cho'j Band --> Shukuyu Ring / Ilabrat Ring
 Anhur Robe --> Zendik Robe  (Fast Cast) : only used for BLM/GEO
 Doyen Pants -->  something for BLM : Cure/Stoneskin casting time
+Reiki Cloak -->  MDT sets : mnk, rdm, thf, rng, sam, nin, blu 
+        |-> Enmity set 
+Beeline Ring -->  Ilabrat ::  need to /checkparm for actual accuracy  (eg Ilabrat give 2 more acc on THF step set)
+Nicander's Necklace -> increase holy water & cursna effect on self
+Herald's Gaiters ? -> MNK,BLM  Movement speed +12%
+Laic Mantle ?
+Chuq'aba Belt ?   Cure received +5%

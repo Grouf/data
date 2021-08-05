@@ -21,7 +21,7 @@ function get_sets()
 	Accuracy_Index = 1
 	Accuracy = {'None', 'MidAcc', 'HighAcc'}	--Accuracy levels set with user command 'Accuracy'
 
-	Mecisto_On = 0								--set with user command 'Mecisto'; default on, equip CP cape in aftercast
+	Mecisto_On = 0								--set with user command 'Mecisto'; default off, equip CP cape in aftercast
 	MeleeLock = 'False' 						--variable used for info only, work done in self_command function
 	LuopanActive = 'False'
 		--For Modes.lua
@@ -116,7 +116,7 @@ function get_sets()
 
 	sets.Enhancing = {main="Gada", sub="Ammurapi Shield",
 		head="Befouled Crown", neck="Incanter's Torque",left_ear="Loquac. Earring", right_ear="Andoaa Earring",
-		body="Telchine Chas.", hands="Augur's Gloves", left_ring="Stikini Ring", right_ring="Stikini Ring", 
+		body="Telchine Chas.", hands="Volte Gloves", left_ring="Stikini Ring", right_ring="Stikini Ring", 
 		waist="Olympus Sash",legs="Shedir Seraweels", feet="Regal Pumps"}
 	
 	sets.Stoneskin = set_combine(sets.Enhancing, {neck="Nodens Gorget", left_ear="Earthcry Earring", waist="Siegel Sash"})

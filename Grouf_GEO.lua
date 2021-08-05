@@ -21,10 +21,15 @@ function get_sets()
 		back="Repulse Mantle",	waist="Fucho-no-Obi", legs="Volte Brais", feet="Geo. Sandals +3"}
 	--Repulse Mantle
 	--Mecisto. Mantle
+
+	--[[head="Nyame Helm", 
+		body="Nyame Mail", hands="Nyame Gauntlets"
+		 legs="Nyame Flanchard", feet="Nyame Sollerets"}
+	]]
 	sets.precast.IdleLuopan = {main="Idris", sub="Genmei Shield", range="Dunna",
-		head="Azimuth Hood +1", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
-		body="Geomancy Tunic +3", hands="Geo. Mitaines +3", left_ring="Shadow Ring", right_ring="Succor Ring",
-		back="Repulse Mantle",	waist="Fucho-no-Obi", legs="Volte Brais", feet="Bagua Sandals +3"}
+		head="Nyame Helm", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		body="Nyame Mail", hands="Nyame Gauntlets", left_ring="Shadow Ring", right_ring="Succor Ring",
+		back="Repulse Mantle",	waist="Fucho-no-Obi", legs="Nyame Flanchard", feet="Nyame Sollerets"}
 	--Lifestream Cape
 
 	sets.precast.Idle = sets.precast.IdleRefresh
@@ -45,15 +50,15 @@ function get_sets()
 	sets.midcast = {}
 
 	sets.midcast.Cure = {main="Gada", sub="Ammurapi Shield", range="Dunna",
-		head="Vanya Hood", neck="Nodens Gorget",left_ear="Mendi. Earring",right_ear="Lifestorm Earring",
+		head="Vanya Hood", neck="Nodens Gorget",left_ear="Regal Earring",right_ear="Mendi. Earring",
 		body="Geomancy Tunic +3", hands="Telchine Gloves",left_ring="Stikini Ring",right_ring="Stikini Ring",
 		back="Pahtli Cape", waist="Luminary Sash",legs="Geomancy Pants +3",feet="Vanya Clogs"}
 		--MND=111+207, Cure Pot.=60%, Healing Skill =223
 		
 
 	sets.midcast.Enfeeble = {main="Idris", sub="Ammurapi Shield", range="Dunna",
-		head="Bagua Galero +3", neck="Incanter's Torque",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
-		body="Bagua Tunic +3", hands="Azimuth Gloves +1", left_ring="Stikini Ring", right_ring="Stikini Ring",
+		head="Bagua Galero +3", neck="Incanter's Torque", left_ear="Regal Earring", right_ear="Digni. Earring",
+		body="Bagua Tunic +3", hands="Regal Cuffs", left_ring="Stikini Ring", right_ring="Stikini Ring",
 		back="Refraction Cape", waist="Luminary Sash",legs="Psycloth Lappas",feet="Bagua Sandals +3"}
 
 	sets.midcast.Geomancy = {main="Idris",sub="Genmei Shield" ,range="Dunna",
@@ -71,13 +76,13 @@ function get_sets()
 
 	--Enhancing needs work
 	sets.midcast.Enhancing = {main="Gada", sub="Ammurapi Shield",
-		head="Befouled Crown", neck="Incanter's Torque",left_ear="Loquac. Earring", right_ear="Andoaa Earring",
-		body="Telchine Chas.", hands="Augur's Gloves", left_ring="Stikini Ring", right_ring="Stikini Ring", 
-		waist="Olympus Sash",legs="Shedir Seraweels", feet="Regal Pumps +1"}
+		head="Befouled Crown", neck="Incanter's Torque",left_ear="Mimir Earring", right_ear="Andoaa Earring",
+		body="Telchine Chas.", hands="Volte Gloves", left_ring="Stikini Ring", right_ring="Stikini Ring", 
+		waist="Olympus Sash", legs="Shedir Seraweels", feet="Regal Pumps +1"}
 
 	sets.midcast.ElementalMagic = {main="Idris", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		head="Bagua Galero +3", neck="Eddy Necklace", left_ear="Barkaro. Earring", right_ear="Friomisi Earring",
-		body="Bagua Tunic +3", hands="Bagua Mitaines +3",left_ring="Acumen Ring",right_ring="Jhakri ring",
+		body="Bagua Tunic +3", hands="Bagua Mitaines +3",left_ring="Acumen Ring",right_ring="Jhakri Ring",
 		back="Nantosuelta's Cape", waist="Yamabuki-no-Obi", legs="Merlinic Shalwar", feet="Bagua Sandals +3"}
 			--INT +236
 			--M.Acc 361
@@ -88,7 +93,7 @@ function get_sets()
 	--sets.midcast.ElementalMagic.MidAcc = { hands=Jhakri, Body=Jhakri, pants=Jhakri }
 
 	sets.midcast.DarkMagic = {main="Idris", sub="Ammurapi Shield", ammo="Dunna",
-		head="Bagua Galero +3", neck="Erra Pendant",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
+		head="Bagua Galero +3", neck="Erra Pendant",left_ear="Regal Earring",right_ear="Digni. Earring",
 		body="Geomancy Tunic +3", hands="Bagua Mitaines +3",left_ring="Evanescence Ring",right_ring="Stikini Ring",
 		back="Perimede Cape", waist="Luminary Sash",legs="Azimuth Tights +1",feet="Geo. Sandals +3"}
 		--						Jhakri
@@ -186,6 +191,8 @@ function midcast(spell)
 			equip(sets.midcast.Enhancing)
 		if spell.english == 'Stoneskin' then
 			equip({waist="Siegel Sash", neck="Nodens Gorget", left_ear="Earthcry Earring"})
+		elseif spell.english == 'Aquaveil' then
+			equip({hands="Regal Cuffs", legs="Shedir Seraweels"})
 		elseif spell.english:startswith('Regen') then
 			equip({main="Bolelabunga", body="Telchine Chas."})
 		elseif spell.english:startswith('Refresh') then

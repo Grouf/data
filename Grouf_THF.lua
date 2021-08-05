@@ -18,12 +18,11 @@ function get_sets()
 
 	--Job Abilities
 	sets.JA = {}
-	sets.JA.Flee = {feet="Pill. Poulaines +2"}
-	sets.JA.Steal = {head="Plun. Bonnet +3", hands="Pill. Armlets +2",legs="Assassin's Culottes",feet="Pill. Poulaines +2"}
-		--pill. armlets +2/3 don't have steal: get +1?
+	sets.JA.Flee = {feet="Pill. Poulaines +3"}
+	sets.JA.Steal = {head="Plun. Bonnet +3", legs="Assassin's Culottes",feet="Pill. Poulaines +3"}
 	sets.JA.Mug = {head="Plun. Bonnet +3"}
 	sets.JA.Despoil = {legs="Skulk. Culottes +1", feet="Skulk. Poulaines +1"}
-	sets.JA.Hide = {body="Pillager's Vest +2"}
+	sets.JA.Hide = {body="Pillager's Vest +3"}
 	sets.JA.Conspirator = {body="Skulker's Vest +1"}
 	sets.JA.Accomplice = {head="Skulker's Bonnet +1"}
 	sets.JA.Collaborator = {head="Skulker's Bonnet +1"}
@@ -31,45 +30,50 @@ function get_sets()
 	sets.JA.Feint = {legs="Plun. Culottes +3"}
 	--sets.JA["Assassin's Charge"] = {feet="Plun. Poulaines"}
 	sets.JA["Sneak Attack"] = {hands="Skulk. Armlets +1"}
-	sets.JA["Trick Attack"] = {body="Plunderer's Vest +3", hands="Pill. Armlets +2"} --AGI increase Damage
+	sets.JA["Trick Attack"] = {body="Plunderer's Vest +3", hands="Pill. Armlets +3"} --AGI increase Damage
 
-	sets.JA.Waltz = {head="Lithelimb Cap", neck="Loricate Torque +1", right_ear="Soil Pearl", left_ear="Soil Pearl",
-		body="Plunderer's Vest +3", hands="Plun. Armlets +3", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
-		back="Repulse Mantle", waist="Chaac Belt", legs="Pursuer's Pants", feet="Rawhide Boots"}
+	sets.JA.Waltz = {head="Pill. Bonnet +3", neck="Loricate Torque +1", right_ear="Soil Pearl", left_ear="Soil Pearl",
+		body="Pillager's Vest +3", hands="Plun. Armlets +3", left_ring="Terrasoul Ring", right_ring="Terrasoul Ring",
+		back="Repulse Mantle", waist="Chaac Belt", legs="Plun. Culottes +3", feet="Rawhide Boots"}
 		--Cure, Healing Waltz = Erase
-		--CHR of caster, VIT of Target
+		--CHR of caster, VIT of Target :: Added together
+		--CHR: 93+157
+		--VIT: 101+165
+		--total	516		::		Should cure ~317
 
-	sets.JA.Step = {head="Pill. Bonnet +2", neck="Subtlety Spec.", left_ear="Telos Earring", right_ear="Zennaroi Earring", 
-		body="Pillager's Vest +2", hands="Pill. Armlets +2", left_ring="Ilabrat Ring", right_ring="Cacoethic Ring +1", 
-		back="Ground. Mantle +1", waist="Olseni Belt", legs="Pill. Culottes +2", feet="Pill. Poulaines +2"}  --need accuracy
-			--Acc:  1248
+	sets.JA.Step = {head="Pill. Bonnet +3", neck="Subtlety Spec.", left_ear="Telos Earring", right_ear="Zennaroi Earring", 
+		body="Pillager's Vest +3", hands="Pill. Armlets +3", left_ring="Ilabrat Ring", right_ring="Cacoethic Ring +1", 
+		back="Ground. Mantle +1", waist="Olseni Belt", legs="Pill. Culottes +3", feet="Pill. Poulaines +3"}  --need accuracy
+			--Acc:  1336
 
-	sets.JA['Violent Flourish'] = set_combine(sets.JA.Step, {
-		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", left_ring="Weather. Ring",
-		right_ring="Stikini Ring", legs="Volte Hose"}) --Accuracy for hit, Magic Accuracy for Stun
+	sets.JA['Violent Flourish'] = set_combine(sets.JA.Step, {neck="Sanctity Necklace",
+		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", 
+		left_ring="Weather. Ring", right_ring="Stikini Ring", 
+		waist="Eschan Stone", legs="Volte Hose"}) --Accuracy for hit, Magic Accuracy for Stun
 		--Stuns
 
 	sets.FastCast = {head="Herculean Helm", neck="Magoraga Beads", left_ear="Etiolation Earring", right_ear="Loquac. Earring",
-		body="Taeon Tabard", hands="Thaumas Gloves", left_ring="Weather. Ring", right_ring="Prolix Ring",
+		body="Taeon Tabard", hands="Herculean Gloves", left_ring="Weather. Ring", right_ring="Prolix Ring",
 		waist="Sailfi Belt +1", legs="Volte Hose", feet="Rawhide Boots"}
-		--Fast Cast: 30%
-		--Haste: 34%
+		--Fast Cast: 36%
+		--Haste: 35%
 
 	sets.Idle = {head="Volte Cap",neck="Loricate Torque +1",left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Plunderer's Vest +3",hands="Herculean Gloves",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
-		back="Canny Cape",waist="Sailfi Belt +1",legs="Volte Hose", feet="Jute Boots +1"}
+		back="Canny Cape",waist="Sailfi Belt +1",legs="Volte Hose", feet="Pill. Poulaines +3"}
 
 	sets.Idle.TH = {head="Volte Cap",neck="Loricate Torque +1",left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Plunderer's Vest +3",hands="Plun. Armlets +3",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
-		back="Canny Cape",waist="Sailfi Belt +1", legs="Volte Hose", feet="Jute Boots +1"}
+		back="Canny Cape",waist="Sailfi Belt +1", legs="Volte Hose", feet="Pill. Poulaines +3"}
 		
 	sets.Idle.DT = {head="Lithelimb Cap", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring", 
 		body="Emet Harness +1", hands="Herculean Gloves", left_ring="Succor Ring", right_ring="Shadow Ring",
-		back="Repulse Mantle", waist="Flume Belt",legs="Volte Hose", feet="Jute Boots +1"}
+		back="Repulse Mantle", waist="Flume Belt",legs="Volte Hose", feet="Pill. Poulaines +3"}
 		
-	sets.Ranged = {head="Pursuer's Beret", neck="Iskur Gorget", left_ear="Volley earring", right_ear="Enervating Earring",
+	sets.Ranged = {head="Pill. Bonnet +3", neck="Iskur Gorget", left_ear="Volley earring", right_ear="Enervating Earring",
 		body="Sayadio's Kaftan", hands="Pursuer's Cuffs", left_ring="Dingir Ring", right_ring="Cacoethic Ring +1",
-		back="Libeccio Mantle", waist="Eschan Stone", legs="Pursuer's Pants", feet="Pursuer's Gaiters"} 
+		back="Libeccio Mantle", waist="Eschan Stone", legs="Volte Hose", feet="Pill. Poulaines +3"}
+		--R.Acc = 1044
 		--AGI for Ranged Accuracy: 4AGI=3R.Acc
 		--STR for Ranged Attack
 
@@ -80,12 +84,12 @@ function get_sets()
 
 --M E L E E
 	sets.DD = {head="Plun. Bonnet +3",neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
-		body="Plunderer's Vest +3",hands="Herculean Gloves",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
-		back="Canny Cape",waist="Sailfi Belt +1", legs="Ta'lab Trousers",feet="Plun. Poulaines +3"}
+		body="Plunderer's Vest +3",hands="Plun. Armlets +3",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
+		back="Canny Cape",waist="Sailfi Belt +1", legs="Pill. Culottes +3",feet="Plun. Poulaines +3"}
 			--Haste: 36
 			-- Double Attack: 10
 			-- Triple Attack: 22
-			--Use Relid Legs for more acc/att?
+			--Use Relic Legs/hands for more acc/att?
 			--Rawhide Vest
 			--solo use Relic+3 Body?
 
@@ -96,10 +100,8 @@ function get_sets()
 
 		--TH caps at +8 for gear/Job Trait
 		--NEED to double-check numbers
-	sets.TH = set_combine(sets.DD, {head="Volte Cap", body="Plunderer's Vest +3", hands="Plun. Armlets +3", legs="Volte Hose", 
-		feet="Skulk. Poulaines +1"}) --vest if solo, off if group?
-	sets.TH.MidAcc = set_combine(sets.DD.MidAcc,{head="Volte Cap", hands="Plun. Armlets +3", legs="Volte Hose",
-		feet="Skulk. Poulaines +1"})
+	sets.TH = set_combine(sets.DD, {head="Volte Cap", hands="Plun. Armlets +3"}) 
+	sets.TH.MidAcc = sets.DD.MidAcc
 	sets.TH.HighAcc = sets.TH.MidAcc
 
 
@@ -115,9 +117,9 @@ function get_sets()
 
 
 
-	sets.WS = {head="Pill. Bonnet +2",neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
+	sets.WS = {head="Pill. Bonnet +3",neck="Fotia Gorget", left_ear="Telos Earring", right_ear="Ishvara Earring",
 		body="Plunderer's Vest +3",hands="Plun. Armlets +3", left_ring="Ilabrat Ring", right_ring="Shukuyu Ring",
-		back="Toutatis's Cape",waist="Fotia Belt", legs="Plun. Culottes +3",feet="Plun. Poulaines +3"} --NOT Done
+		back="Toutatis's Cape",waist="Fotia Belt", legs="Plun. Culottes +3",feet="Plun. Poulaines +3"}
 
 
 	sets.WS.MidAcc = sets.WS
@@ -127,7 +129,7 @@ function get_sets()
 	
 	--fix WS
 	sets.WS['Aeolian Edge'] = {
-		head="Pill. Bonnet +2", neck="Fotia Gorget", left_ear="Friomisi Earring", right_ear="Crematio Earring",
+		head="Pill. Bonnet +3", neck="Fotia Gorget", left_ear="Friomisi Earring", right_ear="Crematio Earring",
 		body="Sayadio's Kaftan", hands="Plun. Armlets +3", left_ring="Weather. Ring", right_ring="Acumen Ring",
 		back="Toro Cape", waist="Eschan Stone", legs="Plun. Culottes +3", feet="Plun. Poulaines +3"}	
 														--DEX40%, INT40%
