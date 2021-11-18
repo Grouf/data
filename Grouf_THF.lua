@@ -44,12 +44,12 @@ function get_sets()
 	sets.JA.Step = {head="Pill. Bonnet +3", neck="Subtlety Spec.", left_ear="Telos Earring", right_ear="Zennaroi Earring", 
 		body="Pillager's Vest +3", hands="Pill. Armlets +3", left_ring="Ilabrat Ring", right_ring="Cacoethic Ring +1", 
 		back="Ground. Mantle +1", waist="Olseni Belt", legs="Pill. Culottes +3", feet="Pill. Poulaines +3"}  --need accuracy
-			--Acc:  1336
+			--Acc:  1337
 
 	sets.JA['Violent Flourish'] = set_combine(sets.JA.Step, {neck="Sanctity Necklace",
 		left_ear="Psystorm Earring", right_ear="Lifestorm Earring", 
 		left_ring="Weather. Ring", right_ring="Stikini Ring", 
-		waist="Eschan Stone", legs="Volte Hose"}) --Accuracy for hit, Magic Accuracy for Stun
+		waist="Eschan Stone", legs="Nyame Flanchard"}) --Accuracy for hit, Magic Accuracy for Stun
 		--Stuns
 
 	sets.FastCast = {head="Herculean Helm", neck="Magoraga Beads", left_ear="Etiolation Earring", right_ear="Loquac. Earring",
@@ -65,14 +65,19 @@ function get_sets()
 	sets.Idle.TH = {head="Volte Cap",neck="Loricate Torque +1",left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Plunderer's Vest +3",hands="Plun. Armlets +3",left_ring="Hetairoi Ring", right_ring="Epona's Ring",
 		back="Canny Cape",waist="Sailfi Belt +1", legs="Volte Hose", feet="Pill. Poulaines +3"}
+	
+	--[[   --OLD set, need to move/delete items from Grouf
+	sets.Idle.DT = {head="Lithelimb Cap", 
+		waist="Flume Belt",legs="Volte Hose"
+	]]
+
+	sets.Idle.DT = {head="Nyame Helm", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring", 
+		body="Nyame Mail", hands="Nyame Gauntlets", left_ring="Succor Ring", right_ring="Shadow Ring",
+		back="Repulse Mantle", waist="Flume Belt",legs="Nyame Flanchard", feet="Pill. Poulaines +3"}
 		
-	sets.Idle.DT = {head="Lithelimb Cap", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring", 
-		body="Emet Harness +1", hands="Herculean Gloves", left_ring="Succor Ring", right_ring="Shadow Ring",
-		back="Repulse Mantle", waist="Flume Belt",legs="Volte Hose", feet="Pill. Poulaines +3"}
-		
-	sets.Ranged = {head="Pill. Bonnet +3", neck="Iskur Gorget", left_ear="Volley earring", right_ear="Enervating Earring",
-		body="Sayadio's Kaftan", hands="Pursuer's Cuffs", left_ring="Dingir Ring", right_ring="Cacoethic Ring +1",
-		back="Libeccio Mantle", waist="Eschan Stone", legs="Volte Hose", feet="Pill. Poulaines +3"}
+	sets.Ranged = {head="Nyame Helm", neck="Iskur Gorget", left_ear="Volley earring", right_ear="Enervating Earring",
+		body="Nyame Mail", hands="Nyame Gauntlets", left_ring="Dingir Ring", right_ring="Cacoethic Ring +1",
+		back="Libeccio Mantle", waist="Eschan Stone", legs="Nyame Flanchard", feet="Nyame Sollerets"}
 		--R.Acc = 1044
 		--AGI for Ranged Accuracy: 4AGI=3R.Acc
 		--STR for Ranged Attack
@@ -80,6 +85,12 @@ function get_sets()
 	sets.Ranged.MidAcc = sets.Ranged
 
 	sets.Ranged.HighAcc = sets.Ranged.MidAcc
+
+
+		--[[head="Nyame Helm", 
+		body="Nyame Mail", hands="Nyame Gauntlets"
+		 legs="Nyame Flanchard", feet="Nyame Sollerets"}
+	]]
 
 
 --M E L E E
@@ -105,9 +116,9 @@ function get_sets()
 	sets.TH.HighAcc = sets.TH.MidAcc
 
 
-	sets.DT = {head="Lithelimb Cap", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
-		body="Emet Harness +1", hands="Herculean Gloves", left_ring="Succor Ring", right_ring="Shadow Ring",
-		back="Repulse Mantle", waist="Flume Belt", legs="Volte Hose", feet="Skulk. Poulaines +1"}
+	sets.DT = {head="Nyame Helm", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring", 
+		body="Nyame Mail", hands="Nyame Gauntlets", left_ring="Succor Ring", right_ring="Shadow Ring",
+		back="Repulse Mantle", waist="Flume Belt",legs="Nyame Flanchard", feet="Nyame Sollerets"}
 
 	sets.DT.MidAcc = set_combine(sets.DT, { waist="Olseni Belt"})
 
@@ -129,9 +140,9 @@ function get_sets()
 	
 	--fix WS
 	sets.WS['Aeolian Edge'] = {
-		head="Pill. Bonnet +3", neck="Fotia Gorget", left_ear="Friomisi Earring", right_ear="Crematio Earring",
-		body="Sayadio's Kaftan", hands="Plun. Armlets +3", left_ring="Weather. Ring", right_ring="Acumen Ring",
-		back="Toro Cape", waist="Eschan Stone", legs="Plun. Culottes +3", feet="Plun. Poulaines +3"}	
+		head="Nyame Helm", neck="Fotia Gorget", left_ear="Friomisi Earring", right_ear="Crematio Earring",
+		body="Nyame Mail", hands="Nyame Gauntlets", left_ring="Weather. Ring", right_ring="Acumen Ring",
+		back="Toro Cape", waist="Eschan Stone", legs="Nyame Flanchard", feet="Nyame Sollerets"}	
 														--DEX40%, INT40%
 														--DEX:233, INT:191
 														--MAB:47
