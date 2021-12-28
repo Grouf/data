@@ -89,6 +89,7 @@ function get_sets()
 		-- MDB: 28, M.Eva: 421, MDT: -28%, DT: -8%, PTD: -11%, Evasion: 191
 
 
+		--Distrace = Ice,  Frazzle = Dark
 	sets.Enfeeble = {main="Crocea Mors", sub="Ammurapi Shield", ammo="Regal Gem",
 		head="Viti. Chapeau +3", neck="Dls. Torque +2", left_ear="Snotra Earring", right_ear="Digni. Earring",
 		body="Atrophy Tabard +3", hands="Regal Cuffs", left_ring="Kishar Ring", right_ring="Stikini Ring",

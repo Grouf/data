@@ -13,6 +13,8 @@
 	Emet Harness +1
 	Cryptic Earring
 	Mochi. Kyahan +3
+	Phalangite Mantle
+	Kurys Gloves
 
 ]]
 include('Obi_Check')  --for mages

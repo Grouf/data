@@ -43,7 +43,7 @@ function get_sets()
 	sets.FastCast = {main="Idris",sub="Genmei Shield", range="Dunna",
 		head="Nahtirah Hat", left_ear="Loquac. Earring", right_ear="Etiolation Earring",
 		body="Anhur Robe", hands="Volte Gloves", left_ring="Weather. Ring", right_ring="Kishar Ring",
-		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants +3",feet="Regal Pumps +1"}  --Fast Cast = 56%
+		back="Lifestream Cape", waist="Witful Belt",legs="Geomancy Pants +3",feet="Volte Gaiters"}  --Fast Cast = 56%
 
 	sets.IdleRefresh = {main="Idris",sub="Genmei Shield",range="Dunna",
 		head="Bagua Galero +3", neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Etiolation Earring",
