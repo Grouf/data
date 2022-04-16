@@ -15,6 +15,7 @@
 	Mochi. Kyahan +3
 	Phalangite Mantle
 	Kurys Gloves
+	Unmoving Collar +1
 
 ]]
 include('Obi_Check')  --for mages

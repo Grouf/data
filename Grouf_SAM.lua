@@ -67,7 +67,7 @@ function get_sets()
 	sets.Idle = {ammo="Ginsen",
 		head="Wakido Kabuto +3", neck="Sam. Nodowa +2", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Hiza. Haramaki +2", hands="Hizamaru Kote +2", left_ring="Ilabrat Ring", right_ring="Hizamaru Ring",
-		back="Smertrios's Mantle", waist="Cetl Belt", legs="Ryuo Hakama +1", feet="Danzo Sune-Ate"}
+		back="Smertrios's Mantle", waist="Sailfi Belt +1", legs="Ryuo Hakama +1", feet="Danzo Sune-Ate"}
 
 --[[ **OLD SETS NEED TO DELETED UN-NEEDED GEAR**	
 	sets.Idle.DT = {ammo="Ginsen",
@@ -108,7 +108,7 @@ function get_sets()
 	sets.DD = {ammo="Ginsen",
 		head="Sakonji Kabuto +3", neck="Sam. Nodowa +2", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Kasuga Domaru +1", hands="Hizamaru Kote +2", left_ring="Ilabrat Ring", right_ring="Hizamaru Ring",
-		back="Smertrios's Mantle", waist="Cetl Belt", legs="Ryuo Hakama +1", feet="Sak. Sune-Ate +3"}
+		back="Smertrios's Mantle", waist="Sailfi Belt +1", legs="Ryuo Hakama +1", feet="Sak. Sune-Ate +3"}
 		--was feet="Ryuo Sune-Ate +1"
 
 

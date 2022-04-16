@@ -96,8 +96,8 @@ function get_sets()
 		back="Sucellos's Cape", waist="Luminary Sash", legs="Chironic Hose", feet="Vitiation Boots +3"}
 			--RDM/sch
 			--Potency:  !need update
-			--Magic Accuracy:	395
-			--Enfeeble Skill:	581
+			--Magic Accuracy:	438
+			--Enfeeble Skill:	557
 			--Merit:			5+15 (hat augment)
 			--JP/Gift:			90
 			--Total:			1086
@@ -109,7 +109,7 @@ function get_sets()
 			--RDM/blm
 			--Mid-Acc:
 			--Magic Accuracy:	??? (315 with weapons)
-			--Enfeeble Skill:	581
+			--Enfeeble Skill:	557
 			--Merit:			5+15 (hat augment)
 			--JP/Gift:			90
 			--Total:			??? (1016)
@@ -120,7 +120,7 @@ function get_sets()
 			--RDM/blm
 			--High-Acc:		need re-calc
 			--Magic Accuracy:	253 (288 with staff and grip)
-			--Enfeeble Skill:	582
+			--Enfeeble Skill:	557
 			--Merit:			5+15 (hat augment)
 			--JP/Gift:			90
 			--Total:			920 (980)
@@ -222,7 +222,7 @@ function get_sets()
 	sets.DD = {main="Crocea Mors", sub="Ammurapi Shield", ammo="Ginsen",
 		head="Jhakri Coronal +2", neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Viti. Tabard +3", hands="Atrophy Gloves +3", left_ring="Ilabrat Ring", right_ring="Hetairoi Ring",
-		back="Bleating Mantle", waist="Sarissapho. Belt", legs="Jhakri Slops +2", feet="Atro. Boots +3"}
+		back="Bleating Mantle", waist="Sailfi Belt +1", legs="Jhakri Slops +2", feet="Atro. Boots +3"}
 			--Acc: 917, Att: 966
 			--Eva: 684, Def: 1026
 			--Haste: 28
@@ -472,7 +472,8 @@ function midcast(spell)
 
 			--sets.Stoneskin
 		elseif spell.english == 'Aquaveil' then
-			EquipSet = set_combine(EquipSet, {head="Chironic Hat", hands="Regal Cuffs", legs="Shedir Seraweels"})
+			EquipSet = set_combine(EquipSet, {head="Chironic Hat", hands="Regal Cuffs", 
+												waist="Emphatikos Rope", legs="Shedir Seraweels"})
 		elseif spell.english:startswith('Regen') then
 			EquipSet = set_combine(EquipSet, {main="Bolelabunga", body="Telchine Chas."})
 		elseif spell.english:startswith('En') then

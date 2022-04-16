@@ -21,9 +21,9 @@ function get_sets()
 	--Job Abilities
 	sets.JA = {}
 	sets.JA.Chakra = {ammo="Brigantia Pebble",
-		head="Hizamaru Somen +2",neck="Unmoving Collar", left_ear="Soil Pearl",right_ear="Soil Pearl",
+		head="Hes. Crown +3",neck="Unmoving Collar", left_ear="Soil Pearl",right_ear="Soil Pearl",
 		body="Anch. Cyclas +1",hands="Hes. Gloves +3", left_ring="Terrasoul Ring",right_ring="Terrasoul Ring",
-		back="Anchoret's Mantle",legs="Hiza. Hizayoroi +2",feet="Hiza. Sune-Ate +2"} 
+		back="Anchoret's Mantle",legs="Hiza. Hizayoroi +2",feet="Nyame Sollerets"} 
 			--VIT 109+174
 	sets.JA.Counterstance = {feet="Hes. Gaiters +3"}
 	sets.JA.Dodge = {feet="Anch. Gaiters +1"}
@@ -38,9 +38,9 @@ function get_sets()
 	sets.JA['Hundred Fists'] = {legs="Hes. Hose +3"}
 	
 	sets.JA['Chi Blast'] = {
-		head="Anchor. Crown +1", left_ear="Lifestorm Earring", 
-		body="Anch. Cyclas +1", hands="Anch. Gloves +1", left_ring="Stikini Ring", right_ring="Stikini Ring",
-		waist="Luminary Sash", legs="Anch. Hose +1",feet="Shukuyu Sune-Ate"}
+		head="Nyame Helm", left_ear="Lifestorm Earring", 
+		body="Nyame Mail", hands="Nyame Gauntlets", left_ring="Stikini Ring", right_ring="Stikini Ring",
+		waist="Luminary Sash", legs="Nyame Flanchard",feet="Shukuyu Sune-Ate"}
 		--MND
 	
 
@@ -68,9 +68,9 @@ function get_sets()
 		left_ring="Weather. Ring", waist="Black Belt"}
 
 	sets.Idle = {ammo="Brigantia Pebble",
-		head="Hizamaru Somen +2",neck="Asperity Necklace", left_ear="Infused Earring", right_ear="Etiolation Earring",
+		head="Hizamaru Somen +2",neck="Mnk. Nodowa +2", left_ear="Infused Earring", right_ear="Etiolation Earring",
 		body="Hiza. Haramaki +2",hands="Hizamaru Kote +2", left_ring="Epona's Ring",right_ring="Hizamaru Ring",
-		back="Segomo's Mantle",waist="Windbuffet Belt", legs="Ryuo Hakama +1",feet="Ryuo Sune-Ate +1"}
+		back="Segomo's Mantle",waist="Windbuffet Belt", legs="Ryuo Hakama +1",feet="Crier's Gaiters"}
 		--Regen
 	sets.Idle.DT = set_combine(sets.Idle, {body="Hes. Cyclas +3"} )
 	sets.Idle.MDT = sets.Idle
@@ -92,12 +92,12 @@ function get_sets()
 
 --M E L E E
 	sets.DD = {ammo="Ginsen",
-		head="Hizamaru Somen +2",neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
+		head="Hizamaru Somen +2",neck="Mnk. Nodowa +2", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Hiza. Haramaki +2",hands="Hizamaru Kote +2", left_ring="Epona's Ring",right_ring="Hizamaru Ring",
 		back="Segomo's Mantle",waist="Windbuffet Belt", legs="Ryuo Hakama +1",feet="Ryuo Sune-Ate +1"}
 
 
-	sets.DD.MidAcc = set_combine(sets.DD, {neck="Sanctity Necklace", right_ring="Beeline Ring",
+	sets.DD.MidAcc = set_combine(sets.DD, {right_ring="Beeline Ring",
 		back="Ground. Mantle +1",  feet="Hiza. Sune-Ate +2"})
 		
 	--[[ {ammo="Honed Tathlum",head="Whirlpool Mask",neck="Asperity Necklace",
@@ -106,8 +106,7 @@ function get_sets()
 		legs="Feast Hose",feet="Nyame Sollerets"}
 		]]
 
-	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {neck="Subtlety Spec.",
-		waist="Olseni Belt", legs="Hiza. Hizayoroi +2", feet="Hiza. Sune-Ate +2"})
+	sets.DD.HighAcc = set_combine(sets.DD.MidAcc, {waist="Olseni Belt", legs="Hiza. Hizayoroi +2", feet="Hiza. Sune-Ate +2"})
 		--ammo="Amar Cluster",    ???
 
 
@@ -308,7 +307,7 @@ function buff_change(buff_name,gain)
 		add_to_chat(9, 'Commitment gone.')]]
 	end
 	
-	aftercast()
+	--aftercast()
 
 end
 

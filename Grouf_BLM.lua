@@ -155,7 +155,7 @@ function get_sets()
 	sets.DD = {ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Asperity Necklace", left_ear="Telos Earring", right_ear="Digni. Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", left_ring="Hetairoi Ring", right_ring="Jhakri Ring",
-		back="Bleating Mantle", waist="Sarissapho. Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+		back="Bleating Mantle", waist="Windbuffet Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 			--Acc: 917, Att: 966
 			--Eva: 684, Def: 1026
 			--Haste: 28
